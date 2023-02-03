@@ -5812,6 +5812,11 @@
             <Condition Enabled="false" Grouping="Or" />
             <Conditions />
           </Trigger>
+          <Trigger Enabled="true" Name="3. Kgithub加速：https://raw.kgithub.com/RedAsteroid/FFXIV_Triggers/main/Test/Testtriggers_pure.xml" Id="92d506af-668a-410d-95fb-d12389647c1d" RegularExpression="">
+            <Actions />
+            <Condition Enabled="false" Grouping="Or" />
+            <Conditions />
+          </Trigger>
         </Triggers>
       </Folder>
       <Folder Id="40816e8e-888f-455d-8894-13974e8fb690" Name="*【Q&amp;A环节】" Enabled="true">
@@ -5902,7 +5907,7 @@
             <Condition Enabled="false" Grouping="Or" />
             <Conditions />
           </Trigger>
-          <Trigger Enabled="true" Name="8.1 回答：Gitee仓库遭到封禁，请换成Github仓库，在【仓库备用】分组中查找。" Id="096d6ec0-bce0-4e27-a922-2765f0717892" RegularExpression="">
+          <Trigger Enabled="true" Name="8.1 回答：可能是Gitee仓库遭到封禁/网络问题，请多试几次/使用加速器/更换仓库地址，在【仓库备用】分组中查找。" Id="096d6ec0-bce0-4e27-a922-2765f0717892" RegularExpression="">
             <Actions />
             <Condition Enabled="false" Grouping="Or" />
             <Conditions />
