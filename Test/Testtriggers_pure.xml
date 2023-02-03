@@ -5814,6 +5814,101 @@
           </Trigger>
         </Triggers>
       </Folder>
+      <Folder Id="40816e8e-888f-455d-8894-13974e8fb690" Name="*【Q&amp;A环节】" Enabled="true">
+        <Folders />
+        <Triggers>
+          <Trigger Enabled="true" Name="1.1 回答：使用本触发器默认您已知Splatoon插件的用途以及卫月框架的使用。请自行使用搜索引擎寻找答案。" Id="fb4ec264-563d-4567-981f-fba27b8047c4" RegularExpression="">
+            <Actions />
+            <Condition Enabled="false" Grouping="Or" />
+            <Conditions />
+          </Trigger>
+          <Trigger Enabled="true" Name="1.0 提问：Splatoon是什么？" Id="cb41ad9a-0a33-41c7-9415-0f0aa4858ad5" RegularExpression="">
+            <Actions />
+            <Condition Enabled="false" Grouping="Or" />
+            <Conditions />
+          </Trigger>
+          <Trigger Enabled="true" Name="2.1 回答：请在【插件需求+指路】分组中确认您是否已安装全部所需的插件，并根据提示配置插件；如您在国际服使用，很抱歉本触发器不适配国际服，必然有绘制缺失。" Id="219a55a0-4e2a-4a98-b147-88712ccee489" RegularExpression="">
+            <Actions />
+            <Condition Enabled="false" Grouping="Or" />
+            <Conditions />
+          </Trigger>
+          <Trigger Enabled="true" Name="2.0 提问：为什么使用时没有绘制/缺少绘制？" Id="a2701ff8-2d01-42da-a234-38a27bc61717" RegularExpression="">
+            <Actions />
+            <Condition Enabled="false" Grouping="Or" />
+            <Conditions />
+          </Trigger>
+          <Trigger Enabled="true" Name="5.0 提问：进本后触发器让我设置自己的职能，我该如何设定？" Id="42b55db1-b115-4852-aa8a-4f71acbe3f23" RegularExpression="">
+            <Actions />
+            <Condition Enabled="false" Grouping="Or" />
+            <Conditions />
+          </Trigger>
+          <Trigger Enabled="true" Name="3.0 提问：我该如何获取所需插件？" Id="881ce70e-d1fd-4afb-abc2-1794731bd424" RegularExpression="">
+            <Actions />
+            <Condition Enabled="false" Grouping="Or" />
+            <Conditions />
+          </Trigger>
+          <Trigger Enabled="true" Name="4.0 提问：Splatoon的WebAPI是多少？" Id="b95a02cf-38da-426c-ac2b-c559dbfb7538" RegularExpression="">
+            <Actions />
+            <Condition Enabled="false" Grouping="Or" />
+            <Conditions />
+          </Trigger>
+          <Trigger Enabled="true" Name="3.1 回答：请在【插件需求+指路】分组中，浏览对应链接下载插件。" Id="194e972e-7d0d-4971-9197-79eb84e8e147" RegularExpression="">
+            <Actions />
+            <Condition Enabled="false" Grouping="Or" />
+            <Conditions />
+          </Trigger>
+          <Trigger Enabled="true" Name="4.1 回答：本触发器使用默认端口 47774" Id="79aa29a6-340d-4e9f-b23a-c8158751554a" RegularExpression="">
+            <Actions />
+            <Condition Enabled="false" Grouping="Or" />
+            <Conditions />
+          </Trigger>
+          <Trigger Enabled="true" Name="5.1 回答：例如您是D1，请在聊天框输入：&quot;/e d1&quot;，其他职业同理。输入后会有TTS和默语提醒您设置成功，切换地图将清理职能位置信息，因此重复进本请再次输入以确认职能位置。若您忘记设定，战斗开始后也可设定职能位置。" Id="8e292998-78a6-4e6f-8e84-b43a7dfeb19d" RegularExpression="">
+            <Actions />
+            <Condition Enabled="false" Grouping="Or" />
+            <Conditions />
+          </Trigger>
+          <Trigger Enabled="true" Name="6.0 提问：我担心开这个触发器会和其他的科技产生冲突……" Id="86d75a9a-5ce4-4497-b517-61c4872e440d" RegularExpression="">
+            <Actions />
+            <Condition Enabled="false" Grouping="Or" />
+            <Conditions />
+          </Trigger>
+          <Trigger Enabled="true" Name="6.1 回答：本触发器仅提供绘制功能，与目前我所知的Cactbot时间轴以及其他任何触发器轮椅无冲突问题，请放心使用。除非您使用了其他同类型绘制，请自行排查选择最适合自己的绘制。" Id="22516842-280f-42a6-b898-e67f11dceaac" RegularExpression="">
+            <Actions />
+            <Condition Enabled="false" Grouping="Or" />
+            <Conditions />
+          </Trigger>
+          <Trigger Enabled="true" Name="7.1 回答：请关闭对应机制所在分组的√，即可关闭对应分组的机制的绘制，修改同理。" Id="35de7aba-fe1e-4408-bc95-e081c29902c7" RegularExpression="">
+            <Actions />
+            <Condition Enabled="false" Grouping="Or" />
+            <Conditions />
+          </Trigger>
+          <Trigger Enabled="true" Name="7.0 提问：有些绘制挡住我看队友/机制/Boss/特效了！我能不能关掉或者我自己改一下？" Id="1bab029c-f705-4dd6-aaa2-7126c9ed0566" RegularExpression="">
+            <Actions />
+            <Condition Enabled="false" Grouping="Or" />
+            <Conditions />
+          </Trigger>
+          <Trigger Enabled="true" Name="8.0 提问：我的远程触发器无法更新了！怎么办？" Id="6660ce6b-ea2c-4d16-930f-0cbe0bd25bd5" RegularExpression="">
+            <Actions />
+            <Condition Enabled="false" Grouping="Or" />
+            <Conditions />
+          </Trigger>
+          <Trigger Enabled="true" Name="9.0 提问：我从闲鱼/淘宝小店/某个人手里购买了这个触发器，请问怎么用呢？" Id="c42b3f6e-f043-4522-a066-dd17fdcad77f" RegularExpression="">
+            <Actions />
+            <Condition Enabled="false" Grouping="Or" />
+            <Conditions />
+          </Trigger>
+          <Trigger Enabled="true" Name="9.1 回答：请立即退款差评举报卖家，虽然我觉得这不太可能实现，总之倒狗死个妈先。既然你都花钱了不妨问小店怎么用，多半是加钱远程又或是发群号甩手不管。" Id="b64b7ca4-66b9-4c47-8ee4-726c33759297" RegularExpression="">
+            <Actions />
+            <Condition Enabled="false" Grouping="Or" />
+            <Conditions />
+          </Trigger>
+          <Trigger Enabled="true" Name="8.1 回答：Gitee仓库遭到封禁，请换成Github仓库，在【仓库备用】分组中查找。" Id="096d6ec0-bce0-4e27-a922-2765f0717892" RegularExpression="">
+            <Actions />
+            <Condition Enabled="false" Grouping="Or" />
+            <Conditions />
+          </Trigger>
+        </Triggers>
+      </Folder>
     </Folders>
     <Triggers>
       <Trigger Enabled="true" Sequential="True" Name="【初次导入提醒】2023/02/03" Id="1ce28eab-2569-47d9-8dc8-43db6e0c37cb" RegularExpression="^." PeriodRefire="Deny" RefirePeriodExpression="2000">
