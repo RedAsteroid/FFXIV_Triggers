@@ -3130,7 +3130,7 @@
           <Folder Id="f0db5de7-5420-462d-af83-dc5279d66776" Name="临时存放" Enabled="true">
             <Folders />
             <Triggers>
-              <Trigger Enabled="true" Name="打印MapEffect" Id="59a6e990-859b-4a08-b157-479fa226e68e" RegularExpression="^.{14} ChatLog 00:0:103:.{8}:.{8}:(?&lt;value1&gt;.*?):(?&lt;value2&gt;.*?):(?&lt;value3&gt;.*?):">
+              <Trigger Enabled="false" Name="打印MapEffect" Id="59a6e990-859b-4a08-b157-479fa226e68e" RegularExpression="^.{14} ChatLog 00:0:103:.{8}:.{8}:(?&lt;value1&gt;.*?):(?&lt;value2&gt;.*?):(?&lt;value3&gt;.*?):">
                 <Actions>
                   <Action OrderNumber="1" NamedCallbackName="command" NamedCallbackParam="/e 打印MapEffect：${numeric:hex2dec(${func:substring(6, 2):${value2}})}，${numeric:hex2dec(${func:substring(4, 4):${value1}})}，${numeric:hex2dec(${func:substring(0, 4):${value1}})}" OBSEndPoint="ws://${_const[OBSWebsocketEndpoint]}:${_const[OBSWebsocketPort]}" OBSPassword="${_const[OBSWebsocketPassword]}" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="NamedCallback">
                     <Condition Enabled="false" Grouping="Or" />
