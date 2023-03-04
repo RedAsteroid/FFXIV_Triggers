@@ -1661,7 +1661,6 @@
                               <ConditionSingle Enabled="true" ExpressionL="${var:活水之怒_5点}" ExpressionTypeL="String" ExpressionR="1" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                               <ConditionSingle Enabled="true" ExpressionL="${var:活水之怒_8点}" ExpressionTypeL="String" ExpressionR="1" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                             </Condition>
-                            <Conditions />
                           </Trigger>
                           <Trigger Enabled="true" Sequential="True" Name="类型4" Id="7a1df4f1-7a59-4062-a613-10f6d31e56ee" RegularExpression="^.{14} AddCombatant 03:(?&lt;id&gt;[^:]*):狩猎人偶:(?&lt;job&gt;[^:]*):(?&lt;level&gt;[^:]*):(?&lt;ownerId&gt;[^:]*):(?&lt;worldId&gt;[^:]*):(?&lt;world&gt;[^:]*):9214:(?&lt;npcBaseId&gt;[^:]*):(?&lt;currentHp&gt;[^:]*):(?&lt;hp&gt;[^:]*):(?&lt;currentMp&gt;[^:]*):(?&lt;mp&gt;[^:]*)(?::[^:]*){2}:(?&lt;x&gt;[^:]*):(?&lt;y&gt;[^:]*):(?&lt;z&gt;[^:]*):(?&lt;heading&gt;[^:]*)(?:$|:)">
                             <Actions>
@@ -1727,7 +1726,6 @@
                               <ConditionSingle Enabled="true" ExpressionL="${var:活水之怒_5点}" ExpressionTypeL="String" ExpressionR="1" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                               <ConditionSingle Enabled="true" ExpressionL="${var:活水之怒_8点}" ExpressionTypeL="String" ExpressionR="1" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                             </Condition>
-                            <Conditions />
                           </Trigger>
                           <Trigger Enabled="true" Sequential="True" Name="类型8" Id="63b8f1a5-7328-41a2-aba2-b90d922b9c7b" RegularExpression="^.{14} AddCombatant 03:(?&lt;id&gt;[^:]*):狩猎人偶:(?&lt;job&gt;[^:]*):(?&lt;level&gt;[^:]*):(?&lt;ownerId&gt;[^:]*):(?&lt;worldId&gt;[^:]*):(?&lt;world&gt;[^:]*):9214:(?&lt;npcBaseId&gt;[^:]*):(?&lt;currentHp&gt;[^:]*):(?&lt;hp&gt;[^:]*):(?&lt;currentMp&gt;[^:]*):(?&lt;mp&gt;[^:]*)(?::[^:]*){2}:(?&lt;x&gt;[^:]*):(?&lt;y&gt;[^:]*):(?&lt;z&gt;[^:]*):(?&lt;heading&gt;[^:]*)(?:$|:)">
                             <Actions>
@@ -1793,7 +1791,6 @@
                               <ConditionSingle Enabled="true" ExpressionL="${var:活水之怒_2点}" ExpressionTypeL="String" ExpressionR="1" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                               <ConditionSingle Enabled="true" ExpressionL="${var:活水之怒_5点}" ExpressionTypeL="String" ExpressionR="1" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                             </Condition>
-                            <Conditions />
                           </Trigger>
                           <Trigger Enabled="true" Sequential="True" Name="类型6" Id="f509ad39-fdff-44ee-85ad-3b3aad5f0011" RegularExpression="^.{14} AddCombatant 03:(?&lt;id&gt;[^:]*):狩猎人偶:(?&lt;job&gt;[^:]*):(?&lt;level&gt;[^:]*):(?&lt;ownerId&gt;[^:]*):(?&lt;worldId&gt;[^:]*):(?&lt;world&gt;[^:]*):9214:(?&lt;npcBaseId&gt;[^:]*):(?&lt;currentHp&gt;[^:]*):(?&lt;hp&gt;[^:]*):(?&lt;currentMp&gt;[^:]*):(?&lt;mp&gt;[^:]*)(?::[^:]*){2}:(?&lt;x&gt;[^:]*):(?&lt;y&gt;[^:]*):(?&lt;z&gt;[^:]*):(?&lt;heading&gt;[^:]*)(?:$|:)">
                             <Actions>
@@ -1859,7 +1856,6 @@
                               <ConditionSingle Enabled="true" ExpressionL="${var:活水之怒_2点}" ExpressionTypeL="String" ExpressionR="1" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                               <ConditionSingle Enabled="true" ExpressionL="${var:活水之怒_8点}" ExpressionTypeL="String" ExpressionR="1" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                             </Condition>
-                            <Conditions />
                           </Trigger>
                         </Triggers>
                       </Folder>
@@ -1930,7 +1926,6 @@
                               <ConditionSingle Enabled="true" ExpressionL="${var:活水之怒_3点}" ExpressionTypeL="String" ExpressionR="1" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                               <ConditionSingle Enabled="true" ExpressionL="${var:活水之怒_6点}" ExpressionTypeL="String" ExpressionR="1" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                             </Condition>
-                            <Conditions />
                           </Trigger>
                           <Trigger Enabled="true" Sequential="True" Name="类型3" Id="8f9d51d4-f796-4339-b5f8-611b95dcfeb1" RegularExpression="^.{14} AddCombatant 03:(?&lt;id&gt;[^:]*):狩猎人偶:(?&lt;job&gt;[^:]*):(?&lt;level&gt;[^:]*):(?&lt;ownerId&gt;[^:]*):(?&lt;worldId&gt;[^:]*):(?&lt;world&gt;[^:]*):9214:(?&lt;npcBaseId&gt;[^:]*):(?&lt;currentHp&gt;[^:]*):(?&lt;hp&gt;[^:]*):(?&lt;currentMp&gt;[^:]*):(?&lt;mp&gt;[^:]*)(?::[^:]*){2}:(?&lt;x&gt;[^:]*):(?&lt;y&gt;[^:]*):(?&lt;z&gt;[^:]*):(?&lt;heading&gt;[^:]*)(?:$|:)">
                             <Actions>
@@ -1996,7 +1991,6 @@
                               <ConditionSingle Enabled="true" ExpressionL="${var:活水之怒_6点}" ExpressionTypeL="String" ExpressionR="1" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                               <ConditionSingle Enabled="true" ExpressionL="${var:活水之怒_9点}" ExpressionTypeL="String" ExpressionR="1" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                             </Condition>
-                            <Conditions />
                           </Trigger>
                           <Trigger Enabled="true" Sequential="True" Name="类型7" Id="529ab662-12bf-486e-af08-6a6e7c594ecf" RegularExpression="^.{14} AddCombatant 03:(?&lt;id&gt;[^:]*):狩猎人偶:(?&lt;job&gt;[^:]*):(?&lt;level&gt;[^:]*):(?&lt;ownerId&gt;[^:]*):(?&lt;worldId&gt;[^:]*):(?&lt;world&gt;[^:]*):9214:(?&lt;npcBaseId&gt;[^:]*):(?&lt;currentHp&gt;[^:]*):(?&lt;hp&gt;[^:]*):(?&lt;currentMp&gt;[^:]*):(?&lt;mp&gt;[^:]*)(?::[^:]*){2}:(?&lt;x&gt;[^:]*):(?&lt;y&gt;[^:]*):(?&lt;z&gt;[^:]*):(?&lt;heading&gt;[^:]*)(?:$|:)">
                             <Actions>
@@ -2062,7 +2056,6 @@
                               <ConditionSingle Enabled="true" ExpressionL="${var:活水之怒_3点}" ExpressionTypeL="String" ExpressionR="1" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                               <ConditionSingle Enabled="true" ExpressionL="${var:活水之怒_9点}" ExpressionTypeL="String" ExpressionR="1" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                             </Condition>
-                            <Conditions />
                           </Trigger>
                           <Trigger Enabled="true" Sequential="True" Name="类型5" Id="5f773903-571b-417e-a607-0fa508c00799" RegularExpression="^.{14} AddCombatant 03:(?&lt;id&gt;[^:]*):狩猎人偶:(?&lt;job&gt;[^:]*):(?&lt;level&gt;[^:]*):(?&lt;ownerId&gt;[^:]*):(?&lt;worldId&gt;[^:]*):(?&lt;world&gt;[^:]*):9214:(?&lt;npcBaseId&gt;[^:]*):(?&lt;currentHp&gt;[^:]*):(?&lt;hp&gt;[^:]*):(?&lt;currentMp&gt;[^:]*):(?&lt;mp&gt;[^:]*)(?::[^:]*){2}:(?&lt;x&gt;[^:]*):(?&lt;y&gt;[^:]*):(?&lt;z&gt;[^:]*):(?&lt;heading&gt;[^:]*)(?:$|:)">
                             <Actions>
@@ -2128,7 +2121,6 @@
                               <ConditionSingle Enabled="true" ExpressionL="${var:活水之怒_6点}" ExpressionTypeL="String" ExpressionR="1" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                               <ConditionSingle Enabled="true" ExpressionL="${var:活水之怒_9点}" ExpressionTypeL="String" ExpressionR="1" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                             </Condition>
-                            <Conditions />
                           </Trigger>
                         </Triggers>
                       </Folder>
@@ -2184,7 +2176,6 @@
                           </Action>
                         </Actions>
                         <Condition Enabled="false" Grouping="Or" />
-                        <Conditions />
                       </Trigger>
                     </Triggers>
                   </Folder>
@@ -2198,7 +2189,6 @@
                           </Action>
                         </Actions>
                         <Condition Enabled="false" Grouping="Or" />
-                        <Conditions />
                       </Trigger>
                       <Trigger Enabled="true" Source="FFXIVNetwork" Name="销毁 - 小怪爆了" Id="92a99d08-c43b-431e-b644-18430c385445" RegularExpression="^2[12]\|[^|]{1,33}\|(?&lt;sid&gt;40[^|]{6})\|[^|]+\|4821\|">
                         <Actions>
@@ -2207,7 +2197,6 @@
                           </Action>
                         </Actions>
                         <Condition Enabled="false" Grouping="Or" />
-                        <Conditions />
                       </Trigger>
                       <Trigger Enabled="true" Name="销毁 - 小怪与自身建立连线(tether)" Id="477480fc-ee94-47bf-b76e-2833ed02d4b1" RegularExpression="^.{14} Tether 23:(?&lt;sid&gt;[^:]*):狩猎人偶:10133000:(?&lt;tname&gt;[^:]*)(?::[^:]*){2}:0011(?:$|:)">
                         <Actions>
@@ -2216,7 +2205,6 @@
                           </Action>
                         </Actions>
                         <Condition Enabled="false" Grouping="Or" />
-                        <Conditions />
                       </Trigger>
                       <Trigger Enabled="true" Name="销毁 - 小怪连线到他人" Id="486a51d0-c8c1-496e-bdb4-4e405ccc4661" RegularExpression="^.{14} Tether 23:(?&lt;sid&gt;[^:]*):狩猎人偶:(?&lt;tid&gt;[^:]*):(?&lt;tname&gt;[^:]*)(?::[^:]*){2}:0011(?:$|:)">
                         <Actions>
@@ -2231,7 +2219,6 @@
                           <ConditionSingle Enabled="true" ExpressionL="${tid}" ExpressionTypeL="String" ExpressionR="10133000" ExpressionTypeR="String" ConditionType="StringNotEqualNocase" />
                           <ConditionSingle Enabled="true" ExpressionL="${sid}" ExpressionTypeL="String" ExpressionR="${var:绝亚小怪id_Clone}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                         </Condition>
-                        <Conditions />
                       </Trigger>
                       <Trigger Enabled="true" Source="FFXIVNetwork" Name="销毁 - 小怪被喂掉" Id="ca044d07-94c5-42fe-b5c6-51675e2c8b0e" RegularExpression="^35\|[^|]{1,33}\|(?&lt;sid&gt;[^|]{8})\|狩猎人偶\|(?&lt;tid&gt;40[^|]{6})\|(?&lt;tname&gt;活水之怒|活水之手|有生命活水)\|">
                         <Actions>
@@ -2242,7 +2229,6 @@
                         <Condition Enabled="true" Grouping="Or">
                           <ConditionSingle Enabled="true" ExpressionL="${sid}" ExpressionTypeL="String" ExpressionR="${var:绝亚小怪id_Clone}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                         </Condition>
-                        <Conditions />
                       </Trigger>
                       <Trigger Enabled="true" Name="销毁 - 你拉了别人的小怪" Id="fa194b3a-0824-4a3b-a9ca-355a4a98658a" RegularExpression="^.{14} Tether 23:(?&lt;sid&gt;[^:]*):狩猎人偶:(?&lt;tid&gt;[^:]*):(?&lt;tname&gt;[^:]*)(?::[^:]*){2}:0011(?:$|:)">
                         <Actions>
@@ -2257,7 +2243,6 @@
                           <ConditionSingle Enabled="true" ExpressionL="${sid}" ExpressionTypeL="String" ExpressionR="${var:绝亚小怪id_Clone}" ExpressionTypeR="String" ConditionType="StringNotEqualNocase" />
                           <ConditionSingle Enabled="true" ExpressionL="${tid}" ExpressionTypeL="String" ExpressionR="10133000" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                         </Condition>
-                        <Conditions />
                       </Trigger>
                     </Triggers>
                   </Folder>
@@ -7983,10 +7968,10 @@
             <Folders>
               <Folder FFXIVZoneFilterEnabled="True" FfxivZoneFilterRegularExpression="^821$" Id="176ba5dc-c25d-4e29-aa2e-ed66d00960c7" Name="水妖幻园多恩美格禁园[废弃]" Enabled="false">
                 <Folders>
-                  <Folder Id="59d08074-0c7f-48ba-87d3-7c9b29c9bf17" Name="Boss1 - 美眼 因克·佐恩" Enabled="false">
+                  <Folder Id="59d08074-0c7f-48ba-87d3-7c9b29c9bf17" Name="Boss1 - 美眼 因克·佐恩" Enabled="true">
                     <Folders />
                     <Triggers>
-                      <Trigger Enabled="true" Name="1. 水瀑" Id="4d590f9e-cbb4-4332-b888-7d478736bc71" RegularExpression="^.{14} ChatLog 00:0:104:(?&lt;sid&gt;.*?):(?&lt;sname&gt;.*?):22BD:(?&lt;what&gt;.*?):(?&lt;casttime&gt;.*?):(?&lt;tid&gt;.*?):(?&lt;tname&gt;.*?):(?&lt;what2&gt;.*?):(?&lt;heading&gt;.*?):(?&lt;x&gt;.*?):(?&lt;y&gt;.*?):(?&lt;z&gt;.*?):">
+                      <Trigger Enabled="false" Name="1. 水瀑" Id="4d590f9e-cbb4-4332-b888-7d478736bc71" RegularExpression="^.{14} ChatLog 00:0:104:(?&lt;sid&gt;.*?):(?&lt;sname&gt;.*?):22BD:(?&lt;what&gt;.*?):(?&lt;casttime&gt;.*?):(?&lt;tid&gt;.*?):(?&lt;tname&gt;.*?):(?&lt;what2&gt;.*?):(?&lt;heading&gt;.*?):(?&lt;x&gt;.*?):(?&lt;y&gt;.*?):(?&lt;z&gt;.*?):">
                         <Actions>
                           <Action OrderNumber="1" JsonEndpointExpression="http://127.0.0.1:47774/?namespace=waterfall${sid}&amp;destroyAt=2700" JsonPayloadExpression="{&quot;Name&quot;:&quot;老一 水瀑&quot;,&quot;refX&quot;:${x},&quot;refY&quot;:${y},&quot;refZ&quot;:${z},&quot;radius&quot;:6.0,&quot;color&quot;:1690107928,&quot;thicc&quot;:3.0,&quot;Filled&quot;:true}" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="GenericJson">
                             <Condition Enabled="false" Grouping="And" />
@@ -7994,7 +7979,7 @@
                         </Actions>
                         <Condition Enabled="false" Grouping="Or" />
                       </Trigger>
-                      <Trigger Enabled="true" Sequential="True" Name="2. 飞扑" Id="64ea0208-6128-417f-95bc-e063993923b2" RegularExpression="^.{14} TargetIcon 1B:(?&lt;tid&gt;[^:]*):(?&lt;tname&gt;[^:]*)(?::[^:]*){2}:003E(?:$|:)">
+                      <Trigger Enabled="false" Sequential="True" Name="2. 飞扑" Id="64ea0208-6128-417f-95bc-e063993923b2" RegularExpression="^.{14} TargetIcon 1B:(?&lt;tid&gt;[^:]*):(?&lt;tname&gt;[^:]*)(?::[^:]*){2}:003E(?:$|:)">
                         <Actions>
                           <Action OrderNumber="1" OBSEndPoint="ws://${_const[OBSWebsocketEndpoint]}:${_const[OBSWebsocketPort]}" OBSPassword="${_const[OBSWebsocketPassword]}" VariableOp="SetNumeric" VariableName="个人绘制_飞扑" VariableExpression="hex2dec(${tid})" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
                             <Condition Enabled="false" Grouping="Or" />
@@ -8005,7 +7990,7 @@
                         </Actions>
                         <Condition Enabled="false" Grouping="Or" />
                       </Trigger>
-                      <Trigger Enabled="true" Name="0. 需要MoreLogLine" Id="aad16b31-cf89-4530-9538-8d6a3e674801" RegularExpression="">
+                      <Trigger Enabled="false" Name="0. 需要MoreLogLine" Id="aad16b31-cf89-4530-9538-8d6a3e674801" RegularExpression="">
                         <Actions />
                         <Condition Enabled="false" Grouping="Or" />
                       </Trigger>
@@ -8062,7 +8047,16 @@
                     </Triggers>
                   </Folder>
                 </Folders>
-                <Triggers />
+                <Triggers>
+                  <Trigger Enabled="true" Name="【任务开始】" Id="63ee31bc-8329-4da1-b2bd-0c3242d2fd78" RegularExpression="^.{14} ChatLog 00:0839::“水妖幻园多恩美格禁园”任务开始。$">
+                    <Actions>
+                      <Action OrderNumber="1" OBSEndPoint="ws://${_const[OBSWebsocketEndpoint]}:${_const[OBSWebsocketPort]}" OBSPassword="${_const[OBSWebsocketPassword]}" VariableName="个人绘制_美眼状态" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Action>
+                    </Actions>
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Trigger>
+                </Triggers>
               </Folder>
               <Folder FFXIVZoneFilterEnabled="True" FfxivZoneFilterRegularExpression="^823$" Id="742918a6-d9f0-49e7-8d4b-d1e09ee7b29b" Name="文明古迹奇坦那神影洞" Enabled="true">
                 <Folders>
@@ -8599,16 +8593,7 @@
             <Triggers />
           </Folder>
           <Folder Id="eb35722b-fa37-4fa8-be04-7851225c2daf" Name="2.0 重生之境" Enabled="true">
-            <Folders>
-              <Folder Id="a8c66d90-ccf3-4f9b-8391-b246d5218f87" Name="伊弗利特讨伐战" Enabled="true">
-                <Folders />
-                <Triggers />
-              </Folder>
-              <Folder Id="1be8ebb4-4a79-4126-b1bc-0405bc829d49" Name="伊弗利特歼灭战" Enabled="true">
-                <Folders />
-                <Triggers />
-              </Folder>
-            </Folders>
+            <Folders />
             <Triggers />
           </Folder>
         </Folders>
@@ -8620,7 +8605,21 @@
         </Triggers>
       </Folder>
       <Folder Id="32b5a5bd-fd23-45e4-b2ea-7537d30a12e3" Name="*【远程仓库备用】" Enabled="true">
-        <Folders />
+        <Folders>
+          <Folder Id="5519208d-c1a9-45d8-a8c2-a305b89ce62e" Name="项目" Enabled="true">
+            <Folders />
+            <Triggers>
+              <Trigger Enabled="true" Name="Github：github.com/RedAsteroid/FFXIV_Triggers" Id="2edea5e6-88f1-464a-a053-e58f0983938f" RegularExpression="">
+                <Actions />
+                <Condition Enabled="false" Grouping="Or" />
+              </Trigger>
+              <Trigger Enabled="true" Name="Gitee：gitee.com/Redstorm/selftrigger" Id="2582f1f0-cbc5-4b89-8b5b-da6a03dc0808" RegularExpression="">
+                <Actions />
+                <Condition Enabled="false" Grouping="Or" />
+              </Trigger>
+            </Triggers>
+          </Folder>
+        </Folders>
         <Triggers>
           <Trigger Enabled="true" Name="1. Github源站：https://raw.githubusercontent.com/RedAsteroid/FFXIV_Triggers/main/Test/Testtriggers_pure.xml" Id="8b0cf91e-5648-4daa-8fc0-bc5d396f51c8" RegularExpression="">
             <Actions />
@@ -8712,6 +8711,47 @@
             <Condition Enabled="false" Grouping="Or" />
           </Trigger>
         </Triggers>
+      </Folder>
+      <Folder Id="d903bc17-ffb2-48a5-a075-2b44cc44e2c4" Name="4. 【异闻迷宫 异闻/零式异闻希拉狄哈水道】(未完成仅供参考，别问我为什么用不了因为根本没做完)" Enabled="true">
+        <Folders>
+          <Folder Id="4cab9778-54f8-4b65-88d2-582264e660b1" Name="TRN预留" Enabled="true">
+            <Folders>
+              <Folder Id="3915065c-a737-451d-90b3-5bc6ddd27e18" Name="Boss1 - 羽衣精" Enabled="true">
+                <Folders />
+                <Triggers />
+              </Folder>
+              <Folder Id="2c9a1c7e-180a-4102-8f5e-cc1322c5b546" Name="Boss2 - 希拉狄哈剑斗士" Enabled="true">
+                <Folders />
+                <Triggers />
+              </Folder>
+              <Folder Id="838334da-8dec-4790-8a81-8d957a75877f" Name="Boss3 - 鬼阴火 泽雷斯·夏" Enabled="true">
+                <Folders />
+                <Triggers />
+              </Folder>
+              <Folder Id="dbe66d98-513f-4425-b63c-34edc65f6822" Name="道中" Enabled="true">
+                <Folders />
+                <Triggers />
+              </Folder>
+            </Folders>
+            <Triggers />
+          </Folder>
+          <Folder Id="f2146d70-3488-4771-8b6b-4176ade3d024" Name="Layout预设" Enabled="true">
+            <Folders />
+            <Triggers>
+              <Trigger Enabled="true" Name="1. 官方预设：https://github.com/NightmareXIV/Splatoon/blob/master/Presets/Endwalker%20content/Duties/Criterion%20-%20Another%20Sil'dihn%20Subterrane%20(normal%20and%20savage).md" Id="a6d1f033-e4e3-47b1-8e95-163c565469f5" RegularExpression="">
+                <Actions />
+                <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
+              </Trigger>
+              <Trigger Enabled="true" Name="2. 自改的(见描述)" Id="7c0fde70-3eba-490b-9655-140f36c9a041" RegularExpression="" Description="~Lv2~{&quot;Name&quot;:&quot;道中&quot;,&quot;Group&quot;:&quot;异闻/零式异闻希拉狄哈水道&quot;,&quot;ZoneLockH&quot;:[1075,1076],&quot;ElementsL&quot;:[{&quot;Name&quot;:&quot;水道卡栌克 左侧横扫&quot;,&quot;type&quot;:4,&quot;radius&quot;:30.0,&quot;coneAngleMin&quot;:180,&quot;coneAngleMax&quot;:390,&quot;color&quot;:2533355562,&quot;refActorNPCNameID&quot;:11510,&quot;refActorRequireCast&quot;:true,&quot;refActorCastId&quot;:[31076,31100],&quot;refActorComparisonType&quot;:6,&quot;includeRotation&quot;:true,&quot;Filled&quot;:true},{&quot;Name&quot;:&quot;水道卡栌克 右侧横扫&quot;,&quot;type&quot;:4,&quot;radius&quot;:30.0,&quot;coneAngleMin&quot;:-30,&quot;coneAngleMax&quot;:180,&quot;color&quot;:2533355562,&quot;refActorNPCNameID&quot;:11510,&quot;refActorRequireCast&quot;:true,&quot;refActorCastId&quot;:[31075,31099],&quot;FillStep&quot;:1.0,&quot;refActorComparisonType&quot;:6,&quot;includeRotation&quot;:true,&quot;Filled&quot;:true},{&quot;Name&quot;:&quot;水道卡栌克 藤枝伏地&quot;,&quot;type&quot;:4,&quot;radius&quot;:10.0,&quot;coneAngleMin&quot;:-45,&quot;coneAngleMax&quot;:45,&quot;color&quot;:2516647863,&quot;refActorNPCNameID&quot;:11510,&quot;refActorRequireCast&quot;:true,&quot;refActorCastId&quot;:[8665,10548,12422,12534,12709,17527,18138,24559,27413,28216,30664,31077,31101],&quot;refActorComparisonType&quot;:6,&quot;includeRotation&quot;:true,&quot;Filled&quot;:true},{&quot;Name&quot;:&quot;水道剧毒美人 阿托品孢子&quot;,&quot;type&quot;:1,&quot;radius&quot;:9.0,&quot;Donut&quot;:30.0,&quot;color&quot;:2516635391,&quot;thicc&quot;:5.0,&quot;refActorNPCNameID&quot;:11514,&quot;refActorRequireCast&quot;:true,&quot;refActorCastId&quot;:[5215,12415,30041,31072,31096],&quot;FillStep&quot;:0.3,&quot;refActorComparisonType&quot;:6},{&quot;Name&quot;:&quot;水道剧毒美人 污蔑视线(背对)&quot;,&quot;type&quot;:1,&quot;Enabled&quot;:false,&quot;radius&quot;:9.0,&quot;Donut&quot;:30.0,&quot;color&quot;:2516635391,&quot;thicc&quot;:5.0,&quot;refActorNPCNameID&quot;:11514,&quot;refActorRequireCast&quot;:true,&quot;refActorCastId&quot;:[5215,12415,30041,31072,31096],&quot;FillStep&quot;:0.3,&quot;refActorComparisonType&quot;:6},{&quot;Name&quot;:&quot;水道寄生花 血腥的爱抚&quot;,&quot;type&quot;:4,&quot;radius&quot;:12.0,&quot;coneAngleMin&quot;:-60,&quot;coneAngleMax&quot;:60,&quot;color&quot;:2097215999,&quot;refActorNPCNameID&quot;:11512,&quot;refActorRequireCast&quot;:true,&quot;refActorCastId&quot;:[1943,2484,2755,3793,4670,4971,5020,5426,6421,7133,11831,12413,18148,18727,24457,26534,31071,31095],&quot;refActorComparisonType&quot;:6,&quot;includeRotation&quot;:true,&quot;Filled&quot;:true},{&quot;Name&quot;:&quot;水道优昙婆罗花 前方花蜜喷吐&quot;,&quot;type&quot;:4,&quot;radius&quot;:30.0,&quot;coneAngleMin&quot;:-60,&quot;coneAngleMax&quot;:60,&quot;color&quot;:2097215999,&quot;refActorNPCNameID&quot;:11511,&quot;refActorRequireCast&quot;:true,&quot;refActorCastId&quot;:[31069,31093],&quot;refActorComparisonType&quot;:6,&quot;includeRotation&quot;:true,&quot;Filled&quot;:true},{&quot;Name&quot;:&quot;水道优昙婆罗花 左方花蜜喷吐 (debug)&quot;,&quot;type&quot;:4,&quot;radius&quot;:30.0,&quot;coneAngleMin&quot;:45,&quot;coneAngleMax&quot;:225,&quot;color&quot;:2097215999,&quot;refActorNPCNameID&quot;:11511,&quot;refActorRequireCast&quot;:true,&quot;refActorCastId&quot;:[31067,31091],&quot;refActorComparisonType&quot;:6,&quot;includeRotation&quot;:true,&quot;AdditionalRotation&quot;:1.5707964,&quot;Filled&quot;:true},{&quot;Name&quot;:&quot;水道优昙婆罗花 右方花蜜喷吐 (debug)&quot;,&quot;type&quot;:4,&quot;radius&quot;:30.0,&quot;coneAngleMin&quot;:45,&quot;coneAngleMax&quot;:225,&quot;color&quot;:2097215999,&quot;refActorNPCNameID&quot;:11511,&quot;refActorRequireCast&quot;:true,&quot;refActorCastId&quot;:[31068,31092],&quot;refActorComparisonType&quot;:6,&quot;includeRotation&quot;:true,&quot;Filled&quot;:true},{&quot;Name&quot;:&quot;水道树妖 巨木龙卷&quot;,&quot;type&quot;:1,&quot;radius&quot;:9.0,&quot;color&quot;:838926092,&quot;refActorNPCNameID&quot;:11513,&quot;refActorRequireCast&quot;:true,&quot;refActorCastId&quot;:[441,2741,3191,5003,5437,13531,31063,31087],&quot;refActorComparisonType&quot;:6,&quot;includeHitbox&quot;:true,&quot;Filled&quot;:true},{&quot;Name&quot;:&quot;水道树妖 巨木龙卷边框&quot;,&quot;type&quot;:1,&quot;radius&quot;:9.0,&quot;color&quot;:4278255578,&quot;refActorNPCNameID&quot;:11513,&quot;refActorRequireCast&quot;:true,&quot;refActorCastId&quot;:[441,2741,3191,5003,5437,13531,31063,31087],&quot;refActorComparisonType&quot;:6,&quot;includeHitbox&quot;:true},{&quot;Name&quot;:&quot;(TRN)水道斡德罕 朔风&quot;,&quot;Enabled&quot;:false,&quot;refX&quot;:-282.75253,&quot;refY&quot;:-88.427475,&quot;refZ&quot;:469.18317,&quot;radius&quot;:6.0,&quot;color&quot;:1258311423,&quot;Filled&quot;:true},{&quot;Name&quot;:&quot;(TRN)水道斡德罕 朔风边框&quot;,&quot;Enabled&quot;:false,&quot;refX&quot;:-282.75253,&quot;refY&quot;:-88.427475,&quot;refZ&quot;:469.18317,&quot;radius&quot;:6.0,&quot;color&quot;:4278254079},{&quot;Name&quot;:&quot;希拉狄哈无头骑士 秽暗&quot;,&quot;type&quot;:1,&quot;radius&quot;:10.0,&quot;color&quot;:838882815,&quot;refActorNPCNameID&quot;:11506,&quot;refActorRequireCast&quot;:true,&quot;refActorCastId&quot;:[759,30688,31078,31102],&quot;refActorComparisonType&quot;:6,&quot;Filled&quot;:true},{&quot;Name&quot;:&quot;希拉狄哈无头骑士 秽暗边框&quot;,&quot;type&quot;:1,&quot;radius&quot;:10.0,&quot;color&quot;:4278255464,&quot;refActorNPCNameID&quot;:11506,&quot;refActorRequireCast&quot;:true,&quot;refActorCastId&quot;:[759,30688,31078,31102],&quot;refActorComparisonType&quot;:6}]}&#xD;&#xA;&#xD;&#xA;~Lv2~{&quot;Name&quot;:&quot;Boss1 羽衣精&quot;,&quot;Group&quot;:&quot;异闻/零式异闻希拉狄哈水道&quot;,&quot;ZoneLockH&quot;:[1075,1076],&quot;ElementsL&quot;:[{&quot;Name&quot;:&quot;电气泡泡 1&quot;,&quot;type&quot;:4,&quot;radius&quot;:50.0,&quot;coneAngleMin&quot;:22,&quot;coneAngleMax&quot;:67,&quot;color&quot;:4278255607,&quot;refActorNPCNameID&quot;:11369,&quot;refActorRequireBuff&quot;:true,&quot;refActorBuffId&quot;:[3299,3307],&quot;refActorComparisonType&quot;:6,&quot;includeRotation&quot;:true,&quot;Filled&quot;:true},{&quot;Name&quot;:&quot;电气泡泡 2&quot;,&quot;type&quot;:4,&quot;radius&quot;:50.0,&quot;coneAngleMin&quot;:22,&quot;coneAngleMax&quot;:67,&quot;color&quot;:4278255607,&quot;refActorNPCNameID&quot;:11369,&quot;refActorRequireBuff&quot;:true,&quot;refActorBuffId&quot;:[3299,3307],&quot;refActorComparisonType&quot;:6,&quot;includeRotation&quot;:true,&quot;AdditionalRotation&quot;:1.5707964,&quot;Filled&quot;:true},{&quot;Name&quot;:&quot;电气泡泡 3&quot;,&quot;type&quot;:4,&quot;radius&quot;:50.0,&quot;coneAngleMin&quot;:22,&quot;coneAngleMax&quot;:67,&quot;color&quot;:4278255607,&quot;refActorNPCNameID&quot;:11369,&quot;refActorRequireBuff&quot;:true,&quot;refActorBuffId&quot;:[3299,3307],&quot;refActorComparisonType&quot;:6,&quot;includeRotation&quot;:true,&quot;AdditionalRotation&quot;:3.1415927,&quot;Filled&quot;:true},{&quot;Name&quot;:&quot;电气泡泡 4&quot;,&quot;type&quot;:4,&quot;radius&quot;:50.0,&quot;coneAngleMin&quot;:22,&quot;coneAngleMax&quot;:67,&quot;color&quot;:4278255607,&quot;refActorNPCNameID&quot;:11369,&quot;refActorRequireBuff&quot;:true,&quot;refActorBuffId&quot;:[3299,3307],&quot;refActorComparisonType&quot;:6,&quot;includeRotation&quot;:true,&quot;AdditionalRotation&quot;:4.712389,&quot;Filled&quot;:true},{&quot;Name&quot;:&quot;电气泡泡 1 (绒球)&quot;,&quot;type&quot;:4,&quot;radius&quot;:50.0,&quot;coneAngleMin&quot;:22,&quot;coneAngleMax&quot;:67,&quot;color&quot;:4278255607,&quot;refActorNPCNameID&quot;:11370,&quot;refActorRequireCast&quot;:true,&quot;refActorCastId&quot;:[30557,30565,30570,30592,30600,30605],&quot;refActorComparisonType&quot;:6,&quot;includeRotation&quot;:true,&quot;AdditionalRotation&quot;:0.7853982,&quot;Filled&quot;:true},{&quot;Name&quot;:&quot;电气泡泡 2 (绒球)&quot;,&quot;type&quot;:4,&quot;radius&quot;:50.0,&quot;coneAngleMin&quot;:22,&quot;coneAngleMax&quot;:67,&quot;color&quot;:4278255607,&quot;refActorNPCNameID&quot;:11370,&quot;refActorRequireCast&quot;:true,&quot;refActorCastId&quot;:[30557,30565,30570,30592,30600,30605],&quot;refActorComparisonType&quot;:6,&quot;includeRotation&quot;:true,&quot;AdditionalRotation&quot;:2.3561945,&quot;Filled&quot;:true},{&quot;Name&quot;:&quot;电气泡泡 3 (绒球)&quot;,&quot;type&quot;:4,&quot;radius&quot;:50.0,&quot;coneAngleMin&quot;:22,&quot;coneAngleMax&quot;:67,&quot;color&quot;:4278255607,&quot;refActorNPCNameID&quot;:11370,&quot;refActorRequireCast&quot;:true,&quot;refActorCastId&quot;:[30557,30565,30570,30592,30600,30605],&quot;refActorComparisonType&quot;:6,&quot;includeRotation&quot;:true,&quot;AdditionalRotation&quot;:3.9269907,&quot;Filled&quot;:true},{&quot;Name&quot;:&quot;电气泡泡 4 (绒球)&quot;,&quot;type&quot;:4,&quot;radius&quot;:50.0,&quot;coneAngleMin&quot;:22,&quot;coneAngleMax&quot;:67,&quot;color&quot;:4278255607,&quot;refActorNPCNameID&quot;:11370,&quot;refActorRequireCast&quot;:true,&quot;refActorCastId&quot;:[30557,30565,30570,30592,30600,30605],&quot;refActorComparisonType&quot;:6,&quot;includeRotation&quot;:true,&quot;AdditionalRotation&quot;:5.497787,&quot;Filled&quot;:true},{&quot;Name&quot;:&quot;风清泡泡 &quot;,&quot;type&quot;:1,&quot;radius&quot;:5.0,&quot;Donut&quot;:50.0,&quot;color&quot;:2533294592,&quot;thicc&quot;:5.0,&quot;refActorNPCNameID&quot;:11369,&quot;refActorRequireCast&quot;:true,&quot;refActorCastId&quot;:[30521,30524,30528,30556,30564,30569,30591,30599,30604],&quot;refActorComparisonType&quot;:6},{&quot;Name&quot;:&quot;风清泡泡 (绒球)&quot;,&quot;type&quot;:1,&quot;radius&quot;:5.0,&quot;Donut&quot;:50.0,&quot;color&quot;:2533309184,&quot;thicc&quot;:5.0,&quot;refActorNPCNameID&quot;:11370,&quot;refActorRequireCast&quot;:true,&quot;refActorCastId&quot;:[30521,30524,30528,30556,30564,30569,30591,30599,30604],&quot;refActorComparisonType&quot;:6},{&quot;Name&quot;:&quot;冰凉泡泡 1&quot;,&quot;type&quot;:3,&quot;refY&quot;:50.0,&quot;offY&quot;:-50.0,&quot;radius&quot;:5.0,&quot;color&quot;:520043264,&quot;refActorNPCNameID&quot;:11369,&quot;refActorRequireCast&quot;:true,&quot;refActorCastId&quot;:[30520,30523,30527,30555,30563,30568,30590,30598,30603],&quot;FillStep&quot;:0.3,&quot;refActorComparisonType&quot;:6,&quot;includeOwnHitbox&quot;:true,&quot;includeRotation&quot;:true},{&quot;Name&quot;:&quot;冰凉泡泡 2&quot;,&quot;type&quot;:3,&quot;refY&quot;:50.0,&quot;offY&quot;:-50.0,&quot;radius&quot;:5.0,&quot;color&quot;:520043264,&quot;refActorNPCNameID&quot;:11369,&quot;refActorRequireCast&quot;:true,&quot;refActorCastId&quot;:[30520,30523,30527,30555,30563,30568,30590,30598,30603],&quot;FillStep&quot;:0.3,&quot;refActorComparisonType&quot;:6,&quot;includeOwnHitbox&quot;:true,&quot;includeRotation&quot;:true,&quot;AdditionalRotation&quot;:1.5707964},{&quot;Name&quot;:&quot;冰凉泡泡 1 (绒球)&quot;,&quot;type&quot;:3,&quot;refY&quot;:50.0,&quot;offY&quot;:-50.0,&quot;radius&quot;:5.0,&quot;color&quot;:520043264,&quot;refActorNPCNameID&quot;:11370,&quot;refActorRequireCast&quot;:true,&quot;refActorCastId&quot;:[30520,30523,30527,30555,30563,30568,30590,30598,30603],&quot;FillStep&quot;:0.3,&quot;refActorComparisonType&quot;:6,&quot;includeOwnHitbox&quot;:true,&quot;includeRotation&quot;:true},{&quot;Name&quot;:&quot;冰凉泡泡 2 (绒球)&quot;,&quot;type&quot;:3,&quot;refY&quot;:50.0,&quot;offY&quot;:-50.0,&quot;radius&quot;:5.0,&quot;color&quot;:520043264,&quot;refActorNPCNameID&quot;:11370,&quot;refActorRequireCast&quot;:true,&quot;refActorCastId&quot;:[30520,30523,30527,30555,30563,30568,30590,30598,30603],&quot;FillStep&quot;:0.3,&quot;refActorComparisonType&quot;:6,&quot;includeOwnHitbox&quot;:true,&quot;includeRotation&quot;:true,&quot;AdditionalRotation&quot;:1.5707964},{&quot;Name&quot;:&quot;叉形闪电&quot;,&quot;type&quot;:1,&quot;radius&quot;:5.0,&quot;color&quot;:1275067136,&quot;thicc&quot;:3.0,&quot;refActorPlaceholder&quot;:[&quot;&lt;1&gt;&quot;,&quot;&lt;2&gt;&quot;,&quot;&lt;3&gt;&quot;,&quot;&lt;4&gt;&quot;],&quot;refActorRequireBuff&quot;:true,&quot;refActorBuffId&quot;:[587],&quot;refActorComparisonType&quot;:5,&quot;Filled&quot;:true},{&quot;Name&quot;:&quot;叉形闪电 边框&quot;,&quot;type&quot;:1,&quot;radius&quot;:5.0,&quot;color&quot;:4294924288,&quot;thicc&quot;:3.0,&quot;refActorPlaceholder&quot;:[&quot;&lt;1&gt;&quot;,&quot;&lt;2&gt;&quot;,&quot;&lt;3&gt;&quot;,&quot;&lt;4&gt;&quot;],&quot;refActorRequireBuff&quot;:true,&quot;refActorBuffId&quot;:[587],&quot;refActorComparisonType&quot;:5}]}&#xD;&#xA;&#xD;&#xA;~Lv2~{&quot;Name&quot;:&quot;Boss2 希拉狄哈剑斗士&quot;,&quot;Group&quot;:&quot;异闻/零式异闻希拉狄哈水道&quot;,&quot;ZoneLockH&quot;:[1075,1076],&quot;ElementsL&quot;:[{&quot;Name&quot;:&quot;刚武突击&quot;,&quot;type&quot;:3,&quot;refX&quot;:-50.0,&quot;refY&quot;:-30.0,&quot;offX&quot;:-50.0,&quot;offY&quot;:30.0,&quot;radius&quot;:50.0,&quot;color&quot;:846723327,&quot;thicc&quot;:1.0,&quot;refActorNPCNameID&quot;:11387,&quot;refActorRequireCast&quot;:true,&quot;refActorCastId&quot;:[30266,30267,30268,30269,30270,30296,30297,30298,30299,30300,30618,30619,30620,30621,30622],&quot;refActorUseCastTime&quot;:true,&quot;refActorCastTimeMax&quot;:15.0,&quot;refActorUseOvercast&quot;:true,&quot;FillStep&quot;:3.0,&quot;refActorComparisonType&quot;:6,&quot;includeHitbox&quot;:true,&quot;includeRotation&quot;:true,&quot;onlyUnTargetable&quot;:true,&quot;AdditionalRotation&quot;:1.5707964},{&quot;Name&quot;:&quot;咒怨残响&quot;,&quot;type&quot;:1,&quot;radius&quot;:6.0,&quot;color&quot;:838882815,&quot;thicc&quot;:5.0,&quot;refActorPlaceholder&quot;:[&quot;&lt;1&gt;&quot;,&quot;&lt;2&gt;&quot;,&quot;&lt;3&gt;&quot;,&quot;&lt;4&gt;&quot;],&quot;refActorRequireBuff&quot;:true,&quot;refActorBuffId&quot;:[3290],&quot;refActorBuffTimeMax&quot;:3.0,&quot;refActorComparisonType&quot;:5,&quot;Filled&quot;:true},{&quot;Name&quot;:&quot;咒怨残响 边框&quot;,&quot;type&quot;:1,&quot;radius&quot;:6.0,&quot;color&quot;:4294967295,&quot;thicc&quot;:3.0,&quot;refActorPlaceholder&quot;:[&quot;&lt;1&gt;&quot;,&quot;&lt;2&gt;&quot;,&quot;&lt;3&gt;&quot;,&quot;&lt;4&gt;&quot;],&quot;refActorRequireBuff&quot;:true,&quot;refActorBuffId&quot;:[3290],&quot;refActorBuffTimeMax&quot;:3.0,&quot;refActorComparisonType&quot;:5},{&quot;Name&quot;:&quot;重怨残响&quot;,&quot;type&quot;:1,&quot;radius&quot;:5.0,&quot;color&quot;:838926248,&quot;thicc&quot;:5.0,&quot;refActorPlaceholder&quot;:[&quot;&lt;1&gt;&quot;,&quot;&lt;2&gt;&quot;,&quot;&lt;3&gt;&quot;,&quot;&lt;4&gt;&quot;],&quot;refActorRequireBuff&quot;:true,&quot;refActorBuffId&quot;:[3293],&quot;refActorBuffTimeMax&quot;:13.3,&quot;refActorComparisonType&quot;:5,&quot;Filled&quot;:true},{&quot;Name&quot;:&quot;重怨残响 边框&quot;,&quot;type&quot;:1,&quot;radius&quot;:5.0,&quot;color&quot;:4278248703,&quot;overlayBGColor&quot;:4278190080,&quot;overlayTextColor&quot;:4278255592,&quot;overlayText&quot;:&quot;分摊&quot;,&quot;refActorPlaceholder&quot;:[&quot;&lt;1&gt;&quot;,&quot;&lt;2&gt;&quot;,&quot;&lt;3&gt;&quot;,&quot;&lt;4&gt;&quot;],&quot;refActorRequireBuff&quot;:true,&quot;refActorBuffId&quot;:[3293],&quot;refActorBuffTimeMax&quot;:13.3,&quot;refActorComparisonType&quot;:5},{&quot;Name&quot;:&quot;连咒残响&quot;,&quot;type&quot;:1,&quot;radius&quot;:5.0,&quot;color&quot;:855607808,&quot;thicc&quot;:5.0,&quot;refActorPlaceholder&quot;:[&quot;&lt;1&gt;&quot;,&quot;&lt;2&gt;&quot;,&quot;&lt;3&gt;&quot;,&quot;&lt;4&gt;&quot;],&quot;refActorRequireBuff&quot;:true,&quot;refActorBuffId&quot;:[3292],&quot;refActorBuffTimeMax&quot;:13.3,&quot;refActorComparisonType&quot;:5,&quot;Filled&quot;:true},{&quot;Name&quot;:&quot;连咒残响 边框&quot;,&quot;type&quot;:1,&quot;radius&quot;:5.0,&quot;color&quot;:4294907904,&quot;overlayBGColor&quot;:4292869888,&quot;overlayTextColor&quot;:4294918656,&quot;overlayText&quot;:&quot;地雷&quot;,&quot;refActorPlaceholder&quot;:[&quot;&lt;1&gt;&quot;,&quot;&lt;2&gt;&quot;,&quot;&lt;3&gt;&quot;,&quot;&lt;4&gt;&quot;],&quot;refActorRequireBuff&quot;:true,&quot;refActorBuffId&quot;:[3292],&quot;refActorBuffTimeMax&quot;:13.3,&quot;refActorComparisonType&quot;:5},{&quot;Name&quot;:&quot;(TRN/触发器)座下隆起&quot;,&quot;type&quot;:1,&quot;Enabled&quot;:false,&quot;radius&quot;:8.0,&quot;color&quot;:4278255607,&quot;refActorPlaceholder&quot;:[&quot;&lt;1&gt;&quot;,&quot;&lt;2&gt;&quot;,&quot;&lt;3&gt;&quot;,&quot;&lt;4&gt;&quot;],&quot;refActorComparisonType&quot;:5},{&quot;Name&quot;:&quot;黄金闪火&quot;,&quot;type&quot;:3,&quot;offY&quot;:20.0,&quot;radius&quot;:5.0,&quot;color&quot;:838926327,&quot;thicc&quot;:5.0,&quot;refActorDataID&quot;:14759,&quot;refActorRequireCast&quot;:true,&quot;refActorCastId&quot;:[30290,30319,30641],&quot;refActorCastTimeMin&quot;:2.0,&quot;refActorCastTimeMax&quot;:2.7,&quot;refActorUseOvercast&quot;:true,&quot;FillStep&quot;:1.0,&quot;refActorComparisonType&quot;:3,&quot;includeRotation&quot;:true},{&quot;Name&quot;:&quot;白银闪火&quot;,&quot;type&quot;:3,&quot;offY&quot;:20.0,&quot;radius&quot;:5.0,&quot;color&quot;:855638009,&quot;thicc&quot;:5.0,&quot;refActorDataID&quot;:14759,&quot;refActorRequireCast&quot;:true,&quot;refActorCastId&quot;:[30291,30292,30293,30320,30642],&quot;refActorCastTimeMin&quot;:2.0,&quot;refActorCastTimeMax&quot;:2.7,&quot;refActorUseOvercast&quot;:true,&quot;FillStep&quot;:1.0,&quot;refActorComparisonType&quot;:3,&quot;includeRotation&quot;:true,&quot;AdditionalRotation&quot;:3.1415927},{&quot;Name&quot;:&quot;咒怨大残响&quot;,&quot;type&quot;:1,&quot;radius&quot;:15.0,&quot;color&quot;:855638015,&quot;refActorPlaceholder&quot;:[&quot;&lt;1&gt;&quot;,&quot;&lt;2&gt;&quot;,&quot;&lt;3&gt;&quot;,&quot;&lt;4&gt;&quot;],&quot;refActorRequireBuff&quot;:true,&quot;refActorBuffId&quot;:[3291],&quot;refActorUseBuffTime&quot;:true,&quot;refActorBuffTimeMax&quot;:4.0,&quot;refActorComparisonType&quot;:5,&quot;Filled&quot;:true},{&quot;Name&quot;:&quot;咒怨大残响 边框&quot;,&quot;type&quot;:1,&quot;radius&quot;:15.0,&quot;color&quot;:4294967295,&quot;refActorPlaceholder&quot;:[&quot;&lt;1&gt;&quot;,&quot;&lt;2&gt;&quot;,&quot;&lt;3&gt;&quot;,&quot;&lt;4&gt;&quot;],&quot;refActorRequireBuff&quot;:true,&quot;refActorBuffId&quot;:[3291],&quot;refActorUseBuffTime&quot;:true,&quot;refActorBuffTimeMax&quot;:4.0,&quot;refActorComparisonType&quot;:5},{&quot;Name&quot;:&quot;塔&quot;,&quot;type&quot;:1,&quot;Enabled&quot;:false,&quot;radius&quot;:3.0,&quot;color&quot;:4278248703,&quot;thicc&quot;:3.0,&quot;overlayText&quot;:&quot;踩塔&quot;,&quot;refActorObjectID&quot;:1073885286,&quot;refActorComparisonType&quot;:2,&quot;tether&quot;:true}]}&#xD;&#xA;&#xD;&#xA;~Lv2~{&quot;Name&quot;:&quot;Boss3 鬼阴火&quot;,&quot;Group&quot;:&quot;异闻/零式异闻希拉狄哈水道&quot;,&quot;ZoneLockH&quot;:[1075,1076],&quot;ElementsL&quot;:[{&quot;Name&quot;:&quot;(TRN)石火豪冲&quot;,&quot;type&quot;:1,&quot;Enabled&quot;:false,&quot;radius&quot;:10.0,&quot;color&quot;:4278255557,&quot;refActorPlaceholder&quot;:[&quot;&lt;1&gt;&quot;,&quot;&lt;2&gt;&quot;,&quot;&lt;3&gt;&quot;,&quot;&lt;4&gt;&quot;],&quot;refActorComparisonType&quot;:5},{&quot;Name&quot;:&quot;(TRN)火球&quot;,&quot;type&quot;:1,&quot;Enabled&quot;:false,&quot;radius&quot;:12.0,&quot;color&quot;:838926334,&quot;refActorDataID&quot;:14768,&quot;refActorComparisonType&quot;:3,&quot;onlyVisible&quot;:true,&quot;Filled&quot;:true}]}">
+                <Actions />
+                <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
+              </Trigger>
+            </Triggers>
+          </Folder>
+        </Folders>
+        <Triggers />
       </Folder>
     </Folders>
     <Triggers>
