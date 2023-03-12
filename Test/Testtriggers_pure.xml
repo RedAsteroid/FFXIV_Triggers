@@ -2614,7 +2614,7 @@
               </Trigger>
               <Trigger Enabled="true" Name="1. 末世宣言" Id="7704d874-6c42-486a-80d7-32c0caddaab7" RegularExpression="^.{14} (?:\w+) (15|16):(?&lt;sid&gt;[^:]*):(?&lt;sname&gt;[^:]*):484B:(?&lt;ability&gt;(?:[^:]|: )*?):(?&lt;tid&gt;[^:]*):(?&lt;tname&gt;[^:]*):(?&lt;flags&gt;[^:]*):(?&lt;damage&gt;[^:]*)(?::[^:]*){14}:(?&lt;targetCurrentHp&gt;[^:]*):(?&lt;targetMaxHp&gt;[^:]*):(?&lt;targetCurrentMp&gt;[^:]*):(?&lt;targetMaxMp&gt;[^:]*)(?::[^:]*){2}:(?&lt;targetX&gt;[^:]*):(?&lt;targetY&gt;[^:]*):(?&lt;targetZ&gt;[^:]*):(?&lt;targetHeading&gt;[^:]*):(?&lt;currentHp&gt;[^:]*):(?&lt;maxHp&gt;[^:]*):(?&lt;currentMp&gt;[^:]*):(?&lt;maxMp&gt;[^:]*)(?::[^:]*){2}:(?&lt;x&gt;[^:]*):(?&lt;y&gt;[^:]*):(?&lt;z&gt;[^:]*):(?&lt;heading&gt;[^:]*):(?&lt;sequence&gt;[^:]*):(?&lt;targetIndex&gt;[^:]*):(?&lt;targetCount&gt;[^:]*)(?:$|:)" PeriodRefire="Deny" RefirePeriodExpression="15000">
                 <Actions>
-                  <Action OrderNumber="1" JsonEndpointExpression="http://127.0.0.1:47774/?namespace=moshixuanyan&amp;destroyAt=5500" JsonPayloadExpression="{&quot;Name&quot;:&quot;末世宣言&quot;,&quot;type&quot;:4,&quot;radius&quot;:25.0,&quot;coneAngleMin&quot;:-45,&quot;coneAngleMax&quot;:45,&quot;color&quot;:4281073451,&quot;refActorModelID&quot;:1357,&quot;FillStep&quot;:1.0,&quot;refActorComparisonType&quot;:1,&quot;includeRotation&quot;:true,&quot;onlyVisible&quot;:true,&quot;Filled&quot;:true}" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="GenericJson">
+                  <Action OrderNumber="1" JsonEndpointExpression="http://127.0.0.1:47774/?namespace=moshixuanyan&amp;destroyAt=5500" JsonPayloadExpression="{&quot;Name&quot;:&quot;末世宣言&quot;,&quot;type&quot;:4,&quot;radius&quot;:25.0,&quot;coneAngleMin&quot;:-45,&quot;coneAngleMax&quot;:45,&quot;color&quot;:4278255557,&quot;refActorModelID&quot;:1357,&quot;FillStep&quot;:1.0,&quot;refActorComparisonType&quot;:1,&quot;includeRotation&quot;:true,&quot;onlyVisible&quot;:true,&quot;Filled&quot;:true}" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="GenericJson">
                     <Condition Enabled="false" Grouping="And" />
                   </Action>
                 </Actions>
@@ -2820,7 +2820,7 @@
                     <Folders>
                       <Folder Id="b70bbb85-d0ff-47ef-b717-d1dc9672b47c" Name="1.5前半" Enabled="true">
                         <Folders>
-                          <Folder Id="cd1c162d-1a53-4540-8243-4efe626a6f27" Name="错误记录组" Enabled="false">
+                          <Folder Id="cd1c162d-1a53-4540-8243-4efe626a6f27" Name="错误记录组" Enabled="true">
                             <Folders />
                             <Triggers>
                               <Trigger Enabled="true" Name="错误Buff记录" Id="75e9c5d6-10ae-43f6-9459-758497eb6b03" RegularExpression="^.{14} StatusAdd 1A:46(?&lt;type&gt;(1|3|4)):(?&lt;effect&gt;(?:[^:]|: )*?):(?&lt;duration&gt;[^:]*):(?&lt;sid&gt;[^:]*):(?&lt;sname&gt;[^:]*):(?&lt;tid&gt;[^:]*):(?&lt;tname&gt;[^:]*):(?&lt;count&gt;[^:]*):(?&lt;targetMaxHp&gt;[^:]*):(?&lt;sourceMaxHp&gt;[^:]*)(?:$|:)">
@@ -2943,7 +2943,7 @@
                             </Actions>
                             <Condition Enabled="false" Grouping="Or" />
                           </Trigger>
-                          <Trigger Enabled="false" Sequential="True" Name="自身Buff获取2" Id="d2e24f94-8d64-4513-a229-f9f238b8ff46" RegularExpression="^.{14} StatusAdd 1A:46(?&lt;type&gt;(1|2|3|4)):(?&lt;effect&gt;(?:[^:]|: )*?):(?&lt;duration&gt;[^:]*):(?&lt;sid&gt;[^:]*):(?&lt;sname&gt;[^:]*):(?&lt;tid&gt;[^:]*):(?&lt;tname&gt;[^:]*):(?&lt;count&gt;[^:]*):(?&lt;targetMaxHp&gt;[^:]*):(?&lt;sourceMaxHp&gt;[^:]*)(?:$|:)" PeriodRefire="Deny" RefirePeriodExpression="30000">
+                          <Trigger Enabled="true" Sequential="True" Name="自身Buff获取2" Id="d2e24f94-8d64-4513-a229-f9f238b8ff46" RegularExpression="^.{14} StatusAdd 1A:46(?&lt;type&gt;(1|2|3|4)):(?&lt;effect&gt;(?:[^:]|: )*?):(?&lt;duration&gt;[^:]*):(?&lt;sid&gt;[^:]*):(?&lt;sname&gt;[^:]*):(?&lt;tid&gt;[^:]*):(?&lt;tname&gt;[^:]*):(?&lt;count&gt;[^:]*):(?&lt;targetMaxHp&gt;[^:]*):(?&lt;sourceMaxHp&gt;[^:]*)(?:$|:)" PeriodRefire="Deny" RefirePeriodExpression="30000">
                             <Actions>
                               <Action OrderNumber="1" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="LogMessage">
                                 <Condition Enabled="false" Grouping="Or" />
@@ -2986,7 +2986,7 @@
                             </Actions>
                             <Condition Enabled="false" Grouping="Or" />
                           </Trigger>
-                          <Trigger Enabled="false" Sequential="True" Name="自身Buff获取" Id="08055da3-f92a-4f04-8a1c-6556ec409526" RegularExpression="^.{14} StatusAdd 1A:46(?&lt;type&gt;(1|2|3|4)):(?&lt;effect&gt;(?:[^:]|: )*?):(?&lt;duration&gt;[^:]*):(?&lt;sid&gt;[^:]*):(?&lt;sname&gt;[^:]*):(?&lt;tid&gt;[^:]*):(?&lt;tname&gt;[^:]*):(?&lt;count&gt;[^:]*):(?&lt;targetMaxHp&gt;[^:]*):(?&lt;sourceMaxHp&gt;[^:]*)(?:$|:)" PeriodRefire="Deny" RefirePeriodExpression="30000">
+                          <Trigger Enabled="true" Sequential="True" Name="自身Buff获取" Id="08055da3-f92a-4f04-8a1c-6556ec409526" RegularExpression="^.{14} StatusAdd 1A:46(?&lt;type&gt;(1|2|3|4)):(?&lt;effect&gt;(?:[^:]|: )*?):(?&lt;duration&gt;[^:]*):(?&lt;sid&gt;[^:]*):(?&lt;sname&gt;[^:]*):(?&lt;tid&gt;[^:]*):(?&lt;tname&gt;[^:]*):(?&lt;count&gt;[^:]*):(?&lt;targetMaxHp&gt;[^:]*):(?&lt;sourceMaxHp&gt;[^:]*)(?:$|:)" PeriodRefire="Deny" RefirePeriodExpression="30000">
                             <Actions>
                               <Action OrderNumber="1" OBSEndPoint="ws://${_const[OBSWebsocketEndpoint]}:${_const[OBSWebsocketPort]}" OBSPassword="${_const[OBSWebsocketPassword]}" TextAuraFontSize="9" TextAuraFontName="宋体" TriggerOp="CancelTrigger" TriggerId="d2e24f94-8d64-4513-a229-f9f238b8ff46" ActionType="Trigger">
                                 <Condition Enabled="false" Grouping="Or" />
@@ -3314,7 +3314,7 @@
                   </Trigger>
                 </Triggers>
               </Folder>
-              <Folder Id="f077f032-b571-4a5f-bdc0-4d2bbcadcf5e" Name="1. 时停 仙人指路" Enabled="true">
+              <Folder Id="f077f032-b571-4a5f-bdc0-4d2bbcadcf5e" Name="1. 时停 指路" Enabled="true">
                 <Folders>
                   <Folder Id="48a61b39-0cec-4130-b207-dd730a667f93" Name="时停魔改（需要P2记录双bossid）" Enabled="true">
                     <Folders />
@@ -3552,7 +3552,7 @@
                   </Trigger>
                 </Triggers>
               </Folder>
-              <Folder Id="7bcafb10-db3b-485e-9664-82d53aadbbf9" Name="7. 二运指引-云玩家改[施工完毕测试阶段]" Enabled="false">
+              <Folder Id="7bcafb10-db3b-485e-9664-82d53aadbbf9" Name="7. 二运指引-云玩家改[施工完毕测试阶段]" Enabled="true">
                 <Folders>
                   <Folder Id="361edb80-d26c-4e57-ae6e-c09bb2ff658d" Name="云玩家改" Enabled="true">
                     <Folders>
@@ -4602,7 +4602,7 @@
                   </Trigger>
                 </Triggers>
               </Folder>
-              <Folder Id="909ee427-703d-46b2-bc28-478821e619e6" Name="8. 一运大火炎放射指引[施工完毕测试阶段]" Enabled="false">
+              <Folder Id="909ee427-703d-46b2-bc28-478821e619e6" Name="8. 一运大火炎放射指引[施工完毕测试阶段]" Enabled="true">
                 <Folders />
                 <Triggers>
                   <Trigger Enabled="true" Sequential="True" Name="预览大火炎放射引导位置" Id="d3626c47-25aa-4935-99fb-d431de85a298" RegularExpression="^.{14} (?:\w+) (15|16):(?&lt;sid&gt;[^:]*):(?&lt;sname&gt;[^:]*):485C:(?&lt;ability&gt;(?:[^:]|: )*?):(?&lt;tid&gt;[^:]*):(?&lt;tname&gt;[^:]*):(?&lt;flags&gt;[^:]*):(?&lt;damage&gt;[^:]*)(?::[^:]*){14}:(?&lt;targetCurrentHp&gt;[^:]*):(?&lt;targetMaxHp&gt;[^:]*):(?&lt;targetCurrentMp&gt;[^:]*):(?&lt;targetMaxMp&gt;[^:]*)(?::[^:]*){2}:(?&lt;targetX&gt;[^:]*):(?&lt;targetY&gt;[^:]*):(?&lt;targetZ&gt;[^:]*):(?&lt;targetHeading&gt;[^:]*):(?&lt;currentHp&gt;[^:]*):(?&lt;maxHp&gt;[^:]*):(?&lt;currentMp&gt;[^:]*):(?&lt;maxMp&gt;[^:]*)(?::[^:]*){2}:(?&lt;x&gt;[^:]*):(?&lt;y&gt;[^:]*):(?&lt;z&gt;[^:]*):(?&lt;heading&gt;[^:]*):(?&lt;sequence&gt;[^:]*):(?&lt;targetIndex&gt;[^:]*):(?&lt;targetCount&gt;[^:]*)(?:$|:)" PeriodRefire="Deny" RefirePeriodExpression="1000">
@@ -4628,28 +4628,28 @@
                       <Action OrderNumber="5" OBSEndPoint="ws://${_const[OBSWebsocketEndpoint]}:${_const[OBSWebsocketPort]}" OBSPassword="${_const[OBSWebsocketPassword]}" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Placeholder" Description="坦克职能 ST" DescriptionOverride="True">
                         <Condition Enabled="false" Grouping="Or" />
                       </Action>
-                      <Action OrderNumber="6" JsonEndpointExpression="http://127.0.0.1:47774/?namespace=preADST&amp;destroyAt=15000,COMBAT_EXIT,TERRITORY_CHANGE" JsonPayloadExpression="{&quot;Name&quot;:&quot;ST AD引导预览&quot;,&quot;refX&quot;:82.0,&quot;refY&quot;:94.5,&quot;radius&quot;:0.4,&quot;color&quot;:4294963440,&quot;overlayBGColor&quot;:4278190080,&quot;overlayTextColor&quot;:4278255614,&quot;thicc&quot;:3.0,&quot;overlayText&quot;:&quot;准备引导喷火&quot;}" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="GenericJson">
+                      <Action OrderNumber="6" JsonEndpointExpression="http://127.0.0.1:47774/?namespace=preADST&amp;destroyAt=15000,COMBAT_EXIT,TERRITORY_CHANGE" JsonPayloadExpression="{&quot;Name&quot;:&quot;ST AD引导预览&quot;,&quot;refX&quot;:82.35763,&quot;refY&quot;:93.06781,&quot;radius&quot;:0.4,&quot;color&quot;:4294963440,&quot;overlayBGColor&quot;:4278190080,&quot;overlayTextColor&quot;:4278255614,&quot;thicc&quot;:3.0,&quot;overlayText&quot;:&quot;准备引导喷火&quot;}" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="GenericJson">
                         <Condition Enabled="true" Grouping="And">
                           <ConditionSingle Enabled="true" ExpressionL="${numeric:${_ffxiventity[${var:绝亚_残暴正义号id_Clone}].x}-100}" ExpressionTypeL="Numeric" ExpressionR="0" ExpressionTypeR="Numeric" ConditionType="NumericLess" />
                           <ConditionSingle Enabled="true" ExpressionL="${numeric:${_ffxiventity[${var:绝亚_至尊亚历山大id_Clone}].y}-100}" ExpressionTypeL="Numeric" ExpressionR="0" ExpressionTypeR="Numeric" ConditionType="NumericGreater" />
                           <ConditionSingle Enabled="true" ExpressionL="${var:TEA_Team_Role_Toupper}" ExpressionTypeL="String" ExpressionR="st" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                         </Condition>
                       </Action>
-                      <Action OrderNumber="7" JsonEndpointExpression="http://127.0.0.1:47774/?namespace=preCDST&amp;destroyAt=15000,COMBAT_EXIT,TERRITORY_CHANGE" JsonPayloadExpression="{&quot;Name&quot;:&quot;ST CD引导预览&quot;,&quot;refX&quot;:82.2,&quot;refY&quot;:105.5,&quot;radius&quot;:0.4,&quot;color&quot;:4294963440,&quot;overlayBGColor&quot;:4278190080,&quot;overlayTextColor&quot;:4278255614,&quot;thicc&quot;:3.0,&quot;overlayText&quot;:&quot;准备引导喷火&quot;}" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="GenericJson">
+                      <Action OrderNumber="7" JsonEndpointExpression="http://127.0.0.1:47774/?namespace=preCDST&amp;destroyAt=15000,COMBAT_EXIT,TERRITORY_CHANGE" JsonPayloadExpression="{&quot;Name&quot;:&quot;ST CD引导预览&quot;,&quot;refX&quot;:82.34738,&quot;refY&quot;:106.949104,&quot;refZ&quot;:-3.8146973E-06,&quot;radius&quot;:0.4,&quot;color&quot;:4294963440,&quot;overlayBGColor&quot;:4278190080,&quot;overlayTextColor&quot;:4278255614,&quot;thicc&quot;:3.0,&quot;overlayText&quot;:&quot;准备引导喷火&quot;}" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="GenericJson">
                         <Condition Enabled="true" Grouping="And">
                           <ConditionSingle Enabled="true" ExpressionL="${numeric:${_ffxiventity[${var:绝亚_残暴正义号id_Clone}].x}-100}" ExpressionTypeL="Numeric" ExpressionR="0" ExpressionTypeR="Numeric" ConditionType="NumericLess" />
                           <ConditionSingle Enabled="true" ExpressionL="${numeric:${_ffxiventity[${var:绝亚_至尊亚历山大id_Clone}].y}-100}" ExpressionTypeL="Numeric" ExpressionR="0" ExpressionTypeR="Numeric" ConditionType="NumericLess" />
                           <ConditionSingle Enabled="true" ExpressionL="${var:TEA_Team_Role_Toupper}" ExpressionTypeL="String" ExpressionR="st" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                         </Condition>
                       </Action>
-                      <Action OrderNumber="8" JsonEndpointExpression="http://127.0.0.1:47774/?namespace=preBCST&amp;destroyAt=15000,COMBAT_EXIT,TERRITORY_CHANGE" JsonPayloadExpression="{&quot;Name&quot;:&quot;ST BC引导预览&quot;,&quot;refX&quot;:117.9,&quot;refY&quot;:105.7,&quot;refZ&quot;:1.9073486E-06,&quot;radius&quot;:0.4,&quot;color&quot;:4294963440,&quot;overlayBGColor&quot;:4278190080,&quot;overlayTextColor&quot;:4278255614,&quot;thicc&quot;:3.0,&quot;overlayText&quot;:&quot;准备引导喷火&quot;}" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="GenericJson">
+                      <Action OrderNumber="8" JsonEndpointExpression="http://127.0.0.1:47774/?namespace=preBCST&amp;destroyAt=15000,COMBAT_EXIT,TERRITORY_CHANGE" JsonPayloadExpression="{&quot;Name&quot;:&quot;ST BC引导预览&quot;,&quot;refX&quot;:117.67293,&quot;refY&quot;:106.9228,&quot;radius&quot;:0.4,&quot;color&quot;:4294963440,&quot;overlayBGColor&quot;:4278190080,&quot;overlayTextColor&quot;:4278255614,&quot;thicc&quot;:3.0,&quot;overlayText&quot;:&quot;准备引导喷火&quot;}" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="GenericJson">
                         <Condition Enabled="true" Grouping="And">
                           <ConditionSingle Enabled="true" ExpressionL="${numeric:${_ffxiventity[${var:绝亚_残暴正义号id_Clone}].x}-100}" ExpressionTypeL="Numeric" ExpressionR="0" ExpressionTypeR="Numeric" ConditionType="NumericGreater" />
                           <ConditionSingle Enabled="true" ExpressionL="${numeric:${_ffxiventity[${var:绝亚_至尊亚历山大id_Clone}].y}-100}" ExpressionTypeL="Numeric" ExpressionR="0" ExpressionTypeR="Numeric" ConditionType="NumericLess" />
                           <ConditionSingle Enabled="true" ExpressionL="${var:TEA_Team_Role_Toupper}" ExpressionTypeL="String" ExpressionR="st" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                         </Condition>
                       </Action>
-                      <Action OrderNumber="9" JsonEndpointExpression="http://127.0.0.1:47774/?namespace=preABST&amp;destroyAt=15000,COMBAT_EXIT,TERRITORY_CHANGE" JsonPayloadExpression="{&quot;Name&quot;:&quot;ST AB引导预览&quot;,&quot;refX&quot;:117.8,&quot;refY&quot;:94.2,&quot;radius&quot;:0.4,&quot;color&quot;:4294963440,&quot;overlayBGColor&quot;:4278190080,&quot;overlayTextColor&quot;:4278255614,&quot;thicc&quot;:3.0,&quot;overlayText&quot;:&quot;准备引导喷火&quot;}" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="GenericJson">
+                      <Action OrderNumber="9" JsonEndpointExpression="http://127.0.0.1:47774/?namespace=preABST&amp;destroyAt=15000,COMBAT_EXIT,TERRITORY_CHANGE" JsonPayloadExpression="{&quot;Name&quot;:&quot;ST AB引导预览&quot;,&quot;refX&quot;:117.69429,&quot;refY&quot;:93.101135,&quot;refZ&quot;:3.8146973E-06,&quot;radius&quot;:0.4,&quot;color&quot;:4294963440,&quot;overlayBGColor&quot;:4278190080,&quot;overlayTextColor&quot;:4278255614,&quot;thicc&quot;:3.0,&quot;overlayText&quot;:&quot;准备引导喷火&quot;}" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="GenericJson">
                         <Condition Enabled="true" Grouping="And">
                           <ConditionSingle Enabled="true" ExpressionL="${numeric:${_ffxiventity[${var:绝亚_残暴正义号id_Clone}].x}-100}" ExpressionTypeL="Numeric" ExpressionR="0" ExpressionTypeR="Numeric" ConditionType="NumericGreater" />
                           <ConditionSingle Enabled="true" ExpressionL="${numeric:${_ffxiventity[${var:绝亚_至尊亚历山大id_Clone}].y}-100}" ExpressionTypeL="Numeric" ExpressionR="0" ExpressionTypeR="Numeric" ConditionType="NumericGreater" />
@@ -4778,7 +4778,7 @@
                       <Action OrderNumber="17" OBSEndPoint="ws://${_const[OBSWebsocketEndpoint]}:${_const[OBSWebsocketPort]}" OBSPassword="${_const[OBSWebsocketPassword]}" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Placeholder" Description="坦克职能 ST" DescriptionOverride="True">
                         <Condition Enabled="false" Grouping="Or" />
                       </Action>
-                      <Action OrderNumber="18" JsonEndpointExpression="http://127.0.0.1:47774/?namespace=ADST&amp;destroyAt=15000,COMBAT_EXIT,TERRITORY_CHANGE" JsonPayloadExpression="{&quot;Name&quot;:&quot;ST AD引导&quot;,&quot;refX&quot;:82.0,&quot;refY&quot;:94.5,&quot;radius&quot;:0.4,&quot;color&quot;:4294963440,&quot;overlayBGColor&quot;:4278190080,&quot;overlayTextColor&quot;:4278255614,&quot;thicc&quot;:3.0,&quot;tether&quot;:true}" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="GenericJson">
+                      <Action OrderNumber="18" JsonEndpointExpression="http://127.0.0.1:47774/?namespace=ADST&amp;destroyAt=15000,COMBAT_EXIT,TERRITORY_CHANGE" JsonPayloadExpression="{&quot;Name&quot;:&quot;ST AD引导&quot;,&quot;refX&quot;:82.358,&quot;refY&quot;:93.068,&quot;radius&quot;:0.4,&quot;color&quot;:4294963440,&quot;overlayBGColor&quot;:4278190080,&quot;overlayTextColor&quot;:4278255614,&quot;thicc&quot;:3.0,&quot;tether&quot;:true}" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="GenericJson">
                         <Condition Enabled="true" Grouping="And">
                           <ConditionSingle Enabled="true" ExpressionL="${numeric:${_ffxiventity[${var:绝亚_残暴正义号id_Clone}].x}-100}" ExpressionTypeL="Numeric" ExpressionR="0" ExpressionTypeR="Numeric" ConditionType="NumericLess" />
                           <ConditionSingle Enabled="true" ExpressionL="${numeric:${_ffxiventity[${var:绝亚_至尊亚历山大id_Clone}].y}-100}" ExpressionTypeL="Numeric" ExpressionR="0" ExpressionTypeR="Numeric" ConditionType="NumericGreater" />
@@ -4786,7 +4786,7 @@
                           <ConditionSingle Enabled="true" ExpressionL="${var:绝亚_结晶破碎_Clone}" ExpressionTypeL="Numeric" ExpressionR="4" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
                         </Condition>
                       </Action>
-                      <Action OrderNumber="19" JsonEndpointExpression="http://127.0.0.1:47774/?namespace=CDST&amp;destroyAt=15000,COMBAT_EXIT,TERRITORY_CHANGE" JsonPayloadExpression="{&quot;Name&quot;:&quot;ST CD引导&quot;,&quot;refX&quot;:82.2,&quot;refY&quot;:105.5,&quot;radius&quot;:0.4,&quot;color&quot;:4294963440,&quot;overlayBGColor&quot;:4278190080,&quot;overlayTextColor&quot;:4278255614,&quot;thicc&quot;:3.0,&quot;tether&quot;:true}" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="GenericJson">
+                      <Action OrderNumber="19" JsonEndpointExpression="http://127.0.0.1:47774/?namespace=CDST&amp;destroyAt=15000,COMBAT_EXIT,TERRITORY_CHANGE" JsonPayloadExpression="{&quot;Name&quot;:&quot;ST CD引导&quot;,&quot;refX&quot;:82.347,&quot;refY&quot;:106.949,&quot;radius&quot;:0.4,&quot;color&quot;:4294963440,&quot;overlayBGColor&quot;:4278190080,&quot;overlayTextColor&quot;:4278255614,&quot;thicc&quot;:3.0,&quot;tether&quot;:true}" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="GenericJson">
                         <Condition Enabled="true" Grouping="And">
                           <ConditionSingle Enabled="true" ExpressionL="${numeric:${_ffxiventity[${var:绝亚_残暴正义号id_Clone}].x}-100}" ExpressionTypeL="Numeric" ExpressionR="0" ExpressionTypeR="Numeric" ConditionType="NumericLess" />
                           <ConditionSingle Enabled="true" ExpressionL="${numeric:${_ffxiventity[${var:绝亚_至尊亚历山大id_Clone}].y}-100}" ExpressionTypeL="Numeric" ExpressionR="0" ExpressionTypeR="Numeric" ConditionType="NumericLess" />
@@ -4794,7 +4794,7 @@
                           <ConditionSingle Enabled="true" ExpressionL="${var:绝亚_结晶破碎_Clone}" ExpressionTypeL="Numeric" ExpressionR="4" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
                         </Condition>
                       </Action>
-                      <Action OrderNumber="20" JsonEndpointExpression="http://127.0.0.1:47774/?namespace=BCST&amp;destroyAt=15000,COMBAT_EXIT,TERRITORY_CHANGE" JsonPayloadExpression="{&quot;Name&quot;:&quot;ST BC引导&quot;,&quot;refX&quot;:117.9,&quot;refY&quot;:105.7,&quot;refZ&quot;:1.9073486E-06,&quot;radius&quot;:0.4,&quot;color&quot;:4294963440,&quot;overlayBGColor&quot;:4278190080,&quot;overlayTextColor&quot;:4278255614,&quot;thicc&quot;:3.0,&quot;tether&quot;:true}" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="GenericJson">
+                      <Action OrderNumber="20" JsonEndpointExpression="http://127.0.0.1:47774/?namespace=BCST&amp;destroyAt=15000,COMBAT_EXIT,TERRITORY_CHANGE" JsonPayloadExpression="{&quot;Name&quot;:&quot;ST BC引导&quot;,&quot;refX&quot;:117.673,&quot;refY&quot;:106.923,&quot;refZ&quot;:1.9073486E-06,&quot;radius&quot;:0.4,&quot;color&quot;:4294963440,&quot;overlayBGColor&quot;:4278190080,&quot;overlayTextColor&quot;:4278255614,&quot;thicc&quot;:3.0,&quot;tether&quot;:true}" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="GenericJson">
                         <Condition Enabled="true" Grouping="And">
                           <ConditionSingle Enabled="true" ExpressionL="${numeric:${_ffxiventity[${var:绝亚_残暴正义号id_Clone}].x}-100}" ExpressionTypeL="Numeric" ExpressionR="0" ExpressionTypeR="Numeric" ConditionType="NumericGreater" />
                           <ConditionSingle Enabled="true" ExpressionL="${numeric:${_ffxiventity[${var:绝亚_至尊亚历山大id_Clone}].y}-100}" ExpressionTypeL="Numeric" ExpressionR="0" ExpressionTypeR="Numeric" ConditionType="NumericLess" />
@@ -4802,7 +4802,7 @@
                           <ConditionSingle Enabled="true" ExpressionL="${var:绝亚_结晶破碎_Clone}" ExpressionTypeL="Numeric" ExpressionR="4" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
                         </Condition>
                       </Action>
-                      <Action OrderNumber="21" JsonEndpointExpression="http://127.0.0.1:47774/?namespace=ABST&amp;destroyAt=15000,COMBAT_EXIT,TERRITORY_CHANGE" JsonPayloadExpression="{&quot;Name&quot;:&quot;ST AB引导&quot;,&quot;refX&quot;:117.8,&quot;refY&quot;:94.2,&quot;radius&quot;:0.4,&quot;color&quot;:4294963440,&quot;overlayBGColor&quot;:4278190080,&quot;overlayTextColor&quot;:4278255614,&quot;thicc&quot;:3.0,&quot;tether&quot;:true}" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="GenericJson">
+                      <Action OrderNumber="21" JsonEndpointExpression="http://127.0.0.1:47774/?namespace=ABST&amp;destroyAt=15000,COMBAT_EXIT,TERRITORY_CHANGE" JsonPayloadExpression="{&quot;Name&quot;:&quot;ST AB引导&quot;,&quot;refX&quot;:117.694,&quot;refY&quot;:93.101,&quot;radius&quot;:0.4,&quot;color&quot;:4294963440,&quot;overlayBGColor&quot;:4278190080,&quot;overlayTextColor&quot;:4278255614,&quot;thicc&quot;:3.0,&quot;tether&quot;:true}" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="GenericJson">
                         <Condition Enabled="true" Grouping="And">
                           <ConditionSingle Enabled="true" ExpressionL="${numeric:${_ffxiventity[${var:绝亚_残暴正义号id_Clone}].x}-100}" ExpressionTypeL="Numeric" ExpressionR="0" ExpressionTypeR="Numeric" ConditionType="NumericGreater" />
                           <ConditionSingle Enabled="true" ExpressionL="${numeric:${_ffxiventity[${var:绝亚_至尊亚历山大id_Clone}].y}-100}" ExpressionTypeL="Numeric" ExpressionR="0" ExpressionTypeR="Numeric" ConditionType="NumericGreater" />
@@ -4959,7 +4959,7 @@
               </Trigger>
               <Trigger Enabled="true" Name="3. 二运末世宣言" Id="ed317e98-3514-42be-ba43-4c0a0dbf6b83" RegularExpression="^.{14} (?:\w+) (15|16):(?&lt;sid&gt;[^:]*):(?&lt;sname&gt;[^:]*):484B:(?&lt;ability&gt;(?:[^:]|: )*?):(?&lt;tid&gt;[^:]*):(?&lt;tname&gt;[^:]*):(?&lt;flags&gt;[^:]*):(?&lt;damage&gt;[^:]*)(?::[^:]*){14}:(?&lt;targetCurrentHp&gt;[^:]*):(?&lt;targetMaxHp&gt;[^:]*):(?&lt;targetCurrentMp&gt;[^:]*):(?&lt;targetMaxMp&gt;[^:]*)(?::[^:]*){2}:(?&lt;targetX&gt;[^:]*):(?&lt;targetY&gt;[^:]*):(?&lt;targetZ&gt;[^:]*):(?&lt;targetHeading&gt;[^:]*):(?&lt;currentHp&gt;[^:]*):(?&lt;maxHp&gt;[^:]*):(?&lt;currentMp&gt;[^:]*):(?&lt;maxMp&gt;[^:]*)(?::[^:]*){2}:(?&lt;x&gt;[^:]*):(?&lt;y&gt;[^:]*):(?&lt;z&gt;[^:]*):(?&lt;heading&gt;[^:]*):(?&lt;sequence&gt;[^:]*):(?&lt;targetIndex&gt;[^:]*):(?&lt;targetCount&gt;[^:]*)(?:$|:)" PeriodRefire="Deny" RefirePeriodExpression="15000">
                 <Actions>
-                  <Action OrderNumber="1" JsonEndpointExpression="http://127.0.0.1:47774/?namespace=moshixuanyan&amp;destroyAt=5500" JsonPayloadExpression="{&quot;Name&quot;:&quot;末世宣言&quot;,&quot;type&quot;:4,&quot;radius&quot;:25.0,&quot;coneAngleMin&quot;:-45,&quot;coneAngleMax&quot;:45,&quot;color&quot;:4281073451,&quot;refActorModelID&quot;:1357,&quot;FillStep&quot;:1.0,&quot;refActorComparisonType&quot;:1,&quot;includeRotation&quot;:true,&quot;onlyVisible&quot;:true,&quot;Filled&quot;:true}" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="GenericJson">
+                  <Action OrderNumber="1" JsonEndpointExpression="http://127.0.0.1:47774/?namespace=moshixuanyan&amp;destroyAt=5500" JsonPayloadExpression="{&quot;Name&quot;:&quot;末世宣言&quot;,&quot;type&quot;:4,&quot;radius&quot;:25.0,&quot;coneAngleMin&quot;:-45,&quot;coneAngleMax&quot;:45,&quot;color&quot;:4278255557,&quot;refActorModelID&quot;:1357,&quot;FillStep&quot;:1.0,&quot;refActorComparisonType&quot;:1,&quot;includeRotation&quot;:true,&quot;onlyVisible&quot;:true,&quot;Filled&quot;:true}" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="GenericJson">
                     <Condition Enabled="false" Grouping="And" />
                   </Action>
                 </Actions>
@@ -6223,7 +6223,7 @@
           </Folder>
         </Folders>
         <Triggers>
-          <Trigger Enabled="true" Name="修改日期：2023-03-11 初步完成一运大火炎放射指引，二运指引，进行了简单维修。" Id="066ef6cf-5add-4d77-874a-4198186a1443" RegularExpression="">
+          <Trigger Enabled="true" Name="修改日期：2023-03-12 初步完成一运大火炎放射指引，二运指引，一运st引导太近了已修复。" Id="066ef6cf-5add-4d77-874a-4198186a1443" RegularExpression="">
             <Actions />
             <Condition Enabled="false" Grouping="Or" />
           </Trigger>
@@ -8699,7 +8699,7 @@
                   </Trigger>
                 </Triggers>
               </Folder>
-              <Folder FFXIVZoneFilterEnabled="True" FfxivZoneFilterRegularExpression="^969$" Id="a5a167cb-c195-47df-a8f5-d6b2e8966b12" Name="魔导神门巴别塔[debug]" Enabled="false">
+              <Folder FFXIVZoneFilterEnabled="True" FfxivZoneFilterRegularExpression="^969$" Id="a5a167cb-c195-47df-a8f5-d6b2e8966b12" Name="魔导神门巴别塔[debug]" Enabled="true">
                 <Folders>
                   <Folder Id="11325f23-0fcb-4766-bf63-a6843960c814" Name="Boss1 - 巴尔纳伯" Enabled="true">
                     <Folders />
