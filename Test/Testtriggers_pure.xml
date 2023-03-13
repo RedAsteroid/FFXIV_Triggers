@@ -558,7 +558,7 @@
           </Trigger>
         </Triggers>
       </Folder>
-      <Folder Id="bc5fbeed-b405-479b-9aca-4c55396556aa" Name="1. 【绝亚】亚历山大绝境战 2023.03.11" Enabled="true">
+      <Folder Id="bc5fbeed-b405-479b-9aca-4c55396556aa" Name="1. 【绝亚】亚历山大绝境战 2023.03.13" Enabled="true">
         <Folders>
           <Folder FFXIVZoneFilterEnabled="True" FfxivZoneFilterRegularExpression="^887$" Id="22270b51-3fd1-4930-a115-db17318e0fd0" Name="P1" Enabled="true">
             <Folders>
@@ -2820,7 +2820,7 @@
                     <Folders>
                       <Folder Id="b70bbb85-d0ff-47ef-b717-d1dc9672b47c" Name="1.5前半" Enabled="true">
                         <Folders>
-                          <Folder Id="cd1c162d-1a53-4540-8243-4efe626a6f27" Name="错误记录组" Enabled="true">
+                          <Folder Id="cd1c162d-1a53-4540-8243-4efe626a6f27" Name="错误记录组" Enabled="false">
                             <Folders />
                             <Triggers>
                               <Trigger Enabled="true" Name="错误Buff记录" Id="75e9c5d6-10ae-43f6-9459-758497eb6b03" RegularExpression="^.{14} StatusAdd 1A:46(?&lt;type&gt;(1|3|4)):(?&lt;effect&gt;(?:[^:]|: )*?):(?&lt;duration&gt;[^:]*):(?&lt;sid&gt;[^:]*):(?&lt;sname&gt;[^:]*):(?&lt;tid&gt;[^:]*):(?&lt;tname&gt;[^:]*):(?&lt;count&gt;[^:]*):(?&lt;targetMaxHp&gt;[^:]*):(?&lt;sourceMaxHp&gt;[^:]*)(?:$|:)">
@@ -2943,7 +2943,7 @@
                             </Actions>
                             <Condition Enabled="false" Grouping="Or" />
                           </Trigger>
-                          <Trigger Enabled="true" Sequential="True" Name="自身Buff获取2" Id="d2e24f94-8d64-4513-a229-f9f238b8ff46" RegularExpression="^.{14} StatusAdd 1A:46(?&lt;type&gt;(1|2|3|4)):(?&lt;effect&gt;(?:[^:]|: )*?):(?&lt;duration&gt;[^:]*):(?&lt;sid&gt;[^:]*):(?&lt;sname&gt;[^:]*):(?&lt;tid&gt;[^:]*):(?&lt;tname&gt;[^:]*):(?&lt;count&gt;[^:]*):(?&lt;targetMaxHp&gt;[^:]*):(?&lt;sourceMaxHp&gt;[^:]*)(?:$|:)" PeriodRefire="Deny" RefirePeriodExpression="30000">
+                          <Trigger Enabled="false" Sequential="True" Name="自身Buff获取2" Id="d2e24f94-8d64-4513-a229-f9f238b8ff46" RegularExpression="^.{14} StatusAdd 1A:46(?&lt;type&gt;(1|2|3|4)):(?&lt;effect&gt;(?:[^:]|: )*?):(?&lt;duration&gt;[^:]*):(?&lt;sid&gt;[^:]*):(?&lt;sname&gt;[^:]*):(?&lt;tid&gt;[^:]*):(?&lt;tname&gt;[^:]*):(?&lt;count&gt;[^:]*):(?&lt;targetMaxHp&gt;[^:]*):(?&lt;sourceMaxHp&gt;[^:]*)(?:$|:)" PeriodRefire="Deny" RefirePeriodExpression="30000">
                             <Actions>
                               <Action OrderNumber="1" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="LogMessage">
                                 <Condition Enabled="false" Grouping="Or" />
@@ -2986,7 +2986,7 @@
                             </Actions>
                             <Condition Enabled="false" Grouping="Or" />
                           </Trigger>
-                          <Trigger Enabled="true" Sequential="True" Name="自身Buff获取" Id="08055da3-f92a-4f04-8a1c-6556ec409526" RegularExpression="^.{14} StatusAdd 1A:46(?&lt;type&gt;(1|2|3|4)):(?&lt;effect&gt;(?:[^:]|: )*?):(?&lt;duration&gt;[^:]*):(?&lt;sid&gt;[^:]*):(?&lt;sname&gt;[^:]*):(?&lt;tid&gt;[^:]*):(?&lt;tname&gt;[^:]*):(?&lt;count&gt;[^:]*):(?&lt;targetMaxHp&gt;[^:]*):(?&lt;sourceMaxHp&gt;[^:]*)(?:$|:)" PeriodRefire="Deny" RefirePeriodExpression="30000">
+                          <Trigger Enabled="false" Sequential="True" Name="自身Buff获取" Id="08055da3-f92a-4f04-8a1c-6556ec409526" RegularExpression="^.{14} StatusAdd 1A:46(?&lt;type&gt;(1|2|3|4)):(?&lt;effect&gt;(?:[^:]|: )*?):(?&lt;duration&gt;[^:]*):(?&lt;sid&gt;[^:]*):(?&lt;sname&gt;[^:]*):(?&lt;tid&gt;[^:]*):(?&lt;tname&gt;[^:]*):(?&lt;count&gt;[^:]*):(?&lt;targetMaxHp&gt;[^:]*):(?&lt;sourceMaxHp&gt;[^:]*)(?:$|:)" PeriodRefire="Deny" RefirePeriodExpression="30000">
                             <Actions>
                               <Action OrderNumber="1" OBSEndPoint="ws://${_const[OBSWebsocketEndpoint]}:${_const[OBSWebsocketPort]}" OBSPassword="${_const[OBSWebsocketPassword]}" TextAuraFontSize="9" TextAuraFontName="宋体" TriggerOp="CancelTrigger" TriggerId="d2e24f94-8d64-4513-a229-f9f238b8ff46" ActionType="Trigger">
                                 <Condition Enabled="false" Grouping="Or" />
@@ -3552,7 +3552,7 @@
                   </Trigger>
                 </Triggers>
               </Folder>
-              <Folder Id="7bcafb10-db3b-485e-9664-82d53aadbbf9" Name="7. 二运指引-云玩家改[施工完毕测试阶段]" Enabled="true">
+              <Folder Id="7bcafb10-db3b-485e-9664-82d53aadbbf9" Name="7. 二运指引-云玩家改[施工完毕测试阶段,可能会指错请慎重决定开启]" Enabled="false">
                 <Folders>
                   <Folder Id="361edb80-d26c-4e57-ae6e-c09bb2ff658d" Name="云玩家改" Enabled="true">
                     <Folders>
@@ -3584,7 +3584,7 @@
                                       <ConditionSingle Enabled="true" ExpressionL="${value}" ExpressionTypeL="String" ExpressionR="1" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                                     </Condition>
                                   </Action>
-                                  <Action OrderNumber="3" JsonEndpointExpression="http://127.0.0.1:47774/?namespace=2&amp;destroyAt=15000,COMBAT_EXIT,TERRITORY_CHANGE" JsonPayloadExpression="{&quot;Name&quot;:&quot;1号 2&quot;,&quot;refX&quot;:81.5,&quot;refY&quot;:100.0,&quot;radius&quot;:0.4,&quot;color&quot;:4278255614,&quot;thicc&quot;:3.0,&quot;tether&quot;:true}" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="GenericJson">
+                                  <Action OrderNumber="3" JsonEndpointExpression="http://127.0.0.1:47774/?namespace=2&amp;destroyAt=15000,COMBAT_EXIT,TERRITORY_CHANGE" JsonPayloadExpression="{&quot;Name&quot;:&quot;1号 2&quot;,&quot;refX&quot;:118.7,&quot;refY&quot;:100.0,&quot;radius&quot;:0.4,&quot;color&quot;:4294901779,&quot;thicc&quot;:3.0,&quot;tether&quot;:true}" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="GenericJson">
                                     <Condition Enabled="true" Grouping="And">
                                       <ConditionSingle Enabled="true" ExpressionL="${value}" ExpressionTypeL="String" ExpressionR="1" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                                     </Condition>
@@ -4602,7 +4602,7 @@
                   </Trigger>
                 </Triggers>
               </Folder>
-              <Folder Id="909ee427-703d-46b2-bc28-478821e619e6" Name="8. 一运大火炎放射指引[施工完毕测试阶段]" Enabled="true">
+              <Folder Id="909ee427-703d-46b2-bc28-478821e619e6" Name="8. 一运大火炎放射指引[施工完毕测试阶段,可能会指错请慎重决定开启]" Enabled="false">
                 <Folders />
                 <Triggers>
                   <Trigger Enabled="true" Sequential="True" Name="预览大火炎放射引导位置" Id="d3626c47-25aa-4935-99fb-d431de85a298" RegularExpression="^.{14} (?:\w+) (15|16):(?&lt;sid&gt;[^:]*):(?&lt;sname&gt;[^:]*):485C:(?&lt;ability&gt;(?:[^:]|: )*?):(?&lt;tid&gt;[^:]*):(?&lt;tname&gt;[^:]*):(?&lt;flags&gt;[^:]*):(?&lt;damage&gt;[^:]*)(?::[^:]*){14}:(?&lt;targetCurrentHp&gt;[^:]*):(?&lt;targetMaxHp&gt;[^:]*):(?&lt;targetCurrentMp&gt;[^:]*):(?&lt;targetMaxMp&gt;[^:]*)(?::[^:]*){2}:(?&lt;targetX&gt;[^:]*):(?&lt;targetY&gt;[^:]*):(?&lt;targetZ&gt;[^:]*):(?&lt;targetHeading&gt;[^:]*):(?&lt;currentHp&gt;[^:]*):(?&lt;maxHp&gt;[^:]*):(?&lt;currentMp&gt;[^:]*):(?&lt;maxMp&gt;[^:]*)(?::[^:]*){2}:(?&lt;x&gt;[^:]*):(?&lt;y&gt;[^:]*):(?&lt;z&gt;[^:]*):(?&lt;heading&gt;[^:]*):(?&lt;sequence&gt;[^:]*):(?&lt;targetIndex&gt;[^:]*):(?&lt;targetCount&gt;[^:]*)(?:$|:)" PeriodRefire="Deny" RefirePeriodExpression="1000">
@@ -5077,6 +5077,11 @@
                   <Action OrderNumber="1" SystemBeepLengthExpression="200" OBSEndPoint="ws://${_const[OBSWebsocketEndpoint]}:${_const[OBSWebsocketPort]}" OBSPassword="${_const[OBSWebsocketPassword]}" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="SystemBeep">
                     <Condition Enabled="false" Grouping="Or" />
                   </Action>
+                  <Action OrderNumber="2" OBSEndPoint="ws://${_const[OBSWebsocketEndpoint]}:${_const[OBSWebsocketPort]}" OBSPassword="${_const[OBSWebsocketPassword]}" UseTTSTextExpression="快走" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="UseTTS">
+                    <Condition Enabled="true" Grouping="Or">
+                      <ConditionSingle Enabled="true" ExpressionL="${var:绝亚_结晶破碎_Clone}" ExpressionTypeL="Numeric" ExpressionR="4" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+                    </Condition>
+                  </Action>
                 </Actions>
                 <Condition Enabled="false" Grouping="Or" />
               </Trigger>
@@ -5281,10 +5286,7 @@
                     <Condition Enabled="false" Grouping="Or" />
                   </Action>
                   <Action OrderNumber="46" OBSEndPoint="ws://${_const[OBSWebsocketEndpoint]}:${_const[OBSWebsocketPort]}" OBSPassword="${_const[OBSWebsocketPassword]}" VariableOp="UnsetRegex" VariableName="绝亚灵泉_.*" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
-                    <Condition Enabled="true" Grouping="And">
-                      <ConditionSingle Enabled="true" ExpressionL="${numeric:abs(${x}-88.91)}" ExpressionTypeL="String" ExpressionR="1" ExpressionTypeR="String" ConditionType="NumericLess" />
-                      <ConditionSingle Enabled="true" ExpressionL="${numeric:abs(${y}-104.59)}" ExpressionTypeL="String" ExpressionR="1" ExpressionTypeR="String" ConditionType="NumericLess" />
-                    </Condition>
+                    <Condition Enabled="false" Grouping="And" />
                   </Action>
                   <Action OrderNumber="47" OBSEndPoint="ws://${_const[OBSWebsocketEndpoint]}:${_const[OBSWebsocketPort]}" OBSPassword="${_const[OBSWebsocketPassword]}" VariableOp="SetNumeric" VariableName="罪恶感计数_Clone" VariableExpression="0" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
                     <Condition Enabled="false" Grouping="Or" />
@@ -5448,10 +5450,7 @@
                     <Condition Enabled="false" Grouping="And" />
                   </Action>
                   <Action OrderNumber="39" OBSEndPoint="ws://${_const[OBSWebsocketEndpoint]}:${_const[OBSWebsocketPort]}" OBSPassword="${_const[OBSWebsocketPassword]}" VariableOp="UnsetRegex" VariableName="绝亚灵泉_.*" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
-                    <Condition Enabled="true" Grouping="And">
-                      <ConditionSingle Enabled="true" ExpressionL="${numeric:abs(${x}-88.91)}" ExpressionTypeL="String" ExpressionR="1" ExpressionTypeR="String" ConditionType="NumericLess" />
-                      <ConditionSingle Enabled="true" ExpressionL="${numeric:abs(${y}-104.59)}" ExpressionTypeL="String" ExpressionR="1" ExpressionTypeR="String" ConditionType="NumericLess" />
-                    </Condition>
+                    <Condition Enabled="false" Grouping="And" />
                   </Action>
                   <Action OrderNumber="40" OBSEndPoint="ws://${_const[OBSWebsocketEndpoint]}:${_const[OBSWebsocketPort]}" OBSPassword="${_const[OBSWebsocketPassword]}" VariableOp="SetNumeric" VariableName="罪恶感计数_Clone" VariableExpression="0" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
                     <Condition Enabled="false" Grouping="Or" />
@@ -6223,7 +6222,7 @@
           </Folder>
         </Folders>
         <Triggers>
-          <Trigger Enabled="true" Name="修改日期：2023-03-12 初步完成一运大火炎放射指引，二运指引，一运st引导太近了已修复。" Id="066ef6cf-5add-4d77-874a-4198186a1443" RegularExpression="">
+          <Trigger Enabled="true" Name="修改日期：2023-03-12 初步完成一运大火炎放射指引，二运指引，一运st引导太近了已修复，新功能默认关闭如需要请自行启用。" Id="066ef6cf-5add-4d77-874a-4198186a1443" RegularExpression="">
             <Actions />
             <Condition Enabled="false" Grouping="Or" />
           </Trigger>
@@ -8699,7 +8698,7 @@
                   </Trigger>
                 </Triggers>
               </Folder>
-              <Folder FFXIVZoneFilterEnabled="True" FfxivZoneFilterRegularExpression="^969$" Id="a5a167cb-c195-47df-a8f5-d6b2e8966b12" Name="魔导神门巴别塔[debug]" Enabled="true">
+              <Folder FFXIVZoneFilterEnabled="True" FfxivZoneFilterRegularExpression="^969$" Id="a5a167cb-c195-47df-a8f5-d6b2e8966b12" Name="魔导神门巴别塔[debug]" Enabled="false">
                 <Folders>
                   <Folder Id="11325f23-0fcb-4766-bf63-a6843960c814" Name="Boss1 - 巴尔纳伯" Enabled="true">
                     <Folders />
@@ -9674,7 +9673,7 @@
       </Folder>
     </Folders>
     <Triggers>
-      <Trigger Enabled="true" Sequential="True" Name="【初次导入提醒】2023/03/11" Id="1ce28eab-2569-47d9-8dc8-43db6e0c37cb" RegularExpression="^." PeriodRefire="Deny" RefirePeriodExpression="2000">
+      <Trigger Enabled="true" Sequential="True" Name="【初次导入提醒】2023/03/13" Id="1ce28eab-2569-47d9-8dc8-43db6e0c37cb" RegularExpression="^." PeriodRefire="Deny" RefirePeriodExpression="2000">
         <Actions>
           <Action OrderNumber="1" OBSEndPoint="ws://${_const[OBSWebsocketEndpoint]}:${_const[OBSWebsocketPort]}" OBSPassword="${_const[OBSWebsocketPassword]}" TextAuraFontSize="9" TextAuraFontName="宋体" TriggerOp="DisableTrigger" TriggerId="1ce28eab-2569-47d9-8dc8-43db6e0c37cb" ActionType="Trigger">
             <Condition Enabled="false" Grouping="Or" />
