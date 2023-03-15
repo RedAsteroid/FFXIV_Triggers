@@ -558,7 +558,7 @@
           </Trigger>
         </Triggers>
       </Folder>
-      <Folder Id="bc5fbeed-b405-479b-9aca-4c55396556aa" Name="1. 【绝亚】亚历山大绝境战 2023.03.13" Enabled="true">
+      <Folder Id="bc5fbeed-b405-479b-9aca-4c55396556aa" Name="1. 【绝亚】亚历山大绝境战 2023.03.15" Enabled="true">
         <Folders>
           <Folder FFXIVZoneFilterEnabled="True" FfxivZoneFilterRegularExpression="^887$" Id="22270b51-3fd1-4930-a115-db17318e0fd0" Name="P1" Enabled="true">
             <Folders>
@@ -2560,7 +2560,7 @@
                       <ConditionSingle Enabled="true" ExpressionL="${var:绝亚阶段_Clone}" ExpressionTypeL="String" ExpressionR="1" ExpressionTypeR="String" ConditionType="StringEqualCase" />
                     </Condition>
                   </Trigger>
-                  <Trigger Enabled="true" Name="2. 备用销毁" Id="069c0c77-77f9-4097-8025-8317bf3bd049" RegularExpression="^.{14} (?:ActionEffect|AOEActionEffect) (?&lt;type&gt;(?:15|16)):(?&lt;id&gt;(?:[^:]*)):蒸汽战轮:4855:激光战轮:(?&lt;tid&gt;(?:[^:]*)):(?&lt;tname&gt;(?:[^:]*)):">
+                  <Trigger Enabled="true" Name="2. 销毁" Id="069c0c77-77f9-4097-8025-8317bf3bd049" RegularExpression="^.{14} (?:\w+) (15|16):(?&lt;sid&gt;[^:]*):(?&lt;sname&gt;[^:]*):4855:(?&lt;ability&gt;(?:[^:]|: )*?):(?&lt;tid&gt;[^:]*):(?&lt;tname&gt;[^:]*):(?&lt;flags&gt;[^:]*):(?&lt;damage&gt;[^:]*)(?::[^:]*){14}:(?&lt;targetCurrentHp&gt;[^:]*):(?&lt;targetMaxHp&gt;[^:]*):(?&lt;targetCurrentMp&gt;[^:]*):(?&lt;targetMaxMp&gt;[^:]*)(?::[^:]*){2}:(?&lt;targetX&gt;[^:]*):(?&lt;targetY&gt;[^:]*):(?&lt;targetZ&gt;[^:]*):(?&lt;targetHeading&gt;[^:]*):(?&lt;currentHp&gt;[^:]*):(?&lt;maxHp&gt;[^:]*):(?&lt;currentMp&gt;[^:]*):(?&lt;maxMp&gt;[^:]*)(?::[^:]*){2}:(?&lt;x&gt;[^:]*):(?&lt;y&gt;[^:]*):(?&lt;z&gt;[^:]*):(?&lt;heading&gt;[^:]*):(?&lt;sequence&gt;[^:]*):(?&lt;targetIndex&gt;[^:]*):(?&lt;targetCount&gt;[^:]*)(?:$|:)" PeriodRefire="Deny" RefirePeriodExpression="1000">
                     <Actions>
                       <Action OrderNumber="1" JsonEndpointExpression="http://127.0.0.1:47774/?destroy=zhengqizhanlunp2" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="GenericJson">
                         <Condition Enabled="false" Grouping="Or" />
@@ -2752,7 +2752,7 @@
                       <ConditionSingle Enabled="true" ExpressionL="${var:绝亚阶段_Clone}" ExpressionTypeL="String" ExpressionR="2" ExpressionTypeR="String" ConditionType="StringEqualCase" />
                     </Condition>
                   </Trigger>
-                  <Trigger Enabled="true" Name="2. 销毁" Id="04fe8823-5bb4-41b2-9f0d-a8f386980bb6" RegularExpression="^.{14} (?:ActionEffect|AOEActionEffect) (?&lt;type&gt;(?:15|16)):(?&lt;id&gt;(?:[^:]*)):蒸汽战轮:4855:激光战轮:(?&lt;tid&gt;(?:[^:]*)):(?&lt;tname&gt;(?:[^:]*)):">
+                  <Trigger Enabled="true" Name="2. 销毁" Id="04fe8823-5bb4-41b2-9f0d-a8f386980bb6" RegularExpression="^.{14} (?:\w+) (15|16):(?&lt;sid&gt;[^:]*):(?&lt;sname&gt;[^:]*):4855:(?&lt;ability&gt;(?:[^:]|: )*?):(?&lt;tid&gt;[^:]*):(?&lt;tname&gt;[^:]*):(?&lt;flags&gt;[^:]*):(?&lt;damage&gt;[^:]*)(?::[^:]*){14}:(?&lt;targetCurrentHp&gt;[^:]*):(?&lt;targetMaxHp&gt;[^:]*):(?&lt;targetCurrentMp&gt;[^:]*):(?&lt;targetMaxMp&gt;[^:]*)(?::[^:]*){2}:(?&lt;targetX&gt;[^:]*):(?&lt;targetY&gt;[^:]*):(?&lt;targetZ&gt;[^:]*):(?&lt;targetHeading&gt;[^:]*):(?&lt;currentHp&gt;[^:]*):(?&lt;maxHp&gt;[^:]*):(?&lt;currentMp&gt;[^:]*):(?&lt;maxMp&gt;[^:]*)(?::[^:]*){2}:(?&lt;x&gt;[^:]*):(?&lt;y&gt;[^:]*):(?&lt;z&gt;[^:]*):(?&lt;heading&gt;[^:]*):(?&lt;sequence&gt;[^:]*):(?&lt;targetIndex&gt;[^:]*):(?&lt;targetCount&gt;[^:]*)(?:$|:)" PeriodRefire="Deny" RefirePeriodExpression="1000">
                     <Actions>
                       <Action OrderNumber="1" JsonEndpointExpression="http://127.0.0.1:47774/?destroy=zhengqizhanlunp3" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="GenericJson">
                         <Condition Enabled="false" Grouping="Or" />
@@ -4368,12 +4368,12 @@
                           <Folder Id="dc2184b1-d655-42ee-9934-d56d146b408f" Name="7号" Enabled="true">
                             <Folders />
                             <Triggers>
-                              <Trigger Enabled="true" Sequential="True" Name="1. 点名" Id="254d3ee1-0adc-4515-8384-2d4f346382f3" RegularExpression="^majiang_clone:8">
+                              <Trigger Enabled="true" Sequential="True" Name="1. 点名" Id="254d3ee1-0adc-4515-8384-2d4f346382f3" RegularExpression="^majiang_clone:7">
                                 <Actions>
-                                  <Action OrderNumber="1" OBSEndPoint="ws://${_const[OBSWebsocketEndpoint]}:${_const[OBSWebsocketPort]}" OBSPassword="${_const[OBSWebsocketPassword]}" VariableOp="SetString" VariableName="mjsign_clone" VariableExpression="8" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
+                                  <Action OrderNumber="1" OBSEndPoint="ws://${_const[OBSWebsocketEndpoint]}:${_const[OBSWebsocketPort]}" OBSPassword="${_const[OBSWebsocketPassword]}" VariableOp="SetString" VariableName="mjsign_clone" VariableExpression="7" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
                                     <Condition Enabled="false" Grouping="Or" />
                                   </Action>
-                                  <Action OrderNumber="2" JsonEndpointExpression="http://127.0.0.1:47774/?namespace=1&amp;destroyAt=13500,COMBAT_EXIT,TERRITORY_CHANGE" JsonPayloadExpression="{&quot;Name&quot;:&quot;6号 1 上下灵泉&quot;,&quot;refX&quot;:116.8,&quot;refY&quot;:100.0,&quot;refZ&quot;:-1.9073486E-06,&quot;radius&quot;:0.4,&quot;color&quot;:4278255614,&quot;thicc&quot;:3.0,&quot;tether&quot;:true}" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="GenericJson">
+                                  <Action OrderNumber="2" JsonEndpointExpression="http://127.0.0.1:47774/?namespace=1&amp;destroyAt=13500,COMBAT_EXIT,TERRITORY_CHANGE" JsonPayloadExpression="{&quot;Name&quot;:&quot;7号 1&quot;,&quot;refX&quot;:81.0,&quot;refY&quot;:100.0,&quot;refZ&quot;:3.8146973E-06,&quot;radius&quot;:0.4,&quot;color&quot;:4278255614,&quot;thicc&quot;:3.0,&quot;tether&quot;:true}" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="GenericJson">
                                     <Condition Enabled="false" Grouping="And" />
                                   </Action>
                                 </Actions>
@@ -4433,9 +4433,9 @@
                           <Folder Id="5f5f1a4a-4c42-4158-b87e-bf1728cd6b7f" Name="8号" Enabled="true">
                             <Folders />
                             <Triggers>
-                              <Trigger Enabled="true" Sequential="True" Name="1. 点名" Id="671a9d8b-633f-422e-b66c-5d20e2ca49f7" RegularExpression="^majiang_clone:7">
+                              <Trigger Enabled="true" Sequential="True" Name="1. 点名" Id="671a9d8b-633f-422e-b66c-5d20e2ca49f7" RegularExpression="^majiang_clone:8">
                                 <Actions>
-                                  <Action OrderNumber="1" OBSEndPoint="ws://${_const[OBSWebsocketEndpoint]}:${_const[OBSWebsocketPort]}" OBSPassword="${_const[OBSWebsocketPassword]}" VariableOp="SetString" VariableName="mjsign_clone" VariableExpression="7" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
+                                  <Action OrderNumber="1" OBSEndPoint="ws://${_const[OBSWebsocketEndpoint]}:${_const[OBSWebsocketPort]}" OBSPassword="${_const[OBSWebsocketPassword]}" VariableOp="SetString" VariableName="mjsign_clone" VariableExpression="8" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
                                     <Condition Enabled="false" Grouping="Or" />
                                   </Action>
                                   <Action OrderNumber="2" JsonEndpointExpression="http://127.0.0.1:47774/?namespace=1&amp;destroyAt=13500,COMBAT_EXIT,TERRITORY_CHANGE" JsonPayloadExpression="{&quot;Name&quot;:&quot;8号 1&quot;,&quot;refX&quot;:119.0,&quot;refY&quot;:100.0,&quot;refZ&quot;:-1.9073486E-06,&quot;radius&quot;:0.4,&quot;color&quot;:4294911488,&quot;thicc&quot;:3.0,&quot;tether&quot;:true}" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="GenericJson">
@@ -5020,7 +5020,7 @@
                       <ConditionSingle Enabled="true" ExpressionL="${var:残暴id_Clone}" ExpressionTypeL="String" ExpressionR="${targetId}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                     </Condition>
                   </Trigger>
-                  <Trigger Enabled="false" Sequential="True" Name="1.2 小队频道 ( /p )" Id="87de989d-23c1-44d3-9d8d-9d876f449747" RegularExpression="(?&lt;timestamp&gt;^.{14}) StatusAdd (?&lt;type&gt;1A):1BB:(?&lt;effect&gt;(?:[^:]|: )*?):(?&lt;duration&gt;[^:]*):(?&lt;sourceId&gt;[^:]*):(?&lt;source&gt;[^:]*):(?&lt;targetId&gt;[^:]*):(?&lt;target&gt;[^:]*):(?&lt;count&gt;[^:]*):(?&lt;targetMaxHp&gt;[^:]*):(?&lt;sourceMaxHp&gt;[^:]*)(?:$|:)">
+                  <Trigger Enabled="true" Sequential="True" Name="1.2 小队频道 ( /p )" Id="87de989d-23c1-44d3-9d8d-9d876f449747" RegularExpression="(?&lt;timestamp&gt;^.{14}) StatusAdd (?&lt;type&gt;1A):1BB:(?&lt;effect&gt;(?:[^:]|: )*?):(?&lt;duration&gt;[^:]*):(?&lt;sourceId&gt;[^:]*):(?&lt;source&gt;[^:]*):(?&lt;targetId&gt;[^:]*):(?&lt;target&gt;[^:]*):(?&lt;count&gt;[^:]*):(?&lt;targetMaxHp&gt;[^:]*):(?&lt;sourceMaxHp&gt;[^:]*)(?:$|:)">
                     <Actions>
                       <Action OrderNumber="0" OBSEndPoint="ws://${_const[OBSWebsocketEndpoint]}:${_const[OBSWebsocketPort]}" OBSPassword="${_const[OBSWebsocketPassword]}" VariableOp="SetNumeric" VariableName="伤害提高层数_Clone" VariableExpression="hex2dec(${count})" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
                         <Condition Enabled="false" Grouping="Or" />
@@ -5040,7 +5040,7 @@
                       <ConditionSingle Enabled="true" ExpressionL="${var:残暴id_Clone}" ExpressionTypeL="String" ExpressionR="${targetId}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                     </Condition>
                   </Trigger>
-                  <Trigger Enabled="true" Sequential="True" Name="1.1 默语频道 ( /e )" Id="351c66cf-d0ea-4028-8936-0db0b13e7bfb" RegularExpression="(?&lt;timestamp&gt;^.{14}) StatusAdd (?&lt;type&gt;1A):1BB:(?&lt;effect&gt;(?:[^:]|: )*?):(?&lt;duration&gt;[^:]*):(?&lt;sourceId&gt;[^:]*):(?&lt;source&gt;[^:]*):(?&lt;targetId&gt;[^:]*):(?&lt;target&gt;[^:]*):(?&lt;count&gt;[^:]*):(?&lt;targetMaxHp&gt;[^:]*):(?&lt;sourceMaxHp&gt;[^:]*)(?:$|:)">
+                  <Trigger Enabled="false" Sequential="True" Name="1.1 默语频道 ( /e )" Id="351c66cf-d0ea-4028-8936-0db0b13e7bfb" RegularExpression="(?&lt;timestamp&gt;^.{14}) StatusAdd (?&lt;type&gt;1A):1BB:(?&lt;effect&gt;(?:[^:]|: )*?):(?&lt;duration&gt;[^:]*):(?&lt;sourceId&gt;[^:]*):(?&lt;source&gt;[^:]*):(?&lt;targetId&gt;[^:]*):(?&lt;target&gt;[^:]*):(?&lt;count&gt;[^:]*):(?&lt;targetMaxHp&gt;[^:]*):(?&lt;sourceMaxHp&gt;[^:]*)(?:$|:)">
                     <Actions>
                       <Action OrderNumber="1" OBSEndPoint="ws://${_const[OBSWebsocketEndpoint]}:${_const[OBSWebsocketPort]}" OBSPassword="${_const[OBSWebsocketPassword]}" VariableOp="SetNumeric" VariableName="伤害提高层数_Clone" VariableExpression="hex2dec(${count})" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
                         <Condition Enabled="false" Grouping="Or" />
@@ -6222,7 +6222,7 @@
           </Folder>
         </Folders>
         <Triggers>
-          <Trigger Enabled="true" Name="修改日期：2023-03-12 初步完成一运大火炎放射指引，二运指引，一运st引导太近了已修复，新功能默认关闭如需要请自行启用。" Id="066ef6cf-5add-4d77-874a-4198186a1443" RegularExpression="">
+          <Trigger Enabled="true" Name="修改日期：2023-03-15 修改错误上传备用，新功能默认关闭如需要请自行启用。" Id="066ef6cf-5add-4d77-874a-4198186a1443" RegularExpression="">
             <Actions />
             <Condition Enabled="false" Grouping="Or" />
           </Trigger>
@@ -9673,7 +9673,7 @@
       </Folder>
     </Folders>
     <Triggers>
-      <Trigger Enabled="true" Sequential="True" Name="【初次导入提醒】2023/03/13" Id="1ce28eab-2569-47d9-8dc8-43db6e0c37cb" RegularExpression="^." PeriodRefire="Deny" RefirePeriodExpression="2000">
+      <Trigger Enabled="false" Sequential="True" Name="【初次导入提醒】2023/03/15" Id="1ce28eab-2569-47d9-8dc8-43db6e0c37cb" RegularExpression="^." PeriodRefire="Deny" RefirePeriodExpression="2000">
         <Actions>
           <Action OrderNumber="1" OBSEndPoint="ws://${_const[OBSWebsocketEndpoint]}:${_const[OBSWebsocketPort]}" OBSPassword="${_const[OBSWebsocketPassword]}" TextAuraFontSize="9" TextAuraFontName="宋体" TriggerOp="DisableTrigger" TriggerId="1ce28eab-2569-47d9-8dc8-43db6e0c37cb" ActionType="Trigger">
             <Condition Enabled="false" Grouping="Or" />
