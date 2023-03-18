@@ -558,7 +558,7 @@
           </Trigger>
         </Triggers>
       </Folder>
-      <Folder Id="bc5fbeed-b405-479b-9aca-4c55396556aa" Name="1. 【绝亚】亚历山大绝境战 2023.03.15" Enabled="true">
+      <Folder Id="bc5fbeed-b405-479b-9aca-4c55396556aa" Name="1. 【绝亚】亚历山大绝境战 2023.03.18" Enabled="true">
         <Folders>
           <Folder FFXIVZoneFilterEnabled="True" FfxivZoneFilterRegularExpression="^887$" Id="22270b51-3fd1-4930-a115-db17318e0fd0" Name="P1" Enabled="true">
             <Folders>
@@ -573,7 +573,7 @@
                     </Actions>
                     <Condition Enabled="false" Grouping="Or" />
                   </Trigger>
-                  <Trigger Enabled="true" Name="狩猎人偶出现" Id="18c34f35-30fd-4ee4-b0d5-d678034d362b" RegularExpression="^.{14} AddCombatant 03:(?&lt;id&gt;[^:]*):狩猎人偶:(?&lt;job&gt;[^:]*):(?&lt;level&gt;[^:]*):(?&lt;ownerId&gt;[^:]*):(?&lt;worldId&gt;[^:]*):(?&lt;world&gt;[^:]*):9214:(?&lt;npcBaseId&gt;[^:]*):(?&lt;currentHp&gt;[^:]*):(?&lt;hp&gt;[^:]*):(?&lt;currentMp&gt;[^:]*):(?&lt;mp&gt;[^:]*)(?::[^:]*){2}:(?&lt;x&gt;[^:]*):(?&lt;y&gt;[^:]*):(?&lt;z&gt;[^:]*):(?&lt;heading&gt;[^:]*)(?:$|:)" PeriodRefire="Deny" RefirePeriodExpression="1000">
+                  <Trigger Enabled="true" Name="狩猎人偶出现" Id="18c34f35-30fd-4ee4-b0d5-d678034d362b" RegularExpression="^.{14} AddCombatant 03:(?&lt;id&gt;[^:]*):(狩猎人偶|ヤークトドール|jagd doll):(?&lt;job&gt;[^:]*):(?&lt;level&gt;[^:]*):(?&lt;ownerId&gt;[^:]*):(?&lt;worldId&gt;[^:]*):(?&lt;world&gt;[^:]*):9214:(?&lt;npcBaseId&gt;[^:]*):(?&lt;currentHp&gt;[^:]*):(?&lt;hp&gt;[^:]*):(?&lt;currentMp&gt;[^:]*):(?&lt;mp&gt;[^:]*)(?::[^:]*){2}:(?&lt;x&gt;[^:]*):(?&lt;y&gt;[^:]*):(?&lt;z&gt;[^:]*):(?&lt;heading&gt;[^:]*)(?:$|:)" PeriodRefire="Deny" RefirePeriodExpression="1000">
                     <Actions>
                       <Action OrderNumber="1" JsonEndpointExpression="http://127.0.0.1:47774/?namespace=guangxingbaolei&amp;destroyAt=3000" JsonPayloadExpression="{&quot;type&quot;:1,&quot;radius&quot;:8.8,&quot;color&quot;:4294967295,&quot;thicc&quot;:3.0,&quot;refActorNPCID&quot;:9214,&quot;refActorComparisonType&quot;:4,&quot;onlyTargetable&quot;:true}" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="GenericJson" ExecutionDelayExpression="4500">
                         <Condition Enabled="false" Grouping="And" />
@@ -1597,7 +1597,7 @@
                       <Folder Id="8ce94299-2347-449d-a8dc-0419bec05c32" Name="斜点组" Enabled="true">
                         <Folders />
                         <Triggers>
-                          <Trigger Enabled="true" Sequential="True" Name="类型2" Id="29346017-e527-4b11-96b8-0e47e6987441" RegularExpression="^.{14} AddCombatant 03:(?&lt;id&gt;[^:]*):狩猎人偶:(?&lt;job&gt;[^:]*):(?&lt;level&gt;[^:]*):(?&lt;ownerId&gt;[^:]*):(?&lt;worldId&gt;[^:]*):(?&lt;world&gt;[^:]*):9214:(?&lt;npcBaseId&gt;[^:]*):(?&lt;currentHp&gt;[^:]*):(?&lt;hp&gt;[^:]*):(?&lt;currentMp&gt;[^:]*):(?&lt;mp&gt;[^:]*)(?::[^:]*){2}:(?&lt;x&gt;[^:]*):(?&lt;y&gt;[^:]*):(?&lt;z&gt;[^:]*):(?&lt;heading&gt;[^:]*)(?:$|:)">
+                          <Trigger Enabled="true" Sequential="True" Name="类型2" Id="29346017-e527-4b11-96b8-0e47e6987441" RegularExpression="^.{14} AddCombatant 03:(?&lt;id&gt;[^:]*):(狩猎人偶|ヤークトドール|jagd doll):(?&lt;job&gt;[^:]*):(?&lt;level&gt;[^:]*):(?&lt;ownerId&gt;[^:]*):(?&lt;worldId&gt;[^:]*):(?&lt;world&gt;[^:]*):9214:(?&lt;npcBaseId&gt;[^:]*):(?&lt;currentHp&gt;[^:]*):(?&lt;hp&gt;[^:]*):(?&lt;currentMp&gt;[^:]*):(?&lt;mp&gt;[^:]*)(?::[^:]*){2}:(?&lt;x&gt;[^:]*):(?&lt;y&gt;[^:]*):(?&lt;z&gt;[^:]*):(?&lt;heading&gt;[^:]*)(?:$|:)">
                             <Actions>
                               <Action OrderNumber="1" OBSEndPoint="ws://${_const[OBSWebsocketEndpoint]}:${_const[OBSWebsocketPort]}" OBSPassword="${_const[OBSWebsocketPassword]}" VariableOp="SetString" VariableName="绝亚小怪id_Clone" VariableExpression="${id}" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
                                 <Condition Enabled="true" Grouping="And">
@@ -1662,7 +1662,7 @@
                               <ConditionSingle Enabled="true" ExpressionL="${var:活水之怒_8点}" ExpressionTypeL="String" ExpressionR="1" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                             </Condition>
                           </Trigger>
-                          <Trigger Enabled="true" Sequential="True" Name="类型4" Id="7a1df4f1-7a59-4062-a613-10f6d31e56ee" RegularExpression="^.{14} AddCombatant 03:(?&lt;id&gt;[^:]*):狩猎人偶:(?&lt;job&gt;[^:]*):(?&lt;level&gt;[^:]*):(?&lt;ownerId&gt;[^:]*):(?&lt;worldId&gt;[^:]*):(?&lt;world&gt;[^:]*):9214:(?&lt;npcBaseId&gt;[^:]*):(?&lt;currentHp&gt;[^:]*):(?&lt;hp&gt;[^:]*):(?&lt;currentMp&gt;[^:]*):(?&lt;mp&gt;[^:]*)(?::[^:]*){2}:(?&lt;x&gt;[^:]*):(?&lt;y&gt;[^:]*):(?&lt;z&gt;[^:]*):(?&lt;heading&gt;[^:]*)(?:$|:)">
+                          <Trigger Enabled="true" Sequential="True" Name="类型4" Id="7a1df4f1-7a59-4062-a613-10f6d31e56ee" RegularExpression="^.{14} AddCombatant 03:(?&lt;id&gt;[^:]*):(狩猎人偶|ヤークトドール|jagd doll):(?&lt;job&gt;[^:]*):(?&lt;level&gt;[^:]*):(?&lt;ownerId&gt;[^:]*):(?&lt;worldId&gt;[^:]*):(?&lt;world&gt;[^:]*):9214:(?&lt;npcBaseId&gt;[^:]*):(?&lt;currentHp&gt;[^:]*):(?&lt;hp&gt;[^:]*):(?&lt;currentMp&gt;[^:]*):(?&lt;mp&gt;[^:]*)(?::[^:]*){2}:(?&lt;x&gt;[^:]*):(?&lt;y&gt;[^:]*):(?&lt;z&gt;[^:]*):(?&lt;heading&gt;[^:]*)(?:$|:)">
                             <Actions>
                               <Action OrderNumber="1" OBSEndPoint="ws://${_const[OBSWebsocketEndpoint]}:${_const[OBSWebsocketPort]}" OBSPassword="${_const[OBSWebsocketPassword]}" VariableOp="SetString" VariableName="绝亚小怪id_Clone" VariableExpression="${id}" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
                                 <Condition Enabled="true" Grouping="And">
@@ -1727,7 +1727,7 @@
                               <ConditionSingle Enabled="true" ExpressionL="${var:活水之怒_8点}" ExpressionTypeL="String" ExpressionR="1" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                             </Condition>
                           </Trigger>
-                          <Trigger Enabled="true" Sequential="True" Name="类型8" Id="63b8f1a5-7328-41a2-aba2-b90d922b9c7b" RegularExpression="^.{14} AddCombatant 03:(?&lt;id&gt;[^:]*):狩猎人偶:(?&lt;job&gt;[^:]*):(?&lt;level&gt;[^:]*):(?&lt;ownerId&gt;[^:]*):(?&lt;worldId&gt;[^:]*):(?&lt;world&gt;[^:]*):9214:(?&lt;npcBaseId&gt;[^:]*):(?&lt;currentHp&gt;[^:]*):(?&lt;hp&gt;[^:]*):(?&lt;currentMp&gt;[^:]*):(?&lt;mp&gt;[^:]*)(?::[^:]*){2}:(?&lt;x&gt;[^:]*):(?&lt;y&gt;[^:]*):(?&lt;z&gt;[^:]*):(?&lt;heading&gt;[^:]*)(?:$|:)">
+                          <Trigger Enabled="true" Sequential="True" Name="类型8" Id="63b8f1a5-7328-41a2-aba2-b90d922b9c7b" RegularExpression="^.{14} AddCombatant 03:(?&lt;id&gt;[^:]*):(狩猎人偶|ヤークトドール|jagd doll):(?&lt;job&gt;[^:]*):(?&lt;level&gt;[^:]*):(?&lt;ownerId&gt;[^:]*):(?&lt;worldId&gt;[^:]*):(?&lt;world&gt;[^:]*):9214:(?&lt;npcBaseId&gt;[^:]*):(?&lt;currentHp&gt;[^:]*):(?&lt;hp&gt;[^:]*):(?&lt;currentMp&gt;[^:]*):(?&lt;mp&gt;[^:]*)(?::[^:]*){2}:(?&lt;x&gt;[^:]*):(?&lt;y&gt;[^:]*):(?&lt;z&gt;[^:]*):(?&lt;heading&gt;[^:]*)(?:$|:)">
                             <Actions>
                               <Action OrderNumber="1" OBSEndPoint="ws://${_const[OBSWebsocketEndpoint]}:${_const[OBSWebsocketPort]}" OBSPassword="${_const[OBSWebsocketPassword]}" VariableOp="SetString" VariableName="绝亚小怪id_Clone" VariableExpression="${id}" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
                                 <Condition Enabled="true" Grouping="And">
@@ -1792,7 +1792,7 @@
                               <ConditionSingle Enabled="true" ExpressionL="${var:活水之怒_5点}" ExpressionTypeL="String" ExpressionR="1" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                             </Condition>
                           </Trigger>
-                          <Trigger Enabled="true" Sequential="True" Name="类型6" Id="f509ad39-fdff-44ee-85ad-3b3aad5f0011" RegularExpression="^.{14} AddCombatant 03:(?&lt;id&gt;[^:]*):狩猎人偶:(?&lt;job&gt;[^:]*):(?&lt;level&gt;[^:]*):(?&lt;ownerId&gt;[^:]*):(?&lt;worldId&gt;[^:]*):(?&lt;world&gt;[^:]*):9214:(?&lt;npcBaseId&gt;[^:]*):(?&lt;currentHp&gt;[^:]*):(?&lt;hp&gt;[^:]*):(?&lt;currentMp&gt;[^:]*):(?&lt;mp&gt;[^:]*)(?::[^:]*){2}:(?&lt;x&gt;[^:]*):(?&lt;y&gt;[^:]*):(?&lt;z&gt;[^:]*):(?&lt;heading&gt;[^:]*)(?:$|:)">
+                          <Trigger Enabled="true" Sequential="True" Name="类型6" Id="f509ad39-fdff-44ee-85ad-3b3aad5f0011" RegularExpression="^.{14} AddCombatant 03:(?&lt;id&gt;[^:]*):(狩猎人偶|ヤークトドール|jagd doll):(?&lt;job&gt;[^:]*):(?&lt;level&gt;[^:]*):(?&lt;ownerId&gt;[^:]*):(?&lt;worldId&gt;[^:]*):(?&lt;world&gt;[^:]*):9214:(?&lt;npcBaseId&gt;[^:]*):(?&lt;currentHp&gt;[^:]*):(?&lt;hp&gt;[^:]*):(?&lt;currentMp&gt;[^:]*):(?&lt;mp&gt;[^:]*)(?::[^:]*){2}:(?&lt;x&gt;[^:]*):(?&lt;y&gt;[^:]*):(?&lt;z&gt;[^:]*):(?&lt;heading&gt;[^:]*)(?:$|:)">
                             <Actions>
                               <Action OrderNumber="1" OBSEndPoint="ws://${_const[OBSWebsocketEndpoint]}:${_const[OBSWebsocketPort]}" OBSPassword="${_const[OBSWebsocketPassword]}" VariableOp="SetString" VariableName="绝亚小怪id_Clone" VariableExpression="${id}" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
                                 <Condition Enabled="true" Grouping="And">
@@ -1862,7 +1862,7 @@
                       <Folder Id="8fbf7f68-d83c-4698-8da8-25be4d21ce85" Name="正点组" Enabled="true">
                         <Folders />
                         <Triggers>
-                          <Trigger Enabled="true" Sequential="True" Name="类型1" Id="9773cc4a-00e9-4c2e-b66f-d3564b947025" RegularExpression="^.{14} AddCombatant 03:(?&lt;id&gt;[^:]*):狩猎人偶:(?&lt;job&gt;[^:]*):(?&lt;level&gt;[^:]*):(?&lt;ownerId&gt;[^:]*):(?&lt;worldId&gt;[^:]*):(?&lt;world&gt;[^:]*):9214:(?&lt;npcBaseId&gt;[^:]*):(?&lt;currentHp&gt;[^:]*):(?&lt;hp&gt;[^:]*):(?&lt;currentMp&gt;[^:]*):(?&lt;mp&gt;[^:]*)(?::[^:]*){2}:(?&lt;x&gt;[^:]*):(?&lt;y&gt;[^:]*):(?&lt;z&gt;[^:]*):(?&lt;heading&gt;[^:]*)(?:$|:)">
+                          <Trigger Enabled="true" Sequential="True" Name="类型1" Id="9773cc4a-00e9-4c2e-b66f-d3564b947025" RegularExpression="^.{14} AddCombatant 03:(?&lt;id&gt;[^:]*):(狩猎人偶|ヤークトドール|jagd doll):(?&lt;job&gt;[^:]*):(?&lt;level&gt;[^:]*):(?&lt;ownerId&gt;[^:]*):(?&lt;worldId&gt;[^:]*):(?&lt;world&gt;[^:]*):9214:(?&lt;npcBaseId&gt;[^:]*):(?&lt;currentHp&gt;[^:]*):(?&lt;hp&gt;[^:]*):(?&lt;currentMp&gt;[^:]*):(?&lt;mp&gt;[^:]*)(?::[^:]*){2}:(?&lt;x&gt;[^:]*):(?&lt;y&gt;[^:]*):(?&lt;z&gt;[^:]*):(?&lt;heading&gt;[^:]*)(?:$|:)">
                             <Actions>
                               <Action OrderNumber="1" OBSEndPoint="ws://${_const[OBSWebsocketEndpoint]}:${_const[OBSWebsocketPort]}" OBSPassword="${_const[OBSWebsocketPassword]}" VariableOp="SetString" VariableName="绝亚小怪id_Clone" VariableExpression="${id}" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
                                 <Condition Enabled="true" Grouping="And">
@@ -1927,7 +1927,7 @@
                               <ConditionSingle Enabled="true" ExpressionL="${var:活水之怒_6点}" ExpressionTypeL="String" ExpressionR="1" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                             </Condition>
                           </Trigger>
-                          <Trigger Enabled="true" Sequential="True" Name="类型3" Id="8f9d51d4-f796-4339-b5f8-611b95dcfeb1" RegularExpression="^.{14} AddCombatant 03:(?&lt;id&gt;[^:]*):狩猎人偶:(?&lt;job&gt;[^:]*):(?&lt;level&gt;[^:]*):(?&lt;ownerId&gt;[^:]*):(?&lt;worldId&gt;[^:]*):(?&lt;world&gt;[^:]*):9214:(?&lt;npcBaseId&gt;[^:]*):(?&lt;currentHp&gt;[^:]*):(?&lt;hp&gt;[^:]*):(?&lt;currentMp&gt;[^:]*):(?&lt;mp&gt;[^:]*)(?::[^:]*){2}:(?&lt;x&gt;[^:]*):(?&lt;y&gt;[^:]*):(?&lt;z&gt;[^:]*):(?&lt;heading&gt;[^:]*)(?:$|:)">
+                          <Trigger Enabled="true" Sequential="True" Name="类型3" Id="8f9d51d4-f796-4339-b5f8-611b95dcfeb1" RegularExpression="^.{14} AddCombatant 03:(?&lt;id&gt;[^:]*):(狩猎人偶|ヤークトドール|jagd doll):(?&lt;job&gt;[^:]*):(?&lt;level&gt;[^:]*):(?&lt;ownerId&gt;[^:]*):(?&lt;worldId&gt;[^:]*):(?&lt;world&gt;[^:]*):9214:(?&lt;npcBaseId&gt;[^:]*):(?&lt;currentHp&gt;[^:]*):(?&lt;hp&gt;[^:]*):(?&lt;currentMp&gt;[^:]*):(?&lt;mp&gt;[^:]*)(?::[^:]*){2}:(?&lt;x&gt;[^:]*):(?&lt;y&gt;[^:]*):(?&lt;z&gt;[^:]*):(?&lt;heading&gt;[^:]*)(?:$|:)">
                             <Actions>
                               <Action OrderNumber="1" OBSEndPoint="ws://${_const[OBSWebsocketEndpoint]}:${_const[OBSWebsocketPort]}" OBSPassword="${_const[OBSWebsocketPassword]}" VariableOp="SetString" VariableName="绝亚小怪id_Clone" VariableExpression="${id}" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
                                 <Condition Enabled="true" Grouping="And">
@@ -1992,7 +1992,7 @@
                               <ConditionSingle Enabled="true" ExpressionL="${var:活水之怒_9点}" ExpressionTypeL="String" ExpressionR="1" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                             </Condition>
                           </Trigger>
-                          <Trigger Enabled="true" Sequential="True" Name="类型7" Id="529ab662-12bf-486e-af08-6a6e7c594ecf" RegularExpression="^.{14} AddCombatant 03:(?&lt;id&gt;[^:]*):狩猎人偶:(?&lt;job&gt;[^:]*):(?&lt;level&gt;[^:]*):(?&lt;ownerId&gt;[^:]*):(?&lt;worldId&gt;[^:]*):(?&lt;world&gt;[^:]*):9214:(?&lt;npcBaseId&gt;[^:]*):(?&lt;currentHp&gt;[^:]*):(?&lt;hp&gt;[^:]*):(?&lt;currentMp&gt;[^:]*):(?&lt;mp&gt;[^:]*)(?::[^:]*){2}:(?&lt;x&gt;[^:]*):(?&lt;y&gt;[^:]*):(?&lt;z&gt;[^:]*):(?&lt;heading&gt;[^:]*)(?:$|:)">
+                          <Trigger Enabled="true" Sequential="True" Name="类型7" Id="529ab662-12bf-486e-af08-6a6e7c594ecf" RegularExpression="^.{14} AddCombatant 03:(?&lt;id&gt;[^:]*):(狩猎人偶|ヤークトドール|jagd doll):(?&lt;job&gt;[^:]*):(?&lt;level&gt;[^:]*):(?&lt;ownerId&gt;[^:]*):(?&lt;worldId&gt;[^:]*):(?&lt;world&gt;[^:]*):9214:(?&lt;npcBaseId&gt;[^:]*):(?&lt;currentHp&gt;[^:]*):(?&lt;hp&gt;[^:]*):(?&lt;currentMp&gt;[^:]*):(?&lt;mp&gt;[^:]*)(?::[^:]*){2}:(?&lt;x&gt;[^:]*):(?&lt;y&gt;[^:]*):(?&lt;z&gt;[^:]*):(?&lt;heading&gt;[^:]*)(?:$|:)">
                             <Actions>
                               <Action OrderNumber="1" OBSEndPoint="ws://${_const[OBSWebsocketEndpoint]}:${_const[OBSWebsocketPort]}" OBSPassword="${_const[OBSWebsocketPassword]}" VariableOp="SetString" VariableName="绝亚小怪id_Clone" VariableExpression="${id}" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
                                 <Condition Enabled="true" Grouping="And">
@@ -2057,7 +2057,7 @@
                               <ConditionSingle Enabled="true" ExpressionL="${var:活水之怒_9点}" ExpressionTypeL="String" ExpressionR="1" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                             </Condition>
                           </Trigger>
-                          <Trigger Enabled="true" Sequential="True" Name="类型5" Id="5f773903-571b-417e-a607-0fa508c00799" RegularExpression="^.{14} AddCombatant 03:(?&lt;id&gt;[^:]*):狩猎人偶:(?&lt;job&gt;[^:]*):(?&lt;level&gt;[^:]*):(?&lt;ownerId&gt;[^:]*):(?&lt;worldId&gt;[^:]*):(?&lt;world&gt;[^:]*):9214:(?&lt;npcBaseId&gt;[^:]*):(?&lt;currentHp&gt;[^:]*):(?&lt;hp&gt;[^:]*):(?&lt;currentMp&gt;[^:]*):(?&lt;mp&gt;[^:]*)(?::[^:]*){2}:(?&lt;x&gt;[^:]*):(?&lt;y&gt;[^:]*):(?&lt;z&gt;[^:]*):(?&lt;heading&gt;[^:]*)(?:$|:)">
+                          <Trigger Enabled="true" Sequential="True" Name="类型5" Id="5f773903-571b-417e-a607-0fa508c00799" RegularExpression="^.{14} AddCombatant 03:(?&lt;id&gt;[^:]*):(狩猎人偶|ヤークトドール|jagd doll):(?&lt;job&gt;[^:]*):(?&lt;level&gt;[^:]*):(?&lt;ownerId&gt;[^:]*):(?&lt;worldId&gt;[^:]*):(?&lt;world&gt;[^:]*):9214:(?&lt;npcBaseId&gt;[^:]*):(?&lt;currentHp&gt;[^:]*):(?&lt;hp&gt;[^:]*):(?&lt;currentMp&gt;[^:]*):(?&lt;mp&gt;[^:]*)(?::[^:]*){2}:(?&lt;x&gt;[^:]*):(?&lt;y&gt;[^:]*):(?&lt;z&gt;[^:]*):(?&lt;heading&gt;[^:]*)(?:$|:)">
                             <Actions>
                               <Action OrderNumber="1" OBSEndPoint="ws://${_const[OBSWebsocketEndpoint]}:${_const[OBSWebsocketPort]}" OBSPassword="${_const[OBSWebsocketPassword]}" VariableOp="SetString" VariableName="绝亚小怪id_Clone" VariableExpression="${id}" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
                                 <Condition Enabled="true" Grouping="And">
@@ -2182,31 +2182,27 @@
                   <Folder Id="c3a23337-4070-4121-97c9-9b8586ccb809" Name="销毁" Enabled="true">
                     <Folders />
                     <Triggers>
-                      <Trigger Enabled="true" Name="销毁 - 出现万变水波立刻销毁(备用)" Id="340012e1-df0f-4da2-88ac-a66b54790ffb" RegularExpression="^.{14} StartsCasting 14:(?&lt;sid&gt;[^:]*):(?&lt;sname&gt;[^:]*):4824:(?&lt;ability&gt;(?:[^:]|: )*?):(?&lt;tid&gt;[^:]*):(?&lt;tname&gt;[^:]*):(?&lt;castTime&gt;[^:]*):(?&lt;x&gt;[^:]*):(?&lt;y&gt;[^:]*):(?&lt;z&gt;[^:]*):(?&lt;heading&gt;[^:]*)(?:$|:)">
-                        <Actions>
-                          <Action OrderNumber="1" JsonEndpointExpression="http://127.0.0.1:47774/?destroy=xiaoguai" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="GenericJson">
-                            <Condition Enabled="false" Grouping="Or" />
-                          </Action>
-                        </Actions>
-                        <Condition Enabled="false" Grouping="Or" />
-                      </Trigger>
                       <Trigger Enabled="true" Source="FFXIVNetwork" Name="销毁 - 小怪爆了" Id="92a99d08-c43b-431e-b644-18430c385445" RegularExpression="^2[12]\|[^|]{1,33}\|(?&lt;sid&gt;40[^|]{6})\|[^|]+\|4821\|">
                         <Actions>
                           <Action OrderNumber="1" JsonEndpointExpression="http://127.0.0.1:47774/?destroy=xiaoguai" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="GenericJson">
                             <Condition Enabled="false" Grouping="Or" />
                           </Action>
                         </Actions>
-                        <Condition Enabled="false" Grouping="Or" />
+                        <Condition Enabled="true" Grouping="Or">
+                          <ConditionSingle Enabled="true" ExpressionL="${evar:TEA_Team_Role_Toupper}" ExpressionTypeL="String" ExpressionR="1" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                        </Condition>
                       </Trigger>
-                      <Trigger Enabled="true" Name="销毁 - 小怪与自身建立连线(tether)" Id="477480fc-ee94-47bf-b76e-2833ed02d4b1" RegularExpression="^.{14} Tether 23:(?&lt;sid&gt;[^:]*):狩猎人偶:10133000:(?&lt;tname&gt;[^:]*)(?::[^:]*){2}:0011(?:$|:)">
+                      <Trigger Enabled="true" Name="销毁 - 小怪与自身建立连线(tether)" Id="477480fc-ee94-47bf-b76e-2833ed02d4b1" RegularExpression="^.{14} Tether 23:(?&lt;sid&gt;[^:]*):(狩猎人偶|ヤークトドール|jagd doll):10133000:(?&lt;tname&gt;[^:]*)(?::[^:]*){2}:0011(?:$|:)">
                         <Actions>
                           <Action OrderNumber="1" JsonEndpointExpression="http://127.0.0.1:47774/?destroy=xiaoguai" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="GenericJson">
                             <Condition Enabled="false" Grouping="Or" />
                           </Action>
                         </Actions>
-                        <Condition Enabled="false" Grouping="Or" />
+                        <Condition Enabled="true" Grouping="Or">
+                          <ConditionSingle Enabled="true" ExpressionL="${evar:TEA_Team_Role_Toupper}" ExpressionTypeL="String" ExpressionR="1" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                        </Condition>
                       </Trigger>
-                      <Trigger Enabled="true" Name="销毁 - 小怪连线到他人" Id="486a51d0-c8c1-496e-bdb4-4e405ccc4661" RegularExpression="^.{14} Tether 23:(?&lt;sid&gt;[^:]*):狩猎人偶:(?&lt;tid&gt;[^:]*):(?&lt;tname&gt;[^:]*)(?::[^:]*){2}:0011(?:$|:)">
+                      <Trigger Enabled="true" Name="销毁 - 小怪连线到他人" Id="486a51d0-c8c1-496e-bdb4-4e405ccc4661" RegularExpression="^.{14} Tether 23:(?&lt;sid&gt;[^:]*):(狩猎人偶|ヤークトドール|jagd doll):(?&lt;tid&gt;[^:]*):(?&lt;tname&gt;[^:]*)(?::[^:]*){2}:0011(?:$|:)">
                         <Actions>
                           <Action OrderNumber="1" NamedCallbackName="command" NamedCallbackParam="/e 您的小怪与玩家：【${tname}】 连线！ &lt;se.2&gt;" OBSEndPoint="ws://${_const[OBSWebsocketEndpoint]}:${_const[OBSWebsocketPort]}" OBSPassword="${_const[OBSWebsocketPassword]}" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="NamedCallback">
                             <Condition Enabled="false" Grouping="Or" />
@@ -2218,19 +2214,21 @@
                         <Condition Enabled="true" Grouping="And">
                           <ConditionSingle Enabled="true" ExpressionL="${tid}" ExpressionTypeL="String" ExpressionR="10133000" ExpressionTypeR="String" ConditionType="StringNotEqualNocase" />
                           <ConditionSingle Enabled="true" ExpressionL="${sid}" ExpressionTypeL="String" ExpressionR="${var:绝亚小怪id_Clone}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                          <ConditionSingle Enabled="true" ExpressionL="${evar:TEA_Team_Role_Toupper}" ExpressionTypeL="String" ExpressionR="1" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                         </Condition>
                       </Trigger>
-                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="销毁 - 小怪被喂掉" Id="ca044d07-94c5-42fe-b5c6-51675e2c8b0e" RegularExpression="^35\|[^|]{1,33}\|(?&lt;sid&gt;[^|]{8})\|狩猎人偶\|(?&lt;tid&gt;40[^|]{6})\|(?&lt;tname&gt;活水之怒|活水之手|有生命活水)\|">
+                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="销毁 - 小怪被喂掉" Id="ca044d07-94c5-42fe-b5c6-51675e2c8b0e" RegularExpression="^35\|[^|]{1,33}\|(?&lt;sid&gt;[^|]{8})\|(狩猎人偶|ヤークトドール|jagd doll)\|(?&lt;tid&gt;40[^|]{6})\|(?&lt;tname&gt;活水之怒|活水之手|有生命活水)\|">
                         <Actions>
                           <Action OrderNumber="1" JsonEndpointExpression="http://127.0.0.1:47774/?destroy=xiaoguai" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="GenericJson">
                             <Condition Enabled="false" Grouping="Or" />
                           </Action>
                         </Actions>
-                        <Condition Enabled="true" Grouping="Or">
+                        <Condition Enabled="true" Grouping="And">
                           <ConditionSingle Enabled="true" ExpressionL="${sid}" ExpressionTypeL="String" ExpressionR="${var:绝亚小怪id_Clone}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                          <ConditionSingle Enabled="true" ExpressionL="${evar:TEA_Team_Role_Toupper}" ExpressionTypeL="String" ExpressionR="1" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                         </Condition>
                       </Trigger>
-                      <Trigger Enabled="true" Name="销毁 - 你拉了别人的小怪" Id="fa194b3a-0824-4a3b-a9ca-355a4a98658a" RegularExpression="^.{14} Tether 23:(?&lt;sid&gt;[^:]*):狩猎人偶:(?&lt;tid&gt;[^:]*):(?&lt;tname&gt;[^:]*)(?::[^:]*){2}:0011(?:$|:)">
+                      <Trigger Enabled="true" Name="销毁 - 你拉了别人的小怪" Id="fa194b3a-0824-4a3b-a9ca-355a4a98658a" RegularExpression="^.{14} Tether 23:(?&lt;sid&gt;[^:]*):(狩猎人偶|ヤークトドール|jagd doll):(?&lt;tid&gt;[^:]*):(?&lt;tname&gt;[^:]*)(?::[^:]*){2}:0011(?:$|:)">
                         <Actions>
                           <Action OrderNumber="1" JsonEndpointExpression="http://127.0.0.1:47774/?destroy=xiaoguai" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="GenericJson">
                             <Condition Enabled="false" Grouping="Or" />
@@ -2242,6 +2240,7 @@
                         <Condition Enabled="true" Grouping="And">
                           <ConditionSingle Enabled="true" ExpressionL="${sid}" ExpressionTypeL="String" ExpressionR="${var:绝亚小怪id_Clone}" ExpressionTypeR="String" ConditionType="StringNotEqualNocase" />
                           <ConditionSingle Enabled="true" ExpressionL="${tid}" ExpressionTypeL="String" ExpressionR="10133000" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                          <ConditionSingle Enabled="true" ExpressionL="${evar:TEA_Team_Role_Toupper}" ExpressionTypeL="String" ExpressionR="1" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                         </Condition>
                       </Trigger>
                     </Triggers>
@@ -3853,6 +3852,19 @@
                                   <ConditionSingle Enabled="true" ExpressionL="${var:残暴x_Clone}" ExpressionTypeL="Numeric" ExpressionR="100" ExpressionTypeR="Numeric" ConditionType="NumericGreaterEqual" />
                                 </Condition>
                               </Trigger>
+                              <Trigger Enabled="true" Name="3. 受到伤害销毁" Id="2e15ef07-b1ef-4fe8-b1d1-9e34850aa369" RegularExpression="^.{14} (?:\w+) (15|16):(?&lt;sid&gt;[^:]*):(?&lt;sname&gt;[^:]*):4834:(?&lt;ability&gt;(?:[^:]|: )*?):(?&lt;tid&gt;[^:]*):(?&lt;tname&gt;[^:]*):(?&lt;flags&gt;[^:]*):(?&lt;damage&gt;[^:]*)(?::[^:]*){14}:(?&lt;targetCurrentHp&gt;[^:]*):(?&lt;targetMaxHp&gt;[^:]*):(?&lt;targetCurrentMp&gt;[^:]*):(?&lt;targetMaxMp&gt;[^:]*)(?::[^:]*){2}:(?&lt;targetX&gt;[^:]*):(?&lt;targetY&gt;[^:]*):(?&lt;targetZ&gt;[^:]*):(?&lt;targetHeading&gt;[^:]*):(?&lt;currentHp&gt;[^:]*):(?&lt;maxHp&gt;[^:]*):(?&lt;currentMp&gt;[^:]*):(?&lt;maxMp&gt;[^:]*)(?::[^:]*){2}:(?&lt;x&gt;[^:]*):(?&lt;y&gt;[^:]*):(?&lt;z&gt;[^:]*):(?&lt;heading&gt;[^:]*):(?&lt;sequence&gt;[^:]*):(?&lt;targetIndex&gt;[^:]*):(?&lt;targetCount&gt;[^:]*)(?:$|:)">
+                                <Actions>
+                                  <Action OrderNumber="1" JsonEndpointExpression="http://127.0.0.1:47774/?destroy=2" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="GenericJson">
+                                    <Condition Enabled="false" Grouping="Or" />
+                                  </Action>
+                                </Actions>
+                                <Condition Enabled="true" Grouping="And">
+                                  <ConditionSingle Enabled="true" ExpressionL="${var:mjsign_clone}" ExpressionTypeL="String" ExpressionR="5" ExpressionTypeR="String" ConditionType="StringEqualCase" />
+                                  <ConditionSingle Enabled="true" ExpressionL="${var:残暴x_Clone}" ExpressionTypeL="Numeric" ExpressionR="100" ExpressionTypeR="Numeric" ConditionType="NumericGreaterEqual" />
+                                  <ConditionSingle Enabled="true" ExpressionL="${var:绝亚阶段_Clone}" ExpressionTypeL="String" ExpressionR="2" ExpressionTypeR="String" ConditionType="StringEqualCase" />
+                                  <ConditionSingle Enabled="true" ExpressionL="${tid}" ExpressionTypeL="String" ExpressionR="10133000" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                                </Condition>
+                              </Trigger>
                             </Triggers>
                           </Folder>
                           <Folder Id="80c3120b-a882-464a-b05b-ab9f0e78d74d" Name="6号" Enabled="true">
@@ -3890,6 +3902,19 @@
                                 <Condition Enabled="true" Grouping="And">
                                   <ConditionSingle Enabled="true" ExpressionL="${var:mjsign_clone}" ExpressionTypeL="String" ExpressionR="6" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                                   <ConditionSingle Enabled="true" ExpressionL="${var:残暴x_Clone}" ExpressionTypeL="Numeric" ExpressionR="100" ExpressionTypeR="Numeric" ConditionType="NumericGreaterEqual" />
+                                </Condition>
+                              </Trigger>
+                              <Trigger Enabled="true" Name="3. 受到伤害销毁" Id="ec6b991f-3a10-49cc-85b4-c86169efe1f0" RegularExpression="^.{14} (?:\w+) (15|16):(?&lt;sid&gt;[^:]*):(?&lt;sname&gt;[^:]*):49C3:(?&lt;ability&gt;(?:[^:]|: )*?):(?&lt;tid&gt;[^:]*):(?&lt;tname&gt;[^:]*):(?&lt;flags&gt;[^:]*):(?&lt;damage&gt;[^:]*)(?::[^:]*){14}:(?&lt;targetCurrentHp&gt;[^:]*):(?&lt;targetMaxHp&gt;[^:]*):(?&lt;targetCurrentMp&gt;[^:]*):(?&lt;targetMaxMp&gt;[^:]*)(?::[^:]*){2}:(?&lt;targetX&gt;[^:]*):(?&lt;targetY&gt;[^:]*):(?&lt;targetZ&gt;[^:]*):(?&lt;targetHeading&gt;[^:]*):(?&lt;currentHp&gt;[^:]*):(?&lt;maxHp&gt;[^:]*):(?&lt;currentMp&gt;[^:]*):(?&lt;maxMp&gt;[^:]*)(?::[^:]*){2}:(?&lt;x&gt;[^:]*):(?&lt;y&gt;[^:]*):(?&lt;z&gt;[^:]*):(?&lt;heading&gt;[^:]*):(?&lt;sequence&gt;[^:]*):(?&lt;targetIndex&gt;[^:]*):(?&lt;targetCount&gt;[^:]*)(?:$|:)" PeriodRefire="Deny" RefirePeriodExpression="1000">
+                                <Actions>
+                                  <Action OrderNumber="1" JsonEndpointExpression="http://127.0.0.1:47774/?destroy=2" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="GenericJson">
+                                    <Condition Enabled="false" Grouping="Or" />
+                                  </Action>
+                                </Actions>
+                                <Condition Enabled="true" Grouping="And">
+                                  <ConditionSingle Enabled="true" ExpressionL="${var:绝亚阶段_Clone}" ExpressionTypeL="String" ExpressionR="2" ExpressionTypeR="String" ConditionType="StringEqualCase" />
+                                  <ConditionSingle Enabled="true" ExpressionL="${var:mjsign_clone}" ExpressionTypeL="String" ExpressionR="6" ExpressionTypeR="String" ConditionType="StringEqualCase" />
+                                  <ConditionSingle Enabled="true" ExpressionL="${var:残暴x_Clone}" ExpressionTypeL="Numeric" ExpressionR="100" ExpressionTypeR="Numeric" ConditionType="NumericGreaterEqual" />
+                                  <ConditionSingle Enabled="true" ExpressionL="${tid}" ExpressionTypeL="String" ExpressionR="10133000" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                                 </Condition>
                               </Trigger>
                             </Triggers>
@@ -4324,6 +4349,19 @@
                                   <ConditionSingle Enabled="true" ExpressionL="${var:残暴x_Clone}" ExpressionTypeL="Numeric" ExpressionR="100" ExpressionTypeR="Numeric" ConditionType="NumericLess" />
                                 </Condition>
                               </Trigger>
+                              <Trigger Enabled="true" Name="3. 受到伤害销毁" Id="7e0770aa-2d38-4503-9670-34e2df587b51" RegularExpression="^.{14} (?:\w+) (15|16):(?&lt;sid&gt;[^:]*):(?&lt;sname&gt;[^:]*):4834:(?&lt;ability&gt;(?:[^:]|: )*?):(?&lt;tid&gt;[^:]*):(?&lt;tname&gt;[^:]*):(?&lt;flags&gt;[^:]*):(?&lt;damage&gt;[^:]*)(?::[^:]*){14}:(?&lt;targetCurrentHp&gt;[^:]*):(?&lt;targetMaxHp&gt;[^:]*):(?&lt;targetCurrentMp&gt;[^:]*):(?&lt;targetMaxMp&gt;[^:]*)(?::[^:]*){2}:(?&lt;targetX&gt;[^:]*):(?&lt;targetY&gt;[^:]*):(?&lt;targetZ&gt;[^:]*):(?&lt;targetHeading&gt;[^:]*):(?&lt;currentHp&gt;[^:]*):(?&lt;maxHp&gt;[^:]*):(?&lt;currentMp&gt;[^:]*):(?&lt;maxMp&gt;[^:]*)(?::[^:]*){2}:(?&lt;x&gt;[^:]*):(?&lt;y&gt;[^:]*):(?&lt;z&gt;[^:]*):(?&lt;heading&gt;[^:]*):(?&lt;sequence&gt;[^:]*):(?&lt;targetIndex&gt;[^:]*):(?&lt;targetCount&gt;[^:]*)(?:$|:)">
+                                <Actions>
+                                  <Action OrderNumber="1" JsonEndpointExpression="http://127.0.0.1:47774/?destroy=2" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="GenericJson">
+                                    <Condition Enabled="false" Grouping="Or" />
+                                  </Action>
+                                </Actions>
+                                <Condition Enabled="true" Grouping="And">
+                                  <ConditionSingle Enabled="true" ExpressionL="${var:绝亚阶段_Clone}" ExpressionTypeL="String" ExpressionR="2" ExpressionTypeR="String" ConditionType="StringEqualCase" />
+                                  <ConditionSingle Enabled="true" ExpressionL="${var:mjsign_clone}" ExpressionTypeL="String" ExpressionR="5" ExpressionTypeR="String" ConditionType="StringEqualCase" />
+                                  <ConditionSingle Enabled="true" ExpressionL="${var:残暴x_Clone}" ExpressionTypeL="Numeric" ExpressionR="100" ExpressionTypeR="Numeric" ConditionType="NumericLess" />
+                                  <ConditionSingle Enabled="true" ExpressionL="${tid}" ExpressionTypeL="String" ExpressionR="10133000" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                                </Condition>
+                              </Trigger>
                             </Triggers>
                           </Folder>
                           <Folder Id="3627942c-e735-4dec-a0c9-f284ec167948" Name="6号" Enabled="true">
@@ -4361,6 +4399,19 @@
                                 <Condition Enabled="true" Grouping="And">
                                   <ConditionSingle Enabled="true" ExpressionL="${var:mjsign_clone}" ExpressionTypeL="String" ExpressionR="6" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                                   <ConditionSingle Enabled="true" ExpressionL="${var:残暴x_Clone}" ExpressionTypeL="Numeric" ExpressionR="100" ExpressionTypeR="Numeric" ConditionType="NumericLess" />
+                                </Condition>
+                              </Trigger>
+                              <Trigger Enabled="true" Name="3. 受到伤害销毁" Id="b159f7ac-2ee9-44c6-9263-ac376e01ff31" RegularExpression="^.{14} (?:\w+) (15|16):(?&lt;sid&gt;[^:]*):(?&lt;sname&gt;[^:]*):49C3:(?&lt;ability&gt;(?:[^:]|: )*?):(?&lt;tid&gt;[^:]*):(?&lt;tname&gt;[^:]*):(?&lt;flags&gt;[^:]*):(?&lt;damage&gt;[^:]*)(?::[^:]*){14}:(?&lt;targetCurrentHp&gt;[^:]*):(?&lt;targetMaxHp&gt;[^:]*):(?&lt;targetCurrentMp&gt;[^:]*):(?&lt;targetMaxMp&gt;[^:]*)(?::[^:]*){2}:(?&lt;targetX&gt;[^:]*):(?&lt;targetY&gt;[^:]*):(?&lt;targetZ&gt;[^:]*):(?&lt;targetHeading&gt;[^:]*):(?&lt;currentHp&gt;[^:]*):(?&lt;maxHp&gt;[^:]*):(?&lt;currentMp&gt;[^:]*):(?&lt;maxMp&gt;[^:]*)(?::[^:]*){2}:(?&lt;x&gt;[^:]*):(?&lt;y&gt;[^:]*):(?&lt;z&gt;[^:]*):(?&lt;heading&gt;[^:]*):(?&lt;sequence&gt;[^:]*):(?&lt;targetIndex&gt;[^:]*):(?&lt;targetCount&gt;[^:]*)(?:$|:)">
+                                <Actions>
+                                  <Action OrderNumber="1" JsonEndpointExpression="http://127.0.0.1:47774/?destroy=2" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="GenericJson">
+                                    <Condition Enabled="false" Grouping="Or" />
+                                  </Action>
+                                </Actions>
+                                <Condition Enabled="true" Grouping="And">
+                                  <ConditionSingle Enabled="true" ExpressionL="${var:绝亚阶段_Clone}" ExpressionTypeL="String" ExpressionR="2" ExpressionTypeR="String" ConditionType="StringEqualCase" />
+                                  <ConditionSingle Enabled="true" ExpressionL="${var:mjsign_clone}" ExpressionTypeL="String" ExpressionR="6" ExpressionTypeR="String" ConditionType="StringEqualCase" />
+                                  <ConditionSingle Enabled="true" ExpressionL="${var:残暴x_Clone}" ExpressionTypeL="Numeric" ExpressionR="100" ExpressionTypeR="Numeric" ConditionType="NumericLess" />
+                                  <ConditionSingle Enabled="true" ExpressionL="${tid}" ExpressionTypeL="String" ExpressionR="10133000" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                                 </Condition>
                               </Trigger>
                             </Triggers>
@@ -4515,6 +4566,8 @@
                         <Condition Enabled="true" Grouping="Or">
                           <ConditionSingle Enabled="true" ExpressionL="${var:mjsign_clone}" ExpressionTypeL="String" ExpressionR="3" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                           <ConditionSingle Enabled="true" ExpressionL="${var:mjsign_clone}" ExpressionTypeL="String" ExpressionR="4" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                          <ConditionSingle Enabled="true" ExpressionL="${var:mjsign_clone}" ExpressionTypeL="String" ExpressionR="5" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                          <ConditionSingle Enabled="true" ExpressionL="${var:mjsign_clone}" ExpressionTypeL="String" ExpressionR="6" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                         </Condition>
                       </Trigger>
                     </Triggers>
@@ -5020,7 +5073,7 @@
                       <ConditionSingle Enabled="true" ExpressionL="${var:残暴id_Clone}" ExpressionTypeL="String" ExpressionR="${targetId}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                     </Condition>
                   </Trigger>
-                  <Trigger Enabled="true" Sequential="True" Name="1.2 小队频道 ( /p )" Id="87de989d-23c1-44d3-9d8d-9d876f449747" RegularExpression="(?&lt;timestamp&gt;^.{14}) StatusAdd (?&lt;type&gt;1A):1BB:(?&lt;effect&gt;(?:[^:]|: )*?):(?&lt;duration&gt;[^:]*):(?&lt;sourceId&gt;[^:]*):(?&lt;source&gt;[^:]*):(?&lt;targetId&gt;[^:]*):(?&lt;target&gt;[^:]*):(?&lt;count&gt;[^:]*):(?&lt;targetMaxHp&gt;[^:]*):(?&lt;sourceMaxHp&gt;[^:]*)(?:$|:)">
+                  <Trigger Enabled="false" Sequential="True" Name="1.2 小队频道 ( /p )" Id="87de989d-23c1-44d3-9d8d-9d876f449747" RegularExpression="(?&lt;timestamp&gt;^.{14}) StatusAdd (?&lt;type&gt;1A):1BB:(?&lt;effect&gt;(?:[^:]|: )*?):(?&lt;duration&gt;[^:]*):(?&lt;sourceId&gt;[^:]*):(?&lt;source&gt;[^:]*):(?&lt;targetId&gt;[^:]*):(?&lt;target&gt;[^:]*):(?&lt;count&gt;[^:]*):(?&lt;targetMaxHp&gt;[^:]*):(?&lt;sourceMaxHp&gt;[^:]*)(?:$|:)">
                     <Actions>
                       <Action OrderNumber="0" OBSEndPoint="ws://${_const[OBSWebsocketEndpoint]}:${_const[OBSWebsocketPort]}" OBSPassword="${_const[OBSWebsocketPassword]}" VariableOp="SetNumeric" VariableName="伤害提高层数_Clone" VariableExpression="hex2dec(${count})" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
                         <Condition Enabled="false" Grouping="Or" />
@@ -5040,7 +5093,7 @@
                       <ConditionSingle Enabled="true" ExpressionL="${var:残暴id_Clone}" ExpressionTypeL="String" ExpressionR="${targetId}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                     </Condition>
                   </Trigger>
-                  <Trigger Enabled="false" Sequential="True" Name="1.1 默语频道 ( /e )" Id="351c66cf-d0ea-4028-8936-0db0b13e7bfb" RegularExpression="(?&lt;timestamp&gt;^.{14}) StatusAdd (?&lt;type&gt;1A):1BB:(?&lt;effect&gt;(?:[^:]|: )*?):(?&lt;duration&gt;[^:]*):(?&lt;sourceId&gt;[^:]*):(?&lt;source&gt;[^:]*):(?&lt;targetId&gt;[^:]*):(?&lt;target&gt;[^:]*):(?&lt;count&gt;[^:]*):(?&lt;targetMaxHp&gt;[^:]*):(?&lt;sourceMaxHp&gt;[^:]*)(?:$|:)">
+                  <Trigger Enabled="true" Sequential="True" Name="1.1 默语频道 ( /e )" Id="351c66cf-d0ea-4028-8936-0db0b13e7bfb" RegularExpression="(?&lt;timestamp&gt;^.{14}) StatusAdd (?&lt;type&gt;1A):1BB:(?&lt;effect&gt;(?:[^:]|: )*?):(?&lt;duration&gt;[^:]*):(?&lt;sourceId&gt;[^:]*):(?&lt;source&gt;[^:]*):(?&lt;targetId&gt;[^:]*):(?&lt;target&gt;[^:]*):(?&lt;count&gt;[^:]*):(?&lt;targetMaxHp&gt;[^:]*):(?&lt;sourceMaxHp&gt;[^:]*)(?:$|:)">
                     <Actions>
                       <Action OrderNumber="1" OBSEndPoint="ws://${_const[OBSWebsocketEndpoint]}:${_const[OBSWebsocketPort]}" OBSPassword="${_const[OBSWebsocketPassword]}" VariableOp="SetNumeric" VariableName="伤害提高层数_Clone" VariableExpression="hex2dec(${count})" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
                         <Condition Enabled="false" Grouping="Or" />
@@ -5072,7 +5125,7 @@
               </Folder>
             </Folders>
             <Triggers>
-              <Trigger Enabled="true" Name="P3结晶破碎伤害判定发出滴滴声" Id="a5cd57c5-4e7b-4869-9cf1-1fe1037b4264" RegularExpression="^.{14} (?:\w+) (15|16):(?&lt;sid&gt;[^:]*):(?&lt;sname&gt;[^:]*):4A88:(?&lt;ability&gt;(?:[^:]|: )*?):10133000:(?&lt;tname&gt;[^:]*):(?&lt;flags&gt;[^:]*):(?&lt;damage&gt;[^:]*)(?::[^:]*){14}:(?&lt;targetCurrentHp&gt;[^:]*):(?&lt;targetMaxHp&gt;[^:]*):(?&lt;targetCurrentMp&gt;[^:]*):(?&lt;targetMaxMp&gt;[^:]*)(?::[^:]*){2}:(?&lt;targetX&gt;[^:]*):(?&lt;targetY&gt;[^:]*):(?&lt;targetZ&gt;[^:]*):(?&lt;targetHeading&gt;[^:]*):(?&lt;currentHp&gt;[^:]*):(?&lt;maxHp&gt;[^:]*):(?&lt;currentMp&gt;[^:]*):(?&lt;maxMp&gt;[^:]*)(?::[^:]*){2}:(?&lt;x&gt;[^:]*):(?&lt;y&gt;[^:]*):(?&lt;z&gt;[^:]*):(?&lt;heading&gt;[^:]*):(?&lt;sequence&gt;[^:]*):(?&lt;targetIndex&gt;[^:]*):(?&lt;targetCount&gt;[^:]*)(?:$|:)">
+              <Trigger Enabled="false" Name="P3结晶破碎伤害判定发出滴滴声" Id="a5cd57c5-4e7b-4869-9cf1-1fe1037b4264" RegularExpression="^.{14} (?:\w+) (15|16):(?&lt;sid&gt;[^:]*):(?&lt;sname&gt;[^:]*):4A88:(?&lt;ability&gt;(?:[^:]|: )*?):10133000:(?&lt;tname&gt;[^:]*):(?&lt;flags&gt;[^:]*):(?&lt;damage&gt;[^:]*)(?::[^:]*){14}:(?&lt;targetCurrentHp&gt;[^:]*):(?&lt;targetMaxHp&gt;[^:]*):(?&lt;targetCurrentMp&gt;[^:]*):(?&lt;targetMaxMp&gt;[^:]*)(?::[^:]*){2}:(?&lt;targetX&gt;[^:]*):(?&lt;targetY&gt;[^:]*):(?&lt;targetZ&gt;[^:]*):(?&lt;targetHeading&gt;[^:]*):(?&lt;currentHp&gt;[^:]*):(?&lt;maxHp&gt;[^:]*):(?&lt;currentMp&gt;[^:]*):(?&lt;maxMp&gt;[^:]*)(?::[^:]*){2}:(?&lt;x&gt;[^:]*):(?&lt;y&gt;[^:]*):(?&lt;z&gt;[^:]*):(?&lt;heading&gt;[^:]*):(?&lt;sequence&gt;[^:]*):(?&lt;targetIndex&gt;[^:]*):(?&lt;targetCount&gt;[^:]*)(?:$|:)">
                 <Actions>
                   <Action OrderNumber="1" SystemBeepLengthExpression="200" OBSEndPoint="ws://${_const[OBSWebsocketEndpoint]}:${_const[OBSWebsocketPort]}" OBSPassword="${_const[OBSWebsocketPassword]}" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="SystemBeep">
                     <Condition Enabled="false" Grouping="Or" />
@@ -6222,7 +6275,7 @@
           </Folder>
         </Folders>
         <Triggers>
-          <Trigger Enabled="true" Name="修改日期：2023-03-15 修改错误上传备用，新功能默认关闭如需要请自行启用。" Id="066ef6cf-5add-4d77-874a-4198186a1443" RegularExpression="">
+          <Trigger Enabled="true" Name="修改日期：2023-03-18 修改错误再次上传备用，新功能默认关闭如需要请自行在P3分组中启用。" Id="066ef6cf-5add-4d77-874a-4198186a1443" RegularExpression="">
             <Actions />
             <Condition Enabled="false" Grouping="Or" />
           </Trigger>
@@ -6254,6 +6307,11 @@
           <Trigger Enabled="true" Name="Cactbotself：github.com/tssailzz8/cacbotSelf" Id="620ecf62-2eeb-436e-8b74-4a24a651921a" RegularExpression="">
             <Actions />
             <Condition Enabled="false" Grouping="Or" />
+          </Trigger>
+          <Trigger Enabled="true" Name="Postnamazu(鲶鱼精邮差)：github.com/Natsukage/PostNamazu" Id="c89118e6-8fc0-4719-9939-842da75ca21f" RegularExpression="">
+            <Actions />
+            <Condition Enabled="false" Grouping="Or" />
+            <Conditions />
           </Trigger>
         </Triggers>
       </Folder>
@@ -7895,7 +7953,7 @@
                           <Action OrderNumber="1" OBSEndPoint="ws://${_const[OBSWebsocketEndpoint]}:${_const[OBSWebsocketPort]}" OBSPassword="${_const[OBSWebsocketPassword]}" VariableOp="SetNumeric" VariableName="神秘光线_次数" VariableExpression="${var:神秘光线_次数}+1" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable" RefireRequeue="False">
                             <Condition Enabled="false" Grouping="Or" />
                           </Action>
-                          <Action OrderNumber="2" OBSEndPoint="ws://${_const[OBSWebsocketEndpoint]}:${_const[OBSWebsocketPort]}" OBSPassword="${_const[OBSWebsocketPassword]}" VariableOp="SetString" VariableName="神秘光线_次数" VariableExpression="0" TextAuraFontSize="9" TextAuraFontName="宋体" Enabled="False" ActionType="Variable" ExecutionDelayExpression="10000" RefireRequeue="False">
+                          <Action OrderNumber="2" OBSEndPoint="ws://${_const[OBSWebsocketEndpoint]}:${_const[OBSWebsocketPort]}" OBSPassword="${_const[OBSWebsocketPassword]}" VariableOp="SetString" VariableName="神秘光线_次数" VariableExpression="0" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable" ExecutionDelayExpression="10000" RefireRequeue="False">
                             <Condition Enabled="false" Grouping="Or" />
                           </Action>
                         </Actions>
@@ -8698,12 +8756,12 @@
                   </Trigger>
                 </Triggers>
               </Folder>
-              <Folder FFXIVZoneFilterEnabled="True" FfxivZoneFilterRegularExpression="^969$" Id="a5a167cb-c195-47df-a8f5-d6b2e8966b12" Name="魔导神门巴别塔[debug]" Enabled="false">
+              <Folder FFXIVZoneFilterEnabled="True" FfxivZoneFilterRegularExpression="^969$" Id="a5a167cb-c195-47df-a8f5-d6b2e8966b12" Name="魔导神门巴别塔" Enabled="true">
                 <Folders>
                   <Folder Id="11325f23-0fcb-4766-bf63-a6843960c814" Name="Boss1 - 巴尔纳伯" Enabled="true">
                     <Folders />
                     <Triggers>
-                      <Trigger Enabled="true" Name="1. 地面重击" Id="330d750d-3dc2-44fc-8dce-deabefb85076" RegularExpression="^.{14} StartsCasting 14:(?&lt;sid&gt;[^:]*):(?&lt;sname&gt;[^:]*):6247:(?&lt;ability&gt;(?:[^:]|: )*?):(?&lt;tid&gt;[^:]*):(?&lt;tname&gt;[^:]*):(?&lt;castTime&gt;[^:]*):(?&lt;x&gt;[^:]*):(?&lt;y&gt;[^:]*):(?&lt;z&gt;[^:]*):(?&lt;heading&gt;[^:]*)(?:$|:)">
+                      <Trigger Enabled="true" Name="1. 地面重击" Id="330d750d-3dc2-44fc-8dce-deabefb85076" RegularExpression="^.{14} StartsCasting 14:(?&lt;sid&gt;[^:]*):(?&lt;sname&gt;[^:]*):62(47|EA):(?&lt;ability&gt;(?:[^:]|: )*?):(?&lt;tid&gt;[^:]*):(?&lt;tname&gt;[^:]*):(?&lt;castTime&gt;[^:]*):(?&lt;x&gt;[^:]*):(?&lt;y&gt;[^:]*):(?&lt;z&gt;[^:]*):(?&lt;heading&gt;[^:]*)(?:$|:)">
                         <Actions>
                           <Action OrderNumber="1" JsonEndpointExpression="http://127.0.0.1:47774/?namespace=01&amp;destroyAt=3700,COMBAT_EXIT,TERRITORY_CHANGE" JsonPayloadExpression="{&quot;Name&quot;:&quot;地面重击 6247&quot;,&quot;type&quot;:3,&quot;refY&quot;:40.0,&quot;radius&quot;:3.0,&quot;color&quot;:838925028,&quot;refActorDataID&quot;:13303,&quot;refActorComparisonType&quot;:3,&quot;includeRotation&quot;:true}" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="GenericJson">
                             <Condition Enabled="false" Grouping="And" />
@@ -8713,7 +8771,10 @@
                       </Trigger>
                       <Trigger Enabled="true" Name="2. 电磁放射参考线" Id="07974a2b-a84a-4a74-8c10-267494480169" RegularExpression="^.{14} StartsCasting 14:(?&lt;sid&gt;[^:]*):(?&lt;sname&gt;[^:]*):(62EF|62F1):(?&lt;ability&gt;(?:[^:]|: )*?):(?&lt;tid&gt;[^:]*):(?&lt;tname&gt;[^:]*):(?&lt;castTime&gt;[^:]*):(?&lt;x&gt;[^:]*):(?&lt;y&gt;[^:]*):(?&lt;z&gt;[^:]*):(?&lt;heading&gt;[^:]*)(?:$|:)">
                         <Actions>
-                          <Action OrderNumber="1" JsonEndpointExpression="http://127.0.0.1:47774/?namespace=02&amp;destroyAt=9200,COMBAT_EXIT,TERRITORY_CHANGE" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="GenericJson">
+                          <Action OrderNumber="1" JsonEndpointExpression="http://127.0.0.1:47774/?namespace=02&amp;destroyAt=9200,COMBAT_EXIT,TERRITORY_CHANGE" JsonPayloadExpression="{&quot;Name&quot;:&quot;电磁放射极限引导线 左&quot;,&quot;type&quot;:2,&quot;refX&quot;:-313.5,&quot;refY&quot;:55.0,&quot;refZ&quot;:-175.0,&quot;offX&quot;:-313.5,&quot;offY&quot;:95.0,&quot;offZ&quot;:-175.0,&quot;radius&quot;:0.0,&quot;color&quot;:4294967295,&quot;thicc&quot;:5.0}" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="GenericJson">
+                            <Condition Enabled="false" Grouping="And" />
+                          </Action>
+                          <Action OrderNumber="2" JsonEndpointExpression="http://127.0.0.1:47774/?namespace=02&amp;destroyAt=9200,COMBAT_EXIT,TERRITORY_CHANGE" JsonPayloadExpression="{&quot;Name&quot;:&quot;电磁放射极限引导线 右&quot;,&quot;type&quot;:2,&quot;refX&quot;:-286.5,&quot;refY&quot;:55.0,&quot;refZ&quot;:-175.0,&quot;offX&quot;:-286.5,&quot;offY&quot;:95.0,&quot;offZ&quot;:-175.0,&quot;radius&quot;:0.0,&quot;color&quot;:4294967295,&quot;thicc&quot;:5.0}" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="GenericJson">
                             <Condition Enabled="false" Grouping="And" />
                           </Action>
                         </Actions>
@@ -8724,7 +8785,7 @@
                           <Action OrderNumber="1" OBSEndPoint="ws://${_const[OBSWebsocketEndpoint]}:${_const[OBSWebsocketPort]}" OBSPassword="${_const[OBSWebsocketPassword]}" VariableOp="SetNumeric" VariableName="个人绘制_高压放电" VariableExpression="hex2dec(${tid})" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
                             <Condition Enabled="false" Grouping="Or" />
                           </Action>
-                          <Action OrderNumber="2" JsonEndpointExpression="http://127.0.0.1:47774/?namespace=stack&amp;destroyAt=15000,COMBAT_EXIT,TERRITORY_CHANGE" JsonPayloadExpression="{&quot;Name&quot;:&quot;高压放电&quot;,&quot;type&quot;:1,&quot;radius&quot;:6.0,&quot;color&quot;:4278255614,&quot;overlayBGColor&quot;:4278190080,&quot;overlayTextColor&quot;:4278255607,&quot;thicc&quot;:3.0,&quot;overlayText&quot;:&quot;分摊&quot;,&quot;refActorObjectID&quot;:${var:个人绘制_高压放电},&quot;refActorComparisonType&quot;:2,&quot;tether&quot;:true}" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="GenericJson">
+                          <Action OrderNumber="2" JsonEndpointExpression="http://127.0.0.1:47774/?namespace=stack&amp;destroyAt=4700,COMBAT_EXIT,TERRITORY_CHANGE" JsonPayloadExpression="{&quot;Name&quot;:&quot;高压放电&quot;,&quot;type&quot;:1,&quot;radius&quot;:6.0,&quot;color&quot;:4278255614,&quot;overlayBGColor&quot;:4278190080,&quot;overlayTextColor&quot;:4278255607,&quot;thicc&quot;:3.0,&quot;overlayText&quot;:&quot;分摊&quot;,&quot;refActorObjectID&quot;:${var:个人绘制_高压放电},&quot;refActorComparisonType&quot;:2,&quot;tether&quot;:true}" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="GenericJson">
                             <Condition Enabled="false" Grouping="And" />
                           </Action>
                         </Actions>
@@ -8734,6 +8795,9 @@
                         <Actions>
                           <Action OrderNumber="1" JsonEndpointExpression="http://127.0.0.1:47774/?namespace=04&amp;destroyAt=6700,COMBAT_EXIT,TERRITORY_CHANGE" JsonPayloadExpression="{&quot;Name&quot;:&quot;超电磁回旋碎颈臂&quot;,&quot;type&quot;:1,&quot;radius&quot;:13.0,&quot;color&quot;:4294967295,&quot;thicc&quot;:5.0,&quot;refActorDataID&quot;:13303,&quot;refActorComparisonType&quot;:3}" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="GenericJson">
                             <Condition Enabled="false" Grouping="And" />
+                          </Action>
+                          <Action OrderNumber="2" JsonEndpointExpression="http://127.0.0.1:47774/?destroy=02" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="GenericJson" ExecutionDelayExpression="500">
+                            <Condition Enabled="false" Grouping="Or" />
                           </Action>
                         </Actions>
                         <Condition Enabled="false" Grouping="Or" />
@@ -8764,16 +8828,16 @@
                     <Triggers>
                       <Trigger Enabled="true" Name="1. 魔导炸弹出现" Id="6a149ece-5206-49e1-855e-359477a42064" RegularExpression="^.{14} AddCombatant 03:(?&lt;id&gt;[^:]*):(?&lt;name&gt;[^:]*):(?&lt;job&gt;[^:]*):53:(?&lt;ownerId&gt;[^:]*):(?&lt;worldId&gt;[^:]*):(?&lt;world&gt;[^:]*):(?&lt;npcNameId&gt;[^:]*):13308:(?&lt;currentHp&gt;[^:]*):(?&lt;hp&gt;[^:]*):(?&lt;currentMp&gt;[^:]*):(?&lt;mp&gt;[^:]*)(?::[^:]*){2}:(?&lt;x&gt;[^:]*):(?&lt;y&gt;[^:]*):(?&lt;z&gt;[^:]*):(?&lt;heading&gt;[^:]*)(?:$|:)" PeriodRefire="Deny" RefirePeriodExpression="1000">
                         <Actions>
-                          <Action OrderNumber="1" JsonEndpointExpression="http://127.0.0.1:47774/?namespace=06&amp;destroyAt=15000,COMBAT_EXIT,TERRITORY_CHANGE" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="GenericJson">
+                          <Action OrderNumber="1" JsonEndpointExpression="http://127.0.0.1:47774/?namespace=06&amp;destroyAt=15000,COMBAT_EXIT,TERRITORY_CHANGE" JsonPayloadExpression="{&quot;Name&quot;:&quot;魔导炸弹1&quot;,&quot;type&quot;:3,&quot;refY&quot;:-40.0,&quot;offY&quot;:40.0,&quot;radius&quot;:4.0,&quot;color&quot;:436195942,&quot;thicc&quot;:5.0,&quot;refActorDataID&quot;:13308,&quot;FillStep&quot;:0.3,&quot;refActorComparisonType&quot;:3,&quot;includeRotation&quot;:true}" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="GenericJson">
                             <Condition Enabled="false" Grouping="And" />
                           </Action>
-                          <Action OrderNumber="2" JsonEndpointExpression="http://127.0.0.1:47774/?namespace=06&amp;destroyAt=15000,COMBAT_EXIT,TERRITORY_CHANGE" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="GenericJson">
+                          <Action OrderNumber="2" JsonEndpointExpression="http://127.0.0.1:47774/?namespace=06&amp;destroyAt=15000,COMBAT_EXIT,TERRITORY_CHANGE" JsonPayloadExpression="{&quot;Name&quot;:&quot;魔导炸弹2&quot;,&quot;type&quot;:3,&quot;refY&quot;:-40.0,&quot;offY&quot;:40.0,&quot;radius&quot;:4.0,&quot;color&quot;:436195942,&quot;thicc&quot;:5.0,&quot;refActorDataID&quot;:13308,&quot;FillStep&quot;:0.3,&quot;refActorComparisonType&quot;:3,&quot;includeRotation&quot;:true,&quot;AdditionalRotation&quot;:1.5707964}" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="GenericJson">
                             <Condition Enabled="false" Grouping="And" />
                           </Action>
                         </Actions>
                         <Condition Enabled="false" Grouping="Or" />
                       </Trigger>
-                      <Trigger Enabled="true" Name="2. 魔导炸弹销毁" Id="cb144731-8e21-4a25-a11f-ca6b7f9c8eec" RegularExpression="^.{14} (?:\w+) (15|16):(?&lt;sid&gt;[^:]*):(?&lt;sname&gt;[^:]*):62F9:(?&lt;ability&gt;(?:[^:]|: )*?):(?&lt;tid&gt;[^:]*):(?&lt;tname&gt;[^:]*):(?&lt;flags&gt;[^:]*):(?&lt;damage&gt;[^:]*)(?::[^:]*){14}:(?&lt;targetCurrentHp&gt;[^:]*):(?&lt;targetMaxHp&gt;[^:]*):(?&lt;targetCurrentMp&gt;[^:]*):(?&lt;targetMaxMp&gt;[^:]*)(?::[^:]*){2}:(?&lt;targetX&gt;[^:]*):(?&lt;targetY&gt;[^:]*):(?&lt;targetZ&gt;[^:]*):(?&lt;targetHeading&gt;[^:]*):(?&lt;currentHp&gt;[^:]*):(?&lt;maxHp&gt;[^:]*):(?&lt;currentMp&gt;[^:]*):(?&lt;maxMp&gt;[^:]*)(?::[^:]*){2}:(?&lt;x&gt;[^:]*):(?&lt;y&gt;[^:]*):(?&lt;z&gt;[^:]*):(?&lt;heading&gt;[^:]*):(?&lt;sequence&gt;[^:]*):(?&lt;targetIndex&gt;[^:]*):(?&lt;targetCount&gt;[^:]*)(?:$|:)" PeriodRefire="Deny" RefirePeriodExpression="1000">
+                      <Trigger Enabled="true" Name="2. 炸弹销毁" Id="f5ad2774-da86-4f8a-af28-bc36c34c2ff9" RegularExpression="^.{14} (?:\w+) (15|16):(?&lt;sid&gt;[^:]*):(?&lt;sname&gt;[^:]*):62F9:(?&lt;ability&gt;(?:[^:]|: )*?):(?&lt;tid&gt;[^:]*):(?&lt;tname&gt;[^:]*):(?&lt;flags&gt;[^:]*):(?&lt;damage&gt;[^:]*)(?::[^:]*){14}:(?&lt;targetCurrentHp&gt;[^:]*):(?&lt;targetMaxHp&gt;[^:]*):(?&lt;targetCurrentMp&gt;[^:]*):(?&lt;targetMaxMp&gt;[^:]*)(?::[^:]*){2}:(?&lt;targetX&gt;[^:]*):(?&lt;targetY&gt;[^:]*):(?&lt;targetZ&gt;[^:]*):(?&lt;targetHeading&gt;[^:]*):(?&lt;currentHp&gt;[^:]*):(?&lt;maxHp&gt;[^:]*):(?&lt;currentMp&gt;[^:]*):(?&lt;maxMp&gt;[^:]*)(?::[^:]*){2}:(?&lt;x&gt;[^:]*):(?&lt;y&gt;[^:]*):(?&lt;z&gt;[^:]*):(?&lt;heading&gt;[^:]*):(?&lt;sequence&gt;[^:]*):(?&lt;targetIndex&gt;[^:]*):(?&lt;targetCount&gt;[^:]*)(?:$|:)" PeriodRefire="Deny" RefirePeriodExpression="1000">
                         <Actions>
                           <Action OrderNumber="1" JsonEndpointExpression="http://127.0.0.1:47774/?destroy=06" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="GenericJson">
                             <Condition Enabled="false" Grouping="Or" />
@@ -8799,10 +8863,13 @@
                       </Trigger>
                       <Trigger Enabled="true" Sequential="True" Name="2. 无际痛苦" Id="b5a26de0-cecc-484f-a718-53b0055c35a1" RegularExpression="^.{14} (?:\w+) (15|16):(?&lt;sid&gt;[^:]*):(?&lt;sname&gt;[^:]*):6304:(?&lt;ability&gt;(?:[^:]|: )*?):(?&lt;tid&gt;[^:]*):(?&lt;tname&gt;[^:]*):(?&lt;flags&gt;[^:]*):(?&lt;damage&gt;[^:]*)(?::[^:]*){14}:(?&lt;targetCurrentHp&gt;[^:]*):(?&lt;targetMaxHp&gt;[^:]*):(?&lt;targetCurrentMp&gt;[^:]*):(?&lt;targetMaxMp&gt;[^:]*)(?::[^:]*){2}:(?&lt;targetX&gt;[^:]*):(?&lt;targetY&gt;[^:]*):(?&lt;targetZ&gt;[^:]*):(?&lt;targetHeading&gt;[^:]*):(?&lt;currentHp&gt;[^:]*):(?&lt;maxHp&gt;[^:]*):(?&lt;currentMp&gt;[^:]*):(?&lt;maxMp&gt;[^:]*)(?::[^:]*){2}:(?&lt;x&gt;[^:]*):(?&lt;y&gt;[^:]*):(?&lt;z&gt;[^:]*):(?&lt;heading&gt;[^:]*):(?&lt;sequence&gt;[^:]*):(?&lt;targetIndex&gt;[^:]*):(?&lt;targetCount&gt;[^:]*)(?:$|:)" PeriodRefire="Deny" RefirePeriodExpression="1000">
                         <Actions>
-                          <Action OrderNumber="1" JsonEndpointExpression="http://127.0.0.1:47774/?namespace=08&amp;destroyAt=12000,COMBAT_EXIT,TERRITORY_CHANGE" JsonPayloadExpression="{&quot;Name&quot;:&quot;无际痛苦2&quot;,&quot;type&quot;:1,&quot;radius&quot;:18.0,&quot;color&quot;:4294937088,&quot;thicc&quot;:3.0,&quot;refActorObjectID&quot;:1073831238,&quot;refActorComparisonType&quot;:2}" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="GenericJson">
+                          <Action OrderNumber="1" OBSEndPoint="ws://${_const[OBSWebsocketEndpoint]}:${_const[OBSWebsocketPort]}" OBSPassword="${_const[OBSWebsocketPassword]}" VariableOp="SetNumeric" VariableName="个人绘制_无际痛苦" VariableExpression="hex2dec(${sid})" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
+                            <Condition Enabled="false" Grouping="Or" />
+                          </Action>
+                          <Action OrderNumber="2" JsonEndpointExpression="http://127.0.0.1:47774/?namespace=08&amp;destroyAt=12000,COMBAT_EXIT,TERRITORY_CHANGE" JsonPayloadExpression="{&quot;Name&quot;:&quot;无际痛苦2&quot;,&quot;type&quot;:1,&quot;radius&quot;:18.0,&quot;color&quot;:4294937088,&quot;thicc&quot;:3.0,&quot;refActorObjectID&quot;:${var:个人绘制_无际痛苦},&quot;refActorComparisonType&quot;:2}" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="GenericJson">
                             <Condition Enabled="false" Grouping="And" />
                           </Action>
-                          <Action OrderNumber="2" JsonEndpointExpression="http://127.0.0.1:47774/?namespace=08&amp;destroyAt=12000,COMBAT_EXIT,TERRITORY_CHANGE" JsonPayloadExpression="{&quot;Name&quot;:&quot;无际痛苦&quot;,&quot;type&quot;:1,&quot;radius&quot;:18.0,&quot;color&quot;:855636736,&quot;refActorObjectID&quot;:1073831238,&quot;refActorComparisonType&quot;:2,&quot;Filled&quot;:true}" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="GenericJson">
+                          <Action OrderNumber="3" JsonEndpointExpression="http://127.0.0.1:47774/?namespace=08&amp;destroyAt=12000,COMBAT_EXIT,TERRITORY_CHANGE" JsonPayloadExpression="{&quot;Name&quot;:&quot;无际痛苦&quot;,&quot;type&quot;:1,&quot;radius&quot;:18.0,&quot;color&quot;:855636736,&quot;refActorObjectID&quot;:${var:个人绘制_无际痛苦},&quot;refActorComparisonType&quot;:2,&quot;Filled&quot;:true}" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="GenericJson">
                             <Condition Enabled="false" Grouping="And" />
                           </Action>
                         </Actions>
@@ -9602,7 +9669,7 @@
             <Actions />
             <Condition Enabled="false" Grouping="Or" />
           </Trigger>
-          <Trigger Enabled="true" Name="7.0 提问：有些绘制挡住我看队友/机制/Boss/特效了！我能不能关掉或者我自己改一下？" Id="1bab029c-f705-4dd6-aaa2-7126c9ed0566" RegularExpression="">
+          <Trigger Enabled="true" Name="7.0 提问：有些绘制挡住我看队友/机制/Boss/特效了！我能不能关掉或者自己改一下？" Id="1bab029c-f705-4dd6-aaa2-7126c9ed0566" RegularExpression="">
             <Actions />
             <Condition Enabled="false" Grouping="Or" />
           </Trigger>
@@ -9665,7 +9732,13 @@
             </Triggers>
           </Folder>
         </Folders>
-        <Triggers />
+        <Triggers>
+          <Trigger Enabled="true" Name="别导入，没用的" Id="6a1e4841-b29e-4220-b96b-7c797b814b36" RegularExpression="">
+            <Actions />
+            <Condition Enabled="false" Grouping="Or" />
+            <Conditions />
+          </Trigger>
+        </Triggers>
       </Folder>
       <Folder Id="9de28481-3fd7-428e-92be-a3be26585ebc" Name="5. 【天之御柱】(画饼)" Enabled="true">
         <Folders />
@@ -9673,7 +9746,7 @@
       </Folder>
     </Folders>
     <Triggers>
-      <Trigger Enabled="false" Sequential="True" Name="【初次导入提醒】2023/03/15" Id="1ce28eab-2569-47d9-8dc8-43db6e0c37cb" RegularExpression="^." PeriodRefire="Deny" RefirePeriodExpression="2000">
+      <Trigger Enabled="true" Sequential="True" Name="【初次导入提醒】2023/03/18" Id="1ce28eab-2569-47d9-8dc8-43db6e0c37cb" RegularExpression="^." PeriodRefire="Deny" RefirePeriodExpression="2000">
         <Actions>
           <Action OrderNumber="1" OBSEndPoint="ws://${_const[OBSWebsocketEndpoint]}:${_const[OBSWebsocketPort]}" OBSPassword="${_const[OBSWebsocketPassword]}" TextAuraFontSize="9" TextAuraFontName="宋体" TriggerOp="DisableTrigger" TriggerId="1ce28eab-2569-47d9-8dc8-43db6e0c37cb" ActionType="Trigger">
             <Condition Enabled="false" Grouping="Or" />
