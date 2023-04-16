@@ -558,7 +558,7 @@
           </Trigger>
         </Triggers>
       </Folder>
-      <Folder Id="8517f409-a6ec-46b4-acbf-ea01d2809dc3" Name="1. 【绝亚】亚历山大绝境战 2023.03.28" Enabled="true">
+      <Folder Id="8517f409-a6ec-46b4-acbf-ea01d2809dc3" Name="1. 【绝亚】亚历山大绝境战 2023.04.16" Enabled="true">
         <Folders>
           <Folder FFXIVZoneFilterEnabled="True" FfxivZoneFilterRegularExpression="^887$" Id="50cdbc84-4919-46dd-b6ea-1a89f5fc95c3" Name="P1" Enabled="true">
             <Folders>
@@ -2601,18 +2601,16 @@
                   </Trigger>
                 </Triggers>
               </Folder>
-              <Folder Id="67e0e0d1-7a1c-4cce-85cf-a7386c70e13a" Name="7. 简易第3次传毒/终审排队拿毒指示" Enabled="true">
+              <Folder Id="67e0e0d1-7a1c-4cce-85cf-a7386c70e13a" Name="7. [疫苗找毒版本]简易第3次传毒/终审排队拿毒指示" Enabled="true">
                 <Folders />
                 <Triggers>
                   <Trigger Enabled="true" Name="获取疫苗" Id="cbf541af-cd2e-4b8c-b2f4-e838ded78870" RegularExpression="">
                     <Actions />
                     <Condition Enabled="false" Grouping="Or" />
-                    <Conditions />
                   </Trigger>
                   <Trigger Enabled="true" Name="自身毒记录" Id="ee00c601-8295-4c3a-b26e-a5a68c07edd9" RegularExpression="">
                     <Actions />
                     <Condition Enabled="false" Grouping="Or" />
-                    <Conditions />
                   </Trigger>
                 </Triggers>
               </Folder>
@@ -3575,7 +3573,7 @@
                           <Folder Id="5c0031d7-d916-4cc9-994c-451aef9bffe4" Name="1号" Enabled="true">
                             <Folders />
                             <Triggers>
-                              <Trigger Enabled="true" Sequential="True" Name="1. 点名" Id="be2f09c2-cfb5-408a-b3be-cac68038f406" RegularExpression="^majiang_clone:1">
+                              <Trigger Enabled="true" Sequential="True" Name="1. 点名" Id="be2f09c2-cfb5-408a-b3be-cac68038f406" RegularExpression="^majiang_clone:1$">
                                 <Actions>
                                   <Action OrderNumber="1" OBSEndPoint="ws://${_const[OBSWebsocketEndpoint]}:${_const[OBSWebsocketPort]}" OBSPassword="${_const[OBSWebsocketPassword]}" VariableOp="SetString" VariableName="mjsign_clone" VariableExpression="1" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
                                     <Condition Enabled="false" Grouping="Or" />
@@ -3587,6 +3585,7 @@
                                 <Condition Enabled="true" Grouping="Or">
                                   <ConditionSingle Enabled="true" ExpressionL="${var:残暴x_Clone}" ExpressionTypeL="Numeric" ExpressionR="100" ExpressionTypeR="Numeric" ConditionType="NumericGreaterEqual" />
                                 </Condition>
+                                <Conditions />
                               </Trigger>
                               <Trigger Enabled="true" Sequential="True" Name="2. 罪恶感触发" Id="9b2fb2a6-f3fd-4e12-913d-f8d420a5a2b4" RegularExpression="^Count_4869:(?&lt;value&gt;.*?)$">
                                 <Actions>
@@ -3642,13 +3641,14 @@
                                   <ConditionSingle Enabled="true" ExpressionL="${var:残暴x_Clone}" ExpressionTypeL="Numeric" ExpressionR="100" ExpressionTypeR="Numeric" ConditionType="NumericGreaterEqual" />
                                   <ConditionSingle Enabled="true" ExpressionL="${var:mjsign_clone}" ExpressionTypeL="String" ExpressionR="1" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                                 </Condition>
+                                <Conditions />
                               </Trigger>
                             </Triggers>
                           </Folder>
                           <Folder Id="4b919527-6d7f-4a2f-ad16-164d602ec9d9" Name="2号" Enabled="true">
                             <Folders />
                             <Triggers>
-                              <Trigger Enabled="true" Sequential="True" Name="1. 点名" Id="36c1c7d2-3f31-463c-b26d-11b17faf62a0" RegularExpression="^majiang_clone:2">
+                              <Trigger Enabled="true" Sequential="True" Name="1. 点名" Id="36c1c7d2-3f31-463c-b26d-11b17faf62a0" RegularExpression="^majiang_clone:2$">
                                 <Actions>
                                   <Action OrderNumber="1" OBSEndPoint="ws://${_const[OBSWebsocketEndpoint]}:${_const[OBSWebsocketPort]}" OBSPassword="${_const[OBSWebsocketPassword]}" VariableOp="SetString" VariableName="mjsign_clone" VariableExpression="2" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
                                     <Condition Enabled="false" Grouping="Or" />
@@ -3660,6 +3660,7 @@
                                 <Condition Enabled="true" Grouping="Or">
                                   <ConditionSingle Enabled="true" ExpressionL="${var:残暴x_Clone}" ExpressionTypeL="Numeric" ExpressionR="100" ExpressionTypeR="Numeric" ConditionType="NumericGreaterEqual" />
                                 </Condition>
+                                <Conditions />
                               </Trigger>
                               <Trigger Enabled="true" Sequential="True" Name="2. 罪恶感触发" Id="396f8fc4-9436-4ad2-800d-3a76a845b94f" RegularExpression="^Count_4869:(?&lt;value&gt;.*?)$">
                                 <Actions>
@@ -3715,13 +3716,14 @@
                                   <ConditionSingle Enabled="true" ExpressionL="${var:残暴x_Clone}" ExpressionTypeL="Numeric" ExpressionR="100" ExpressionTypeR="Numeric" ConditionType="NumericGreaterEqual" />
                                   <ConditionSingle Enabled="true" ExpressionL="${var:mjsign_clone}" ExpressionTypeL="String" ExpressionR="2" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                                 </Condition>
+                                <Conditions />
                               </Trigger>
                             </Triggers>
                           </Folder>
                           <Folder Id="a3b105fa-579a-4123-9276-53cf8512e342" Name="3号" Enabled="true">
                             <Folders />
                             <Triggers>
-                              <Trigger Enabled="true" Sequential="True" Name="1. 点名" Id="605469fd-1215-467c-b6cb-d8c0e8036b7c" RegularExpression="^majiang_clone:3">
+                              <Trigger Enabled="true" Sequential="True" Name="1. 点名" Id="605469fd-1215-467c-b6cb-d8c0e8036b7c" RegularExpression="^majiang_clone:3$">
                                 <Actions>
                                   <Action OrderNumber="1" OBSEndPoint="ws://${_const[OBSWebsocketEndpoint]}:${_const[OBSWebsocketPort]}" OBSPassword="${_const[OBSWebsocketPassword]}" VariableOp="SetString" VariableName="mjsign_clone" VariableExpression="3" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
                                     <Condition Enabled="false" Grouping="Or" />
@@ -3733,6 +3735,7 @@
                                 <Condition Enabled="true" Grouping="Or">
                                   <ConditionSingle Enabled="true" ExpressionL="${var:残暴x_Clone}" ExpressionTypeL="Numeric" ExpressionR="100" ExpressionTypeR="Numeric" ConditionType="NumericGreaterEqual" />
                                 </Condition>
+                                <Conditions />
                               </Trigger>
                               <Trigger Enabled="true" Sequential="True" Name="2. 罪恶感触发" Id="9e397d65-3c0d-419a-8bb0-baaba7522514" RegularExpression="^Count_4869:(?&lt;value&gt;.*?)$" PeriodRefire="Deny" RefirePeriodExpression="1000">
                                 <Actions>
@@ -3767,13 +3770,14 @@
                                   <ConditionSingle Enabled="true" ExpressionL="${var:mjsign_clone}" ExpressionTypeL="String" ExpressionR="3" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                                   <ConditionSingle Enabled="true" ExpressionL="${var:残暴x_Clone}" ExpressionTypeL="Numeric" ExpressionR="100" ExpressionTypeR="Numeric" ConditionType="NumericGreaterEqual" />
                                 </Condition>
+                                <Conditions />
                               </Trigger>
                             </Triggers>
                           </Folder>
                           <Folder Id="c533c0cf-6aa5-42f0-bfa3-dfdc1101186e" Name="4号" Enabled="true">
                             <Folders />
                             <Triggers>
-                              <Trigger Enabled="true" Sequential="True" Name="1. 点名" Id="b072bc57-84ab-4e22-8260-fb1c779e0161" RegularExpression="^majiang_clone:4">
+                              <Trigger Enabled="true" Sequential="True" Name="1. 点名" Id="b072bc57-84ab-4e22-8260-fb1c779e0161" RegularExpression="^majiang_clone:4$">
                                 <Actions>
                                   <Action OrderNumber="1" OBSEndPoint="ws://${_const[OBSWebsocketEndpoint]}:${_const[OBSWebsocketPort]}" OBSPassword="${_const[OBSWebsocketPassword]}" VariableOp="SetString" VariableName="mjsign_clone" VariableExpression="4" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
                                     <Condition Enabled="false" Grouping="Or" />
@@ -3785,6 +3789,7 @@
                                 <Condition Enabled="true" Grouping="Or">
                                   <ConditionSingle Enabled="true" ExpressionL="${var:残暴x_Clone}" ExpressionTypeL="Numeric" ExpressionR="100" ExpressionTypeR="Numeric" ConditionType="NumericGreaterEqual" />
                                 </Condition>
+                                <Conditions />
                               </Trigger>
                               <Trigger Enabled="true" Sequential="True" Name="2. 罪恶感触发 去中间红点" Id="bb058bc1-5c78-46c8-a655-b67d5da6bee2" RegularExpression="^Count_4869:(?&lt;value&gt;.*?)$" PeriodRefire="Deny" RefirePeriodExpression="1000">
                                 <Actions>
@@ -3806,6 +3811,7 @@
                                   <ConditionSingle Enabled="true" ExpressionL="${var:mjsign_clone}" ExpressionTypeL="String" ExpressionR="4" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                                   <ConditionSingle Enabled="true" ExpressionL="${var:残暴x_Clone}" ExpressionTypeL="Numeric" ExpressionR="100" ExpressionTypeR="Numeric" ConditionType="NumericGreaterEqual" />
                                 </Condition>
+                                <Conditions />
                               </Trigger>
                               <Trigger Enabled="true" Sequential="True" Name="2. 罪恶感触发 准备回中" Id="a06fff13-f972-4909-bc8d-c35d033e7759" RegularExpression="^Count_4869:(?&lt;value&gt;.*?)$" PeriodRefire="Deny" RefirePeriodExpression="1000">
                                 <Actions>
@@ -3827,13 +3833,14 @@
                                   <ConditionSingle Enabled="true" ExpressionL="${var:mjsign_clone}" ExpressionTypeL="String" ExpressionR="4" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                                   <ConditionSingle Enabled="true" ExpressionL="${var:残暴x_Clone}" ExpressionTypeL="Numeric" ExpressionR="100" ExpressionTypeR="Numeric" ConditionType="NumericGreaterEqual" />
                                 </Condition>
+                                <Conditions />
                               </Trigger>
                             </Triggers>
                           </Folder>
                           <Folder Id="2f3f9fcb-1568-4ae8-92db-b97ae0bbe2a5" Name="5号" Enabled="true">
                             <Folders />
                             <Triggers>
-                              <Trigger Enabled="true" Sequential="True" Name="1. 点名" Id="a0a8eb22-9e95-43f6-bdf9-5e00412681d4" RegularExpression="^majiang_clone:5">
+                              <Trigger Enabled="true" Sequential="True" Name="1. 点名" Id="a0a8eb22-9e95-43f6-bdf9-5e00412681d4" RegularExpression="^majiang_clone:5$">
                                 <Actions>
                                   <Action OrderNumber="1" OBSEndPoint="ws://${_const[OBSWebsocketEndpoint]}:${_const[OBSWebsocketPort]}" OBSPassword="${_const[OBSWebsocketPassword]}" VariableOp="SetString" VariableName="mjsign_clone" VariableExpression="5" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
                                     <Condition Enabled="false" Grouping="Or" />
@@ -3845,6 +3852,7 @@
                                 <Condition Enabled="true" Grouping="Or">
                                   <ConditionSingle Enabled="true" ExpressionL="${var:残暴x_Clone}" ExpressionTypeL="Numeric" ExpressionR="100" ExpressionTypeR="Numeric" ConditionType="NumericGreaterEqual" />
                                 </Condition>
+                                <Conditions />
                               </Trigger>
                               <Trigger Enabled="true" Sequential="True" Name="2. 罪恶感触发" Id="f6cdb259-10f2-4416-8f31-66f0594d84bc" RegularExpression="^Count_4869:(?&lt;value&gt;.*?)$" PeriodRefire="Deny" RefirePeriodExpression="1000">
                                 <Actions>
@@ -3866,6 +3874,7 @@
                                   <ConditionSingle Enabled="true" ExpressionL="${var:mjsign_clone}" ExpressionTypeL="String" ExpressionR="5" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                                   <ConditionSingle Enabled="true" ExpressionL="${var:残暴x_Clone}" ExpressionTypeL="Numeric" ExpressionR="100" ExpressionTypeR="Numeric" ConditionType="NumericGreaterEqual" />
                                 </Condition>
+                                <Conditions />
                               </Trigger>
                               <Trigger Enabled="true" Name="3. 受到伤害销毁" Id="5c1653cc-1b57-4fcd-8deb-35c64ea5d8a7" RegularExpression="^.{14} (?:\w+) (15|16):(?&lt;sid&gt;[^:]*):(?&lt;sname&gt;[^:]*):4834:(?&lt;ability&gt;(?:[^:]|: )*?):(?&lt;tid&gt;[^:]*):(?&lt;tname&gt;[^:]*):(?&lt;flags&gt;[^:]*):(?&lt;damage&gt;[^:]*)(?::[^:]*){14}:(?&lt;targetCurrentHp&gt;[^:]*):(?&lt;targetMaxHp&gt;[^:]*):(?&lt;targetCurrentMp&gt;[^:]*):(?&lt;targetMaxMp&gt;[^:]*)(?::[^:]*){2}:(?&lt;targetX&gt;[^:]*):(?&lt;targetY&gt;[^:]*):(?&lt;targetZ&gt;[^:]*):(?&lt;targetHeading&gt;[^:]*):(?&lt;currentHp&gt;[^:]*):(?&lt;maxHp&gt;[^:]*):(?&lt;currentMp&gt;[^:]*):(?&lt;maxMp&gt;[^:]*)(?::[^:]*){2}:(?&lt;x&gt;[^:]*):(?&lt;y&gt;[^:]*):(?&lt;z&gt;[^:]*):(?&lt;heading&gt;[^:]*):(?&lt;sequence&gt;[^:]*):(?&lt;targetIndex&gt;[^:]*):(?&lt;targetCount&gt;[^:]*)(?:$|:)">
                                 <Actions>
@@ -3877,15 +3886,16 @@
                                   <ConditionSingle Enabled="true" ExpressionL="${var:mjsign_clone}" ExpressionTypeL="String" ExpressionR="5" ExpressionTypeR="String" ConditionType="StringEqualCase" />
                                   <ConditionSingle Enabled="true" ExpressionL="${var:残暴x_Clone}" ExpressionTypeL="Numeric" ExpressionR="100" ExpressionTypeR="Numeric" ConditionType="NumericGreaterEqual" />
                                   <ConditionSingle Enabled="true" ExpressionL="${var:绝亚阶段_Clone}" ExpressionTypeL="String" ExpressionR="2" ExpressionTypeR="String" ConditionType="StringEqualCase" />
-                                  <ConditionSingle Enabled="true" ExpressionL="${tid}" ExpressionTypeL="String" ExpressionR="10133000" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                                  <ConditionSingle Enabled="true" ExpressionL="${tid}" ExpressionTypeL="String" ExpressionR="${_ffxivparty[1].id}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                                 </Condition>
+                                <Conditions />
                               </Trigger>
                             </Triggers>
                           </Folder>
                           <Folder Id="d0cb718d-8ff1-4661-b605-1e9e461b918e" Name="6号" Enabled="true">
                             <Folders />
                             <Triggers>
-                              <Trigger Enabled="true" Sequential="True" Name="1. 点名" Id="9dfcca1e-5699-4819-bb36-cf8d4f46e779" RegularExpression="^majiang_clone:6">
+                              <Trigger Enabled="true" Sequential="True" Name="1. 点名" Id="9dfcca1e-5699-4819-bb36-cf8d4f46e779" RegularExpression="^majiang_clone:6$">
                                 <Actions>
                                   <Action OrderNumber="1" OBSEndPoint="ws://${_const[OBSWebsocketEndpoint]}:${_const[OBSWebsocketPort]}" OBSPassword="${_const[OBSWebsocketPassword]}" VariableOp="SetString" VariableName="mjsign_clone" VariableExpression="6" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
                                     <Condition Enabled="false" Grouping="Or" />
@@ -3897,6 +3907,7 @@
                                 <Condition Enabled="true" Grouping="Or">
                                   <ConditionSingle Enabled="true" ExpressionL="${var:残暴x_Clone}" ExpressionTypeL="Numeric" ExpressionR="100" ExpressionTypeR="Numeric" ConditionType="NumericGreaterEqual" />
                                 </Condition>
+                                <Conditions />
                               </Trigger>
                               <Trigger Enabled="true" Sequential="True" Name="2. 罪恶感触发" Id="f1e2de48-c873-489f-b301-24ffe57e7e43" RegularExpression="^Count_4869:(?&lt;value&gt;.*?)$" PeriodRefire="Deny" RefirePeriodExpression="1000">
                                 <Actions>
@@ -3918,6 +3929,7 @@
                                   <ConditionSingle Enabled="true" ExpressionL="${var:mjsign_clone}" ExpressionTypeL="String" ExpressionR="6" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                                   <ConditionSingle Enabled="true" ExpressionL="${var:残暴x_Clone}" ExpressionTypeL="Numeric" ExpressionR="100" ExpressionTypeR="Numeric" ConditionType="NumericGreaterEqual" />
                                 </Condition>
+                                <Conditions />
                               </Trigger>
                               <Trigger Enabled="true" Name="3. 受到伤害销毁" Id="8b03a113-ecec-4290-a851-24d58600d2b3" RegularExpression="^.{14} (?:\w+) (15|16):(?&lt;sid&gt;[^:]*):(?&lt;sname&gt;[^:]*):49C3:(?&lt;ability&gt;(?:[^:]|: )*?):(?&lt;tid&gt;[^:]*):(?&lt;tname&gt;[^:]*):(?&lt;flags&gt;[^:]*):(?&lt;damage&gt;[^:]*)(?::[^:]*){14}:(?&lt;targetCurrentHp&gt;[^:]*):(?&lt;targetMaxHp&gt;[^:]*):(?&lt;targetCurrentMp&gt;[^:]*):(?&lt;targetMaxMp&gt;[^:]*)(?::[^:]*){2}:(?&lt;targetX&gt;[^:]*):(?&lt;targetY&gt;[^:]*):(?&lt;targetZ&gt;[^:]*):(?&lt;targetHeading&gt;[^:]*):(?&lt;currentHp&gt;[^:]*):(?&lt;maxHp&gt;[^:]*):(?&lt;currentMp&gt;[^:]*):(?&lt;maxMp&gt;[^:]*)(?::[^:]*){2}:(?&lt;x&gt;[^:]*):(?&lt;y&gt;[^:]*):(?&lt;z&gt;[^:]*):(?&lt;heading&gt;[^:]*):(?&lt;sequence&gt;[^:]*):(?&lt;targetIndex&gt;[^:]*):(?&lt;targetCount&gt;[^:]*)(?:$|:)" PeriodRefire="Deny" RefirePeriodExpression="1000">
                                 <Actions>
@@ -3929,15 +3941,16 @@
                                   <ConditionSingle Enabled="true" ExpressionL="${var:绝亚阶段_Clone}" ExpressionTypeL="String" ExpressionR="2" ExpressionTypeR="String" ConditionType="StringEqualCase" />
                                   <ConditionSingle Enabled="true" ExpressionL="${var:mjsign_clone}" ExpressionTypeL="String" ExpressionR="6" ExpressionTypeR="String" ConditionType="StringEqualCase" />
                                   <ConditionSingle Enabled="true" ExpressionL="${var:残暴x_Clone}" ExpressionTypeL="Numeric" ExpressionR="100" ExpressionTypeR="Numeric" ConditionType="NumericGreaterEqual" />
-                                  <ConditionSingle Enabled="true" ExpressionL="${tid}" ExpressionTypeL="String" ExpressionR="10133000" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                                  <ConditionSingle Enabled="true" ExpressionL="${tid}" ExpressionTypeL="String" ExpressionR="${_ffxivparty[1].id}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                                 </Condition>
+                                <Conditions />
                               </Trigger>
                             </Triggers>
                           </Folder>
                           <Folder Id="2ff35aa3-bd1b-4982-b5dd-453589c69509" Name="7号" Enabled="true">
                             <Folders />
                             <Triggers>
-                              <Trigger Enabled="true" Sequential="True" Name="1. 点名" Id="5094fcce-d98a-4e0a-8953-fcac018cbfbc" RegularExpression="^majiang_clone:7">
+                              <Trigger Enabled="true" Sequential="True" Name="1. 点名" Id="5094fcce-d98a-4e0a-8953-fcac018cbfbc" RegularExpression="^majiang_clone:7$">
                                 <Actions>
                                   <Action OrderNumber="1" OBSEndPoint="ws://${_const[OBSWebsocketEndpoint]}:${_const[OBSWebsocketPort]}" OBSPassword="${_const[OBSWebsocketPassword]}" VariableOp="SetString" VariableName="mjsign_clone" VariableExpression="7" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
                                     <Condition Enabled="false" Grouping="Or" />
@@ -3949,6 +3962,7 @@
                                 <Condition Enabled="true" Grouping="Or">
                                   <ConditionSingle Enabled="true" ExpressionL="${var:残暴x_Clone}" ExpressionTypeL="Numeric" ExpressionR="100" ExpressionTypeR="Numeric" ConditionType="NumericGreaterEqual" />
                                 </Condition>
+                                <Conditions />
                               </Trigger>
                               <Trigger Enabled="true" Sequential="True" Name="2. 罪恶感触发" Id="7ccb6923-5ca6-4246-8b21-c98344a70a8f" RegularExpression="^Count_4869:(?&lt;value&gt;.*?)$" PeriodRefire="Deny" RefirePeriodExpression="1000">
                                 <Actions>
@@ -3996,6 +4010,7 @@
                                   <ConditionSingle Enabled="true" ExpressionL="${var:mjsign_clone}" ExpressionTypeL="String" ExpressionR="7" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                                   <ConditionSingle Enabled="true" ExpressionL="${var:残暴x_Clone}" ExpressionTypeL="Numeric" ExpressionR="100" ExpressionTypeR="Numeric" ConditionType="NumericGreaterEqual" />
                                 </Condition>
+                                <Conditions />
                               </Trigger>
                               <Trigger Enabled="true" Name="3. 受到伤害销毁" Id="30dcc44f-32bc-4c3b-9ea7-5ce98582b164" RegularExpression="^.{14} (?:\w+) (15|16):(?&lt;sid&gt;[^:]*):(?&lt;sname&gt;[^:]*):4834:(?&lt;ability&gt;(?:[^:]|: )*?):(?&lt;tid&gt;[^:]*):(?&lt;tname&gt;[^:]*):(?&lt;flags&gt;[^:]*):(?&lt;damage&gt;[^:]*)(?::[^:]*){14}:(?&lt;targetCurrentHp&gt;[^:]*):(?&lt;targetMaxHp&gt;[^:]*):(?&lt;targetCurrentMp&gt;[^:]*):(?&lt;targetMaxMp&gt;[^:]*)(?::[^:]*){2}:(?&lt;targetX&gt;[^:]*):(?&lt;targetY&gt;[^:]*):(?&lt;targetZ&gt;[^:]*):(?&lt;targetHeading&gt;[^:]*):(?&lt;currentHp&gt;[^:]*):(?&lt;maxHp&gt;[^:]*):(?&lt;currentMp&gt;[^:]*):(?&lt;maxMp&gt;[^:]*)(?::[^:]*){2}:(?&lt;x&gt;[^:]*):(?&lt;y&gt;[^:]*):(?&lt;z&gt;[^:]*):(?&lt;heading&gt;[^:]*):(?&lt;sequence&gt;[^:]*):(?&lt;targetIndex&gt;[^:]*):(?&lt;targetCount&gt;[^:]*)(?:$|:)">
                                 <Actions>
@@ -4007,15 +4022,16 @@
                                   <ConditionSingle Enabled="true" ExpressionL="${var:mjsign_clone}" ExpressionTypeL="String" ExpressionR="7" ExpressionTypeR="String" ConditionType="StringEqualCase" />
                                   <ConditionSingle Enabled="true" ExpressionL="${var:残暴x_Clone}" ExpressionTypeL="Numeric" ExpressionR="100" ExpressionTypeR="Numeric" ConditionType="NumericGreaterEqual" />
                                   <ConditionSingle Enabled="true" ExpressionL="${var:绝亚阶段_Clone}" ExpressionTypeL="String" ExpressionR="2" ExpressionTypeR="String" ConditionType="StringEqualCase" />
-                                  <ConditionSingle Enabled="true" ExpressionL="${tid}" ExpressionTypeL="String" ExpressionR="10133000" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                                  <ConditionSingle Enabled="true" ExpressionL="${tid}" ExpressionTypeL="String" ExpressionR="${_ffxivparty[1].id}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                                 </Condition>
+                                <Conditions />
                               </Trigger>
                             </Triggers>
                           </Folder>
                           <Folder Id="734405be-cde9-4afc-9b65-860737b4a594" Name="8号" Enabled="true">
                             <Folders />
                             <Triggers>
-                              <Trigger Enabled="true" Sequential="True" Name="1. 点名" Id="a77725d7-a4e7-4cc0-a338-b113cd371f2c" RegularExpression="^majiang_clone:8">
+                              <Trigger Enabled="true" Sequential="True" Name="1. 点名" Id="a77725d7-a4e7-4cc0-a338-b113cd371f2c" RegularExpression="^majiang_clone:8$">
                                 <Actions>
                                   <Action OrderNumber="1" OBSEndPoint="ws://${_const[OBSWebsocketEndpoint]}:${_const[OBSWebsocketPort]}" OBSPassword="${_const[OBSWebsocketPassword]}" VariableOp="SetString" VariableName="mjsign_clone" VariableExpression="8" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
                                     <Condition Enabled="false" Grouping="Or" />
@@ -4027,6 +4043,7 @@
                                 <Condition Enabled="true" Grouping="Or">
                                   <ConditionSingle Enabled="true" ExpressionL="${var:残暴x_Clone}" ExpressionTypeL="Numeric" ExpressionR="100" ExpressionTypeR="Numeric" ConditionType="NumericGreaterEqual" />
                                 </Condition>
+                                <Conditions />
                               </Trigger>
                               <Trigger Enabled="true" Sequential="True" Name="2. 罪恶感触发" Id="ae8084c0-0576-4f33-8ca0-c76235495a2d" RegularExpression="^Count_4869:(?&lt;value&gt;.*?)$" PeriodRefire="Deny" RefirePeriodExpression="1000">
                                 <Actions>
@@ -4074,6 +4091,7 @@
                                   <ConditionSingle Enabled="true" ExpressionL="${var:mjsign_clone}" ExpressionTypeL="String" ExpressionR="8" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                                   <ConditionSingle Enabled="true" ExpressionL="${var:残暴x_Clone}" ExpressionTypeL="Numeric" ExpressionR="100" ExpressionTypeR="Numeric" ConditionType="NumericGreaterEqual" />
                                 </Condition>
+                                <Conditions />
                               </Trigger>
                               <Trigger Enabled="true" Name="3. 受到伤害销毁" Id="8f2af036-d459-4b2a-8565-5c4ff065d49a" RegularExpression="^.{14} (?:\w+) (15|16):(?&lt;sid&gt;[^:]*):(?&lt;sname&gt;[^:]*):49C3:(?&lt;ability&gt;(?:[^:]|: )*?):(?&lt;tid&gt;[^:]*):(?&lt;tname&gt;[^:]*):(?&lt;flags&gt;[^:]*):(?&lt;damage&gt;[^:]*)(?::[^:]*){14}:(?&lt;targetCurrentHp&gt;[^:]*):(?&lt;targetMaxHp&gt;[^:]*):(?&lt;targetCurrentMp&gt;[^:]*):(?&lt;targetMaxMp&gt;[^:]*)(?::[^:]*){2}:(?&lt;targetX&gt;[^:]*):(?&lt;targetY&gt;[^:]*):(?&lt;targetZ&gt;[^:]*):(?&lt;targetHeading&gt;[^:]*):(?&lt;currentHp&gt;[^:]*):(?&lt;maxHp&gt;[^:]*):(?&lt;currentMp&gt;[^:]*):(?&lt;maxMp&gt;[^:]*)(?::[^:]*){2}:(?&lt;x&gt;[^:]*):(?&lt;y&gt;[^:]*):(?&lt;z&gt;[^:]*):(?&lt;heading&gt;[^:]*):(?&lt;sequence&gt;[^:]*):(?&lt;targetIndex&gt;[^:]*):(?&lt;targetCount&gt;[^:]*)(?:$|:)" PeriodRefire="Deny" RefirePeriodExpression="1000">
                                 <Actions>
@@ -4085,8 +4103,9 @@
                                   <ConditionSingle Enabled="true" ExpressionL="${var:绝亚阶段_Clone}" ExpressionTypeL="String" ExpressionR="2" ExpressionTypeR="String" ConditionType="StringEqualCase" />
                                   <ConditionSingle Enabled="true" ExpressionL="${var:mjsign_clone}" ExpressionTypeL="String" ExpressionR="8" ExpressionTypeR="String" ConditionType="StringEqualCase" />
                                   <ConditionSingle Enabled="true" ExpressionL="${var:残暴x_Clone}" ExpressionTypeL="Numeric" ExpressionR="100" ExpressionTypeR="Numeric" ConditionType="NumericGreaterEqual" />
-                                  <ConditionSingle Enabled="true" ExpressionL="${tid}" ExpressionTypeL="String" ExpressionR="10133000" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                                  <ConditionSingle Enabled="true" ExpressionL="${tid}" ExpressionTypeL="String" ExpressionR="${_ffxivparty[1].id}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                                 </Condition>
+                                <Conditions />
                               </Trigger>
                             </Triggers>
                           </Folder>
@@ -4098,7 +4117,7 @@
                           <Folder Id="50ab2ae6-487d-43e0-92d0-d73131ba5ce0" Name="1号" Enabled="true">
                             <Folders />
                             <Triggers>
-                              <Trigger Enabled="true" Sequential="True" Name="1. 点名" Id="67d71347-d74b-4305-aea6-c5fa81a9a82d" RegularExpression="^majiang_clone:1">
+                              <Trigger Enabled="true" Sequential="True" Name="1. 点名" Id="67d71347-d74b-4305-aea6-c5fa81a9a82d" RegularExpression="^majiang_clone:1$">
                                 <Actions>
                                   <Action OrderNumber="1" OBSEndPoint="ws://${_const[OBSWebsocketEndpoint]}:${_const[OBSWebsocketPort]}" OBSPassword="${_const[OBSWebsocketPassword]}" VariableOp="SetString" VariableName="mjsign_clone" VariableExpression="1" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
                                     <Condition Enabled="false" Grouping="Or" />
@@ -4110,6 +4129,7 @@
                                 <Condition Enabled="true" Grouping="Or">
                                   <ConditionSingle Enabled="true" ExpressionL="${var:残暴x_Clone}" ExpressionTypeL="Numeric" ExpressionR="100" ExpressionTypeR="Numeric" ConditionType="NumericLess" />
                                 </Condition>
+                                <Conditions />
                               </Trigger>
                               <Trigger Enabled="true" Sequential="True" Name="2. 罪恶感触发" Id="276362a1-0a5b-4bb1-bcd4-60567e3f8a32" RegularExpression="^Count_4869:(?&lt;value&gt;.*?)$">
                                 <Actions>
@@ -4165,13 +4185,14 @@
                                   <ConditionSingle Enabled="true" ExpressionL="${var:残暴x_Clone}" ExpressionTypeL="Numeric" ExpressionR="100" ExpressionTypeR="Numeric" ConditionType="NumericLess" />
                                   <ConditionSingle Enabled="true" ExpressionL="${var:mjsign_clone}" ExpressionTypeL="String" ExpressionR="1" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                                 </Condition>
+                                <Conditions />
                               </Trigger>
                             </Triggers>
                           </Folder>
                           <Folder Id="6857930d-49ab-4a55-b88d-910d478a9ef4" Name="2号" Enabled="true">
                             <Folders />
                             <Triggers>
-                              <Trigger Enabled="true" Sequential="True" Name="1. 点名" Id="57175b73-3e8a-4eaa-9b43-bdb41d81c434" RegularExpression="^majiang_clone:2">
+                              <Trigger Enabled="true" Sequential="True" Name="1. 点名" Id="57175b73-3e8a-4eaa-9b43-bdb41d81c434" RegularExpression="^majiang_clone:2$">
                                 <Actions>
                                   <Action OrderNumber="1" OBSEndPoint="ws://${_const[OBSWebsocketEndpoint]}:${_const[OBSWebsocketPort]}" OBSPassword="${_const[OBSWebsocketPassword]}" VariableOp="SetString" VariableName="mjsign_clone" VariableExpression="2" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
                                     <Condition Enabled="false" Grouping="Or" />
@@ -4183,6 +4204,7 @@
                                 <Condition Enabled="true" Grouping="Or">
                                   <ConditionSingle Enabled="true" ExpressionL="${var:残暴x_Clone}" ExpressionTypeL="Numeric" ExpressionR="100" ExpressionTypeR="Numeric" ConditionType="NumericLess" />
                                 </Condition>
+                                <Conditions />
                               </Trigger>
                               <Trigger Enabled="true" Sequential="True" Name="2. 罪恶感触发" Id="8f572aa8-6717-417b-8c47-1aa624baff44" RegularExpression="^Count_4869:(?&lt;value&gt;.*?)$" PeriodRefire="Deny" RefirePeriodExpression="1000">
                                 <Actions>
@@ -4238,13 +4260,14 @@
                                   <ConditionSingle Enabled="true" ExpressionL="${var:mjsign_clone}" ExpressionTypeL="String" ExpressionR="2" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                                   <ConditionSingle Enabled="true" ExpressionL="${var:残暴x_Clone}" ExpressionTypeL="Numeric" ExpressionR="100" ExpressionTypeR="Numeric" ConditionType="NumericLess" />
                                 </Condition>
+                                <Conditions />
                               </Trigger>
                             </Triggers>
                           </Folder>
                           <Folder Id="95d36c56-e3dc-4ad8-b258-ed0b56db1281" Name="3号" Enabled="true">
                             <Folders />
                             <Triggers>
-                              <Trigger Enabled="true" Sequential="True" Name="1. 点名" Id="8606e8d8-d333-4fa2-b608-529e396a06e4" RegularExpression="^majiang_clone:3">
+                              <Trigger Enabled="true" Sequential="True" Name="1. 点名" Id="8606e8d8-d333-4fa2-b608-529e396a06e4" RegularExpression="^majiang_clone:3$">
                                 <Actions>
                                   <Action OrderNumber="1" OBSEndPoint="ws://${_const[OBSWebsocketEndpoint]}:${_const[OBSWebsocketPort]}" OBSPassword="${_const[OBSWebsocketPassword]}" VariableOp="SetString" VariableName="mjsign_clone" VariableExpression="3" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
                                     <Condition Enabled="false" Grouping="Or" />
@@ -4256,6 +4279,7 @@
                                 <Condition Enabled="true" Grouping="Or">
                                   <ConditionSingle Enabled="true" ExpressionL="${var:残暴x_Clone}" ExpressionTypeL="Numeric" ExpressionR="100" ExpressionTypeR="Numeric" ConditionType="NumericLess" />
                                 </Condition>
+                                <Conditions />
                               </Trigger>
                               <Trigger Enabled="true" Sequential="True" Name="2. 罪恶感触发" Id="1604f51c-e8fa-4b92-94c6-3a718ba31d10" RegularExpression="^Count_4869:(?&lt;value&gt;.*?)$" PeriodRefire="Deny" RefirePeriodExpression="1000">
                                 <Actions>
@@ -4290,13 +4314,14 @@
                                   <ConditionSingle Enabled="true" ExpressionL="${var:mjsign_clone}" ExpressionTypeL="String" ExpressionR="3" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                                   <ConditionSingle Enabled="true" ExpressionL="${var:残暴x_Clone}" ExpressionTypeL="Numeric" ExpressionR="100" ExpressionTypeR="Numeric" ConditionType="NumericLess" />
                                 </Condition>
+                                <Conditions />
                               </Trigger>
                             </Triggers>
                           </Folder>
                           <Folder Id="ec7e76cf-5cc2-4c9c-a0fa-a0c5bc6a5dfb" Name="4号" Enabled="true">
                             <Folders />
                             <Triggers>
-                              <Trigger Enabled="true" Sequential="True" Name="1. 点名" Id="7a10346a-4e9c-4f5e-a5fa-cf66eca864ff" RegularExpression="^majiang_clone:4">
+                              <Trigger Enabled="true" Sequential="True" Name="1. 点名" Id="7a10346a-4e9c-4f5e-a5fa-cf66eca864ff" RegularExpression="^majiang_clone:4$">
                                 <Actions>
                                   <Action OrderNumber="1" OBSEndPoint="ws://${_const[OBSWebsocketEndpoint]}:${_const[OBSWebsocketPort]}" OBSPassword="${_const[OBSWebsocketPassword]}" VariableOp="SetString" VariableName="mjsign_clone" VariableExpression="4" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
                                     <Condition Enabled="false" Grouping="Or" />
@@ -4308,6 +4333,7 @@
                                 <Condition Enabled="true" Grouping="Or">
                                   <ConditionSingle Enabled="true" ExpressionL="${var:残暴x_Clone}" ExpressionTypeL="Numeric" ExpressionR="100" ExpressionTypeR="Numeric" ConditionType="NumericLess" />
                                 </Condition>
+                                <Conditions />
                               </Trigger>
                               <Trigger Enabled="true" Sequential="True" Name="2. 罪恶感触发 准备回中" Id="4c293df3-49ed-46f5-89de-e4b2efc73704" RegularExpression="^Count_4869:(?&lt;value&gt;.*?)$" PeriodRefire="Deny" RefirePeriodExpression="1000">
                                 <Actions>
@@ -4329,6 +4355,7 @@
                                   <ConditionSingle Enabled="true" ExpressionL="${var:mjsign_clone}" ExpressionTypeL="String" ExpressionR="4" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                                   <ConditionSingle Enabled="true" ExpressionL="${var:残暴x_Clone}" ExpressionTypeL="Numeric" ExpressionR="100" ExpressionTypeR="Numeric" ConditionType="NumericLess" />
                                 </Condition>
+                                <Conditions />
                               </Trigger>
                               <Trigger Enabled="true" Sequential="True" Name="2. 罪恶感触发 去中间红点" Id="530f6b17-0b80-4dcb-9b0e-9472a07f3a4a" RegularExpression="^Count_4869:(?&lt;value&gt;.*?)$" PeriodRefire="Deny" RefirePeriodExpression="1000">
                                 <Actions>
@@ -4350,13 +4377,14 @@
                                   <ConditionSingle Enabled="true" ExpressionL="${var:mjsign_clone}" ExpressionTypeL="String" ExpressionR="4" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                                   <ConditionSingle Enabled="true" ExpressionL="${var:残暴x_Clone}" ExpressionTypeL="Numeric" ExpressionR="100" ExpressionTypeR="Numeric" ConditionType="NumericLess" />
                                 </Condition>
+                                <Conditions />
                               </Trigger>
                             </Triggers>
                           </Folder>
                           <Folder Id="752e55a3-54bd-476d-8aa5-95aabe272c06" Name="5号" Enabled="true">
                             <Folders />
                             <Triggers>
-                              <Trigger Enabled="true" Sequential="True" Name="1. 点名" Id="4881c000-191f-4f2f-b4bd-bb6c56ee768b" RegularExpression="^majiang_clone:5">
+                              <Trigger Enabled="true" Sequential="True" Name="1. 点名" Id="4881c000-191f-4f2f-b4bd-bb6c56ee768b" RegularExpression="^majiang_clone:5$">
                                 <Actions>
                                   <Action OrderNumber="1" OBSEndPoint="ws://${_const[OBSWebsocketEndpoint]}:${_const[OBSWebsocketPort]}" OBSPassword="${_const[OBSWebsocketPassword]}" VariableOp="SetString" VariableName="mjsign_clone" VariableExpression="5" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
                                     <Condition Enabled="false" Grouping="Or" />
@@ -4368,6 +4396,7 @@
                                 <Condition Enabled="true" Grouping="Or">
                                   <ConditionSingle Enabled="true" ExpressionL="${var:残暴x_Clone}" ExpressionTypeL="Numeric" ExpressionR="100" ExpressionTypeR="Numeric" ConditionType="NumericLess" />
                                 </Condition>
+                                <Conditions />
                               </Trigger>
                               <Trigger Enabled="true" Sequential="True" Name="2. 罪恶感触发" Id="acb60d05-4ba5-4360-be38-fdc844414fcc" RegularExpression="^Count_4869:(?&lt;value&gt;.*?)$" PeriodRefire="Deny" RefirePeriodExpression="1000">
                                 <Actions>
@@ -4389,6 +4418,7 @@
                                   <ConditionSingle Enabled="true" ExpressionL="${var:mjsign_clone}" ExpressionTypeL="String" ExpressionR="5" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                                   <ConditionSingle Enabled="true" ExpressionL="${var:残暴x_Clone}" ExpressionTypeL="Numeric" ExpressionR="100" ExpressionTypeR="Numeric" ConditionType="NumericLess" />
                                 </Condition>
+                                <Conditions />
                               </Trigger>
                               <Trigger Enabled="true" Name="3. 受到伤害销毁" Id="d5ecaa83-eb60-4e58-9f04-13a7a54ed5ea" RegularExpression="^.{14} (?:\w+) (15|16):(?&lt;sid&gt;[^:]*):(?&lt;sname&gt;[^:]*):4834:(?&lt;ability&gt;(?:[^:]|: )*?):(?&lt;tid&gt;[^:]*):(?&lt;tname&gt;[^:]*):(?&lt;flags&gt;[^:]*):(?&lt;damage&gt;[^:]*)(?::[^:]*){14}:(?&lt;targetCurrentHp&gt;[^:]*):(?&lt;targetMaxHp&gt;[^:]*):(?&lt;targetCurrentMp&gt;[^:]*):(?&lt;targetMaxMp&gt;[^:]*)(?::[^:]*){2}:(?&lt;targetX&gt;[^:]*):(?&lt;targetY&gt;[^:]*):(?&lt;targetZ&gt;[^:]*):(?&lt;targetHeading&gt;[^:]*):(?&lt;currentHp&gt;[^:]*):(?&lt;maxHp&gt;[^:]*):(?&lt;currentMp&gt;[^:]*):(?&lt;maxMp&gt;[^:]*)(?::[^:]*){2}:(?&lt;x&gt;[^:]*):(?&lt;y&gt;[^:]*):(?&lt;z&gt;[^:]*):(?&lt;heading&gt;[^:]*):(?&lt;sequence&gt;[^:]*):(?&lt;targetIndex&gt;[^:]*):(?&lt;targetCount&gt;[^:]*)(?:$|:)">
                                 <Actions>
@@ -4400,15 +4430,16 @@
                                   <ConditionSingle Enabled="true" ExpressionL="${var:绝亚阶段_Clone}" ExpressionTypeL="String" ExpressionR="2" ExpressionTypeR="String" ConditionType="StringEqualCase" />
                                   <ConditionSingle Enabled="true" ExpressionL="${var:mjsign_clone}" ExpressionTypeL="String" ExpressionR="5" ExpressionTypeR="String" ConditionType="StringEqualCase" />
                                   <ConditionSingle Enabled="true" ExpressionL="${var:残暴x_Clone}" ExpressionTypeL="Numeric" ExpressionR="100" ExpressionTypeR="Numeric" ConditionType="NumericLess" />
-                                  <ConditionSingle Enabled="true" ExpressionL="${tid}" ExpressionTypeL="String" ExpressionR="10133000" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                                  <ConditionSingle Enabled="true" ExpressionL="${tid}" ExpressionTypeL="String" ExpressionR="${_ffxivparty[1].id}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                                 </Condition>
+                                <Conditions />
                               </Trigger>
                             </Triggers>
                           </Folder>
                           <Folder Id="c17d38e4-d170-4ec4-b768-4349bbc7f55e" Name="6号" Enabled="true">
                             <Folders />
                             <Triggers>
-                              <Trigger Enabled="true" Sequential="True" Name="1. 点名" Id="719a8102-65e9-46c0-bb47-c6b4e5377c9e" RegularExpression="^majiang_clone:6">
+                              <Trigger Enabled="true" Sequential="True" Name="1. 点名" Id="719a8102-65e9-46c0-bb47-c6b4e5377c9e" RegularExpression="^majiang_clone:6$">
                                 <Actions>
                                   <Action OrderNumber="1" OBSEndPoint="ws://${_const[OBSWebsocketEndpoint]}:${_const[OBSWebsocketPort]}" OBSPassword="${_const[OBSWebsocketPassword]}" VariableOp="SetString" VariableName="mjsign_clone" VariableExpression="6" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
                                     <Condition Enabled="false" Grouping="Or" />
@@ -4420,6 +4451,7 @@
                                 <Condition Enabled="true" Grouping="Or">
                                   <ConditionSingle Enabled="true" ExpressionL="${var:残暴x_Clone}" ExpressionTypeL="Numeric" ExpressionR="100" ExpressionTypeR="Numeric" ConditionType="NumericLess" />
                                 </Condition>
+                                <Conditions />
                               </Trigger>
                               <Trigger Enabled="true" Sequential="True" Name="2. 罪恶感触发" Id="c5ba5325-129a-46b9-9103-ae662e4e2db8" RegularExpression="^Count_4869:(?&lt;value&gt;.*?)$" PeriodRefire="Deny" RefirePeriodExpression="1000">
                                 <Actions>
@@ -4441,6 +4473,7 @@
                                   <ConditionSingle Enabled="true" ExpressionL="${var:mjsign_clone}" ExpressionTypeL="String" ExpressionR="6" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                                   <ConditionSingle Enabled="true" ExpressionL="${var:残暴x_Clone}" ExpressionTypeL="Numeric" ExpressionR="100" ExpressionTypeR="Numeric" ConditionType="NumericLess" />
                                 </Condition>
+                                <Conditions />
                               </Trigger>
                               <Trigger Enabled="true" Name="3. 受到伤害销毁" Id="e13eff63-f7f5-4a9a-ad89-d8a6df63fad7" RegularExpression="^.{14} (?:\w+) (15|16):(?&lt;sid&gt;[^:]*):(?&lt;sname&gt;[^:]*):49C3:(?&lt;ability&gt;(?:[^:]|: )*?):(?&lt;tid&gt;[^:]*):(?&lt;tname&gt;[^:]*):(?&lt;flags&gt;[^:]*):(?&lt;damage&gt;[^:]*)(?::[^:]*){14}:(?&lt;targetCurrentHp&gt;[^:]*):(?&lt;targetMaxHp&gt;[^:]*):(?&lt;targetCurrentMp&gt;[^:]*):(?&lt;targetMaxMp&gt;[^:]*)(?::[^:]*){2}:(?&lt;targetX&gt;[^:]*):(?&lt;targetY&gt;[^:]*):(?&lt;targetZ&gt;[^:]*):(?&lt;targetHeading&gt;[^:]*):(?&lt;currentHp&gt;[^:]*):(?&lt;maxHp&gt;[^:]*):(?&lt;currentMp&gt;[^:]*):(?&lt;maxMp&gt;[^:]*)(?::[^:]*){2}:(?&lt;x&gt;[^:]*):(?&lt;y&gt;[^:]*):(?&lt;z&gt;[^:]*):(?&lt;heading&gt;[^:]*):(?&lt;sequence&gt;[^:]*):(?&lt;targetIndex&gt;[^:]*):(?&lt;targetCount&gt;[^:]*)(?:$|:)">
                                 <Actions>
@@ -4452,15 +4485,16 @@
                                   <ConditionSingle Enabled="true" ExpressionL="${var:绝亚阶段_Clone}" ExpressionTypeL="String" ExpressionR="2" ExpressionTypeR="String" ConditionType="StringEqualCase" />
                                   <ConditionSingle Enabled="true" ExpressionL="${var:mjsign_clone}" ExpressionTypeL="String" ExpressionR="6" ExpressionTypeR="String" ConditionType="StringEqualCase" />
                                   <ConditionSingle Enabled="true" ExpressionL="${var:残暴x_Clone}" ExpressionTypeL="Numeric" ExpressionR="100" ExpressionTypeR="Numeric" ConditionType="NumericLess" />
-                                  <ConditionSingle Enabled="true" ExpressionL="${tid}" ExpressionTypeL="String" ExpressionR="10133000" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                                  <ConditionSingle Enabled="true" ExpressionL="${tid}" ExpressionTypeL="String" ExpressionR="${_ffxivparty[1].id}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                                 </Condition>
+                                <Conditions />
                               </Trigger>
                             </Triggers>
                           </Folder>
                           <Folder Id="50bf66f8-0265-49ac-a42e-9299ec990847" Name="7号" Enabled="true">
                             <Folders />
                             <Triggers>
-                              <Trigger Enabled="true" Sequential="True" Name="1. 点名" Id="143c3af1-b5d1-4482-a98a-d87d1deee0a0" RegularExpression="^majiang_clone:7">
+                              <Trigger Enabled="true" Sequential="True" Name="1. 点名" Id="143c3af1-b5d1-4482-a98a-d87d1deee0a0" RegularExpression="^majiang_clone:7$">
                                 <Actions>
                                   <Action OrderNumber="1" OBSEndPoint="ws://${_const[OBSWebsocketEndpoint]}:${_const[OBSWebsocketPort]}" OBSPassword="${_const[OBSWebsocketPassword]}" VariableOp="SetString" VariableName="mjsign_clone" VariableExpression="7" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
                                     <Condition Enabled="false" Grouping="Or" />
@@ -4472,6 +4506,7 @@
                                 <Condition Enabled="true" Grouping="Or">
                                   <ConditionSingle Enabled="true" ExpressionL="${var:残暴x_Clone}" ExpressionTypeL="Numeric" ExpressionR="100" ExpressionTypeR="Numeric" ConditionType="NumericLess" />
                                 </Condition>
+                                <Conditions />
                               </Trigger>
                               <Trigger Enabled="true" Sequential="True" Name="2. 罪恶感触发" Id="8eb7cbd8-4752-4a2d-bf6e-d7d4f54a2da0" RegularExpression="^Count_4869:(?&lt;value&gt;.*?)$" PeriodRefire="Deny" RefirePeriodExpression="1000">
                                 <Actions>
@@ -4519,6 +4554,7 @@
                                   <ConditionSingle Enabled="true" ExpressionL="${var:mjsign_clone}" ExpressionTypeL="String" ExpressionR="7" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                                   <ConditionSingle Enabled="true" ExpressionL="${var:残暴x_Clone}" ExpressionTypeL="Numeric" ExpressionR="100" ExpressionTypeR="Numeric" ConditionType="NumericLess" />
                                 </Condition>
+                                <Conditions />
                               </Trigger>
                               <Trigger Enabled="true" Name="3. 受到伤害销毁" Id="707c17ac-d58c-4e77-a130-53a2aa4ab24c" RegularExpression="^.{14} (?:\w+) (15|16):(?&lt;sid&gt;[^:]*):(?&lt;sname&gt;[^:]*):4834:(?&lt;ability&gt;(?:[^:]|: )*?):(?&lt;tid&gt;[^:]*):(?&lt;tname&gt;[^:]*):(?&lt;flags&gt;[^:]*):(?&lt;damage&gt;[^:]*)(?::[^:]*){14}:(?&lt;targetCurrentHp&gt;[^:]*):(?&lt;targetMaxHp&gt;[^:]*):(?&lt;targetCurrentMp&gt;[^:]*):(?&lt;targetMaxMp&gt;[^:]*)(?::[^:]*){2}:(?&lt;targetX&gt;[^:]*):(?&lt;targetY&gt;[^:]*):(?&lt;targetZ&gt;[^:]*):(?&lt;targetHeading&gt;[^:]*):(?&lt;currentHp&gt;[^:]*):(?&lt;maxHp&gt;[^:]*):(?&lt;currentMp&gt;[^:]*):(?&lt;maxMp&gt;[^:]*)(?::[^:]*){2}:(?&lt;x&gt;[^:]*):(?&lt;y&gt;[^:]*):(?&lt;z&gt;[^:]*):(?&lt;heading&gt;[^:]*):(?&lt;sequence&gt;[^:]*):(?&lt;targetIndex&gt;[^:]*):(?&lt;targetCount&gt;[^:]*)(?:$|:)">
                                 <Actions>
@@ -4530,15 +4566,16 @@
                                   <ConditionSingle Enabled="true" ExpressionL="${var:绝亚阶段_Clone}" ExpressionTypeL="String" ExpressionR="2" ExpressionTypeR="String" ConditionType="StringEqualCase" />
                                   <ConditionSingle Enabled="true" ExpressionL="${var:mjsign_clone}" ExpressionTypeL="String" ExpressionR="7" ExpressionTypeR="String" ConditionType="StringEqualCase" />
                                   <ConditionSingle Enabled="true" ExpressionL="${var:残暴x_Clone}" ExpressionTypeL="Numeric" ExpressionR="100" ExpressionTypeR="Numeric" ConditionType="NumericLess" />
-                                  <ConditionSingle Enabled="true" ExpressionL="${tid}" ExpressionTypeL="String" ExpressionR="10133000" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                                  <ConditionSingle Enabled="true" ExpressionL="${tid}" ExpressionTypeL="String" ExpressionR="${_ffxivparty[1].id}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                                 </Condition>
+                                <Conditions />
                               </Trigger>
                             </Triggers>
                           </Folder>
                           <Folder Id="7f1a414f-bc27-48e3-9413-60acdcae62ba" Name="8号" Enabled="true">
                             <Folders />
                             <Triggers>
-                              <Trigger Enabled="true" Sequential="True" Name="1. 点名" Id="29bab948-41dd-44b0-87cf-b26275744131" RegularExpression="^majiang_clone:8">
+                              <Trigger Enabled="true" Sequential="True" Name="1. 点名" Id="29bab948-41dd-44b0-87cf-b26275744131" RegularExpression="^majiang_clone:8$">
                                 <Actions>
                                   <Action OrderNumber="1" OBSEndPoint="ws://${_const[OBSWebsocketEndpoint]}:${_const[OBSWebsocketPort]}" OBSPassword="${_const[OBSWebsocketPassword]}" VariableOp="SetString" VariableName="mjsign_clone" VariableExpression="8" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
                                     <Condition Enabled="false" Grouping="Or" />
@@ -4550,6 +4587,7 @@
                                 <Condition Enabled="true" Grouping="Or">
                                   <ConditionSingle Enabled="true" ExpressionL="${var:残暴x_Clone}" ExpressionTypeL="Numeric" ExpressionR="100" ExpressionTypeR="Numeric" ConditionType="NumericLess" />
                                 </Condition>
+                                <Conditions />
                               </Trigger>
                               <Trigger Enabled="true" Sequential="True" Name="2. 罪恶感触发" Id="9d51bd1f-b08c-4397-9708-eb52ffd8eeac" RegularExpression="^Count_4869:(?&lt;value&gt;.*?)$" PeriodRefire="Deny" RefirePeriodExpression="1000">
                                 <Actions>
@@ -4597,6 +4635,7 @@
                                   <ConditionSingle Enabled="true" ExpressionL="${var:mjsign_clone}" ExpressionTypeL="String" ExpressionR="8" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                                   <ConditionSingle Enabled="true" ExpressionL="${var:残暴x_Clone}" ExpressionTypeL="Numeric" ExpressionR="100" ExpressionTypeR="Numeric" ConditionType="NumericLess" />
                                 </Condition>
+                                <Conditions />
                               </Trigger>
                               <Trigger Enabled="true" Name="3. 受到伤害销毁" Id="1b42d082-3cd7-42eb-9275-d150d87bff05" RegularExpression="^.{14} (?:\w+) (15|16):(?&lt;sid&gt;[^:]*):(?&lt;sname&gt;[^:]*):49C3:(?&lt;ability&gt;(?:[^:]|: )*?):(?&lt;tid&gt;[^:]*):(?&lt;tname&gt;[^:]*):(?&lt;flags&gt;[^:]*):(?&lt;damage&gt;[^:]*)(?::[^:]*){14}:(?&lt;targetCurrentHp&gt;[^:]*):(?&lt;targetMaxHp&gt;[^:]*):(?&lt;targetCurrentMp&gt;[^:]*):(?&lt;targetMaxMp&gt;[^:]*)(?::[^:]*){2}:(?&lt;targetX&gt;[^:]*):(?&lt;targetY&gt;[^:]*):(?&lt;targetZ&gt;[^:]*):(?&lt;targetHeading&gt;[^:]*):(?&lt;currentHp&gt;[^:]*):(?&lt;maxHp&gt;[^:]*):(?&lt;currentMp&gt;[^:]*):(?&lt;maxMp&gt;[^:]*)(?::[^:]*){2}:(?&lt;x&gt;[^:]*):(?&lt;y&gt;[^:]*):(?&lt;z&gt;[^:]*):(?&lt;heading&gt;[^:]*):(?&lt;sequence&gt;[^:]*):(?&lt;targetIndex&gt;[^:]*):(?&lt;targetCount&gt;[^:]*)(?:$|:)">
                                 <Actions>
@@ -4608,8 +4647,9 @@
                                   <ConditionSingle Enabled="true" ExpressionL="${var:绝亚阶段_Clone}" ExpressionTypeL="String" ExpressionR="2" ExpressionTypeR="String" ConditionType="StringEqualCase" />
                                   <ConditionSingle Enabled="true" ExpressionL="${var:mjsign_clone}" ExpressionTypeL="String" ExpressionR="8" ExpressionTypeR="String" ConditionType="StringEqualCase" />
                                   <ConditionSingle Enabled="true" ExpressionL="${var:残暴x_Clone}" ExpressionTypeL="Numeric" ExpressionR="100" ExpressionTypeR="Numeric" ConditionType="NumericLess" />
-                                  <ConditionSingle Enabled="true" ExpressionL="${tid}" ExpressionTypeL="String" ExpressionR="10133000" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                                  <ConditionSingle Enabled="true" ExpressionL="${tid}" ExpressionTypeL="String" ExpressionR="${_ffxivparty[1].id}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                                 </Condition>
+                                <Conditions />
                               </Trigger>
                             </Triggers>
                           </Folder>
@@ -4636,6 +4676,7 @@
                           <ConditionSingle Enabled="true" ExpressionL="${var:mjsign_clone}" ExpressionTypeL="String" ExpressionR="5" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                           <ConditionSingle Enabled="true" ExpressionL="${var:mjsign_clone}" ExpressionTypeL="String" ExpressionR="6" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                         </Condition>
+                        <Conditions />
                       </Trigger>
                     </Triggers>
                   </Folder>
@@ -4652,7 +4693,7 @@
                       </Action>
                     </Actions>
                     <Condition Enabled="true" Grouping="And">
-                      <ConditionSingle Enabled="true" ExpressionL="${tid}" ExpressionTypeL="String" ExpressionR="10133000" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                      <ConditionSingle Enabled="true" ExpressionL="${tid}" ExpressionTypeL="String" ExpressionR="${_ffxivparty[1].id}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                       <ConditionSingle Enabled="true" ExpressionL="${var:绝亚阶段_Clone}" ExpressionTypeL="String" ExpressionR="2" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                     </Condition>
                   </Trigger>
@@ -6424,7 +6465,7 @@
           </Folder>
         </Folders>
         <Triggers>
-          <Trigger Enabled="true" Name="修改日期：2023-03-28 更新&quot;省流&quot;" Id="b42c1f5a-ef95-4fad-bcfa-af4ae2748665" RegularExpression="">
+          <Trigger Enabled="true" Name="修改日期：2023-04-16 修复了二运变量问题,现在会画了" Id="b42c1f5a-ef95-4fad-bcfa-af4ae2748665" RegularExpression="">
             <Actions />
             <Condition Enabled="false" Grouping="Or" />
           </Trigger>
@@ -7140,7 +7181,7 @@
                       <Folder Id="fc0203d9-e425-41d6-b41b-3f0d93422e2b" Name="密集填充版本" Enabled="true">
                         <Folders />
                         <Triggers>
-                          <Trigger Enabled="false" Sequential="True" Name="1.3 反射加农炮 超密集填充版本（提前5秒显示）" Id="9a6ffab9-1219-440d-aef0-17f46a184a75" RegularExpression="^.{14} StartsCasting 14:(?&lt;sid&gt;[^:]*):(?&lt;sname&gt;[^:]*):6F1B:(?&lt;ability&gt;(?:[^:]|: )*?):(?&lt;tid&gt;[^:]*):(?&lt;tname&gt;[^:]*):(?&lt;castTime&gt;[^:]*):(?&lt;x&gt;[^:]*):(?&lt;y&gt;[^:]*):(?&lt;z&gt;[^:]*):(?&lt;heading&gt;[^:]*)(?:$|:)">
+                          <Trigger Enabled="true" Sequential="True" Name="1.3 反射加农炮 超密集填充版本（提前5秒显示）" Id="9a6ffab9-1219-440d-aef0-17f46a184a75" RegularExpression="^.{14} StartsCasting 14:(?&lt;sid&gt;[^:]*):(?&lt;sname&gt;[^:]*):6F1B:(?&lt;ability&gt;(?:[^:]|: )*?):(?&lt;tid&gt;[^:]*):(?&lt;tname&gt;[^:]*):(?&lt;castTime&gt;[^:]*):(?&lt;x&gt;[^:]*):(?&lt;y&gt;[^:]*):(?&lt;z&gt;[^:]*):(?&lt;heading&gt;[^:]*)(?:$|:)">
                             <Actions>
                               <Action OrderNumber="1" JsonEndpointExpression="http://127.0.0.1:47774/?namespace=zuoshang&amp;destroyAt=5000,COMBAT_EXIT" JsonPayloadExpression="{&quot;Name&quot;:&quot;2- 左上2&quot;,&quot;type&quot;:2,&quot;refY&quot;:-192.0,&quot;refZ&quot;:-16.00106,&quot;offX&quot;:-20.0,&quot;offY&quot;:-192.0,&quot;offZ&quot;:-16.001087,&quot;radius&quot;:10.0,&quot;color&quot;:16733231,&quot;thicc&quot;:4.0,&quot;FillStep&quot;:100.0}" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="GenericJson" ExecutionDelayExpression="2700">
                                 <Condition Enabled="true" Grouping="And">
@@ -7193,7 +7234,7 @@
                             </Actions>
                             <Condition Enabled="false" Grouping="Or" />
                           </Trigger>
-                          <Trigger Enabled="true" Sequential="True" Name="1.2 反射加农炮 0.2填充版本（提前5秒显示）" Id="237935aa-929f-43a9-b1ec-182edc298053" RegularExpression="^.{14} StartsCasting 14:(?&lt;sid&gt;[^:]*):(?&lt;sname&gt;[^:]*):6F1B:(?&lt;ability&gt;(?:[^:]|: )*?):(?&lt;tid&gt;[^:]*):(?&lt;tname&gt;[^:]*):(?&lt;castTime&gt;[^:]*):(?&lt;x&gt;[^:]*):(?&lt;y&gt;[^:]*):(?&lt;z&gt;[^:]*):(?&lt;heading&gt;[^:]*)(?:$|:)">
+                          <Trigger Enabled="false" Sequential="True" Name="1.2 反射加农炮 0.2填充版本（提前5秒显示）" Id="237935aa-929f-43a9-b1ec-182edc298053" RegularExpression="^.{14} StartsCasting 14:(?&lt;sid&gt;[^:]*):(?&lt;sname&gt;[^:]*):6F1B:(?&lt;ability&gt;(?:[^:]|: )*?):(?&lt;tid&gt;[^:]*):(?&lt;tname&gt;[^:]*):(?&lt;castTime&gt;[^:]*):(?&lt;x&gt;[^:]*):(?&lt;y&gt;[^:]*):(?&lt;z&gt;[^:]*):(?&lt;heading&gt;[^:]*)(?:$|:)">
                             <Actions>
                               <Action OrderNumber="1" JsonEndpointExpression="http://127.0.0.1:47774/?namespace=zuoshang&amp;destroyAt=5000,COMBAT_EXIT" JsonPayloadExpression="{&quot;Name&quot;:&quot;2- 左上2&quot;,&quot;type&quot;:2,&quot;refY&quot;:-192.0,&quot;refZ&quot;:-16.00106,&quot;offX&quot;:-20.0,&quot;offY&quot;:-192.0,&quot;offZ&quot;:-16.001087,&quot;radius&quot;:10.0,&quot;color&quot;:16733231,&quot;thicc&quot;:4.0,&quot;FillStep&quot;:100.0}" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="GenericJson" ExecutionDelayExpression="2700">
                                 <Condition Enabled="true" Grouping="And">
@@ -10142,10 +10183,6 @@
           </Trigger>
         </Triggers>
       </Folder>
-      <Folder Id="16ab57e3-d88b-43f3-b3b0-94cad68886ee" Name="5. 【天之御柱】(画饼)" Enabled="true">
-        <Folders />
-        <Triggers />
-      </Folder>
       <Folder Id="e1aaf3e3-d52c-4504-9628-56bf8f2031c4" Name="*【这是一个备用分组】" Enabled="true">
         <Folders />
         <Triggers>
@@ -10161,7 +10198,7 @@
       </Folder>
     </Folders>
     <Triggers>
-      <Trigger Enabled="false" Sequential="True" Name="【初次导入提醒】2023/04/08" Id="5a404c2b-5418-45c1-bdc1-615111089220" RegularExpression="^." PeriodRefire="Deny" RefirePeriodExpression="2000">
+      <Trigger Enabled="false" Sequential="True" Name="【初次导入提醒】2023/04/16" Id="5a404c2b-5418-45c1-bdc1-615111089220" RegularExpression="^." PeriodRefire="Deny" RefirePeriodExpression="2000">
         <Actions>
           <Action OrderNumber="1" OBSEndPoint="ws://${_const[OBSWebsocketEndpoint]}:${_const[OBSWebsocketPort]}" OBSPassword="${_const[OBSWebsocketPassword]}" TextAuraFontSize="9" TextAuraFontName="宋体" TriggerOp="DisableTrigger" TriggerId="5a404c2b-5418-45c1-bdc1-615111089220" ActionType="Trigger">
             <Condition Enabled="false" Grouping="Or" />
