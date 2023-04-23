@@ -558,7 +558,7 @@
           </Trigger>
         </Triggers>
       </Folder>
-      <Folder Id="8517f409-a6ec-46b4-acbf-ea01d2809dc3" Name="1. 【绝亚】亚历山大绝境战 2023.04.21" Enabled="true">
+      <Folder Id="8517f409-a6ec-46b4-acbf-ea01d2809dc3" Name="1. 【绝亚】亚历山大绝境战 2023.04.23" Enabled="true">
         <Folders>
           <Folder FFXIVZoneFilterEnabled="True" FfxivZoneFilterRegularExpression="^887$" Id="50cdbc84-4919-46dd-b6ea-1a89f5fc95c3" Name="P1" Enabled="true">
             <Folders>
@@ -4145,7 +4145,7 @@
                                   <Action OrderNumber="8" OBSEndPoint="ws://${_const[OBSWebsocketEndpoint]}:${_const[OBSWebsocketPort]}" OBSPassword="${_const[OBSWebsocketPassword]}" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Placeholder" Description="下灵泉" DescriptionOverride="True">
                                     <Condition Enabled="false" Grouping="Or" />
                                   </Action>
-                                  <Action OrderNumber="9" JsonEndpointExpression="http://127.0.0.1:47774/?namespace=3&amp;destroyAt=15000,COMBAT_EXIT,TERRITORY_CHANGE" JsonPayloadExpression="{&quot;Name&quot;:&quot;1号 3 上灵泉&quot;,&quot;refX&quot;:88.9134,&quot;refY&quot;:104.5922,&quot;refZ&quot;:3.8146973E-06,&quot;radius&quot;:0.4,&quot;color&quot;:4278255614,&quot;thicc&quot;:3.0,&quot;tether&quot;:true}" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="GenericJson">
+                                  <Action OrderNumber="9" JsonEndpointExpression="http://127.0.0.1:47774/?namespace=3&amp;destroyAt=15000,COMBAT_EXIT,TERRITORY_CHANGE" JsonPayloadExpression="{&quot;Name&quot;:&quot;1号 3 下灵泉&quot;,&quot;refX&quot;:88.9134,&quot;refY&quot;:95.4075,&quot;refZ&quot;:3.8146973E-06,&quot;radius&quot;:0.4,&quot;color&quot;:4278255614,&quot;thicc&quot;:3.0,&quot;tether&quot;:true}" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="GenericJson">
                                     <Condition Enabled="true" Grouping="And">
                                       <ConditionSingle Enabled="true" ExpressionL="${var:绝亚灵泉_右下_Clone}" ExpressionTypeL="String" ExpressionR="1" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                                       <ConditionSingle Enabled="true" ExpressionL="${value}" ExpressionTypeL="String" ExpressionR="2" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
@@ -6423,7 +6423,7 @@
           </Folder>
         </Folders>
         <Triggers>
-          <Trigger Enabled="true" Name="修改日期：2023-04-21 修复P1小怪攻击提示的变量导致错误的销毁问题" Id="b42c1f5a-ef95-4fad-bcfa-af4ae2748665" RegularExpression="">
+          <Trigger Enabled="true" Name="修改日期：2023-04-23 修复P3二运指引残暴在右，1号踩灵泉3的指示错误" Id="b42c1f5a-ef95-4fad-bcfa-af4ae2748665" RegularExpression="">
             <Actions />
             <Condition Enabled="false" Grouping="Or" />
           </Trigger>
@@ -7139,7 +7139,7 @@
                       <Folder Id="fc0203d9-e425-41d6-b41b-3f0d93422e2b" Name="密集填充版本" Enabled="true">
                         <Folders />
                         <Triggers>
-                          <Trigger Enabled="true" Sequential="True" Name="1.3 反射加农炮 超密集填充版本（提前5秒显示）" Id="9a6ffab9-1219-440d-aef0-17f46a184a75" RegularExpression="^.{14} StartsCasting 14:(?&lt;sid&gt;[^:]*):(?&lt;sname&gt;[^:]*):6F1B:(?&lt;ability&gt;(?:[^:]|: )*?):(?&lt;tid&gt;[^:]*):(?&lt;tname&gt;[^:]*):(?&lt;castTime&gt;[^:]*):(?&lt;x&gt;[^:]*):(?&lt;y&gt;[^:]*):(?&lt;z&gt;[^:]*):(?&lt;heading&gt;[^:]*)(?:$|:)">
+                          <Trigger Enabled="false" Sequential="True" Name="1.3 反射加农炮 超密集填充版本（提前5秒显示）" Id="9a6ffab9-1219-440d-aef0-17f46a184a75" RegularExpression="^.{14} StartsCasting 14:(?&lt;sid&gt;[^:]*):(?&lt;sname&gt;[^:]*):6F1B:(?&lt;ability&gt;(?:[^:]|: )*?):(?&lt;tid&gt;[^:]*):(?&lt;tname&gt;[^:]*):(?&lt;castTime&gt;[^:]*):(?&lt;x&gt;[^:]*):(?&lt;y&gt;[^:]*):(?&lt;z&gt;[^:]*):(?&lt;heading&gt;[^:]*)(?:$|:)">
                             <Actions>
                               <Action OrderNumber="1" JsonEndpointExpression="http://127.0.0.1:47774/?namespace=zuoshang&amp;destroyAt=5000,COMBAT_EXIT" JsonPayloadExpression="{&quot;Name&quot;:&quot;2- 左上2&quot;,&quot;type&quot;:2,&quot;refY&quot;:-192.0,&quot;refZ&quot;:-16.00106,&quot;offX&quot;:-20.0,&quot;offY&quot;:-192.0,&quot;offZ&quot;:-16.001087,&quot;radius&quot;:10.0,&quot;color&quot;:16733231,&quot;thicc&quot;:4.0,&quot;FillStep&quot;:100.0}" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="GenericJson" ExecutionDelayExpression="2700">
                                 <Condition Enabled="true" Grouping="And">
@@ -7192,7 +7192,7 @@
                             </Actions>
                             <Condition Enabled="false" Grouping="Or" />
                           </Trigger>
-                          <Trigger Enabled="false" Sequential="True" Name="1.2 反射加农炮 0.2填充版本（提前5秒显示）" Id="237935aa-929f-43a9-b1ec-182edc298053" RegularExpression="^.{14} StartsCasting 14:(?&lt;sid&gt;[^:]*):(?&lt;sname&gt;[^:]*):6F1B:(?&lt;ability&gt;(?:[^:]|: )*?):(?&lt;tid&gt;[^:]*):(?&lt;tname&gt;[^:]*):(?&lt;castTime&gt;[^:]*):(?&lt;x&gt;[^:]*):(?&lt;y&gt;[^:]*):(?&lt;z&gt;[^:]*):(?&lt;heading&gt;[^:]*)(?:$|:)">
+                          <Trigger Enabled="true" Sequential="True" Name="1.2 反射加农炮 0.2填充版本（提前5秒显示）" Id="237935aa-929f-43a9-b1ec-182edc298053" RegularExpression="^.{14} StartsCasting 14:(?&lt;sid&gt;[^:]*):(?&lt;sname&gt;[^:]*):6F1B:(?&lt;ability&gt;(?:[^:]|: )*?):(?&lt;tid&gt;[^:]*):(?&lt;tname&gt;[^:]*):(?&lt;castTime&gt;[^:]*):(?&lt;x&gt;[^:]*):(?&lt;y&gt;[^:]*):(?&lt;z&gt;[^:]*):(?&lt;heading&gt;[^:]*)(?:$|:)">
                             <Actions>
                               <Action OrderNumber="1" JsonEndpointExpression="http://127.0.0.1:47774/?namespace=zuoshang&amp;destroyAt=5000,COMBAT_EXIT" JsonPayloadExpression="{&quot;Name&quot;:&quot;2- 左上2&quot;,&quot;type&quot;:2,&quot;refY&quot;:-192.0,&quot;refZ&quot;:-16.00106,&quot;offX&quot;:-20.0,&quot;offY&quot;:-192.0,&quot;offZ&quot;:-16.001087,&quot;radius&quot;:10.0,&quot;color&quot;:16733231,&quot;thicc&quot;:4.0,&quot;FillStep&quot;:100.0}" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="GenericJson" ExecutionDelayExpression="2700">
                                 <Condition Enabled="true" Grouping="And">
@@ -10097,7 +10097,7 @@
           </Trigger>
         </Triggers>
       </Folder>
-      <Folder Id="90c5debd-06de-4d0a-aa14-d00a94b83567" Name="4. 【异闻迷宫 异闻/零式异闻希拉狄哈水道】(废弃)" Enabled="true">
+      <Folder Id="90c5debd-06de-4d0a-aa14-d00a94b83567" Name="4. 【异闻迷宫 异闻/零式异闻希拉狄哈水道】(废弃)" Enabled="false">
         <Folders>
           <Folder Id="38c0470f-bca0-4487-ae6a-5ac04968bf3e" Name="TRN预留" Enabled="true">
             <Folders>
@@ -10151,7 +10151,7 @@
       </Folder>
     </Folders>
     <Triggers>
-      <Trigger Enabled="false" Sequential="True" Name="【初次导入提醒】2023/04/21" Id="5a404c2b-5418-45c1-bdc1-615111089220" RegularExpression="^." PeriodRefire="Deny" RefirePeriodExpression="2000">
+      <Trigger Enabled="false" Sequential="True" Name="【初次导入提醒】2023/04/23" Id="5a404c2b-5418-45c1-bdc1-615111089220" RegularExpression="^." PeriodRefire="Deny" RefirePeriodExpression="2000">
         <Actions>
           <Action OrderNumber="1" OBSEndPoint="ws://${_const[OBSWebsocketEndpoint]}:${_const[OBSWebsocketPort]}" OBSPassword="${_const[OBSWebsocketPassword]}" TextAuraFontSize="9" TextAuraFontName="宋体" TriggerOp="DisableTrigger" TriggerId="5a404c2b-5418-45c1-bdc1-615111089220" ActionType="Trigger">
             <Condition Enabled="false" Grouping="Or" />
@@ -10179,7 +10179,6 @@
       <Trigger Enabled="true" Name="【有问题欢迎提Issue,项目地址在[远程仓库备用分组]】" Id="387025c4-3a16-46ba-a451-adedacfc2186" RegularExpression="">
         <Actions />
         <Condition Enabled="false" Grouping="Or" />
-        <Conditions />
       </Trigger>
     </Triggers>
   </ExportedFolder>
