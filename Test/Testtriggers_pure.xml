@@ -75,7 +75,7 @@
               </Folder>
             </Folders>
             <Triggers>
-              <Trigger Enabled="true" Name="2. 【鲶鱼精邮差 PostNamazu (国服请使用1.3.2.6版本 - CN Patch 6.4)】：github.com/Natsukage/PostNamazu" Id="6caa602e-1b0d-45d4-8112-5439e4de972f" RegularExpression="">
+              <Trigger Enabled="true" Name="2. 【鲶鱼精邮差 PostNamazu 】：github.com/Natsukage/PostNamazu" Id="6caa602e-1b0d-45d4-8112-5439e4de972f" RegularExpression="">
                 <Actions />
                 <Condition Enabled="false" Grouping="Or" />
               </Trigger>
@@ -113,28 +113,6 @@
                 <Condition Enabled="false" Grouping="Or" />
               </Trigger>
             </Triggers>
-          </Folder>
-          <Folder Id="a51f4974-b929-4a9d-af3a-b37a12e1c00d" Name="⭐ 一些无关的内容 ⭐" Enabled="true">
-            <Folders>
-              <Folder Id="e2656e5e-450a-4f34-a2a9-168498f44d4b" Name="1. 为什么要使用Triggernometry发送json的方式来进行绘制，而不选择Splatoon预设？" Enabled="true">
-                <Folders />
-                <Triggers>
-                  <Trigger Enabled="true" Name="1. 绝大部分Splatoon预设能做的，Triggernometry也能做的，而且能做更多" Id="cea0a805-dea3-4b09-9556-27b403eda6a9" RegularExpression="">
-                    <Actions />
-                    <Condition Enabled="false" Grouping="Or" />
-                  </Trigger>
-                  <Trigger Enabled="true" Name="2. 尽量减少同时需要使用Triggernometry和Splatoon预设的情况" Id="0ed71575-1965-45fc-b1d8-a6d3271c1267" RegularExpression="">
-                    <Actions />
-                    <Condition Enabled="false" Grouping="Or" />
-                  </Trigger>
-                  <Trigger Enabled="true" Name="3. 智力水平和知识储备不足，做不来别的" Id="91d40a4e-b7a4-4837-98db-32a64c3dc845" RegularExpression="">
-                    <Actions />
-                    <Condition Enabled="false" Grouping="Or" />
-                  </Trigger>
-                </Triggers>
-              </Folder>
-            </Folders>
-            <Triggers />
           </Folder>
         </Folders>
         <Triggers />
@@ -2676,7 +2654,7 @@
                   <Folder Id="cd841116-1dc6-4655-9f24-94202ddea6ff" Name="4. 寒冰导弹" Enabled="true">
                     <Folders />
                     <Triggers>
-                      <Trigger Enabled="true" Sequential="True" Name="3.2 冰圈滞留显示修复(EventObj样式) 销毁" Id="5f9124de-4c13-4af0-a5ed-938a7c38c9c8" RegularExpression="^.{14} (?:\w+ )14:.{8}:[^:]*:485A:" PeriodRefire="Deny" RefirePeriodExpression="500">
+                      <Trigger Enabled="true" Sequential="True" Name="3.2 冰圈滞留显示修复(EventObj) 销毁" Id="5f9124de-4c13-4af0-a5ed-938a7c38c9c8" RegularExpression="^.{14} (?:\w+ )14:.{8}:[^:]*:485A:" PeriodRefire="Deny" RefirePeriodExpression="500">
                         <Actions>
                           <Action OrderNumber="1" JsonEndpointExpression="http://127.0.0.1:47774/?destroy=icecircle" ActionType="GenericJson">
                             <Condition Enabled="false" Grouping="Or" />
@@ -2700,7 +2678,7 @@
                         </Actions>
                         <Condition Enabled="false" Grouping="Or" />
                       </Trigger>
-                      <Trigger Enabled="true" Sequential="True" Name="3.1 冰圈滞留显示修复(EventObj样式) 触发" Id="4b3667a9-3521-4213-ae06-d62d684c0879" RegularExpression="^.{14} (?:\w+) (15|16):(?&lt;sid&gt;[^:]*):(?&lt;sname&gt;[^:]*):4854:(?&lt;ability&gt;(?:[^:]|: )*?):(?&lt;tid&gt;[^:]*):(?&lt;tname&gt;[^:]*):(?&lt;flags&gt;[^:]*):(?&lt;damage&gt;[^:]*)(?::[^:]*){14}:(?&lt;targetCurrentHp&gt;[^:]*):(?&lt;targetMaxHp&gt;[^:]*):(?&lt;targetCurrentMp&gt;[^:]*):(?&lt;targetMaxMp&gt;[^:]*)(?::[^:]*){2}:(?&lt;targetX&gt;[^:]*):(?&lt;targetY&gt;[^:]*):(?&lt;targetZ&gt;[^:]*):(?&lt;targetHeading&gt;[^:]*):(?&lt;currentHp&gt;[^:]*):(?&lt;maxHp&gt;[^:]*):(?&lt;currentMp&gt;[^:]*):(?&lt;maxMp&gt;[^:]*)(?::[^:]*){2}:(?&lt;x&gt;[^:]*):(?&lt;y&gt;[^:]*):(?&lt;z&gt;[^:]*):(?&lt;heading&gt;[^:]*):(?&lt;sequence&gt;[^:]*):(?&lt;targetIndex&gt;[^:]*):(?&lt;targetCount&gt;[^:]*)(?:$|:)" PeriodRefire="Deny" RefirePeriodExpression="500">
+                      <Trigger Enabled="true" Sequential="True" Name="3.1 冰圈滞留显示修复(EventObj) 触发" Id="4b3667a9-3521-4213-ae06-d62d684c0879" RegularExpression="^.{14} (?:\w+) (15|16):(?&lt;sid&gt;[^:]*):(?&lt;sname&gt;[^:]*):4854:(?&lt;ability&gt;(?:[^:]|: )*?):(?&lt;tid&gt;[^:]*):(?&lt;tname&gt;[^:]*):(?&lt;flags&gt;[^:]*):(?&lt;damage&gt;[^:]*)(?::[^:]*){14}:(?&lt;targetCurrentHp&gt;[^:]*):(?&lt;targetMaxHp&gt;[^:]*):(?&lt;targetCurrentMp&gt;[^:]*):(?&lt;targetMaxMp&gt;[^:]*)(?::[^:]*){2}:(?&lt;targetX&gt;[^:]*):(?&lt;targetY&gt;[^:]*):(?&lt;targetZ&gt;[^:]*):(?&lt;targetHeading&gt;[^:]*):(?&lt;currentHp&gt;[^:]*):(?&lt;maxHp&gt;[^:]*):(?&lt;currentMp&gt;[^:]*):(?&lt;maxMp&gt;[^:]*)(?::[^:]*){2}:(?&lt;x&gt;[^:]*):(?&lt;y&gt;[^:]*):(?&lt;z&gt;[^:]*):(?&lt;heading&gt;[^:]*):(?&lt;sequence&gt;[^:]*):(?&lt;targetIndex&gt;[^:]*):(?&lt;targetCount&gt;[^:]*)(?:$|:)" PeriodRefire="Deny" RefirePeriodExpression="500">
                         <Actions>
                           <Action OrderNumber="1" JsonEndpointExpression="http://127.0.0.1:47774/?destroy=icecircle" ActionType="GenericJson">
                             <Condition Enabled="false" Grouping="Or" />
@@ -2742,7 +2720,7 @@
                   </Folder>
                   <Folder Id="3d7aa297-f950-4d71-8211-bd652a204095" Name="3. 隐形地雷散布 (寄了)" Enabled="true">
                     <Folders>
-                      <Folder Id="5826ecbf-d11a-4619-b1b9-6d5e6bfb0ea3" Name="排序解法(实验中) 随机伤害源……找不到规律，不搞了，消不掉的时间到了自动销毁，踩雷能消但有1/2的概率反向消雷" Enabled="true">
+                      <Folder Id="5826ecbf-d11a-4619-b1b9-6d5e6bfb0ea3" Name="排序解法 随机伤害源……找不到规律，不搞了，消不掉的时间到了自动销毁，踩雷能消但有1/2的概率反向消雷" Enabled="true">
                         <Folders />
                         <Triggers>
                           <Trigger Enabled="true" Sequential="True" Name="2. 地雷显示(15/16)" Id="1e3d4218-38d8-434c-898f-c28b32745ec2" RegularExpression="(?&lt;timestamp&gt;^.{14}) (?:ActionEffect|AOEActionEffect) (?&lt;type&gt;(?:15|16)):(?&lt;sourceId&gt;[^:]*):(?&lt;source&gt;[^:]*):4851:(?&lt;ability&gt;(?:[^:]|: )*?):(?&lt;targetId&gt;[^:]*):(?&lt;target&gt;[^:]*):(?&lt;flags&gt;[^:]*):(?&lt;damage&gt;[^:]*)(?::[^:]*){14}:(?&lt;targetCurrentHp&gt;[^:]*):(?&lt;targetMaxHp&gt;[^:]*):(?&lt;targetCurrentMp&gt;[^:]*):(?&lt;targetMaxMp&gt;[^:]*)(?::[^:]*){2}:(?&lt;targetX&gt;[^:]*):(?&lt;targetY&gt;[^:]*):(?&lt;targetZ&gt;[^:]*):(?&lt;targetHeading&gt;[^:]*):(?&lt;currentHp&gt;[^:]*):(?&lt;maxHp&gt;[^:]*):(?&lt;currentMp&gt;[^:]*):(?&lt;maxMp&gt;[^:]*)(?::[^:]*){2}:(?&lt;x&gt;[^:]*):(?&lt;y&gt;[^:]*):(?&lt;z&gt;[^:]*):(?&lt;heading&gt;[^:]*):(?&lt;sequence&gt;[^:]*):(?&lt;targetIndex&gt;[^:]*):(?&lt;targetCount&gt;[^:]*)(?:$|:)">
@@ -2833,83 +2811,6 @@
                           </Trigger>
                         </Triggers>
                       </Folder>
-                      <Folder Id="f1532ca8-bcb4-4bfa-9265-426e0ff9f1be" Name="旧版留档" Enabled="false">
-                        <Folders />
-                        <Triggers>
-                          <Trigger Enabled="false" Name="地雷被踩" Id="87fa99b0-4b6c-457b-bcf3-13cf84828cc7" RegularExpression="(?&lt;timestamp&gt;^.{14}) (?:ActionEffect|AOEActionEffect) (?&lt;type&gt;(?:15|16)):(?&lt;sourceId&gt;[^:]*):(?&lt;source&gt;[^:]*):4852:(?&lt;ability&gt;(?:[^:]|: )*?):(?&lt;targetId&gt;[^:]*):(?&lt;target&gt;[^:]*):(?&lt;flags&gt;[^:]*):(?&lt;damage&gt;[^:]*)(?::[^:]*){14}:(?&lt;targetCurrentHp&gt;[^:]*):(?&lt;targetMaxHp&gt;[^:]*):(?&lt;targetCurrentMp&gt;[^:]*):(?&lt;targetMaxMp&gt;[^:]*)(?::[^:]*){2}:(?&lt;targetX&gt;[^:]*):(?&lt;targetY&gt;[^:]*):(?&lt;targetZ&gt;[^:]*):(?&lt;targetHeading&gt;[^:]*):(?&lt;currentHp&gt;[^:]*):(?&lt;maxHp&gt;[^:]*):(?&lt;currentMp&gt;[^:]*):(?&lt;maxMp&gt;[^:]*)(?::[^:]*){2}:(?&lt;x&gt;[^:]*):(?&lt;y&gt;[^:]*):(?&lt;z&gt;[^:]*):(?&lt;heading&gt;[^:]*):(?&lt;sequence&gt;[^:]*):(?&lt;targetIndex&gt;[^:]*):(?&lt;targetCount&gt;[^:]*)(?:$|:)">
-                            <Actions>
-                              <Action OrderNumber="1" JsonEndpointExpression="http://127.0.0.1:47774/?destroy=innerdilei${x}${y}" ActionType="GenericJson">
-                                <Condition Enabled="true" Grouping="Or">
-                                  <ConditionGroup Enabled="true" Grouping="And">
-                                    <ConditionSingle Enabled="true" ExpressionL="${y}" ExpressionTypeL="String" ExpressionR="${var:地雷_14_${y}}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
-                                    <ConditionSingle Enabled="true" ExpressionL="${x}" ExpressionTypeL="String" ExpressionR="${var:地雷_14_${x}}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
-                                  </ConditionGroup>
-                                  <ConditionGroup Enabled="true" Grouping="And">
-                                    <ConditionSingle Enabled="true" ExpressionL="${x}" ExpressionTypeL="String" ExpressionR="${var:地雷_15_${x}}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
-                                    <ConditionSingle Enabled="true" ExpressionL="${y}" ExpressionTypeL="String" ExpressionR="${var:地雷_15_${y}}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
-                                  </ConditionGroup>
-                                </Condition>
-                              </Action>
-                              <Action OrderNumber="2" JsonEndpointExpression="http://127.0.0.1:47774/?destroy=outerdilei${x}${y}" ActionType="GenericJson">
-                                <Condition Enabled="true" Grouping="Or">
-                                  <ConditionGroup Enabled="true" Grouping="And">
-                                    <ConditionSingle Enabled="true" ExpressionL="${y}" ExpressionTypeL="String" ExpressionR="${var:地雷_14_${y}}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
-                                    <ConditionSingle Enabled="true" ExpressionL="${x}" ExpressionTypeL="String" ExpressionR="${var:地雷_14_${x}}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
-                                  </ConditionGroup>
-                                  <ConditionGroup Enabled="true" Grouping="And">
-                                    <ConditionSingle Enabled="true" ExpressionL="${x}" ExpressionTypeL="String" ExpressionR="${var:地雷_15_${x}}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
-                                    <ConditionSingle Enabled="true" ExpressionL="${y}" ExpressionTypeL="String" ExpressionR="${var:地雷_15_${y}}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
-                                  </ConditionGroup>
-                                </Condition>
-                              </Action>
-                              <Action OrderNumber="3" NamedCallbackName="command" NamedCallbackParam="/e 打印销毁地雷：X:${x} Y:${y}" Enabled="False" ActionType="NamedCallback">
-                                <Condition Enabled="false" Grouping="Or" />
-                              </Action>
-                            </Actions>
-                            <Condition Enabled="false" Grouping="Or" />
-                          </Trigger>
-                          <Trigger Enabled="false" Sequential="True" Name="地雷出现(14)" Id="e500d7fc-9648-480c-9cbd-6b034b2ff616" RegularExpression="(?&lt;timestamp&gt;^.{14}) StartsCasting (?&lt;type&gt;14):(?&lt;sourceId&gt;[^:]*):(?&lt;source&gt;[^:]*):4851:(?&lt;ability&gt;(?:[^:]|: )*?):(?&lt;targetId&gt;[^:]*):(?&lt;target&gt;[^:]*):(?&lt;castTime&gt;[^:]*):(?&lt;x&gt;[^:]*):(?&lt;y&gt;[^:]*):(?&lt;z&gt;[^:]*):(?&lt;heading&gt;[^:]*)(?:$|:)">
-                            <Actions>
-                              <Action OrderNumber="1" VariableOp="SetString" VariableName="地雷_14_${x}" VariableExpression="${x}" ActionType="Variable">
-                                <Condition Enabled="false" Grouping="Or" />
-                              </Action>
-                              <Action OrderNumber="2" VariableOp="SetString" VariableName="地雷_14_${y}" VariableExpression="${y}" ActionType="Variable">
-                                <Condition Enabled="false" Grouping="Or" />
-                              </Action>
-                              <Action OrderNumber="3" NamedCallbackName="command" NamedCallbackParam="/e 打印创造地雷（14）：X:${x} Y:${y}" Enabled="False" ActionType="NamedCallback">
-                                <Condition Enabled="false" Grouping="Or" />
-                              </Action>
-                              <Action OrderNumber="4" JsonEndpointExpression="http://127.0.0.1:47774/?namespace=innerdilei${id}&amp;destroyAt=9000" JsonPayloadExpression="{&quot;refX&quot;:${_ffxiventity[${sourceId}].x},&quot;refY&quot;:${_ffxiventity[${sourceId}].y},&quot;radius&quot;:0.5,&quot;color&quot;:1275068415,&quot;overlayText&quot;:&quot;我是地雷！&quot;,&quot;Filled&quot;:true}" Enabled="False" ActionType="GenericJson" ExecutionDelayExpression="2700">
-                                <Condition Enabled="false" Grouping="And" />
-                              </Action>
-                              <Action OrderNumber="5" JsonEndpointExpression="http://127.0.0.1:47774/?namespace=outerdilei${id}&amp;destroyAt=9000" JsonPayloadExpression="{&quot;refX&quot;:${_ffxiventity[${sourceId}].x},&quot;refY&quot;:${_ffxiventity[${sourceId}].y},&quot;radius&quot;:8.0,&quot;color&quot;:4278255521}" Enabled="False" ActionType="GenericJson">
-                                <Condition Enabled="false" Grouping="And" />
-                              </Action>
-                            </Actions>
-                            <Condition Enabled="false" Grouping="Or" />
-                          </Trigger>
-                          <Trigger Enabled="false" Sequential="True" Name="地雷出现(15/16)" Id="8aff2c43-85db-439f-9230-8aa120e5bfe2" RegularExpression="(?&lt;timestamp&gt;^.{14}) (?:ActionEffect|AOEActionEffect) (?&lt;type&gt;(?:15|16)):(?&lt;sourceId&gt;[^:]*):(?&lt;source&gt;[^:]*):4851:(?&lt;ability&gt;(?:[^:]|: )*?):(?&lt;targetId&gt;[^:]*):(?&lt;target&gt;[^:]*):(?&lt;flags&gt;[^:]*):(?&lt;damage&gt;[^:]*)(?::[^:]*){14}:(?&lt;targetCurrentHp&gt;[^:]*):(?&lt;targetMaxHp&gt;[^:]*):(?&lt;targetCurrentMp&gt;[^:]*):(?&lt;targetMaxMp&gt;[^:]*)(?::[^:]*){2}:(?&lt;targetX&gt;[^:]*):(?&lt;targetY&gt;[^:]*):(?&lt;targetZ&gt;[^:]*):(?&lt;targetHeading&gt;[^:]*):(?&lt;currentHp&gt;[^:]*):(?&lt;maxHp&gt;[^:]*):(?&lt;currentMp&gt;[^:]*):(?&lt;maxMp&gt;[^:]*)(?::[^:]*){2}:(?&lt;x&gt;[^:]*):(?&lt;y&gt;[^:]*):(?&lt;z&gt;[^:]*):(?&lt;heading&gt;[^:]*):(?&lt;sequence&gt;[^:]*):(?&lt;targetIndex&gt;[^:]*):(?&lt;targetCount&gt;[^:]*)(?:$|:)">
-                            <Actions>
-                              <Action OrderNumber="1" VariableOp="SetString" VariableName="地雷_15_${x}" VariableExpression="${x}" ActionType="Variable">
-                                <Condition Enabled="false" Grouping="Or" />
-                              </Action>
-                              <Action OrderNumber="2" VariableOp="SetString" VariableName="地雷_15_${y}" VariableExpression="${y}" ActionType="Variable">
-                                <Condition Enabled="false" Grouping="Or" />
-                              </Action>
-                              <Action OrderNumber="3" JsonEndpointExpression="http://127.0.0.1:47774/?namespace=innerdilei${x}${y}&amp;destroyAt=9000" JsonPayloadExpression="{&quot;Name&quot;:&quot;地雷 内&quot;,&quot;refX&quot;:${_ffxiventity[${sourceId}].x},&quot;refY&quot;:${_ffxiventity[${sourceId}].y},&quot;radius&quot;:1.0,&quot;color&quot;:2529034194,&quot;overlayBGColor&quot;:4278255604,&quot;overlayTextColor&quot;:4278190080,&quot;thicc&quot;:3.0,&quot;overlayText&quot;:&quot;我是地雷!&quot;,&quot;refActorObjectID&quot;:1,&quot;refActorComparisonType&quot;:2,&quot;Filled&quot;:true}&#xD;&#xA; " ActionType="GenericJson">
-                                <Condition Enabled="false" Grouping="And" />
-                              </Action>
-                              <Action OrderNumber="4" JsonEndpointExpression="http://127.0.0.1:47774/?namespace=outerdilei${x}${y}&amp;destroyAt=9000" JsonPayloadExpression="{&quot;refX&quot;:${_ffxiventity[${sourceId}].x},&quot;refY&quot;:${_ffxiventity[${sourceId}].y},&quot;radius&quot;:8.0,&quot;color&quot;:4278255521}" ActionType="GenericJson" ExecutionDelayExpression="10">
-                                <Condition Enabled="false" Grouping="And" />
-                              </Action>
-                              <Action OrderNumber="5" NamedCallbackName="command" NamedCallbackParam="/e 打印创造地雷（15/16）：X:${x} Y:${y}" Enabled="False" ActionType="NamedCallback">
-                                <Condition Enabled="false" Grouping="Or" />
-                              </Action>
-                            </Actions>
-                            <Condition Enabled="false" Grouping="Or" />
-                          </Trigger>
-                        </Triggers>
-                      </Folder>
                     </Folders>
                     <Triggers />
                   </Folder>
@@ -2939,67 +2840,7 @@
                     </Triggers>
                   </Folder>
                   <Folder Id="06aa4016-b361-433f-b0eb-2b6b9cc3214e" Name="1. 鹰式破坏炮" Enabled="true">
-                    <Folders>
-                      <Folder Id="66aa622b-5804-4d3c-9fe5-5fa43219bcc8" Name="备选绘制方案" Enabled="false">
-                        <Folders>
-                          <Folder Id="d1189c15-e89f-4304-af77-e3f8afaef051" Name="鹰式破坏炮 (非填充版本) 三选一" Enabled="false">
-                            <Folders />
-                            <Triggers>
-                              <Trigger Enabled="true" Sequential="True" Name="1. 获取坐标+显示" Id="f3a1dc78-2d29-4ab7-9754-11b20eb9d3cf" RegularExpression="^.{14} ChatLog 00:0:104:(?&lt;sid&gt;.*?):(?&lt;sname&gt;.*?):4831:(?&lt;what&gt;.*?):(?&lt;casttime&gt;.*?):(?&lt;tid&gt;.*?):(?&lt;tname&gt;.*?):(?&lt;what2&gt;.*?):(?&lt;heading&gt;.*?):(?&lt;x&gt;.*?):(?&lt;y&gt;.*?):(?&lt;z&gt;.*?):">
-                                <Actions>
-                                  <Action OrderNumber="1" VariableOp="SetString" VariableName="绝亚_鹰式破坏炮_x_${sid}" VariableExpression="${x}" ActionType="Variable">
-                                    <Condition Enabled="false" Grouping="Or" />
-                                  </Action>
-                                  <Action OrderNumber="2" VariableOp="SetString" VariableName="绝亚_鹰式破坏炮_y_${sid}" VariableExpression="${y}" ActionType="Variable">
-                                    <Condition Enabled="false" Grouping="Or" />
-                                  </Action>
-                                  <Action OrderNumber="3" JsonEndpointExpression="http://127.0.0.1:47774/?namespace=yingshipohuaipao${sid}&amp;destroyAt=5500" JsonPayloadExpression="{&quot;refX&quot;:${var:绝亚_鹰式破坏炮_x_${sid}},&quot;refY&quot;:${var:绝亚_鹰式破坏炮_y_${sid}},&quot;radius&quot;:10.0,&quot;color&quot;:3355508606,&quot;thicc&quot;:3.0}" ActionType="GenericJson">
-                                    <Condition Enabled="false" Grouping="And" />
-                                  </Action>
-                                </Actions>
-                                <Condition Enabled="false" Grouping="Or" />
-                              </Trigger>
-                              <Trigger Enabled="true" Name="2. 销毁" Id="05dbc803-762f-4108-9832-0d5178a30484" RegularExpression="^.{14} (?:\w+) (15|16):(?&lt;sid&gt;[^:]*):(?&lt;sname&gt;[^:]*):4831:(?&lt;ability&gt;(?:[^:]|: )*?):(?&lt;tid&gt;[^:]*):(?&lt;tname&gt;[^:]*):(?&lt;flags&gt;[^:]*):(?&lt;damage&gt;[^:]*)(?::[^:]*){14}:(?&lt;targetCurrentHp&gt;[^:]*):(?&lt;targetMaxHp&gt;[^:]*):(?&lt;targetCurrentMp&gt;[^:]*):(?&lt;targetMaxMp&gt;[^:]*)(?::[^:]*){2}:(?&lt;targetX&gt;[^:]*):(?&lt;targetY&gt;[^:]*):(?&lt;targetZ&gt;[^:]*):(?&lt;targetHeading&gt;[^:]*):(?&lt;currentHp&gt;[^:]*):(?&lt;maxHp&gt;[^:]*):(?&lt;currentMp&gt;[^:]*):(?&lt;maxMp&gt;[^:]*)(?::[^:]*){2}:(?&lt;x&gt;[^:]*):(?&lt;y&gt;[^:]*):(?&lt;z&gt;[^:]*):(?&lt;heading&gt;[^:]*):(?&lt;sequence&gt;[^:]*):(?&lt;targetIndex&gt;[^:]*):(?&lt;targetCount&gt;[^:]*)(?:$|:)">
-                                <Actions>
-                                  <Action OrderNumber="1" JsonEndpointExpression="http://127.0.0.1:47774/?destroy=yingshipohuaipao${sid}" ActionType="GenericJson">
-                                    <Condition Enabled="false" Grouping="Or" />
-                                  </Action>
-                                </Actions>
-                                <Condition Enabled="false" Grouping="Or" />
-                              </Trigger>
-                            </Triggers>
-                          </Folder>
-                          <Folder Id="0142e735-8f70-4f80-8126-283bfe3fe9f5" Name="鹰式破坏炮 (填充版本) 三选一" Enabled="false">
-                            <Folders />
-                            <Triggers>
-                              <Trigger Enabled="true" Sequential="True" Name="1. 获取坐标+显示" Id="6044ffde-17c6-4b02-958c-6dab89b6ce10" RegularExpression="^.{14} ChatLog 00:0:104:(?&lt;sid&gt;.*?):(?&lt;sname&gt;.*?):4831:(?&lt;what&gt;.*?):(?&lt;casttime&gt;.*?):(?&lt;tid&gt;.*?):(?&lt;tname&gt;.*?):(?&lt;what2&gt;.*?):(?&lt;heading&gt;.*?):(?&lt;x&gt;.*?):(?&lt;y&gt;.*?):(?&lt;z&gt;.*?):">
-                                <Actions>
-                                  <Action OrderNumber="1" VariableOp="SetString" VariableName="绝亚_鹰式破坏炮_x_${sid}" VariableExpression="${x}" ActionType="Variable">
-                                    <Condition Enabled="false" Grouping="Or" />
-                                  </Action>
-                                  <Action OrderNumber="2" VariableOp="SetString" VariableName="绝亚_鹰式破坏炮_y_${sid}" VariableExpression="${y}" ActionType="Variable">
-                                    <Condition Enabled="false" Grouping="Or" />
-                                  </Action>
-                                  <Action OrderNumber="3" JsonEndpointExpression="http://127.0.0.1:47774/?namespace=yingshipohuaipao${sid}&amp;destroyAt=5500" JsonPayloadExpression="{&quot;refX&quot;:${var:绝亚_鹰式破坏炮_x_${sid}},&quot;refY&quot;:${var:绝亚_鹰式破坏炮_y_${sid}},&quot;radius&quot;:10.0,&quot;color&quot;:838926216,&quot;thicc&quot;:3.0,&quot;Filled&quot;:true}" ActionType="GenericJson">
-                                    <Condition Enabled="false" Grouping="And" />
-                                  </Action>
-                                </Actions>
-                                <Condition Enabled="false" Grouping="Or" />
-                              </Trigger>
-                              <Trigger Enabled="true" Name="2. 销毁" Id="1672cb7a-70de-4d42-a473-6e0802de9187" RegularExpression="^.{14} (?:\w+) (15|16):(?&lt;sid&gt;[^:]*):(?&lt;sname&gt;[^:]*):4831:(?&lt;ability&gt;(?:[^:]|: )*?):(?&lt;tid&gt;[^:]*):(?&lt;tname&gt;[^:]*):(?&lt;flags&gt;[^:]*):(?&lt;damage&gt;[^:]*)(?::[^:]*){14}:(?&lt;targetCurrentHp&gt;[^:]*):(?&lt;targetMaxHp&gt;[^:]*):(?&lt;targetCurrentMp&gt;[^:]*):(?&lt;targetMaxMp&gt;[^:]*)(?::[^:]*){2}:(?&lt;targetX&gt;[^:]*):(?&lt;targetY&gt;[^:]*):(?&lt;targetZ&gt;[^:]*):(?&lt;targetHeading&gt;[^:]*):(?&lt;currentHp&gt;[^:]*):(?&lt;maxHp&gt;[^:]*):(?&lt;currentMp&gt;[^:]*):(?&lt;maxMp&gt;[^:]*)(?::[^:]*){2}:(?&lt;x&gt;[^:]*):(?&lt;y&gt;[^:]*):(?&lt;z&gt;[^:]*):(?&lt;heading&gt;[^:]*):(?&lt;sequence&gt;[^:]*):(?&lt;targetIndex&gt;[^:]*):(?&lt;targetCount&gt;[^:]*)(?:$|:)">
-                                <Actions>
-                                  <Action OrderNumber="1" JsonEndpointExpression="http://127.0.0.1:47774/?destroy=yingshipohuaipao${sid}" ActionType="GenericJson">
-                                    <Condition Enabled="false" Grouping="Or" />
-                                  </Action>
-                                </Actions>
-                                <Condition Enabled="false" Grouping="Or" />
-                              </Trigger>
-                            </Triggers>
-                          </Folder>
-                        </Folders>
-                        <Triggers />
-                      </Folder>
-                    </Folders>
+                    <Folders />
                     <Triggers>
                       <Trigger Enabled="true" Sequential="True" Name="1. 获取坐标+显示" Id="6256ddaa-05bc-45e5-b081-77944a75af56" RegularExpression="^.{14} ChatLog 00:0:104:(?&lt;sid&gt;.*?):(?&lt;sname&gt;.*?):4831:(?&lt;what&gt;.*?):(?&lt;casttime&gt;.*?):(?&lt;tid&gt;.*?):(?&lt;tname&gt;.*?):(?&lt;what2&gt;.*?):(?&lt;heading&gt;.*?):(?&lt;x&gt;.*?):(?&lt;y&gt;.*?):(?&lt;z&gt;.*?):">
                         <Actions>
@@ -3094,19 +2935,31 @@
                       <Action OrderNumber="11" ListVariableOp="UnsetRegex" ListVariableName="绝亚_地雷.*_Clone" ActionType="ListVariable">
                         <Condition Enabled="false" Grouping="Or" />
                       </Action>
-                      <Action OrderNumber="12" ActionType="Placeholder" Description="麻将禁用" DescriptionOverride="True">
+                      <Action OrderNumber="12" Enabled="False" ActionType="Placeholder" Description="麻将禁用" DescriptionOverride="True">
                         <Condition Enabled="false" Grouping="Or" />
                       </Action>
-                      <Action OrderNumber="13" FolderOp="DisableFolder" FolderId="c88a8a41-6ba5-4960-8eaf-852fc852d1f7" TriggerOp="DisableTrigger" ActionType="Folder">
+                      <Action OrderNumber="13" FolderOp="DisableFolder" FolderId="c88a8a41-6ba5-4960-8eaf-852fc852d1f7" TriggerOp="DisableTrigger" Enabled="False" ActionType="Folder">
                         <Condition Enabled="false" Grouping="Or" />
                       </Action>
-                      <Action OrderNumber="14" FolderOp="DisableFolder" FolderId="4281725f-817b-414d-9c15-30742e869f54" TriggerOp="DisableTrigger" ActionType="Folder">
+                      <Action OrderNumber="14" FolderOp="DisableFolder" FolderId="4281725f-817b-414d-9c15-30742e869f54" TriggerOp="DisableTrigger" Enabled="False" ActionType="Folder">
                         <Condition Enabled="false" Grouping="Or" />
                       </Action>
-                      <Action OrderNumber="15" FolderOp="DisableFolder" FolderId="97423ed8-581d-43f1-b80f-3f3302b4c4df" TriggerOp="DisableTrigger" ActionType="Folder">
+                      <Action OrderNumber="15" FolderOp="DisableFolder" FolderId="97423ed8-581d-43f1-b80f-3f3302b4c4df" TriggerOp="DisableTrigger" Enabled="False" ActionType="Folder">
                         <Condition Enabled="false" Grouping="Or" />
                       </Action>
-                      <Action OrderNumber="16" FolderOp="DisableFolder" FolderId="c13d48e4-9284-47d2-ae6f-a4a0897a354e" TriggerOp="DisableTrigger" ActionType="Folder">
+                      <Action OrderNumber="16" FolderOp="DisableFolder" FolderId="c13d48e4-9284-47d2-ae6f-a4a0897a354e" TriggerOp="DisableTrigger" Enabled="False" ActionType="Folder">
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Action>
+                      <Action OrderNumber="17" ActionType="Placeholder" Description="P3补充" DescriptionOverride="True">
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Action>
+                      <Action OrderNumber="18" TriggerOp="DisableTrigger" TriggerId="c581a100-59df-49f3-90a4-86e0268a66ab" ActionType="Trigger">
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Action>
+                      <Action OrderNumber="19" TriggerOp="DisableTrigger" TriggerId="a4674cf0-20d9-4cf6-8d79-1ac33afe849e" ActionType="Trigger">
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Action>
+                      <Action OrderNumber="20" FolderOp="DisableFolder" FolderId="2ec23a92-4377-4b2b-9197-60f140c1d9cf" TriggerOp="DisableTrigger" TriggerId="a4674cf0-20d9-4cf6-8d79-1ac33afe849e" ActionType="Folder">
                         <Condition Enabled="false" Grouping="Or" />
                       </Action>
                     </Actions>
@@ -3272,7 +3125,7 @@
                       <Folder Id="a7ba8bd3-a792-4e42-a517-5742fb76c827" Name="时停魔改（需要P2记录双bossid）" Enabled="true">
                         <Folders />
                         <Triggers>
-                          <Trigger Enabled="false" Name="时停BUFF2" Id="9f43dc2b-b520-40fb-9da8-a79492f64f10" RegularExpression="^.{14} (?:\w+ )26:(?&lt;sid&gt;.*?):(?&lt;name&gt;.*?):.*:046(?&lt;buff&gt;1|3|4):" PeriodRefire="Deny" RefirePeriodExpression="30000">
+                          <Trigger Enabled="false" Sequential="True" Name="时停BUFF2" Id="9f43dc2b-b520-40fb-9da8-a79492f64f10" RegularExpression="^.{14} (?:\w+ )26:(?&lt;sid&gt;.*?):(?&lt;name&gt;.*?):.*:046(?&lt;buff&gt;1|3|4):" PeriodRefire="Deny" RefirePeriodExpression="30000">
                             <Actions>
                               <Action OrderNumber="1" ActionType="LogMessage">
                                 <Condition Enabled="false" Grouping="Or" />
@@ -3511,9 +3364,6 @@
                                 <Condition Enabled="false" Grouping="Or" />
                               </Action>
                               <Action OrderNumber="2" TriggerOp="DisableTrigger" TriggerId="efb57d0d-d35e-4118-a966-86052c4b98f4" ActionType="Trigger">
-                                <Condition Enabled="false" Grouping="Or" />
-                              </Action>
-                              <Action OrderNumber="3" FolderId="8d678760-a8d3-4974-84bc-37cf91b259b4" ActionType="Folder">
                                 <Condition Enabled="false" Grouping="Or" />
                               </Action>
                             </Actions>
@@ -5852,19 +5702,13 @@
                           </Trigger>
                           <Trigger Enabled="true" Sequential="True" Name="一运开启" Id="551e6c3c-33ad-4121-b279-78023e3807a6" RegularExpression="^.{14} StartsCasting 14:(?&lt;sid&gt;[^:]*):(?&lt;sname&gt;[^:]*):486F:(?&lt;ability&gt;(?:[^:]|: )*?):(?&lt;tid&gt;[^:]*):(?&lt;tname&gt;[^:]*):(?&lt;castTime&gt;[^:]*):(?&lt;x&gt;[^:]*):(?&lt;y&gt;[^:]*):(?&lt;z&gt;[^:]*):(?&lt;heading&gt;[^:]*)(?:$|:)">
                             <Actions>
-                              <Action OrderNumber="1" TriggerOp="DisableTrigger" TriggerId="19b8cfe5-230c-4ff7-808d-67ee542d88f2" ActionType="Trigger">
+                              <Action OrderNumber="1" TriggerOp="EnableTrigger" TriggerId="c581a100-59df-49f3-90a4-86e0268a66ab" ActionType="Trigger">
                                 <Condition Enabled="false" Grouping="Or" />
                               </Action>
-                              <Action OrderNumber="2" TriggerOp="DisableTrigger" TriggerId="acdb0fec-19fd-4d2f-8f28-7f07920ec6e8" ActionType="Trigger">
+                              <Action OrderNumber="2" TriggerOp="EnableTrigger" TriggerId="a4674cf0-20d9-4cf6-8d79-1ac33afe849e" ActionType="Trigger">
                                 <Condition Enabled="false" Grouping="Or" />
                               </Action>
-                              <Action OrderNumber="3" TriggerOp="EnableTrigger" TriggerId="c581a100-59df-49f3-90a4-86e0268a66ab" ActionType="Trigger">
-                                <Condition Enabled="false" Grouping="Or" />
-                              </Action>
-                              <Action OrderNumber="4" TriggerOp="EnableTrigger" TriggerId="a4674cf0-20d9-4cf6-8d79-1ac33afe849e" ActionType="Trigger">
-                                <Condition Enabled="false" Grouping="Or" />
-                              </Action>
-                              <Action OrderNumber="5" FolderId="2ec23a92-4377-4b2b-9197-60f140c1d9cf" ActionType="Folder">
+                              <Action OrderNumber="3" FolderId="2ec23a92-4377-4b2b-9197-60f140c1d9cf" ActionType="Folder">
                                 <Condition Enabled="false" Grouping="Or" />
                               </Action>
                             </Actions>
@@ -9274,7 +9118,7 @@
         <Folders>
           <Folder Id="bf9a917d-cbec-42ce-a0f9-8a471644cc30" Name="6.0 晓月之终途" Enabled="true">
             <Folders>
-              <Folder FFXIVZoneFilterEnabled="True" FfxivZoneFilterRegularExpression="^973$" Id="fb167789-ec45-441e-8178-c118fc01f20d" Name="最终幻想末世终迹" Enabled="true">
+              <Folder FFXIVZoneFilterEnabled="True" FfxivZoneFilterRegularExpression="^973$" Id="fb167789-ec45-441e-8178-c118fc01f20d" Name="90 - 最终幻想末世终迹" Enabled="true">
                 <Folders>
                   <Folder Id="d42d5ec3-e6d8-44f4-8767-8d97e090c9b7" Name="Boss1 - 变异的格雷布洛弗" Enabled="true">
                     <Folders>
@@ -9600,7 +9444,7 @@
                 </Folders>
                 <Triggers />
               </Folder>
-              <Folder FFXIVZoneFilterEnabled="True" FfxivZoneFilterRegularExpression="^976$" Id="c96a9571-b698-4a2a-8f73-208797ebda2c" Name="乐园都市笑笑镇" Enabled="true">
+              <Folder FFXIVZoneFilterEnabled="True" FfxivZoneFilterRegularExpression="^976$" Id="c96a9571-b698-4a2a-8f73-208797ebda2c" Name="90 - 乐园都市笑笑镇 - Patch 6.0" Enabled="true">
                 <Folders>
                   <Folder Id="68203860-5d7f-4848-bc74-8a8498f79d1a" Name="Boss1 - 面像" Enabled="true">
                     <Folders>
@@ -9872,7 +9716,7 @@
                 </Folders>
                 <Triggers />
               </Folder>
-              <Folder FFXIVZoneFilterEnabled="True" FfxivZoneFilterRegularExpression="^1050$" Id="131e7721-b243-4ce4-9eff-f5190ce8e60e" Name="近东秘宝阿尔扎达尔海底遗迹群" Enabled="true">
+              <Folder FFXIVZoneFilterEnabled="True" FfxivZoneFilterRegularExpression="^1050$" Id="131e7721-b243-4ce4-9eff-f5190ce8e60e" Name="90 - 近东秘宝阿尔扎达尔海底遗迹群 - Patch 6.1" Enabled="true">
                 <Folders>
                   <Folder Id="a3da4b65-0f10-4ff5-8d6a-bdb3e3efdab5" Name="Boss1 - 阿卜迦" Enabled="true">
                     <Folders />
@@ -10129,7 +9973,7 @@
                 </Folders>
                 <Triggers />
               </Folder>
-              <Folder FFXIVZoneFilterEnabled="True" FfxivZoneFilterRegularExpression="^986$" Id="269e1ce7-402d-43d4-bf5a-7cf26256924f" Name="电脑梦境斯提格玛四" Enabled="true">
+              <Folder FFXIVZoneFilterEnabled="True" FfxivZoneFilterRegularExpression="^986$" Id="269e1ce7-402d-43d4-bf5a-7cf26256924f" Name="90 - 电脑梦境斯提格玛四 - Patch 6.0" Enabled="true">
                 <Folders>
                   <Folder Id="3acb23d3-ef65-475e-95f3-e98d15892ae3" Name="Boss1 - 欧米茄原型" Enabled="true">
                     <Folders />
@@ -10319,7 +10163,7 @@
                 </Folders>
                 <Triggers />
               </Folder>
-              <Folder FFXIVZoneFilterEnabled="True" FfxivZoneFilterRegularExpression="^1070$" Id="edd998d3-eb02-49b6-b0c0-baaaabc391f5" Name="异界孤城特罗亚宫廷" Enabled="true">
+              <Folder FFXIVZoneFilterEnabled="True" FfxivZoneFilterRegularExpression="^1070$" Id="edd998d3-eb02-49b6-b0c0-baaaabc391f5" Name="90 - 异界孤城特罗亚宫廷 - Patch 6.2" Enabled="true">
                 <Folders>
                   <Folder Id="5221068d-a818-4de3-92e7-80f02be0cb02" Name="Boss1 - 梦祸" Enabled="true">
                     <Folders />
@@ -10473,7 +10317,7 @@
                 </Folders>
                 <Triggers />
               </Folder>
-              <Folder FFXIVZoneFilterEnabled="True" FfxivZoneFilterRegularExpression="^992$" Id="d550f70d-a839-42e2-baef-e15a1ade9eed" Name="【普通】佐迪亚克歼灭战" Enabled="true">
+              <Folder FFXIVZoneFilterEnabled="True" FfxivZoneFilterRegularExpression="^992$" Id="d550f70d-a839-42e2-baef-e15a1ade9eed" Name="佐迪亚克歼灭战 [烂了.jpg]" Enabled="false">
                 <Folders>
                   <Folder Id="1ad0a8a7-c9f0-4195-af2e-05a286ab9df0" Name="陨石幻影" Enabled="true">
                     <Folders />
@@ -11302,7 +11146,7 @@
                     </Actions>
                     <Condition Enabled="false" Grouping="Or" />
                   </Trigger>
-                  <Trigger Enabled="true" Name="[debug中，请慎重使用]" Id="db07681a-861f-4c3e-b0ba-7fba2f249244" RegularExpression="">
+                  <Trigger Enabled="true" Name="[debug，不推荐使用]" Id="db07681a-861f-4c3e-b0ba-7fba2f249244" RegularExpression="">
                     <Actions />
                     <Condition Enabled="false" Grouping="Or" />
                   </Trigger>
@@ -11312,7 +11156,7 @@
                   </Trigger>
                 </Triggers>
               </Folder>
-              <Folder FFXIVZoneFilterEnabled="True" FfxivZoneFilterRegularExpression="^978$" Id="1469f5be-d836-4c8e-ab33-a0d1bc2c2b16" Name="星海深幽寻因星晶镜" Enabled="true">
+              <Folder FFXIVZoneFilterEnabled="True" FfxivZoneFilterRegularExpression="^978$" Id="1469f5be-d836-4c8e-ab33-a0d1bc2c2b16" Name="89 - 星海深幽寻因星晶镜" Enabled="true">
                 <Folders>
                   <Folder Id="7f313d34-378c-4136-98e9-6e273456101d" Name="Boss1 - 迷执爱恋的莉维亚" Enabled="true">
                     <Folders>
@@ -11576,7 +11420,7 @@
                 </Folders>
                 <Triggers />
               </Folder>
-              <Folder FFXIVZoneFilterEnabled="True" FfxivZoneFilterRegularExpression="^974$" Id="fbf8e490-3757-4443-a33e-a133bb07d6fb" Name="创造环境极北造物院" Enabled="true">
+              <Folder FFXIVZoneFilterEnabled="True" FfxivZoneFilterRegularExpression="^974$" Id="fbf8e490-3757-4443-a33e-a133bb07d6fb" Name="87 - 创造环境极北造物院" Enabled="true">
                 <Folders>
                   <Folder Id="82a52e6d-8d88-4ed5-9598-e2a5a6350c9b" Name="Boss1 - 吕萨" Enabled="true">
                     <Folders>
@@ -11860,7 +11704,7 @@
                   </Trigger>
                 </Triggers>
               </Folder>
-              <Folder FFXIVZoneFilterEnabled="True" FfxivZoneFilterRegularExpression="^969$" Id="d17c3032-9095-4cb6-8f20-a8bede8131c0" Name="魔导神门巴别塔" Enabled="true">
+              <Folder FFXIVZoneFilterEnabled="True" FfxivZoneFilterRegularExpression="^969$" Id="d17c3032-9095-4cb6-8f20-a8bede8131c0" Name="83 - 魔导神门巴别塔" Enabled="true">
                 <Folders>
                   <Folder Id="344f8901-001d-4671-9992-ab99975fb808" Name="Boss1 - 巴尔纳伯" Enabled="true">
                     <Folders />
@@ -11992,10 +11836,14 @@
                       </Trigger>
                     </Triggers>
                   </Folder>
+                  <Folder Id="0df94746-6531-4b83-a181-69cd4109f209" Name="重做" Enabled="true">
+                    <Folders />
+                    <Triggers />
+                  </Folder>
                 </Folders>
                 <Triggers />
               </Folder>
-              <Folder FFXIVZoneFilterEnabled="True" FfxivZoneFilterRegularExpression="^1097$" Id="b0ce7fbe-a3a8-459a-9906-785b39a65e93" Name="雪山奥窟冥魂石洞" Enabled="true">
+              <Folder FFXIVZoneFilterEnabled="True" FfxivZoneFilterRegularExpression="^1097$" Id="b0ce7fbe-a3a8-459a-9906-785b39a65e93" Name="90 - 雪山奥窟冥魂石洞 -Patch 6.3" Enabled="true">
                 <Folders>
                   <Folder Id="7da71bbd-5ebf-42a8-af7b-75b0e95fff03" Name="【正常版】：标准绘制，电脑配置差可能会卡" Enabled="false">
                     <Folders>
@@ -14113,7 +13961,7 @@
                   </Trigger>
                 </Triggers>
               </Folder>
-              <Folder FFXIVZoneFilterEnabled="True" FfxivZoneFilterRegularExpression="^1126$" Id="f5d37603-434d-401f-98a4-06b308527e87" Name="间歇灵泉哈姆岛" Enabled="true">
+              <Folder FFXIVZoneFilterEnabled="True" FfxivZoneFilterRegularExpression="^1126$" Id="f5d37603-434d-401f-98a4-06b308527e87" Name="90 - 间歇灵泉哈姆岛 - Patch 6.4" Enabled="true">
                 <Folders>
                   <Folder Id="e32c13f2-9057-48f6-a014-d0ad54b9a913" Name="Boss2 - 阿尔卡斯" Enabled="true">
                     <Folders>
@@ -15043,6 +14891,10 @@
                             <Condition Enabled="false" Grouping="And" />
                           </Action>
                         </Actions>
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Trigger>
+                      <Trigger Enabled="true" Name="3.1 崩塌 开始" Id="42a23532-4a9b-497b-ae2e-f025cdab6723" RegularExpression="">
+                        <Actions />
                         <Condition Enabled="false" Grouping="Or" />
                       </Trigger>
                     </Triggers>
@@ -16602,10 +16454,6 @@
             <Condition Enabled="false" Grouping="Or" />
           </Trigger>
         </Triggers>
-      </Folder>
-      <Folder Id="063b2e70-e6df-4f91-99f6-7a3e31d37b16" Name="6. 采集(画饼)" Enabled="true">
-        <Folders />
-        <Triggers />
       </Folder>
     </Folders>
     <Triggers>
