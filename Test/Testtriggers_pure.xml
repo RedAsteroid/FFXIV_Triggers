@@ -2,7 +2,7 @@
 <TriggernometryExport Version="1">
   <ExportedFolder Id="3593806d-ac1b-454b-9143-ec9d32327549" Name="【Splatoon 个人合集】 - By RedAsteroid" Enabled="true">
     <Folders>
-      <Folder Id="be0f3a1c-c9fb-43b4-97ca-5fd183dd4cec" Name="※※ 使用教程 &amp; 插件资源指路" Enabled="true">
+      <Folder Id="be0f3a1c-c9fb-43b4-97ca-5fd183dd4cec" Name="※ 使用教程 &amp; 插件资源指路" Enabled="true">
         <Folders>
           <Folder Id="395f7881-338d-42de-961a-c9b1128c9e09" Name="⭐ Github仓库 ⭐" Enabled="true">
             <Folders />
@@ -55,27 +55,9 @@
             </Triggers>
           </Folder>
           <Folder Id="1f93fd99-e41b-483f-9e41-9344334050c0" Name="1. 插件资源" Enabled="true">
-            <Folders>
-              <Folder Id="d5cdf5dc-942a-4904-bee4-71b3b106d893" Name="Clash for Windows 代理软件" Enabled="true">
-                <Folders />
-                <Triggers>
-                  <Trigger Enabled="true" Name="Clash for Windows 汉化：github.com/BoyceLig/Clash_Chinese_Patch" Id="d5e769ec-b45a-42a9-92fa-b1355e2d39dd" RegularExpression="">
-                    <Actions />
-                    <Condition Enabled="false" Grouping="Or" />
-                  </Trigger>
-                  <Trigger Enabled="true" Name="Clash for Windows 本体：github.com/Fndroid/clash_for_windows_pkg" Id="b3caf215-84e1-49d6-a794-b273f5f8484b" RegularExpression="">
-                    <Actions />
-                    <Condition Enabled="false" Grouping="Or" />
-                  </Trigger>
-                  <Trigger Enabled="true" Name="# 也许有免费的机场但大多都是收费的，自己找一家合适的机场" Id="3fac1296-03ff-4798-8743-f7b59885b340" RegularExpression="">
-                    <Actions />
-                    <Condition Enabled="false" Grouping="Or" />
-                  </Trigger>
-                </Triggers>
-              </Folder>
-            </Folders>
+            <Folders />
             <Triggers>
-              <Trigger Enabled="true" Name="2. 【鲶鱼精邮差 PostNamazu 】：github.com/Natsukage/PostNamazu" Id="6caa602e-1b0d-45d4-8112-5439e4de972f" RegularExpression="">
+              <Trigger Enabled="true" Name="2. 【鲶鱼精邮差 PostNamazu】：github.com/Natsukage/PostNamazu" Id="6caa602e-1b0d-45d4-8112-5439e4de972f" RegularExpression="">
                 <Actions />
                 <Condition Enabled="false" Grouping="Or" />
               </Trigger>
@@ -83,7 +65,7 @@
                 <Actions />
                 <Condition Enabled="false" Grouping="Or" />
               </Trigger>
-              <Trigger Enabled="true" Name="3. 【Splatoon(国服特供)】：github.com/moewcorp/SplatoonX" Id="9a5adcff-4017-42ac-a7e3-63068e8f913c" RegularExpression="">
+              <Trigger Enabled="true" Name="3. 【SplatoonX(国服特供)】：github.com/moewcorp/SplatoonX" Id="9a5adcff-4017-42ac-a7e3-63068e8f913c" RegularExpression="">
                 <Actions />
                 <Condition Enabled="false" Grouping="Or" />
               </Trigger>
@@ -115,10 +97,6 @@
             </Triggers>
           </Folder>
         </Folders>
-        <Triggers />
-      </Folder>
-      <Folder Id="ecae0806-3dde-4b30-b710-70f924237c69" Name="※※※ 我一拳给小店的妈干没气了" Enabled="true">
-        <Folders />
         <Triggers />
       </Folder>
       <Folder Id="12a76ec2-3665-4100-b28d-8d6299065bbe" Name="1. 绝境战" Enabled="true">
@@ -2774,7 +2752,7 @@
                             </Actions>
                             <Condition Enabled="false" Grouping="Or" />
                           </Trigger>
-                          <Trigger Enabled="false" Sequential="True" Name="1. 获取实体(隐形地雷散布)" Id="9481e572-0d25-48d3-b470-737e86c9d265" RegularExpression="^.{14} (?:\w+) (15|16):(?&lt;sid&gt;[^:]*):(?&lt;sname&gt;[^:]*):4851:(?&lt;ability&gt;(?:[^:]|: )*?):(?&lt;tid&gt;[^:]*):(?&lt;tname&gt;[^:]*):(?&lt;flags&gt;[^:]*):(?&lt;damage&gt;[^:]*)(?::[^:]*){14}:(?&lt;targetCurrentHp&gt;[^:]*):(?&lt;targetMaxHp&gt;[^:]*):(?&lt;targetCurrentMp&gt;[^:]*):(?&lt;targetMaxMp&gt;[^:]*)(?::[^:]*){2}:(?&lt;targetX&gt;[^:]*):(?&lt;targetY&gt;[^:]*):(?&lt;targetZ&gt;[^:]*):(?&lt;targetHeading&gt;[^:]*):(?&lt;currentHp&gt;[^:]*):(?&lt;maxHp&gt;[^:]*):(?&lt;currentMp&gt;[^:]*):(?&lt;maxMp&gt;[^:]*)(?::[^:]*){2}:(?&lt;x&gt;[^:]*):(?&lt;y&gt;[^:]*):(?&lt;z&gt;[^:]*):(?&lt;heading&gt;[^:]*):(?&lt;sequence&gt;[^:]*):(?&lt;targetIndex&gt;[^:]*):(?&lt;targetCount&gt;[^:]*)(?:$|:)">
+                          <Trigger Enabled="true" Sequential="True" Name="1. 获取实体(隐形地雷散布)" Id="9481e572-0d25-48d3-b470-737e86c9d265" RegularExpression="^.{14} (?:\w+) (15|16):(?&lt;sid&gt;[^:]*):(?&lt;sname&gt;[^:]*):4851:(?&lt;ability&gt;(?:[^:]|: )*?):(?&lt;tid&gt;[^:]*):(?&lt;tname&gt;[^:]*):(?&lt;flags&gt;[^:]*):(?&lt;damage&gt;[^:]*)(?::[^:]*){14}:(?&lt;targetCurrentHp&gt;[^:]*):(?&lt;targetMaxHp&gt;[^:]*):(?&lt;targetCurrentMp&gt;[^:]*):(?&lt;targetMaxMp&gt;[^:]*)(?::[^:]*){2}:(?&lt;targetX&gt;[^:]*):(?&lt;targetY&gt;[^:]*):(?&lt;targetZ&gt;[^:]*):(?&lt;targetHeading&gt;[^:]*):(?&lt;currentHp&gt;[^:]*):(?&lt;maxHp&gt;[^:]*):(?&lt;currentMp&gt;[^:]*):(?&lt;maxMp&gt;[^:]*)(?::[^:]*){2}:(?&lt;x&gt;[^:]*):(?&lt;y&gt;[^:]*):(?&lt;z&gt;[^:]*):(?&lt;heading&gt;[^:]*):(?&lt;sequence&gt;[^:]*):(?&lt;targetIndex&gt;[^:]*):(?&lt;targetCount&gt;[^:]*)(?:$|:)">
                             <Actions>
                               <Action OrderNumber="1" ListVariableOp="Push" ListVariableExpressionType="Numeric" ListVariableName="绝亚_地雷记录_Clone" ListVariableExpression="hex2dec(${sid})" ActionType="ListVariable">
                                 <Condition Enabled="true" Grouping="Or">
@@ -7098,7 +7076,7 @@
                           <ConditionSingle Enabled="true" ExpressionL="${var:残暴id_Clone}" ExpressionTypeL="String" ExpressionR="${targetId}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                         </Condition>
                       </Trigger>
-                      <Trigger Enabled="true" Sequential="True" Name="1.2 小队频道 ( /p )" Id="8e597b70-d787-4842-afa6-4a4d73953443" RegularExpression="(?&lt;timestamp&gt;^.{14}) StatusAdd (?&lt;type&gt;1A):1BB:(?&lt;effect&gt;(?:[^:]|: )*?):(?&lt;duration&gt;[^:]*):(?&lt;sourceId&gt;[^:]*):(?&lt;source&gt;[^:]*):(?&lt;targetId&gt;[^:]*):(?&lt;target&gt;[^:]*):(?&lt;count&gt;[^:]*):(?&lt;targetMaxHp&gt;[^:]*):(?&lt;sourceMaxHp&gt;[^:]*)(?:$|:)">
+                      <Trigger Enabled="false" Sequential="True" Name="1.2 小队频道 ( /p )" Id="8e597b70-d787-4842-afa6-4a4d73953443" RegularExpression="(?&lt;timestamp&gt;^.{14}) StatusAdd (?&lt;type&gt;1A):1BB:(?&lt;effect&gt;(?:[^:]|: )*?):(?&lt;duration&gt;[^:]*):(?&lt;sourceId&gt;[^:]*):(?&lt;source&gt;[^:]*):(?&lt;targetId&gt;[^:]*):(?&lt;target&gt;[^:]*):(?&lt;count&gt;[^:]*):(?&lt;targetMaxHp&gt;[^:]*):(?&lt;sourceMaxHp&gt;[^:]*)(?:$|:)">
                         <Actions>
                           <Action OrderNumber="0" VariableOp="SetNumeric" VariableName="伤害提高层数_Clone" VariableExpression="hex2dec(${count})" ActionType="Variable">
                             <Condition Enabled="false" Grouping="Or" />
@@ -7124,7 +7102,7 @@
                           <ConditionSingle Enabled="true" ExpressionL="${var:残暴id_Clone}" ExpressionTypeL="String" ExpressionR="${targetId}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                         </Condition>
                       </Trigger>
-                      <Trigger Enabled="false" Sequential="True" Name="1.1 默语频道 ( /e )" Id="c836b13e-ad53-41a5-812d-c48445dc1195" RegularExpression="(?&lt;timestamp&gt;^.{14}) StatusAdd (?&lt;type&gt;1A):1BB:(?&lt;effect&gt;(?:[^:]|: )*?):(?&lt;duration&gt;[^:]*):(?&lt;sourceId&gt;[^:]*):(?&lt;source&gt;[^:]*):(?&lt;targetId&gt;[^:]*):(?&lt;target&gt;[^:]*):(?&lt;count&gt;[^:]*):(?&lt;targetMaxHp&gt;[^:]*):(?&lt;sourceMaxHp&gt;[^:]*)(?:$|:)">
+                      <Trigger Enabled="true" Sequential="True" Name="1.1 默语频道 ( /e )" Id="c836b13e-ad53-41a5-812d-c48445dc1195" RegularExpression="(?&lt;timestamp&gt;^.{14}) StatusAdd (?&lt;type&gt;1A):1BB:(?&lt;effect&gt;(?:[^:]|: )*?):(?&lt;duration&gt;[^:]*):(?&lt;sourceId&gt;[^:]*):(?&lt;source&gt;[^:]*):(?&lt;targetId&gt;[^:]*):(?&lt;target&gt;[^:]*):(?&lt;count&gt;[^:]*):(?&lt;targetMaxHp&gt;[^:]*):(?&lt;sourceMaxHp&gt;[^:]*)(?:$|:)">
                         <Actions>
                           <Action OrderNumber="1" VariableOp="SetNumeric" VariableName="伤害提高层数_Clone" VariableExpression="hex2dec(${count})" ActionType="Variable">
                             <Condition Enabled="false" Grouping="Or" />
@@ -7281,7 +7259,7 @@
                     <Folders>
                       <Folder Id="8fb8e318-9f5f-4305-8667-c5ba0da31aaf" Name="5. 鹰式破坏炮预测(麻将)[废弃]" Enabled="false">
                         <Folders>
-                          <Folder Id="4281725f-817b-414d-9c15-30742e869f54" Name="【AB】AB/CD 左下右上 起点" Enabled="false">
+                          <Folder Id="4281725f-817b-414d-9c15-30742e869f54" Name="【AB】AB/CD 左下右上 起点" Enabled="true">
                             <Folders />
                             <Triggers>
                               <Trigger Enabled="true" Sequential="True" Name="起始绘图" Id="95d3a941-355b-495b-9f6b-98aef9bc70b7" RegularExpression="^.{14} AddCombatant 03:(?&lt;id&gt;[^:]*):(巡航驱逐者):(?&lt;job&gt;[^:]*):1:(?&lt;ownerId&gt;[^:]*):(?&lt;worldId&gt;[^:]*):(?&lt;world&gt;[^:]*):9218:9020:(?&lt;currentHp&gt;[^:]*):(?&lt;hp&gt;[^:]*):(?&lt;currentMp&gt;[^:]*):(?&lt;mp&gt;[^:]*)(?::[^:]*){2}:(?&lt;x&gt;[^:]*):(?&lt;y&gt;[^:]*):(?&lt;z&gt;[^:]*):(?&lt;heading&gt;[^:]*)(?:$|:)" PeriodRefire="Deny" RefirePeriodExpression="1000">
@@ -7575,7 +7553,7 @@
                               </Trigger>
                             </Triggers>
                           </Folder>
-                          <Folder Id="97423ed8-581d-43f1-b80f-3f3302b4c4df" Name="【B】B/D 左右 起点" Enabled="false">
+                          <Folder Id="97423ed8-581d-43f1-b80f-3f3302b4c4df" Name="【B】B/D 左右 起点" Enabled="true">
                             <Folders />
                             <Triggers>
                               <Trigger Enabled="true" Sequential="True" Name="起始绘图" Id="4ca88d56-d36d-4fe8-90e4-9f8af168fb6b" RegularExpression="^.{14} AddCombatant 03:(?&lt;id&gt;[^:]*):(巡航驱逐者):(?&lt;job&gt;[^:]*):1:(?&lt;ownerId&gt;[^:]*):(?&lt;worldId&gt;[^:]*):(?&lt;world&gt;[^:]*):9218:9020:(?&lt;currentHp&gt;[^:]*):(?&lt;hp&gt;[^:]*):(?&lt;currentMp&gt;[^:]*):(?&lt;mp&gt;[^:]*)(?::[^:]*){2}:(?&lt;x&gt;[^:]*):(?&lt;y&gt;[^:]*):(?&lt;z&gt;[^:]*):(?&lt;heading&gt;[^:]*)(?:$|:)" PeriodRefire="Deny" RefirePeriodExpression="1000">
@@ -7869,7 +7847,7 @@
                               </Trigger>
                             </Triggers>
                           </Folder>
-                          <Folder Id="c13d48e4-9284-47d2-ae6f-a4a0897a354e" Name="【BC】BC/DA 左上右下 起点" Enabled="false">
+                          <Folder Id="c13d48e4-9284-47d2-ae6f-a4a0897a354e" Name="【BC】BC/DA 左上右下 起点" Enabled="true">
                             <Folders />
                             <Triggers>
                               <Trigger Enabled="true" Sequential="True" Name="起始绘图" Id="44524fd5-c8b9-4e22-8d5f-f584e702c84a" RegularExpression="^.{14} AddCombatant 03:(?&lt;id&gt;[^:]*):(巡航驱逐者):(?&lt;job&gt;[^:]*):1:(?&lt;ownerId&gt;[^:]*):(?&lt;worldId&gt;[^:]*):(?&lt;world&gt;[^:]*):9218:9020:(?&lt;currentHp&gt;[^:]*):(?&lt;hp&gt;[^:]*):(?&lt;currentMp&gt;[^:]*):(?&lt;mp&gt;[^:]*)(?::[^:]*){2}:(?&lt;x&gt;[^:]*):(?&lt;y&gt;[^:]*):(?&lt;z&gt;[^:]*):(?&lt;heading&gt;[^:]*)(?:$|:)" PeriodRefire="Deny" RefirePeriodExpression="1000">
@@ -8163,7 +8141,7 @@
                               </Trigger>
                             </Triggers>
                           </Folder>
-                          <Folder Id="c88a8a41-6ba5-4960-8eaf-852fc852d1f7" Name="【A】A/C 上下 起点" Enabled="false">
+                          <Folder Id="c88a8a41-6ba5-4960-8eaf-852fc852d1f7" Name="【A】A/C 上下 起点" Enabled="true">
                             <Folders />
                             <Triggers>
                               <Trigger Enabled="true" Sequential="True" Name="起始绘图" Id="fef4ef9e-a987-4cb8-b70a-0359b29b6161" RegularExpression="^.{14} AddCombatant 03:(?&lt;id&gt;[^:]*):(巡航驱逐者):(?&lt;job&gt;[^:]*):1:(?&lt;ownerId&gt;[^:]*):(?&lt;worldId&gt;[^:]*):(?&lt;world&gt;[^:]*):9218:9020:(?&lt;currentHp&gt;[^:]*):(?&lt;hp&gt;[^:]*):(?&lt;currentMp&gt;[^:]*):(?&lt;mp&gt;[^:]*)(?::[^:]*){2}:(?&lt;x&gt;[^:]*):(?&lt;y&gt;[^:]*):(?&lt;z&gt;[^:]*):(?&lt;heading&gt;[^:]*)(?:$|:)" PeriodRefire="Deny" RefirePeriodExpression="1000">
@@ -15774,7 +15752,7 @@
                   <Folder Id="525a265f-0949-4ce8-97be-cb6fe636ae06" Name="Layout部分备用-触发器绘制并不需要导入spl布局，仅供参考" Enabled="true">
                     <Folders />
                     <Triggers>
-                      <Trigger Enabled="true" Source="None" IsReadme="True" Name="请双击此触发，从描述获取" Id="8dbe3946-caa7-413d-8ef7-07859c83b90a" RegularExpression="" Description="~Lv2~{&quot;Name&quot;:&quot;尼德火锅征龙战-Layout&quot;,&quot;Group&quot;:&quot;&quot;,&quot;ZoneLockH&quot;:[559],&quot;ElementsL&quot;:[{&quot;Name&quot;:&quot;邪炎俯冲 正常版&quot;,&quot;type&quot;:3,&quot;refY&quot;:80.0,&quot;radius&quot;:11.0,&quot;color&quot;:520093695,&quot;thicc&quot;:3.0,&quot;refActorModelID&quot;:1406,&quot;refActorRequireCast&quot;:true,&quot;refActorCastId&quot;:[6039,6300,27966,30198],&quot;FillStep&quot;:0.2,&quot;refActorComparisonType&quot;:1,&quot;includeRotation&quot;:true},{&quot;Name&quot;:&quot;邪炎俯冲 低配版&quot;,&quot;type&quot;:3,&quot;Enabled&quot;:false,&quot;refY&quot;:80.0,&quot;radius&quot;:11.0,&quot;color&quot;:855638015,&quot;refActorModelID&quot;:1406,&quot;refActorRequireCast&quot;:true,&quot;refActorCastId&quot;:[6039,6300,27966,30198],&quot;FillStep&quot;:0.8,&quot;refActorComparisonType&quot;:1,&quot;includeRotation&quot;:true},{&quot;Name&quot;:&quot;暗影变种龙 撕裂利爪&quot;,&quot;type&quot;:4,&quot;radius&quot;:8.4,&quot;coneAngleMin&quot;:-60,&quot;coneAngleMax&quot;:60,&quot;color&quot;:1258342399,&quot;refActorDataID&quot;:5862,&quot;refActorRequireCast&quot;:true,&quot;refActorCastId&quot;:[2310,3020,3468,3995,4656,4750,5137,6053,6307,6394,7223,7920,9386,9551,11821,12508,13479,13727,15050,15336,16590,20872,21209,22365,31262],&quot;FillStep&quot;:0.2,&quot;refActorComparisonType&quot;:3,&quot;includeRotation&quot;:true,&quot;onlyTargetable&quot;:true,&quot;Filled&quot;:true},{&quot;Name&quot;:&quot;武神枪&quot;,&quot;type&quot;:3,&quot;refY&quot;:62.0,&quot;radius&quot;:4.0,&quot;color&quot;:1351848950,&quot;thicc&quot;:3.0,&quot;refActorModelID&quot;:1406,&quot;refActorRequireCast&quot;:true,&quot;refActorCastId&quot;:[3555,6066,6312,8805,9274,21098,24732,26378,29491,29926],&quot;FillStep&quot;:5.0,&quot;refActorComparisonType&quot;:1,&quot;includeRotation&quot;:true},{&quot;Name&quot;:&quot;武神枪 分身&quot;,&quot;type&quot;:3,&quot;refY&quot;:62.0,&quot;radius&quot;:4.0,&quot;color&quot;:1351848950,&quot;thicc&quot;:3.0,&quot;refActorModelID&quot;:1647,&quot;refActorRequireCast&quot;:true,&quot;refActorCastId&quot;:[3555,6066,6312,8805,9274,21098,24732,26378,29491,29926],&quot;FillStep&quot;:5.0,&quot;refActorComparisonType&quot;:1,&quot;includeRotation&quot;:true},{&quot;Name&quot;:&quot;腾龙枪&quot;,&quot;type&quot;:4,&quot;radius&quot;:12.7,&quot;coneAngleMin&quot;:-45,&quot;coneAngleMax&quot;:45,&quot;color&quot;:1014557692,&quot;thicc&quot;:3.0,&quot;refActorModelID&quot;:1406,&quot;refActorRequireCast&quot;:true,&quot;refActorCastId&quot;:[6069,6314,18777,21097,25005,26379,26380],&quot;refActorComparisonType&quot;:1,&quot;includeRotation&quot;:true,&quot;Filled&quot;:true},{&quot;Name&quot;:&quot;黑圈&quot;,&quot;type&quot;:1,&quot;radius&quot;:8.0,&quot;color&quot;:855046576,&quot;refActorDataID&quot;:2007132,&quot;refActorComparisonType&quot;:3,&quot;Filled&quot;:true},{&quot;Name&quot;:&quot;黑圈2&quot;,&quot;type&quot;:1,&quot;radius&quot;:8.0,&quot;color&quot;:4294375856,&quot;refActorDataID&quot;:2007132,&quot;refActorComparisonType&quot;:3}]}&#xD;&#xA;&#xD;&#xA;~Lv2~{&quot;Name&quot;:&quot;尼德火锅征龙战-烈焰十字爆&quot;,&quot;Group&quot;:&quot;&quot;,&quot;ZoneLockH&quot;:[559],&quot;ElementsL&quot;:[{&quot;Name&quot;:&quot;烈焰十字爆1&quot;,&quot;type&quot;:3,&quot;refY&quot;:50.0,&quot;offY&quot;:-50.0,&quot;radius&quot;:3.0,&quot;color&quot;:687734737,&quot;refActorDataID&quot;:5859,&quot;refActorComparisonType&quot;:3,&quot;includeRotation&quot;:true},{&quot;Name&quot;:&quot;烈焰十字爆2&quot;,&quot;type&quot;:3,&quot;refY&quot;:50.0,&quot;offY&quot;:-50.0,&quot;radius&quot;:3.0,&quot;color&quot;:687734737,&quot;refActorDataID&quot;:5859,&quot;refActorComparisonType&quot;:3,&quot;includeRotation&quot;:true,&quot;AdditionalRotation&quot;:1.5707964}],&quot;UseTriggers&quot;:true,&quot;Triggers&quot;:[{&quot;Type&quot;:2,&quot;Duration&quot;:10.2,&quot;Match&quot;:&quot;(3459&gt;6317)&quot;}]}">
+                      <Trigger Enabled="true" Source="None" Name="请双击此触发，从描述获取" Id="8dbe3946-caa7-413d-8ef7-07859c83b90a" RegularExpression="" Description="~Lv2~{&quot;Name&quot;:&quot;尼德火锅征龙战-Layout&quot;,&quot;Group&quot;:&quot;&quot;,&quot;ZoneLockH&quot;:[559],&quot;ElementsL&quot;:[{&quot;Name&quot;:&quot;邪炎俯冲 正常版&quot;,&quot;type&quot;:3,&quot;refY&quot;:80.0,&quot;radius&quot;:11.0,&quot;color&quot;:520093695,&quot;thicc&quot;:3.0,&quot;refActorModelID&quot;:1406,&quot;refActorRequireCast&quot;:true,&quot;refActorCastId&quot;:[6039,6300,27966,30198],&quot;FillStep&quot;:0.2,&quot;refActorComparisonType&quot;:1,&quot;includeRotation&quot;:true},{&quot;Name&quot;:&quot;邪炎俯冲 低配版&quot;,&quot;type&quot;:3,&quot;Enabled&quot;:false,&quot;refY&quot;:80.0,&quot;radius&quot;:11.0,&quot;color&quot;:855638015,&quot;refActorModelID&quot;:1406,&quot;refActorRequireCast&quot;:true,&quot;refActorCastId&quot;:[6039,6300,27966,30198],&quot;FillStep&quot;:0.8,&quot;refActorComparisonType&quot;:1,&quot;includeRotation&quot;:true},{&quot;Name&quot;:&quot;暗影变种龙 撕裂利爪&quot;,&quot;type&quot;:4,&quot;radius&quot;:8.4,&quot;coneAngleMin&quot;:-60,&quot;coneAngleMax&quot;:60,&quot;color&quot;:1258342399,&quot;refActorDataID&quot;:5862,&quot;refActorRequireCast&quot;:true,&quot;refActorCastId&quot;:[2310,3020,3468,3995,4656,4750,5137,6053,6307,6394,7223,7920,9386,9551,11821,12508,13479,13727,15050,15336,16590,20872,21209,22365,31262],&quot;FillStep&quot;:0.2,&quot;refActorComparisonType&quot;:3,&quot;includeRotation&quot;:true,&quot;onlyTargetable&quot;:true,&quot;Filled&quot;:true},{&quot;Name&quot;:&quot;武神枪&quot;,&quot;type&quot;:3,&quot;refY&quot;:62.0,&quot;radius&quot;:4.0,&quot;color&quot;:1351848950,&quot;thicc&quot;:3.0,&quot;refActorModelID&quot;:1406,&quot;refActorRequireCast&quot;:true,&quot;refActorCastId&quot;:[3555,6066,6312,8805,9274,21098,24732,26378,29491,29926],&quot;FillStep&quot;:5.0,&quot;refActorComparisonType&quot;:1,&quot;includeRotation&quot;:true},{&quot;Name&quot;:&quot;武神枪 分身&quot;,&quot;type&quot;:3,&quot;refY&quot;:62.0,&quot;radius&quot;:4.0,&quot;color&quot;:1351848950,&quot;thicc&quot;:3.0,&quot;refActorModelID&quot;:1647,&quot;refActorRequireCast&quot;:true,&quot;refActorCastId&quot;:[3555,6066,6312,8805,9274,21098,24732,26378,29491,29926],&quot;FillStep&quot;:5.0,&quot;refActorComparisonType&quot;:1,&quot;includeRotation&quot;:true},{&quot;Name&quot;:&quot;腾龙枪&quot;,&quot;type&quot;:4,&quot;radius&quot;:12.7,&quot;coneAngleMin&quot;:-45,&quot;coneAngleMax&quot;:45,&quot;color&quot;:1014557692,&quot;thicc&quot;:3.0,&quot;refActorModelID&quot;:1406,&quot;refActorRequireCast&quot;:true,&quot;refActorCastId&quot;:[6069,6314,18777,21097,25005,26379,26380],&quot;refActorComparisonType&quot;:1,&quot;includeRotation&quot;:true,&quot;Filled&quot;:true},{&quot;Name&quot;:&quot;黑圈&quot;,&quot;type&quot;:1,&quot;radius&quot;:8.0,&quot;color&quot;:855046576,&quot;refActorDataID&quot;:2007132,&quot;refActorComparisonType&quot;:3,&quot;Filled&quot;:true},{&quot;Name&quot;:&quot;黑圈2&quot;,&quot;type&quot;:1,&quot;radius&quot;:8.0,&quot;color&quot;:4294375856,&quot;refActorDataID&quot;:2007132,&quot;refActorComparisonType&quot;:3}]}&#xD;&#xA;&#xD;&#xA;~Lv2~{&quot;Name&quot;:&quot;尼德火锅征龙战-烈焰十字爆&quot;,&quot;Group&quot;:&quot;&quot;,&quot;ZoneLockH&quot;:[559],&quot;ElementsL&quot;:[{&quot;Name&quot;:&quot;烈焰十字爆1&quot;,&quot;type&quot;:3,&quot;refY&quot;:50.0,&quot;offY&quot;:-50.0,&quot;radius&quot;:3.0,&quot;color&quot;:687734737,&quot;refActorDataID&quot;:5859,&quot;refActorComparisonType&quot;:3,&quot;includeRotation&quot;:true},{&quot;Name&quot;:&quot;烈焰十字爆2&quot;,&quot;type&quot;:3,&quot;refY&quot;:50.0,&quot;offY&quot;:-50.0,&quot;radius&quot;:3.0,&quot;color&quot;:687734737,&quot;refActorDataID&quot;:5859,&quot;refActorComparisonType&quot;:3,&quot;includeRotation&quot;:true,&quot;AdditionalRotation&quot;:1.5707964}],&quot;UseTriggers&quot;:true,&quot;Triggers&quot;:[{&quot;Type&quot;:2,&quot;Duration&quot;:10.2,&quot;Match&quot;:&quot;(3459&gt;6317)&quot;}]}">
                         <Actions />
                         <Condition Enabled="false" Grouping="Or" />
                       </Trigger>
@@ -16342,48 +16320,7 @@
         <Triggers />
       </Folder>
       <Folder Id="1aefd34c-14e9-477b-a772-86be56125a3a" Name="0. 通用触发" Enabled="true">
-        <Folders>
-          <Folder Id="e6ef99d8-9c59-4c0c-863d-61029acf55b3" Name="Cactbotself日志转义记录 打本时使用(记得切掉默语污染屏幕)" Enabled="false">
-            <Folders />
-            <Triggers>
-              <Trigger Enabled="true" Sequential="True" Name="104" Id="491a298b-6910-4479-b0b8-b7566bc717fa" RegularExpression="^.{14} ChatLog 00:0:104:(?&lt;sid&gt;.*?):(?&lt;sname&gt;.*?):(?&lt;skillid&gt;.*?):(?&lt;skillidtype&gt;.*?):(?&lt;casttime&gt;.*?):(?&lt;tid&gt;.*?):(?&lt;tname&gt;.*?):(?&lt;flag&gt;.*?):(?&lt;heading&gt;.*?):(?&lt;x&gt;.*?):(?&lt;y&gt;.*?):(?&lt;z&gt;.*?):">
-                <Actions>
-                  <Action OrderNumber="1" LogMessageText="ChatLog2 00:0:104:${sid}:${sname}:${skillid}:${skillidtype}:${casttime}:${tid}:${tname}:${flag}:${heading}:${x}:${y}:${z}:" LogProcess="True" ActionType="LogMessage">
-                    <Condition Enabled="false" Grouping="Or" />
-                  </Action>
-                  <Action OrderNumber="2" LogMessageText="ChatLog2 00:0:104:${sid}:${sname}:${skillid}:${skillidtype}:${casttime}:${tid}:${tname}:${flag}:${heading}:${x}:${y}:${z}:" LogProcess="True" NamedCallbackName="command" NamedCallbackParam="/e ChatLog2 00:0:104:${sid}:${sname}:${skillid}:${skillidtype}:${casttime}:${tid}:${tname}:${flag}:${heading}:${x}:${y}:${z}:" ActionType="NamedCallback">
-                    <Condition Enabled="false" Grouping="Or" />
-                  </Action>
-                </Actions>
-                <Condition Enabled="false" Grouping="Or" />
-              </Trigger>
-              <Trigger Enabled="true" Name="# 调试用" Id="5512b822-3ef7-48ad-8736-6c8cf9baf7f9" RegularExpression="">
-                <Actions />
-                <Condition Enabled="false" Grouping="Or" />
-              </Trigger>
-            </Triggers>
-          </Folder>
-          <Folder Id="ed196edd-d509-43fc-8f00-36e3975c3f30" Name="Cactbotself日志转义还原 回放时使用" Enabled="false">
-            <Folders />
-            <Triggers>
-              <Trigger Enabled="true" Name="# 调试用" Id="5c8d6617-bba4-4a08-8661-fa3d3845f34a" RegularExpression="">
-                <Actions />
-                <Condition Enabled="false" Grouping="Or" />
-              </Trigger>
-              <Trigger Enabled="true" Sequential="True" Name="104" Id="d5e53e3e-f415-4d08-8d37-2814d921553a" RegularExpression="^ChatLog2 00:0:104:(?&lt;sid&gt;.*?):(?&lt;sname&gt;.*?):(?&lt;skillid&gt;.*?):(?&lt;skillidtype&gt;.*?):(?&lt;casttime&gt;.*?):(?&lt;tid&gt;.*?):(?&lt;tname&gt;.*?):(?&lt;flag&gt;.*?):(?&lt;heading&gt;.*?):(?&lt;x&gt;.*?):(?&lt;y&gt;.*?):(?&lt;z&gt;.*?):$">
-                <Actions>
-                  <Action OrderNumber="1" LogMessageText="[123456789012] ChatLog 00:0:104:${sid}:${sname}:${skillid}:${skillidtype}:${casttime}:${tid}:${tname}:${flag}:${heading}:${x}:${y}:${z}:" LogProcess="True" ActionType="LogMessage">
-                    <Condition Enabled="false" Grouping="Or" />
-                  </Action>
-                  <Action OrderNumber="2" LogMessageText="[00000000000000] ChatLog 00:0:104:${sid}:${sname}:${skillid}:${skillidtype}:${casttime}:${tid}:${tname}:${flag}:${heading}:${x}:${y}:${z}:" LogProcess="True" NamedCallbackName="command" NamedCallbackParam="/e [123456789012] ChatLog 00:0:104:${sid}:${sname}:${skillid}:${skillidtype}:${casttime}:${tid}:${tname}:${flag}:${heading}:${x}:${y}:${z}:" ActionType="NamedCallback">
-                    <Condition Enabled="false" Grouping="Or" />
-                  </Action>
-                </Actions>
-                <Condition Enabled="false" Grouping="Or" />
-              </Trigger>
-            </Triggers>
-          </Folder>
-        </Folders>
+        <Folders />
         <Triggers>
           <Trigger Enabled="true" Sequential="True" Name="切换地图清理职能信息" Id="c5a6f864-db74-457c-84aa-31ad20cec360" RegularExpression="^.{14} Territory 01:(?&lt;id&gt;(?:[^:]*)):(?&lt;ditu&gt;.*)">
             <Actions>
@@ -16421,7 +16358,7 @@
           <Folder Id="d2a170d1-9086-45f3-bd87-fb97825625fd" Name="3. 正统优雷卡" Enabled="true">
             <Folders />
             <Triggers>
-              <Trigger Enabled="true" Name="项目地址：https://github.com/RedAsteroid/EurekaOrthos_Presets" Id="7af2ec6e-5528-484a-877a-f66149e1e908" RegularExpression="">
+              <Trigger Enabled="true" Name="仓库地址：https://github.com/RedAsteroid/EurekaOrthos_Presets" Id="7af2ec6e-5528-484a-877a-f66149e1e908" RegularExpression="">
                 <Actions />
                 <Condition Enabled="false" Grouping="Or" />
               </Trigger>
@@ -16434,30 +16371,9 @@
         </Folders>
         <Triggers />
       </Folder>
-      <Folder Id="bc17b148-d0ee-48db-aead-3f0ce0dc84dd" Name="※ 这是什么？这个触发器能做什么？" Enabled="true">
-        <Folders />
-        <Triggers>
-          <Trigger Enabled="true" Name="1. 本触发器使用Triggernometry插件提供的各种条件向Splatoon插件发送json信息进行绘制" Id="d7c677ce-54ff-4b7f-b201-080e40e12cf4" RegularExpression="">
-            <Actions />
-            <Condition Enabled="false" Grouping="Or" />
-          </Trigger>
-          <Trigger Enabled="true" Name="2. 简单来说，就是在已编写好的副本中画出不可见的AoE、提示信息等等，为您提供更多图像信息、帮助你攻略副本" Id="06d75e52-3ac0-415a-8bc9-ca567408e3ef" RegularExpression="">
-            <Actions />
-            <Condition Enabled="false" Grouping="Or" />
-          </Trigger>
-          <Trigger Enabled="true" Name="3. 本触发器绘制绝大部分是古早摸索阶段的产物，现在与其他同类型绘制相比有非常大的质量差距" Id="1e3bafd5-a417-480f-8243-ede2a7af583a" RegularExpression="">
-            <Actions />
-            <Condition Enabled="false" Grouping="Or" />
-          </Trigger>
-          <Trigger Enabled="true" Name="4. 由于能力不足，我无法保证本触发器绘制能长期有效运行，只能尽量维持最低限度的稳定，如果哪天遇到无法解决的问题直接跑路" Id="15f217c2-4fce-4d4a-8c47-cedc7ff37e69" RegularExpression="">
-            <Actions />
-            <Condition Enabled="false" Grouping="Or" />
-          </Trigger>
-        </Triggers>
-      </Folder>
     </Folders>
     <Triggers>
-      <Trigger Enabled="false" Sequential="True" Name="【初次导入提醒】2023/08/20" Id="4e99d138-e563-4d4f-b0ee-fbb1c7b93ac3" RegularExpression="^." PeriodRefire="Deny" RefirePeriodExpression="2000">
+      <Trigger Enabled="true" Sequential="True" Name="【初次导入提醒】2023/08/20" Id="4e99d138-e563-4d4f-b0ee-fbb1c7b93ac3" RegularExpression="^." PeriodRefire="Deny" RefirePeriodExpression="2000">
         <Actions>
           <Action OrderNumber="1" TriggerOp="DisableTrigger" TriggerId="4e99d138-e563-4d4f-b0ee-fbb1c7b93ac3" ActionType="Trigger">
             <Condition Enabled="false" Grouping="Or" />
@@ -16465,7 +16381,7 @@
           <Action OrderNumber="2" UseTTSTextExpression="欢迎使用本触发器，初次使用请阅读提示匡以及使用教程。" ActionType="UseTTS">
             <Condition Enabled="false" Grouping="Or" />
           </Action>
-          <Action OrderNumber="3" MessageBoxIconType="Warning" MessageBoxText="【初次导入提醒】提示框仅在初次导入时显示。本触发器完全免费，您可以访问我的Github项目获取最新内容。" ActionType="MessageBox">
+          <Action OrderNumber="3" MessageBoxIconType="Warning" MessageBoxText="【初次导入提醒】提示框仅在初次导入时显示。本触发器完全免费，您可以访问我的Github仓库获取最新内容。" ActionType="MessageBox">
             <Condition Enabled="false" Grouping="Or" />
           </Action>
           <Action OrderNumber="4" MessageBoxIconType="Warning" MessageBoxText="请勿通过任何付费渠道获取本触发器。如果你已经通过小店等渠道获取了本触发器，请立即退款差评举报。" ActionType="MessageBox">
