@@ -55,5 +55,5 @@ https://raw.kgithub.com/RedAsteroid/FFXIV_Triggers/main/Test/Testtriggers_pure.x
 * 巴尔巴莉希娅歼殛战
 * 亚历山大绝境战
 
-## 补充
+## 其他内容
 - 预览图里的卫月样式：[**Catppuccin Macchiato v1**](https://github.com/RedAsteroid/FFXIV_Triggers/blob/main/img/dalamud_theme.md)
