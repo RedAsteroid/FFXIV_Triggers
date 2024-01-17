@@ -115,7 +115,7 @@
       </Folder>
       <Folder Id="601e2b13-12f1-483b-9d9d-77ff167aea7a" Name="1. 绝境战" Enabled="true">
         <Folders>
-          <Folder Id="11d54204-b1b7-454a-884d-c768ee9d9cb0" Name="1. 亚历山大绝境战 2024.01.14" Enabled="true">
+          <Folder Id="11d54204-b1b7-454a-884d-c768ee9d9cb0" Name="1. 亚历山大绝境战 2024.01.18" Enabled="true">
             <Folders>
               <Folder FFXIVZoneFilterEnabled="True" FfxivZoneFilterRegularExpression="^887$" Id="1b5beb16-1ff0-4230-92cc-3cf8dc051b06" Name="P1" Enabled="true">
                 <Folders>
@@ -2520,7 +2520,7 @@
                         </Actions>
                         <Condition Enabled="false" Grouping="Or" />
                       </Trigger>
-                      <Trigger Enabled="true" Sequential="True" Name="连线显示" Id="c4e5d82a-3907-467c-8e5e-754d674f2a9e" RegularExpression="^.{14} Tether 23:(?&lt;id&gt;(?:[^:]*)):活水之怒:(?&lt;tid&gt;(?:[^:]*)):(?&lt;tname&gt;(?:[^:]*)):">
+                      <Trigger Enabled="true" Sequential="True" Name="连线显示" Id="c4e5d82a-3907-467c-8e5e-754d674f2a9e" RegularExpression="^.{14} Tether 23:(?&lt;id&gt;(?:[^:]*)):活水之怒:(?&lt;tid&gt;(?:[^:]*)):(?&lt;tname&gt;(?:[^:]*)):" Scheduling="FromLastAction">
                         <Actions>
                           <Action OrderNumber="1" JsonEndpointExpression="http://127.0.0.1:47774/?destroy=liquidline${id}" ActionType="GenericJson">
                             <Condition Enabled="false" Grouping="Or" />
@@ -2655,7 +2655,7 @@
                           <ConditionSingle Enabled="true" ExpressionL="${tid}" ExpressionTypeL="String" ExpressionR="${_ffxivparty[1].id}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                         </Condition>
                       </Trigger>
-                      <Trigger Enabled="true" Sequential="True" Name="3. 血量变动绘制" Id="c2a179ee-e272-43c9-bcfb-add4b4687688" RegularExpression="^.{14} EffectResult 25:(?&lt;id&gt;[^:]*):狩猎人偶:(?&lt;sequenceId&gt;[^:]*):(?&lt;currentHp&gt;[^:]*):(?&lt;maxHp&gt;[^:]*):(?&lt;currentMp&gt;[^:]*):(?&lt;maxMp&gt;[^:]*):(?&lt;currentShield&gt;[^:]*):[^:]*:(?&lt;x&gt;[^:]*):(?&lt;y&gt;[^:]*):(?&lt;z&gt;[^:]*):(?&lt;heading&gt;.*?)" PrevActions="Interrupt">
+                      <Trigger Enabled="true" Sequential="True" Name="3. 血量变动绘制" Id="c2a179ee-e272-43c9-bcfb-add4b4687688" RegularExpression="^.{14} EffectResult 25:(?&lt;id&gt;[^:]*):狩猎人偶:(?&lt;sequenceId&gt;[^:]*):(?&lt;currentHp&gt;[^:]*):(?&lt;maxHp&gt;[^:]*):(?&lt;currentMp&gt;[^:]*):(?&lt;maxMp&gt;[^:]*):(?&lt;currentShield&gt;[^:]*):[^:]*:(?&lt;x&gt;[^:]*):(?&lt;y&gt;[^:]*):(?&lt;z&gt;[^:]*):(?&lt;heading&gt;.*?)" Scheduling="FromLastAction">
                         <Actions>
                           <Action OrderNumber="1" JsonEndpointExpression="http://127.0.0.1:47774/?destroy=xiaoguaic" ActionType="GenericJson">
                             <Condition Enabled="false" Grouping="Or" />
@@ -2873,7 +2873,7 @@
                       </Folder>
                     </Folders>
                     <Triggers>
-                      <Trigger Enabled="true" Sequential="True" Name="2. 血量变动绘制" Id="e5bbf523-5808-4fbc-83ba-556a47d5098f" RegularExpression="^.{14} EffectResult 25:(?&lt;id&gt;[^:]*):狩猎人偶:(?&lt;sequenceId&gt;[^:]*):(?&lt;currentHp&gt;[^:]*):(?&lt;maxHp&gt;[^:]*):(?&lt;currentMp&gt;[^:]*):(?&lt;maxMp&gt;[^:]*):(?&lt;currentShield&gt;[^:]*):[^:]*:(?&lt;x&gt;[^:]*):(?&lt;y&gt;[^:]*):(?&lt;z&gt;[^:]*):(?&lt;heading&gt;.*?)" PrevActions="Interrupt">
+                      <Trigger Enabled="true" Sequential="True" Name="2. 血量变动绘制" Id="e5bbf523-5808-4fbc-83ba-556a47d5098f" RegularExpression="^.{14} EffectResult 25:(?&lt;id&gt;[^:]*):狩猎人偶:(?&lt;sequenceId&gt;[^:]*):(?&lt;currentHp&gt;[^:]*):(?&lt;maxHp&gt;[^:]*):(?&lt;currentMp&gt;[^:]*):(?&lt;maxMp&gt;[^:]*):(?&lt;currentShield&gt;[^:]*):[^:]*:(?&lt;x&gt;[^:]*):(?&lt;y&gt;[^:]*):(?&lt;z&gt;[^:]*):(?&lt;heading&gt;.*?)" Scheduling="FromLastAction">
                         <Actions>
                           <Action OrderNumber="1" JsonEndpointExpression="http://127.0.0.1:47774/?destroy=xiaoguaie${id}" ActionType="GenericJson">
                             <Condition Enabled="false" Grouping="Or" />
@@ -7455,7 +7455,7 @@
                         <Folders>
                           <Folder Id="b299237d-0113-47a7-8fd3-f580be9c24b2" Name="1.5前半" Enabled="true">
                             <Folders>
-                              <Folder Id="2c78a73b-73cb-42e4-87ed-1b2ef67d8334" Name="错误记录组" Enabled="true">
+                              <Folder Id="2c78a73b-73cb-42e4-87ed-1b2ef67d8334" Name="错误记录组" Enabled="false">
                                 <Folders />
                                 <Triggers>
                                   <Trigger Enabled="true" Name="错误Buff记录" Id="10cc93fd-7257-4954-9392-220492a50fad" RegularExpression="^.{14} StatusAdd 1A:46(?&lt;type&gt;(1|3|4)):(?&lt;effect&gt;(?:[^:]|: )*?):(?&lt;duration&gt;[^:]*):(?&lt;sid&gt;[^:]*):(?&lt;sname&gt;[^:]*):(?&lt;tid&gt;[^:]*):(?&lt;tname&gt;[^:]*):(?&lt;count&gt;[^:]*):(?&lt;targetMaxHp&gt;[^:]*):(?&lt;sourceMaxHp&gt;[^:]*)(?:$|:)">
@@ -7578,7 +7578,7 @@
                                 </Actions>
                                 <Condition Enabled="false" Grouping="Or" />
                               </Trigger>
-                              <Trigger Enabled="true" Sequential="True" Name="自身Buff获取2" Id="78367b0c-cde9-4608-adf5-221c19f832b8" RegularExpression="^.{14} StatusAdd 1A:46(?&lt;type&gt;(1|2|3|4)):(?&lt;effect&gt;(?:[^:]|: )*?):(?&lt;duration&gt;[^:]*):(?&lt;sid&gt;[^:]*):(?&lt;sname&gt;[^:]*):(?&lt;tid&gt;[^:]*):(?&lt;tname&gt;[^:]*):(?&lt;count&gt;[^:]*):(?&lt;targetMaxHp&gt;[^:]*):(?&lt;sourceMaxHp&gt;[^:]*)(?:$|:)" PeriodRefire="Deny" RefirePeriodExpression="30000">
+                              <Trigger Enabled="false" Sequential="True" Name="自身Buff获取2" Id="78367b0c-cde9-4608-adf5-221c19f832b8" RegularExpression="^.{14} StatusAdd 1A:46(?&lt;type&gt;(1|2|3|4)):(?&lt;effect&gt;(?:[^:]|: )*?):(?&lt;duration&gt;[^:]*):(?&lt;sid&gt;[^:]*):(?&lt;sname&gt;[^:]*):(?&lt;tid&gt;[^:]*):(?&lt;tname&gt;[^:]*):(?&lt;count&gt;[^:]*):(?&lt;targetMaxHp&gt;[^:]*):(?&lt;sourceMaxHp&gt;[^:]*)(?:$|:)" PeriodRefire="Deny" RefirePeriodExpression="30000">
                                 <Actions>
                                   <Action OrderNumber="1" ActionType="LogMessage">
                                     <Condition Enabled="false" Grouping="Or" />
@@ -7621,7 +7621,7 @@
                                 </Actions>
                                 <Condition Enabled="false" Grouping="Or" />
                               </Trigger>
-                              <Trigger Enabled="true" Sequential="True" Name="自身Buff获取" Id="b8f14c0e-fcae-4965-abc0-1264dc6b7c56" RegularExpression="^.{14} StatusAdd 1A:46(?&lt;type&gt;(1|2|3|4)):(?&lt;effect&gt;(?:[^:]|: )*?):(?&lt;duration&gt;[^:]*):(?&lt;sid&gt;[^:]*):(?&lt;sname&gt;[^:]*):(?&lt;tid&gt;[^:]*):(?&lt;tname&gt;[^:]*):(?&lt;count&gt;[^:]*):(?&lt;targetMaxHp&gt;[^:]*):(?&lt;sourceMaxHp&gt;[^:]*)(?:$|:)" PeriodRefire="Deny" RefirePeriodExpression="30000">
+                              <Trigger Enabled="false" Sequential="True" Name="自身Buff获取" Id="b8f14c0e-fcae-4965-abc0-1264dc6b7c56" RegularExpression="^.{14} StatusAdd 1A:46(?&lt;type&gt;(1|2|3|4)):(?&lt;effect&gt;(?:[^:]|: )*?):(?&lt;duration&gt;[^:]*):(?&lt;sid&gt;[^:]*):(?&lt;sname&gt;[^:]*):(?&lt;tid&gt;[^:]*):(?&lt;tname&gt;[^:]*):(?&lt;count&gt;[^:]*):(?&lt;targetMaxHp&gt;[^:]*):(?&lt;sourceMaxHp&gt;[^:]*)(?:$|:)" PeriodRefire="Deny" RefirePeriodExpression="30000">
                                 <Actions>
                                   <Action OrderNumber="1" TriggerOp="CancelTrigger" TriggerId="78367b0c-cde9-4608-adf5-221c19f832b8" ActionType="Trigger">
                                     <Condition Enabled="false" Grouping="Or" />
@@ -8822,7 +8822,7 @@
                           <Action OrderNumber="1" UseTTSTextExpression="欢迎使用绝亚绿色叉件！请看聊天匡，在默语频道，输入您的职能位置。" UseTTSRateExpression="1.5" ActionType="UseTTS">
                             <Condition Enabled="false" Grouping="Or" />
                           </Action>
-                          <Action OrderNumber="2" NamedCallbackName="command" NamedCallbackParam="/e 欢迎使用绝亚绘制触发器！" ActionType="NamedCallback" ExecutionDelayExpression="3000">
+                          <Action OrderNumber="2" NamedCallbackName="command" NamedCallbackParam="/e 欢迎使用可爱小刺猬的绝亚绘制触发器！" ActionType="NamedCallback" ExecutionDelayExpression="3000">
                             <Condition Enabled="false" Grouping="Or" />
                           </Action>
                           <Action OrderNumber="3" NamedCallbackName="command" NamedCallbackParam="/e 请设置您的职能，例如/e d1，将您的职能设定为d1。 &lt;se.1&gt;" ActionType="NamedCallback">
@@ -8979,160 +8979,169 @@
                       <Action OrderNumber="40" ListVariableOp="UnsetRegex" ListVariableName="绝亚_地雷.*_Clone" ActionType="ListVariable">
                         <Condition Enabled="false" Grouping="Or" />
                       </Action>
-                      <Action OrderNumber="41" JsonEndpointExpression="http://127.0.0.1:47774/?destroy=ph8" ActionType="GenericJson">
+                      <Action OrderNumber="41" TriggerOp="CancelTrigger" TriggerId="c87e8c6a-d1e5-4305-a605-84bfac339b50" ActionType="Trigger">
                         <Condition Enabled="false" Grouping="Or" />
                       </Action>
-                      <Action OrderNumber="42" JsonEndpointExpression="http://127.0.0.1:47774/?destroy=initp2" ActionType="GenericJson">
+                      <Action OrderNumber="42" TriggerOp="CancelTrigger" TriggerId="a8a73911-e642-4478-95ab-55af985bb04b" ActionType="Trigger">
                         <Condition Enabled="false" Grouping="Or" />
                       </Action>
-                      <Action OrderNumber="43" JsonEndpointExpression="http://127.0.0.1:47774/?destroy=d3go" ActionType="GenericJson">
+                      <Action OrderNumber="43" TriggerOp="CancelTrigger" TriggerId="b63cbb1e-3476-4535-b45d-fa35e4d2cc7e" ActionType="Trigger">
                         <Condition Enabled="false" Grouping="Or" />
                       </Action>
-                      <Action OrderNumber="44" OBSEndPoint="" VariableOp="UnsetRegex" VariableName="绝亚jc_P2.*clone" ActionType="Variable">
+                      <Action OrderNumber="44" JsonEndpointExpression="http://127.0.0.1:47774/?destroy=ph8" ActionType="GenericJson">
                         <Condition Enabled="false" Grouping="Or" />
                       </Action>
-                      <Action OrderNumber="45" JsonEndpointExpression="http://127.0.0.1:47774/?destroy=3chuan" ActionType="GenericJson">
+                      <Action OrderNumber="45" JsonEndpointExpression="http://127.0.0.1:47774/?destroy=initp2" ActionType="GenericJson">
                         <Condition Enabled="false" Grouping="Or" />
                       </Action>
-                      <Action OrderNumber="46" JsonEndpointExpression="http://127.0.0.1:47774/?destroy=4chuan" ActionType="GenericJson">
+                      <Action OrderNumber="46" JsonEndpointExpression="http://127.0.0.1:47774/?destroy=d3go" ActionType="GenericJson">
                         <Condition Enabled="false" Grouping="Or" />
                       </Action>
-                      <Action OrderNumber="47" TriggerOp="EnableTrigger" TriggerId="5dbd75d6-98e2-4075-a5a0-d96e839497cf" ActionType="Trigger">
+                      <Action OrderNumber="47" OBSEndPoint="" VariableOp="UnsetRegex" VariableName="绝亚jc_P2.*clone" ActionType="Variable">
                         <Condition Enabled="false" Grouping="Or" />
                       </Action>
-                      <Action OrderNumber="48" VariableName="绝亚_P2_3传毒_Clone" VariableExpression="1" ActionType="Variable">
+                      <Action OrderNumber="48" JsonEndpointExpression="http://127.0.0.1:47774/?destroy=3chuan" ActionType="GenericJson">
                         <Condition Enabled="false" Grouping="Or" />
                       </Action>
-                      <Action OrderNumber="49" VariableOp="UnsetRegex" VariableName=".毒_.*_Clone" ActionType="Variable">
+                      <Action OrderNumber="49" JsonEndpointExpression="http://127.0.0.1:47774/?destroy=4chuan" ActionType="GenericJson">
                         <Condition Enabled="false" Grouping="Or" />
                       </Action>
-                      <Action OrderNumber="50" VariableOp="UnsetRegex" VariableName=".疫苗_.*_Clone" ActionType="Variable">
+                      <Action OrderNumber="50" TriggerOp="EnableTrigger" TriggerId="5dbd75d6-98e2-4075-a5a0-d96e839497cf" ActionType="Trigger">
                         <Condition Enabled="false" Grouping="Or" />
                       </Action>
-                      <Action OrderNumber="51" VariableName="P2传毒_Clone" ActionType="Variable">
+                      <Action OrderNumber="51" VariableName="绝亚_P2_3传毒_Clone" VariableExpression="1" ActionType="Variable">
                         <Condition Enabled="false" Grouping="Or" />
                       </Action>
-                      <Action OrderNumber="52" ActionType="Placeholder" Description=" 清理P3" DescriptionOverride="True">
+                      <Action OrderNumber="52" VariableOp="UnsetRegex" VariableName=".毒_.*_Clone" ActionType="Variable">
                         <Condition Enabled="false" Grouping="Or" />
                       </Action>
-                      <Action OrderNumber="53" VariableName="绝亚P3死刑次数" ActionType="Variable">
+                      <Action OrderNumber="53" VariableOp="UnsetRegex" VariableName=".疫苗_.*_Clone" ActionType="Variable">
                         <Condition Enabled="false" Grouping="Or" />
                       </Action>
-                      <Action OrderNumber="54" VariableName="神罚射线id" ActionType="Variable">
+                      <Action OrderNumber="54" VariableName="P2传毒_Clone" ActionType="Variable">
                         <Condition Enabled="false" Grouping="Or" />
                       </Action>
-                      <Action OrderNumber="55" VariableName="伤害提高层数_Clone" ActionType="Variable">
+                      <Action OrderNumber="55" ActionType="Placeholder" Description=" 清理P3" DescriptionOverride="True">
                         <Condition Enabled="false" Grouping="Or" />
                       </Action>
-                      <Action OrderNumber="56" VariableName="绝亚_净化射线_Clone" ActionType="Variable">
+                      <Action OrderNumber="56" VariableName="绝亚P3死刑次数" ActionType="Variable">
                         <Condition Enabled="false" Grouping="Or" />
                       </Action>
-                      <Action OrderNumber="57" TriggerId="55fb0864-449d-4aea-a87f-b049ef91df14" TriggerForce="true" ActionType="Trigger">
+                      <Action OrderNumber="57" VariableName="神罚射线id" ActionType="Variable">
                         <Condition Enabled="false" Grouping="Or" />
                       </Action>
-                      <Action OrderNumber="58" TriggerId="2a4a3b05-1039-479c-8a87-cdfbe5a02575" TriggerForce="true" ActionType="Trigger">
+                      <Action OrderNumber="58" VariableName="伤害提高层数_Clone" ActionType="Variable">
                         <Condition Enabled="false" Grouping="Or" />
                       </Action>
-                      <Action OrderNumber="59" VariableName="绝亚_真心寄了_Clone" ActionType="Variable">
+                      <Action OrderNumber="59" VariableName="绝亚_净化射线_Clone" ActionType="Variable">
                         <Condition Enabled="false" Grouping="Or" />
                       </Action>
-                      <Action OrderNumber="60" TriggerOp="DisableTrigger" TriggerId="f3162919-5386-43dc-922f-0afa989c5c7f" ActionType="Trigger">
+                      <Action OrderNumber="60" TriggerId="55fb0864-449d-4aea-a87f-b049ef91df14" TriggerForce="true" ActionType="Trigger">
                         <Condition Enabled="false" Grouping="Or" />
                       </Action>
-                      <Action OrderNumber="61" TriggerOp="DisableTrigger" TriggerId="f5ef4582-dcaf-4066-bc4e-4d2de58bc5b5" ActionType="Trigger">
+                      <Action OrderNumber="61" TriggerId="2a4a3b05-1039-479c-8a87-cdfbe5a02575" TriggerForce="true" ActionType="Trigger">
                         <Condition Enabled="false" Grouping="Or" />
                       </Action>
-                      <Action OrderNumber="62" TriggerOp="DisableTrigger" TriggerId="f3a3279b-c725-4d53-8f7d-a182338e023b" ActionType="Trigger">
+                      <Action OrderNumber="62" VariableName="绝亚_真心寄了_Clone" ActionType="Variable">
                         <Condition Enabled="false" Grouping="Or" />
                       </Action>
-                      <Action OrderNumber="63" TriggerOp="DisableTrigger" TriggerId="6ca15bce-44f6-4600-894f-0518273a136a" ActionType="Trigger">
+                      <Action OrderNumber="63" TriggerOp="DisableTrigger" TriggerId="f3162919-5386-43dc-922f-0afa989c5c7f" ActionType="Trigger">
                         <Condition Enabled="false" Grouping="Or" />
                       </Action>
-                      <Action OrderNumber="64" FolderOp="DisableFolder" FolderId="61b6b4e5-cf67-440d-8b5a-faed74115c93" ActionType="Folder">
+                      <Action OrderNumber="64" TriggerOp="DisableTrigger" TriggerId="f5ef4582-dcaf-4066-bc4e-4d2de58bc5b5" ActionType="Trigger">
                         <Condition Enabled="false" Grouping="Or" />
                       </Action>
-                      <Action OrderNumber="65" VariableOp="UnsetRegex" VariableName="绝亚_1.5_.*" ActionType="Variable">
+                      <Action OrderNumber="65" TriggerOp="DisableTrigger" TriggerId="f3a3279b-c725-4d53-8f7d-a182338e023b" ActionType="Trigger">
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Action>
+                      <Action OrderNumber="66" TriggerOp="DisableTrigger" TriggerId="6ca15bce-44f6-4600-894f-0518273a136a" ActionType="Trigger">
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Action>
+                      <Action OrderNumber="67" FolderOp="DisableFolder" FolderId="61b6b4e5-cf67-440d-8b5a-faed74115c93" ActionType="Folder">
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Action>
+                      <Action OrderNumber="68" VariableOp="UnsetRegex" VariableName="绝亚_1.5_.*" ActionType="Variable">
                         <Condition Enabled="false" Grouping="And" />
                       </Action>
-                      <Action OrderNumber="66" VariableName="绝亚_至尊亚历山大id_Clone" ActionType="Variable">
+                      <Action OrderNumber="69" VariableName="绝亚_至尊亚历山大id_Clone" ActionType="Variable">
                         <Condition Enabled="false" Grouping="Or" />
                       </Action>
-                      <Action OrderNumber="67" VariableOp="UnsetRegex" VariableName="绝亚灵泉_.*" ActionType="Variable">
+                      <Action OrderNumber="70" VariableOp="UnsetRegex" VariableName="绝亚灵泉_.*" ActionType="Variable">
                         <Condition Enabled="false" Grouping="And" />
                       </Action>
-                      <Action OrderNumber="68" VariableOp="SetNumeric" VariableName="罪恶感计数_Clone" VariableExpression="0" ActionType="Variable">
+                      <Action OrderNumber="71" VariableOp="SetNumeric" VariableName="罪恶感计数_Clone" VariableExpression="0" ActionType="Variable">
                         <Condition Enabled="false" Grouping="Or" />
                       </Action>
-                      <Action OrderNumber="69" VariableName="残暴x_Clone" ActionType="Variable">
+                      <Action OrderNumber="72" VariableName="残暴x_Clone" ActionType="Variable">
                         <Condition Enabled="false" Grouping="Or" />
                       </Action>
-                      <Action OrderNumber="70" VariableName="mjsign_clone" ActionType="Variable">
+                      <Action OrderNumber="73" VariableName="mjsign_clone" ActionType="Variable">
                         <Condition Enabled="false" Grouping="Or" />
                       </Action>
-                      <Action OrderNumber="71" VariableOp="SetNumeric" VariableName="绝亚_结晶破碎_Clone" VariableExpression="0" ActionType="Variable">
+                      <Action OrderNumber="74" VariableOp="SetNumeric" VariableName="绝亚_结晶破碎_Clone" VariableExpression="0" ActionType="Variable">
                         <Condition Enabled="false" Grouping="Or" />
                       </Action>
-                      <Action OrderNumber="72" JsonEndpointExpression="http://127.0.0.1:47774/?destroy=yucezimu" ActionType="GenericJson">
+                      <Action OrderNumber="75" JsonEndpointExpression="http://127.0.0.1:47774/?destroy=yucezimu" ActionType="GenericJson">
                         <Condition Enabled="false" Grouping="Or" />
                       </Action>
-                      <Action OrderNumber="73" JsonEndpointExpression="http://127.0.0.1:47774/?destroy=yuce0" ActionType="GenericJson">
+                      <Action OrderNumber="76" JsonEndpointExpression="http://127.0.0.1:47774/?destroy=yuce0" ActionType="GenericJson">
                         <Condition Enabled="false" Grouping="Or" />
                       </Action>
-                      <Action OrderNumber="74" JsonEndpointExpression="http://127.0.0.1:47774/?destroy=yuce90" ActionType="GenericJson">
+                      <Action OrderNumber="77" JsonEndpointExpression="http://127.0.0.1:47774/?destroy=yuce90" ActionType="GenericJson">
                         <Condition Enabled="false" Grouping="Or" />
                       </Action>
-                      <Action OrderNumber="75" JsonEndpointExpression="http://127.0.0.1:47774/?destroy=yuce270" ActionType="GenericJson">
+                      <Action OrderNumber="78" JsonEndpointExpression="http://127.0.0.1:47774/?destroy=yuce270" ActionType="GenericJson">
                         <Condition Enabled="false" Grouping="Or" />
                       </Action>
-                      <Action OrderNumber="76" ActionType="Placeholder" Description=" 清理P4" DescriptionOverride="True">
+                      <Action OrderNumber="79" ActionType="Placeholder" Description=" 清理P4" DescriptionOverride="True">
                         <Condition Enabled="false" Grouping="Or" />
                       </Action>
-                      <Action OrderNumber="77" VariableOp="UnsetRegex" VariableName="绝亚_群体断罪.*" ActionType="Variable">
+                      <Action OrderNumber="80" VariableOp="UnsetRegex" VariableName="绝亚_群体断罪.*" ActionType="Variable">
                         <Condition Enabled="false" Grouping="Or" />
                       </Action>
-                      <Action OrderNumber="78" VariableName="绝亚_诛罚_Clone" ActionType="Variable">
+                      <Action OrderNumber="81" VariableName="绝亚_诛罚_Clone" ActionType="Variable">
                         <Condition Enabled="false" Grouping="Or" />
                       </Action>
-                      <Action OrderNumber="79" NamedCallbackName="command" NamedCallbackParam="/e 本触发器完全免费。如您通过任何付费形式获取本触发器，请立即退款差评举报。" ActionType="NamedCallback" Description="销毁列表变量 (绝亚jc_P4_2测_分身_Clone)" DescriptionOverride="True">
+                      <Action OrderNumber="82" NamedCallbackName="command" NamedCallbackParam="/e 本触发器完全免费。如您通过任何付费形式获取本触发器，请立即退款差评举报。" ActionType="NamedCallback" Description="销毁列表变量 (绝亚jc_P4_2测_分身_Clone)" DescriptionOverride="True">
                         <Condition Enabled="false" Grouping="Or" />
                       </Action>
-                      <Action OrderNumber="80" VariableOp="UnsetRegex" VariableName="绝亚jc_P4_1测.*" ActionType="Variable">
+                      <Action OrderNumber="83" VariableOp="UnsetRegex" VariableName="绝亚jc_P4_1测.*" ActionType="Variable">
                         <Condition Enabled="false" Grouping="Or" />
                       </Action>
-                      <Action OrderNumber="81" VariableName="绝亚jc_P4_2测_月环ID_Clone" ActionType="Variable">
+                      <Action OrderNumber="84" VariableName="绝亚jc_P4_2测_月环ID_Clone" ActionType="Variable">
                         <Condition Enabled="false" Grouping="Or" />
                       </Action>
-                      <Action OrderNumber="82" FolderOp="DisableFolder" FolderId="427dd924-f52b-498a-936b-fbe89d5957ee" TriggerOp="EnableTrigger" ActionType="Folder">
+                      <Action OrderNumber="85" FolderOp="DisableFolder" FolderId="427dd924-f52b-498a-936b-fbe89d5957ee" TriggerOp="EnableTrigger" ActionType="Folder">
                         <Condition Enabled="false" Grouping="Or" />
                       </Action>
-                      <Action OrderNumber="83" FolderOp="DisableFolder" FolderId="ff08c896-4564-4750-a4cd-2b1a6b64a206" TriggerOp="EnableTrigger" ActionType="Folder">
+                      <Action OrderNumber="86" FolderOp="DisableFolder" FolderId="ff08c896-4564-4750-a4cd-2b1a6b64a206" TriggerOp="EnableTrigger" ActionType="Folder">
                         <Condition Enabled="false" Grouping="Or" />
                       </Action>
-                      <Action OrderNumber="84" ListVariableName="绝亚jc_P4_1测_分身_Clone" ActionType="ListVariable">
+                      <Action OrderNumber="87" ListVariableName="绝亚jc_P4_1测_分身_Clone" ActionType="ListVariable">
                         <Condition Enabled="false" Grouping="Or" />
                       </Action>
-                      <Action OrderNumber="85" VariableOp="UnsetRegex" VariableName="绝亚_一测_.*" ActionType="Variable">
+                      <Action OrderNumber="88" VariableOp="UnsetRegex" VariableName="绝亚_一测_.*" ActionType="Variable">
                         <Condition Enabled="false" Grouping="Or" />
                       </Action>
-                      <Action OrderNumber="86" ActionType="Placeholder" Description=" 附加组件清理" DescriptionOverride="True">
+                      <Action OrderNumber="89" ActionType="Placeholder" Description=" 附加组件清理" DescriptionOverride="True">
                         <Condition Enabled="false" Grouping="Or" />
                       </Action>
-                      <Action OrderNumber="87" VariableName="绝亚_1.5麻将_类型_Clone" ActionType="Variable">
+                      <Action OrderNumber="90" VariableName="绝亚_1.5麻将_类型_Clone" ActionType="Variable">
                         <Condition Enabled="false" Grouping="Or" />
                       </Action>
-                      <Action OrderNumber="88" VariableName="绝亚_1.5麻将_序号_Clone" ActionType="Variable">
+                      <Action OrderNumber="91" VariableName="绝亚_1.5麻将_序号_Clone" ActionType="Variable">
                         <Condition Enabled="false" Grouping="Or" />
                       </Action>
-                      <Action OrderNumber="89" VariableName="绝亚_1.5麻将地火计数_Clone" ActionType="Variable">
+                      <Action OrderNumber="92" VariableName="绝亚_1.5麻将地火计数_Clone" ActionType="Variable">
                         <Condition Enabled="false" Grouping="Or" />
                       </Action>
-                      <Action OrderNumber="90" VariableOp="SetString" VariableName="绝亚_1.5麻将地火首轮_Clone" VariableExpression="0" ActionType="Variable">
+                      <Action OrderNumber="93" VariableOp="SetString" VariableName="绝亚_1.5麻将地火首轮_Clone" VariableExpression="0" ActionType="Variable">
                         <Condition Enabled="false" Grouping="Or" />
                       </Action>
-                      <Action OrderNumber="91" VariableOp="SetString" VariableName="绝亚_1.5麻将地火首轮2_Clone" VariableExpression="0" ActionType="Variable">
+                      <Action OrderNumber="94" VariableOp="SetString" VariableName="绝亚_1.5麻将地火首轮2_Clone" VariableExpression="0" ActionType="Variable">
                         <Condition Enabled="false" Grouping="Or" />
                       </Action>
-                      <Action OrderNumber="92" TriggerOp="EnableTrigger" TriggerId="11abd2e9-cdea-477a-b02a-fdc641334e84" ActionType="Trigger">
+                      <Action OrderNumber="95" TriggerOp="EnableTrigger" TriggerId="11abd2e9-cdea-477a-b02a-fdc641334e84" ActionType="Trigger">
                         <Condition Enabled="false" Grouping="Or" />
                       </Action>
                     </Actions>
@@ -9245,154 +9254,160 @@
                       <Action OrderNumber="35" ListVariableOp="UnsetRegex" ListVariableName="绝亚_地雷.*_Clone" ActionType="ListVariable">
                         <Condition Enabled="false" Grouping="Or" />
                       </Action>
-                      <Action OrderNumber="36" JsonEndpointExpression="http://127.0.0.1:47774/?destroy=ph8" ActionType="GenericJson">
+                      <Action OrderNumber="36" TriggerOp="CancelTrigger" TriggerId="c87e8c6a-d1e5-4305-a605-84bfac339b50" ActionType="Trigger">
                         <Condition Enabled="false" Grouping="Or" />
                       </Action>
-                      <Action OrderNumber="37" JsonEndpointExpression="http://127.0.0.1:47774/?destroy=initp2" ActionType="GenericJson">
+                      <Action OrderNumber="37" TriggerOp="CancelTrigger" TriggerId="a8a73911-e642-4478-95ab-55af985bb04b" ActionType="Trigger">
                         <Condition Enabled="false" Grouping="Or" />
                       </Action>
-                      <Action OrderNumber="38" JsonEndpointExpression="http://127.0.0.1:47774/?destroy=innerdilei" ActionType="GenericJson">
+                      <Action OrderNumber="38" TriggerOp="CancelTrigger" TriggerId="b63cbb1e-3476-4535-b45d-fa35e4d2cc7e" ActionType="Trigger">
                         <Condition Enabled="false" Grouping="Or" />
                       </Action>
-                      <Action OrderNumber="39" JsonEndpointExpression="http://127.0.0.1:47774/?destroy=outerdilei" ActionType="GenericJson">
+                      <Action OrderNumber="39" JsonEndpointExpression="http://127.0.0.1:47774/?destroy=ph8" ActionType="GenericJson">
                         <Condition Enabled="false" Grouping="Or" />
                       </Action>
-                      <Action OrderNumber="40" OBSEndPoint="" VariableOp="UnsetRegex" VariableName="绝亚jc_P2.*clone" ActionType="Variable">
+                      <Action OrderNumber="40" JsonEndpointExpression="http://127.0.0.1:47774/?destroy=initp2" ActionType="GenericJson">
                         <Condition Enabled="false" Grouping="Or" />
                       </Action>
-                      <Action OrderNumber="41" JsonEndpointExpression="http://127.0.0.1:47774/?destroy=3chuan" ActionType="GenericJson">
+                      <Action OrderNumber="41" JsonEndpointExpression="http://127.0.0.1:47774/?destroy=innerdilei" ActionType="GenericJson">
                         <Condition Enabled="false" Grouping="Or" />
                       </Action>
-                      <Action OrderNumber="42" JsonEndpointExpression="http://127.0.0.1:47774/?destroy=4chuan" ActionType="GenericJson">
+                      <Action OrderNumber="42" JsonEndpointExpression="http://127.0.0.1:47774/?destroy=outerdilei" ActionType="GenericJson">
                         <Condition Enabled="false" Grouping="Or" />
                       </Action>
-                      <Action OrderNumber="43" TriggerOp="EnableTrigger" TriggerId="5dbd75d6-98e2-4075-a5a0-d96e839497cf" ActionType="Trigger">
+                      <Action OrderNumber="43" OBSEndPoint="" VariableOp="UnsetRegex" VariableName="绝亚jc_P2.*clone" ActionType="Variable">
                         <Condition Enabled="false" Grouping="Or" />
                       </Action>
-                      <Action OrderNumber="44" VariableName="绝亚_P2_3传毒_Clone" VariableExpression="1" ActionType="Variable">
+                      <Action OrderNumber="44" JsonEndpointExpression="http://127.0.0.1:47774/?destroy=3chuan" ActionType="GenericJson">
                         <Condition Enabled="false" Grouping="Or" />
                       </Action>
-                      <Action OrderNumber="45" VariableOp="UnsetRegex" VariableName=".毒_.*_Clone" ActionType="Variable">
+                      <Action OrderNumber="45" JsonEndpointExpression="http://127.0.0.1:47774/?destroy=4chuan" ActionType="GenericJson">
                         <Condition Enabled="false" Grouping="Or" />
                       </Action>
-                      <Action OrderNumber="46" VariableOp="UnsetRegex" VariableName=".疫苗_.*_Clone" ActionType="Variable">
+                      <Action OrderNumber="46" TriggerOp="EnableTrigger" TriggerId="5dbd75d6-98e2-4075-a5a0-d96e839497cf" ActionType="Trigger">
                         <Condition Enabled="false" Grouping="Or" />
                       </Action>
-                      <Action OrderNumber="47" VariableName="P2传毒_Clone" ActionType="Variable">
+                      <Action OrderNumber="47" VariableName="绝亚_P2_3传毒_Clone" VariableExpression="1" ActionType="Variable">
                         <Condition Enabled="false" Grouping="Or" />
                       </Action>
-                      <Action OrderNumber="48" ActionType="Placeholder" Description=" 清理P3" DescriptionOverride="True">
+                      <Action OrderNumber="48" VariableOp="UnsetRegex" VariableName=".毒_.*_Clone" ActionType="Variable">
                         <Condition Enabled="false" Grouping="Or" />
                       </Action>
-                      <Action OrderNumber="49" TriggerOp="CancelTrigger" TriggerId="c87e8c6a-d1e5-4305-a605-84bfac339b50" ActionType="Trigger">
+                      <Action OrderNumber="49" VariableOp="UnsetRegex" VariableName=".疫苗_.*_Clone" ActionType="Variable">
                         <Condition Enabled="false" Grouping="Or" />
                       </Action>
-                      <Action OrderNumber="50" VariableName="绝亚P3死刑次数" ActionType="Variable">
+                      <Action OrderNumber="50" VariableName="P2传毒_Clone" ActionType="Variable">
                         <Condition Enabled="false" Grouping="Or" />
                       </Action>
-                      <Action OrderNumber="51" VariableName="神罚射线id" ActionType="Variable">
+                      <Action OrderNumber="51" ActionType="Placeholder" Description=" 清理P3" DescriptionOverride="True">
                         <Condition Enabled="false" Grouping="Or" />
                       </Action>
-                      <Action OrderNumber="52" VariableName="伤害提高层数_Clone" ActionType="Variable">
+                      <Action OrderNumber="52" VariableName="绝亚P3死刑次数" ActionType="Variable">
                         <Condition Enabled="false" Grouping="Or" />
                       </Action>
-                      <Action OrderNumber="53" VariableName="绝亚_净化射线_Clone" ActionType="Variable">
+                      <Action OrderNumber="53" VariableName="神罚射线id" ActionType="Variable">
                         <Condition Enabled="false" Grouping="Or" />
                       </Action>
-                      <Action OrderNumber="54" TriggerId="55fb0864-449d-4aea-a87f-b049ef91df14" TriggerForce="true" ActionType="Trigger">
+                      <Action OrderNumber="54" VariableName="伤害提高层数_Clone" ActionType="Variable">
                         <Condition Enabled="false" Grouping="Or" />
                       </Action>
-                      <Action OrderNumber="55" TriggerId="2a4a3b05-1039-479c-8a87-cdfbe5a02575" TriggerForce="true" ActionType="Trigger">
+                      <Action OrderNumber="55" VariableName="绝亚_净化射线_Clone" ActionType="Variable">
                         <Condition Enabled="false" Grouping="Or" />
                       </Action>
-                      <Action OrderNumber="56" VariableName="绝亚_真心寄了_Clone" ActionType="Variable">
+                      <Action OrderNumber="56" TriggerId="55fb0864-449d-4aea-a87f-b049ef91df14" TriggerForce="true" ActionType="Trigger">
                         <Condition Enabled="false" Grouping="Or" />
                       </Action>
-                      <Action OrderNumber="57" TriggerOp="DisableTrigger" TriggerId="f3162919-5386-43dc-922f-0afa989c5c7f" ActionType="Trigger">
+                      <Action OrderNumber="57" TriggerId="2a4a3b05-1039-479c-8a87-cdfbe5a02575" TriggerForce="true" ActionType="Trigger">
                         <Condition Enabled="false" Grouping="Or" />
                       </Action>
-                      <Action OrderNumber="58" TriggerOp="DisableTrigger" TriggerId="f5ef4582-dcaf-4066-bc4e-4d2de58bc5b5" ActionType="Trigger">
+                      <Action OrderNumber="58" VariableName="绝亚_真心寄了_Clone" ActionType="Variable">
                         <Condition Enabled="false" Grouping="Or" />
                       </Action>
-                      <Action OrderNumber="59" TriggerOp="DisableTrigger" TriggerId="f3a3279b-c725-4d53-8f7d-a182338e023b" ActionType="Trigger">
+                      <Action OrderNumber="59" TriggerOp="DisableTrigger" TriggerId="f3162919-5386-43dc-922f-0afa989c5c7f" ActionType="Trigger">
                         <Condition Enabled="false" Grouping="Or" />
                       </Action>
-                      <Action OrderNumber="60" TriggerOp="DisableTrigger" TriggerId="6ca15bce-44f6-4600-894f-0518273a136a" ActionType="Trigger">
+                      <Action OrderNumber="60" TriggerOp="DisableTrigger" TriggerId="f5ef4582-dcaf-4066-bc4e-4d2de58bc5b5" ActionType="Trigger">
                         <Condition Enabled="false" Grouping="Or" />
                       </Action>
-                      <Action OrderNumber="61" FolderOp="DisableFolder" FolderId="61b6b4e5-cf67-440d-8b5a-faed74115c93" ActionType="Folder">
+                      <Action OrderNumber="61" TriggerOp="DisableTrigger" TriggerId="f3a3279b-c725-4d53-8f7d-a182338e023b" ActionType="Trigger">
                         <Condition Enabled="false" Grouping="Or" />
                       </Action>
-                      <Action OrderNumber="62" VariableOp="UnsetRegex" VariableName="绝亚_1.5_.*" ActionType="Variable">
+                      <Action OrderNumber="62" TriggerOp="DisableTrigger" TriggerId="6ca15bce-44f6-4600-894f-0518273a136a" ActionType="Trigger">
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Action>
+                      <Action OrderNumber="63" FolderOp="DisableFolder" FolderId="61b6b4e5-cf67-440d-8b5a-faed74115c93" ActionType="Folder">
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Action>
+                      <Action OrderNumber="64" VariableOp="UnsetRegex" VariableName="绝亚_1.5_.*" ActionType="Variable">
                         <Condition Enabled="false" Grouping="And" />
                       </Action>
-                      <Action OrderNumber="63" VariableOp="UnsetRegex" VariableName="绝亚灵泉_.*" ActionType="Variable">
+                      <Action OrderNumber="65" VariableOp="UnsetRegex" VariableName="绝亚灵泉_.*" ActionType="Variable">
                         <Condition Enabled="false" Grouping="And" />
                       </Action>
-                      <Action OrderNumber="64" VariableOp="SetNumeric" VariableName="罪恶感计数_Clone" VariableExpression="0" ActionType="Variable">
+                      <Action OrderNumber="66" VariableOp="SetNumeric" VariableName="罪恶感计数_Clone" VariableExpression="0" ActionType="Variable">
                         <Condition Enabled="false" Grouping="Or" />
                       </Action>
-                      <Action OrderNumber="65" VariableName="残暴x_Clone" ActionType="Variable">
+                      <Action OrderNumber="67" VariableName="残暴x_Clone" ActionType="Variable">
                         <Condition Enabled="false" Grouping="Or" />
                       </Action>
-                      <Action OrderNumber="66" VariableName="mjsign_clone" ActionType="Variable">
+                      <Action OrderNumber="68" VariableName="mjsign_clone" ActionType="Variable">
                         <Condition Enabled="false" Grouping="Or" />
                       </Action>
-                      <Action OrderNumber="67" VariableOp="SetNumeric" VariableName="绝亚_结晶破碎_Clone" VariableExpression="0" ActionType="Variable">
+                      <Action OrderNumber="69" VariableOp="SetNumeric" VariableName="绝亚_结晶破碎_Clone" VariableExpression="0" ActionType="Variable">
                         <Condition Enabled="false" Grouping="Or" />
                       </Action>
-                      <Action OrderNumber="68" JsonEndpointExpression="http://127.0.0.1:47774/?destroy=yucezimu" ActionType="GenericJson">
+                      <Action OrderNumber="70" JsonEndpointExpression="http://127.0.0.1:47774/?destroy=yucezimu" ActionType="GenericJson">
                         <Condition Enabled="false" Grouping="Or" />
                       </Action>
-                      <Action OrderNumber="69" JsonEndpointExpression="http://127.0.0.1:47774/?destroy=yuce0" ActionType="GenericJson">
+                      <Action OrderNumber="71" JsonEndpointExpression="http://127.0.0.1:47774/?destroy=yuce0" ActionType="GenericJson">
                         <Condition Enabled="false" Grouping="Or" />
                       </Action>
-                      <Action OrderNumber="70" JsonEndpointExpression="http://127.0.0.1:47774/?destroy=yuce90" ActionType="GenericJson">
+                      <Action OrderNumber="72" JsonEndpointExpression="http://127.0.0.1:47774/?destroy=yuce90" ActionType="GenericJson">
                         <Condition Enabled="false" Grouping="Or" />
                       </Action>
-                      <Action OrderNumber="71" JsonEndpointExpression="http://127.0.0.1:47774/?destroy=yuce270" ActionType="GenericJson">
+                      <Action OrderNumber="73" JsonEndpointExpression="http://127.0.0.1:47774/?destroy=yuce270" ActionType="GenericJson">
                         <Condition Enabled="false" Grouping="Or" />
                       </Action>
-                      <Action OrderNumber="72" JsonEndpointExpression="http://127.0.0.1:47774/?destroy=d3go" ActionType="GenericJson">
+                      <Action OrderNumber="74" JsonEndpointExpression="http://127.0.0.1:47774/?destroy=d3go" ActionType="GenericJson">
                         <Condition Enabled="false" Grouping="Or" />
                       </Action>
-                      <Action OrderNumber="73" ActionType="Placeholder" Description=" 清理P4" DescriptionOverride="True">
+                      <Action OrderNumber="75" ActionType="Placeholder" Description=" 清理P4" DescriptionOverride="True">
                         <Condition Enabled="false" Grouping="Or" />
                       </Action>
-                      <Action OrderNumber="74" VariableOp="UnsetRegex" VariableName="绝亚_群体断罪.*" ActionType="Variable">
+                      <Action OrderNumber="76" VariableOp="UnsetRegex" VariableName="绝亚_群体断罪.*" ActionType="Variable">
                         <Condition Enabled="false" Grouping="Or" />
                       </Action>
-                      <Action OrderNumber="75" FolderOp="DisableFolder" FolderId="427dd924-f52b-498a-936b-fbe89d5957ee" TriggerOp="EnableTrigger" ActionType="Folder">
+                      <Action OrderNumber="77" FolderOp="DisableFolder" FolderId="427dd924-f52b-498a-936b-fbe89d5957ee" TriggerOp="EnableTrigger" ActionType="Folder">
                         <Condition Enabled="false" Grouping="Or" />
                       </Action>
-                      <Action OrderNumber="76" FolderOp="DisableFolder" FolderId="ff08c896-4564-4750-a4cd-2b1a6b64a206" TriggerOp="EnableTrigger" ActionType="Folder">
+                      <Action OrderNumber="78" FolderOp="DisableFolder" FolderId="ff08c896-4564-4750-a4cd-2b1a6b64a206" TriggerOp="EnableTrigger" ActionType="Folder">
                         <Condition Enabled="false" Grouping="Or" />
                       </Action>
-                      <Action OrderNumber="77" ListVariableExpressionType="Numeric" ListVariableName="绝亚_地火L位置_Clone" ActionType="ListVariable">
+                      <Action OrderNumber="79" ListVariableExpressionType="Numeric" ListVariableName="绝亚_地火L位置_Clone" ActionType="ListVariable">
                         <Condition Enabled="false" Grouping="Or" />
                       </Action>
-                      <Action OrderNumber="78" VariableOp="SetNumeric" VariableName="绝亚_地火L_地火次数_Clone" VariableExpression="0" ActionType="Variable">
+                      <Action OrderNumber="80" VariableOp="SetNumeric" VariableName="绝亚_地火L_地火次数_Clone" VariableExpression="0" ActionType="Variable">
                         <Condition Enabled="false" Grouping="Or" />
                       </Action>
-                      <Action OrderNumber="79" ActionType="Placeholder" Description=" 附加组件清理" DescriptionOverride="True">
+                      <Action OrderNumber="81" ActionType="Placeholder" Description=" 附加组件清理" DescriptionOverride="True">
                         <Condition Enabled="false" Grouping="Or" />
                       </Action>
-                      <Action OrderNumber="80" VariableName="绝亚_1.5麻将_类型_Clone" ActionType="Variable">
+                      <Action OrderNumber="82" VariableName="绝亚_1.5麻将_类型_Clone" ActionType="Variable">
                         <Condition Enabled="false" Grouping="Or" />
                       </Action>
-                      <Action OrderNumber="81" VariableName="绝亚_1.5麻将_序号_Clone" ActionType="Variable">
+                      <Action OrderNumber="83" VariableName="绝亚_1.5麻将_序号_Clone" ActionType="Variable">
                         <Condition Enabled="false" Grouping="Or" />
                       </Action>
-                      <Action OrderNumber="82" VariableName="绝亚_1.5麻将地火计数_Clone" ActionType="Variable">
+                      <Action OrderNumber="84" VariableName="绝亚_1.5麻将地火计数_Clone" ActionType="Variable">
                         <Condition Enabled="false" Grouping="Or" />
                       </Action>
-                      <Action OrderNumber="83" VariableOp="SetString" VariableName="绝亚_1.5麻将地火首轮_Clone" VariableExpression="0" ActionType="Variable">
+                      <Action OrderNumber="85" VariableOp="SetString" VariableName="绝亚_1.5麻将地火首轮_Clone" VariableExpression="0" ActionType="Variable">
                         <Condition Enabled="false" Grouping="Or" />
                       </Action>
-                      <Action OrderNumber="84" VariableOp="SetString" VariableName="绝亚_1.5麻将地火首轮2_Clone" VariableExpression="0" ActionType="Variable">
+                      <Action OrderNumber="86" VariableOp="SetString" VariableName="绝亚_1.5麻将地火首轮2_Clone" VariableExpression="0" ActionType="Variable">
                         <Condition Enabled="false" Grouping="Or" />
                       </Action>
-                      <Action OrderNumber="85" TriggerOp="EnableTrigger" TriggerId="11abd2e9-cdea-477a-b02a-fdc641334e84" ActionType="Trigger">
+                      <Action OrderNumber="87" TriggerOp="EnableTrigger" TriggerId="11abd2e9-cdea-477a-b02a-fdc641334e84" ActionType="Trigger">
                         <Condition Enabled="false" Grouping="Or" />
                       </Action>
                     </Actions>
@@ -9582,7 +9597,7 @@
               </Folder>
               <Folder Id="d476e787-e4f0-4498-bfbc-17f01d357a3a" Name="Ex. 1.5麻将指路 【初次使用请务必查看此分组内容，默认开启触发器指路，如果您已经在使用1.5麻将脚本请关闭此分组或调整触发器显示内容】" Enabled="true">
                 <Folders>
-                  <Folder FFXIVZoneFilterEnabled="True" FfxivZoneFilterRegularExpression="^887$" Id="f730a959-9827-436d-80a3-6042f6b5adbd" Name="B. 1.5麻将触发器指路 - 【脚本与触发器重复，请自选其一使用！】" Enabled="true">
+                  <Folder FFXIVZoneFilterEnabled="True" FfxivZoneFilterRegularExpression="^887$" Id="f730a959-9827-436d-80a3-6042f6b5adbd" Name="B. 触发器指路 - 【脚本与触发器重复，请自选其一使用！】" Enabled="true">
                     <Folders>
                       <Folder Id="728033ac-700d-415c-9237-0e537529d20f" Name="使用需知：(依赖OverlayPlugin悬浮窗插件日志行)" Enabled="true">
                         <Folders />
@@ -12510,14 +12525,13 @@
                               <Action OrderNumber="18" LogMessageText="[23:52:15.582] ActionEffect 15:4000D6FA:巡航驱逐者:4830:鹰式破坏炮:E0000000::0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:::::::::::44:44:0:10000:::100.00:115.00:0.00:2.38:0000522D:0:0" LogProcess="True" ActionType="LogMessage" ExecutionDelayExpression="2.2 * 1000" />
                             </Actions>
                             <Condition Enabled="false" Grouping="Or" />
-                            <Conditions />
                           </Trigger>
                         </Triggers>
                       </Folder>
                     </Folders>
                     <Triggers />
                   </Folder>
-                  <Folder Id="29e069fd-5475-452f-a161-64e0603b9a0d" Name="A. 1.5麻将Splatoon脚本 - 【脚本与触发器重复，请自选其一使用！】" Enabled="true">
+                  <Folder Id="29e069fd-5475-452f-a161-64e0603b9a0d" Name="A. Splatoon脚本 - 【脚本与触发器重复，请自选其一使用！】" Enabled="true">
                     <Folders />
                     <Triggers>
                       <Trigger Enabled="true" Name="1. (请双击触发后点击描述或者访问链接) 链接：https://github.com/RedAsteroid/FFXIV_Triggers/blob/main/src/TEA_P2_Transition_cn.cs" Id="88b606d7-57b2-4d51-91fe-0e1e3ff7309a" RegularExpression="" Description="using Dalamud.Game.ClientState.Conditions;&#xD;&#xA;using Dalamud.Game.ClientState.Objects.Types;&#xD;&#xA;using Dalamud.Interface.Colors;&#xD;&#xA;using ECommons;&#xD;&#xA;using ECommons.DalamudServices;&#xD;&#xA;using ECommons.Hooks;&#xD;&#xA;using ECommons.Hooks.ActionEffectTypes;&#xD;&#xA;using ECommons.ImGuiMethods;&#xD;&#xA;using ECommons.Logging;&#xD;&#xA;using Splatoon;&#xD;&#xA;using Splatoon.Memory;&#xD;&#xA;using Splatoon.SplatoonScripting;&#xD;&#xA;using System;&#xD;&#xA;using System.Collections.Generic;&#xD;&#xA;using System.Numerics;&#xD;&#xA;using System.Linq;&#xD;&#xA;using System.Text;&#xD;&#xA;using System.Threading.Tasks;&#xD;&#xA;&#xD;&#xA;namespace SplatoonScriptsOfficial.Duties.Shadowbringers&#xD;&#xA;{&#xD;&#xA;    public class TEA_P2_Transition : SplatoonScript&#xD;&#xA;    {&#xD;&#xA;        public override HashSet&lt;uint&gt; ValidTerritories =&gt; new() { 887 };&#xD;&#xA;        public override Metadata? Metadata =&gt; new(1, &quot;Madou Shoujo-ErrerCNserver-redrawtest&quot;);&#xD;&#xA;        private string ElementNamePrefix = &quot;TEA_P2_Transition_Bait_Position&quot;;&#xD;&#xA;        // ActionEffectId of the exaflare.&#xD;&#xA;        private uint HawkBlast = 18480;&#xD;&#xA;        // Circular ordered list of center of outside flares.&#xD;&#xA;        // Note the vector3 element order is: (X, Z, Y) because that's how it is stored from ActionEffectSet.&#xD;&#xA;        private List&lt;Vector3&gt; FlareList = new List&lt;Vector3&gt; {&#xD;&#xA;            new Vector3(90, 0, 90),&#xD;&#xA;            new Vector3(100, 0, 86),&#xD;&#xA;            new Vector3(110, 0, 90),&#xD;&#xA;            new Vector3(114, 0, 100),&#xD;&#xA;            new Vector3(110, 0, 110),&#xD;&#xA;            new Vector3(100, 0, 114),&#xD;&#xA;            new Vector3(90, 0, 110),&#xD;&#xA;            new Vector3(86, 0, 100),&#xD;&#xA;        };&#xD;&#xA;&#xD;&#xA;        private int LCNumber = 0;&#xD;&#xA;        private bool MechanicActive = false;&#xD;&#xA;        private uint BlastCount = 0;&#xD;&#xA;        private Element? Flare_a;&#xD;&#xA;        private Element? Flare_b;&#xD;&#xA;        private Element? Flare_m0;&#xD;&#xA;        private Element? Flare_m;&#xD;&#xA;        private Element? Indicator_a;&#xD;&#xA;        private Element? Indicator_b;&#xD;&#xA;        // add outer ring and change colors&#xD;&#xA;        private Element? Flare_a1;&#xD;&#xA;        private Element? Flare_b1;&#xD;&#xA;        private Element? Flare_m1;&#xD;&#xA;        private Element? Indicator_a1;&#xD;&#xA;        private Element? Indicator_b1;&#xD;&#xA;&#xD;&#xA;        public override void OnSetup()&#xD;&#xA;        {&#xD;&#xA;            Element fa = new Element(0);&#xD;&#xA;            fa.Enabled = false;&#xD;&#xA;            fa.radius = 10f;&#xD;&#xA;            fa.Filled = false;&#xD;&#xA;            fa.color = 4278255421;&#xD;&#xA;            fa.thicc = 3f;&#xD;&#xA;            Controller.RegisterElement(ElementNamePrefix + &quot;Flare_a&quot;, fa, true);&#xD;&#xA;            Flare_a = Controller.GetElementByName(ElementNamePrefix + &quot;Flare_a&quot;); &#xD;&#xA;            &#xD;&#xA;            // add fa1&#xD;&#xA;            Element fa1 = new Element(0);&#xD;&#xA;            fa1.Enabled = false;&#xD;&#xA;            fa1.radius = 10f;&#xD;&#xA;            fa1.Filled = true;&#xD;&#xA;            fa1.color = 1258356541;&#xD;&#xA;            fa1.thicc = 3f;&#xD;&#xA;            Controller.RegisterElement(ElementNamePrefix + &quot;Flare_a1&quot;, fa1, true);&#xD;&#xA;            Flare_a1 = Controller.GetElementByName(ElementNamePrefix + &quot;Flare_a1&quot;); &#xD;&#xA;&#xD;&#xA;            Element fb = new Element(0);&#xD;&#xA;            fb.Enabled = false;&#xD;&#xA;            fb.radius = 10f;&#xD;&#xA;            fb.Filled = false;&#xD;&#xA;            fb.color = 4278255421;&#xD;&#xA;            fb.thicc = 3f;&#xD;&#xA;            Controller.RegisterElement(ElementNamePrefix + &quot;Flare_b&quot;, fb, true);&#xD;&#xA;            Flare_b = Controller.GetElementByName(ElementNamePrefix + &quot;Flare_b&quot;); &#xD;&#xA;            &#xD;&#xA;            // add fb1&#xD;&#xA;            Element fb1 = new Element(0);&#xD;&#xA;            fb1.Enabled = false;&#xD;&#xA;            fb1.radius = 10f;&#xD;&#xA;            fb1.Filled = true;&#xD;&#xA;            fb1.color = 1258356541;&#xD;&#xA;            fb1.thicc = 3f;&#xD;&#xA;            Controller.RegisterElement(ElementNamePrefix + &quot;Flare_b1&quot;, fb1, true);&#xD;&#xA;            Flare_b1 = Controller.GetElementByName(ElementNamePrefix + &quot;Flare_b1&quot;); &#xD;&#xA;&#xD;&#xA;            // add fm0&#xD;&#xA;            Element fm0 = new Element(0);&#xD;&#xA;            fm0.Enabled = false;&#xD;&#xA;            SetElementPosition(fm0, 100, 100, 0);&#xD;&#xA;            fm0.radius = 10f;&#xD;&#xA;            fm0.Filled = false;&#xD;&#xA;            fm0.color = 4294967295;&#xD;&#xA;            fm0.thicc = 6f;&#xD;&#xA;            Controller.RegisterElement(ElementNamePrefix + &quot;Flare_m0&quot;, fm0, true);&#xD;&#xA;            Flare_m0 = Controller.GetElementByName(ElementNamePrefix + &quot;Flare_m0&quot;);&#xD;&#xA;&#xD;&#xA;            Element fm = new Element(0);&#xD;&#xA;            fm.Enabled = false;&#xD;&#xA;            SetElementPosition(fm, 100, 100, 0);&#xD;&#xA;            fm.radius = 10f;&#xD;&#xA;            fm.Filled = false;&#xD;&#xA;            fm.color = 4294904576;&#xD;&#xA;            fm.thicc = 3f;&#xD;&#xA;            Controller.RegisterElement(ElementNamePrefix + &quot;Flare_m&quot;, fm, true);&#xD;&#xA;            Flare_m = Controller.GetElementByName(ElementNamePrefix + &quot;Flare_m&quot;);&#xD;&#xA;            &#xD;&#xA;            // add fm1&#xD;&#xA;            Element fm1 = new Element(0);&#xD;&#xA;            fm1.Enabled = false;&#xD;&#xA;            SetElementPosition(fm1, 100, 100, 0);&#xD;&#xA;            fm1.radius = 10f;&#xD;&#xA;            fm1.Filled = true;&#xD;&#xA;            fm1.color = 1258356541;&#xD;&#xA;            fm1.thicc = 3f;&#xD;&#xA;            Controller.RegisterElement(ElementNamePrefix + &quot;Flare_m1&quot;, fm1, true);&#xD;&#xA;            Flare_m1 = Controller.GetElementByName(ElementNamePrefix + &quot;Flare_m1&quot;);&#xD;&#xA;&#xD;&#xA;            Element a = new Element(0);&#xD;&#xA;            a.Enabled = false;&#xD;&#xA;            a.radius = 0.5f;&#xD;&#xA;            a.overlayFScale = 1f;&#xD;&#xA;            a.color = 4294911232;&#xD;&#xA;            a.thicc = 6f;&#xD;&#xA;            a.overlayBGColor = 4278190080;&#xD;&#xA;            a.overlayTextColor = 4294967295;&#xD;&#xA;            Controller.RegisterElement(ElementNamePrefix + &quot;Indicator_a&quot;, a, true);&#xD;&#xA;            Indicator_a = Controller.GetElementByName(ElementNamePrefix + &quot;Indicator_a&quot;); &#xD;&#xA;&#xD;&#xA;            // add Indicator_a1&#xD;&#xA;            Element a1 = new Element(0);&#xD;&#xA;            a1.Enabled = false;&#xD;&#xA;            a1.radius = 0.5f;&#xD;&#xA;            a1.overlayFScale = 1f;&#xD;&#xA;            a1.color = 4294967295;&#xD;&#xA;            a1.thicc = 3f;&#xD;&#xA;            a1.overlayBGColor = 4278190080;&#xD;&#xA;            a1.overlayTextColor = 4294967295;&#xD;&#xA;            Controller.RegisterElement(ElementNamePrefix + &quot;Indicator_a1&quot;, a1, true);&#xD;&#xA;            Indicator_a1 = Controller.GetElementByName(ElementNamePrefix + &quot;Indicator_a1&quot;); &#xD;&#xA;&#xD;&#xA;            Element b = new Element(0);&#xD;&#xA;            b.Enabled = false;&#xD;&#xA;            b.radius = 0.5f;&#xD;&#xA;            b.overlayFScale = 1f;&#xD;&#xA;            b.color = 4294911232;&#xD;&#xA;            b.thicc = 6f;&#xD;&#xA;            b.overlayBGColor = 4278190080;&#xD;&#xA;            b.overlayTextColor = 4294967295;&#xD;&#xA;            Controller.RegisterElement(ElementNamePrefix + &quot;Indicator_b&quot;, b, true);&#xD;&#xA;            Indicator_b = Controller.GetElementByName(ElementNamePrefix + &quot;Indicator_b&quot;); &#xD;&#xA;&#xD;&#xA;            // add Indicator_b1&#xD;&#xA;            Element b1 = new Element(0);&#xD;&#xA;            b1.Enabled = false;&#xD;&#xA;            b1.radius = 0.5f;&#xD;&#xA;            b1.overlayFScale = 1f;&#xD;&#xA;            b1.color = 4294967295;&#xD;&#xA;            b1.thicc = 3f;&#xD;&#xA;            b1.overlayBGColor = 4278190080;&#xD;&#xA;            b1.overlayTextColor = 4294967295;&#xD;&#xA;            Controller.RegisterElement(ElementNamePrefix + &quot;Indicator_b1&quot;, b1, true);&#xD;&#xA;            Indicator_b1 = Controller.GetElementByName(ElementNamePrefix + &quot;Indicator_b1&quot;); &#xD;&#xA;        }&#xD;&#xA;&#xD;&#xA;        private void Reset()&#xD;&#xA;        {&#xD;&#xA;            MechanicActive = false;&#xD;&#xA;            BlastCount = 0;&#xD;&#xA;            Flare_a.Enabled = false;&#xD;&#xA;            Flare_b.Enabled = false;&#xD;&#xA;            Flare_m0.Enabled = false;&#xD;&#xA;            Flare_m.Enabled = false;&#xD;&#xA;            Indicator_a.Enabled = false;&#xD;&#xA;            Indicator_b.Enabled = false;&#xD;&#xA;            // add more&#xD;&#xA;            Flare_a1.Enabled = false;&#xD;&#xA;            Flare_b1.Enabled = false;&#xD;&#xA;            Flare_m1.Enabled = false;&#xD;&#xA;            Indicator_a1.Enabled = false;&#xD;&#xA;            Indicator_b1.Enabled = false;&#xD;&#xA;        }&#xD;&#xA;&#xD;&#xA;        public override void OnEnable()&#xD;&#xA;        {&#xD;&#xA;            ActionEffect.ActionEffectEvent += ActionEffect_ActionEffectEvent;&#xD;&#xA;        }&#xD;&#xA;&#xD;&#xA;        public override void OnDisable()&#xD;&#xA;        {&#xD;&#xA;            ActionEffect.ActionEffectEvent -= ActionEffect_ActionEffectEvent;&#xD;&#xA;        }&#xD;&#xA;&#xD;&#xA;        public override void OnMessage(string Message)&#xD;&#xA;        {&#xD;&#xA;            if (Message == &quot;代号摧毁者！ 发现威胁差分闭合宇宙的敌人……开始歼灭！&quot;)&#xD;&#xA;            {&#xD;&#xA;                MechanicActive = true;&#xD;&#xA;            }&#xD;&#xA;        }&#xD;&#xA;&#xD;&#xA;        public override void OnUpdate()&#xD;&#xA;        {&#xD;&#xA;            if (MechanicActive &amp;&amp; BlastCount &gt;= 18)&#xD;&#xA;                Reset();&#xD;&#xA;        }&#xD;&#xA;&#xD;&#xA;        public override void OnDirectorUpdate(DirectorUpdateCategory category)&#xD;&#xA;        {&#xD;&#xA;            if (category.EqualsAny(DirectorUpdateCategory.Wipe, DirectorUpdateCategory.Recommence))&#xD;&#xA;                Reset();&#xD;&#xA;        }&#xD;&#xA;&#xD;&#xA;        public override void OnVFXSpawn(uint target, string vfxPath)&#xD;&#xA;        {&#xD;&#xA;            if (vfxPath.StartsWith(&quot;vfx/lockon/eff/m0361trg_a&quot;))&#xD;&#xA;                LCNumber = GetMyNumber();&#xD;&#xA;        }&#xD;&#xA;&#xD;&#xA;        private Vector3 GetNextFlare(Vector3 current)&#xD;&#xA;        {&#xD;&#xA;            for (var i = 0; i &lt; FlareList.Count; i++)&#xD;&#xA;            {&#xD;&#xA;                if (Vector3.Distance(current, FlareList[i]) &lt; 5)&#xD;&#xA;                    return FlareList[(i+1) % FlareList.Count];&#xD;&#xA;            }&#xD;&#xA;            return new Vector3(100, 0, 100);&#xD;&#xA;        }&#xD;&#xA;&#xD;&#xA;        private void SetElementPosition(Element e, float x, float y, float z)&#xD;&#xA;        {&#xD;&#xA;            e.refX = x;&#xD;&#xA;            e.refY = y;&#xD;&#xA;            e.refZ = z;&#xD;&#xA;        }&#xD;&#xA;&#xD;&#xA;        private int GetMyNumber()&#xD;&#xA;        {&#xD;&#xA;            if (AttachedInfo.VFXInfos.TryGetValue(Svc.ClientState.LocalPlayer.Address, out var info))&#xD;&#xA;            {&#xD;&#xA;                if (info.OrderBy(x =&gt; x.Value.Age).TryGetFirst(x =&gt; x.Key.StartsWith(&quot;vfx/lockon/eff/m0361trg_a&quot;), out var effect))&#xD;&#xA;                {&#xD;&#xA;                    return int.Parse(effect.Key.Replace(&quot;vfx/lockon/eff/m0361trg_a&quot;, &quot;&quot;)[0].ToString());&#xD;&#xA;                }&#xD;&#xA;            }&#xD;&#xA;            return 0;&#xD;&#xA;        }&#xD;&#xA;&#xD;&#xA;        private void MarkBaitTether(Element e, int n)&#xD;&#xA;        {&#xD;&#xA;            if (LCNumber == n)&#xD;&#xA;                e.tether = true;&#xD;&#xA;            else&#xD;&#xA;                e.tether = false;&#xD;&#xA;            e.overlayText = n.ToString();&#xD;&#xA;        }&#xD;&#xA;&#xD;&#xA;        private void ActionEffect_ActionEffectEvent(ActionEffectSet set)&#xD;&#xA;        {&#xD;&#xA;            if (!MechanicActive)&#xD;&#xA;                return;&#xD;&#xA;&#xD;&#xA;            if (set.Action.RowId == HawkBlast)&#xD;&#xA;            {&#xD;&#xA;                BlastCount++;&#xD;&#xA;&#xD;&#xA;                // Show next flare.&#xD;&#xA;                if (BlastCount == 1 || BlastCount == 3 || BlastCount == 5 || BlastCount == 10 || BlastCount == 12 || BlastCount == 14)&#xD;&#xA;                {&#xD;&#xA;                    Vector3 nextFlare = GetNextFlare(set.Position);&#xD;&#xA;                    SetElementPosition(Flare_a, nextFlare.X, nextFlare.Z, nextFlare.Y);&#xD;&#xA;                    Flare_a.Enabled = true;&#xD;&#xA;                    // add more&#xD;&#xA;                    SetElementPosition(Flare_a1, nextFlare.X, nextFlare.Z, nextFlare.Y);&#xD;&#xA;                    Flare_a1.Enabled = true;&#xD;&#xA;                }&#xD;&#xA;                if (BlastCount == 2 || BlastCount == 4 || BlastCount == 6 || BlastCount == 11 || BlastCount == 13 || BlastCount == 15)&#xD;&#xA;                {&#xD;&#xA;                    Vector3 nextFlare = GetNextFlare(set.Position);&#xD;&#xA;                    SetElementPosition(Flare_b, nextFlare.X, nextFlare.Z, nextFlare.Y);&#xD;&#xA;                    Flare_b.Enabled = true;&#xD;&#xA;                    // add more&#xD;&#xA;                    SetElementPosition(Flare_b1, nextFlare.X, nextFlare.Z, nextFlare.Y);&#xD;&#xA;                    Flare_b1.Enabled = true;&#xD;&#xA;                }&#xD;&#xA;                if (BlastCount == 7 || BlastCount == 16)&#xD;&#xA;                {&#xD;&#xA;                    Vector3 nextFlare = GetNextFlare(set.Position);&#xD;&#xA;                    SetElementPosition(Flare_a, nextFlare.X, nextFlare.Z, nextFlare.Y);&#xD;&#xA;                    Flare_a.Enabled = false;&#xD;&#xA;                    // add more&#xD;&#xA;                    SetElementPosition(Flare_a1, nextFlare.X, nextFlare.Z, nextFlare.Y);&#xD;&#xA;                    Flare_a1.Enabled = false;&#xD;&#xA;                }&#xD;&#xA;                if (BlastCount == 8 || BlastCount == 17)&#xD;&#xA;                {&#xD;&#xA;                    Vector3 nextFlare = GetNextFlare(set.Position);&#xD;&#xA;                    SetElementPosition(Flare_b, nextFlare.X, nextFlare.Z, nextFlare.Y);&#xD;&#xA;                    Flare_b.Enabled = false;&#xD;&#xA;                    //add more&#xD;&#xA;                    SetElementPosition(Flare_b1, nextFlare.X, nextFlare.Z, nextFlare.Y);&#xD;&#xA;                    Flare_b1.Enabled = false;&#xD;&#xA;                    Flare_m0.Enabled = true;&#xD;&#xA;                    Flare_m.Enabled = true;&#xD;&#xA;                    Flare_m1.Enabled = true;&#xD;&#xA;                }&#xD;&#xA;                if (BlastCount == 9)&#xD;&#xA;                {&#xD;&#xA;                    Flare_m0.Enabled = false;&#xD;&#xA;                    Flare_m.Enabled = false;&#xD;&#xA;                    Flare_m1.Enabled = false;&#xD;&#xA;                    Flare_a.Enabled = true;&#xD;&#xA;                    Flare_b.Enabled = true;&#xD;&#xA;                    // add more&#xD;&#xA;                    Flare_a1.Enabled = true;&#xD;&#xA;                    Flare_b1.Enabled = true;&#xD;&#xA;                }&#xD;&#xA;&#xD;&#xA;                // 1 bait position&#xD;&#xA;                if (BlastCount == 5)&#xD;&#xA;                {&#xD;&#xA;                    SetElementPosition(Indicator_a, set.Position.X, set.Position.Z, set.Position.Y);&#xD;&#xA;                    MarkBaitTether(Indicator_a, 1);&#xD;&#xA;                    Indicator_a.Enabled = true;&#xD;&#xA;                    // add more&#xD;&#xA;                    SetElementPosition(Indicator_a1, set.Position.X, set.Position.Z, set.Position.Y);&#xD;&#xA;                    MarkBaitTether(Indicator_a1, 1);&#xD;&#xA;                    Indicator_a1.Enabled = true;&#xD;&#xA;                }&#xD;&#xA;                if (BlastCount == 6)&#xD;&#xA;                {            &#xD;&#xA;                    SetElementPosition(Indicator_b, set.Position.X, set.Position.Z, set.Position.Y);&#xD;&#xA;                    MarkBaitTether(Indicator_b, 1);&#xD;&#xA;                    Indicator_b.Enabled = true;&#xD;&#xA;                    // add more&#xD;&#xA;                    SetElementPosition(Indicator_b1, set.Position.X, set.Position.Z, set.Position.Y);&#xD;&#xA;                    MarkBaitTether(Indicator_b1, 1);&#xD;&#xA;                    Indicator_b1.Enabled = true;&#xD;&#xA;                }&#xD;&#xA;                // 3 bait position&#xD;&#xA;                if (BlastCount == 7)&#xD;&#xA;                {&#xD;&#xA;                    SetElementPosition(Indicator_a, set.Position.X, set.Position.Z, set.Position.Y);&#xD;&#xA;                    MarkBaitTether(Indicator_a, 3);&#xD;&#xA;                    // add more&#xD;&#xA;                    SetElementPosition(Indicator_a1, set.Position.X, set.Position.Z, set.Position.Y);&#xD;&#xA;                    MarkBaitTether(Indicator_a1, 3);&#xD;&#xA;                }&#xD;&#xA;                if (BlastCount == 8)&#xD;&#xA;                {&#xD;&#xA;                    SetElementPosition(Indicator_b, set.Position.X, set.Position.Z, set.Position.Y);&#xD;&#xA;                    MarkBaitTether(Indicator_b, 3);&#xD;&#xA;                    // add more&#xD;&#xA;                    SetElementPosition(Indicator_b1, set.Position.X, set.Position.Z, set.Position.Y);&#xD;&#xA;                    MarkBaitTether(Indicator_b1, 3);&#xD;&#xA;                }&#xD;&#xA;                // 5 bait position&#xD;&#xA;                if (BlastCount == 12)&#xD;&#xA;                {&#xD;&#xA;                    SetElementPosition(Indicator_a, set.Position.X, set.Position.Z, set.Position.Y);&#xD;&#xA;                    MarkBaitTether(Indicator_a, 5);&#xD;&#xA;                    // add more&#xD;&#xA;                    SetElementPosition(Indicator_a1, set.Position.X, set.Position.Z, set.Position.Y);&#xD;&#xA;                    MarkBaitTether(Indicator_a1, 5);&#xD;&#xA;                }&#xD;&#xA;                if (BlastCount == 13)&#xD;&#xA;                {&#xD;&#xA;                    SetElementPosition(Indicator_b, set.Position.X, set.Position.Z, set.Position.Y);&#xD;&#xA;                    MarkBaitTether(Indicator_b, 5);&#xD;&#xA;                    // add more&#xD;&#xA;                    SetElementPosition(Indicator_b1, set.Position.X, set.Position.Z, set.Position.Y);&#xD;&#xA;                    MarkBaitTether(Indicator_b1, 5);&#xD;&#xA;                }&#xD;&#xA;                // 7 bait position&#xD;&#xA;                if (BlastCount == 16)&#xD;&#xA;                {&#xD;&#xA;                    SetElementPosition(Indicator_a, set.Position.X, set.Position.Z, set.Position.Y);&#xD;&#xA;                    MarkBaitTether(Indicator_a, 7);&#xD;&#xA;                    // add more&#xD;&#xA;                    SetElementPosition(Indicator_a1, set.Position.X, set.Position.Z, set.Position.Y);&#xD;&#xA;                    MarkBaitTether(Indicator_a1, 7);&#xD;&#xA;                }&#xD;&#xA;                if (BlastCount == 17)&#xD;&#xA;                {&#xD;&#xA;                    SetElementPosition(Indicator_b, set.Position.X, set.Position.Z, set.Position.Y);&#xD;&#xA;                    MarkBaitTether(Indicator_b, 7);&#xD;&#xA;                    // add more&#xD;&#xA;                    SetElementPosition(Indicator_b1, set.Position.X, set.Position.Z, set.Position.Y);&#xD;&#xA;                    MarkBaitTether(Indicator_b1, 7);&#xD;&#xA;                }&#xD;&#xA;            }&#xD;&#xA;        }&#xD;&#xA;    }&#xD;&#xA;}">
@@ -12564,7 +12578,7 @@
                 <Actions />
                 <Condition Enabled="false" Grouping="Or" />
               </Trigger>
-              <Trigger Enabled="true" Name="修改日期：2024-01-14 添加P1小怪血量监控，修复了1.5麻将触发器地火类型37点名为5时的指引错误，P2踩地雷更改为计数销毁" Id="50c0b933-46be-456c-87bb-3d35433a8d94" RegularExpression="">
+              <Trigger Enabled="true" Name="修改日期：2024-01-18 调整优化P1小怪血量监控绘制执行细节" Id="50c0b933-46be-456c-87bb-3d35433a8d94" RegularExpression="">
                 <Actions />
                 <Condition Enabled="false" Grouping="Or" />
               </Trigger>
