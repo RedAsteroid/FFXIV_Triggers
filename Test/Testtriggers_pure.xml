@@ -115,7 +115,7 @@
       </Folder>
       <Folder Id="601e2b13-12f1-483b-9d9d-77ff167aea7a" Name="1. 绝境战" Enabled="true">
         <Folders>
-          <Folder Id="11d54204-b1b7-454a-884d-c768ee9d9cb0" Name="1. 亚历山大绝境战 2024.01.18" Enabled="true">
+          <Folder Id="11d54204-b1b7-454a-884d-c768ee9d9cb0" Name="1. 亚历山大绝境战 2024.01.20" Enabled="true">
             <Folders>
               <Folder FFXIVZoneFilterEnabled="True" FfxivZoneFilterRegularExpression="^887$" Id="1b5beb16-1ff0-4230-92cc-3cf8dc051b06" Name="P1" Enabled="true">
                 <Folders>
@@ -2614,7 +2614,7 @@
                       </Folder>
                     </Folders>
                     <Triggers>
-                      <Trigger Enabled="true" Sequential="True" Name="4. 血量足够提醒(仅连线1个小怪时) TTS" Id="0e2ef7d1-ddb1-467c-9c13-1f8f31181a01" RegularExpression="^.{14} EffectResult 25:(?&lt;id&gt;[^:]*):狩猎人偶:(?&lt;sequenceId&gt;[^:]*):(?&lt;currentHp&gt;[^:]*):(?&lt;maxHp&gt;[^:]*):(?&lt;currentMp&gt;[^:]*):(?&lt;maxMp&gt;[^:]*):(?&lt;currentShield&gt;[^:]*):[^:]*:(?&lt;x&gt;[^:]*):(?&lt;y&gt;[^:]*):(?&lt;z&gt;[^:]*):(?&lt;heading&gt;.*?)">
+                      <Trigger Enabled="true" Sequential="True" Name="4. 血量足够提醒(仅连线1个小怪时) TTS [可选]" Id="0e2ef7d1-ddb1-467c-9c13-1f8f31181a01" RegularExpression="^.{14} EffectResult 25:(?&lt;id&gt;[^:]*):狩猎人偶:(?&lt;sequenceId&gt;[^:]*):(?&lt;currentHp&gt;[^:]*):(?&lt;maxHp&gt;[^:]*):(?&lt;currentMp&gt;[^:]*):(?&lt;maxMp&gt;[^:]*):(?&lt;currentShield&gt;[^:]*):[^:]*:(?&lt;x&gt;[^:]*):(?&lt;y&gt;[^:]*):(?&lt;z&gt;[^:]*):(?&lt;heading&gt;.*?)">
                         <Actions>
                           <Action OrderNumber="1" VariableOp="SetString" VariableName="绝亚_小怪喂怪_tts_Clone" VariableExpression="1" ActionType="Variable">
                             <Condition Enabled="false" Grouping="Or" />
@@ -2677,6 +2677,15 @@
                           <Action OrderNumber="6" JsonEndpointExpression="http://127.0.0.1:47774/?namespace=xiaoguaib&amp;destroyAt=15000,COMBAT_EXIT,TERRITORY_CHANGE" JsonPayloadExpression="{&quot;Name&quot;:&quot;够了&quot;,&quot;type&quot;:1,&quot;radius&quot;:0.8,&quot;color&quot;:4294907904,&quot;overlayBGColor&quot;:4294901775,&quot;overlayTextColor&quot;:4294967295,&quot;overlayPlaceholders&quot;:true,&quot;thicc&quot;:4.0,&quot;overlayText&quot;:&quot;${numeric:round((${currentHp}/43540)*100,2)}% 喂掉 △&quot;,&quot;refActorObjectID&quot;:${numeric:hex2dec(${id})},&quot;refActorComparisonType&quot;:2,&quot;includeRotation&quot;:true,&quot;onlyTargetable&quot;:true,&quot;onlyVisible&quot;:true}" ActionType="GenericJson">
                             <Condition Enabled="true" Grouping="And">
                               <ConditionSingle Enabled="true" ExpressionL="${currentHp}/43540" ExpressionTypeL="Numeric" ExpressionR="0.25" ExpressionTypeR="Numeric" ConditionType="NumericLess" />
+                              <ConditionSingle Enabled="true" ExpressionL="${currentHp}/43540" ExpressionTypeL="Numeric" ExpressionR="0.1" ExpressionTypeR="Numeric" ConditionType="NumericGreaterEqual" />
+                            </Condition>
+                          </Action>
+                          <Action OrderNumber="7" ActionType="Placeholder" Description="危险" DescriptionOverride="True">
+                            <Condition Enabled="false" Grouping="Or" />
+                          </Action>
+                          <Action OrderNumber="8" JsonEndpointExpression="http://127.0.0.1:47774/?namespace=xiaoguaib&amp;destroyAt=15000,COMBAT_EXIT,TERRITORY_CHANGE" JsonPayloadExpression="{&quot;Name&quot;:&quot;危险&quot;,&quot;type&quot;:1,&quot;radius&quot;:0.8,&quot;color&quot;:4294906112,&quot;overlayBGColor&quot;:4278255603,&quot;overlayTextColor&quot;:4278190080,&quot;overlayPlaceholders&quot;:true,&quot;thicc&quot;:4.0,&quot;overlayText&quot;:&quot;${numeric:round((${currentHp}/43540)*100,2)}% 危险 △&quot;,&quot;refActorObjectID&quot;:${numeric:hex2dec(${id})},&quot;refActorComparisonType&quot;:2,&quot;includeRotation&quot;:true,&quot;onlyTargetable&quot;:true,&quot;onlyVisible&quot;:true}" ActionType="GenericJson">
+                            <Condition Enabled="true" Grouping="And">
+                              <ConditionSingle Enabled="true" ExpressionL="${currentHp}/43540" ExpressionTypeL="Numeric" ExpressionR="0.1" ExpressionTypeR="Numeric" ConditionType="NumericLess" />
                             </Condition>
                           </Action>
                         </Actions>
@@ -2692,7 +2701,10 @@
                       </Trigger>
                       <Trigger Enabled="true" Sequential="True" Name="2.1 首次攻击狩猎人偶临时记录" Id="52f346c9-e063-4054-84da-b12ff91d5d92" RegularExpression="^.{14} (?:\w+) (15|16):(?&lt;sid&gt;[^:]*):(?&lt;sname&gt;[^:]*):(?&lt;id&gt;[^:]*):(?&lt;ability&gt;(?:[^:]|: )*?):(?&lt;tid&gt;[^:]*):狩猎人偶:(?&lt;flags&gt;[^:]*):(?&lt;damage&gt;[^:]*)(?::[^:]*){14}:(?&lt;targetCurrentHp&gt;[^:]*):(?&lt;targetMaxHp&gt;[^:]*):(?&lt;targetCurrentMp&gt;[^:]*):(?&lt;targetMaxMp&gt;[^:]*)(?::[^:]*){2}:(?&lt;targetX&gt;[^:]*):(?&lt;targetY&gt;[^:]*):(?&lt;targetZ&gt;[^:]*):(?&lt;targetHeading&gt;[^:]*):(?&lt;currentHp&gt;[^:]*):(?&lt;maxHp&gt;[^:]*):(?&lt;currentMp&gt;[^:]*):(?&lt;maxMp&gt;[^:]*)(?::[^:]*){2}:(?&lt;x&gt;[^:]*):(?&lt;y&gt;[^:]*):(?&lt;z&gt;[^:]*):(?&lt;heading&gt;[^:]*):(?&lt;sequence&gt;[^:]*):(?&lt;targetIndex&gt;[^:]*):(?&lt;targetCount&gt;[^:]*)(?:$|:)">
                         <Actions>
-                          <Action OrderNumber="1" VariableOp="SetString" VariableName="绝亚_小怪喂怪_临时id_Clone" VariableExpression="${id}" ActionType="Variable">
+                          <Action OrderNumber="1" VariableOp="SetString" VariableName="绝亚_小怪喂怪_临时id_Clone" VariableExpression="${tid}" ActionType="Variable">
+                            <Condition Enabled="false" Grouping="Or" />
+                          </Action>
+                          <Action OrderNumber="2" NamedCallbackName="command" NamedCallbackParam="/e 已建立临时目标：${tid} &lt;se.1&gt;" VariableOp="SetString" VariableName="绝亚_小怪喂怪_临时id_Clone" VariableExpression="${id}" Enabled="False" ActionType="NamedCallback">
                             <Condition Enabled="false" Grouping="Or" />
                           </Action>
                         </Actions>
@@ -2702,12 +2714,17 @@
                           <ConditionSingle Enabled="true" ExpressionL="${evar:绝亚_小怪喂怪_临时id_Clone}" ExpressionTypeL="String" ExpressionR="0" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                         </Condition>
                       </Trigger>
-                      <Trigger Enabled="true" Sequential="True" Name="2.2 首次攻击狩猎人偶绘制" Id="141b1ebe-8394-4897-aea5-481d3b09556a" RegularExpression="^.{14} EffectResult 25:(?&lt;id&gt;[^:]*):狩猎人偶:(?&lt;sequenceId&gt;[^:]*):(?&lt;currentHp&gt;[^:]*):(?&lt;maxHp&gt;[^:]*):(?&lt;currentMp&gt;[^:]*):(?&lt;maxMp&gt;[^:]*):(?&lt;currentShield&gt;[^:]*):[^:]*:(?&lt;x&gt;[^:]*):(?&lt;y&gt;[^:]*):(?&lt;z&gt;[^:]*):(?&lt;heading&gt;.*?)">
+                      <Trigger Enabled="true" Sequential="True" Name="2.2 首次攻击狩猎人偶绘制" Id="141b1ebe-8394-4897-aea5-481d3b09556a" RegularExpression="^.{14} EffectResult 25:(?&lt;id&gt;[^:]*):狩猎人偶:(?&lt;sequenceId&gt;[^:]*):(?&lt;currentHp&gt;[^:]*):(?&lt;maxHp&gt;[^:]*):(?&lt;currentMp&gt;[^:]*):(?&lt;maxMp&gt;[^:]*):(?&lt;currentShield&gt;[^:]*):[^:]*:(?&lt;x&gt;[^:]*):(?&lt;y&gt;[^:]*):(?&lt;z&gt;[^:]*):(?&lt;heading&gt;.*?)" Scheduling="FromLastAction">
                         <Actions>
                           <Action OrderNumber="1" JsonEndpointExpression="http://127.0.0.1:47774/?destroy=xiaoguaic" ActionType="GenericJson">
                             <Condition Enabled="false" Grouping="Or" />
                           </Action>
-                          <Action OrderNumber="2" JsonEndpointExpression="http://127.0.0.1:47774/?namespace=xiaoguaic&amp;destroyAt=15000,COMBAT_EXIT,TERRITORY_CHANGE" JsonPayloadExpression="{&quot;Name&quot;:&quot;还不够&quot;,&quot;type&quot;:1,&quot;radius&quot;:0.8,&quot;color&quot;:4294907904,&quot;overlayBGColor&quot;:4278190080,&quot;overlayTextColor&quot;:4278253567,&quot;thicc&quot;:4.0,&quot;overlayText&quot;:&quot;${numeric:round((${currentHp}/43540)*100),2}%&quot;,&quot;refActorObjectID&quot;:${numeric:hex2dec(${id})},&quot;refActorComparisonType&quot;:2,&quot;includeRotation&quot;:true,&quot;onlyTargetable&quot;:true,&quot;onlyVisible&quot;:true}" ActionType="GenericJson" ExecutionDelayExpression="50">
+                          <Action OrderNumber="2" JsonEndpointExpression="http://127.0.0.1:47774/?namespace=xiaoguaic&amp;destroyAt=15000,COMBAT_EXIT,TERRITORY_CHANGE" JsonPayloadExpression="{&quot;Name&quot;:&quot;还不够&quot;,&quot;type&quot;:1,&quot;radius&quot;:0.8,&quot;color&quot;:4294907904,&quot;overlayBGColor&quot;:4278190080,&quot;overlayTextColor&quot;:4278253567,&quot;thicc&quot;:4.0,&quot;overlayText&quot;:&quot;${numeric:round((${currentHp}/43540)*100,2)}%  △&quot;,&quot;refActorObjectID&quot;:${numeric:hex2dec(${id})},&quot;refActorComparisonType&quot;:2,&quot;includeRotation&quot;:true,&quot;onlyTargetable&quot;:true,&quot;onlyVisible&quot;:true}" ActionType="GenericJson">
+                            <Condition Enabled="true" Grouping="And">
+                              <ConditionSingle Enabled="true" ExpressionL="${currentHp}/43540" ExpressionTypeL="Numeric" ExpressionR="0.25" ExpressionTypeR="Numeric" ConditionType="NumericGreaterEqual" />
+                            </Condition>
+                          </Action>
+                          <Action OrderNumber="3" JsonEndpointExpression="http://127.0.0.1:47774/?namespace=xiaoguaic&amp;destroyAt=15000,COMBAT_EXIT,TERRITORY_CHANGE" JsonPayloadExpression="{&quot;Name&quot;:&quot;还不够&quot;,&quot;type&quot;:1,&quot;radius&quot;:0.8,&quot;color&quot;:4294907904,&quot;overlayBGColor&quot;:4278190080,&quot;overlayTextColor&quot;:4278253567,&quot;thicc&quot;:4.0,&quot;overlayText&quot;:&quot;${numeric:round((${currentHp}/43540)*100),2}%&quot;,&quot;refActorObjectID&quot;:${numeric:hex2dec(${id})},&quot;refActorComparisonType&quot;:2,&quot;includeRotation&quot;:true,&quot;onlyTargetable&quot;:true,&quot;onlyVisible&quot;:true}" NamedCallbackName="command" NamedCallbackParam="/e 画了喵：${currentHp} &lt;se.2&gt;" Enabled="False" ActionType="NamedCallback">
                             <Condition Enabled="true" Grouping="And">
                               <ConditionSingle Enabled="true" ExpressionL="${currentHp}/43540" ExpressionTypeL="Numeric" ExpressionR="0.25" ExpressionTypeR="Numeric" ConditionType="NumericGreaterEqual" />
                             </Condition>
@@ -2904,12 +2921,21 @@
                                 <ConditionSingle Enabled="true" ExpressionL="${id}" ExpressionTypeL="String" ExpressionR="${lvar:绝亚_小怪喂怪_id_Clone[4]}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                                 <ConditionSingle Enabled="true" ExpressionL="${id}" ExpressionTypeL="String" ExpressionR="${lvar:绝亚_小怪喂怪_id_Clone[3]}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                               </ConditionGroup>
+                              <ConditionSingle Enabled="true" ExpressionL="${currentHp}/43540" ExpressionTypeL="Numeric" ExpressionR="0.1" ExpressionTypeR="Numeric" ConditionType="NumericGreaterEqual" />
                             </Condition>
                           </Action>
-                          <Action OrderNumber="6" ActionType="Placeholder" Description="还不够 - 不是自己的" DescriptionOverride="True">
+                          <Action OrderNumber="6" ActionType="Placeholder" Description="危险 - 自己的" DescriptionOverride="True">
                             <Condition Enabled="false" Grouping="Or" />
                           </Action>
-                          <Action OrderNumber="7" JsonEndpointExpression="http://127.0.0.1:47774/?namespace=xiaoguaie${id}&amp;destroyAt=15000,COMBAT_EXIT,TERRITORY_CHANGE" JsonPayloadExpression="{&quot;Name&quot;:&quot;还不够&quot;,&quot;type&quot;:1,&quot;radius&quot;:0.8,&quot;color&quot;:4294907904,&quot;overlayBGColor&quot;:4278190080,&quot;overlayTextColor&quot;:4278253567,&quot;thicc&quot;:4.0,&quot;overlayText&quot;:&quot;${numeric:round((${currentHp}/43540)*100,2)}% &quot;,&quot;refActorObjectID&quot;:${numeric:hex2dec(${id})},&quot;refActorComparisonType&quot;:2,&quot;includeRotation&quot;:true,&quot;onlyTargetable&quot;:true,&quot;onlyVisible&quot;:true}" ActionType="GenericJson">
+                          <Action OrderNumber="7" JsonEndpointExpression="http://127.0.0.1:47774/?namespace=xiaoguaie${id}&amp;destroyAt=15000,COMBAT_EXIT,TERRITORY_CHANGE" JsonPayloadExpression="{&quot;Name&quot;:&quot;危险&quot;,&quot;type&quot;:1,&quot;radius&quot;:0.8,&quot;color&quot;:4294906112,&quot;overlayBGColor&quot;:4278255603,&quot;overlayTextColor&quot;:4278190080,&quot;overlayPlaceholders&quot;:true,&quot;thicc&quot;:4.0,&quot;overlayText&quot;:&quot;${numeric:round((${currentHp}/43540)*100,2)}% 危险 △&quot;,&quot;refActorObjectID&quot;:${numeric:hex2dec(${id})},&quot;refActorComparisonType&quot;:2,&quot;includeRotation&quot;:true,&quot;onlyTargetable&quot;:true,&quot;onlyVisible&quot;:true}" ActionType="GenericJson">
+                            <Condition Enabled="true" Grouping="And">
+                              <ConditionSingle Enabled="true" ExpressionL="${currentHp}/43540" ExpressionTypeL="Numeric" ExpressionR="0.1" ExpressionTypeR="Numeric" ConditionType="NumericLess" />
+                            </Condition>
+                          </Action>
+                          <Action OrderNumber="8" ActionType="Placeholder" Description="还不够 - 不是自己的" DescriptionOverride="True">
+                            <Condition Enabled="false" Grouping="Or" />
+                          </Action>
+                          <Action OrderNumber="9" JsonEndpointExpression="http://127.0.0.1:47774/?namespace=xiaoguaie${id}&amp;destroyAt=15000,COMBAT_EXIT,TERRITORY_CHANGE" JsonPayloadExpression="{&quot;Name&quot;:&quot;还不够&quot;,&quot;type&quot;:1,&quot;radius&quot;:0.8,&quot;color&quot;:4294907904,&quot;overlayBGColor&quot;:4278190080,&quot;overlayTextColor&quot;:4278253567,&quot;thicc&quot;:4.0,&quot;overlayText&quot;:&quot;${numeric:round((${currentHp}/43540)*100,2)}% &quot;,&quot;refActorObjectID&quot;:${numeric:hex2dec(${id})},&quot;refActorComparisonType&quot;:2,&quot;includeRotation&quot;:true,&quot;onlyTargetable&quot;:true,&quot;onlyVisible&quot;:true}" ActionType="GenericJson">
                             <Condition Enabled="true" Grouping="And">
                               <ConditionSingle Enabled="true" ExpressionL="${currentHp}/43540" ExpressionTypeL="Numeric" ExpressionR="0.25" ExpressionTypeR="Numeric" ConditionType="NumericGreaterEqual" />
                               <ConditionSingle Enabled="true" ExpressionL="${id}" ExpressionTypeL="String" ExpressionR="${lvar:绝亚_小怪喂怪_id_Clone[1]}" ExpressionTypeR="String" ConditionType="StringNotEqualNocase" />
@@ -2918,12 +2944,25 @@
                               <ConditionSingle Enabled="true" ExpressionL="${id}" ExpressionTypeL="String" ExpressionR="${lvar:绝亚_小怪喂怪_id_Clone[4]}" ExpressionTypeR="String" ConditionType="StringNotEqualNocase" />
                             </Condition>
                           </Action>
-                          <Action OrderNumber="8" ActionType="Placeholder" Description="够了 - 不是自己的" DescriptionOverride="True">
+                          <Action OrderNumber="10" ActionType="Placeholder" Description="够了 - 不是自己的" DescriptionOverride="True">
                             <Condition Enabled="false" Grouping="Or" />
                           </Action>
-                          <Action OrderNumber="9" JsonEndpointExpression="http://127.0.0.1:47774/?namespace=xiaoguaie${id}&amp;destroyAt=15000,COMBAT_EXIT,TERRITORY_CHANGE" JsonPayloadExpression="{&quot;Name&quot;:&quot;够了&quot;,&quot;type&quot;:1,&quot;radius&quot;:0.8,&quot;color&quot;:4294907904,&quot;overlayBGColor&quot;:4294901775,&quot;overlayTextColor&quot;:4294967295,&quot;overlayPlaceholders&quot;:true,&quot;thicc&quot;:4.0,&quot;overlayText&quot;:&quot;${numeric:round((${currentHp}/43540)*100,2)}% 喂掉&quot;,&quot;refActorObjectID&quot;:${numeric:hex2dec(${id})},&quot;refActorComparisonType&quot;:2,&quot;includeRotation&quot;:true,&quot;onlyTargetable&quot;:true,&quot;onlyVisible&quot;:true}" ActionType="GenericJson">
+                          <Action OrderNumber="11" JsonEndpointExpression="http://127.0.0.1:47774/?namespace=xiaoguaie${id}&amp;destroyAt=15000,COMBAT_EXIT,TERRITORY_CHANGE" JsonPayloadExpression="{&quot;Name&quot;:&quot;够了&quot;,&quot;type&quot;:1,&quot;radius&quot;:0.8,&quot;color&quot;:4294907904,&quot;overlayBGColor&quot;:4294901775,&quot;overlayTextColor&quot;:4294967295,&quot;overlayPlaceholders&quot;:true,&quot;thicc&quot;:4.0,&quot;overlayText&quot;:&quot;${numeric:round((${currentHp}/43540)*100,2)}% 喂掉&quot;,&quot;refActorObjectID&quot;:${numeric:hex2dec(${id})},&quot;refActorComparisonType&quot;:2,&quot;includeRotation&quot;:true,&quot;onlyTargetable&quot;:true,&quot;onlyVisible&quot;:true}" ActionType="GenericJson">
                             <Condition Enabled="true" Grouping="And">
                               <ConditionSingle Enabled="true" ExpressionL="${currentHp}/43540" ExpressionTypeL="Numeric" ExpressionR="0.25" ExpressionTypeR="Numeric" ConditionType="NumericLess" />
+                              <ConditionSingle Enabled="true" ExpressionL="${id}" ExpressionTypeL="String" ExpressionR="${lvar:绝亚_小怪喂怪_id_Clone[1]}" ExpressionTypeR="String" ConditionType="StringNotEqualNocase" />
+                              <ConditionSingle Enabled="true" ExpressionL="${id}" ExpressionTypeL="String" ExpressionR="${lvar:绝亚_小怪喂怪_id_Clone[2]}" ExpressionTypeR="String" ConditionType="StringNotEqualNocase" />
+                              <ConditionSingle Enabled="true" ExpressionL="${id}" ExpressionTypeL="String" ExpressionR="${lvar:绝亚_小怪喂怪_id_Clone[3]}" ExpressionTypeR="String" ConditionType="StringNotEqualNocase" />
+                              <ConditionSingle Enabled="true" ExpressionL="${id}" ExpressionTypeL="String" ExpressionR="${lvar:绝亚_小怪喂怪_id_Clone[4]}" ExpressionTypeR="String" ConditionType="StringNotEqualNocase" />
+                              <ConditionSingle Enabled="true" ExpressionL="${currentHp}/43540" ExpressionTypeL="Numeric" ExpressionR="0.1" ExpressionTypeR="Numeric" ConditionType="NumericGreaterEqual" />
+                            </Condition>
+                          </Action>
+                          <Action OrderNumber="12" ActionType="Placeholder" Description="危险 - 不是自己的" DescriptionOverride="True">
+                            <Condition Enabled="false" Grouping="Or" />
+                          </Action>
+                          <Action OrderNumber="13" JsonEndpointExpression="http://127.0.0.1:47774/?namespace=xiaoguaie${id}&amp;destroyAt=15000,COMBAT_EXIT,TERRITORY_CHANGE" JsonPayloadExpression="{&quot;Name&quot;:&quot;危险&quot;,&quot;type&quot;:1,&quot;radius&quot;:0.8,&quot;color&quot;:4294906112,&quot;overlayBGColor&quot;:4278255603,&quot;overlayTextColor&quot;:4278190080,&quot;overlayPlaceholders&quot;:true,&quot;thicc&quot;:4.0,&quot;overlayText&quot;:&quot;${numeric:round((${currentHp}/43540)*100,2)}% 危险&quot;,&quot;refActorObjectID&quot;:${numeric:hex2dec(${id})},&quot;refActorComparisonType&quot;:2,&quot;includeRotation&quot;:true,&quot;onlyTargetable&quot;:true,&quot;onlyVisible&quot;:true}" ActionType="GenericJson">
+                            <Condition Enabled="true" Grouping="And">
+                              <ConditionSingle Enabled="true" ExpressionL="${currentHp}/43540" ExpressionTypeL="Numeric" ExpressionR="0.1" ExpressionTypeR="Numeric" ConditionType="NumericLess" />
                               <ConditionSingle Enabled="true" ExpressionL="${id}" ExpressionTypeL="String" ExpressionR="${lvar:绝亚_小怪喂怪_id_Clone[1]}" ExpressionTypeR="String" ConditionType="StringNotEqualNocase" />
                               <ConditionSingle Enabled="true" ExpressionL="${id}" ExpressionTypeL="String" ExpressionR="${lvar:绝亚_小怪喂怪_id_Clone[2]}" ExpressionTypeR="String" ConditionType="StringNotEqualNocase" />
                               <ConditionSingle Enabled="true" ExpressionL="${id}" ExpressionTypeL="String" ExpressionR="${lvar:绝亚_小怪喂怪_id_Clone[3]}" ExpressionTypeR="String" ConditionType="StringNotEqualNocase" />
@@ -2965,6 +3004,23 @@
                       <Trigger Enabled="true" Name="※ 连线自己的小怪多个 △" Id="df07a239-bd4f-4114-8e86-8da9ab45469f" RegularExpression="">
                         <Actions />
                         <Condition Enabled="false" Grouping="Or" />
+                      </Trigger>
+                      <Trigger Enabled="true" Sequential="True" Name="3. 血量足够提醒(仅连线1个小怪时) TTS [可选]" Id="a79c9d34-d82c-4d65-b888-767dc62dafdd" RegularExpression="^.{14} EffectResult 25:(?&lt;id&gt;[^:]*):狩猎人偶:(?&lt;sequenceId&gt;[^:]*):(?&lt;currentHp&gt;[^:]*):(?&lt;maxHp&gt;[^:]*):(?&lt;currentMp&gt;[^:]*):(?&lt;maxMp&gt;[^:]*):(?&lt;currentShield&gt;[^:]*):[^:]*:(?&lt;x&gt;[^:]*):(?&lt;y&gt;[^:]*):(?&lt;z&gt;[^:]*):(?&lt;heading&gt;.*?)">
+                        <Actions>
+                          <Action OrderNumber="1" VariableOp="SetString" VariableName="绝亚_小怪喂怪_tts_Clone" VariableExpression="1" ActionType="Variable">
+                            <Condition Enabled="false" Grouping="Or" />
+                          </Action>
+                          <Action OrderNumber="2" UseTTSTextExpression="小怪够了" ActionType="UseTTS">
+                            <Condition Enabled="false" Grouping="Or" />
+                          </Action>
+                        </Actions>
+                        <Condition Enabled="true" Grouping="And">
+                          <ConditionSingle Enabled="true" ExpressionL="${id}" ExpressionTypeL="String" ExpressionR="${lvar:绝亚_小怪喂怪_id_Clone[1]}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                          <ConditionSingle Enabled="true" ExpressionL="${var:绝亚_小怪喂怪_tts_Clone}" ExpressionTypeL="String" ExpressionR="1" ExpressionTypeR="String" ConditionType="StringNotEqualNocase" />
+                          <ConditionSingle Enabled="true" ExpressionL="${currentHp}/43540" ExpressionTypeL="Numeric" ExpressionR="0.25" ExpressionTypeR="Numeric" ConditionType="NumericLess" />
+                          <ConditionSingle Enabled="true" ExpressionL="${var:绝亚_小怪喂怪_计数_Clone}" ExpressionTypeL="Numeric" ExpressionR="1" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+                        </Condition>
+                        <Conditions />
                       </Trigger>
                     </Triggers>
                   </Folder>
@@ -5383,7 +5439,7 @@
                               <ConditionSingle Enabled="true" ExpressionL="${evar:绝亚_小飞机id_Clone}" ExpressionTypeL="String" ExpressionR="1" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                             </Condition>
                           </Trigger>
-                          <Trigger Enabled="false" Sequential="True" Name="时停BUFF" Id="320692b4-48f1-43d2-9314-9ab80a0541e7" RegularExpression="^.{14} (?:\w+ )26:(?&lt;sid&gt;.*?):(?&lt;name&gt;.*?):.*:046(?&lt;buff&gt;1|3|4):" PeriodRefire="Deny" RefirePeriodExpression="30000" Description="点名远离，去两边&#xD;&#xA;点名靠近，去右侧BOSS前后&#xD;&#xA;点名雷，去残暴方向的最边上">
+                          <Trigger Enabled="true" Sequential="True" Name="时停BUFF" Id="320692b4-48f1-43d2-9314-9ab80a0541e7" RegularExpression="^.{14} (?:\w+ )26:(?&lt;sid&gt;.*?):(?&lt;name&gt;.*?):.*:046(?&lt;buff&gt;1|3|4):" PeriodRefire="Deny" RefirePeriodExpression="30000" Description="点名远离，去两边&#xD;&#xA;点名靠近，去右侧BOSS前后&#xD;&#xA;点名雷，去残暴方向的最边上">
                             <Actions>
                               <Action OrderNumber="1" TriggerOp="CancelTrigger" TriggerId="90140e72-54c4-4ac0-8445-a898efdffaa8" ActionType="Trigger" ExecutionDelayExpression="200">
                                 <Condition Enabled="false" Grouping="Or" />
@@ -12578,7 +12634,7 @@
                 <Actions />
                 <Condition Enabled="false" Grouping="Or" />
               </Trigger>
-              <Trigger Enabled="true" Name="修改日期：2024-01-18 调整优化P1小怪血量监控绘制执行细节" Id="50c0b933-46be-456c-87bb-3d35433a8d94" RegularExpression="">
+              <Trigger Enabled="true" Name="修改日期：2024-01-20 修复6.1首次攻击小怪不绘制问题，新增危险血量显示，补充全部" Id="50c0b933-46be-456c-87bb-3d35433a8d94" RegularExpression="">
                 <Actions />
                 <Condition Enabled="false" Grouping="Or" />
               </Trigger>
