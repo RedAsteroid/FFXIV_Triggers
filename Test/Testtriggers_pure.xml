@@ -115,7 +115,7 @@
       </Folder>
       <Folder Id="601e2b13-12f1-483b-9d9d-77ff167aea7a" Name="1. 绝境战" Enabled="true">
         <Folders>
-          <Folder Id="a52d5c85-b4ff-45cd-99e0-909b19e2bebd" Name="1. 亚历山大绝境战 2024.01.25" Enabled="true">
+          <Folder Id="a52d5c85-b4ff-45cd-99e0-909b19e2bebd" Name="1. 亚历山大绝境战 2024.01.30" Enabled="true">
             <Folders>
               <Folder FFXIVZoneFilterEnabled="True" FfxivZoneFilterRegularExpression="^887$" Id="1cb7d906-d9bf-4f68-8f01-67d5479cb4ed" Name="P1" Enabled="true">
                 <Folders>
@@ -2525,13 +2525,10 @@
                           <Action OrderNumber="1" JsonEndpointExpression="http://127.0.0.1:47774/?destroy=liquidline${id}" ActionType="GenericJson">
                             <Condition Enabled="false" Grouping="Or" />
                           </Action>
-                          <Action OrderNumber="2" VariableOp="SetNumeric" VariableName="liquidtid_${id}" VariableExpression="hex2dec(${tid})" ActionType="Variable">
-                            <Condition Enabled="false" Grouping="Or" />
-                          </Action>
-                          <Action OrderNumber="3" JsonEndpointExpression="http://127.0.0.1:47774/?namespace=liquidline${id}&amp;destroyAt=11000" JsonPayloadExpression="{&quot;Name&quot;:&quot;排水&quot;,&quot;type&quot;:1,&quot;radius&quot;:6.0,&quot;color&quot;:4294914560,&quot;overlayBGColor&quot;:4278190080,&quot;overlayTextColor&quot;:4278255590,&quot;thicc&quot;:3.0,&quot;overlayText&quot;:&quot;死刑&quot;,&quot;refActorObjectID&quot;:${var:liquidtid_${id}},&quot;refActorComparisonType&quot;:2,&quot;includeRotation&quot;:true}" ActionType="GenericJson" ExecutionDelayExpression="100">
+                          <Action OrderNumber="2" JsonEndpointExpression="http://127.0.0.1:47774/?namespace=liquidline${id}&amp;destroyAt=11000" JsonPayloadExpression="{&quot;Name&quot;:&quot;排水&quot;,&quot;type&quot;:1,&quot;radius&quot;:6.0,&quot;color&quot;:4294914560,&quot;overlayBGColor&quot;:4278190080,&quot;overlayTextColor&quot;:4278255590,&quot;thicc&quot;:3.0,&quot;overlayText&quot;:&quot;死刑&quot;,&quot;refActorObjectID&quot;:${numeric:hex2dec(${tid})},&quot;refActorComparisonType&quot;:2,&quot;includeRotation&quot;:true}" ActionType="GenericJson">
                             <Condition Enabled="false" Grouping="And" />
                           </Action>
-                          <Action OrderNumber="4" JsonEndpointExpression="http://127.0.0.1:47774/?namespace=liquidline${id}&amp;destroyAt=11000" JsonPayloadExpression="{&quot;Name&quot;:&quot;排水 2&quot;,&quot;type&quot;:1,&quot;radius&quot;:6.0,&quot;color&quot;:4294967295,&quot;overlayBGColor&quot;:4278190080,&quot;overlayTextColor&quot;:4294967295,&quot;thicc&quot;:5.0,&quot;refActorObjectID&quot;:${var:liquidtid_${id}},&quot;refActorComparisonType&quot;:2,&quot;includeRotation&quot;:true}" ActionType="GenericJson">
+                          <Action OrderNumber="3" JsonEndpointExpression="http://127.0.0.1:47774/?namespace=liquidline${id}&amp;destroyAt=11000" JsonPayloadExpression="{&quot;Name&quot;:&quot;排水 2&quot;,&quot;type&quot;:1,&quot;radius&quot;:6.0,&quot;color&quot;:4294967295,&quot;overlayBGColor&quot;:4278190080,&quot;overlayTextColor&quot;:4294967295,&quot;thicc&quot;:5.0,&quot;refActorObjectID&quot;:${numeric:hex2dec(${tid})},&quot;refActorComparisonType&quot;:2,&quot;includeRotation&quot;:true}" ActionType="GenericJson">
                             <Condition Enabled="false" Grouping="And" />
                           </Action>
                         </Actions>
@@ -2541,7 +2538,7 @@
                       </Trigger>
                     </Triggers>
                   </Folder>
-                  <Folder Id="5cae9854-7cc0-4249-bc0b-28f482c7d2c2" Name="6.1 小怪血量监控(显示与玩家连线的小怪) [2选1]" Enabled="true">
+                  <Folder Id="5cae9854-7cc0-4249-bc0b-28f482c7d2c2" Name="6.1 小怪血量监控(显示与玩家连线的小怪) [2选1]" Enabled="false">
                     <Folders>
                       <Folder Id="4fddb166-17b3-49d7-ab81-f18ea975bd1d" Name="Debug" Enabled="false">
                         <Folders />
@@ -2739,7 +2736,7 @@
                       </Trigger>
                     </Triggers>
                   </Folder>
-                  <Folder Id="ca5f9027-433f-4d1c-b6ba-e25f2c5f3f24" Name="6.2 小怪血量监控(全部显示,贪伤害用) [2选1]" Enabled="false">
+                  <Folder Id="ca5f9027-433f-4d1c-b6ba-e25f2c5f3f24" Name="6.2 小怪血量监控(全部显示,贪伤害用) [2选1]" Enabled="true">
                     <Folders>
                       <Folder Id="290a8b3c-69b4-4cfe-9340-16e47738e1fd" Name="Debug" Enabled="false">
                         <Folders />
@@ -2970,7 +2967,6 @@
                       <Trigger Enabled="true" Name="理论上还是有概率首次攻击不画，例如触发顺序：2.1 -&gt; 1 -&gt; 2.2，但这应该极少发生。也许有其他稳定的办法，以后再写plan b" Id="ca609b2b-c952-4bc9-ac3e-711e5c08b752" RegularExpression="">
                         <Actions />
                         <Condition Enabled="false" Grouping="Or" />
-                        <Conditions />
                       </Trigger>
                     </Triggers>
                   </Folder>
@@ -6949,7 +6945,7 @@
                       </Folder>
                     </Folders>
                     <Triggers>
-                      <Trigger Enabled="true" Name="【需要CactbotSelf，一定要装否则部分不显示】" Id="47bdc161-4da5-45a9-943a-8b51a96be513" RegularExpression="">
+                      <Trigger Enabled="true" Name="【需要安装CactbotSelf并开启监听，一定要装否则此部分绘制将无法正常工作】" Id="47bdc161-4da5-45a9-943a-8b51a96be513" RegularExpression="">
                         <Actions />
                         <Condition Enabled="false" Grouping="Or" />
                       </Trigger>
@@ -7142,7 +7138,7 @@
                         </Actions>
                         <Condition Enabled="false" Grouping="Or" />
                       </Trigger>
-                      <Trigger Enabled="true" Sequential="True" Name="结晶破碎计数输出(alive)" Id="b53dd556-b3e5-406e-a4b7-20b3c70f8588" RegularExpression="^.{14} (?:\w+) (15|16):(?&lt;sid&gt;[^:]*):(?&lt;sname&gt;[^:]*):4A88:(?&lt;ability&gt;(?:[^:]|: )*?):(?&lt;tid&gt;.*?):(?&lt;tname&gt;[^:]*):(?&lt;flags&gt;[^:]*):(?&lt;damage&gt;[^:]*)(?::[^:]*){14}:(?&lt;targetCurrentHp&gt;[^:]*):(?&lt;targetMaxHp&gt;[^:]*):(?&lt;targetCurrentMp&gt;[^:]*):(?&lt;targetMaxMp&gt;[^:]*)(?::[^:]*){2}:(?&lt;targetX&gt;[^:]*):(?&lt;targetY&gt;[^:]*):(?&lt;targetZ&gt;[^:]*):(?&lt;targetHeading&gt;[^:]*):(?&lt;currentHp&gt;[^:]*):(?&lt;maxHp&gt;[^:]*):(?&lt;currentMp&gt;[^:]*):(?&lt;maxMp&gt;[^:]*)(?::[^:]*){2}:(?&lt;x&gt;[^:]*):(?&lt;y&gt;[^:]*):(?&lt;z&gt;[^:]*):(?&lt;heading&gt;[^:]*):(?&lt;sequence&gt;[^:]*):(?&lt;targetIndex&gt;[^:]*):(?&lt;targetCount&gt;[^:]*)(?:$|:)">
+                      <Trigger Enabled="true" Sequential="True" Name="结晶破碎计数输出(alive)" Id="b53dd556-b3e5-406e-a4b7-20b3c70f8588" RegularExpression="^.{14} (?:\w+) (15|16):(?&lt;sid&gt;[^:]*):(?&lt;sname&gt;[^:]*):4A88:(?&lt;ability&gt;(?:[^:]|: )*?):(?&lt;tid&gt;.*?):(?&lt;tname&gt;[^:]*):(?&lt;flags&gt;[^:]*):(?&lt;damage&gt;[^:]*)(?::[^:]*){14}:(?&lt;targetCurrentHp&gt;[^:]*):(?&lt;targetMaxHp&gt;[^:]*):(?&lt;targetCurrentMp&gt;[^:]*):(?&lt;targetMaxMp&gt;[^:]*)(?::[^:]*){2}:(?&lt;targetX&gt;[^:]*):(?&lt;targetY&gt;[^:]*):(?&lt;targetZ&gt;[^:]*):(?&lt;targetHeading&gt;[^:]*):(?&lt;currentHp&gt;[^:]*):(?&lt;maxHp&gt;[^:]*):(?&lt;currentMp&gt;[^:]*):(?&lt;maxMp&gt;[^:]*)(?::[^:]*){2}:(?&lt;x&gt;[^:]*):(?&lt;y&gt;[^:]*):(?&lt;z&gt;[^:]*):(?&lt;heading&gt;[^:]*):(?&lt;sequence&gt;[^:]*):(?&lt;targetIndex&gt;[^:]*):(?&lt;targetCount&gt;[^:]*)(?:$|:)" Scheduling="FromLastAction">
                         <Actions>
                           <Action OrderNumber="1" UseTTSTextExpression="啊" Enabled="False" ActionType="UseTTS">
                             <Condition Enabled="false" Grouping="Or" />
@@ -7155,7 +7151,7 @@
                           <Action OrderNumber="3" ActionType="Placeholder" Description="中继销毁" DescriptionOverride="True">
                             <Condition Enabled="false" Grouping="Or" />
                           </Action>
-                          <Action OrderNumber="4" JsonEndpointExpression="http://127.0.0.1:47774/?destroy=preB" ActionType="GenericJson" ExecutionDelayExpression="100">
+                          <Action OrderNumber="4" JsonEndpointExpression="http://127.0.0.1:47774/?destroy=preB" ActionType="GenericJson">
                             <Condition Enabled="true" Grouping="Or">
                               <ConditionSingle Enabled="true" ExpressionL="${var:绝亚_结晶破碎_Clone}" ExpressionTypeL="Numeric" ExpressionR="4" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
                             </Condition>
@@ -7459,7 +7455,7 @@
                         <Folders>
                           <Folder Id="1612ba04-9975-4b3b-a963-68483b16235f" Name="1.5前半" Enabled="true">
                             <Folders>
-                              <Folder Id="9762c4eb-ef1d-4b91-b9f0-c9b4d1f0ad05" Name="错误记录组" Enabled="false">
+                              <Folder Id="9762c4eb-ef1d-4b91-b9f0-c9b4d1f0ad05" Name="错误记录组" Enabled="true">
                                 <Folders />
                                 <Triggers>
                                   <Trigger Enabled="true" Name="错误Buff记录" Id="b98111fe-6fc2-45f9-8631-89eb72e7426a" RegularExpression="^.{14} StatusAdd 1A:46(?&lt;type&gt;(1|3|4)):(?&lt;effect&gt;(?:[^:]|: )*?):(?&lt;duration&gt;[^:]*):(?&lt;sid&gt;[^:]*):(?&lt;sname&gt;[^:]*):(?&lt;tid&gt;[^:]*):(?&lt;tname&gt;[^:]*):(?&lt;count&gt;[^:]*):(?&lt;targetMaxHp&gt;[^:]*):(?&lt;sourceMaxHp&gt;[^:]*)(?:$|:)">
@@ -7625,7 +7621,7 @@
                                 </Actions>
                                 <Condition Enabled="false" Grouping="Or" />
                               </Trigger>
-                              <Trigger Enabled="false" Sequential="True" Name="自身Buff获取" Id="c69fbedd-2eb2-4d21-8057-26491e7b5912" RegularExpression="^.{14} StatusAdd 1A:46(?&lt;type&gt;(1|2|3|4)):(?&lt;effect&gt;(?:[^:]|: )*?):(?&lt;duration&gt;[^:]*):(?&lt;sid&gt;[^:]*):(?&lt;sname&gt;[^:]*):(?&lt;tid&gt;[^:]*):(?&lt;tname&gt;[^:]*):(?&lt;count&gt;[^:]*):(?&lt;targetMaxHp&gt;[^:]*):(?&lt;sourceMaxHp&gt;[^:]*)(?:$|:)" PeriodRefire="Deny" RefirePeriodExpression="30000">
+                              <Trigger Enabled="true" Sequential="True" Name="自身Buff获取" Id="c69fbedd-2eb2-4d21-8057-26491e7b5912" RegularExpression="^.{14} StatusAdd 1A:46(?&lt;type&gt;(1|2|3|4)):(?&lt;effect&gt;(?:[^:]|: )*?):(?&lt;duration&gt;[^:]*):(?&lt;sid&gt;[^:]*):(?&lt;sname&gt;[^:]*):(?&lt;tid&gt;[^:]*):(?&lt;tname&gt;[^:]*):(?&lt;count&gt;[^:]*):(?&lt;targetMaxHp&gt;[^:]*):(?&lt;sourceMaxHp&gt;[^:]*)(?:$|:)" PeriodRefire="Deny" RefirePeriodExpression="30000">
                                 <Actions>
                                   <Action OrderNumber="1" TriggerOp="CancelTrigger" TriggerId="41bb25ef-8d04-4868-91c7-f96611210921" ActionType="Trigger">
                                     <Condition Enabled="false" Grouping="Or" />
@@ -9437,7 +9433,7 @@
                           <ConditionSingle Enabled="true" ExpressionL="${var:残暴id_Clone}" ExpressionTypeL="String" ExpressionR="${targetId}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                         </Condition>
                       </Trigger>
-                      <Trigger Enabled="false" Sequential="True" Name="1.2 小队频道 ( /p )" Id="5fc38b27-c36b-4ab8-9a48-523dc049f3fb" RegularExpression="(?&lt;timestamp&gt;^.{14}) StatusAdd (?&lt;type&gt;1A):1BB:(?&lt;effect&gt;(?:[^:]|: )*?):(?&lt;duration&gt;[^:]*):(?&lt;sourceId&gt;[^:]*):(?&lt;source&gt;[^:]*):(?&lt;targetId&gt;[^:]*):(?&lt;target&gt;[^:]*):(?&lt;count&gt;[^:]*):(?&lt;targetMaxHp&gt;[^:]*):(?&lt;sourceMaxHp&gt;[^:]*)(?:$|:)">
+                      <Trigger Enabled="true" Sequential="True" Name="1.2 小队频道 ( /p )" Id="5fc38b27-c36b-4ab8-9a48-523dc049f3fb" RegularExpression="(?&lt;timestamp&gt;^.{14}) StatusAdd (?&lt;type&gt;1A):1BB:(?&lt;effect&gt;(?:[^:]|: )*?):(?&lt;duration&gt;[^:]*):(?&lt;sourceId&gt;[^:]*):(?&lt;source&gt;[^:]*):(?&lt;targetId&gt;[^:]*):(?&lt;target&gt;[^:]*):(?&lt;count&gt;[^:]*):(?&lt;targetMaxHp&gt;[^:]*):(?&lt;sourceMaxHp&gt;[^:]*)(?:$|:)">
                         <Actions>
                           <Action OrderNumber="0" VariableOp="SetNumeric" VariableName="伤害提高层数_Clone" VariableExpression="hex2dec(${count})" ActionType="Variable">
                             <Condition Enabled="false" Grouping="Or" />
@@ -9463,7 +9459,7 @@
                           <ConditionSingle Enabled="true" ExpressionL="${var:残暴id_Clone}" ExpressionTypeL="String" ExpressionR="${targetId}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                         </Condition>
                       </Trigger>
-                      <Trigger Enabled="true" Sequential="True" Name="1.1 默语频道 ( /e )" Id="f7b0936a-15fa-4914-b4a9-94cc67e88c1a" RegularExpression="(?&lt;timestamp&gt;^.{14}) StatusAdd (?&lt;type&gt;1A):1BB:(?&lt;effect&gt;(?:[^:]|: )*?):(?&lt;duration&gt;[^:]*):(?&lt;sourceId&gt;[^:]*):(?&lt;source&gt;[^:]*):(?&lt;targetId&gt;[^:]*):(?&lt;target&gt;[^:]*):(?&lt;count&gt;[^:]*):(?&lt;targetMaxHp&gt;[^:]*):(?&lt;sourceMaxHp&gt;[^:]*)(?:$|:)">
+                      <Trigger Enabled="false" Sequential="True" Name="1.1 默语频道 ( /e )" Id="f7b0936a-15fa-4914-b4a9-94cc67e88c1a" RegularExpression="(?&lt;timestamp&gt;^.{14}) StatusAdd (?&lt;type&gt;1A):1BB:(?&lt;effect&gt;(?:[^:]|: )*?):(?&lt;duration&gt;[^:]*):(?&lt;sourceId&gt;[^:]*):(?&lt;source&gt;[^:]*):(?&lt;targetId&gt;[^:]*):(?&lt;target&gt;[^:]*):(?&lt;count&gt;[^:]*):(?&lt;targetMaxHp&gt;[^:]*):(?&lt;sourceMaxHp&gt;[^:]*)(?:$|:)">
                         <Actions>
                           <Action OrderNumber="1" VariableOp="SetNumeric" VariableName="伤害提高层数_Clone" VariableExpression="hex2dec(${count})" ActionType="Variable">
                             <Condition Enabled="false" Grouping="Or" />
@@ -12582,7 +12578,7 @@
                 <Actions />
                 <Condition Enabled="false" Grouping="Or" />
               </Trigger>
-              <Trigger Enabled="true" Name="修改日期：2024-01-25 修复首次攻击小怪绘制消失问题，修复p2地雷位置可能出现在错误位置的情况和显示时间过短" Id="805830fd-404a-4fd3-a984-40164a2753d4" RegularExpression="">
+              <Trigger Enabled="true" Name="修改日期：2024-01-30 水更新，尝试修复P1排水连线更换显示错误、P3一运大火炎放射绘制可能少一层的情况" Id="805830fd-404a-4fd3-a984-40164a2753d4" RegularExpression="">
                 <Actions />
                 <Condition Enabled="false" Grouping="Or" />
               </Trigger>
