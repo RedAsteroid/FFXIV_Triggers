@@ -2964,7 +2964,7 @@
                           <ConditionSingle Enabled="true" ExpressionL="${var:绝亚_小怪喂怪_计数_Clone}" ExpressionTypeL="Numeric" ExpressionR="0" ExpressionTypeR="Numeric" ConditionType="NumericGreater" />
                         </Condition>
                       </Trigger>
-                      <Trigger Enabled="true" Name="理论上还是有概率首次攻击不画，例如触发顺序：2.1 -&gt; 1 -&gt; 2.2，但这应该极少发生。也许有其他稳定的办法，以后再想plan b" Id="ca609b2b-c952-4bc9-ac3e-711e5c08b752" RegularExpression="">
+                      <Trigger Enabled="true" Source="None" Name="理论上还是有概率首次攻击不画，例如触发顺序：2.1 -&gt; 1 -&gt; 2.2，但这应该极少发生。也许有其他稳定的办法，以后再想plan b" Id="ca609b2b-c952-4bc9-ac3e-711e5c08b752" RegularExpression="">
                         <Actions />
                         <Condition Enabled="false" Grouping="Or" />
                       </Trigger>
@@ -12626,7 +12626,7 @@
                 </Folders>
                 <Triggers />
               </Folder>
-              <Folder FFXIVZoneFilterEnabled="True" FfxivZoneFilterRegularExpression="^777$" Id="03f7bfaf-bae6-4542-ac25-90a96d311855" Name="2. 究极神兵绝境战 2024.02.19 (没实际下本用过)" Enabled="false">
+              <Folder FFXIVZoneFilterEnabled="True" FfxivZoneFilterRegularExpression="^777$" Id="03f7bfaf-bae6-4542-ac25-90a96d311855" Name="2. 究极神兵绝境战 2024.02.19 (没实际下本用过)" Enabled="true">
                 <Folders>
                   <Folder Id="2b2d1be0-f4ee-4a12-8990-dcf8380dbe84" Name="P1 风神" Enabled="true">
                     <Folders>
@@ -12860,7 +12860,7 @@
                     </Actions>
                     <Condition Enabled="false" Grouping="Or" />
                   </Trigger>
-                  <Trigger Enabled="true" Sequential="True" Name="2. 野蛮剃(月环) 7574" Id="74a222d5-5d36-4712-9e1c-884f5e3ddea9" RegularExpression="^.{14} StartsCasting 14:(?&lt;sid&gt;[^:]*):(?&lt;sname&gt;[^:]*):7574:(?&lt;ability&gt;(?:[^:]|: )*?):(?&lt;tid&gt;[^:]*):(?&lt;tname&gt;[^:]*):(?&lt;castTime&gt;[^:]*):(?&lt;x&gt;[^:]*):(?&lt;y&gt;[^:]*):(?&lt;z&gt;[^:]*):(?&lt;heading&gt;[^:]*)(?:$|:)">
+                  <Trigger Enabled="false" Sequential="True" Name="2. 野蛮剃(月环) 7574" Id="74a222d5-5d36-4712-9e1c-884f5e3ddea9" RegularExpression="^.{14} StartsCasting 14:(?&lt;sid&gt;[^:]*):(?&lt;sname&gt;[^:]*):7574:(?&lt;ability&gt;(?:[^:]|: )*?):(?&lt;tid&gt;[^:]*):(?&lt;tname&gt;[^:]*):(?&lt;castTime&gt;[^:]*):(?&lt;x&gt;[^:]*):(?&lt;y&gt;[^:]*):(?&lt;z&gt;[^:]*):(?&lt;heading&gt;[^:]*)(?:$|:)">
                     <Actions>
                       <Action OrderNumber="1" VariableOp="SetNumeric" VariableName="个人绘制_剑月环" VariableExpression="hex2dec(${sid})" ActionType="Variable">
                         <Condition Enabled="false" Grouping="Or" />
@@ -14299,7 +14299,25 @@
                     </Triggers>
                   </Folder>
                   <Folder Id="e16b9536-fbf3-42d5-aea6-c7dfab30192c" Name="Boss2 - 拉姆达总领" Enabled="true">
-                    <Folders />
+                    <Folders>
+                      <Folder Id="9e64a539-0749-4b17-96cb-cdb58ecf80ab" Name="自动小队初始化 [玩家名字版,小队有重名玩家不生效]" Enabled="false">
+                        <Folders />
+                        <Triggers>
+                          <Trigger Enabled="true" Name="1. 任务开始自动获取小队队友名称" Id="a7c9d930-6e29-4901-a105-623bb2293dcb" RegularExpression="">
+                            <Actions />
+                            <Condition Enabled="false" Grouping="Or" />
+                          </Trigger>
+                          <Trigger Enabled="false" Name="2. 任务开始自动获取_ffxivparty名称、id、职业、顺位" Id="b2a9de38-d1c2-42d2-a2bf-18d327342ac5" RegularExpression="">
+                            <Actions />
+                            <Condition Enabled="false" Grouping="Or" />
+                          </Trigger>
+                          <Trigger Enabled="true" Name="3. " Id="a20842dc-a0d2-488f-a583-832e92839f92" RegularExpression="">
+                            <Actions />
+                            <Condition Enabled="false" Grouping="Or" />
+                          </Trigger>
+                        </Triggers>
+                      </Folder>
+                    </Folders>
                     <Triggers>
                       <Trigger Enabled="true" Sequential="True" Name="1. 冲锋路径预测" Id="d6ba1970-01e7-4469-925e-2c467a7f7a3e" RegularExpression="^.{14} StartsCasting 14:(?&lt;sid&gt;[^:]*):(?&lt;sname&gt;[^:]*):63AE:(?&lt;ability&gt;(?:[^:]|: )*?):(?&lt;tid&gt;[^:]*):(?&lt;tname&gt;[^:]*):(?&lt;castTime&gt;[^:]*):(?&lt;x&gt;[^:]*):(?&lt;y&gt;[^:]*):(?&lt;z&gt;[^:]*):(?&lt;heading&gt;[^:]*)(?:$|:)">
                         <Actions>
