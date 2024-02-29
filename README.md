@@ -2,8 +2,16 @@
 
 此 Triggernometry 触发器为卫月框架插件 Splatoon 第三方插件绘制。
 
+##
+
+![4](https://raw.githubusercontent.com/RedAsteroid/FFXIV_Triggers/main/demo/img0/0.jpg)
+
 - 绘制内容均为个人测试使用，不保证质量，随缘更新。
 - 不适配国际服，请不要尝试在国际服使用。
+- 点此下方超链接查看绘制预览(demo)，随手截的无顺序区分，**多图请注意流量**。
+
+1. [普通副本](https://github.com/RedAsteroid/FFXIV_Triggers/blob/main/demo/img1.md)
+2. [亚历山大绝境战(暂缺)](https://github.com/RedAsteroid/FFXIV_Triggers/blob/main/demo/img2.md)
 
 ## 请注意
 - 请勿通过任何形式付费渠道获取仓库内容，或将其用于任何形式的商业行为。
