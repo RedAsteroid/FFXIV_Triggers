@@ -11,10 +11,6 @@
                 <Actions />
                 <Condition Enabled="false" Grouping="Or" />
               </Trigger>
-              <Trigger Enabled="true" Name="有问题请在各Q群@我，但不一定解决问题，神秘代码420670611" Id="9d110acc-b37d-459c-992b-cde39539c4fe" RegularExpression="">
-                <Actions />
-                <Condition Enabled="false" Grouping="Or" />
-              </Trigger>
             </Triggers>
           </Folder>
           <Folder Id="9552ba16-0a10-45a9-9353-28445a6ba9a0" Name="3. 使用教程" Enabled="true">
@@ -7452,7 +7448,7 @@
                         <Folders>
                           <Folder Id="1612ba04-9975-4b3b-a963-68483b16235f" Name="1.5前半" Enabled="true">
                             <Folders>
-                              <Folder Id="9762c4eb-ef1d-4b91-b9f0-c9b4d1f0ad05" Name="错误记录组" Enabled="false">
+                              <Folder Id="9762c4eb-ef1d-4b91-b9f0-c9b4d1f0ad05" Name="错误记录组" Enabled="true">
                                 <Folders />
                                 <Triggers>
                                   <Trigger Enabled="true" Name="错误Buff记录" Id="b98111fe-6fc2-45f9-8631-89eb72e7426a" RegularExpression="^.{14} StatusAdd 1A:46(?&lt;type&gt;(1|3|4)):(?&lt;effect&gt;(?:[^:]|: )*?):(?&lt;duration&gt;[^:]*):(?&lt;sid&gt;[^:]*):(?&lt;sname&gt;[^:]*):(?&lt;tid&gt;[^:]*):(?&lt;tname&gt;[^:]*):(?&lt;count&gt;[^:]*):(?&lt;targetMaxHp&gt;[^:]*):(?&lt;sourceMaxHp&gt;[^:]*)(?:$|:)">
@@ -7575,7 +7571,7 @@
                                 </Actions>
                                 <Condition Enabled="false" Grouping="Or" />
                               </Trigger>
-                              <Trigger Enabled="false" Sequential="True" Name="自身Buff获取2" Id="41bb25ef-8d04-4868-91c7-f96611210921" RegularExpression="^.{14} StatusAdd 1A:46(?&lt;type&gt;(1|2|3|4)):(?&lt;effect&gt;(?:[^:]|: )*?):(?&lt;duration&gt;[^:]*):(?&lt;sid&gt;[^:]*):(?&lt;sname&gt;[^:]*):(?&lt;tid&gt;[^:]*):(?&lt;tname&gt;[^:]*):(?&lt;count&gt;[^:]*):(?&lt;targetMaxHp&gt;[^:]*):(?&lt;sourceMaxHp&gt;[^:]*)(?:$|:)" PeriodRefire="Deny" RefirePeriodExpression="30000">
+                              <Trigger Enabled="true" Sequential="True" Name="自身Buff获取2" Id="41bb25ef-8d04-4868-91c7-f96611210921" RegularExpression="^.{14} StatusAdd 1A:46(?&lt;type&gt;(1|2|3|4)):(?&lt;effect&gt;(?:[^:]|: )*?):(?&lt;duration&gt;[^:]*):(?&lt;sid&gt;[^:]*):(?&lt;sname&gt;[^:]*):(?&lt;tid&gt;[^:]*):(?&lt;tname&gt;[^:]*):(?&lt;count&gt;[^:]*):(?&lt;targetMaxHp&gt;[^:]*):(?&lt;sourceMaxHp&gt;[^:]*)(?:$|:)" PeriodRefire="Deny" RefirePeriodExpression="30000">
                                 <Actions>
                                   <Action OrderNumber="1" ActionType="LogMessage">
                                     <Condition Enabled="false" Grouping="Or" />
@@ -7618,7 +7614,7 @@
                                 </Actions>
                                 <Condition Enabled="false" Grouping="Or" />
                               </Trigger>
-                              <Trigger Enabled="false" Sequential="True" Name="自身Buff获取" Id="c69fbedd-2eb2-4d21-8057-26491e7b5912" RegularExpression="^.{14} StatusAdd 1A:46(?&lt;type&gt;(1|2|3|4)):(?&lt;effect&gt;(?:[^:]|: )*?):(?&lt;duration&gt;[^:]*):(?&lt;sid&gt;[^:]*):(?&lt;sname&gt;[^:]*):(?&lt;tid&gt;[^:]*):(?&lt;tname&gt;[^:]*):(?&lt;count&gt;[^:]*):(?&lt;targetMaxHp&gt;[^:]*):(?&lt;sourceMaxHp&gt;[^:]*)(?:$|:)" PeriodRefire="Deny" RefirePeriodExpression="30000">
+                              <Trigger Enabled="true" Sequential="True" Name="自身Buff获取" Id="c69fbedd-2eb2-4d21-8057-26491e7b5912" RegularExpression="^.{14} StatusAdd 1A:46(?&lt;type&gt;(1|2|3|4)):(?&lt;effect&gt;(?:[^:]|: )*?):(?&lt;duration&gt;[^:]*):(?&lt;sid&gt;[^:]*):(?&lt;sname&gt;[^:]*):(?&lt;tid&gt;[^:]*):(?&lt;tname&gt;[^:]*):(?&lt;count&gt;[^:]*):(?&lt;targetMaxHp&gt;[^:]*):(?&lt;sourceMaxHp&gt;[^:]*)(?:$|:)" PeriodRefire="Deny" RefirePeriodExpression="30000">
                                 <Actions>
                                   <Action OrderNumber="1" TriggerOp="CancelTrigger" TriggerId="41bb25ef-8d04-4868-91c7-f96611210921" ActionType="Trigger">
                                     <Condition Enabled="false" Grouping="Or" />
@@ -12601,31 +12597,6 @@
           </Folder>
           <Folder Id="fbe5a63a-99f3-4afd-95ca-8c3e7b515313" Name="测试内容" Enabled="true">
             <Folders>
-              <Folder Id="7d4e9cc7-7c58-4925-b094-4a82789bb253" Name="3. 巴哈姆特绝境战 test" Enabled="true">
-                <Folders>
-                  <Folder Id="e4ec709b-8dac-4f99-b19d-4a477a770408" Name="P1 双塔尼亚" Enabled="true">
-                    <Folders />
-                    <Triggers />
-                  </Folder>
-                  <Folder Id="3341e348-2b4a-43e0-93bd-d1efb9ce5c10" Name="P2 奈尔" Enabled="true">
-                    <Folders />
-                    <Triggers />
-                  </Folder>
-                  <Folder Id="a0b56e3b-d9f9-4b44-9edc-e12d08ae26ef" Name="P3" Enabled="true">
-                    <Folders />
-                    <Triggers />
-                  </Folder>
-                  <Folder Id="d7f4d744-8af4-469c-998e-11c8b53748d4" Name="P4" Enabled="true">
-                    <Folders />
-                    <Triggers />
-                  </Folder>
-                  <Folder Id="762edc9a-86d6-42cc-92ce-66c591f28154" Name="P5 黄金脆皮鸡" Enabled="true">
-                    <Folders />
-                    <Triggers />
-                  </Folder>
-                </Folders>
-                <Triggers />
-              </Folder>
               <Folder FFXIVZoneFilterEnabled="True" FfxivZoneFilterRegularExpression="^777$" Id="03f7bfaf-bae6-4542-ac25-90a96d311855" Name="2. 究极神兵绝境战 2024.02.19 (没实际下本用过)" Enabled="true">
                 <Folders>
                   <Folder Id="2b2d1be0-f4ee-4a12-8990-dcf8380dbe84" Name="P1 风神" Enabled="true">
@@ -18200,10 +18171,6 @@
                   </Folder>
                 </Folders>
                 <Triggers>
-                  <Trigger Enabled="true" Name="# 该买新电脑了.jpg" Id="9a0300bf-bcd2-462f-9a9d-33ce92768ff4" RegularExpression="">
-                    <Actions />
-                    <Condition Enabled="false" Grouping="Or" />
-                  </Trigger>
                   <Trigger Enabled="true" Name="初始化" Id="ba8fca0f-bc15-4d2a-bfbb-527e82a33de7" RegularExpression="^.{14} ChatLog 00:0839::(“雪山奥窟冥魂石洞”任务开始。)">
                     <Actions>
                       <Action OrderNumber="1" NamedCallbackName="command" NamedCallbackParam="/e 此副本绘制有正常版与低配版，导入时默认使用正常版，如遇卡顿请在此绘制的触发分组切换勾选您想要的版本！" ActionType="NamedCallback">
@@ -18829,13 +18796,631 @@
                   </Trigger>
                 </Triggers>
               </Folder>
+              <Folder FFXIVZoneFilterEnabled="True" FfxivZoneFilterRegularExpression="^1164$" Id="a06269a0-72d2-4f93-8310-96766fc1ddb4" Name="90 - 异界深渊月面地下溪谷 - Patch 6.5" Enabled="true">
+                <Folders>
+                  <Folder Id="45b89854-e864-497f-a65d-deafd1cb50f2" Name="Boss1 - 暗黑精灵" Enabled="true">
+                    <Folders />
+                    <Triggers>
+                      <Trigger Enabled="true" Sequential="True" Name="1. 黑暗之杖 - 爆炸" Id="a007c8c8-e0d3-4823-a187-826fe82b7670" RegularExpression="^.{14} StartsCasting 14:(?&lt;sid&gt;[^:]*):(?&lt;sname&gt;[^:]*):87E5:(?&lt;ability&gt;(?:[^:]|: )*?):(?&lt;tid&gt;[^:]*):(?&lt;tname&gt;[^:]*):(?&lt;castTime&gt;[^:]*):(?&lt;x&gt;[^:]*):(?&lt;y&gt;[^:]*):(?&lt;z&gt;[^:]*):(?&lt;heading&gt;[^:]*)(?:$|:)">
+                        <Actions>
+                          <Action OrderNumber="1" JsonEndpointExpression="http://127.0.0.1:47774/?namespace=1&amp;destroyAt=5200,COMBAT_EXIT,TERRITORY_CHANGE" JsonPayloadExpression="{&quot;Name&quot;:&quot;老一-黑暗之杖（十字）2&quot;,&quot;type&quot;:3,&quot;refY&quot;:-28.0,&quot;offY&quot;:28.0,&quot;radius&quot;:4.0,&quot;color&quot;:939505159,&quot;thicc&quot;:3.0,&quot;refActorObjectID&quot;:${numeric:hex2dec(${sid})},&quot;FillStep&quot;:0.2,&quot;refActorComparisonType&quot;:2,&quot;includeRotation&quot;:true}" ActionType="GenericJson">
+                            <Condition Enabled="false" Grouping="And" />
+                          </Action>
+                          <Action OrderNumber="2" JsonEndpointExpression="http://127.0.0.1:47774/?namespace=1&amp;destroyAt=5200,COMBAT_EXIT,TERRITORY_CHANGE" JsonPayloadExpression="{&quot;Name&quot;:&quot;老一-黑暗之杖（十字）1&quot;,&quot;type&quot;:3,&quot;refY&quot;:-28.0,&quot;offY&quot;:28.0,&quot;radius&quot;:4.0,&quot;color&quot;:4294967295,&quot;thicc&quot;:6.0,&quot;refActorObjectID&quot;:${numeric:hex2dec(${sid})},&quot;FillStep&quot;:200.0,&quot;refActorComparisonType&quot;:2,&quot;includeRotation&quot;:true}" ActionType="GenericJson">
+                            <Condition Enabled="false" Grouping="And" />
+                          </Action>
+                          <Action OrderNumber="3" JsonEndpointExpression="http://127.0.0.1:47774/?namespace=1&amp;destroyAt=5200,COMBAT_EXIT,TERRITORY_CHANGE" JsonPayloadExpression="{&quot;Name&quot;:&quot;老一-黑暗之杖（十字2）2&quot;,&quot;type&quot;:3,&quot;refY&quot;:-28.0,&quot;offY&quot;:28.0,&quot;radius&quot;:4.0,&quot;color&quot;:939505159,&quot;thicc&quot;:3.0,&quot;refActorObjectID&quot;:${numeric:hex2dec(${sid})},&quot;FillStep&quot;:0.2,&quot;refActorComparisonType&quot;:2,&quot;includeRotation&quot;:true,&quot;AdditionalRotation&quot;:1.5707964}" ActionType="GenericJson">
+                            <Condition Enabled="false" Grouping="And" />
+                          </Action>
+                          <Action OrderNumber="4" JsonEndpointExpression="http://127.0.0.1:47774/?namespace=1&amp;destroyAt=5200,COMBAT_EXIT,TERRITORY_CHANGE" JsonPayloadExpression="{&quot;Name&quot;:&quot;老一-黑暗之杖（十字2）1&quot;,&quot;type&quot;:3,&quot;refY&quot;:-28.0,&quot;offY&quot;:28.0,&quot;radius&quot;:4.0,&quot;color&quot;:4294967295,&quot;thicc&quot;:6.0,&quot;refActorObjectID&quot;:${numeric:hex2dec(${sid})},&quot;FillStep&quot;:200.0,&quot;refActorComparisonType&quot;:2,&quot;includeRotation&quot;:true,&quot;AdditionalRotation&quot;:1.5707964}" ActionType="GenericJson">
+                            <Condition Enabled="false" Grouping="And" />
+                          </Action>
+                        </Actions>
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Trigger>
+                      <Trigger Enabled="true" Sequential="True" Name="2. 黑暗纹章 - 爆炸" Id="2985a46b-38be-4cb5-b134-a0da76d6bacc" RegularExpression="^.{14} StartsCasting 14:(?&lt;sid&gt;[^:]*):(?&lt;sname&gt;[^:]*):87E3:(?&lt;ability&gt;(?:[^:]|: )*?):(?&lt;tid&gt;[^:]*):(?&lt;tname&gt;[^:]*):(?&lt;castTime&gt;[^:]*):(?&lt;x&gt;[^:]*):(?&lt;y&gt;[^:]*):(?&lt;z&gt;[^:]*):(?&lt;heading&gt;[^:]*)(?:$|:)">
+                        <Actions>
+                          <Action OrderNumber="1" JsonEndpointExpression="http://127.0.0.1:47774/?namespace=2&amp;destroyAt=6200,COMBAT_EXIT,TERRITORY_CHANGE" JsonPayloadExpression="{&quot;Name&quot;:&quot;老一-黑暗纹章（地板）3&quot;,&quot;type&quot;:3,&quot;refY&quot;:-4.0,&quot;offY&quot;:4.0,&quot;radius&quot;:4.0,&quot;color&quot;:4294901892,&quot;thicc&quot;:3.0,&quot;refActorObjectID&quot;:${numeric:hex2dec(${sid})},&quot;FillStep&quot;:100.0,&quot;refActorComparisonType&quot;:2,&quot;includeRotation&quot;:true}" ActionType="GenericJson">
+                            <Condition Enabled="false" Grouping="And" />
+                          </Action>
+                          <Action OrderNumber="2" JsonEndpointExpression="http://127.0.0.1:47774/?namespace=2&amp;destroyAt=6200,COMBAT_EXIT,TERRITORY_CHANGE" JsonPayloadExpression="{&quot;Name&quot;:&quot;老一-黑暗纹章（地板）2&quot;,&quot;type&quot;:3,&quot;refY&quot;:-4.0,&quot;offY&quot;:4.0,&quot;radius&quot;:4.0,&quot;color&quot;:4294967295,&quot;thicc&quot;:6.0,&quot;refActorObjectID&quot;:${numeric:hex2dec(${sid})},&quot;FillStep&quot;:100.0,&quot;refActorComparisonType&quot;:2,&quot;includeRotation&quot;:true}" ActionType="GenericJson">
+                            <Condition Enabled="false" Grouping="And" />
+                          </Action>
+                          <Action OrderNumber="3" JsonEndpointExpression="http://127.0.0.1:47774/?namespace=2&amp;destroyAt=6200,COMBAT_EXIT,TERRITORY_CHANGE" JsonPayloadExpression="{&quot;Name&quot;:&quot;老一-黑暗纹章（地板）1&quot;,&quot;type&quot;:3,&quot;refY&quot;:-4.0,&quot;offY&quot;:4.0,&quot;radius&quot;:4.0,&quot;color&quot;:1275057408,&quot;refActorObjectID&quot;:${numeric:hex2dec(${sid})},&quot;FillStep&quot;:0.15,&quot;refActorComparisonType&quot;:2,&quot;includeRotation&quot;:true}" ActionType="GenericJson">
+                            <Condition Enabled="false" Grouping="And" />
+                          </Action>
+                        </Actions>
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Trigger>
+                    </Triggers>
+                  </Folder>
+                  <Folder Id="94264bcd-4a12-4533-9bc4-49ef22287fe7" Name="Boss2 - 达姆希安蚁狮" Enabled="true">
+                    <Folders>
+                      <Folder Id="848d6574-8d16-4bd5-88f3-a7cd3df0a848" Name="蚁狮行军冲锋 + 石柱范围 (MoreLogLine) 抄雪山的.jpg" Enabled="true">
+                        <Folders>
+                          <Folder Id="52038b08-0c43-489a-a4a5-452b39f7f761" Name="初始化" Enabled="true">
+                            <Folders />
+                            <Triggers>
+                              <Trigger Enabled="true" Name="1. 任务开始+Boss战区域开始初始化" Id="19b91f19-c606-41f0-b367-8c0612493ddc" RegularExpression="^.{14} ChatLog 00:0839::(距巴隆城正门被封锁还有15秒。|“异界深渊月面地下溪谷”任务开始。)">
+                                <Actions>
+                                  <Action OrderNumber="1" VariableOp="UnsetRegex" VariableName="个人绘制_蚁狮行军.*" ActionType="Variable">
+                                    <Condition Enabled="false" Grouping="Or" />
+                                  </Action>
+                                  <Action OrderNumber="2" VariableName="个人绘制_蚁狮行军_冲锋_计数" ActionType="Variable">
+                                    <Condition Enabled="false" Grouping="Or" />
+                                  </Action>
+                                  <Action OrderNumber="3" ListVariableOp="UnsetRegex" ListVariableName="个人绘制_蚁狮行军.*" ActionType="ListVariable">
+                                    <Condition Enabled="false" Grouping="Or" />
+                                  </Action>
+                                  <Action OrderNumber="4" VariableOp="UnsetRegex" VariableName="个人绘制_异界月面_石柱.*" ActionType="Variable">
+                                    <Condition Enabled="false" Grouping="Or" />
+                                  </Action>
+                                </Actions>
+                                <Condition Enabled="false" Grouping="Or" />
+                              </Trigger>
+                              <Trigger Enabled="true" Name="2. Boss战结束" Id="f52276cf-56fb-49c4-b848-46c9003c1c26" RegularExpression="^.{14} ChatLog 00:0839::(巴隆城正门的封锁解除了……)">
+                                <Actions>
+                                  <Action OrderNumber="1" VariableOp="UnsetRegex" VariableName="个人绘制_蚁狮行军.*" ActionType="Variable">
+                                    <Condition Enabled="false" Grouping="Or" />
+                                  </Action>
+                                  <Action OrderNumber="2" VariableName="个人绘制_蚁狮行军_冲锋_计数" ActionType="Variable">
+                                    <Condition Enabled="false" Grouping="Or" />
+                                  </Action>
+                                  <Action OrderNumber="3" ListVariableOp="UnsetRegex" ListVariableName="个人绘制_蚁狮行军.*" ActionType="ListVariable">
+                                    <Condition Enabled="false" Grouping="Or" />
+                                  </Action>
+                                  <Action OrderNumber="4" VariableOp="UnsetRegex" VariableName="个人绘制_异界月面_石柱.*" ActionType="Variable">
+                                    <Condition Enabled="false" Grouping="Or" />
+                                  </Action>
+                                </Actions>
+                                <Condition Enabled="false" Grouping="Or" />
+                              </Trigger>
+                            </Triggers>
+                          </Folder>
+                          <Folder Id="8e9bf2e7-7789-4df2-a97f-7cc38d79a93d" Name="石柱" Enabled="true">
+                            <Folders />
+                            <Triggers>
+                              <Trigger Enabled="true" Sequential="True" Name="1.1 损坏石柱获取 (MoreLogLine)" Id="be7bd2d9-5953-4cbb-bc90-6541d386ff96" RegularExpression="(?&lt;timestamp&gt;^.{14}) StatusList (?&lt;type&gt;26):(?&lt;targetId&gt;[^:]*):石柱:(?&lt;jobLevelData&gt;[^:]*):(?&lt;hp&gt;[^:]*):(?&lt;maxHp&gt;[^:]*):(?&lt;mp&gt;[^:]*):(?&lt;maxMp&gt;[^:]*)(?::[^:]*){2}:(?&lt;x&gt;[^:]*):(?&lt;y&gt;[^:]*):(?&lt;z&gt;[^:]*):(?&lt;heading&gt;[^:]*):(?&lt;data0&gt;[^:]*):(?&lt;data1&gt;[^:]*):(?&lt;data2&gt;[^:]*)(?:$|:)">
+                                <Actions>
+                                  <Action OrderNumber="1" VariableOp="SetString" VariableName="个人绘制_异界月面_石柱1" VariableExpression="1" ActionType="Variable">
+                                    <Condition Enabled="true" Grouping="Or">
+                                      <ConditionSingle Enabled="true" ExpressionL="${y}" ExpressionTypeL="Numeric" ExpressionR="45" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+                                    </Condition>
+                                  </Action>
+                                  <Action OrderNumber="2" VariableOp="SetString" VariableName="个人绘制_异界月面_石柱2" VariableExpression="1" ActionType="Variable">
+                                    <Condition Enabled="true" Grouping="Or">
+                                      <ConditionSingle Enabled="true" ExpressionL="${y}" ExpressionTypeL="Numeric" ExpressionR="55" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+                                    </Condition>
+                                  </Action>
+                                  <Action OrderNumber="3" VariableOp="SetString" VariableName="个人绘制_异界月面_石柱3" VariableExpression="1" ActionType="Variable">
+                                    <Condition Enabled="true" Grouping="Or">
+                                      <ConditionSingle Enabled="true" ExpressionL="${y}" ExpressionTypeL="Numeric" ExpressionR="65" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+                                    </Condition>
+                                  </Action>
+                                  <Action OrderNumber="4" VariableOp="SetString" VariableName="个人绘制_异界月面_石柱4" VariableExpression="1" ActionType="Variable">
+                                    <Condition Enabled="true" Grouping="Or">
+                                      <ConditionSingle Enabled="true" ExpressionL="${y}" ExpressionTypeL="Numeric" ExpressionR="75" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+                                    </Condition>
+                                  </Action>
+                                </Actions>
+                                <Condition Enabled="false" Grouping="Or" />
+                              </Trigger>
+                              <Trigger Enabled="true" Sequential="True" Name="1.2 石柱崩塌 预览 (MoreLogLine)" Id="8ad57f5a-77e9-48ed-9d24-0da1cd33ea61" RegularExpression="^.{14} StartsCasting 14:(?&lt;sid&gt;[^:]*):(?&lt;sname&gt;[^:]*):(8802|8803):(?&lt;ability&gt;(?:[^:]|: )*?):(?&lt;tid&gt;[^:]*):(?&lt;tname&gt;[^:]*):(?&lt;castTime&gt;[^:]*):(?&lt;x&gt;[^:]*):(?&lt;y&gt;[^:]*):(?&lt;z&gt;[^:]*):(?&lt;heading&gt;[^:]*)(?:$|:)" PeriodRefire="Deny" RefirePeriodExpression="3000">
+                                <Actions>
+                                  <Action OrderNumber="1" ActionType="Placeholder" Description="1#" DescriptionOverride="True">
+                                    <Condition Enabled="false" Grouping="Or" />
+                                  </Action>
+                                  <Action OrderNumber="2" JsonEndpointExpression="http://127.0.0.1:47774/?namespace=line1&amp;destroyAt=15000,COMBAT_EXIT,TERRITORY_CHANGE" JsonPayloadExpression="{&quot;Name&quot;:&quot;1列2&quot;,&quot;type&quot;:2,&quot;refX&quot;:-20.0,&quot;refY&quot;:45.0,&quot;refZ&quot;:200.0,&quot;offX&quot;:20.0,&quot;offY&quot;:45.0,&quot;offZ&quot;:200.0,&quot;radius&quot;:5.0,&quot;color&quot;:598675456,&quot;thicc&quot;:3.0,&quot;FillStep&quot;:200.0}" ActionType="GenericJson">
+                                    <Condition Enabled="true" Grouping="Or">
+                                      <ConditionSingle Enabled="true" ExpressionL="${var:个人绘制_异界月面_石柱1}" ExpressionTypeL="String" ExpressionR="1" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                                    </Condition>
+                                  </Action>
+                                  <Action OrderNumber="3" JsonEndpointExpression="http://127.0.0.1:47774/?namespace=line1&amp;destroyAt=15000,COMBAT_EXIT,TERRITORY_CHANGE" JsonPayloadExpression="{&quot;Name&quot;:&quot;1列1&quot;,&quot;type&quot;:2,&quot;refX&quot;:-20.0,&quot;refY&quot;:45.0,&quot;refZ&quot;:200.0,&quot;offX&quot;:20.0,&quot;offY&quot;:45.0,&quot;offZ&quot;:200.0,&quot;radius&quot;:5.0,&quot;color&quot;:603979775,&quot;thicc&quot;:6.0,&quot;FillStep&quot;:200.0}" ActionType="GenericJson">
+                                    <Condition Enabled="true" Grouping="Or">
+                                      <ConditionSingle Enabled="true" ExpressionL="${var:个人绘制_异界月面_石柱1}" ExpressionTypeL="String" ExpressionR="1" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                                    </Condition>
+                                  </Action>
+                                  <Action OrderNumber="4" JsonEndpointExpression="http://127.0.0.1:47774/?namespace=line1&amp;destroyAt=15000,COMBAT_EXIT,TERRITORY_CHANGE" JsonPayloadExpression="{&quot;Name&quot;:&quot;1列0&quot;,&quot;type&quot;:2,&quot;refX&quot;:-20.0,&quot;refY&quot;:45.0,&quot;refZ&quot;:200.0,&quot;offX&quot;:20.0,&quot;offY&quot;:45.0,&quot;offZ&quot;:200.0,&quot;radius&quot;:5.0,&quot;color&quot;:603918592,&quot;thicc&quot;:4.0,&quot;FillStep&quot;:0.2}" ActionType="GenericJson">
+                                    <Condition Enabled="true" Grouping="Or">
+                                      <ConditionSingle Enabled="true" ExpressionL="${var:个人绘制_异界月面_石柱1}" ExpressionTypeL="String" ExpressionR="1" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                                    </Condition>
+                                  </Action>
+                                  <Action OrderNumber="5" ActionType="Placeholder" Description="2#" DescriptionOverride="True">
+                                    <Condition Enabled="false" Grouping="Or" />
+                                  </Action>
+                                  <Action OrderNumber="6" JsonEndpointExpression="http://127.0.0.1:47774/?namespace=line2&amp;destroyAt=15000,COMBAT_EXIT,TERRITORY_CHANGE" JsonPayloadExpression="{&quot;Name&quot;:&quot;2列2&quot;,&quot;type&quot;:2,&quot;refX&quot;:-20.0,&quot;refY&quot;:55.0,&quot;refZ&quot;:200.0,&quot;offX&quot;:20.0,&quot;offY&quot;:55.0,&quot;offZ&quot;:200.0,&quot;radius&quot;:5.0,&quot;color&quot;:598675456,&quot;thicc&quot;:3.0,&quot;FillStep&quot;:200.0}" ActionType="GenericJson">
+                                    <Condition Enabled="true" Grouping="Or">
+                                      <ConditionSingle Enabled="true" ExpressionL="${var:个人绘制_异界月面_石柱2}" ExpressionTypeL="String" ExpressionR="1" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                                    </Condition>
+                                  </Action>
+                                  <Action OrderNumber="7" JsonEndpointExpression="http://127.0.0.1:47774/?namespace=line2&amp;destroyAt=15000,COMBAT_EXIT,TERRITORY_CHANGE" JsonPayloadExpression="{&quot;Name&quot;:&quot;2列1&quot;,&quot;type&quot;:2,&quot;refX&quot;:-20.0,&quot;refY&quot;:55.0,&quot;refZ&quot;:200.0,&quot;offX&quot;:20.0,&quot;offY&quot;:55.0,&quot;offZ&quot;:200.0,&quot;radius&quot;:5.0,&quot;color&quot;:603979775,&quot;thicc&quot;:6.0,&quot;FillStep&quot;:200.0}" ActionType="GenericJson">
+                                    <Condition Enabled="true" Grouping="Or">
+                                      <ConditionSingle Enabled="true" ExpressionL="${var:个人绘制_异界月面_石柱2}" ExpressionTypeL="String" ExpressionR="1" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                                    </Condition>
+                                  </Action>
+                                  <Action OrderNumber="8" JsonEndpointExpression="http://127.0.0.1:47774/?namespace=line2&amp;destroyAt=15000,COMBAT_EXIT,TERRITORY_CHANGE" JsonPayloadExpression="{&quot;Name&quot;:&quot;2列0&quot;,&quot;type&quot;:2,&quot;refX&quot;:-20.0,&quot;refY&quot;:55.0,&quot;refZ&quot;:200.0,&quot;offX&quot;:20.0,&quot;offY&quot;:55.0,&quot;offZ&quot;:200.0,&quot;radius&quot;:5.0,&quot;color&quot;:603918592,&quot;thicc&quot;:4.0,&quot;FillStep&quot;:0.2}" ActionType="GenericJson">
+                                    <Condition Enabled="true" Grouping="Or">
+                                      <ConditionSingle Enabled="true" ExpressionL="${var:个人绘制_异界月面_石柱2}" ExpressionTypeL="String" ExpressionR="1" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                                    </Condition>
+                                  </Action>
+                                  <Action OrderNumber="9" ActionType="Placeholder" Description="3#" DescriptionOverride="True">
+                                    <Condition Enabled="false" Grouping="Or" />
+                                  </Action>
+                                  <Action OrderNumber="10" JsonEndpointExpression="http://127.0.0.1:47774/?namespace=line3&amp;destroyAt=15000,COMBAT_EXIT,TERRITORY_CHANGE" JsonPayloadExpression="{&quot;Name&quot;:&quot;3列2&quot;,&quot;type&quot;:2,&quot;refX&quot;:-20.0,&quot;refY&quot;:65.0,&quot;refZ&quot;:200.0,&quot;offX&quot;:20.0,&quot;offY&quot;:65.0,&quot;offZ&quot;:200.0,&quot;radius&quot;:5.0,&quot;color&quot;:598675456,&quot;thicc&quot;:3.0,&quot;FillStep&quot;:200.0}" ActionType="GenericJson">
+                                    <Condition Enabled="true" Grouping="Or">
+                                      <ConditionSingle Enabled="true" ExpressionL="${var:个人绘制_异界月面_石柱3}" ExpressionTypeL="String" ExpressionR="1" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                                    </Condition>
+                                  </Action>
+                                  <Action OrderNumber="11" JsonEndpointExpression="http://127.0.0.1:47774/?namespace=line3&amp;destroyAt=15000,COMBAT_EXIT,TERRITORY_CHANGE" JsonPayloadExpression="{&quot;Name&quot;:&quot;3列1&quot;,&quot;type&quot;:2,&quot;refX&quot;:-20.0,&quot;refY&quot;:65.0,&quot;refZ&quot;:200.0,&quot;offX&quot;:20.0,&quot;offY&quot;:65.0,&quot;offZ&quot;:200.0,&quot;radius&quot;:5.0,&quot;color&quot;:603979775,&quot;thicc&quot;:6.0,&quot;FillStep&quot;:200.0}" ActionType="GenericJson">
+                                    <Condition Enabled="true" Grouping="Or">
+                                      <ConditionSingle Enabled="true" ExpressionL="${var:个人绘制_异界月面_石柱3}" ExpressionTypeL="String" ExpressionR="1" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                                    </Condition>
+                                  </Action>
+                                  <Action OrderNumber="12" JsonEndpointExpression="http://127.0.0.1:47774/?namespace=line3&amp;destroyAt=15000,COMBAT_EXIT,TERRITORY_CHANGE" JsonPayloadExpression="{&quot;Name&quot;:&quot;3列0&quot;,&quot;type&quot;:2,&quot;refX&quot;:-20.0,&quot;refY&quot;:65.0,&quot;refZ&quot;:200.0,&quot;offX&quot;:20.0,&quot;offY&quot;:65.0,&quot;offZ&quot;:200.0,&quot;radius&quot;:5.0,&quot;color&quot;:603918592,&quot;thicc&quot;:4.0,&quot;FillStep&quot;:0.2}" ActionType="GenericJson">
+                                    <Condition Enabled="true" Grouping="Or">
+                                      <ConditionSingle Enabled="true" ExpressionL="${var:个人绘制_异界月面_石柱3}" ExpressionTypeL="String" ExpressionR="1" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                                    </Condition>
+                                  </Action>
+                                  <Action OrderNumber="13" ActionType="Placeholder" Description="4#" DescriptionOverride="True">
+                                    <Condition Enabled="false" Grouping="Or" />
+                                  </Action>
+                                  <Action OrderNumber="14" JsonEndpointExpression="http://127.0.0.1:47774/?namespace=line4&amp;destroyAt=15000,COMBAT_EXIT,TERRITORY_CHANGE" JsonPayloadExpression="{&quot;Name&quot;:&quot;4列2&quot;,&quot;type&quot;:2,&quot;refX&quot;:-20.0,&quot;refY&quot;:75.0,&quot;refZ&quot;:200.0,&quot;offX&quot;:20.0,&quot;offY&quot;:75.0,&quot;offZ&quot;:200.0,&quot;radius&quot;:5.0,&quot;color&quot;:598675456,&quot;thicc&quot;:3.0,&quot;FillStep&quot;:200.0}" ActionType="GenericJson">
+                                    <Condition Enabled="true" Grouping="Or">
+                                      <ConditionSingle Enabled="true" ExpressionL="${var:个人绘制_异界月面_石柱4}" ExpressionTypeL="String" ExpressionR="1" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                                    </Condition>
+                                  </Action>
+                                  <Action OrderNumber="15" JsonEndpointExpression="http://127.0.0.1:47774/?namespace=line4&amp;destroyAt=15000,COMBAT_EXIT,TERRITORY_CHANGE" JsonPayloadExpression="{&quot;Name&quot;:&quot;4列1&quot;,&quot;type&quot;:2,&quot;refX&quot;:-20.0,&quot;refY&quot;:75.0,&quot;refZ&quot;:200.0,&quot;offX&quot;:20.0,&quot;offY&quot;:75.0,&quot;offZ&quot;:200.0,&quot;radius&quot;:5.0,&quot;color&quot;:603979775,&quot;thicc&quot;:6.0,&quot;FillStep&quot;:200.0}" ActionType="GenericJson">
+                                    <Condition Enabled="true" Grouping="Or">
+                                      <ConditionSingle Enabled="true" ExpressionL="${var:个人绘制_异界月面_石柱4}" ExpressionTypeL="String" ExpressionR="1" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                                    </Condition>
+                                  </Action>
+                                  <Action OrderNumber="16" JsonEndpointExpression="http://127.0.0.1:47774/?namespace=line4&amp;destroyAt=15000,COMBAT_EXIT,TERRITORY_CHANGE" JsonPayloadExpression="{&quot;Name&quot;:&quot;4列0&quot;,&quot;type&quot;:2,&quot;refX&quot;:-20.0,&quot;refY&quot;:75.0,&quot;refZ&quot;:200.0,&quot;offX&quot;:20.0,&quot;offY&quot;:75.0,&quot;offZ&quot;:200.0,&quot;radius&quot;:5.0,&quot;color&quot;:603918592,&quot;thicc&quot;:4.0,&quot;FillStep&quot;:0.2}" ActionType="GenericJson">
+                                    <Condition Enabled="true" Grouping="Or">
+                                      <ConditionSingle Enabled="true" ExpressionL="${var:个人绘制_异界月面_石柱4}" ExpressionTypeL="String" ExpressionR="1" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                                    </Condition>
+                                  </Action>
+                                </Actions>
+                                <Condition Enabled="true" Grouping="And">
+                                  <ConditionSingle Enabled="true" ExpressionL="${var:个人绘制_蚁狮行军_开始}" ExpressionTypeL="String" ExpressionR="1" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                                </Condition>
+                              </Trigger>
+                              <Trigger Enabled="true" Sequential="True" Name="1.3 石柱崩塌 销毁" Id="8bc7e652-f25f-45f9-9330-acfe7167535a" RegularExpression="^.{14} (?:\w+) (15|16):(?&lt;sid&gt;[^:]*):(?&lt;sname&gt;[^:]*):8804:(?&lt;ability&gt;(?:[^:]|: )*?):(?&lt;tid&gt;[^:]*):(?&lt;tname&gt;[^:]*):(?&lt;flags&gt;[^:]*):(?&lt;damage&gt;[^:]*)(?::[^:]*){14}:(?&lt;targetCurrentHp&gt;[^:]*):(?&lt;targetMaxHp&gt;[^:]*):(?&lt;targetCurrentMp&gt;[^:]*):(?&lt;targetMaxMp&gt;[^:]*)(?::[^:]*){2}:(?&lt;targetX&gt;[^:]*):(?&lt;targetY&gt;[^:]*):(?&lt;targetZ&gt;[^:]*):(?&lt;targetHeading&gt;[^:]*):(?&lt;currentHp&gt;[^:]*):(?&lt;maxHp&gt;[^:]*):(?&lt;currentMp&gt;[^:]*):(?&lt;maxMp&gt;[^:]*)(?::[^:]*){2}:(?&lt;x&gt;[^:]*):(?&lt;y&gt;[^:]*):(?&lt;z&gt;[^:]*):(?&lt;heading&gt;[^:]*):(?&lt;sequence&gt;[^:]*):(?&lt;targetIndex&gt;[^:]*):(?&lt;targetCount&gt;[^:]*)(?:$|:)" PeriodRefire="Deny" RefirePeriodExpression="3000">
+                                <Actions>
+                                  <Action OrderNumber="1" JsonEndpointExpression="http://127.0.0.1:47774/?destroy=line1" ActionType="GenericJson">
+                                    <Condition Enabled="false" Grouping="Or" />
+                                  </Action>
+                                  <Action OrderNumber="2" JsonEndpointExpression="http://127.0.0.1:47774/?destroy=line2" ActionType="GenericJson">
+                                    <Condition Enabled="false" Grouping="Or" />
+                                  </Action>
+                                  <Action OrderNumber="3" JsonEndpointExpression="http://127.0.0.1:47774/?destroy=line3" ActionType="GenericJson">
+                                    <Condition Enabled="false" Grouping="Or" />
+                                  </Action>
+                                  <Action OrderNumber="4" JsonEndpointExpression="http://127.0.0.1:47774/?destroy=line4" ActionType="GenericJson">
+                                    <Condition Enabled="false" Grouping="Or" />
+                                  </Action>
+                                </Actions>
+                                <Condition Enabled="false" Grouping="Or" />
+                              </Trigger>
+                            </Triggers>
+                          </Folder>
+                        </Folders>
+                        <Triggers>
+                          <Trigger Enabled="true" Sequential="True" Name="1. 获取/绘制 冲锋路径" Id="0fb6c1b3-f7d7-4f3b-b49f-7e3940202a4a" RegularExpression="^.{14} ChatLog 00:0:104:(?&lt;sid&gt;.*?):(?&lt;sname&gt;.*?):8C1F:(?&lt;skillidtype&gt;.*?):(?&lt;casttime&gt;.*?):(?&lt;tid&gt;.*?):(?&lt;tname&gt;.*?):(?&lt;flag&gt;.*?):(?&lt;heading&gt;.*?):(?&lt;x&gt;.*?):(?&lt;y&gt;.*?):(?&lt;z&gt;.*?):">
+                            <Actions>
+                              <Action OrderNumber="1" VariableOp="SetNumeric" VariableName="个人绘制_蚁狮行军_开始" VariableExpression="1" ActionType="Variable">
+                                <Condition Enabled="false" Grouping="Or">
+                                  <ConditionSingle Enabled="true" ExpressionL="${evar:个人绘制_蚁狮行军_开始}" ExpressionTypeL="String" ExpressionR="0" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                                </Condition>
+                              </Action>
+                              <Action OrderNumber="2" VariableOp="SetNumeric" VariableName="个人绘制_蚁狮行军_冲锋预览_计数" VariableExpression="${var:个人绘制_蚁狮行军_冲锋预览_计数}+1" ActionType="Variable">
+                                <Condition Enabled="false" Grouping="Or" />
+                              </Action>
+                              <Action OrderNumber="3" ActionType="Placeholder" Description="储存" DescriptionOverride="True">
+                                <Condition Enabled="false" Grouping="Or" />
+                              </Action>
+                              <Action OrderNumber="4" ListVariableOp="Push" ListVariableName="个人绘制_蚁狮行军x" ListVariableExpression="${x}" ActionType="ListVariable">
+                                <Condition Enabled="false" Grouping="Or" />
+                              </Action>
+                              <Action OrderNumber="5" ListVariableOp="Push" ListVariableName="个人绘制_蚁狮行军y" ListVariableExpression="${y}" ActionType="ListVariable">
+                                <Condition Enabled="false" Grouping="Or" />
+                              </Action>
+                              <Action OrderNumber="6" ActionType="Placeholder" Description="1#" DescriptionOverride="True">
+                                <Condition Enabled="false" Grouping="Or" />
+                              </Action>
+                              <Action OrderNumber="7" JsonEndpointExpression="http://127.0.0.1:47774/?namespace=dash1&amp;destroyAt=18000,COMBAT_EXIT,TERRITORY_CHANGE" JsonPayloadExpression="{&quot;Name&quot;:&quot;即将判定 循环取值&quot;,&quot;type&quot;:2,&quot;refY&quot;:40.0,&quot;refZ&quot;:200.0,&quot;offX&quot;:${x},&quot;offY&quot;:${y},&quot;offZ&quot;:200.0,&quot;radius&quot;:4.0,&quot;color&quot;:603979775,&quot;thicc&quot;:3.0,&quot;overlayText&quot;:&quot;1&quot;,&quot;FillStep&quot;:0.2}" ActionType="GenericJson">
+                                <Condition Enabled="true" Grouping="And">
+                                  <ConditionSingle Enabled="true" ExpressionL="${var:个人绘制_蚁狮行军_冲锋预览_计数}" ExpressionTypeL="String" ExpressionR="1" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                                </Condition>
+                              </Action>
+                              <Action OrderNumber="8" ActionType="Placeholder" Description="2#" DescriptionOverride="True">
+                                <Condition Enabled="false" Grouping="Or" />
+                              </Action>
+                              <Action OrderNumber="9" JsonEndpointExpression="http://127.0.0.1:47774/?namespace=dash2&amp;destroyAt=18000,COMBAT_EXIT,TERRITORY_CHANGE" JsonPayloadExpression="{&quot;Name&quot;:&quot;未判定 循环取值&quot;,&quot;type&quot;:2,&quot;refX&quot;:${lvar:个人绘制_蚁狮行军x[1]},&quot;refY&quot;:${lvar:个人绘制_蚁狮行军y[1]},&quot;refZ&quot;:200.0,&quot;offX&quot;:${x},&quot;offY&quot;:${y},&quot;offZ&quot;:200.0,&quot;radius&quot;:4.0,&quot;color&quot;:587268037,&quot;thicc&quot;:3.0,&quot;overlayText&quot;:&quot;2&quot;,&quot;FillStep&quot;:0.2}" ActionType="GenericJson">
+                                <Condition Enabled="true" Grouping="And">
+                                  <ConditionSingle Enabled="true" ExpressionL="${var:个人绘制_蚁狮行军_冲锋预览_计数}" ExpressionTypeL="String" ExpressionR="2" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                                </Condition>
+                              </Action>
+                              <Action OrderNumber="10" ActionType="Placeholder" Description="3#" DescriptionOverride="True">
+                                <Condition Enabled="false" Grouping="Or" />
+                              </Action>
+                              <Action OrderNumber="11" JsonEndpointExpression="http://127.0.0.1:47774/?namespace=dash3&amp;destroyAt=18000,COMBAT_EXIT,TERRITORY_CHANGE" JsonPayloadExpression="{&quot;Name&quot;:&quot;未判定 循环取值&quot;,&quot;type&quot;:2,&quot;refX&quot;:${lvar:个人绘制_蚁狮行军x[2]},&quot;refY&quot;:${lvar:个人绘制_蚁狮行军y[2]},&quot;refZ&quot;:200.0,&quot;offX&quot;:${x},&quot;offY&quot;:${y},&quot;offZ&quot;:200.0,&quot;radius&quot;:4.0,&quot;color&quot;:587268037,&quot;thicc&quot;:3.0,&quot;overlayText&quot;:&quot;2&quot;,&quot;FillStep&quot;:0.2}" ActionType="GenericJson">
+                                <Condition Enabled="true" Grouping="And">
+                                  <ConditionSingle Enabled="true" ExpressionL="${var:个人绘制_蚁狮行军_冲锋预览_计数}" ExpressionTypeL="String" ExpressionR="3" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                                </Condition>
+                              </Action>
+                              <Action OrderNumber="12" ActionType="Placeholder" Description="4#" DescriptionOverride="True">
+                                <Condition Enabled="false" Grouping="Or" />
+                              </Action>
+                              <Action OrderNumber="13" JsonEndpointExpression="http://127.0.0.1:47774/?namespace=dash4&amp;destroyAt=18000,COMBAT_EXIT,TERRITORY_CHANGE" JsonPayloadExpression="{&quot;Name&quot;:&quot;未判定 循环取值&quot;,&quot;type&quot;:2,&quot;refX&quot;:${lvar:个人绘制_蚁狮行军x[3]},&quot;refY&quot;:${lvar:个人绘制_蚁狮行军y[3]},&quot;refZ&quot;:200.0,&quot;offX&quot;:${x},&quot;offY&quot;:${y},&quot;offZ&quot;:200.0,&quot;radius&quot;:4.0,&quot;color&quot;:587268037,&quot;thicc&quot;:3.0,&quot;overlayText&quot;:&quot;2&quot;,&quot;FillStep&quot;:0.2}" ActionType="GenericJson">
+                                <Condition Enabled="true" Grouping="And">
+                                  <ConditionSingle Enabled="true" ExpressionL="${var:个人绘制_蚁狮行军_冲锋预览_计数}" ExpressionTypeL="String" ExpressionR="4" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                                </Condition>
+                              </Action>
+                              <Action OrderNumber="14" ActionType="Placeholder" Description="5#" DescriptionOverride="True">
+                                <Condition Enabled="false" Grouping="Or" />
+                              </Action>
+                              <Action OrderNumber="15" JsonEndpointExpression="http://127.0.0.1:47774/?namespace=dash5&amp;destroyAt=18000,COMBAT_EXIT,TERRITORY_CHANGE" JsonPayloadExpression="{&quot;Name&quot;:&quot;未判定 循环取值&quot;,&quot;type&quot;:2,&quot;refX&quot;:${lvar:个人绘制_蚁狮行军x[4]},&quot;refY&quot;:${lvar:个人绘制_蚁狮行军y[4]},&quot;refZ&quot;:200.0,&quot;offX&quot;:${x},&quot;offY&quot;:${y},&quot;offZ&quot;:200.0,&quot;radius&quot;:4.0,&quot;color&quot;:587268037,&quot;thicc&quot;:3.0,&quot;overlayText&quot;:&quot;2&quot;,&quot;FillStep&quot;:0.2}" ActionType="GenericJson">
+                                <Condition Enabled="true" Grouping="And">
+                                  <ConditionSingle Enabled="true" ExpressionL="${var:个人绘制_蚁狮行军_冲锋预览_计数}" ExpressionTypeL="String" ExpressionR="5" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                                </Condition>
+                              </Action>
+                            </Actions>
+                            <Condition Enabled="false" Grouping="Or" />
+                          </Trigger>
+                          <Trigger Enabled="true" Sequential="True" Name="2. 预测销毁+高亮变色推送下一个冲锋+绘制石柱" Id="a89f2e6c-9de0-40ba-a6e8-d53dcf13cf8e" RegularExpression="^.{14} (?:\w+) (15|16):(?&lt;sid&gt;[^:]*):(?&lt;sname&gt;[^:]*):8801:(?&lt;ability&gt;(?:[^:]|: )*?):(?&lt;tid&gt;[^:]*):(?&lt;tname&gt;[^:]*):(?&lt;flags&gt;[^:]*):(?&lt;damage&gt;[^:]*)(?::[^:]*){14}:(?&lt;targetCurrentHp&gt;[^:]*):(?&lt;targetMaxHp&gt;[^:]*):(?&lt;targetCurrentMp&gt;[^:]*):(?&lt;targetMaxMp&gt;[^:]*)(?::[^:]*){2}:(?&lt;targetX&gt;[^:]*):(?&lt;targetY&gt;[^:]*):(?&lt;targetZ&gt;[^:]*):(?&lt;targetHeading&gt;[^:]*):(?&lt;currentHp&gt;[^:]*):(?&lt;maxHp&gt;[^:]*):(?&lt;currentMp&gt;[^:]*):(?&lt;maxMp&gt;[^:]*)(?::[^:]*){2}:(?&lt;x&gt;[^:]*):(?&lt;y&gt;[^:]*):(?&lt;z&gt;[^:]*):(?&lt;heading&gt;[^:]*):(?&lt;sequence&gt;[^:]*):(?&lt;targetIndex&gt;[^:]*):(?&lt;targetCount&gt;[^:]*)(?:$|:)" PeriodRefire="Deny" RefirePeriodExpression="500">
+                            <Actions>
+                              <Action OrderNumber="1" VariableOp="SetNumeric" VariableName="个人绘制_蚁狮行军_冲锋_计数" VariableExpression="${var:个人绘制_蚁狮行军_冲锋_计数}+1" ActionType="Variable">
+                                <Condition Enabled="false" Grouping="Or" />
+                              </Action>
+                              <Action OrderNumber="2" ActionType="Placeholder" Description=" 2号" DescriptionOverride="True">
+                                <Condition Enabled="false" Grouping="Or" />
+                              </Action>
+                              <Action OrderNumber="3" JsonEndpointExpression="http://127.0.0.1:47774/?destroy=dash1" ActionType="GenericJson">
+                                <Condition Enabled="true" Grouping="Or">
+                                  <ConditionSingle Enabled="true" ExpressionL="${var:个人绘制_蚁狮行军_冲锋_计数}" ExpressionTypeL="String" ExpressionR="1" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                                </Condition>
+                              </Action>
+                              <Action OrderNumber="4" JsonEndpointExpression="http://127.0.0.1:47774/?destroy=dash2" ActionType="GenericJson">
+                                <Condition Enabled="true" Grouping="Or">
+                                  <ConditionSingle Enabled="true" ExpressionL="${var:个人绘制_蚁狮行军_冲锋_计数}" ExpressionTypeL="String" ExpressionR="1" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                                </Condition>
+                              </Action>
+                              <Action OrderNumber="5" JsonEndpointExpression="http://127.0.0.1:47774/?namespace=hdash2&amp;destroyAt=18000,COMBAT_EXIT,TERRITORY_CHANGE" JsonPayloadExpression="{&quot;Name&quot;:&quot;即将判定 循环取值&quot;,&quot;type&quot;:2,&quot;refX&quot;:${lvar:个人绘制_蚁狮行军x[1]},&quot;refY&quot;:${lvar:个人绘制_蚁狮行军y[1]},&quot;refZ&quot;:200.0,&quot;offX&quot;:${lvar:个人绘制_蚁狮行军x[2]},&quot;offY&quot;:${lvar:个人绘制_蚁狮行军y[2]},&quot;offZ&quot;:200.0,&quot;radius&quot;:4.0,&quot;color&quot;:603979775,&quot;thicc&quot;:3.0,&quot;overlayText&quot;:&quot;2&quot;,&quot;FillStep&quot;:0.2}" ActionType="GenericJson">
+                                <Condition Enabled="true" Grouping="And">
+                                  <ConditionSingle Enabled="true" ExpressionL="${var:个人绘制_蚁狮行军_冲锋_计数}" ExpressionTypeL="String" ExpressionR="1" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                                </Condition>
+                              </Action>
+                              <Action OrderNumber="6" ActionType="Placeholder" Description=" 3号" DescriptionOverride="True">
+                                <Condition Enabled="false" Grouping="Or" />
+                              </Action>
+                              <Action OrderNumber="7" JsonEndpointExpression="http://127.0.0.1:47774/?destroy=dash3" ActionType="GenericJson">
+                                <Condition Enabled="true" Grouping="Or">
+                                  <ConditionSingle Enabled="true" ExpressionL="${var:个人绘制_蚁狮行军_冲锋_计数}" ExpressionTypeL="String" ExpressionR="2" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                                </Condition>
+                              </Action>
+                              <Action OrderNumber="8" JsonEndpointExpression="http://127.0.0.1:47774/?destroy=hdash2" ActionType="GenericJson">
+                                <Condition Enabled="true" Grouping="Or">
+                                  <ConditionSingle Enabled="true" ExpressionL="${var:个人绘制_蚁狮行军_冲锋_计数}" ExpressionTypeL="String" ExpressionR="2" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                                </Condition>
+                              </Action>
+                              <Action OrderNumber="9" JsonEndpointExpression="http://127.0.0.1:47774/?namespace=hdash3&amp;destroyAt=18000,COMBAT_EXIT,TERRITORY_CHANGE" JsonPayloadExpression="{&quot;Name&quot;:&quot;即将判定 循环取值&quot;,&quot;type&quot;:2,&quot;refX&quot;:${lvar:个人绘制_蚁狮行军x[2]},&quot;refY&quot;:${lvar:个人绘制_蚁狮行军y[2]},&quot;refZ&quot;:200.0,&quot;offX&quot;:${lvar:个人绘制_蚁狮行军x[3]},&quot;offY&quot;:${lvar:个人绘制_蚁狮行军y[3]},&quot;offZ&quot;:200.0,&quot;radius&quot;:4.0,&quot;color&quot;:603979775,&quot;thicc&quot;:3.0,&quot;overlayText&quot;:&quot;2&quot;,&quot;FillStep&quot;:0.2}" ActionType="GenericJson">
+                                <Condition Enabled="true" Grouping="And">
+                                  <ConditionSingle Enabled="true" ExpressionL="${var:个人绘制_蚁狮行军_冲锋_计数}" ExpressionTypeL="String" ExpressionR="2" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                                </Condition>
+                              </Action>
+                              <Action OrderNumber="10" ActionType="Placeholder" Description=" 4号" DescriptionOverride="True">
+                                <Condition Enabled="false" Grouping="Or" />
+                              </Action>
+                              <Action OrderNumber="11" JsonEndpointExpression="http://127.0.0.1:47774/?destroy=dash4" ActionType="GenericJson">
+                                <Condition Enabled="true" Grouping="Or">
+                                  <ConditionSingle Enabled="true" ExpressionL="${var:个人绘制_蚁狮行军_冲锋_计数}" ExpressionTypeL="String" ExpressionR="3" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                                </Condition>
+                              </Action>
+                              <Action OrderNumber="12" JsonEndpointExpression="http://127.0.0.1:47774/?destroy=hdash3" ActionType="GenericJson">
+                                <Condition Enabled="true" Grouping="Or">
+                                  <ConditionSingle Enabled="true" ExpressionL="${var:个人绘制_蚁狮行军_冲锋_计数}" ExpressionTypeL="String" ExpressionR="3" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                                </Condition>
+                              </Action>
+                              <Action OrderNumber="13" JsonEndpointExpression="http://127.0.0.1:47774/?namespace=hdash4&amp;destroyAt=18000,COMBAT_EXIT,TERRITORY_CHANGE" JsonPayloadExpression="{&quot;Name&quot;:&quot;即将判定 循环取值&quot;,&quot;type&quot;:2,&quot;refX&quot;:${lvar:个人绘制_蚁狮行军x[3]},&quot;refY&quot;:${lvar:个人绘制_蚁狮行军y[3]},&quot;refZ&quot;:200.0,&quot;offX&quot;:${lvar:个人绘制_蚁狮行军x[4]},&quot;offY&quot;:${lvar:个人绘制_蚁狮行军y[4]},&quot;offZ&quot;:200.0,&quot;radius&quot;:4.0,&quot;color&quot;:603979775,&quot;thicc&quot;:3.0,&quot;overlayText&quot;:&quot;2&quot;,&quot;FillStep&quot;:0.2}" ActionType="GenericJson">
+                                <Condition Enabled="true" Grouping="And">
+                                  <ConditionSingle Enabled="true" ExpressionL="${var:个人绘制_蚁狮行军_冲锋_计数}" ExpressionTypeL="String" ExpressionR="3" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                                </Condition>
+                              </Action>
+                              <Action OrderNumber="14" ActionType="Placeholder" Description=" 5号" DescriptionOverride="True">
+                                <Condition Enabled="false" Grouping="Or" />
+                              </Action>
+                              <Action OrderNumber="15" JsonEndpointExpression="http://127.0.0.1:47774/?destroy=dash5" ActionType="GenericJson">
+                                <Condition Enabled="true" Grouping="Or">
+                                  <ConditionSingle Enabled="true" ExpressionL="${var:个人绘制_蚁狮行军_冲锋_计数}" ExpressionTypeL="String" ExpressionR="4" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                                </Condition>
+                              </Action>
+                              <Action OrderNumber="16" JsonEndpointExpression="http://127.0.0.1:47774/?destroy=hdash4" ActionType="GenericJson">
+                                <Condition Enabled="true" Grouping="Or">
+                                  <ConditionSingle Enabled="true" ExpressionL="${var:个人绘制_蚁狮行军_冲锋_计数}" ExpressionTypeL="String" ExpressionR="4" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                                </Condition>
+                              </Action>
+                              <Action OrderNumber="17" JsonEndpointExpression="http://127.0.0.1:47774/?namespace=hdash5&amp;destroyAt=18000,COMBAT_EXIT,TERRITORY_CHANGE" JsonPayloadExpression="{&quot;Name&quot;:&quot;即将判定 循环取值&quot;,&quot;type&quot;:2,&quot;refX&quot;:${lvar:个人绘制_蚁狮行军x[4]},&quot;refY&quot;:${lvar:个人绘制_蚁狮行军y[4]},&quot;refZ&quot;:200.0,&quot;offX&quot;:${lvar:个人绘制_蚁狮行军x[5]},&quot;offY&quot;:${lvar:个人绘制_蚁狮行军y[5]},&quot;offZ&quot;:200.0,&quot;radius&quot;:4.0,&quot;color&quot;:603979775,&quot;thicc&quot;:3.0,&quot;overlayText&quot;:&quot;2&quot;,&quot;FillStep&quot;:0.2}" ActionType="GenericJson">
+                                <Condition Enabled="true" Grouping="And">
+                                  <ConditionSingle Enabled="true" ExpressionL="${var:个人绘制_蚁狮行军_冲锋_计数}" ExpressionTypeL="String" ExpressionR="4" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                                </Condition>
+                              </Action>
+                              <Action OrderNumber="18" ActionType="Placeholder" Description=" 结束" DescriptionOverride="True">
+                                <Condition Enabled="false" Grouping="Or" />
+                              </Action>
+                              <Action OrderNumber="19" JsonEndpointExpression="http://127.0.0.1:47774/?destroy=hdash5" ActionType="GenericJson">
+                                <Condition Enabled="true" Grouping="Or">
+                                  <ConditionSingle Enabled="true" ExpressionL="${var:个人绘制_蚁狮行军_冲锋_计数}" ExpressionTypeL="String" ExpressionR="5" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                                </Condition>
+                              </Action>
+                            </Actions>
+                            <Condition Enabled="false" Grouping="Or" />
+                          </Trigger>
+                          <Trigger Enabled="true" Sequential="True" Name="3. 延迟重置" Id="aab1593b-fb67-494b-b45d-399f7a97a365" RegularExpression="^.{14} StartsCasting 14:(?&lt;sid&gt;[^:]*):(?&lt;sname&gt;[^:]*):8800:(?&lt;ability&gt;(?:[^:]|: )*?):(?&lt;tid&gt;[^:]*):(?&lt;tname&gt;[^:]*):(?&lt;castTime&gt;[^:]*):(?&lt;x&gt;[^:]*):(?&lt;y&gt;[^:]*):(?&lt;z&gt;[^:]*):(?&lt;heading&gt;[^:]*)(?:$|:)" PrevActionsRefire="Deny" PeriodRefire="Deny" RefirePeriodExpression="3000">
+                            <Actions>
+                              <Action OrderNumber="1" VariableName="个人绘制_蚁狮行军_冲锋预览_计数" ActionType="Variable" ExecutionDelayExpression="13000">
+                                <Condition Enabled="false" Grouping="Or" />
+                              </Action>
+                              <Action OrderNumber="2" VariableName="个人绘制_蚁狮行军_冲锋_计数" ActionType="Variable">
+                                <Condition Enabled="false" Grouping="Or" />
+                              </Action>
+                              <Action OrderNumber="3" VariableName="个人绘制_蚁狮行军_开始" ActionType="Variable">
+                                <Condition Enabled="false" Grouping="Or" />
+                              </Action>
+                              <Action OrderNumber="4" ListVariableOp="UnsetRegex" ListVariableName="个人绘制_蚁狮行军.*" ActionType="ListVariable">
+                                <Condition Enabled="false" Grouping="Or" />
+                              </Action>
+                              <Action OrderNumber="5" VariableOp="UnsetRegex" VariableName="个人绘制_异界月面_石柱.*" ActionType="Variable">
+                                <Condition Enabled="false" Grouping="Or" />
+                              </Action>
+                            </Actions>
+                            <Condition Enabled="false" Grouping="Or" />
+                          </Trigger>
+                        </Triggers>
+                      </Folder>
+                    </Folders>
+                    <Triggers>
+                      <Trigger Enabled="true" Name="1. 流沙泉" Id="dba112f2-0145-42ce-b8f9-95307ebafd67" RegularExpression="^.{14} StartsCasting 14:(?&lt;sid&gt;[^:]*):(?&lt;sname&gt;[^:]*):8806:(?&lt;ability&gt;(?:[^:]|: )*?):(?&lt;tid&gt;[^:]*):(?&lt;tname&gt;[^:]*):(?&lt;castTime&gt;[^:]*):(?&lt;x&gt;[^:]*):(?&lt;y&gt;[^:]*):(?&lt;z&gt;[^:]*):(?&lt;heading&gt;[^:]*)(?:$|:)">
+                        <Actions>
+                          <Action OrderNumber="1" JsonEndpointExpression="http://127.0.0.1:47774/?namespace=stack1&amp;destroyAt=4700,COMBAT_EXIT,TERRITORY_CHANGE" JsonPayloadExpression="{&quot;Name&quot;:&quot;流沙泉&quot;,&quot;type&quot;:1,&quot;radius&quot;:10.0,&quot;color&quot;:3355508691,&quot;overlayBGColor&quot;:4278190080,&quot;overlayTextColor&quot;:4278255564,&quot;overlayVOffset&quot;:1.0,&quot;thicc&quot;:3.0,&quot;overlayText&quot;:&quot;分摊&quot;,&quot;refActorObjectID&quot;:${numeric:hex2dec(${tid})},&quot;refActorComparisonType&quot;:2,&quot;tether&quot;:true}" ActionType="GenericJson">
+                            <Condition Enabled="false" Grouping="And" />
+                          </Action>
+                        </Actions>
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Trigger>
+                    </Triggers>
+                  </Folder>
+                  <Folder Id="548ef6fd-24bd-4215-b1bf-77d85ec4b673" Name="Boss3 - 杜兰特" Enabled="true">
+                    <Folders>
+                      <Folder Id="44d4cd07-436d-4968-8996-5776cb09dbf6" Name="双连魔弹 16+16 (可能比较瞎眼，自行选择开关)" Enabled="true">
+                        <Folders>
+                          <Folder Id="ae0ee792-3e51-4f60-9663-2f3c593dbf39" Name="初始化" Enabled="true">
+                            <Folders />
+                            <Triggers>
+                              <Trigger Enabled="true" Name="1. 任务开始+Boss战区域开始初始化" Id="66d95a4d-1b0a-42f5-a408-f55fbe9e9609" RegularExpression="^.{14} ChatLog 00:0839::(距巴隆城庭院被封锁还有15秒。|“异界深渊月面地下溪谷”任务开始。)">
+                                <Actions>
+                                  <Action OrderNumber="1" ListVariableOp="UnsetRegex" ListVariableName="个人绘制_双连魔弹.*" ActionType="ListVariable">
+                                    <Condition Enabled="false" Grouping="Or" />
+                                  </Action>
+                                  <Action OrderNumber="2" VariableOp="UnsetRegex" VariableName="个人绘制_双连魔弹.*" ActionType="Variable">
+                                    <Condition Enabled="false" Grouping="Or" />
+                                  </Action>
+                                </Actions>
+                                <Condition Enabled="false" Grouping="Or" />
+                                <Conditions />
+                              </Trigger>
+                              <Trigger Enabled="true" Name="2. Boss战结束" Id="96de8caa-e4e4-43b4-9d7b-94c9fb4d275d" RegularExpression="^.{14} ChatLog 00:0839::(巴隆城庭院的封锁解除了……)">
+                                <Actions>
+                                  <Action OrderNumber="1" ListVariableOp="UnsetRegex" ListVariableName="个人绘制_双连魔弹.*" ActionType="ListVariable">
+                                    <Condition Enabled="false" Grouping="Or" />
+                                  </Action>
+                                  <Action OrderNumber="2" VariableOp="UnsetRegex" VariableName="个人绘制_双连魔弹.*" ActionType="Variable">
+                                    <Condition Enabled="false" Grouping="Or" />
+                                  </Action>
+                                </Actions>
+                                <Condition Enabled="false" Grouping="Or" />
+                                <Conditions />
+                              </Trigger>
+                            </Triggers>
+                          </Folder>
+                        </Folders>
+                        <Triggers>
+                          <Trigger Enabled="true" Sequential="True" Name="2. 16+16销毁" Id="e4230f0e-0e2c-4b85-a64e-17dcbf56e70e" RegularExpression="^.{14} (?:\w+) (15|16):(?&lt;sid&gt;[^:]*):(?&lt;sname&gt;[^:]*):88B2:(?&lt;ability&gt;(?:[^:]|: )*?):(?&lt;tid&gt;[^:]*):(?&lt;tname&gt;[^:]*):(?&lt;flags&gt;[^:]*):(?&lt;damage&gt;[^:]*)(?::[^:]*){14}:(?&lt;targetCurrentHp&gt;[^:]*):(?&lt;targetMaxHp&gt;[^:]*):(?&lt;targetCurrentMp&gt;[^:]*):(?&lt;targetMaxMp&gt;[^:]*)(?::[^:]*){2}:(?&lt;targetX&gt;[^:]*):(?&lt;targetY&gt;[^:]*):(?&lt;targetZ&gt;[^:]*):(?&lt;targetHeading&gt;[^:]*):(?&lt;currentHp&gt;[^:]*):(?&lt;maxHp&gt;[^:]*):(?&lt;currentMp&gt;[^:]*):(?&lt;maxMp&gt;[^:]*)(?::[^:]*){2}:(?&lt;x&gt;[^:]*):(?&lt;y&gt;[^:]*):(?&lt;z&gt;[^:]*):(?&lt;heading&gt;[^:]*):(?&lt;sequence&gt;[^:]*):(?&lt;targetIndex&gt;[^:]*):(?&lt;targetCount&gt;[^:]*)(?:$|:)" PeriodRefire="Deny" RefirePeriodExpression="50">
+                            <Actions>
+                              <Action OrderNumber="1" VariableOp="SetNumeric" VariableName="个人绘制_双连魔弹_计数" VariableExpression="${var:个人绘制_双连魔弹_计数}+1" ActionType="Variable">
+                                <Condition Enabled="false" Grouping="Or" />
+                              </Action>
+                              <Action OrderNumber="2" JsonEndpointExpression="http://127.0.0.1:47774/?destroy=circle${var:个人绘制_双连魔弹_计数}" ActionType="GenericJson">
+                                <Condition Enabled="false" Grouping="Or">
+                                  <ConditionSingle Enabled="true" ExpressionL="${var:个人绘制_双连魔弹_计数}" ExpressionTypeL="Numeric" ExpressionR="17" ExpressionTypeR="Numeric" ConditionType="NumericLess" />
+                                </Condition>
+                              </Action>
+                            </Actions>
+                            <Condition Enabled="false" Grouping="Or" />
+                          </Trigger>
+                          <Trigger Enabled="true" Sequential="True" Name="1. 16+16绘制" Id="52e8ac12-0a3c-4046-a38c-917d5236a7cb" RegularExpression="^.{14} ChatLog 00:0:104:(?&lt;sid&gt;.*?):(?&lt;sname&gt;.*?):8CDA:(?&lt;skillidtype&gt;.*?):(?&lt;casttime&gt;.*?):(?&lt;tid&gt;.*?):(?&lt;tname&gt;.*?):(?&lt;flag&gt;.*?):(?&lt;heading&gt;.*?):(?&lt;x&gt;.*?):(?&lt;y&gt;.*?):(?&lt;z&gt;.*?):">
+                            <Actions>
+                              <Action OrderNumber="1" VariableOp="SetNumeric" VariableName="个人绘制_双连魔弹_预览计数" VariableExpression="${var:个人绘制_双连魔弹_预览计数}+1" ActionType="Variable">
+                                <Condition Enabled="false" Grouping="Or" />
+                              </Action>
+                              <Action OrderNumber="2" ListVariableOp="Push" ListVariableName="个人绘制_双连魔弹_x" ListVariableExpression="${x}" ActionType="ListVariable">
+                                <Condition Enabled="false" Grouping="Or" />
+                              </Action>
+                              <Action OrderNumber="3" ListVariableOp="Push" ListVariableName="个人绘制_双连魔弹_y" ListVariableExpression="${y}" ActionType="ListVariable">
+                                <Condition Enabled="false" Grouping="Or" />
+                              </Action>
+                              <Action OrderNumber="4" ActionType="Placeholder" Description="16次以下" DescriptionOverride="True">
+                                <Condition Enabled="false" Grouping="Or" />
+                              </Action>
+                              <Action OrderNumber="5" JsonEndpointExpression="http://127.0.0.1:47774/?namespace=circle${var:个人绘制_双连魔弹_预览计数}&amp;destroyAt=6200,COMBAT_EXIT,TERRITORY_CHANGE" JsonPayloadExpression="{&quot;Name&quot;:&quot;双连魔弹3&quot;,&quot;refX&quot;:${x},&quot;refY&quot;:${y},&quot;refZ&quot;:${z},&quot;radius&quot;:5.0,&quot;color&quot;:4294901827}" ActionType="GenericJson">
+                                <Condition Enabled="true" Grouping="And">
+                                  <ConditionSingle Enabled="true" ExpressionL="${var:个人绘制_双连魔弹_预览计数}" ExpressionTypeL="Numeric" ExpressionR="17" ExpressionTypeR="Numeric" ConditionType="NumericLess" />
+                                </Condition>
+                              </Action>
+                              <Action OrderNumber="6" JsonEndpointExpression="http://127.0.0.1:47774/?namespace=circle${var:个人绘制_双连魔弹_预览计数}&amp;destroyAt=6200,COMBAT_EXIT,TERRITORY_CHANGE" JsonPayloadExpression="{&quot;Name&quot;:&quot;双连魔弹2&quot;,&quot;refX&quot;:${x},&quot;refY&quot;:${y},&quot;refZ&quot;:${z},&quot;radius&quot;:5.0,&quot;color&quot;:4294967295,&quot;thicc&quot;:5.0}" ActionType="GenericJson">
+                                <Condition Enabled="true" Grouping="And">
+                                  <ConditionSingle Enabled="true" ExpressionL="${var:个人绘制_双连魔弹_预览计数}" ExpressionTypeL="Numeric" ExpressionR="17" ExpressionTypeR="Numeric" ConditionType="NumericLess" />
+                                </Condition>
+                              </Action>
+                              <Action OrderNumber="7" JsonEndpointExpression="http://127.0.0.1:47774/?namespace=circle${var:个人绘制_双连魔弹_预览计数}&amp;destroyAt=6200,COMBAT_EXIT,TERRITORY_CHANGE" JsonPayloadExpression="{&quot;Name&quot;:&quot;双连魔弹1&quot;,&quot;refX&quot;:${x},&quot;refY&quot;:${y},&quot;refZ&quot;:${z},&quot;radius&quot;:5.0,&quot;color&quot;:850890496,&quot;thicc&quot;:1.0,&quot;Filled&quot;:true}" ActionType="GenericJson">
+                                <Condition Enabled="true" Grouping="And">
+                                  <ConditionSingle Enabled="true" ExpressionL="${var:个人绘制_双连魔弹_预览计数}" ExpressionTypeL="Numeric" ExpressionR="17" ExpressionTypeR="Numeric" ConditionType="NumericLess" />
+                                </Condition>
+                              </Action>
+                              <Action OrderNumber="8" ActionType="Placeholder" Description="16次以上" DescriptionOverride="True">
+                                <Condition Enabled="false" Grouping="Or" />
+                              </Action>
+                              <Action OrderNumber="9" JsonEndpointExpression="http://127.0.0.1:47774/?namespace=circle${var:个人绘制_双连魔弹_预览计数}&amp;destroyAt=6200,COMBAT_EXIT,TERRITORY_CHANGE" JsonPayloadExpression="{&quot;Name&quot;:&quot;双连魔弹3&quot;,&quot;refX&quot;:${x},&quot;refY&quot;:${y},&quot;refZ&quot;:${z},&quot;radius&quot;:5.0,&quot;color&quot;:4294901827}" ActionType="GenericJson">
+                                <Condition Enabled="true" Grouping="And">
+                                  <ConditionSingle Enabled="true" ExpressionL="${var:个人绘制_双连魔弹_预览计数}" ExpressionTypeL="Numeric" ExpressionR="16" ExpressionTypeR="Numeric" ConditionType="NumericGreater" />
+                                </Condition>
+                              </Action>
+                              <Action OrderNumber="10" JsonEndpointExpression="http://127.0.0.1:47774/?namespace=circle${var:个人绘制_双连魔弹_预览计数}&amp;destroyAt=6200,COMBAT_EXIT,TERRITORY_CHANGE" JsonPayloadExpression="{&quot;Name&quot;:&quot;双连魔弹2&quot;,&quot;refX&quot;:${x},&quot;refY&quot;:${y},&quot;refZ&quot;:${z},&quot;radius&quot;:5.0,&quot;color&quot;:4294967295,&quot;thicc&quot;:5.0}" ActionType="GenericJson">
+                                <Condition Enabled="true" Grouping="And">
+                                  <ConditionSingle Enabled="true" ExpressionL="${var:个人绘制_双连魔弹_预览计数}" ExpressionTypeL="Numeric" ExpressionR="16" ExpressionTypeR="Numeric" ConditionType="NumericGreater" />
+                                </Condition>
+                              </Action>
+                              <Action OrderNumber="11" JsonEndpointExpression="http://127.0.0.1:47774/?namespace=circle${var:个人绘制_双连魔弹_预览计数}&amp;destroyAt=6200,COMBAT_EXIT,TERRITORY_CHANGE" JsonPayloadExpression="{&quot;Name&quot;:&quot;双连魔弹1.2&quot;,&quot;refX&quot;:${x},&quot;refY&quot;:${y},&quot;refZ&quot;:${z},&quot;radius&quot;:5.0,&quot;color&quot;:838926291,&quot;thicc&quot;:1.0,&quot;Filled&quot;:true}" ActionType="GenericJson">
+                                <Condition Enabled="true" Grouping="And">
+                                  <ConditionSingle Enabled="true" ExpressionL="${var:个人绘制_双连魔弹_预览计数}" ExpressionTypeL="Numeric" ExpressionR="16" ExpressionTypeR="Numeric" ConditionType="NumericGreater" />
+                                </Condition>
+                              </Action>
+                            </Actions>
+                            <Condition Enabled="false" Grouping="Or" />
+                            <Conditions />
+                          </Trigger>
+                          <Trigger Enabled="true" Sequential="True" Name="3. 延迟重置 16s后" Id="a45ba0ba-ac44-49a6-9447-02a81619906e" RegularExpression="^.{14} StartsCasting 14:(?&lt;sid&gt;[^:]*):(?&lt;sname&gt;[^:]*):8CD9:(?&lt;ability&gt;(?:[^:]|: )*?):(?&lt;tid&gt;[^:]*):(?&lt;tname&gt;[^:]*):(?&lt;castTime&gt;[^:]*):(?&lt;x&gt;[^:]*):(?&lt;y&gt;[^:]*):(?&lt;z&gt;[^:]*):(?&lt;heading&gt;[^:]*)(?:$|:)" PeriodRefire="Deny" RefirePeriodExpression="16000">
+                            <Actions>
+                              <Action OrderNumber="1" ListVariableOp="UnsetRegex" ListVariableName="个人绘制_双连魔弹.*" ActionType="ListVariable" ExecutionDelayExpression="16000">
+                                <Condition Enabled="false" Grouping="Or" />
+                              </Action>
+                              <Action OrderNumber="2" VariableOp="UnsetRegex" VariableName="个人绘制_双连魔弹.*" ActionType="Variable">
+                                <Condition Enabled="false" Grouping="Or" />
+                              </Action>
+                            </Actions>
+                            <Condition Enabled="false" Grouping="Or" />
+                            <Conditions />
+                          </Trigger>
+                        </Triggers>
+                      </Folder>
+                    </Folders>
+                    <Triggers>
+                      <Trigger Enabled="true" Sequential="True" Name="2. 魔力球 - 爆炸" Id="6a5db832-8b57-407a-8099-6b7f485c434f" RegularExpression="^.{14} StartsCasting 14:(?&lt;sid&gt;[^:]*):(?&lt;sname&gt;[^:]*):88BE:(?&lt;ability&gt;(?:[^:]|: )*?):(?&lt;tid&gt;[^:]*):(?&lt;tname&gt;[^:]*):(?&lt;castTime&gt;[^:]*):(?&lt;x&gt;[^:]*):(?&lt;y&gt;[^:]*):(?&lt;z&gt;[^:]*):(?&lt;heading&gt;[^:]*)(?:$|:)">
+                        <Actions>
+                          <Action OrderNumber="1" JsonEndpointExpression="http://127.0.0.1:47774/?namespace=ball1&amp;destroyAt=4700,COMBAT_EXIT,TERRITORY_CHANGE" JsonPayloadExpression="{&quot;Name&quot;:&quot;魔力球 爆炸3&quot;,&quot;type&quot;:1,&quot;radius&quot;:11.0,&quot;color&quot;:4294911232,&quot;refActorObjectID&quot;:${numeric:hex2dec(${sid})},&quot;refActorComparisonType&quot;:2}" ActionType="GenericJson">
+                            <Condition Enabled="false" Grouping="And" />
+                          </Action>
+                          <Action OrderNumber="2" JsonEndpointExpression="http://127.0.0.1:47774/?namespace=ball1&amp;destroyAt=4700,COMBAT_EXIT,TERRITORY_CHANGE" JsonPayloadExpression="{&quot;Name&quot;:&quot;魔力球 爆炸2&quot;,&quot;type&quot;:1,&quot;radius&quot;:11.0,&quot;color&quot;:4294967295,&quot;thicc&quot;:5.0,&quot;refActorObjectID&quot;:${numeric:hex2dec(${sid})},&quot;refActorComparisonType&quot;:2}" ActionType="GenericJson">
+                            <Condition Enabled="false" Grouping="And" />
+                          </Action>
+                          <Action OrderNumber="3" JsonEndpointExpression="http://127.0.0.1:47774/?namespace=ball1&amp;destroyAt=4700,COMBAT_EXIT,TERRITORY_CHANGE" JsonPayloadExpression="{&quot;Name&quot;:&quot;魔力球 爆炸1&quot;,&quot;type&quot;:1,&quot;radius&quot;:11.0,&quot;color&quot;:603923712,&quot;refActorObjectID&quot;:${numeric:hex2dec(${sid})},&quot;refActorComparisonType&quot;:2,&quot;Filled&quot;:true}" ActionType="GenericJson">
+                            <Condition Enabled="false" Grouping="And" />
+                          </Action>
+                        </Actions>
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Trigger>
+                      <Trigger Enabled="true" Sequential="True" Name="3. 魔力球 - 爆炸 (分裂)" Id="003ffcae-8987-4ee0-acd6-929aa7f1557a" RegularExpression="^.{14} StartsCasting 14:(?&lt;sid&gt;[^:]*):(?&lt;sname&gt;[^:]*):88BD:(?&lt;ability&gt;(?:[^:]|: )*?):(?&lt;tid&gt;[^:]*):(?&lt;tname&gt;[^:]*):(?&lt;castTime&gt;[^:]*):(?&lt;x&gt;[^:]*):(?&lt;y&gt;[^:]*):(?&lt;z&gt;[^:]*):(?&lt;heading&gt;[^:]*)(?:$|:)">
+                        <Actions>
+                          <Action OrderNumber="1" JsonEndpointExpression="http://127.0.0.1:47774/?namespace=ball2&amp;destroyAt=11700,COMBAT_EXIT,TERRITORY_CHANGE" JsonPayloadExpression="{&quot;Name&quot;:&quot;魔力球 爆炸分裂3&quot;,&quot;type&quot;:1,&quot;radius&quot;:9.0,&quot;color&quot;:4294911232,&quot;refActorObjectID&quot;:${numeric:hex2dec(${sid})},&quot;refActorComparisonType&quot;:2}" ActionType="GenericJson">
+                            <Condition Enabled="false" Grouping="And" />
+                          </Action>
+                          <Action OrderNumber="2" JsonEndpointExpression="http://127.0.0.1:47774/?namespace=ball2&amp;destroyAt=11700,COMBAT_EXIT,TERRITORY_CHANGE" JsonPayloadExpression="{&quot;Name&quot;:&quot;魔力球 爆炸分裂2&quot;,&quot;type&quot;:1,&quot;radius&quot;:9.0,&quot;color&quot;:4294967295,&quot;thicc&quot;:5.0,&quot;refActorObjectID&quot;:${numeric:hex2dec(${sid})},&quot;refActorComparisonType&quot;:2}" ActionType="GenericJson">
+                            <Condition Enabled="false" Grouping="And" />
+                          </Action>
+                          <Action OrderNumber="3" JsonEndpointExpression="http://127.0.0.1:47774/?namespace=ball2&amp;destroyAt=11700,COMBAT_EXIT,TERRITORY_CHANGE" JsonPayloadExpression="{&quot;Name&quot;:&quot;魔力球 爆炸分裂1&quot;,&quot;type&quot;:1,&quot;radius&quot;:9.0,&quot;color&quot;:603923712,&quot;refActorObjectID&quot;:${numeric:hex2dec(${sid})},&quot;refActorComparisonType&quot;:2,&quot;Filled&quot;:true}" ActionType="GenericJson">
+                            <Condition Enabled="false" Grouping="And" />
+                          </Action>
+                        </Actions>
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Trigger>
+                      <Trigger Enabled="true" Sequential="True" Name="4. 重斩" Id="8b9aa188-bd83-4faa-89c5-7b8764a706d7" RegularExpression="^.{14} StartsCasting 14:(?&lt;sid&gt;[^:]*):(?&lt;sname&gt;[^:]*):88C1:(?&lt;ability&gt;(?:[^:]|: )*?):(?&lt;tid&gt;[^:]*):(?&lt;tname&gt;[^:]*):(?&lt;castTime&gt;[^:]*):(?&lt;x&gt;[^:]*):(?&lt;y&gt;[^:]*):(?&lt;z&gt;[^:]*):(?&lt;heading&gt;[^:]*)(?:$|:)">
+                        <Actions>
+                          <Action OrderNumber="1" JsonEndpointExpression="http://127.0.0.1:47774/?namespace=a1&amp;destroyAt=4700,COMBAT_EXIT,TERRITORY_CHANGE" JsonPayloadExpression="{&quot;Name&quot;:&quot;重斩2&quot;,&quot;type&quot;:4,&quot;radius&quot;:50.0,&quot;coneAngleMin&quot;:-45,&quot;coneAngleMax&quot;:45,&quot;color&quot;:1273560832,&quot;thicc&quot;:6.0,&quot;refActorObjectID&quot;:${numeric:hex2dec(${sid})},&quot;FillStep&quot;:1.0,&quot;refActorComparisonType&quot;:2,&quot;includeRotation&quot;:true,&quot;onlyTargetable&quot;:true,&quot;Filled&quot;:true}" ActionType="GenericJson">
+                            <Condition Enabled="false" Grouping="And" />
+                          </Action>
+                          <Action OrderNumber="2" JsonEndpointExpression="http://127.0.0.1:47774/?namespace=a1&amp;destroyAt=4700,COMBAT_EXIT,TERRITORY_CHANGE" JsonPayloadExpression="{&quot;Name&quot;:&quot;重斩1&quot;,&quot;type&quot;:4,&quot;radius&quot;:50.0,&quot;coneAngleMin&quot;:-45,&quot;coneAngleMax&quot;:45,&quot;color&quot;:4293459712,&quot;thicc&quot;:6.0,&quot;refActorObjectID&quot;:${numeric:hex2dec(${sid})},&quot;FillStep&quot;:999.0,&quot;refActorComparisonType&quot;:2,&quot;includeRotation&quot;:true,&quot;onlyTargetable&quot;:true,&quot;Filled&quot;:true}" ActionType="GenericJson">
+                            <Condition Enabled="false" Grouping="And" />
+                          </Action>
+                        </Actions>
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Trigger>
+                      <Trigger Enabled="true" Sequential="True" Name="5. 暮光相" Id="1e08ee69-f7b7-4568-ab89-1b670fb76c09" RegularExpression="^.{14} StartsCasting 14:(?&lt;sid&gt;[^:]*):(?&lt;sname&gt;[^:]*):8CD8:(?&lt;ability&gt;(?:[^:]|: )*?):(?&lt;tid&gt;[^:]*):(?&lt;tname&gt;[^:]*):(?&lt;castTime&gt;[^:]*):(?&lt;x&gt;[^:]*):(?&lt;y&gt;[^:]*):(?&lt;z&gt;[^:]*):(?&lt;heading&gt;[^:]*)(?:$|:)">
+                        <Actions>
+                          <Action OrderNumber="1" JsonEndpointExpression="http://127.0.0.1:47774/?namespace=a2&amp;destroyAt=7700,COMBAT_EXIT,TERRITORY_CHANGE" JsonPayloadExpression="{&quot;Name&quot;:&quot;老三-暮光相（直线）3&quot;,&quot;type&quot;:3,&quot;refY&quot;:-22.5,&quot;offY&quot;:22.5,&quot;radius&quot;:10.0,&quot;color&quot;:598750208,&quot;refActorObjectID&quot;:${numeric:hex2dec(${sid})},&quot;FillStep&quot;:200.0,&quot;refActorComparisonType&quot;:2,&quot;includeRotation&quot;:true}" ActionType="GenericJson">
+                            <Condition Enabled="false" Grouping="And" />
+                          </Action>
+                          <Action OrderNumber="2" JsonEndpointExpression="http://127.0.0.1:47774/?namespace=a2&amp;destroyAt=7700,COMBAT_EXIT,TERRITORY_CHANGE" JsonPayloadExpression="{&quot;Name&quot;:&quot;老三-暮光相（直线）2&quot;,&quot;type&quot;:3,&quot;refY&quot;:-22.5,&quot;offY&quot;:22.5,&quot;radius&quot;:10.0,&quot;color&quot;:4294967295,&quot;thicc&quot;:5.0,&quot;refActorObjectID&quot;:${numeric:hex2dec(${sid})},&quot;FillStep&quot;:200.0,&quot;refActorComparisonType&quot;:2,&quot;includeRotation&quot;:true}" ActionType="GenericJson">
+                            <Condition Enabled="false" Grouping="And" />
+                          </Action>
+                          <Action OrderNumber="3" JsonEndpointExpression="http://127.0.0.1:47774/?namespace=a2&amp;destroyAt=7700,COMBAT_EXIT,TERRITORY_CHANGE" JsonPayloadExpression="{&quot;Name&quot;:&quot;老三-暮光相（直线）1&quot;,&quot;type&quot;:3,&quot;refY&quot;:-22.5,&quot;offY&quot;:22.5,&quot;radius&quot;:10.0,&quot;color&quot;:855620352,&quot;thicc&quot;:3.0,&quot;refActorObjectID&quot;:${numeric:hex2dec(${sid})},&quot;FillStep&quot;:0.2,&quot;refActorComparisonType&quot;:2,&quot;includeRotation&quot;:true}" ActionType="GenericJson">
+                            <Condition Enabled="false" Grouping="And" />
+                          </Action>
+                        </Actions>
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Trigger>
+                      <Trigger Enabled="true" Sequential="True" Name="6. 暗黑魔弹" Id="be5cd1cd-bd06-468a-940a-c59e7d212594" RegularExpression="^.{14} StartsCasting 14:(?&lt;sid&gt;[^:]*):(?&lt;sname&gt;[^:]*):88BA:(?&lt;ability&gt;(?:[^:]|: )*?):(?&lt;tid&gt;[^:]*):(?&lt;tname&gt;[^:]*):(?&lt;castTime&gt;[^:]*):(?&lt;x&gt;[^:]*):(?&lt;y&gt;[^:]*):(?&lt;z&gt;[^:]*):(?&lt;heading&gt;[^:]*)(?:$|:)">
+                        <Actions>
+                          <Action OrderNumber="1" JsonEndpointExpression="http://127.0.0.1:47774/?namespace=a3&amp;destroyAt=7700,COMBAT_EXIT,TERRITORY_CHANGE" JsonPayloadExpression="{&quot;Name&quot;:&quot;老三-暗黑魔弹3&quot;,&quot;type&quot;:1,&quot;radius&quot;:25.0,&quot;color&quot;:4294906112,&quot;refActorObjectID&quot;:${numeric:hex2dec(${sid})},&quot;refActorComparisonType&quot;:2}" ActionType="GenericJson">
+                            <Condition Enabled="false" Grouping="And" />
+                          </Action>
+                          <Action OrderNumber="2" JsonEndpointExpression="http://127.0.0.1:47774/?namespace=a3&amp;destroyAt=7700,COMBAT_EXIT,TERRITORY_CHANGE" JsonPayloadExpression="{&quot;Name&quot;:&quot;老三-暗黑魔弹2&quot;,&quot;type&quot;:1,&quot;radius&quot;:25.0,&quot;color&quot;:4294967295,&quot;thicc&quot;:5.0,&quot;refActorObjectID&quot;:${numeric:hex2dec(${sid})},&quot;refActorComparisonType&quot;:2}" ActionType="GenericJson">
+                            <Condition Enabled="false" Grouping="And" />
+                          </Action>
+                          <Action OrderNumber="3" JsonEndpointExpression="http://127.0.0.1:47774/?namespace=a3&amp;destroyAt=7700,COMBAT_EXIT,TERRITORY_CHANGE" JsonPayloadExpression="{&quot;Name&quot;:&quot;老三-暗黑魔弹1&quot;,&quot;type&quot;:1,&quot;radius&quot;:25.0,&quot;color&quot;:603920384,&quot;thicc&quot;:3.0,&quot;refActorObjectID&quot;:${numeric:hex2dec(${sid})},&quot;refActorComparisonType&quot;:2,&quot;Filled&quot;:true}" ActionType="GenericJson">
+                            <Condition Enabled="false" Grouping="And" />
+                          </Action>
+                        </Actions>
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Trigger>
+                      <Trigger Enabled="true" Sequential="True" Name="7. 死亡之旅" Id="6c6f156f-5ea8-4380-936e-bad4e31aafbb" RegularExpression="^.{14} StartsCasting 14:(?&lt;sid&gt;[^:]*):(?&lt;sname&gt;[^:]*):(?&lt;id&gt;(88B3|88B4)):(?&lt;ability&gt;(?:[^:]|: )*?):(?&lt;tid&gt;[^:]*):(?&lt;tname&gt;[^:]*):(?&lt;castTime&gt;[^:]*):(?&lt;x&gt;[^:]*):(?&lt;y&gt;[^:]*):(?&lt;z&gt;[^:]*):(?&lt;heading&gt;[^:]*)(?:$|:)">
+                        <Actions>
+                          <Action OrderNumber="1" ActionType="Placeholder" Description="钢铁" DescriptionOverride="True">
+                            <Condition Enabled="false" Grouping="Or" />
+                          </Action>
+                          <Action OrderNumber="2" JsonEndpointExpression="http://127.0.0.1:47774/?namespace=a4&amp;destroyAt=5700,COMBAT_EXIT,TERRITORY_CHANGE" JsonPayloadExpression="{&quot;Name&quot;:&quot;老三-死亡之旅钢铁3&quot;,&quot;type&quot;:1,&quot;radius&quot;:8.0,&quot;color&quot;:4294907904,&quot;refActorObjectID&quot;:${numeric:hex2dec(${sid})},&quot;refActorComparisonType&quot;:2}" ActionType="GenericJson">
+                            <Condition Enabled="true" Grouping="And">
+                              <ConditionSingle Enabled="true" ExpressionL="${id}" ExpressionTypeL="String" ExpressionR="88B3" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                            </Condition>
+                          </Action>
+                          <Action OrderNumber="3" JsonEndpointExpression="http://127.0.0.1:47774/?namespace=a4&amp;destroyAt=5700,COMBAT_EXIT,TERRITORY_CHANGE" JsonPayloadExpression="{&quot;Name&quot;:&quot;老三-死亡之旅钢铁2&quot;,&quot;type&quot;:1,&quot;radius&quot;:8.0,&quot;color&quot;:4294967295,&quot;thicc&quot;:5.0,&quot;refActorObjectID&quot;:${numeric:hex2dec(${sid})},&quot;refActorComparisonType&quot;:2}" ActionType="GenericJson">
+                            <Condition Enabled="true" Grouping="And">
+                              <ConditionSingle Enabled="true" ExpressionL="${id}" ExpressionTypeL="String" ExpressionR="88B3" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                            </Condition>
+                          </Action>
+                          <Action OrderNumber="4" JsonEndpointExpression="http://127.0.0.1:47774/?namespace=a4&amp;destroyAt=5700,COMBAT_EXIT,TERRITORY_CHANGE" JsonPayloadExpression="{&quot;Name&quot;:&quot;老三-死亡之旅钢铁1&quot;,&quot;type&quot;:1,&quot;radius&quot;:8.0,&quot;color&quot;:603915264,&quot;thicc&quot;:3.0,&quot;refActorObjectID&quot;:${numeric:hex2dec(${sid})},&quot;refActorComparisonType&quot;:2,&quot;Filled&quot;:true}" ActionType="GenericJson">
+                            <Condition Enabled="true" Grouping="And">
+                              <ConditionSingle Enabled="true" ExpressionL="${id}" ExpressionTypeL="String" ExpressionR="88B3" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                            </Condition>
+                          </Action>
+                          <Action OrderNumber="5" ActionType="Placeholder" Description="扇形" DescriptionOverride="True">
+                            <Condition Enabled="false" Grouping="Or" />
+                          </Action>
+                          <Action OrderNumber="6" JsonEndpointExpression="http://127.0.0.1:47774/?namespace=a5&amp;destroyAt=6200,COMBAT_EXIT,TERRITORY_CHANGE" JsonPayloadExpression="{&quot;Name&quot;:&quot;老三-死亡之旅斜线描边&quot;,&quot;type&quot;:4,&quot;radius&quot;:22.5,&quot;coneAngleMin&quot;:-15,&quot;coneAngleMax&quot;:15,&quot;color&quot;:4294961664,&quot;thicc&quot;:3.0,&quot;refActorObjectID&quot;:${numeric:hex2dec(${sid})},&quot;FillStep&quot;:30.0,&quot;refActorComparisonType&quot;:2,&quot;includeRotation&quot;:true,&quot;Filled&quot;:true}" ActionType="GenericJson">
+                            <Condition Enabled="true" Grouping="And">
+                              <ConditionSingle Enabled="true" ExpressionL="${id}" ExpressionTypeL="String" ExpressionR="88B4" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                            </Condition>
+                          </Action>
+                          <Action OrderNumber="7" JsonEndpointExpression="http://127.0.0.1:47774/?namespace=a5&amp;destroyAt=6200,COMBAT_EXIT,TERRITORY_CHANGE" JsonPayloadExpression="{&quot;Name&quot;:&quot;老三-死亡之旅斜线&quot;,&quot;type&quot;:4,&quot;radius&quot;:22.5,&quot;coneAngleMin&quot;:-15,&quot;coneAngleMax&quot;:15,&quot;color&quot;:1442839040,&quot;thicc&quot;:3.0,&quot;refActorObjectID&quot;:${numeric:hex2dec(${sid})},&quot;FillStep&quot;:1.0,&quot;refActorComparisonType&quot;:2,&quot;includeRotation&quot;:true,&quot;Filled&quot;:true}" ActionType="GenericJson">
+                            <Condition Enabled="true" Grouping="And">
+                              <ConditionSingle Enabled="true" ExpressionL="${id}" ExpressionTypeL="String" ExpressionR="88B4" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                            </Condition>
+                          </Action>
+                        </Actions>
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Trigger>
+                    </Triggers>
+                  </Folder>
+                </Folders>
+                <Triggers>
+                  <Trigger Enabled="true" Name="原素材来自群友上传于群文件，重新调色 + 机制补充修正，没什么时间弄了" Id="20f93cc2-78b8-4865-8d41-9a389f3ad39f" RegularExpression="">
+                    <Actions />
+                    <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
+                  </Trigger>
+                </Triggers>
+              </Folder>
             </Folders>
             <Triggers>
               <Trigger Enabled="true" Name="※ 这个分组下的所有副本分组都可以单独运行，不依靠通用的触发" Id="84a2b580-33d3-4f32-a963-bb893c3ad0f1" RegularExpression="">
-                <Actions />
-                <Condition Enabled="false" Grouping="Or" />
-              </Trigger>
-              <Trigger Enabled="true" Name="※ 不知道是方法问题，触发器绘制真的超级超级麻烦！！！" Id="8754f315-1421-46f3-9094-f70604accdce" RegularExpression="">
                 <Actions />
                 <Condition Enabled="false" Grouping="Or" />
               </Trigger>
@@ -19609,7 +20194,7 @@
           </Folder>
           <Folder Id="b5e97493-2007-4e7e-b857-8fe01fe24fd0" Name="3.0 苍穹之禁城" Enabled="true">
             <Folders>
-              <Folder FFXIVZoneFilterEnabled="True" FfxivZoneFilterRegularExpression="^559$" Id="4148aae7-1604-4fc8-bcd5-c3608eb2d0ee" Name="尼德霍格征龙战" Enabled="true">
+              <Folder FFXIVZoneFilterEnabled="True" FfxivZoneFilterRegularExpression="^559$" Id="4148aae7-1604-4fc8-bcd5-c3608eb2d0ee" Name="尼德霍格征龙战" Enabled="false">
                 <Folders>
                   <Folder Id="08b95185-dd6c-41d4-9bd8-d13308e91fdf" Name="死亡轮回 4-7hits" Enabled="true">
                     <Folders />
@@ -20605,7 +21190,7 @@
             <Folders>
               <Folder FFXIVZoneFilterEnabled="True" FfxivZoneFilterRegularExpression="^674$" Id="14b707c4-f931-492a-9d63-dfa747c589bc" Name="须佐之男歼灭战" Enabled="true">
                 <Folders>
-                  <Folder Id="a2c94167-4892-420c-8ac0-db6615634b23" Name="自动标记石牢 [默语(仅自己可见)版本]" Enabled="true">
+                  <Folder Id="a2c94167-4892-420c-8ac0-db6615634b23" Name="自动标记石牢 [默语(仅自己可见)版本]" Enabled="false">
                     <Folders />
                     <Triggers>
                       <Trigger Enabled="true" Sequential="True" Name="1. 检查 石牢 TargetIcon" Id="3df1a472-fc69-404d-bd89-ef62db70ba1f" RegularExpression="^.{14} TargetIcon 1B:(?&lt;tid&gt;[^:]*):天之岩户(?::[^:]*){2}:(?&lt;id&gt;[^:]*)(?:$|:)" PeriodRefire="Deny">
@@ -20639,7 +21224,7 @@
                       </Trigger>
                     </Triggers>
                   </Folder>
-                  <Folder Id="25acdf75-388d-4433-b9f2-ac82cb7c502f" Name="自动标记石牢 [小队(其他人可见)版本]" Enabled="false">
+                  <Folder Id="25acdf75-388d-4433-b9f2-ac82cb7c502f" Name="自动标记石牢 [小队(其他人可见)版本]" Enabled="true">
                     <Folders />
                     <Triggers>
                       <Trigger Enabled="true" Sequential="True" Name="1. 检查 石牢 TargetIcon" Id="dfd08e58-beff-4ff0-9d3d-29ea5d92ce4d" RegularExpression="^.{14} TargetIcon 1B:(?&lt;tid&gt;[^:]*):天之岩户(?::[^:]*){2}:(?&lt;id&gt;[^:]*)(?:$|:)" PeriodRefire="Deny">
