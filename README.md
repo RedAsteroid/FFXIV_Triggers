@@ -115,7 +115,7 @@ https://raw.githubusercontent.com/RedAsteroid/FFXIV_Triggers/main/Test/TEAdraw.x
 
 我没有兴趣在贼窝里扩散自己的爱心，尤其是像你这条浑身发骚的母狗我可闻不了。
 
-但如果有人愿意在闲鱼**`免费分享`**我的资源我是欢迎的。
+但如果有人愿意在闲鱼 **`免费分享`** 我的资源我是欢迎的。
 
 ## 举报
 
