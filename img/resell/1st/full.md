@@ -1,4 +1,4 @@
-闲鱼：浒山森森 [详情请点击此处查看(https://github.com/RedAsteroid/FFXIV_Triggers/blob/main/img/resell/1st/full.md)]
+闲鱼：浒山森森
 
 <img src="https://raw.githubusercontent.com/RedAsteroid/FFXIV_Triggers/main/img/resell/1st/main.jpg" width=50% alt=4;/>
 
@@ -6,8 +6,7 @@
 
 **当婊子还要立牌坊，怎么一边倒卖还要发帖子满口跑火车装清纯白莲花？是不是倒卖赚了点棺材本，感觉自己行了，卖出身份感了？**
 
-<img src="https://raw.githubusercontent.com/RedAsteroid/FFXIV_Triggers/main/img/resell/1st/1.png" width=60% alt=5;/>
-<img src="https://raw.githubusercontent.com/RedAsteroid/FFXIV_Triggers/main/img/resell/1st/2.png" width=60% alt=6;/>
+<img src="https://raw.githubusercontent.com/RedAsteroid/FFXIV_Triggers/main/img/resell/1st/1.png" width=50% alt=5;/><img src="https://raw.githubusercontent.com/RedAsteroid/FFXIV_Triggers/main/img/resell/1st/2.png" width=50% alt=6;/>
 
 ##
 
