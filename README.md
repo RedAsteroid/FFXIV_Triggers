@@ -1,4 +1,4 @@
-﻿# FFXIV_Triggers
+﻿﻿# FFXIV_Triggers
 
 此 Triggernometry 触发器为卫月框架插件 Splatoon 第三方插件绘制。
 
@@ -78,89 +78,25 @@ https://raw.githubusercontent.com/RedAsteroid/FFXIV_Triggers/main/Test/TEAdraw.x
 
 **倒卖免费资源自始至终是为人不齿的行为，任何借口都无法掩饰倒狗人格上的卑劣。**
 
-<img src="https://raw.githubusercontent.com/RedAsteroid/FFXIV_Triggers/main/img/resell/1st/1.png" width=40% alt=5;/><img src="https://raw.githubusercontent.com/RedAsteroid/FFXIV_Triggers/main/img/resell/1st/2.png" width=40% alt=6;/>
+<img src="https://raw.githubusercontent.com/RedAsteroid/FFXIV_Triggers/main/img/resell/1st/1.png" width=30% alt=5;/><img src="https://raw.githubusercontent.com/RedAsteroid/FFXIV_Triggers/main/img/resell/1st/2.png" width=30% alt=6;/>
 
-### 倒卖本仓库内容与一系列卫月插件，更改/抹去署名并在闲鱼上架
+### 倒卖本仓库内容与一系列卫月插件，更改/抹去署名并在闲鱼上架。
 - **拆分了本仓库的触发器分成三个品类进行倒卖(绝亚、绝亚以外内容、绝亚与其他绝本触发器捆绑)**
 - **抹去Github仓库信息，装模作样地修改命名日期，美其名曰：优化**。
 
-##
-
-<img src="https://raw.githubusercontent.com/RedAsteroid/FFXIV_Triggers/main/img/resell/1st/main.jpg" width=40% alt=4;/><img src="https://raw.githubusercontent.com/RedAsteroid/FFXIV_Triggers/main/img/resell/1st/4.jpg" width=50% alt=8;/>
-
-- **被其他作者挂了，写小作文洗白自己的倒卖行为**
-
-## 后续 1
-
-<img src="https://raw.githubusercontent.com/RedAsteroid/FFXIV_Triggers/main/img/resell/1st/7.png" width=40% alt=11;/>
-
-总结一下：
-
-- 删了第一篇小作文方便岁月史书
-- 别人也倒卖怎么只攻击我
-- 闲鱼都不管你管我
-- 就算我继续倒卖，你能拿我怎样
-
-每次逛闲鱼都有新花样，这次是茶味白莲花撒泼，倒狗也想要立着挣钱，怎么不接着装了^^
-
-闲鱼纵容盗版怎么怎么样我不关心，我只针对这条茶味母狗~
-
-不是群友提醒我，我根本不知道分尸资源倒卖的事情。这并不罕见，你的同行就有不少这么做的。**但是写小作文跳脸的，目前只有你一个。**
-
-另外你也不用给自己加戏 **`我说了，我就是来玩的`** ，**特意在闲鱼上倒卖免费资源赚钱** ，倒卖偷来的东西可真好玩啊~
-
-我写个耻辱墙也确实没法阻止你继续倒卖，最多影响一点点销量，也许不影响？谁知道呢，我只要发了就算完成任务~ 
-
-看你成交量赚了有小几千了，这个月应该吃得起饭了吧，希望你吃饭的时候别被噎死了^^
+- **除此之外，倒狗也在倒卖本人其他仓库的资源。**
 
 ##
 
-我没有兴趣在贼窝里扩散自己的爱心，尤其是像你这条浑身发骚的母狗我可闻不了。
+<img src="https://raw.githubusercontent.com/RedAsteroid/FFXIV_Triggers/main/img/resell/1st/main.jpg" width=30% alt=4;/><img src="https://raw.githubusercontent.com/RedAsteroid/FFXIV_Triggers/main/img/resell/1st/4.jpg" width=50% alt=8;/>
 
-但如果有人愿意在闲鱼 **`免费分享`** 我的资源我是欢迎的。
-
-## 后续 2
-
-<img src="https://raw.githubusercontent.com/RedAsteroid/FFXIV_Triggers/main/img/resell/1st/8.jpg" width=40% alt=12;/>
-
-不太懂倒狗是不是大小脑萎缩了，车轱辘话又重说了一遍，撒泼打滚老三样，还急眼了^^ 
-
-倒狗的小作文就好比高考作文最后半小时一点没写，绞尽脑汁最后连及格分也打不上的垃圾。  
-通篇以不知所谓的借口维护自己 **`倒卖行为是正当的`**，嘲讽耻辱墙毫无用处，借同行打掩护撇清自己的 **`倒卖行为并非倒卖`**，最后莫名其妙的升华 **`7.0也继续倒卖`** 一副抗争到底的嘴脸。  
-  
-**说到底，不过是条尝到甜头的倒狗。**
-
-**然而倒狗就是倒狗，你的小作文再如何辩解也无法掩饰 `你在闲鱼开店倒卖免费资源的事实`。**
-
-既然倒狗开始滚刀我也懒得多说废话，如果还有后续估计想必也是 **`就算我继续倒卖，你能拿我怎样`** 之类的说辞。
-
-最后结果无非是倒狗死号又或者没死号，我要做的也就公示一下，我不想白白当一只下金蛋的鹅，仅此而已。  
-无论结果如何我都不会有任何金钱与名誉上的损失。但倒狗恰恰相反，要是真死号我不觉得倒狗这能力还能开小号继续做，死号等于一切都结束了。
-
-**所以，有没有考虑找个班上？是因为上班不体面吗？至少比做全职倒狗体面多了不是吗？**  
-
-另外倒狗也不用每隔几小时来我仓库转几圈，访客也不多，你不会觉得我不知道吧^^
-
-**`欢迎大家积极举报，举报方式在文档底部，如有更多的关于倒狗信息，欢迎Email。`**
-
-感谢您看到这里，后续会精简README，如有更多后续将放至详情页。
-
-## 最后重申我为什么要将此人挂至耻辱墙：
-
-**倒卖本仓库内容与一系列卫月插件，更改/抹去署名并在闲鱼上架**
-- **拆分了本仓库的触发器分成三个品类进行倒卖(绝亚、绝亚以外内容、绝亚与其他绝本触发器捆绑)**
-- **抹去Github仓库信息，装模作样地修改命名日期，美其名曰：优化。**
-- **被其他作者挂了，写小作文洗白自己的倒卖行为**
-
-**除此之外，倒狗也在倒卖我其他仓库的资源，所以这并不只是一件事。**
-
-### 倒卖免费资源自始至终是为人不齿的行为，任何借口都无法掩饰倒狗人格上的卑劣。
+- **被其他作者挂了，写小作文洗白自己的倒卖行为。**
 
 ## 举报
 
 路过的朋友如果方便的话请动动小手举办~ 方法在下面了~
 
-附倒狗小店页面与个人名片，欢迎积极举报倒狗。举报理由选择 **`禁限售商品-通讯类非法商品服务、假证等非法用途工具`** 内容填写 **`提供侵入、非法控制计算机信息系统程序、工具。外挂类商品属于非法出版物，倒卖将构成非法经营罪`** ，附上仓库地址。
+附倒狗小店页面与个人名片，欢迎积极举报倒狗。举报理由选择以下其中之一 **`禁限售商品-通讯类非法商品服务、假证等非法用途工具`** 内容填写 **`提供侵入、非法控制计算机信息系统程序、工具。外挂类商品属于非法出版物，倒卖将构成非法经营罪`** ，附上仓库地址。
 ```
 https://github.com/RedAsteroid/FFXIV_Triggers
 ```
@@ -170,6 +106,6 @@ https://github.com/RedAsteroid/FFXIV_Triggers
 源地址：https://github.com/RedAsteroid/FFXIV_Triggers 提供侵入、非法控制计算机信息系统程序、工具。外挂类商品属于非法出版物，倒卖将构成非法经营罪。
 ```
 
-<img src="https://raw.githubusercontent.com/RedAsteroid/FFXIV_Triggers/main/img/resell/1st/5.jpg" width=40% alt=9;/><img src="https://raw.githubusercontent.com/RedAsteroid/FFXIV_Triggers/main/img/resell/1st/6.png" width=40% alt=10;/>
+<img src="https://raw.githubusercontent.com/RedAsteroid/FFXIV_Triggers/main/img/resell/1st/5.jpg" width=30% alt=9;/><img src="https://raw.githubusercontent.com/RedAsteroid/FFXIV_Triggers/main/img/resell/1st/6.png" width=30% alt=10;/>
 
 待补充...

@@ -1,12 +1,12 @@
-﻿闲鱼：浒山森森
+﻿# ﻿闲鱼：浒山森森
 
-<img src="https://raw.githubusercontent.com/RedAsteroid/FFXIV_Triggers/main/img/resell/1st/main.jpg" width=50% alt=4;/>
+<img src="https://raw.githubusercontent.com/RedAsteroid/FFXIV_Triggers/main/img/resell/1st/main.jpg" width=40% alt=4;/>
 
-### 倒卖本仓库内容与一系列卫月插件，更改/抹去署名并在闲鱼上架
+## 倒卖本仓库内容与一系列卫月插件，更改/抹去署名并在闲鱼上架
 
 **当婊子还要立牌坊，怎么一边倒卖还要发帖子满口跑火车装清纯白莲花？是不是倒卖赚了点棺材本，感觉自己行了，卖出身份感了？**
 
-<img src="https://raw.githubusercontent.com/RedAsteroid/FFXIV_Triggers/main/img/resell/1st/1.png" width=50% alt=5;/><img src="https://raw.githubusercontent.com/RedAsteroid/FFXIV_Triggers/main/img/resell/1st/2.png" width=50% alt=6;/>
+<img src="https://raw.githubusercontent.com/RedAsteroid/FFXIV_Triggers/main/img/resell/1st/1.png" width=40% alt=5;/><img src="https://raw.githubusercontent.com/RedAsteroid/FFXIV_Triggers/main/img/resell/1st/2.png" width=40% alt=6;/>
 
 ##
 
@@ -52,9 +52,10 @@
 ### 闲鱼倒卖多如狗。确实，想管根本不是一个人能做到的。
 
 **但你这条傻狗主动跳出来就不好说了，真难为你发帖子再怎么装清纯也掩不住一股倒狗的骚臭味。**
-## 后续 1
 
-<img src="https://raw.githubusercontent.com/RedAsteroid/FFXIV_Triggers/main/img/resell/1st/7.png" width=40% alt=11;/>
+# 后续 1
+
+<img src="https://raw.githubusercontent.com/RedAsteroid/FFXIV_Triggers/main/img/resell/1st/7.png" width=35% alt=11;/>
 
 总结一下：
 
@@ -81,9 +82,9 @@
 
 但如果有人愿意在闲鱼 **`免费分享`** 我的资源我是欢迎的。
 
-## 后续 2
+# 后续 2
 
-<img src="https://raw.githubusercontent.com/RedAsteroid/FFXIV_Triggers/main/img/resell/1st/8.jpg" width=40% alt=12;/>
+<img src="https://raw.githubusercontent.com/RedAsteroid/FFXIV_Triggers/main/img/resell/1st/8.jpg" width=35% alt=12;/>
 
 不太懂倒狗是不是大小脑萎缩了，车轱辘话又重说了一遍，撒泼打滚老三样，还急眼了^^ 
 
@@ -118,11 +119,18 @@
 
 ### 倒卖免费资源自始至终是为人不齿的行为，任何借口都无法掩饰倒狗人格上的卑劣。
 
+# 后续 3
+
+<img src="https://raw.githubusercontent.com/RedAsteroid/FFXIV_Triggers/main/img/resell/1st/shit.jpg" width=40% alt=13;/>
+
+待补充...
+
 ## 举报
 
 路过的朋友如果方便的话请动动小手举办~ 方法在下面了~
 
-附倒狗小店页面与个人名片，欢迎积极举报倒狗。举报理由选择 **`禁限售商品-通讯类非法商品服务、假证等非法用途工具`** 内容填写 **`提供侵入、非法控制计算机信息系统程序、工具。外挂类商品属于非法出版物，倒卖将构成非法经营罪`** ，附上仓库地址。
+附倒狗小店页面与个人名片，欢迎积极举报倒狗。  
+举报理由选择以下其中之一 **`禁限售商品-通讯类非法商品服务、假证等非法用途工具`** 内容填写 **`提供侵入、非法控制计算机信息系统程序、工具。外挂类商品属于非法出版物，倒卖将构成非法经营罪`** ，附上仓库地址。
 ```
 https://github.com/RedAsteroid/FFXIV_Triggers
 ```
@@ -132,4 +140,4 @@ https://github.com/RedAsteroid/FFXIV_Triggers
 源地址：https://github.com/RedAsteroid/FFXIV_Triggers 提供侵入、非法控制计算机信息系统程序、工具。外挂类商品属于非法出版物，倒卖将构成非法经营罪。
 ```
 
-<img src="https://raw.githubusercontent.com/RedAsteroid/FFXIV_Triggers/main/img/resell/1st/5.jpg" width=40% alt=9;/><img src="https://raw.githubusercontent.com/RedAsteroid/FFXIV_Triggers/main/img/resell/1st/6.png" width=40% alt=10;/>
+<img src="https://raw.githubusercontent.com/RedAsteroid/FFXIV_Triggers/main/img/resell/1st/5.jpg" width=35% alt=9;/><img src="https://raw.githubusercontent.com/RedAsteroid/FFXIV_Triggers/main/img/resell/1st/6.png" width=35% alt=10;/>
