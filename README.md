@@ -1,10 +1,8 @@
-﻿﻿# FFXIV_Triggers
-
-此 Triggernometry 触发器为卫月框架插件 Splatoon 第三方插件绘制。
-
-##
+﻿# FFXIV_Triggers
 
 ![4](https://raw.githubusercontent.com/RedAsteroid/FFXIV_Triggers/main/demo/img0/0.jpg)
+
+此 Triggernometry 触发器为卫月框架插件 Splatoon 第三方插件绘制。
 
 - 绘制内容均为个人测试使用，不保证质量，随缘更新。
 - 不适配国际服，请不要尝试在国际服使用。
@@ -18,8 +16,7 @@
 - 请勿通过任何形式付费渠道获取仓库内容，或将其用于任何形式的商业行为。
 - 本人不会对本仓库中的任何内容以任何形式向他人收取任何费用，您可以在本仓库 **`完全免费`** 获取所有内容。
 - 任何打着以收集整理、信息差、推销安装指导等名义进行收费均为倒卖。
-- 另外，倒狗没必要给自己立 **`都是内容作者藏着掖着妨碍大家用，自己在闲鱼收点钱给大伙做善事`** 白莲花人设，挺好笑的。
-- 毕竟不偷点什么，我猜你这个月饭可能都吃不起^^
+- 另外，倒狗没必要给自己立 **`都是内容作者藏着掖着妨碍大家用，自己在闲鱼收点钱给大伙做善事`** 白莲花人设，挺好笑的。毕竟不偷点什么，我猜你这个月饭可能都吃不起^^
 - 话虽如此，喜欢给倒狗送钱的傻子我也管不着。出问题别找我，去找你花钱认的好爹^^
 
 ## 使用前置：
@@ -72,11 +69,13 @@ https://raw.githubusercontent.com/RedAsteroid/FFXIV_Triggers/main/Test/TEAdraw.x
 
 # 耻辱墙
 
-闲鱼：浒山森森 
+**倒卖免费资源自始至终是为人不齿的行为，任何借口都无法掩饰倒狗人格上的卑劣。**
+
+### 闲鱼：浒山森森 
 
 [**详情请点击此处查看**](https://github.com/RedAsteroid/FFXIV_Triggers/blob/main/img/resell/1st/full.md)
 
-**倒卖免费资源自始至终是为人不齿的行为，任何借口都无法掩饰倒狗人格上的卑劣。**
+
 
 <img src="https://raw.githubusercontent.com/RedAsteroid/FFXIV_Triggers/main/img/resell/1st/1.png" width=30% alt=5;/><img src="https://raw.githubusercontent.com/RedAsteroid/FFXIV_Triggers/main/img/resell/1st/2.png" width=30% alt=6;/>
 
@@ -91,21 +90,5 @@ https://raw.githubusercontent.com/RedAsteroid/FFXIV_Triggers/main/Test/TEAdraw.x
 <img src="https://raw.githubusercontent.com/RedAsteroid/FFXIV_Triggers/main/img/resell/1st/main.jpg" width=30% alt=4;/><img src="https://raw.githubusercontent.com/RedAsteroid/FFXIV_Triggers/main/img/resell/1st/4.jpg" width=50% alt=8;/>
 
 - **被其他作者挂了，写小作文洗白自己的倒卖行为。**
-
-## 举报
-
-路过的朋友如果方便的话请动动小手举办~ 方法在下面了~
-
-附倒狗小店页面与个人名片，欢迎积极举报倒狗。举报理由选择以下其中之一 **`禁限售商品-通讯类非法商品服务、假证等非法用途工具`** 内容填写 **`提供侵入、非法控制计算机信息系统程序、工具。外挂类商品属于非法出版物，倒卖将构成非法经营罪`** ，附上仓库地址。
-```
-https://github.com/RedAsteroid/FFXIV_Triggers
-```
-
-如果您觉得输入麻烦，您可以快捷复制下方文本作为内容填写，举报理由选择以下其中之一 **`禁限售商品-通讯类非法商品服务、假证等非法用途工具`** 。
-```
-源地址：https://github.com/RedAsteroid/FFXIV_Triggers 提供侵入、非法控制计算机信息系统程序、工具。外挂类商品属于非法出版物，倒卖将构成非法经营罪。
-```
-
-<img src="https://raw.githubusercontent.com/RedAsteroid/FFXIV_Triggers/main/img/resell/1st/5.jpg" width=30% alt=9;/><img src="https://raw.githubusercontent.com/RedAsteroid/FFXIV_Triggers/main/img/resell/1st/6.png" width=30% alt=10;/>
 
 待补充...
