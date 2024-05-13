@@ -111,7 +111,7 @@
       </Folder>
       <Folder Id="b9a2bf3a-4584-4614-b5ac-66a1fe9eba49" Name="1. 绝境战" Enabled="true">
         <Folders>
-          <Folder Id="3edad54f-2699-485b-a35c-04da9c2a3491" Name="1. 亚历山大绝境战 2024.04.25" Enabled="true">
+          <Folder Id="3edad54f-2699-485b-a35c-04da9c2a3491" Name="1. 亚历山大绝境战 2024.05.12" Enabled="true">
             <Folders>
               <Folder Id="06501d19-43a2-4203-8ce9-90e0238a5a43" Name="A. 使用指南" Enabled="true">
                 <Folders>
@@ -204,9 +204,25 @@
                       </Trigger>
                     </Triggers>
                   </Folder>
-                  <Folder Id="8d2c0c91-70c8-476a-9ecf-f593e595f4f2" Name="6. 其他联动" Enabled="true">
+                  <Folder Id="5dfc1b53-25d6-4d63-a998-864983e44de2" Name="6. 参考资料" Enabled="true">
                     <Folders />
-                    <Triggers />
+                    <Triggers>
+                      <Trigger Enabled="true" Name="1. 莫莫的绝亚魔改轮椅，关注Bilibili莫灵喵谢谢喵~  https://space.bilibili.com/220756407" Id="6966d782-8c4a-4d1c-a8bc-67e7790740eb" RegularExpression="">
+                        <Actions />
+                        <Condition Enabled="false" Grouping="Or" />
+                        <Conditions />
+                      </Trigger>
+                      <Trigger Enabled="true" Name="2. 绝亚警察轮椅: https://status102.cn/arcticle/2021-11-11_%E4%BA%9A%E5%8E%86%E5%B1%B1%E5%A4%A7%E7%BB%9D%E5%A2%83%E6%88%98.html" Id="831d1e9c-6b41-4161-8ea4-63509c96578f" RegularExpression="">
+                        <Actions />
+                        <Condition Enabled="false" Grouping="Or" />
+                        <Conditions />
+                      </Trigger>
+                      <Trigger Enabled="true" Name="3. cactbot LogGuide: https://github.com/OverlayPlugin/cactbot/blob/main/docs/LogGuide.md" Id="c22de564-f45a-4168-a7ac-6171c231417e" RegularExpression="">
+                        <Actions />
+                        <Condition Enabled="false" Grouping="Or" />
+                        <Conditions />
+                      </Trigger>
+                    </Triggers>
                   </Folder>
                 </Folders>
                 <Triggers />
@@ -8572,7 +8588,7 @@
                                 </Actions>
                                 <Condition Enabled="false" Grouping="Or" />
                               </Trigger>
-                              <Trigger Enabled="true" Source="FFXIVNetwork" Name="点名获取" Id="1730ec5b-6383-47f9-9954-38b0c6551339" RegularExpression="^35\|[^|]{1,33}\|10[^|]{6}\|(?&lt;sname&gt;[^|]+)\|(?&lt;tid&gt;40[^|]{6})\|\|">
+                              <Trigger Enabled="true" Source="FFXIVNetwork" Name="点名获取" Id="1730ec5b-6383-47f9-9954-38b0c6551339" RegularExpression="^35\|[^|]{1,33}\|(?&lt;sid&gt;10[^|]{6})\|(?&lt;sname&gt;[^|]+)\|(?&lt;tid&gt;40[^|]{6})\|\|">
                                 <Actions>
                                   <Action OrderNumber="1" VariableOp="SetString" VariableName="绝亚jc_P4_2测_${tid}_Clone" VariableExpression="${sname}" ActionType="Variable">
                                     <Condition Enabled="false" Grouping="Or" />
@@ -8583,42 +8599,42 @@
                                   <Action OrderNumber="3" ListVariableOp="SortAlphaDesc" ListVariableName="绝亚jc_P4_2测_分身_Clone" ActionType="ListVariable" ExecutionDelayExpression="100">
                                     <Condition Enabled="false" Grouping="Or" />
                                   </Action>
-                                  <Action OrderNumber="4" VariableOp="SetString" VariableName="绝亚jc_P4_2测_${tid}_Clone" VariableExpression="大光" ActionType="Variable" ExecutionDelayExpression="50">
+                                  <Action OrderNumber="4" VariableOp="SetString" VariableName="绝亚jc_P4_2测_${sid}_Clone" VariableExpression="大光" ActionType="Variable" ExecutionDelayExpression="50">
                                     <Condition Enabled="true" Grouping="Or">
                                       <ConditionSingle Enabled="true" ExpressionL="${lvar:绝亚jc_P4_2测_分身_Clone.indexof(${tid})}" ExpressionTypeL="String" ExpressionR="2" ExpressionTypeR="String" ConditionType="RegexMatch" />
                                     </Condition>
                                   </Action>
-                                  <Action OrderNumber="5" VariableOp="SetString" VariableName="绝亚jc_P4_2测_${tid}_Clone" VariableExpression="大暗" ActionType="Variable">
+                                  <Action OrderNumber="5" VariableOp="SetString" VariableName="绝亚jc_P4_2测_${sid}_Clone" VariableExpression="大暗" ActionType="Variable">
                                     <Condition Enabled="true" Grouping="Or">
                                       <ConditionSingle Enabled="true" ExpressionL="${lvar:绝亚jc_P4_2测_分身_Clone.indexof(${tid})}" ExpressionTypeL="String" ExpressionR="1" ExpressionTypeR="String" ConditionType="RegexMatch" />
                                     </Condition>
                                   </Action>
-                                  <Action OrderNumber="6" VariableOp="SetString" VariableName="绝亚jc_P4_2测_${tid}_Clone" VariableExpression="小光" ActionType="Variable">
+                                  <Action OrderNumber="6" VariableOp="SetString" VariableName="绝亚jc_P4_2测_${sid}_Clone" VariableExpression="小光" ActionType="Variable">
                                     <Condition Enabled="true" Grouping="Or">
                                       <ConditionSingle Enabled="true" ExpressionL="${lvar:绝亚jc_P4_2测_分身_Clone.indexof(${tid})}" ExpressionTypeL="String" ExpressionR="4|6|8" ExpressionTypeR="String" ConditionType="RegexMatch" />
                                     </Condition>
                                   </Action>
-                                  <Action OrderNumber="7" VariableOp="SetString" VariableName="绝亚jc_P4_2测_${tid}_Clone" VariableExpression="小暗" ActionType="Variable">
+                                  <Action OrderNumber="7" VariableOp="SetString" VariableName="绝亚jc_P4_2测_${sid}_Clone" VariableExpression="小暗" ActionType="Variable">
                                     <Condition Enabled="true" Grouping="Or">
                                       <ConditionSingle Enabled="true" ExpressionL="${lvar:绝亚jc_P4_2测_分身_Clone.indexof(${tid})}" ExpressionTypeL="String" ExpressionR="3|5|7" ExpressionTypeR="String" ConditionType="RegexMatch" />
                                     </Condition>
                                   </Action>
-                                  <Action OrderNumber="8" VariableOp="SetString" VariableName="绝亚jc_P4_2测_大光id_Clone" VariableExpression="${tid}" ActionType="Variable">
+                                  <Action OrderNumber="8" VariableOp="SetString" VariableName="绝亚jc_P4_2测_大光id_Clone" VariableExpression="${sid}" ActionType="Variable">
                                     <Condition Enabled="true" Grouping="Or">
                                       <ConditionSingle Enabled="true" ExpressionL="${lvar:绝亚jc_P4_2测_分身_Clone.indexof(${tid})}" ExpressionTypeL="String" ExpressionR="2" ExpressionTypeR="String" ConditionType="RegexMatch" />
                                     </Condition>
                                   </Action>
-                                  <Action OrderNumber="9" VariableOp="SetString" VariableName="绝亚jc_P4_2测_大光name_Clone" VariableExpression="${sname}" ActionType="Variable">
+                                  <Action OrderNumber="9" VariableOp="SetString" VariableName="绝亚jc_P4_2测_大光name_Clone" VariableExpression="${sname}" Enabled="False" ActionType="Variable">
                                     <Condition Enabled="true" Grouping="Or">
                                       <ConditionSingle Enabled="true" ExpressionL="${lvar:绝亚jc_P4_2测_分身_Clone.indexof(${tid})}" ExpressionTypeL="String" ExpressionR="2" ExpressionTypeR="String" ConditionType="RegexMatch" />
                                     </Condition>
                                   </Action>
-                                  <Action OrderNumber="10" VariableOp="SetString" VariableName="绝亚jc_P4_2测_大暗id_Clone" VariableExpression="${tid}" ActionType="Variable">
+                                  <Action OrderNumber="10" VariableOp="SetString" VariableName="绝亚jc_P4_2测_大暗id_Clone" VariableExpression="${sid}" ActionType="Variable">
                                     <Condition Enabled="true" Grouping="Or">
                                       <ConditionSingle Enabled="true" ExpressionL="${lvar:绝亚jc_P4_2测_分身_Clone.indexof(${tid})}" ExpressionTypeL="String" ExpressionR="1" ExpressionTypeR="String" ConditionType="RegexMatch" />
                                     </Condition>
                                   </Action>
-                                  <Action OrderNumber="11" VariableOp="SetString" VariableName="绝亚jc_P4_2测_大暗name_Clone" VariableExpression="${sname}" ActionType="Variable">
+                                  <Action OrderNumber="11" VariableOp="SetString" VariableName="绝亚jc_P4_2测_大暗name_Clone" VariableExpression="${sname}" Enabled="False" ActionType="Variable">
                                     <Condition Enabled="true" Grouping="Or">
                                       <ConditionSingle Enabled="true" ExpressionL="${lvar:绝亚jc_P4_2测_分身_Clone.indexof(${tid})}" ExpressionTypeL="String" ExpressionR="1" ExpressionTypeR="String" ConditionType="RegexMatch" />
                                     </Condition>
@@ -8629,6 +8645,9 @@
                               <Trigger Enabled="true" Source="FFXIVNetwork" Name="制导分摊" Id="d02713de-1efd-42f6-949f-fd5ac660ed99" RegularExpression="^21\|[^|]{1,33}\|40[^|]{6}\|[^|]+\|48A1\|">
                                 <Actions>
                                   <Action OrderNumber="1" VariableOp="SetString" VariableName="绝亚_二测_分摊_Clone" VariableExpression="1" ActionType="Variable">
+                                    <Condition Enabled="false" Grouping="Or" />
+                                  </Action>
+                                  <Action OrderNumber="2" NamedCallbackName="command" NamedCallbackParam="/e [Debug] 确认二测为分摊" Enabled="False" ActionType="NamedCallback">
                                     <Condition Enabled="false" Grouping="Or" />
                                   </Action>
                                 </Actions>
@@ -8660,7 +8679,7 @@
                               </Trigger>
                             </Triggers>
                           </Folder>
-                          <Folder Id="84d1d846-9e0b-4460-ae40-feb992d84545" Name="制导分摊【未验证可用！启用带来的任何风险错误需要您自行承担！】" Enabled="false">
+                          <Folder Id="84d1d846-9e0b-4460-ae40-feb992d84545" Name="制导分摊【测试中】" Enabled="true">
                             <Folders />
                             <Triggers>
                               <Trigger Enabled="true" Sequential="True" Name="1. 绘制分摊" Id="22b64ffa-7d41-4c6f-8cf2-f7e3208fe5e5" RegularExpression="^.{14} (?:\w+) (15|16):(?&lt;sid&gt;[^:]*):(?&lt;sname&gt;[^:]*):4885:(?&lt;ability&gt;(?:[^:]|: )*?):(?&lt;tid&gt;[^:]*):(?&lt;tname&gt;[^:]*):(?&lt;flags&gt;[^:]*):(?&lt;damage&gt;[^:]*)(?::[^:]*){14}:(?&lt;targetCurrentHp&gt;[^:]*):(?&lt;targetMaxHp&gt;[^:]*):(?&lt;targetCurrentMp&gt;[^:]*):(?&lt;targetMaxMp&gt;[^:]*)(?::[^:]*){2}:(?&lt;targetX&gt;[^:]*):(?&lt;targetY&gt;[^:]*):(?&lt;targetZ&gt;[^:]*):(?&lt;targetHeading&gt;[^:]*):(?&lt;currentHp&gt;[^:]*):(?&lt;maxHp&gt;[^:]*):(?&lt;currentMp&gt;[^:]*):(?&lt;maxMp&gt;[^:]*)(?::[^:]*){2}:(?&lt;x&gt;[^:]*):(?&lt;y&gt;[^:]*):(?&lt;z&gt;[^:]*):(?&lt;heading&gt;[^:]*):(?&lt;sequence&gt;[^:]*):(?&lt;targetIndex&gt;[^:]*):(?&lt;targetCount&gt;[^:]*)(?:$|:)" PeriodRefire="Deny" RefirePeriodExpression="1000">
@@ -12901,6 +12920,15 @@
                       </Trigger>
                     </Triggers>
                   </Folder>
+                  <Folder Id="6c5636c3-b403-4092-8fee-0e39ca4286f4" Name="24.05.12" Enabled="true">
+                    <Folders />
+                    <Triggers>
+                      <Trigger Enabled="true" Name="1. 修复P4二测制导分摊不可用的问题，首轮测试可用，稳定性有待观察" Id="b57ce8bb-212c-49e3-9067-52e1987c4a9f" RegularExpression="">
+                        <Actions />
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Trigger>
+                    </Triggers>
+                  </Folder>
                 </Folders>
                 <Triggers />
               </Folder>
@@ -13651,7 +13679,7 @@
         <Folders>
           <Folder Id="e2d5d2b4-3075-4378-be4c-6737d4dd2462" Name="6.0 晓月之终途" Enabled="true">
             <Folders>
-              <Folder FFXIVZoneFilterEnabled="True" FfxivZoneFilterRegularExpression="^973$" Id="c23e2301-0bac-4213-b986-b2d11a83fba2" Name="90 - 最终幻想末世终迹" Enabled="true">
+              <Folder FFXIVZoneFilterEnabled="True" FfxivZoneFilterRegularExpression="^973$" Id="c23e2301-0bac-4213-b986-b2d11a83fba2" Name="Lv.90 - Patch 6.0 - 最终幻想末世终迹" Enabled="true">
                 <Folders>
                   <Folder Id="27b03e93-4f07-4b42-a64d-9d63a6e501e2" Name="Boss1 - 变异的格雷布洛弗" Enabled="true">
                     <Folders>
@@ -13977,7 +14005,7 @@
                 </Folders>
                 <Triggers />
               </Folder>
-              <Folder FFXIVZoneFilterEnabled="True" FfxivZoneFilterRegularExpression="^976$" Id="3de5205b-dc33-4906-a353-66bc70cbf1bc" Name="90 - 乐园都市笑笑镇 - Patch 6.0" Enabled="true">
+              <Folder FFXIVZoneFilterEnabled="True" FfxivZoneFilterRegularExpression="^976$" Id="3de5205b-dc33-4906-a353-66bc70cbf1bc" Name="Lv.90 - Patch 6.0 - 乐园都市笑笑镇" Enabled="true">
                 <Folders>
                   <Folder Id="d42bbc93-89e6-49ce-beb1-8d423f070e2a" Name="Boss1 - 面像" Enabled="true">
                     <Folders>
@@ -14249,7 +14277,7 @@
                 </Folders>
                 <Triggers />
               </Folder>
-              <Folder FFXIVZoneFilterEnabled="True" FfxivZoneFilterRegularExpression="^1050$" Id="78174798-96d7-413b-82db-880dfe28f13d" Name="90 - 近东秘宝阿尔扎达尔海底遗迹群 - Patch 6.1" Enabled="true">
+              <Folder FFXIVZoneFilterEnabled="True" FfxivZoneFilterRegularExpression="^1050$" Id="78174798-96d7-413b-82db-880dfe28f13d" Name="Lv.90 - Patch 6.1 - 近东秘宝阿尔扎达尔海底遗迹群" Enabled="true">
                 <Folders>
                   <Folder Id="13bfd79a-2438-4d42-8d46-090bcdca93ee" Name="Boss1 - 阿卜迦" Enabled="true">
                     <Folders />
@@ -14510,7 +14538,7 @@
                 </Folders>
                 <Triggers />
               </Folder>
-              <Folder FFXIVZoneFilterEnabled="True" FfxivZoneFilterRegularExpression="^986$" Id="f10491b1-ccf1-42c6-bbf6-222137a8efe8" Name="90 - 电脑梦境斯提格玛四 - Patch 6.0" Enabled="true">
+              <Folder FFXIVZoneFilterEnabled="True" FfxivZoneFilterRegularExpression="^986$" Id="f10491b1-ccf1-42c6-bbf6-222137a8efe8" Name="Lv.90 - Patch 6.0 - 电脑梦境斯提格玛四" Enabled="true">
                 <Folders>
                   <Folder Id="3ef00e27-24f1-4125-a79e-f9bf802dd5e2" Name="Boss1 - 欧米茄原型" Enabled="true">
                     <Folders />
@@ -14718,7 +14746,7 @@
                 </Folders>
                 <Triggers />
               </Folder>
-              <Folder FFXIVZoneFilterEnabled="True" FfxivZoneFilterRegularExpression="^1070$" Id="e733225d-41da-4205-b2e3-28e8b7e8c7e8" Name="90 - 异界孤城特罗亚宫廷 - Patch 6.2" Enabled="true">
+              <Folder FFXIVZoneFilterEnabled="True" FfxivZoneFilterRegularExpression="^1070$" Id="e733225d-41da-4205-b2e3-28e8b7e8c7e8" Name="Lv.90 - Patch 6.2 - 异界孤城特罗亚宫廷" Enabled="true">
                 <Folders>
                   <Folder Id="700314c1-42a1-47c6-8310-0ce12a4d941b" Name="Boss1 - 梦祸" Enabled="true">
                     <Folders />
@@ -14872,7 +14900,7 @@
                 </Folders>
                 <Triggers />
               </Folder>
-              <Folder FFXIVZoneFilterEnabled="True" FfxivZoneFilterRegularExpression="^992$" Id="ae5c2efb-1fa8-485f-9cf7-02ae782ccf9f" Name="佐迪亚克歼灭战 [烂了.jpg]" Enabled="false">
+              <Folder FFXIVZoneFilterEnabled="True" FfxivZoneFilterRegularExpression="^992$" Id="ae5c2efb-1fa8-485f-9cf7-02ae782ccf9f" Name="Lv.83 - Patch 6.0 - 佐迪亚克歼灭战 [严重错误, 已弃用]" Enabled="false">
                 <Folders>
                   <Folder Id="08ecd0d3-7a81-4c7a-b401-19628fa31c45" Name="陨石幻影" Enabled="true">
                     <Folders />
@@ -15711,7 +15739,7 @@
                   </Trigger>
                 </Triggers>
               </Folder>
-              <Folder FFXIVZoneFilterEnabled="True" FfxivZoneFilterRegularExpression="^978$" Id="dbab9426-1a61-4c5f-9a1b-8a300ef41bc2" Name="89 - 星海深幽寻因星晶镜" Enabled="true">
+              <Folder FFXIVZoneFilterEnabled="True" FfxivZoneFilterRegularExpression="^978$" Id="dbab9426-1a61-4c5f-9a1b-8a300ef41bc2" Name="Lv.89 - Patch 6.0 - 星海深幽寻因星晶镜" Enabled="true">
                 <Folders>
                   <Folder Id="fc6882de-dd8b-4957-a8de-7f0d4e6c1c38" Name="Boss1 - 迷执爱恋的莉维亚" Enabled="true">
                     <Folders>
@@ -15975,7 +16003,7 @@
                 </Folders>
                 <Triggers />
               </Folder>
-              <Folder FFXIVZoneFilterEnabled="True" FfxivZoneFilterRegularExpression="^974$" Id="8b678f18-9bc3-4e40-90f7-6d1000a30f12" Name="87 - 创造环境极北造物院" Enabled="true">
+              <Folder FFXIVZoneFilterEnabled="True" FfxivZoneFilterRegularExpression="^974$" Id="8b678f18-9bc3-4e40-90f7-6d1000a30f12" Name="Lv.87 - Patch 6.0 - 创造环境极北造物院" Enabled="true">
                 <Folders>
                   <Folder Id="41a67cf7-4e6f-4117-9030-37011547733a" Name="Boss1 - 吕萨" Enabled="true">
                     <Folders>
@@ -16259,7 +16287,7 @@
                   </Trigger>
                 </Triggers>
               </Folder>
-              <Folder FFXIVZoneFilterEnabled="True" FfxivZoneFilterRegularExpression="^969$" Id="632efa7f-c954-48dc-9141-9e23991e1821" Name="83 - 魔导神门巴别塔" Enabled="true">
+              <Folder FFXIVZoneFilterEnabled="True" FfxivZoneFilterRegularExpression="^969$" Id="632efa7f-c954-48dc-9141-9e23991e1821" Name="Lv.83 - Patch 6.0 - 魔导神门巴别塔" Enabled="true">
                 <Folders>
                   <Folder Id="28b382bd-7f09-44d0-890d-29c90e2a8251" Name="Boss1 - 巴尔纳伯" Enabled="true">
                     <Folders />
@@ -16394,7 +16422,7 @@
                 </Folders>
                 <Triggers />
               </Folder>
-              <Folder FFXIVZoneFilterEnabled="True" FfxivZoneFilterRegularExpression="^1097$" Id="2b918cd4-5937-43fc-99e0-801c1f880a17" Name="90 - 雪山奥窟冥魂石洞 -Patch 6.3" Enabled="true">
+              <Folder FFXIVZoneFilterEnabled="True" FfxivZoneFilterRegularExpression="^1097$" Id="2b918cd4-5937-43fc-99e0-801c1f880a17" Name="Lv.90 - Patch 6.3 - 雪山奥窟冥魂石洞" Enabled="true">
                 <Folders>
                   <Folder Id="e3125a05-5901-473c-9be5-8593127b6027" Name="【正常版】：标准绘制，电脑配置差可能会卡" Enabled="true">
                     <Folders>
@@ -18508,7 +18536,7 @@
                   </Trigger>
                 </Triggers>
               </Folder>
-              <Folder FFXIVZoneFilterEnabled="True" FfxivZoneFilterRegularExpression="^1126$" Id="221e892c-4895-464c-bfc0-24b9b3a348c0" Name="90 - 间歇灵泉哈姆岛 - Patch 6.4" Enabled="true">
+              <Folder FFXIVZoneFilterEnabled="True" FfxivZoneFilterRegularExpression="^1126$" Id="221e892c-4895-464c-bfc0-24b9b3a348c0" Name="Lv.90 - Patch 6.4 - 间歇灵泉哈姆岛" Enabled="true">
                 <Folders>
                   <Folder Id="3d67b864-7c9b-4c9c-ad00-5bcadf9617db" Name="Boss2 - 阿尔卡斯" Enabled="true">
                     <Folders>
@@ -19117,7 +19145,7 @@
                   </Trigger>
                 </Triggers>
               </Folder>
-              <Folder FFXIVZoneFilterEnabled="True" FfxivZoneFilterRegularExpression="^1164$" Id="250bc5ac-5cc5-4b39-86c7-8de30de0aa53" Name="90 - 异界深渊月面地下溪谷 - Patch 6.5" Enabled="true">
+              <Folder FFXIVZoneFilterEnabled="True" FfxivZoneFilterRegularExpression="^1164$" Id="250bc5ac-5cc5-4b39-86c7-8de30de0aa53" Name="Lv.90 - Patch 6.5 - 异界深渊月面地下溪谷" Enabled="true">
                 <Folders>
                   <Folder Id="d9bc57bb-d161-444a-b8d9-70cabd190705" Name="Boss1 - 暗黑精灵" Enabled="true">
                     <Folders />
@@ -21820,7 +21848,7 @@
       </Folder>
     </Folders>
     <Triggers>
-      <Trigger Enabled="false" Sequential="True" Name="【初次导入提醒】2024/04/04" Id="723efebf-cb5d-4f09-a050-2c1ee223b0d0" RegularExpression="^." PeriodRefire="Deny" RefirePeriodExpression="2000">
+      <Trigger Enabled="true" Sequential="True" Name="【初次导入提醒】2024/05/12" Id="723efebf-cb5d-4f09-a050-2c1ee223b0d0" RegularExpression="^." PeriodRefire="Deny" RefirePeriodExpression="2000">
         <Actions>
           <Action OrderNumber="1" TriggerOp="DisableTrigger" TriggerId="723efebf-cb5d-4f09-a050-2c1ee223b0d0" ActionType="Trigger">
             <Condition Enabled="false" Grouping="Or" />
