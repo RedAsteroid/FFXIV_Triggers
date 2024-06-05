@@ -26,7 +26,7 @@
 
 **Dalamud 插件**
 - [**SplatoonX**](https://github.com/gamous/DalamudPluginsCN-Dev)：Gamous 第三方插件仓库，添加对应仓库地址安装。
-- CN 6.51 API9
+- CN 6.55 API9
 
 ## 使用方法：
 **1. Triggernometry 导入：**
