@@ -14489,7 +14489,7 @@
                     </Folders>
                     <Triggers />
                   </Folder>
-                  <Folder Id="b30202d8-f6c8-4224-a19c-426200654a7e" Name="1. 双重咏唱 / 附魂双击" Enabled="true">
+                  <Folder Id="b30202d8-f6c8-4224-a19c-426200654a7e" Name="1. 双重咏唱 / 附魂双击 X字" Enabled="true">
                     <Folders>
                       <Folder Id="1fd43454-86bc-46ff-8b66-23af799cdcc6" Name="2. 指路(需要初始化职能位置) [如不需要请取消勾选此分组]" Enabled="true">
                         <Folders>
@@ -14502,7 +14502,6 @@
                                   <Action OrderNumber="2" LogMessageText="[21:38:40.568] ActionEffect 15:40002A9C:科库托斯:815C:unknown_815c:40002A9C:科库托斯:1B:815C8000:0:0:0:0:0:0:0:0:0:0:0:0:0:0:44:44:0:10000:::100.00:100.00:0.00:-3.14:44:44:0:10000:::100.00:100.00:0.00:-3.14:00002B98:0:1" LogProcess="True" ActionType="LogMessage" ExecutionDelayExpression="8.3 * 1000" />
                                 </Actions>
                                 <Condition Enabled="false" Grouping="Or" />
-                                <Conditions />
                               </Trigger>
                               <Trigger Enabled="false" Name="冰+火 强化冰" Id="814d56e1-b243-4faa-b793-58a899d9b386" RegularExpression="">
                                 <Actions>
@@ -14510,7 +14509,6 @@
                                   <Action OrderNumber="2" LogMessageText="[21:38:27.423] ActionEffect 15:40002A9C:科库托斯:8123:unknown_8123:40002A9C:科库托斯:1B:81238000:0:0:0:0:0:0:0:0:0:0:0:0:0:0:44:44:0:10000:::100.00:100.00:0.00:-3.14:44:44:0:10000:::100.00:100.00:0.00:-3.14:00002B2C:0:1" LogProcess="True" ActionType="LogMessage" ExecutionDelayExpression="8.3 * 1000" />
                                 </Actions>
                                 <Condition Enabled="false" Grouping="Or" />
-                                <Conditions />
                               </Trigger>
                               <Trigger Enabled="false" Name="冰+火 强化火" Id="70a30814-9ac4-4ef8-91c5-45274bf5a3f0" RegularExpression="">
                                 <Actions>
@@ -14518,7 +14516,6 @@
                                   <Action OrderNumber="2" LogMessageText="[21:38:53.707] ActionEffect 15:40002A9C:科库托斯:8122:unknown_8122:40002A9C:科库托斯:1B:81228000:0:0:0:0:0:0:0:0:0:0:0:0:0:0:44:44:0:10000:::100.00:100.00:0.00:-3.14:44:44:0:10000:::100.00:100.00:0.00:-3.14:00002C01:0:1" LogProcess="True" ActionType="LogMessage" ExecutionDelayExpression="8.3 * 1000" />
                                 </Actions>
                                 <Condition Enabled="false" Grouping="Or" />
-                                <Conditions />
                               </Trigger>
                               <Trigger Enabled="false" Name="(附魂)冰+火 强化冰" Id="31b3990d-8987-4374-b0af-0ca5d6449ce1" RegularExpression="">
                                 <Actions>
@@ -14526,7 +14523,6 @@
                                   <Action OrderNumber="2" LogMessageText="[21:41:46.362] ActionEffect 15:40002A9C:科库托斯:8123:unknown_8123:40002A9C:科库托斯:1B:81238000:0:0:0:0:0:0:0:0:0:0:0:0:0:0:44:44:0:10000:::100.00:100.00:0.00:-3.14:44:44:0:10000:::100.00:100.00:0.00:-3.14:00003078:0:1" LogProcess="True" ActionType="LogMessage" ExecutionDelayExpression="4.1 * 1000" />
                                 </Actions>
                                 <Condition Enabled="false" Grouping="Or" />
-                                <Conditions />
                               </Trigger>
                             </Triggers>
                           </Folder>
@@ -14932,7 +14928,6 @@
                               </Action>
                             </Actions>
                             <Condition Enabled="false" Grouping="Or" />
-                            <Conditions />
                           </Trigger>
                           <Trigger Enabled="true" Name="销毁喵~" Id="025f01bc-8159-4188-b60b-abcbb5da758b" RegularExpression="^.{14} (?:\w+) (15|16):(?&lt;sid&gt;[^:]*):(?&lt;sname&gt;[^:]*):(8157|8159):(?&lt;ability&gt;(?:[^:]|: )*?):(?&lt;tid&gt;[^:]*):(?&lt;tname&gt;[^:]*):(?&lt;flags&gt;[^:]*):(?&lt;damage&gt;[^:]*)(?::[^:]*){14}:(?&lt;targetCurrentHp&gt;[^:]*):(?&lt;targetMaxHp&gt;[^:]*):(?&lt;targetCurrentMp&gt;[^:]*):(?&lt;targetMaxMp&gt;[^:]*)(?::[^:]*){2}:(?&lt;targetX&gt;[^:]*):(?&lt;targetY&gt;[^:]*):(?&lt;targetZ&gt;[^:]*):(?&lt;targetHeading&gt;[^:]*):(?&lt;currentHp&gt;[^:]*):(?&lt;maxHp&gt;[^:]*):(?&lt;currentMp&gt;[^:]*):(?&lt;maxMp&gt;[^:]*)(?::[^:]*){2}:(?&lt;x&gt;[^:]*):(?&lt;y&gt;[^:]*):(?&lt;z&gt;[^:]*):(?&lt;heading&gt;[^:]*):(?&lt;sequence&gt;[^:]*):(?&lt;targetIndex&gt;[^:]*):(?&lt;targetCount&gt;[^:]*)(?:$|:)" PeriodRefire="Deny" RefirePeriodExpression="500">
                             <Actions>
@@ -14986,7 +14981,6 @@
                               </Action>
                             </Actions>
                             <Condition Enabled="false" Grouping="Or" />
-                            <Conditions />
                           </Trigger>
                         </Triggers>
                       </Folder>
@@ -15171,7 +15165,6 @@
                               </Action>
                             </Actions>
                             <Condition Enabled="false" Grouping="Or" />
-                            <Conditions />
                           </Trigger>
                           <Trigger Enabled="true" Name="销毁喵~" Id="14249e60-cce5-4ed0-8867-0bb7fabf5fde" RegularExpression="^.{14} (?:\w+) (15|16):(?&lt;sid&gt;[^:]*):(?&lt;sname&gt;[^:]*):(8157|8159):(?&lt;ability&gt;(?:[^:]|: )*?):(?&lt;tid&gt;[^:]*):(?&lt;tname&gt;[^:]*):(?&lt;flags&gt;[^:]*):(?&lt;damage&gt;[^:]*)(?::[^:]*){14}:(?&lt;targetCurrentHp&gt;[^:]*):(?&lt;targetMaxHp&gt;[^:]*):(?&lt;targetCurrentMp&gt;[^:]*):(?&lt;targetMaxMp&gt;[^:]*)(?::[^:]*){2}:(?&lt;targetX&gt;[^:]*):(?&lt;targetY&gt;[^:]*):(?&lt;targetZ&gt;[^:]*):(?&lt;targetHeading&gt;[^:]*):(?&lt;currentHp&gt;[^:]*):(?&lt;maxHp&gt;[^:]*):(?&lt;currentMp&gt;[^:]*):(?&lt;maxMp&gt;[^:]*)(?::[^:]*){2}:(?&lt;x&gt;[^:]*):(?&lt;y&gt;[^:]*):(?&lt;z&gt;[^:]*):(?&lt;heading&gt;[^:]*):(?&lt;sequence&gt;[^:]*):(?&lt;targetIndex&gt;[^:]*):(?&lt;targetCount&gt;[^:]*)(?:$|:)" PeriodRefire="Deny" RefirePeriodExpression="500">
                             <Actions>
@@ -15180,7 +15173,6 @@
                               </Action>
                             </Actions>
                             <Condition Enabled="false" Grouping="Or" />
-                            <Conditions />
                           </Trigger>
                         </Triggers>
                       </Folder>
@@ -15197,7 +15189,6 @@
                               </Action>
                             </Actions>
                             <Condition Enabled="false" Grouping="Or" />
-                            <Conditions />
                           </Trigger>
                           <Trigger Enabled="true" Name="2. 冰+雷 8155, 8185" Id="afa59575-fee7-4ef1-94c1-fd02e28c3535" RegularExpression="^.{14} StartsCasting 14:(?&lt;sid&gt;[^:]*):(?&lt;sname&gt;[^:]*):(8155|8185):(?&lt;ability&gt;(?:[^:]|: )*?):(?&lt;tid&gt;[^:]*):(?&lt;tname&gt;[^:]*):(?&lt;castTime&gt;[^:]*):(?&lt;x&gt;[^:]*):(?&lt;y&gt;[^:]*):(?&lt;z&gt;[^:]*):(?&lt;heading&gt;[^:]*)(?:$|:)">
                             <Actions>
@@ -15209,7 +15200,6 @@
                               </Action>
                             </Actions>
                             <Condition Enabled="false" Grouping="Or" />
-                            <Conditions />
                           </Trigger>
                           <Trigger Enabled="true" Sequential="True" Name="3. 强化 火 8122" Id="3e1b3bb2-564f-479b-b09c-bcb8cceff16f" RegularExpression="^.{14} (?:\w+) (15|16):(?&lt;sid&gt;[^:]*):(?&lt;sname&gt;[^:]*):8122:(?&lt;ability&gt;(?:[^:]|: )*?):(?&lt;tid&gt;[^:]*):(?&lt;tname&gt;[^:]*):(?&lt;flags&gt;[^:]*):(?&lt;damage&gt;[^:]*)(?::[^:]*){14}:(?&lt;targetCurrentHp&gt;[^:]*):(?&lt;targetMaxHp&gt;[^:]*):(?&lt;targetCurrentMp&gt;[^:]*):(?&lt;targetMaxMp&gt;[^:]*)(?::[^:]*){2}:(?&lt;targetX&gt;[^:]*):(?&lt;targetY&gt;[^:]*):(?&lt;targetZ&gt;[^:]*):(?&lt;targetHeading&gt;[^:]*):(?&lt;currentHp&gt;[^:]*):(?&lt;maxHp&gt;[^:]*):(?&lt;currentMp&gt;[^:]*):(?&lt;maxMp&gt;[^:]*)(?::[^:]*){2}:(?&lt;x&gt;[^:]*):(?&lt;y&gt;[^:]*):(?&lt;z&gt;[^:]*):(?&lt;heading&gt;[^:]*):(?&lt;sequence&gt;[^:]*):(?&lt;targetIndex&gt;[^:]*):(?&lt;targetCount&gt;[^:]*)(?:$|:)">
                             <Actions>
@@ -15221,7 +15211,6 @@
                               </Action>
                             </Actions>
                             <Condition Enabled="false" Grouping="Or" />
-                            <Conditions />
                           </Trigger>
                           <Trigger Enabled="true" Name="4. 强化 冰 8123" Id="167acd6f-06af-42c1-b512-8a4c2133d122" RegularExpression="^.{14} (?:\w+) (15|16):(?&lt;sid&gt;[^:]*):(?&lt;sname&gt;[^:]*):8123:(?&lt;ability&gt;(?:[^:]|: )*?):(?&lt;tid&gt;[^:]*):(?&lt;tname&gt;[^:]*):(?&lt;flags&gt;[^:]*):(?&lt;damage&gt;[^:]*)(?::[^:]*){14}:(?&lt;targetCurrentHp&gt;[^:]*):(?&lt;targetMaxHp&gt;[^:]*):(?&lt;targetCurrentMp&gt;[^:]*):(?&lt;targetMaxMp&gt;[^:]*)(?::[^:]*){2}:(?&lt;targetX&gt;[^:]*):(?&lt;targetY&gt;[^:]*):(?&lt;targetZ&gt;[^:]*):(?&lt;targetHeading&gt;[^:]*):(?&lt;currentHp&gt;[^:]*):(?&lt;maxHp&gt;[^:]*):(?&lt;currentMp&gt;[^:]*):(?&lt;maxMp&gt;[^:]*)(?::[^:]*){2}:(?&lt;x&gt;[^:]*):(?&lt;y&gt;[^:]*):(?&lt;z&gt;[^:]*):(?&lt;heading&gt;[^:]*):(?&lt;sequence&gt;[^:]*):(?&lt;targetIndex&gt;[^:]*):(?&lt;targetCount&gt;[^:]*)(?:$|:)">
                             <Actions>
@@ -15233,7 +15222,6 @@
                               </Action>
                             </Actions>
                             <Condition Enabled="false" Grouping="Or" />
-                            <Conditions />
                           </Trigger>
                           <Trigger Enabled="true" Name="5. 强化 雷 815C" Id="d2ea1c6f-ac79-449d-ba07-c661d8c3e759" RegularExpression="^.{14} (?:\w+) (15|16):(?&lt;sid&gt;[^:]*):(?&lt;sname&gt;[^:]*):815C:(?&lt;ability&gt;(?:[^:]|: )*?):(?&lt;tid&gt;[^:]*):(?&lt;tname&gt;[^:]*):(?&lt;flags&gt;[^:]*):(?&lt;damage&gt;[^:]*)(?::[^:]*){14}:(?&lt;targetCurrentHp&gt;[^:]*):(?&lt;targetMaxHp&gt;[^:]*):(?&lt;targetCurrentMp&gt;[^:]*):(?&lt;targetMaxMp&gt;[^:]*)(?::[^:]*){2}:(?&lt;targetX&gt;[^:]*):(?&lt;targetY&gt;[^:]*):(?&lt;targetZ&gt;[^:]*):(?&lt;targetHeading&gt;[^:]*):(?&lt;currentHp&gt;[^:]*):(?&lt;maxHp&gt;[^:]*):(?&lt;currentMp&gt;[^:]*):(?&lt;maxMp&gt;[^:]*)(?::[^:]*){2}:(?&lt;x&gt;[^:]*):(?&lt;y&gt;[^:]*):(?&lt;z&gt;[^:]*):(?&lt;heading&gt;[^:]*):(?&lt;sequence&gt;[^:]*):(?&lt;targetIndex&gt;[^:]*):(?&lt;targetCount&gt;[^:]*)(?:$|:)">
                             <Actions>
@@ -15245,7 +15233,6 @@
                               </Action>
                             </Actions>
                             <Condition Enabled="false" Grouping="Or" />
-                            <Conditions />
                           </Trigger>
                         </Triggers>
                       </Folder>
@@ -15558,7 +15545,6 @@
                                   <ConditionSingle Enabled="true" ExpressionL="${num}" ExpressionTypeL="Numeric" ExpressionR="0038" ExpressionTypeR="Numeric" ConditionType="StringEqualNocase" />
                                   <ConditionSingle Enabled="true" ExpressionL="${name}" ExpressionTypeL="String" ExpressionR="${_ffxivplayer}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                                 </Condition>
-                                <Conditions />
                               </Trigger>
                               <Trigger Enabled="true" Name="切换职业" Id="c00fcb19-f5c7-4192-b1e7-d1f304dd6270" RegularExpression="^.{14} (?:\w+ )00:0839::((?&lt;name&gt;.+?)?(的职业转换成了“|は「)(?&lt;class&gt;.+?)(”|」にチェンジした。)|(?&lt;isyou&gt;[Yy]ou) change to (?&lt;class2&gt;.+?)\.)">
                                 <Actions>
@@ -15573,7 +15559,6 @@
                                   <ConditionSingle Enabled="true" ExpressionL="${name}" ExpressionTypeL="String" ExpressionR="${_ffxivplayer}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                                   <ConditionSingle Enabled="true" ExpressionL="${isyou}" ExpressionTypeL="String" ExpressionR="you" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                                 </Condition>
-                                <Conditions />
                               </Trigger>
                               <Trigger Enabled="true" Sequential="True" Name="任务开始" Id="2682c37f-310f-4132-9038-98e1cbab2bed" RegularExpression="^.{14} ChatLog 00:0839::“零式万魔殿 荒天之狱2”任务开始。$">
                                 <Actions>
@@ -15597,7 +15582,6 @@
                                   </Action>
                                 </Actions>
                                 <Condition Enabled="false" Grouping="Or" />
-                                <Conditions />
                               </Trigger>
                             </Triggers>
                           </Folder>
@@ -15610,7 +15594,6 @@
                               </Action>
                             </Actions>
                             <Condition Enabled="false" Grouping="Or" />
-                            <Conditions />
                           </Trigger>
                           <Trigger Enabled="true" Name="倒计时初始化" Id="ab3ea500-d396-41aa-8d2f-149d59fb026f" RegularExpression="^.{14} (?:\w+ )00:0039::(戦闘開始！|Engage!|战斗开始！|戰鬥開始！)">
                             <Actions>
@@ -15632,7 +15615,6 @@
                               </Action>
                             </Actions>
                             <Condition Enabled="false" Grouping="Or" />
-                            <Conditions />
                           </Trigger>
                         </Triggers>
                       </Folder>
@@ -15811,7 +15793,6 @@
                                   <ConditionSingle Enabled="true" ExpressionL="${num}" ExpressionTypeL="Numeric" ExpressionR="0038" ExpressionTypeR="Numeric" ConditionType="StringEqualNocase" />
                                   <ConditionSingle Enabled="true" ExpressionL="${name}" ExpressionTypeL="String" ExpressionR="${_ffxivplayer}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                                 </Condition>
-                                <Conditions />
                               </Trigger>
                               <Trigger Enabled="true" Name="切换职业" Id="fa0b9002-2933-4e82-967e-c30fea36cfd0" RegularExpression="^.{14} (?:\w+ )00:0839::((?&lt;name&gt;.+?)?(的职业转换成了“|は「)(?&lt;class&gt;.+?)(”|」にチェンジした。)|(?&lt;isyou&gt;[Yy]ou) change to (?&lt;class2&gt;.+?)\.)">
                                 <Actions>
@@ -15826,7 +15807,6 @@
                                   <ConditionSingle Enabled="true" ExpressionL="${name}" ExpressionTypeL="String" ExpressionR="${_ffxivplayer}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                                   <ConditionSingle Enabled="true" ExpressionL="${isyou}" ExpressionTypeL="String" ExpressionR="you" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                                 </Condition>
-                                <Conditions />
                               </Trigger>
                               <Trigger Enabled="true" Sequential="True" Name="任务开始" Id="dd53a659-81f6-4c97-884c-1fff04a55052" RegularExpression="^.{14} ChatLog 00:0839::“零式万魔殿 荒天之狱3”任务开始。$">
                                 <Actions>
@@ -15850,7 +15830,6 @@
                                   </Action>
                                 </Actions>
                                 <Condition Enabled="false" Grouping="Or" />
-                                <Conditions />
                               </Trigger>
                             </Triggers>
                           </Folder>
@@ -15875,7 +15854,6 @@
                               </Action>
                             </Actions>
                             <Condition Enabled="false" Grouping="Or" />
-                            <Conditions />
                           </Trigger>
                           <Trigger Enabled="true" Name="倒计时初始化" Id="cf77f525-ba83-44fc-8f64-5a7e8d7cf1f9" RegularExpression="^.{14} (?:\w+ )00:0039::(戦闘開始！|Engage!|战斗开始！|戰鬥開始！)">
                             <Actions>
@@ -15904,7 +15882,6 @@
                               </Action>
                             </Actions>
                             <Condition Enabled="false" Grouping="Or" />
-                            <Conditions />
                           </Trigger>
                         </Triggers>
                       </Folder>
@@ -16071,13 +16048,21 @@
                               <ConditionSingle Enabled="true" ExpressionL="${var:p11s_仇恨_总次数_Clone}" ExpressionTypeL="String" ExpressionR="4" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                             </Condition>
                           </Action>
-                          <Action OrderNumber="11" ActionType="Placeholder" Asynchronous="False" Description="重置" DescriptionOverride="True">
+                          <Action OrderNumber="11" ActionType="Placeholder" Asynchronous="False" Description="9" DescriptionOverride="True">
                             <Condition Enabled="false" Grouping="Or" />
                           </Action>
-                          <Action OrderNumber="12" VariableOp="UnsetRegex" VariableName="p11s_仇恨_.*_Clone" Enabled="False" ActionType="Variable" ExecutionDelayExpression="15000" RefireRequeue="False">
+                          <Action OrderNumber="12" JsonEndpointExpression="http://127.0.0.1:47774/?namespace=what3&amp;destroyAt=5500,COMBAT_EXIT,TERRITORY_CHANGE" JsonPayloadExpression="{&quot;Name&quot;:&quot;stack&quot;,&quot;type&quot;:1,&quot;radius&quot;:6.0,&quot;color&quot;:4278255359,&quot;overlayBGColor&quot;:4278190080,&quot;overlayTextColor&quot;:4278255590,&quot;overlayVOffset&quot;:0.8,&quot;overlayPlaceholders&quot;:true,&quot;thicc&quot;:3.0,&quot;overlayText&quot;:&quot;分摊 → $NAME 剩余 9 次&quot;,&quot;refActorObjectID&quot;:${numeric:hex2dec(${tid})},&quot;refActorComparisonType&quot;:2,&quot;tether&quot;:true}" ActionType="GenericJson" Asynchronous="False">
+                            <Condition Enabled="true" Grouping="And">
+                              <ConditionSingle Enabled="true" ExpressionL="${var:p11s_仇恨_总次数_Clone}" ExpressionTypeL="String" ExpressionR="5" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                            </Condition>
+                          </Action>
+                          <Action OrderNumber="13" ActionType="Placeholder" Asynchronous="False" Description="重置" DescriptionOverride="True">
                             <Condition Enabled="false" Grouping="Or" />
                           </Action>
-                          <Action OrderNumber="13" VariableOp="UnsetRegex" VariableName="P11s_仇恨_.*_Clone" ActionType="Variable" ExecutionDelayExpression="15000" RefireRequeue="False">
+                          <Action OrderNumber="14" VariableOp="UnsetRegex" VariableName="p11s_仇恨_.*_Clone" Enabled="False" ActionType="Variable" ExecutionDelayExpression="15000" RefireRequeue="False">
+                            <Condition Enabled="false" Grouping="Or" />
+                          </Action>
+                          <Action OrderNumber="15" VariableOp="UnsetRegex" VariableName="P11s_仇恨_.*_Clone" ActionType="Variable" ExecutionDelayExpression="15000" RefireRequeue="False">
                             <Condition Enabled="false" Grouping="Or" />
                           </Action>
                         </Actions>
@@ -16094,236 +16079,283 @@
                           <Action OrderNumber="3" ActionType="Placeholder" ExecutionDelayExpression="300" Asynchronous="False">
                             <Condition Enabled="false" Grouping="Or" />
                           </Action>
-                          <Action OrderNumber="4" ActionType="Placeholder" Asynchronous="False" Description="7" DescriptionOverride="True">
+                          <Action OrderNumber="4" ActionType="Placeholder" Asynchronous="False" Description="8" DescriptionOverride="True">
                             <Condition Enabled="false" Grouping="Or" />
                           </Action>
                           <Action OrderNumber="5" JsonEndpointExpression="http://127.0.0.1:47774/?destroy=what3" ActionType="GenericJson" Asynchronous="False">
                             <Condition Enabled="true" Grouping="And">
-                              <ConditionSingle Enabled="true" ExpressionL="${var:p11s_仇恨_总次数_Clone}" ExpressionTypeL="String" ExpressionR="4" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                              <ConditionSingle Enabled="true" ExpressionL="${var:p11s_仇恨_总次数_Clone}" ExpressionTypeL="String" ExpressionR="5" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                               <ConditionSingle Enabled="true" ExpressionL="${var:P11s_仇恨_计数_Clone}" ExpressionTypeL="String" ExpressionR="1" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                             </Condition>
                           </Action>
                           <Action OrderNumber="6" JsonEndpointExpression="http://127.0.0.1:47774/?namespace=what3&amp;destroyAt=9000,COMBAT_EXIT,TERRITORY_CHANGE" JsonPayloadExpression="{&quot;Name&quot;:&quot;stack&quot;,&quot;type&quot;:1,&quot;radius&quot;:6.0,&quot;color&quot;:4278255359,&quot;overlayBGColor&quot;:4278190080,&quot;overlayTextColor&quot;:4278255590,&quot;overlayVOffset&quot;:0.8,&quot;overlayPlaceholders&quot;:true,&quot;thicc&quot;:3.0,&quot;overlayText&quot;:&quot;分摊 → $NAME 剩余 7 次&quot;,&quot;refActorObjectID&quot;:${var:p11s_仇恨_分摊者_Clone},&quot;refActorComparisonType&quot;:2,&quot;tether&quot;:true}" ActionType="GenericJson" Asynchronous="False">
                             <Condition Enabled="true" Grouping="And">
-                              <ConditionSingle Enabled="true" ExpressionL="${var:p11s_仇恨_总次数_Clone}" ExpressionTypeL="String" ExpressionR="4" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                              <ConditionSingle Enabled="true" ExpressionL="${var:p11s_仇恨_总次数_Clone}" ExpressionTypeL="String" ExpressionR="5" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                               <ConditionSingle Enabled="true" ExpressionL="${var:P11s_仇恨_计数_Clone}" ExpressionTypeL="String" ExpressionR="1" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                             </Condition>
                           </Action>
-                          <Action OrderNumber="7" ActionType="Placeholder" Asynchronous="False" Description="6" DescriptionOverride="True">
+                          <Action OrderNumber="7" ActionType="Placeholder" Asynchronous="False" Description="7" DescriptionOverride="True">
                             <Condition Enabled="false" Grouping="Or" />
                           </Action>
                           <Action OrderNumber="8" JsonEndpointExpression="http://127.0.0.1:47774/?destroy=what3" ActionType="GenericJson" Asynchronous="False">
                             <Condition Enabled="true" Grouping="Or">
                               <ConditionGroup Enabled="true" Grouping="And">
+                                <ConditionSingle Enabled="true" ExpressionL="${var:p11s_仇恨_总次数_Clone}" ExpressionTypeL="String" ExpressionR="5" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                                 <ConditionSingle Enabled="true" ExpressionL="${var:P11s_仇恨_计数_Clone}" ExpressionTypeL="String" ExpressionR="2" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
-                                <ConditionSingle Enabled="true" ExpressionL="${var:p11s_仇恨_总次数_Clone}" ExpressionTypeL="String" ExpressionR="4" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                               </ConditionGroup>
                               <ConditionGroup Enabled="true" Grouping="And">
                                 <ConditionSingle Enabled="true" ExpressionL="${var:P11s_仇恨_计数_Clone}" ExpressionTypeL="String" ExpressionR="1" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
-                                <ConditionSingle Enabled="true" ExpressionL="${var:p11s_仇恨_总次数_Clone}" ExpressionTypeL="String" ExpressionR="3" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                                <ConditionSingle Enabled="true" ExpressionL="${var:p11s_仇恨_总次数_Clone}" ExpressionTypeL="String" ExpressionR="4" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                               </ConditionGroup>
                             </Condition>
                           </Action>
-                          <Action OrderNumber="9" JsonEndpointExpression="http://127.0.0.1:47774/?namespace=what3&amp;destroyAt=8000,COMBAT_EXIT,TERRITORY_CHANGE" JsonPayloadExpression="{&quot;Name&quot;:&quot;stack&quot;,&quot;type&quot;:1,&quot;radius&quot;:6.0,&quot;color&quot;:4278255359,&quot;overlayBGColor&quot;:4278190080,&quot;overlayTextColor&quot;:4278255590,&quot;overlayVOffset&quot;:0.8,&quot;overlayPlaceholders&quot;:true,&quot;thicc&quot;:3.0,&quot;overlayText&quot;:&quot;分摊 → $NAME 剩余 6 次&quot;,&quot;refActorObjectID&quot;:${var:p11s_仇恨_分摊者_Clone},&quot;refActorComparisonType&quot;:2,&quot;tether&quot;:true}" ActionType="GenericJson" Asynchronous="False">
+                          <Action OrderNumber="9" JsonEndpointExpression="http://127.0.0.1:47774/?namespace=what3&amp;destroyAt=9000,COMBAT_EXIT,TERRITORY_CHANGE" JsonPayloadExpression="{&quot;Name&quot;:&quot;stack&quot;,&quot;type&quot;:1,&quot;radius&quot;:6.0,&quot;color&quot;:4278255359,&quot;overlayBGColor&quot;:4278190080,&quot;overlayTextColor&quot;:4278255590,&quot;overlayVOffset&quot;:0.8,&quot;overlayPlaceholders&quot;:true,&quot;thicc&quot;:3.0,&quot;overlayText&quot;:&quot;分摊 → $NAME 剩余 7 次&quot;,&quot;refActorObjectID&quot;:${var:p11s_仇恨_分摊者_Clone},&quot;refActorComparisonType&quot;:2,&quot;tether&quot;:true}" ActionType="GenericJson" Asynchronous="False">
                             <Condition Enabled="true" Grouping="Or">
                               <ConditionGroup Enabled="true" Grouping="And">
+                                <ConditionSingle Enabled="true" ExpressionL="${var:p11s_仇恨_总次数_Clone}" ExpressionTypeL="String" ExpressionR="5" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                                 <ConditionSingle Enabled="true" ExpressionL="${var:P11s_仇恨_计数_Clone}" ExpressionTypeL="String" ExpressionR="2" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
-                                <ConditionSingle Enabled="true" ExpressionL="${var:p11s_仇恨_总次数_Clone}" ExpressionTypeL="String" ExpressionR="4" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                               </ConditionGroup>
                               <ConditionGroup Enabled="true" Grouping="And">
                                 <ConditionSingle Enabled="true" ExpressionL="${var:P11s_仇恨_计数_Clone}" ExpressionTypeL="String" ExpressionR="1" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
-                                <ConditionSingle Enabled="true" ExpressionL="${var:p11s_仇恨_总次数_Clone}" ExpressionTypeL="String" ExpressionR="3" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                                <ConditionSingle Enabled="true" ExpressionL="${var:p11s_仇恨_总次数_Clone}" ExpressionTypeL="String" ExpressionR="4" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                               </ConditionGroup>
                             </Condition>
                           </Action>
-                          <Action OrderNumber="10" ActionType="Placeholder" Asynchronous="False" Description="5" DescriptionOverride="True">
+                          <Action OrderNumber="10" ActionType="Placeholder" Asynchronous="False" Description="6" DescriptionOverride="True">
                             <Condition Enabled="false" Grouping="Or" />
                           </Action>
                           <Action OrderNumber="11" JsonEndpointExpression="http://127.0.0.1:47774/?destroy=what3" ActionType="GenericJson" Asynchronous="False">
                             <Condition Enabled="true" Grouping="Or">
                               <ConditionGroup Enabled="true" Grouping="And">
-                                <ConditionSingle Enabled="true" ExpressionL="${var:P11s_仇恨_计数_Clone}" ExpressionTypeL="String" ExpressionR="3" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                                <ConditionSingle Enabled="true" ExpressionL="${var:P11s_仇恨_计数_Clone}" ExpressionTypeL="String" ExpressionR="2" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                                 <ConditionSingle Enabled="true" ExpressionL="${var:p11s_仇恨_总次数_Clone}" ExpressionTypeL="String" ExpressionR="4" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                               </ConditionGroup>
                               <ConditionGroup Enabled="true" Grouping="And">
-                                <ConditionSingle Enabled="true" ExpressionL="${var:P11s_仇恨_计数_Clone}" ExpressionTypeL="String" ExpressionR="2" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                                <ConditionSingle Enabled="true" ExpressionL="${var:P11s_仇恨_计数_Clone}" ExpressionTypeL="String" ExpressionR="1" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                                 <ConditionSingle Enabled="true" ExpressionL="${var:p11s_仇恨_总次数_Clone}" ExpressionTypeL="String" ExpressionR="3" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                               </ConditionGroup>
                               <ConditionGroup Enabled="true" Grouping="And">
-                                <ConditionSingle Enabled="true" ExpressionL="${var:P11s_仇恨_计数_Clone}" ExpressionTypeL="String" ExpressionR="1" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
-                                <ConditionSingle Enabled="true" ExpressionL="${var:p11s_仇恨_总次数_Clone}" ExpressionTypeL="String" ExpressionR="2" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                                <ConditionSingle Enabled="true" ExpressionL="${var:p11s_仇恨_总次数_Clone}" ExpressionTypeL="String" ExpressionR="5" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                                <ConditionSingle Enabled="true" ExpressionL="${var:P11s_仇恨_计数_Clone}" ExpressionTypeL="String" ExpressionR="3" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                               </ConditionGroup>
                             </Condition>
                           </Action>
-                          <Action OrderNumber="12" JsonEndpointExpression="http://127.0.0.1:47774/?namespace=what3&amp;destroyAt=6500,COMBAT_EXIT,TERRITORY_CHANGE" JsonPayloadExpression="{&quot;Name&quot;:&quot;stack&quot;,&quot;type&quot;:1,&quot;radius&quot;:6.0,&quot;color&quot;:4278255359,&quot;overlayBGColor&quot;:4278190080,&quot;overlayTextColor&quot;:4278255590,&quot;overlayVOffset&quot;:0.8,&quot;overlayPlaceholders&quot;:true,&quot;thicc&quot;:3.0,&quot;overlayText&quot;:&quot;分摊 → $NAME 剩余 5 次&quot;,&quot;refActorObjectID&quot;:${var:p11s_仇恨_分摊者_Clone},&quot;refActorComparisonType&quot;:2,&quot;tether&quot;:true}" ActionType="GenericJson" Asynchronous="False">
+                          <Action OrderNumber="12" JsonEndpointExpression="http://127.0.0.1:47774/?namespace=what3&amp;destroyAt=8000,COMBAT_EXIT,TERRITORY_CHANGE" JsonPayloadExpression="{&quot;Name&quot;:&quot;stack&quot;,&quot;type&quot;:1,&quot;radius&quot;:6.0,&quot;color&quot;:4278255359,&quot;overlayBGColor&quot;:4278190080,&quot;overlayTextColor&quot;:4278255590,&quot;overlayVOffset&quot;:0.8,&quot;overlayPlaceholders&quot;:true,&quot;thicc&quot;:3.0,&quot;overlayText&quot;:&quot;分摊 → $NAME 剩余 6 次&quot;,&quot;refActorObjectID&quot;:${var:p11s_仇恨_分摊者_Clone},&quot;refActorComparisonType&quot;:2,&quot;tether&quot;:true}" ActionType="GenericJson" Asynchronous="False">
                             <Condition Enabled="true" Grouping="Or">
                               <ConditionGroup Enabled="true" Grouping="And">
-                                <ConditionSingle Enabled="true" ExpressionL="${var:P11s_仇恨_计数_Clone}" ExpressionTypeL="String" ExpressionR="3" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                                <ConditionSingle Enabled="true" ExpressionL="${var:P11s_仇恨_计数_Clone}" ExpressionTypeL="String" ExpressionR="2" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                                 <ConditionSingle Enabled="true" ExpressionL="${var:p11s_仇恨_总次数_Clone}" ExpressionTypeL="String" ExpressionR="4" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                               </ConditionGroup>
                               <ConditionGroup Enabled="true" Grouping="And">
-                                <ConditionSingle Enabled="true" ExpressionL="${var:P11s_仇恨_计数_Clone}" ExpressionTypeL="String" ExpressionR="2" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                                <ConditionSingle Enabled="true" ExpressionL="${var:P11s_仇恨_计数_Clone}" ExpressionTypeL="String" ExpressionR="1" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                                 <ConditionSingle Enabled="true" ExpressionL="${var:p11s_仇恨_总次数_Clone}" ExpressionTypeL="String" ExpressionR="3" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                               </ConditionGroup>
                               <ConditionGroup Enabled="true" Grouping="And">
-                                <ConditionSingle Enabled="true" ExpressionL="${var:P11s_仇恨_计数_Clone}" ExpressionTypeL="String" ExpressionR="1" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
-                                <ConditionSingle Enabled="true" ExpressionL="${var:p11s_仇恨_总次数_Clone}" ExpressionTypeL="String" ExpressionR="2" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                                <ConditionSingle Enabled="true" ExpressionL="${var:p11s_仇恨_总次数_Clone}" ExpressionTypeL="String" ExpressionR="5" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                                <ConditionSingle Enabled="true" ExpressionL="${var:P11s_仇恨_计数_Clone}" ExpressionTypeL="String" ExpressionR="3" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                               </ConditionGroup>
                             </Condition>
                           </Action>
-                          <Action OrderNumber="13" ActionType="Placeholder" Asynchronous="False" Description="4" DescriptionOverride="True">
+                          <Action OrderNumber="13" ActionType="Placeholder" Asynchronous="False" Description="5" DescriptionOverride="True">
                             <Condition Enabled="false" Grouping="Or" />
                           </Action>
                           <Action OrderNumber="14" JsonEndpointExpression="http://127.0.0.1:47774/?destroy=what3" ActionType="GenericJson" Asynchronous="False">
                             <Condition Enabled="true" Grouping="Or">
                               <ConditionGroup Enabled="true" Grouping="And">
-                                <ConditionSingle Enabled="true" ExpressionL="${var:P11s_仇恨_计数_Clone}" ExpressionTypeL="String" ExpressionR="4" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                                <ConditionSingle Enabled="true" ExpressionL="${var:P11s_仇恨_计数_Clone}" ExpressionTypeL="String" ExpressionR="3" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                                 <ConditionSingle Enabled="true" ExpressionL="${var:p11s_仇恨_总次数_Clone}" ExpressionTypeL="String" ExpressionR="4" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                               </ConditionGroup>
                               <ConditionGroup Enabled="true" Grouping="And">
-                                <ConditionSingle Enabled="true" ExpressionL="${var:P11s_仇恨_计数_Clone}" ExpressionTypeL="String" ExpressionR="3" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                                <ConditionSingle Enabled="true" ExpressionL="${var:P11s_仇恨_计数_Clone}" ExpressionTypeL="String" ExpressionR="2" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                                 <ConditionSingle Enabled="true" ExpressionL="${var:p11s_仇恨_总次数_Clone}" ExpressionTypeL="String" ExpressionR="3" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                               </ConditionGroup>
                               <ConditionGroup Enabled="true" Grouping="And">
-                                <ConditionSingle Enabled="true" ExpressionL="${var:P11s_仇恨_计数_Clone}" ExpressionTypeL="String" ExpressionR="2" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                                <ConditionSingle Enabled="true" ExpressionL="${var:P11s_仇恨_计数_Clone}" ExpressionTypeL="String" ExpressionR="1" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                                 <ConditionSingle Enabled="true" ExpressionL="${var:p11s_仇恨_总次数_Clone}" ExpressionTypeL="String" ExpressionR="2" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                               </ConditionGroup>
                               <ConditionGroup Enabled="true" Grouping="And">
-                                <ConditionSingle Enabled="true" ExpressionL="${var:P11s_仇恨_计数_Clone}" ExpressionTypeL="String" ExpressionR="1" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
-                                <ConditionSingle Enabled="true" ExpressionL="${var:p11s_仇恨_总次数_Clone}" ExpressionTypeL="String" ExpressionR="1" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                                <ConditionSingle Enabled="true" ExpressionL="${var:p11s_仇恨_总次数_Clone}" ExpressionTypeL="String" ExpressionR="5" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                                <ConditionSingle Enabled="true" ExpressionL="${var:P11s_仇恨_计数_Clone}" ExpressionTypeL="String" ExpressionR="4" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                               </ConditionGroup>
                             </Condition>
                           </Action>
-                          <Action OrderNumber="15" JsonEndpointExpression="http://127.0.0.1:47774/?namespace=what3&amp;destroyAt=5000,COMBAT_EXIT,TERRITORY_CHANGE" JsonPayloadExpression="{&quot;Name&quot;:&quot;stack&quot;,&quot;type&quot;:1,&quot;radius&quot;:6.0,&quot;color&quot;:4278255359,&quot;overlayBGColor&quot;:4278190080,&quot;overlayTextColor&quot;:4278255590,&quot;overlayVOffset&quot;:0.8,&quot;overlayPlaceholders&quot;:true,&quot;thicc&quot;:3.0,&quot;overlayText&quot;:&quot;分摊 → $NAME 剩余 4 次&quot;,&quot;refActorObjectID&quot;:${var:p11s_仇恨_分摊者_Clone},&quot;refActorComparisonType&quot;:2,&quot;tether&quot;:true}" ActionType="GenericJson" Asynchronous="False">
+                          <Action OrderNumber="15" JsonEndpointExpression="http://127.0.0.1:47774/?namespace=what3&amp;destroyAt=6500,COMBAT_EXIT,TERRITORY_CHANGE" JsonPayloadExpression="{&quot;Name&quot;:&quot;stack&quot;,&quot;type&quot;:1,&quot;radius&quot;:6.0,&quot;color&quot;:4278255359,&quot;overlayBGColor&quot;:4278190080,&quot;overlayTextColor&quot;:4278255590,&quot;overlayVOffset&quot;:0.8,&quot;overlayPlaceholders&quot;:true,&quot;thicc&quot;:3.0,&quot;overlayText&quot;:&quot;分摊 → $NAME 剩余 5 次&quot;,&quot;refActorObjectID&quot;:${var:p11s_仇恨_分摊者_Clone},&quot;refActorComparisonType&quot;:2,&quot;tether&quot;:true}" ActionType="GenericJson" Asynchronous="False">
                             <Condition Enabled="true" Grouping="Or">
                               <ConditionGroup Enabled="true" Grouping="And">
-                                <ConditionSingle Enabled="true" ExpressionL="${var:P11s_仇恨_计数_Clone}" ExpressionTypeL="String" ExpressionR="4" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                                <ConditionSingle Enabled="true" ExpressionL="${var:P11s_仇恨_计数_Clone}" ExpressionTypeL="String" ExpressionR="3" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                                 <ConditionSingle Enabled="true" ExpressionL="${var:p11s_仇恨_总次数_Clone}" ExpressionTypeL="String" ExpressionR="4" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                               </ConditionGroup>
                               <ConditionGroup Enabled="true" Grouping="And">
-                                <ConditionSingle Enabled="true" ExpressionL="${var:P11s_仇恨_计数_Clone}" ExpressionTypeL="String" ExpressionR="3" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                                <ConditionSingle Enabled="true" ExpressionL="${var:P11s_仇恨_计数_Clone}" ExpressionTypeL="String" ExpressionR="2" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                                 <ConditionSingle Enabled="true" ExpressionL="${var:p11s_仇恨_总次数_Clone}" ExpressionTypeL="String" ExpressionR="3" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                               </ConditionGroup>
                               <ConditionGroup Enabled="true" Grouping="And">
-                                <ConditionSingle Enabled="true" ExpressionL="${var:P11s_仇恨_计数_Clone}" ExpressionTypeL="String" ExpressionR="2" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                                <ConditionSingle Enabled="true" ExpressionL="${var:P11s_仇恨_计数_Clone}" ExpressionTypeL="String" ExpressionR="1" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                                 <ConditionSingle Enabled="true" ExpressionL="${var:p11s_仇恨_总次数_Clone}" ExpressionTypeL="String" ExpressionR="2" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                               </ConditionGroup>
                               <ConditionGroup Enabled="true" Grouping="And">
-                                <ConditionSingle Enabled="true" ExpressionL="${var:P11s_仇恨_计数_Clone}" ExpressionTypeL="String" ExpressionR="1" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
-                                <ConditionSingle Enabled="true" ExpressionL="${var:p11s_仇恨_总次数_Clone}" ExpressionTypeL="String" ExpressionR="1" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                                <ConditionSingle Enabled="true" ExpressionL="${var:p11s_仇恨_总次数_Clone}" ExpressionTypeL="String" ExpressionR="5" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                                <ConditionSingle Enabled="true" ExpressionL="${var:P11s_仇恨_计数_Clone}" ExpressionTypeL="String" ExpressionR="4" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                               </ConditionGroup>
                             </Condition>
                           </Action>
-                          <Action OrderNumber="16" ActionType="Placeholder" Asynchronous="False" Description="3" DescriptionOverride="True">
+                          <Action OrderNumber="16" ActionType="Placeholder" Asynchronous="False" Description="4" DescriptionOverride="True">
                             <Condition Enabled="false" Grouping="Or" />
                           </Action>
                           <Action OrderNumber="17" JsonEndpointExpression="http://127.0.0.1:47774/?destroy=what3" ActionType="GenericJson" Asynchronous="False">
                             <Condition Enabled="true" Grouping="Or">
                               <ConditionGroup Enabled="true" Grouping="And">
-                                <ConditionSingle Enabled="true" ExpressionL="${var:P11s_仇恨_计数_Clone}" ExpressionTypeL="String" ExpressionR="5" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                                <ConditionSingle Enabled="true" ExpressionL="${var:P11s_仇恨_计数_Clone}" ExpressionTypeL="String" ExpressionR="4" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                                 <ConditionSingle Enabled="true" ExpressionL="${var:p11s_仇恨_总次数_Clone}" ExpressionTypeL="String" ExpressionR="4" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                               </ConditionGroup>
                               <ConditionGroup Enabled="true" Grouping="And">
-                                <ConditionSingle Enabled="true" ExpressionL="${var:P11s_仇恨_计数_Clone}" ExpressionTypeL="String" ExpressionR="4" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                                <ConditionSingle Enabled="true" ExpressionL="${var:P11s_仇恨_计数_Clone}" ExpressionTypeL="String" ExpressionR="3" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                                 <ConditionSingle Enabled="true" ExpressionL="${var:p11s_仇恨_总次数_Clone}" ExpressionTypeL="String" ExpressionR="3" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                               </ConditionGroup>
                               <ConditionGroup Enabled="true" Grouping="And">
-                                <ConditionSingle Enabled="true" ExpressionL="${var:P11s_仇恨_计数_Clone}" ExpressionTypeL="String" ExpressionR="3" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                                <ConditionSingle Enabled="true" ExpressionL="${var:P11s_仇恨_计数_Clone}" ExpressionTypeL="String" ExpressionR="2" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                                 <ConditionSingle Enabled="true" ExpressionL="${var:p11s_仇恨_总次数_Clone}" ExpressionTypeL="String" ExpressionR="2" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                               </ConditionGroup>
                               <ConditionGroup Enabled="true" Grouping="And">
-                                <ConditionSingle Enabled="true" ExpressionL="${var:P11s_仇恨_计数_Clone}" ExpressionTypeL="String" ExpressionR="2" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                                <ConditionSingle Enabled="true" ExpressionL="${var:P11s_仇恨_计数_Clone}" ExpressionTypeL="String" ExpressionR="1" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                                 <ConditionSingle Enabled="true" ExpressionL="${var:p11s_仇恨_总次数_Clone}" ExpressionTypeL="String" ExpressionR="1" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                              </ConditionGroup>
+                              <ConditionGroup Enabled="true" Grouping="And">
+                                <ConditionSingle Enabled="true" ExpressionL="${var:p11s_仇恨_总次数_Clone}" ExpressionTypeL="String" ExpressionR="5" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                                <ConditionSingle Enabled="true" ExpressionL="${var:P11s_仇恨_计数_Clone}" ExpressionTypeL="String" ExpressionR="5" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                               </ConditionGroup>
                             </Condition>
                           </Action>
-                          <Action OrderNumber="18" JsonEndpointExpression="http://127.0.0.1:47774/?namespace=what3&amp;destroyAt=4000,COMBAT_EXIT,TERRITORY_CHANGE" JsonPayloadExpression="{&quot;Name&quot;:&quot;stack&quot;,&quot;type&quot;:1,&quot;radius&quot;:6.0,&quot;color&quot;:4278255359,&quot;overlayBGColor&quot;:4278190080,&quot;overlayTextColor&quot;:4278255590,&quot;overlayVOffset&quot;:0.8,&quot;overlayPlaceholders&quot;:true,&quot;thicc&quot;:3.0,&quot;overlayText&quot;:&quot;分摊 → $NAME 剩余 3 次&quot;,&quot;refActorObjectID&quot;:${var:p11s_仇恨_分摊者_Clone},&quot;refActorComparisonType&quot;:2,&quot;tether&quot;:true}" ActionType="GenericJson" Asynchronous="False">
+                          <Action OrderNumber="18" JsonEndpointExpression="http://127.0.0.1:47774/?namespace=what3&amp;destroyAt=5000,COMBAT_EXIT,TERRITORY_CHANGE" JsonPayloadExpression="{&quot;Name&quot;:&quot;stack&quot;,&quot;type&quot;:1,&quot;radius&quot;:6.0,&quot;color&quot;:4278255359,&quot;overlayBGColor&quot;:4278190080,&quot;overlayTextColor&quot;:4278255590,&quot;overlayVOffset&quot;:0.8,&quot;overlayPlaceholders&quot;:true,&quot;thicc&quot;:3.0,&quot;overlayText&quot;:&quot;分摊 → $NAME 剩余 4 次&quot;,&quot;refActorObjectID&quot;:${var:p11s_仇恨_分摊者_Clone},&quot;refActorComparisonType&quot;:2,&quot;tether&quot;:true}" ActionType="GenericJson" Asynchronous="False">
                             <Condition Enabled="true" Grouping="Or">
                               <ConditionGroup Enabled="true" Grouping="And">
-                                <ConditionSingle Enabled="true" ExpressionL="${var:P11s_仇恨_计数_Clone}" ExpressionTypeL="String" ExpressionR="5" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                                <ConditionSingle Enabled="true" ExpressionL="${var:P11s_仇恨_计数_Clone}" ExpressionTypeL="String" ExpressionR="4" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                                 <ConditionSingle Enabled="true" ExpressionL="${var:p11s_仇恨_总次数_Clone}" ExpressionTypeL="String" ExpressionR="4" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                               </ConditionGroup>
                               <ConditionGroup Enabled="true" Grouping="And">
-                                <ConditionSingle Enabled="true" ExpressionL="${var:P11s_仇恨_计数_Clone}" ExpressionTypeL="String" ExpressionR="4" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                                <ConditionSingle Enabled="true" ExpressionL="${var:P11s_仇恨_计数_Clone}" ExpressionTypeL="String" ExpressionR="3" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                                 <ConditionSingle Enabled="true" ExpressionL="${var:p11s_仇恨_总次数_Clone}" ExpressionTypeL="String" ExpressionR="3" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                               </ConditionGroup>
                               <ConditionGroup Enabled="true" Grouping="And">
-                                <ConditionSingle Enabled="true" ExpressionL="${var:P11s_仇恨_计数_Clone}" ExpressionTypeL="String" ExpressionR="3" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                                <ConditionSingle Enabled="true" ExpressionL="${var:P11s_仇恨_计数_Clone}" ExpressionTypeL="String" ExpressionR="2" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                                 <ConditionSingle Enabled="true" ExpressionL="${var:p11s_仇恨_总次数_Clone}" ExpressionTypeL="String" ExpressionR="2" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                               </ConditionGroup>
                               <ConditionGroup Enabled="true" Grouping="And">
-                                <ConditionSingle Enabled="true" ExpressionL="${var:P11s_仇恨_计数_Clone}" ExpressionTypeL="String" ExpressionR="2" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                                <ConditionSingle Enabled="true" ExpressionL="${var:P11s_仇恨_计数_Clone}" ExpressionTypeL="String" ExpressionR="1" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                                 <ConditionSingle Enabled="true" ExpressionL="${var:p11s_仇恨_总次数_Clone}" ExpressionTypeL="String" ExpressionR="1" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                              </ConditionGroup>
+                              <ConditionGroup Enabled="true" Grouping="And">
+                                <ConditionSingle Enabled="true" ExpressionL="${var:p11s_仇恨_总次数_Clone}" ExpressionTypeL="String" ExpressionR="5" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                                <ConditionSingle Enabled="true" ExpressionL="${var:P11s_仇恨_计数_Clone}" ExpressionTypeL="String" ExpressionR="5" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                               </ConditionGroup>
                             </Condition>
                           </Action>
-                          <Action OrderNumber="19" ActionType="Placeholder" Asynchronous="False" Description="2" DescriptionOverride="True">
+                          <Action OrderNumber="19" ActionType="Placeholder" Asynchronous="False" Description="3" DescriptionOverride="True">
                             <Condition Enabled="false" Grouping="Or" />
                           </Action>
                           <Action OrderNumber="20" JsonEndpointExpression="http://127.0.0.1:47774/?destroy=what3" ActionType="GenericJson" Asynchronous="False">
                             <Condition Enabled="true" Grouping="Or">
                               <ConditionGroup Enabled="true" Grouping="And">
-                                <ConditionSingle Enabled="true" ExpressionL="${var:P11s_仇恨_计数_Clone}" ExpressionTypeL="String" ExpressionR="6" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                                <ConditionSingle Enabled="true" ExpressionL="${var:P11s_仇恨_计数_Clone}" ExpressionTypeL="String" ExpressionR="5" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                                 <ConditionSingle Enabled="true" ExpressionL="${var:p11s_仇恨_总次数_Clone}" ExpressionTypeL="String" ExpressionR="4" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                               </ConditionGroup>
                               <ConditionGroup Enabled="true" Grouping="And">
-                                <ConditionSingle Enabled="true" ExpressionL="${var:P11s_仇恨_计数_Clone}" ExpressionTypeL="String" ExpressionR="5" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                                <ConditionSingle Enabled="true" ExpressionL="${var:P11s_仇恨_计数_Clone}" ExpressionTypeL="String" ExpressionR="4" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                                 <ConditionSingle Enabled="true" ExpressionL="${var:p11s_仇恨_总次数_Clone}" ExpressionTypeL="String" ExpressionR="3" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                               </ConditionGroup>
                               <ConditionGroup Enabled="true" Grouping="And">
-                                <ConditionSingle Enabled="true" ExpressionL="${var:P11s_仇恨_计数_Clone}" ExpressionTypeL="String" ExpressionR="4" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                                <ConditionSingle Enabled="true" ExpressionL="${var:P11s_仇恨_计数_Clone}" ExpressionTypeL="String" ExpressionR="3" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                                 <ConditionSingle Enabled="true" ExpressionL="${var:p11s_仇恨_总次数_Clone}" ExpressionTypeL="String" ExpressionR="2" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                               </ConditionGroup>
                               <ConditionGroup Enabled="true" Grouping="And">
-                                <ConditionSingle Enabled="true" ExpressionL="${var:P11s_仇恨_计数_Clone}" ExpressionTypeL="String" ExpressionR="3" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                                <ConditionSingle Enabled="true" ExpressionL="${var:P11s_仇恨_计数_Clone}" ExpressionTypeL="String" ExpressionR="2" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                                 <ConditionSingle Enabled="true" ExpressionL="${var:p11s_仇恨_总次数_Clone}" ExpressionTypeL="String" ExpressionR="1" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                              </ConditionGroup>
+                              <ConditionGroup Enabled="true" Grouping="And">
+                                <ConditionSingle Enabled="true" ExpressionL="${var:p11s_仇恨_总次数_Clone}" ExpressionTypeL="String" ExpressionR="5" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                                <ConditionSingle Enabled="true" ExpressionL="${var:P11s_仇恨_计数_Clone}" ExpressionTypeL="String" ExpressionR="6" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                               </ConditionGroup>
                             </Condition>
                           </Action>
-                          <Action OrderNumber="21" JsonEndpointExpression="http://127.0.0.1:47774/?namespace=what3&amp;destroyAt=3000,COMBAT_EXIT,TERRITORY_CHANGE" JsonPayloadExpression="{&quot;Name&quot;:&quot;stack&quot;,&quot;type&quot;:1,&quot;radius&quot;:6.0,&quot;color&quot;:4278255359,&quot;overlayBGColor&quot;:4278190080,&quot;overlayTextColor&quot;:4278255590,&quot;overlayVOffset&quot;:0.8,&quot;overlayPlaceholders&quot;:true,&quot;thicc&quot;:3.0,&quot;overlayText&quot;:&quot;分摊 → $NAME 剩余 2 次&quot;,&quot;refActorObjectID&quot;:${var:p11s_仇恨_分摊者_Clone},&quot;refActorComparisonType&quot;:2,&quot;tether&quot;:true}" ActionType="GenericJson" Asynchronous="False">
+                          <Action OrderNumber="21" JsonEndpointExpression="http://127.0.0.1:47774/?namespace=what3&amp;destroyAt=4000,COMBAT_EXIT,TERRITORY_CHANGE" JsonPayloadExpression="{&quot;Name&quot;:&quot;stack&quot;,&quot;type&quot;:1,&quot;radius&quot;:6.0,&quot;color&quot;:4278255359,&quot;overlayBGColor&quot;:4278190080,&quot;overlayTextColor&quot;:4278255590,&quot;overlayVOffset&quot;:0.8,&quot;overlayPlaceholders&quot;:true,&quot;thicc&quot;:3.0,&quot;overlayText&quot;:&quot;分摊 → $NAME 剩余 3 次&quot;,&quot;refActorObjectID&quot;:${var:p11s_仇恨_分摊者_Clone},&quot;refActorComparisonType&quot;:2,&quot;tether&quot;:true}" ActionType="GenericJson" Asynchronous="False">
                             <Condition Enabled="true" Grouping="Or">
                               <ConditionGroup Enabled="true" Grouping="And">
-                                <ConditionSingle Enabled="true" ExpressionL="${var:P11s_仇恨_计数_Clone}" ExpressionTypeL="String" ExpressionR="6" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                                <ConditionSingle Enabled="true" ExpressionL="${var:P11s_仇恨_计数_Clone}" ExpressionTypeL="String" ExpressionR="5" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                                 <ConditionSingle Enabled="true" ExpressionL="${var:p11s_仇恨_总次数_Clone}" ExpressionTypeL="String" ExpressionR="4" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                               </ConditionGroup>
                               <ConditionGroup Enabled="true" Grouping="And">
-                                <ConditionSingle Enabled="true" ExpressionL="${var:P11s_仇恨_计数_Clone}" ExpressionTypeL="String" ExpressionR="5" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                                <ConditionSingle Enabled="true" ExpressionL="${var:P11s_仇恨_计数_Clone}" ExpressionTypeL="String" ExpressionR="4" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                                 <ConditionSingle Enabled="true" ExpressionL="${var:p11s_仇恨_总次数_Clone}" ExpressionTypeL="String" ExpressionR="3" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                               </ConditionGroup>
                               <ConditionGroup Enabled="true" Grouping="And">
-                                <ConditionSingle Enabled="true" ExpressionL="${var:P11s_仇恨_计数_Clone}" ExpressionTypeL="String" ExpressionR="4" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                                <ConditionSingle Enabled="true" ExpressionL="${var:P11s_仇恨_计数_Clone}" ExpressionTypeL="String" ExpressionR="3" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                                 <ConditionSingle Enabled="true" ExpressionL="${var:p11s_仇恨_总次数_Clone}" ExpressionTypeL="String" ExpressionR="2" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                               </ConditionGroup>
                               <ConditionGroup Enabled="true" Grouping="And">
-                                <ConditionSingle Enabled="true" ExpressionL="${var:P11s_仇恨_计数_Clone}" ExpressionTypeL="String" ExpressionR="3" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                                <ConditionSingle Enabled="true" ExpressionL="${var:P11s_仇恨_计数_Clone}" ExpressionTypeL="String" ExpressionR="2" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                                 <ConditionSingle Enabled="true" ExpressionL="${var:p11s_仇恨_总次数_Clone}" ExpressionTypeL="String" ExpressionR="1" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                              </ConditionGroup>
+                              <ConditionGroup Enabled="true" Grouping="And">
+                                <ConditionSingle Enabled="true" ExpressionL="${var:p11s_仇恨_总次数_Clone}" ExpressionTypeL="String" ExpressionR="5" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                                <ConditionSingle Enabled="true" ExpressionL="${var:P11s_仇恨_计数_Clone}" ExpressionTypeL="String" ExpressionR="6" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                               </ConditionGroup>
                             </Condition>
                           </Action>
-                          <Action OrderNumber="22" ActionType="Placeholder" Asynchronous="False" Description="1" DescriptionOverride="True">
+                          <Action OrderNumber="22" ActionType="Placeholder" Asynchronous="False" Description="2" DescriptionOverride="True">
                             <Condition Enabled="false" Grouping="Or" />
                           </Action>
                           <Action OrderNumber="23" JsonEndpointExpression="http://127.0.0.1:47774/?destroy=what3" ActionType="GenericJson" Asynchronous="False">
                             <Condition Enabled="true" Grouping="Or">
                               <ConditionGroup Enabled="true" Grouping="And">
-                                <ConditionSingle Enabled="true" ExpressionL="${var:P11s_仇恨_计数_Clone}" ExpressionTypeL="String" ExpressionR="7" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                                <ConditionSingle Enabled="true" ExpressionL="${var:P11s_仇恨_计数_Clone}" ExpressionTypeL="String" ExpressionR="6" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                                 <ConditionSingle Enabled="true" ExpressionL="${var:p11s_仇恨_总次数_Clone}" ExpressionTypeL="String" ExpressionR="4" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                               </ConditionGroup>
                               <ConditionGroup Enabled="true" Grouping="And">
-                                <ConditionSingle Enabled="true" ExpressionL="${var:P11s_仇恨_计数_Clone}" ExpressionTypeL="String" ExpressionR="6" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                                <ConditionSingle Enabled="true" ExpressionL="${var:P11s_仇恨_计数_Clone}" ExpressionTypeL="String" ExpressionR="5" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                                 <ConditionSingle Enabled="true" ExpressionL="${var:p11s_仇恨_总次数_Clone}" ExpressionTypeL="String" ExpressionR="3" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                               </ConditionGroup>
                               <ConditionGroup Enabled="true" Grouping="And">
-                                <ConditionSingle Enabled="true" ExpressionL="${var:P11s_仇恨_计数_Clone}" ExpressionTypeL="String" ExpressionR="5" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                                <ConditionSingle Enabled="true" ExpressionL="${var:P11s_仇恨_计数_Clone}" ExpressionTypeL="String" ExpressionR="4" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                                 <ConditionSingle Enabled="true" ExpressionL="${var:p11s_仇恨_总次数_Clone}" ExpressionTypeL="String" ExpressionR="2" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                               </ConditionGroup>
                               <ConditionGroup Enabled="true" Grouping="And">
-                                <ConditionSingle Enabled="true" ExpressionL="${var:P11s_仇恨_计数_Clone}" ExpressionTypeL="String" ExpressionR="4" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                                <ConditionSingle Enabled="true" ExpressionL="${var:P11s_仇恨_计数_Clone}" ExpressionTypeL="String" ExpressionR="3" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                                 <ConditionSingle Enabled="true" ExpressionL="${var:p11s_仇恨_总次数_Clone}" ExpressionTypeL="String" ExpressionR="1" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                              </ConditionGroup>
+                              <ConditionGroup Enabled="true" Grouping="And">
+                                <ConditionSingle Enabled="true" ExpressionL="${var:p11s_仇恨_总次数_Clone}" ExpressionTypeL="String" ExpressionR="5" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                                <ConditionSingle Enabled="true" ExpressionL="${var:P11s_仇恨_计数_Clone}" ExpressionTypeL="String" ExpressionR="7" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                               </ConditionGroup>
                             </Condition>
                           </Action>
-                          <Action OrderNumber="24" JsonEndpointExpression="http://127.0.0.1:47774/?namespace=what3&amp;destroyAt=2000,COMBAT_EXIT,TERRITORY_CHANGE" JsonPayloadExpression="{&quot;Name&quot;:&quot;stack&quot;,&quot;type&quot;:1,&quot;radius&quot;:6.0,&quot;color&quot;:4278255359,&quot;overlayBGColor&quot;:4278190080,&quot;overlayTextColor&quot;:4278255590,&quot;overlayVOffset&quot;:0.8,&quot;overlayPlaceholders&quot;:true,&quot;thicc&quot;:3.0,&quot;overlayText&quot;:&quot;分摊 → $NAME 剩余 1 次&quot;,&quot;refActorObjectID&quot;:${var:p11s_仇恨_分摊者_Clone},&quot;refActorComparisonType&quot;:2,&quot;tether&quot;:true}" ActionType="GenericJson" Asynchronous="False">
+                          <Action OrderNumber="24" JsonEndpointExpression="http://127.0.0.1:47774/?namespace=what3&amp;destroyAt=3000,COMBAT_EXIT,TERRITORY_CHANGE" JsonPayloadExpression="{&quot;Name&quot;:&quot;stack&quot;,&quot;type&quot;:1,&quot;radius&quot;:6.0,&quot;color&quot;:4278255359,&quot;overlayBGColor&quot;:4278190080,&quot;overlayTextColor&quot;:4278255590,&quot;overlayVOffset&quot;:0.8,&quot;overlayPlaceholders&quot;:true,&quot;thicc&quot;:3.0,&quot;overlayText&quot;:&quot;分摊 → $NAME 剩余 2 次&quot;,&quot;refActorObjectID&quot;:${var:p11s_仇恨_分摊者_Clone},&quot;refActorComparisonType&quot;:2,&quot;tether&quot;:true}" ActionType="GenericJson" Asynchronous="False">
+                            <Condition Enabled="true" Grouping="Or">
+                              <ConditionGroup Enabled="true" Grouping="And">
+                                <ConditionSingle Enabled="true" ExpressionL="${var:P11s_仇恨_计数_Clone}" ExpressionTypeL="String" ExpressionR="6" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                                <ConditionSingle Enabled="true" ExpressionL="${var:p11s_仇恨_总次数_Clone}" ExpressionTypeL="String" ExpressionR="4" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                              </ConditionGroup>
+                              <ConditionGroup Enabled="true" Grouping="And">
+                                <ConditionSingle Enabled="true" ExpressionL="${var:P11s_仇恨_计数_Clone}" ExpressionTypeL="String" ExpressionR="5" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                                <ConditionSingle Enabled="true" ExpressionL="${var:p11s_仇恨_总次数_Clone}" ExpressionTypeL="String" ExpressionR="3" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                              </ConditionGroup>
+                              <ConditionGroup Enabled="true" Grouping="And">
+                                <ConditionSingle Enabled="true" ExpressionL="${var:P11s_仇恨_计数_Clone}" ExpressionTypeL="String" ExpressionR="4" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                                <ConditionSingle Enabled="true" ExpressionL="${var:p11s_仇恨_总次数_Clone}" ExpressionTypeL="String" ExpressionR="2" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                              </ConditionGroup>
+                              <ConditionGroup Enabled="true" Grouping="And">
+                                <ConditionSingle Enabled="true" ExpressionL="${var:P11s_仇恨_计数_Clone}" ExpressionTypeL="String" ExpressionR="3" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                                <ConditionSingle Enabled="true" ExpressionL="${var:p11s_仇恨_总次数_Clone}" ExpressionTypeL="String" ExpressionR="1" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                              </ConditionGroup>
+                              <ConditionGroup Enabled="true" Grouping="And">
+                                <ConditionSingle Enabled="true" ExpressionL="${var:p11s_仇恨_总次数_Clone}" ExpressionTypeL="String" ExpressionR="5" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                                <ConditionSingle Enabled="true" ExpressionL="${var:P11s_仇恨_计数_Clone}" ExpressionTypeL="String" ExpressionR="7" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                              </ConditionGroup>
+                            </Condition>
+                          </Action>
+                          <Action OrderNumber="25" ActionType="Placeholder" Asynchronous="False" Description="1" DescriptionOverride="True">
+                            <Condition Enabled="false" Grouping="Or" />
+                          </Action>
+                          <Action OrderNumber="26" JsonEndpointExpression="http://127.0.0.1:47774/?destroy=what3" ActionType="GenericJson" Asynchronous="False">
                             <Condition Enabled="true" Grouping="Or">
                               <ConditionGroup Enabled="true" Grouping="And">
                                 <ConditionSingle Enabled="true" ExpressionL="${var:P11s_仇恨_计数_Clone}" ExpressionTypeL="String" ExpressionR="7" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
@@ -16341,12 +16373,40 @@
                                 <ConditionSingle Enabled="true" ExpressionL="${var:P11s_仇恨_计数_Clone}" ExpressionTypeL="String" ExpressionR="4" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                                 <ConditionSingle Enabled="true" ExpressionL="${var:p11s_仇恨_总次数_Clone}" ExpressionTypeL="String" ExpressionR="1" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                               </ConditionGroup>
+                              <ConditionGroup Enabled="true" Grouping="And">
+                                <ConditionSingle Enabled="true" ExpressionL="${var:p11s_仇恨_总次数_Clone}" ExpressionTypeL="String" ExpressionR="5" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                                <ConditionSingle Enabled="true" ExpressionL="${var:P11s_仇恨_计数_Clone}" ExpressionTypeL="String" ExpressionR="8" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                              </ConditionGroup>
                             </Condition>
                           </Action>
-                          <Action OrderNumber="25" ActionType="Placeholder" Asynchronous="False" Description="0" DescriptionOverride="True">
+                          <Action OrderNumber="27" JsonEndpointExpression="http://127.0.0.1:47774/?namespace=what3&amp;destroyAt=2000,COMBAT_EXIT,TERRITORY_CHANGE" JsonPayloadExpression="{&quot;Name&quot;:&quot;stack&quot;,&quot;type&quot;:1,&quot;radius&quot;:6.0,&quot;color&quot;:4278255359,&quot;overlayBGColor&quot;:4278190080,&quot;overlayTextColor&quot;:4278255590,&quot;overlayVOffset&quot;:0.8,&quot;overlayPlaceholders&quot;:true,&quot;thicc&quot;:3.0,&quot;overlayText&quot;:&quot;分摊 → $NAME 剩余 1 次&quot;,&quot;refActorObjectID&quot;:${var:p11s_仇恨_分摊者_Clone},&quot;refActorComparisonType&quot;:2,&quot;tether&quot;:true}" ActionType="GenericJson" Asynchronous="False">
+                            <Condition Enabled="true" Grouping="Or">
+                              <ConditionGroup Enabled="true" Grouping="And">
+                                <ConditionSingle Enabled="true" ExpressionL="${var:P11s_仇恨_计数_Clone}" ExpressionTypeL="String" ExpressionR="7" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                                <ConditionSingle Enabled="true" ExpressionL="${var:p11s_仇恨_总次数_Clone}" ExpressionTypeL="String" ExpressionR="4" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                              </ConditionGroup>
+                              <ConditionGroup Enabled="true" Grouping="And">
+                                <ConditionSingle Enabled="true" ExpressionL="${var:P11s_仇恨_计数_Clone}" ExpressionTypeL="String" ExpressionR="6" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                                <ConditionSingle Enabled="true" ExpressionL="${var:p11s_仇恨_总次数_Clone}" ExpressionTypeL="String" ExpressionR="3" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                              </ConditionGroup>
+                              <ConditionGroup Enabled="true" Grouping="And">
+                                <ConditionSingle Enabled="true" ExpressionL="${var:P11s_仇恨_计数_Clone}" ExpressionTypeL="String" ExpressionR="5" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                                <ConditionSingle Enabled="true" ExpressionL="${var:p11s_仇恨_总次数_Clone}" ExpressionTypeL="String" ExpressionR="2" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                              </ConditionGroup>
+                              <ConditionGroup Enabled="true" Grouping="And">
+                                <ConditionSingle Enabled="true" ExpressionL="${var:P11s_仇恨_计数_Clone}" ExpressionTypeL="String" ExpressionR="4" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                                <ConditionSingle Enabled="true" ExpressionL="${var:p11s_仇恨_总次数_Clone}" ExpressionTypeL="String" ExpressionR="1" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                              </ConditionGroup>
+                              <ConditionGroup Enabled="true" Grouping="And">
+                                <ConditionSingle Enabled="true" ExpressionL="${var:p11s_仇恨_总次数_Clone}" ExpressionTypeL="String" ExpressionR="5" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                                <ConditionSingle Enabled="true" ExpressionL="${var:P11s_仇恨_计数_Clone}" ExpressionTypeL="String" ExpressionR="8" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                              </ConditionGroup>
+                            </Condition>
+                          </Action>
+                          <Action OrderNumber="28" ActionType="Placeholder" Asynchronous="False" Description="0" DescriptionOverride="True">
                             <Condition Enabled="false" Grouping="Or" />
                           </Action>
-                          <Action OrderNumber="26" JsonEndpointExpression="http://127.0.0.1:47774/?destroy=what3" ActionType="GenericJson" Asynchronous="False">
+                          <Action OrderNumber="29" JsonEndpointExpression="http://127.0.0.1:47774/?destroy=what3" ActionType="GenericJson" Asynchronous="False">
                             <Condition Enabled="true" Grouping="Or">
                               <ConditionGroup Enabled="true" Grouping="And">
                                 <ConditionSingle Enabled="true" ExpressionL="${var:P11s_仇恨_计数_Clone}" ExpressionTypeL="String" ExpressionR="8" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
@@ -16363,6 +16423,10 @@
                               <ConditionGroup Enabled="true" Grouping="And">
                                 <ConditionSingle Enabled="true" ExpressionL="${var:P11s_仇恨_计数_Clone}" ExpressionTypeL="String" ExpressionR="5" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                                 <ConditionSingle Enabled="true" ExpressionL="${var:p11s_仇恨_总次数_Clone}" ExpressionTypeL="String" ExpressionR="1" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                              </ConditionGroup>
+                              <ConditionGroup Enabled="true" Grouping="And">
+                                <ConditionSingle Enabled="true" ExpressionL="${var:p11s_仇恨_总次数_Clone}" ExpressionTypeL="String" ExpressionR="5" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                                <ConditionSingle Enabled="true" ExpressionL="${var:P11s_仇恨_计数_Clone}" ExpressionTypeL="String" ExpressionR="9" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                               </ConditionGroup>
                             </Condition>
                           </Action>
