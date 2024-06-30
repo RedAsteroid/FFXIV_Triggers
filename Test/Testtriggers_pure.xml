@@ -15568,7 +15568,6 @@
                   <Trigger Enabled="true" Source="None" Name="P10S Tethers 扇形连线" Id="e4675cd2-9b77-48bc-906e-5a0dd4d24f1b" RegularExpression="见描述" Description="using Dalamud.Game.ClientState.Objects.SubKinds;&#xD;&#xA;using Dalamud.Game.ClientState.Objects.Types;&#xD;&#xA;using ECommons;&#xD;&#xA;using ECommons.Configuration;&#xD;&#xA;using ECommons.GameHelpers;&#xD;&#xA;using ECommons.Hooks;&#xD;&#xA;using ECommons.ImGuiMethods;&#xD;&#xA;using ECommons.Logging;&#xD;&#xA;using ECommons.MathHelpers;&#xD;&#xA;using ImGuiNET;&#xD;&#xA;using Splatoon.SplatoonScripting;&#xD;&#xA;using Splatoon.Utils;&#xD;&#xA;using System;&#xD;&#xA;using System.Collections.Generic;&#xD;&#xA;using System.Linq;&#xD;&#xA;using System.Numerics;&#xD;&#xA;using System.Text;&#xD;&#xA;using System.Threading.Tasks;&#xD;&#xA;&#xD;&#xA;namespace SplatoonScriptsOfficial.Duties.Endwalker&#xD;&#xA;{&#xD;&#xA;    public class P10S_Tethers_扇形连线 : SplatoonScript&#xD;&#xA;    {&#xD;&#xA;        public override HashSet&lt;uint&gt; ValidTerritories =&gt; new() { 1150 };&#xD;&#xA;        public override Metadata? Metadata =&gt; new(2, &quot;NightmareXIV, RedAsteroid 修改&quot;);&#xD;&#xA;        List&lt;TetherData&gt; Tethers = new();&#xD;&#xA;&#xD;&#xA;        public class TetherData&#xD;&#xA;        {&#xD;&#xA;            public uint source;&#xD;&#xA;            public uint target;&#xD;&#xA;            public long time = Environment.TickCount64;&#xD;&#xA;            public float Age =&gt; (float)(Environment.TickCount64 - time) / 1000f;&#xD;&#xA;        }&#xD;&#xA;&#xD;&#xA;        public override void OnSetup()&#xD;&#xA;        {&#xD;&#xA;            var code = &quot;{\&quot;Name\&quot;:\&quot;\&quot;,\&quot;type\&quot;:5,\&quot;refX\&quot;:103.03228,\&quot;refY\&quot;:99.94743,\&quot;radius\&quot;:20.0,\&quot;coneAngleMin\&quot;:-61,\&quot;coneAngleMax\&quot;:61,\&quot;color\&quot;:3355506687,\&quot;FillStep\&quot;:2.0,\&quot;includeRotation\&quot;:true,\&quot;AdditionalRotation\&quot;:3.1415927,\&quot;Filled\&quot;:true}&quot;;&#xD;&#xA;            Controller.RegisterElementFromCode(&quot;Cone1&quot;, code);&#xD;&#xA;            Controller.RegisterElementFromCode(&quot;Cone2&quot;, code);&#xD;&#xA;            Controller.RegisterElementFromCode(&quot;Tether&quot;, &quot;{\&quot;Name\&quot;:\&quot;\&quot;,\&quot;Enabled\&quot;:false,\&quot;radius\&quot;:0.0,\&quot;thicc\&quot;:5.0,\&quot;tether\&quot;:true}&quot;);&#xD;&#xA;        }&#xD;&#xA;&#xD;&#xA;        public override void OnEnable()&#xD;&#xA;        {&#xD;&#xA;            ActionEffect.ActionEffectEvent += ActionEffect_ActionEffectEvent;&#xD;&#xA;            Off();&#xD;&#xA;        }&#xD;&#xA;&#xD;&#xA;        private void ActionEffect_ActionEffectEvent(ECommons.Hooks.ActionEffectTypes.ActionEffectSet set)&#xD;&#xA;        {&#xD;&#xA;            if (set.Action.RowId == 33432)&#xD;&#xA;            {&#xD;&#xA;                Off();&#xD;&#xA;            }&#xD;&#xA;        }&#xD;&#xA;&#xD;&#xA;        public override void OnDisable()&#xD;&#xA;        {&#xD;&#xA;            ActionEffect.ActionEffectEvent -= ActionEffect_ActionEffectEvent;&#xD;&#xA;            Off();&#xD;&#xA;        }&#xD;&#xA;&#xD;&#xA;        public override void OnTetherCreate(uint source, uint target, uint data2, uint data3, uint data5)&#xD;&#xA;        {&#xD;&#xA;            Tethers.Add(new() { source = source, target = target });&#xD;&#xA;            Tethers.RemoveAll(x =&gt; x.Age &gt; 30f);&#xD;&#xA;        }&#xD;&#xA;&#xD;&#xA;        void Off()&#xD;&#xA;        {&#xD;&#xA;            Tethers.Clear();&#xD;&#xA;            Controller.GetRegisteredElements().Each(x =&gt; x.Value.Enabled = false);&#xD;&#xA;        }&#xD;&#xA;&#xD;&#xA;        public override void OnDirectorUpdate(DirectorUpdateCategory category)&#xD;&#xA;        {&#xD;&#xA;            if (category.EqualsAny(DirectorUpdateCategory.Commence, DirectorUpdateCategory.Recommence, DirectorUpdateCategory.Wipe))&#xD;&#xA;            {&#xD;&#xA;                Off();&#xD;&#xA;            }&#xD;&#xA;        }&#xD;&#xA;&#xD;&#xA;        public override void OnSettingsDraw()&#xD;&#xA;        {&#xD;&#xA;            ImGui.ColorEdit4(&quot;自身连线 颜色&quot;, ref C.ColorSelf, ImGuiColorEditFlags.NoInputs); // Self color&#xD;&#xA;            ImGui.Checkbox(&quot;高亮显示自己的连线&quot;, ref C.TetherSelf); // Highlight own tether&#xD;&#xA;            ImGui.ColorEdit4(&quot;其他玩家连线 颜色&quot;, ref C.Color, ImGuiColorEditFlags.NoInputs); // Other player color&#xD;&#xA;            ImGui.SetNextItemWidth(150f);&#xD;&#xA;            ImGui.SliderFloat(&quot;扇形线条粗细&quot;, ref C.Thick, 1f, 10f); // Cone line thickness&#xD;&#xA;            ImGui.SetNextItemWidth(150f);&#xD;&#xA;            ImGui.SliderFloat(&quot;扇形填充步骤&quot;, ref C.Interval, 1f, 20f); // Cone fill step&#xD;&#xA;            ImGui.SetNextItemWidth(150f);&#xD;&#xA;            ImGui.SliderFloat(&quot;扇形线条长度&quot;, ref C.radius, 5f, 40f); // Cone length&#xD;&#xA;            if (ImGui.CollapsingHeader(&quot;debug&quot;))&#xD;&#xA;            {&#xD;&#xA;                foreach (var x in Tethers)&#xD;&#xA;                {&#xD;&#xA;                    ImGuiEx.Text($&quot;{x.source.GetObject()}-&gt;{x.target.GetObject()}, {x.Age}s&quot;);&#xD;&#xA;                }&#xD;&#xA;            }&#xD;&#xA;        }&#xD;&#xA;&#xD;&#xA;        public override void OnUpdate()&#xD;&#xA;        {&#xD;&#xA;            int num = 1;&#xD;&#xA;            foreach (var x in Tethers)&#xD;&#xA;            {&#xD;&#xA;                if (x.source.TryGetObject(out var pillar) &amp;&amp; pillar is BattleChara p &amp;&amp; p.NameId == 12354 &amp;&amp; x.target.TryGetObject(out var player) &amp;&amp; player is PlayerCharacter pc &amp;&amp; Controller.TryGetElementByName($&quot;Cone{num}&quot;, out var e))&#xD;&#xA;                {&#xD;&#xA;                    num++;&#xD;&#xA;                    e.Enabled = true;&#xD;&#xA;                    e.AdditionalRotation = (180 + MathHelper.GetRelativeAngle(p.Position, pc.Position)).DegreesToRadians();&#xD;&#xA;                    e.SetRefPosition(p.Position);&#xD;&#xA;                    e.color = C.Color.ToUint();&#xD;&#xA;                    e.thicc = C.Thick;&#xD;&#xA;                    e.FillStep = C.Interval;&#xD;&#xA;                    e.radius = C.radius;&#xD;&#xA;                    if (pc.Address == Player.Object.Address)&#xD;&#xA;                    {&#xD;&#xA;                        e.color = C.ColorSelf.ToUint();&#xD;&#xA;                        if (C.TetherSelf &amp;&amp; Controller.TryGetElementByName(&quot;Tether&quot;, out var t))&#xD;&#xA;                        {&#xD;&#xA;                            t.Enabled = true;&#xD;&#xA;                            t.SetRefPosition(p.Position);&#xD;&#xA;                        }&#xD;&#xA;                    }&#xD;&#xA;                }&#xD;&#xA;            }&#xD;&#xA;        }&#xD;&#xA;&#xD;&#xA;        Config C =&gt; Controller.GetConfig&lt;Config&gt;();&#xD;&#xA;        public class Config : IEzConfig&#xD;&#xA;        {&#xD;&#xA;            public Vector4 Color = 0xFFF700C8.SwapBytes().ToVector4();&#xD;&#xA;            public Vector4 ColorSelf = 0xFFAD00C8.SwapBytes().ToVector4();&#xD;&#xA;            public float Thick = 4f;&#xD;&#xA;            public float Interval = 10f;&#xD;&#xA;            public bool TetherSelf = true;&#xD;&#xA;            public float radius = 10f;&#xD;&#xA;        }&#xD;&#xA;    }&#xD;&#xA;}">
                     <Actions />
                     <Condition Enabled="false" Grouping="Or" />
-                    <Conditions />
                   </Trigger>
                 </Triggers>
               </Folder>
@@ -16839,7 +16838,7 @@
             </Folders>
             <Triggers />
           </Folder>
-          <Folder Id="8330d488-2c61-465b-a6d4-a3ded8cbeab6" Name="5. P12S" Enabled="true">
+          <Folder FFXIVZoneFilterEnabled="True" FfxivZoneFilterRegularExpression="^1154$" Id="8330d488-2c61-465b-a6d4-a3ded8cbeab6" Name="5. P12S" Enabled="true">
             <Folders>
               <Folder Id="4b8c2bf5-53b0-46b3-88b6-eec17a5b80b1" Name="0. 使用指南" Enabled="true">
                 <Folders />
@@ -16885,7 +16884,6 @@
                               </Action>
                             </Actions>
                             <Condition Enabled="false" Grouping="Or" />
-                            <Conditions />
                           </Trigger>
                         </Triggers>
                       </Folder>
@@ -16913,7 +16911,6 @@
                                   <ConditionSingle Enabled="true" ExpressionL="${num}" ExpressionTypeL="Numeric" ExpressionR="0038" ExpressionTypeR="Numeric" ConditionType="StringEqualNocase" />
                                   <ConditionSingle Enabled="true" ExpressionL="${name}" ExpressionTypeL="String" ExpressionR="${_ffxivplayer}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                                 </Condition>
-                                <Conditions />
                               </Trigger>
                               <Trigger Enabled="true" Name="切换职业" Id="a821110a-2e02-4628-be96-f9ae02a15d59" RegularExpression="^.{14} (?:\w+ )00:0839::((?&lt;name&gt;.+?)?(的职业转换成了“|は「)(?&lt;class&gt;.+?)(”|」にチェンジした。)|(?&lt;isyou&gt;[Yy]ou) change to (?&lt;class2&gt;.+?)\.)">
                                 <Actions>
@@ -16928,7 +16925,6 @@
                                   <ConditionSingle Enabled="true" ExpressionL="${name}" ExpressionTypeL="String" ExpressionR="${_ffxivplayer}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                                   <ConditionSingle Enabled="true" ExpressionL="${isyou}" ExpressionTypeL="String" ExpressionR="you" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                                 </Condition>
-                                <Conditions />
                               </Trigger>
                               <Trigger Enabled="true" Sequential="True" Name="任务开始" Id="4e980c08-1ea3-496f-88ec-e3bc118e311a" RegularExpression="^.{14} ChatLog 00:0839::“零式万魔殿 荒天之狱4”任务开始。$">
                                 <Actions>
@@ -16955,7 +16951,6 @@
                                   </Action>
                                 </Actions>
                                 <Condition Enabled="false" Grouping="Or" />
-                                <Conditions />
                               </Trigger>
                             </Triggers>
                           </Folder>
@@ -16968,7 +16963,6 @@
                               </Action>
                             </Actions>
                             <Condition Enabled="false" Grouping="Or" />
-                            <Conditions />
                           </Trigger>
                           <Trigger Enabled="true" Name="倒计时初始化" Id="d5af5377-5567-481b-90af-6e6c5fedd260" RegularExpression="^.{14} (?:\w+ )00:0039::(戦闘開始！|Engage!|战斗开始！|戰鬥開始！)">
                             <Actions>
@@ -16985,7 +16979,6 @@
                               </Action>
                             </Actions>
                             <Condition Enabled="false" Grouping="Or" />
-                            <Conditions />
                           </Trigger>
                         </Triggers>
                       </Folder>
@@ -17005,7 +16998,6 @@
                   <Trigger Enabled="true" Name="请浏览并安装文档中提及的脚本: https://github.com/RedAsteroid/FFXIV_Triggers/blob/main/src/Endwalker/9-12savage.md" Id="27036e1e-2e30-47a6-b94b-db4d70c40b11" RegularExpression="">
                     <Actions />
                     <Condition Enabled="false" Grouping="Or" />
-                    <Conditions />
                   </Trigger>
                 </Triggers>
               </Folder>
