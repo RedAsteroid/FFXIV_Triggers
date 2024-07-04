@@ -47,6 +47,7 @@ P9S-P12S Splatoon 预设 个人改版
 
 - [**P12S Pangenesis 泛生论**](https://github.com/RedAsteroid/FFXIV_Triggers/blob/main/src/Endwalker/P12S%20Pangenesis%20%E6%B3%9B%E7%94%9F%E8%AE%BA.cs)
    - 进本请打开脚本设置初始化**小队列表**并选择**打法(2+1 Game8, 2+0 美服, 2+0 菓子)**，菓子踩塔安排有别于2+0，请正确选择您需要的打法。
+   - 2024.07.04 修复了泛生论 2+1、2+0 打法初始塔指路错误，**请卸载此脚本重新安装！否则会发生错误指路，导致炸塔！**
 
 # 预设 Presets
 

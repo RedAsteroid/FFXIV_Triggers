@@ -28,7 +28,7 @@ namespace SplatoonScriptsOfficial.Duties.Endwalker
         DebuffType MyDebuff = DebuffType.None;
 
         public override HashSet<uint> ValidTerritories => new() { 1154 };
-        public override Metadata? Metadata => new(4, "tatad2-fra, RedAsteroid 修改");
+        public override Metadata? Metadata => new(5, "tatad2-fra, RedAsteroid 修改");
 
         private string ElementNamePrefix = "P12SSC";
         private int towerCount = 0;
@@ -97,10 +97,9 @@ namespace SplatoonScriptsOfficial.Duties.Endwalker
             Vector2 blackPos = blackTower.Position.ToVector2();
 
             PluginLog.Information($"wtower: {whiteTower.ObjectId}, blacktower: {blackTower.ObjectId}, casttime: {whiteTower.CurrentCastTime}, {blackTower.CurrentCastTime}, position: {whiteTower.Position.ToVector2().ToString()}, {blackTower.Position.ToVector2().ToString()}");
-            PluginLog.Information($"白塔: {whiteTower.ObjectId}, 黑塔: {blackTower.ObjectId}, 咏唱时间: {whiteTower.CurrentCastTime}, {blackTower.CurrentCastTime}, 位置: {whiteTower.Position.ToVector2().ToString()}, {blackTower.Position.ToVector2().ToString()}");
 
             StatusList statusList = PC.StatusList;
-            if (statusList.Any(x => x.StatusId == whiteDebuff && x.RemainingTime <= 8) && !(C.Strat == Strat.First_2_0_菓子))
+            if (statusList.Any(x => x.StatusId == whiteDebuff && x.RemainingTime <= 8) && (C.Strat == Strat.First_2_0 || C.Strat == Strat.First_2_1))
             {
                 // short white, go black tower 
                 Indicator.refX = blackPos.X;
@@ -110,7 +109,7 @@ namespace SplatoonScriptsOfficial.Duties.Endwalker
                 lastTowerBlack = true;
                 MyDebuff = DebuffType.Short_2;
             }
-            else if (statusList.Any(x => x.StatusId == whiteDebuff && x.RemainingTime > 8) && !(C.Strat == Strat.First_2_0_菓子))
+            else if (statusList.Any(x => x.StatusId == whiteDebuff && x.RemainingTime > 8) && (C.Strat == Strat.First_2_0 || C.Strat == Strat.First_2_1))
             {
                 // long white, wait
                 int biasX = blackPos.X < 100 ? 5 : -5;
@@ -121,7 +120,7 @@ namespace SplatoonScriptsOfficial.Duties.Endwalker
                 lastTowerBlack = true;
                 MyDebuff = DebuffType.Long_2;
             }
-            else if (statusList.Any(x => x.StatusId == blackDebuff && x.RemainingTime <= 8) && !(C.Strat == Strat.First_2_0_菓子))
+            else if (statusList.Any(x => x.StatusId == blackDebuff && x.RemainingTime <= 8) && (C.Strat == Strat.First_2_0 || C.Strat == Strat.First_2_1))
             {
                 // short black, go white tower 
                 Indicator.refX = whitePos.X;
@@ -131,7 +130,7 @@ namespace SplatoonScriptsOfficial.Duties.Endwalker
                 lastTowerBlack = false;
                 MyDebuff = DebuffType.Short_2;
             }
-            else if (statusList.Any(x => x.StatusId == blackDebuff && x.RemainingTime > 8) && !(C.Strat == Strat.First_2_0_菓子))
+            else if (statusList.Any(x => x.StatusId == blackDebuff && x.RemainingTime > 8) && (C.Strat == Strat.First_2_0 || C.Strat == Strat.First_2_1))
             {
                 // long black, wait
                 int biasX = whitePos.X < 100 ? 5 : -5;
@@ -143,7 +142,7 @@ namespace SplatoonScriptsOfficial.Duties.Endwalker
                 MyDebuff = DebuffType.Long_2;
             }
             // 菓子2+0魔改
-            if (statusList.Any(x => x.StatusId == whiteDebuff && x.RemainingTime <= 8) && (C.Strat == Strat.First_2_0_菓子))
+            else if (statusList.Any(x => x.StatusId == whiteDebuff && x.RemainingTime <= 8) && (C.Strat == Strat.First_2_0_菓子))
             {
                 // short white, go black tower 
                 Indicator.refX = blackPos.X;
@@ -397,8 +396,10 @@ namespace SplatoonScriptsOfficial.Duties.Endwalker
         {
             ImGui.SetNextItemWidth(200f);
             ImGuiEx.EnumCombo("选择打法", ref C.Strat); // Select strat
-            ImGui.Text("使用前请在Debug2中初始化队伍，调整小队成员为正确的职能");
-            ImGui.Text("如果您使用菓子攻略泛生论踩塔，请务必在 \"选择打法\" 中切换！！！");
+            ImGui.Text("使用前请在Debug2中初始化队伍，调整小队成员为正确的职能！");
+            ImGui.Text("绿毛肥(Game8)打法请选择 First 2 1，2+0打法请选择 First 2 0，菓子打法请选择 First 2 0 菓子");
+            ImGui.Text("\n修复 2+1 、2+0 打法初次塔指路错误 - 2024.07.04");
+
 
             if (ImGui.CollapsingHeader("Debug"))
             {
