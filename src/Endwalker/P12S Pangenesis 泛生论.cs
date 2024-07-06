@@ -327,7 +327,6 @@ namespace SplatoonScriptsOfficial.Duties.Endwalker
                 }
 
                 PluginLog.Information($"second/third tower, {Indicator.refX}, {Indicator.refY}");
-                PluginLog.Information($"第2/3次塔, {Indicator.refX}, {Indicator.refY}");
             }, 1500);
         }
 
@@ -396,7 +395,7 @@ namespace SplatoonScriptsOfficial.Duties.Endwalker
         {
             ImGui.SetNextItemWidth(200f);
             ImGuiEx.EnumCombo("选择打法", ref C.Strat); // Select strat
-            ImGui.Text("使用前请在Debug2中初始化队伍，调整小队成员为正确的职能！");
+            ImGui.Text("使用前请务必完成队伍初始化，调整小队成员为正确的职能！");
             ImGui.Text("绿毛肥(Game8)打法请选择 First 2 1，2+0打法请选择 First 2 0，菓子打法请选择 First 2 0 菓子");
             ImGui.Text("\n修复 2+1 、2+0 打法初次塔指路错误 - 2024.07.04");
 
