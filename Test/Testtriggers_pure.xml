@@ -13739,7 +13739,6 @@
                                           <Action OrderNumber="4" LogMessageText="[22:44:49.475] StatusAdd 1A:DFC:星临刻印:9.00:E0000000::1032E5AA:龙爱玲:00:142714:" LogProcess="True" LogProcessACT="True" SoundRouting="None" TTSRouting="None" ActionType="LogMessage" />
                                         </Actions>
                                         <Condition Enabled="false" Grouping="Or" />
-                                        <Conditions />
                                       </Trigger>
                                       <Trigger Enabled="false" Source="None" Name="1. StartCasting" Id="51f572b9-fbb1-4f87-9454-0b2a903feab0" RegularExpression="">
                                         <Actions>
@@ -13749,7 +13748,6 @@
                                           <Action OrderNumber="4" LogMessageText="[22:44:49.520] StartsCasting 14:400093AD:人:82F1:飞光:103E3A1C:麦麦咔:8.700:97.00:75.00:0.00:0.00" LogProcess="True" LogProcessACT="True" SoundRouting="None" TTSRouting="None" ActionType="LogMessage" />
                                         </Actions>
                                         <Condition Enabled="false" Grouping="Or" />
-                                        <Conditions />
                                       </Trigger>
                                       <Trigger Enabled="false" Source="None" Name="3. Total" Id="bdf80cb0-9479-4d32-adb3-b94dad317b72" RegularExpression="">
                                         <Actions>
@@ -13763,7 +13761,6 @@
                                           <Action OrderNumber="8" LogMessageText="[22:44:49.520] StartsCasting 14:400093AD:人:82F1:飞光:103E3A1C:麦麦咔:8.700:97.00:75.00:0.00:0.00" LogProcess="True" LogProcessACT="True" SoundRouting="None" TTSRouting="None" ActionType="LogMessage" />
                                         </Actions>
                                         <Condition Enabled="false" Grouping="Or" />
-                                        <Conditions />
                                       </Trigger>
                                     </Triggers>
                                   </Folder>
@@ -14795,7 +14792,6 @@
                                   </Action>
                                 </Actions>
                                 <Condition Enabled="false" Grouping="Or" />
-                                <Conditions />
                               </Trigger>
                             </Triggers>
                           </Folder>
@@ -14853,7 +14849,6 @@
                                     <Condition Enabled="true" Grouping="Or">
                                       <ConditionSingle Enabled="true" ExpressionL="${tid}" ExpressionTypeL="String" ExpressionR="${_ffxivparty[1].id}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                                     </Condition>
-                                    <Conditions />
                                   </Trigger>
                                   <Trigger Enabled="true" Sequential="True" Name="2. 发送站位" Id="85be2618-34fd-40e0-a31c-b9258c60f400" RegularExpression="^.{14} StartsCasting 14:(?&lt;sid&gt;[^:]*):(?&lt;sname&gt;[^:]*):(82F5):(?&lt;ability&gt;(?:[^:]|: )*?):(?&lt;tid&gt;[^:]*):(?&lt;tname&gt;[^:]*):(?&lt;castTime&gt;[^:]*):(?&lt;x&gt;[^:]*):(?&lt;y&gt;[^:]*):(?&lt;z&gt;[^:]*):(?&lt;heading&gt;[^:]*)(?:$|:)" PeriodRefire="Deny" RefirePeriodExpression="1000">
                                     <Actions>
@@ -14943,7 +14938,6 @@
                                       </Action>
                                     </Actions>
                                     <Condition Enabled="false" Grouping="Or" />
-                                    <Conditions />
                                   </Trigger>
                                   <Trigger Enabled="true" Name="0. 初始化" Id="1032ac6a-e812-4588-b7d4-849cf1165816" RegularExpression="^.{15}\S+ 14:4.{7}:[^:]+:82FC:">
                                     <Actions>
@@ -14952,11 +14946,10 @@
                                       </Action>
                                     </Actions>
                                     <Condition Enabled="false" Grouping="Or" />
-                                    <Conditions />
                                   </Trigger>
                                 </Triggers>
                               </Folder>
-                              <Folder Id="497489ca-90be-4ce0-b1e1-9dcce48dd03f" Name="2. 小怪出招 MoreLogLine 测试无小队频道输出" Enabled="true">
+                              <Folder Id="497489ca-90be-4ce0-b1e1-9dcce48dd03f" Name="2. 小怪出招 MoreLogLine" Enabled="true">
                                 <Folders>
                                   <Folder Id="352577e7-cf7c-4e40-aa2d-dec2374578e5" Name="test" Enabled="false">
                                     <Folders />
@@ -14980,7 +14973,6 @@
                                         <Condition Enabled="false" Grouping="Or">
                                           <ConditionSingle Enabled="true" ExpressionL="${var:p12s_阶段转换_Clone}" ExpressionTypeL="String" ExpressionR="2" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                                         </Condition>
-                                        <Conditions />
                                       </Trigger>
                                       <Trigger Enabled="false" Name="2. 记录上天顺序" Id="9249a135-c05b-4c38-be41-0f6c9828944f" RegularExpression="^.{14} Error FE:] ChatLog 00:0:106:(?&lt;id&gt;.{8}):407:00001E39:">
                                         <Actions>
@@ -14999,7 +14991,6 @@
                                           <ConditionSingle Enabled="true" ExpressionL="${evar:p12s_女神的护佑_小怪id_${id}_Clone}" ExpressionTypeL="String" ExpressionR="1" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                                           <ConditionSingle Enabled="false" ExpressionL="${var:p12s_阶段转换_Clone}" ExpressionTypeL="String" ExpressionR="2" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                                         </Condition>
-                                        <Conditions />
                                       </Trigger>
                                     </Triggers>
                                   </Folder>
@@ -15022,9 +15013,8 @@
                                       </Action>
                                     </Actions>
                                     <Condition Enabled="true" Grouping="Or">
-                                      <ConditionSingle Enabled="true" ExpressionL="${var:p12s_阶段转换_Clone}" ExpressionTypeL="String" ExpressionR="2" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                                      <ConditionSingle Enabled="true" ExpressionL="${var:p12s_阶段转换_明眸_Clone}" ExpressionTypeL="String" ExpressionR="2" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                                     </Condition>
-                                    <Conditions />
                                   </Trigger>
                                   <Trigger Enabled="true" Name="2. 记录上天顺序" Id="701f1b8d-43b0-403a-a654-6a5331f4aafb" RegularExpression="^.{15}\S+ 00:0:106:(?&lt;id&gt;.{8}):[^:]*:0197:0000:00001E39:">
                                     <Actions>
@@ -15041,9 +15031,8 @@
                                     </Actions>
                                     <Condition Enabled="true" Grouping="And">
                                       <ConditionSingle Enabled="true" ExpressionL="${evar:p12s_女神的护佑_小怪id_${id}_Clone}" ExpressionTypeL="String" ExpressionR="1" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
-                                      <ConditionSingle Enabled="true" ExpressionL="${var:p12s_阶段转换_Clone}" ExpressionTypeL="String" ExpressionR="2" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                                      <ConditionSingle Enabled="true" ExpressionL="${var:p12s_阶段转换_明眸_Clone}" ExpressionTypeL="String" ExpressionR="2" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                                     </Condition>
-                                    <Conditions />
                                   </Trigger>
                                   <Trigger Enabled="true" Name="3. 发送小怪顺序信息" Id="0b65723b-601b-4c9d-a042-4347d8d739b2" RegularExpression="^.{14} StartsCasting 14:(?&lt;sid&gt;[^:]*):(?&lt;sname&gt;[^:]*):82F5:(?&lt;ability&gt;(?:[^:]|: )*?):(?&lt;tid&gt;[^:]*):(?&lt;tname&gt;[^:]*):(?&lt;castTime&gt;[^:]*):(?&lt;x&gt;[^:]*):(?&lt;y&gt;[^:]*):(?&lt;z&gt;[^:]*):(?&lt;heading&gt;[^:]*)(?:$|:)">
                                     <Actions>
@@ -15055,27 +15044,41 @@
                                           <ConditionSingle Enabled="true" ExpressionL="${lvar:p12s_女神的护佑_小怪顺序_Clone.size}" ExpressionTypeL="String" ExpressionR="8" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                                         </Condition>
                                       </Action>
-                                      <Action OrderNumber="3" LogMessageText="P12s_Just_Chat_echo:${lvar:p12s_女神的护佑_小怪顺序_Clone[1]}、${lvar:p12s_女神的护佑_小怪顺序_Clone[2]}、${lvar:p12s_女神的护佑_小怪顺序_Clone[3]}、${lvar:p12s_女神的护佑_小怪顺序_Clone[4]}" LogProcess="True" SoundRouting="None" TTSRouting="None" ActionType="LogMessage" ExecutionDelayExpression="10">
+                                      <Action OrderNumber="3" LogMessageText="P12s_Just_Chat_party:《女神的护佑 - 小怪顺序》 测试中" LogProcess="True" SoundRouting="None" TTSRouting="None" ActionType="LogMessage" ExecutionDelayExpression="10">
                                         <Condition Enabled="true" Grouping="Or">
                                           <ConditionSingle Enabled="true" ExpressionL="${lvar:p12s_女神的护佑_小怪顺序_Clone.size}" ExpressionTypeL="String" ExpressionR="8" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                                         </Condition>
                                       </Action>
-                                      <Action OrderNumber="4" LogMessageText="P12s_Just_Chat_echo:${lvar:p12s_女神的护佑_小怪顺序_Clone[5]}、${lvar:p12s_女神的护佑_小怪顺序_Clone[6]}、${lvar:p12s_女神的护佑_小怪顺序_Clone[7]}、${lvar:p12s_女神的护佑_小怪顺序_Clone[8]}" LogProcess="True" SoundRouting="None" TTSRouting="None" ActionType="LogMessage" ExecutionDelayExpression="10">
+                                      <Action OrderNumber="4" LogMessageText="P12s_Just_Chat_echo:${lvar:p12s_女神的护佑_小怪顺序_Clone[1]}、${lvar:p12s_女神的护佑_小怪顺序_Clone[2]}、${lvar:p12s_女神的护佑_小怪顺序_Clone[3]}、${lvar:p12s_女神的护佑_小怪顺序_Clone[4]}" LogProcess="True" SoundRouting="None" TTSRouting="None" ActionType="LogMessage" ExecutionDelayExpression="10">
                                         <Condition Enabled="true" Grouping="Or">
                                           <ConditionSingle Enabled="true" ExpressionL="${lvar:p12s_女神的护佑_小怪顺序_Clone.size}" ExpressionTypeL="String" ExpressionR="8" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                                         </Condition>
                                       </Action>
-                                      <Action OrderNumber="5" SoundRouting="None" TTSRouting="None" Enabled="False" ActionType="Placeholder" Description="异常警告" DescriptionOverride="True">
+                                      <Action OrderNumber="5" LogMessageText="P12s_Just_Chat_party:${lvar:p12s_女神的护佑_小怪顺序_Clone[1]}、${lvar:p12s_女神的护佑_小怪顺序_Clone[2]}、${lvar:p12s_女神的护佑_小怪顺序_Clone[3]}、${lvar:p12s_女神的护佑_小怪顺序_Clone[4]}" LogProcess="True" SoundRouting="None" TTSRouting="None" ActionType="LogMessage" ExecutionDelayExpression="10">
+                                        <Condition Enabled="true" Grouping="Or">
+                                          <ConditionSingle Enabled="true" ExpressionL="${lvar:p12s_女神的护佑_小怪顺序_Clone.size}" ExpressionTypeL="String" ExpressionR="8" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                                        </Condition>
+                                      </Action>
+                                      <Action OrderNumber="6" LogMessageText="P12s_Just_Chat_echo:${lvar:p12s_女神的护佑_小怪顺序_Clone[5]}、${lvar:p12s_女神的护佑_小怪顺序_Clone[6]}、${lvar:p12s_女神的护佑_小怪顺序_Clone[7]}、${lvar:p12s_女神的护佑_小怪顺序_Clone[8]}" LogProcess="True" SoundRouting="None" TTSRouting="None" ActionType="LogMessage" ExecutionDelayExpression="10">
+                                        <Condition Enabled="true" Grouping="Or">
+                                          <ConditionSingle Enabled="true" ExpressionL="${lvar:p12s_女神的护佑_小怪顺序_Clone.size}" ExpressionTypeL="String" ExpressionR="8" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                                        </Condition>
+                                      </Action>
+                                      <Action OrderNumber="7" LogMessageText="P12s_Just_Chat_party:${lvar:p12s_女神的护佑_小怪顺序_Clone[5]}、${lvar:p12s_女神的护佑_小怪顺序_Clone[6]}、${lvar:p12s_女神的护佑_小怪顺序_Clone[7]}、${lvar:p12s_女神的护佑_小怪顺序_Clone[8]}" LogProcess="True" SoundRouting="None" TTSRouting="None" ActionType="LogMessage" ExecutionDelayExpression="10">
+                                        <Condition Enabled="true" Grouping="Or">
+                                          <ConditionSingle Enabled="true" ExpressionL="${lvar:p12s_女神的护佑_小怪顺序_Clone.size}" ExpressionTypeL="String" ExpressionR="8" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                                        </Condition>
+                                      </Action>
+                                      <Action OrderNumber="8" SoundRouting="None" TTSRouting="None" Enabled="False" ActionType="Placeholder" Description="异常警告" DescriptionOverride="True">
                                         <Condition Enabled="false" Grouping="Or" />
                                       </Action>
-                                      <Action OrderNumber="6" LogProcess="True" NamedCallbackName="command" NamedCallbackParam="/e 小怪光暗记录有误！" SoundRouting="None" TTSRouting="None" ActionType="NamedCallback">
+                                      <Action OrderNumber="9" LogProcess="True" NamedCallbackName="command" NamedCallbackParam="/e 小怪光暗记录有误！" SoundRouting="None" TTSRouting="None" ActionType="NamedCallback">
                                         <Condition Enabled="true" Grouping="Or">
                                           <ConditionSingle Enabled="true" ExpressionL="${lvar:p12s_女神的护佑_小怪顺序_Clone.size}" ExpressionTypeL="String" ExpressionR="8" ExpressionTypeR="String" ConditionType="NumericLess" />
                                         </Condition>
                                       </Action>
                                     </Actions>
                                     <Condition Enabled="false" Grouping="Or" />
-                                    <Conditions />
                                   </Trigger>
                                   <Trigger Enabled="true" Name="0. 阶段转换 (明眸第2次咏唱)" Id="4a19666c-1e41-4c03-b703-7d3544a2e792" RegularExpression="^.{15}\S+ 14:4.{7}:[^:]+:82FC:">
                                     <Actions>
@@ -15087,7 +15090,6 @@
                                       </Action>
                                     </Actions>
                                     <Condition Enabled="false" Grouping="Or" />
-                                    <Conditions />
                                   </Trigger>
                                 </Triggers>
                               </Folder>
@@ -15121,7 +15123,6 @@
                                   </Action>
                                 </Actions>
                                 <Condition Enabled="false" Grouping="Or" />
-                                <Conditions />
                               </Trigger>
                               <Trigger Enabled="true" Name="《机制开始自动向小队频道发站位宏》 默语测试用" Id="ad3b87e3-aaee-4289-8d99-0844dcd34058" RegularExpression="^.{14} (?:\w+) (15|16):(?&lt;sid&gt;[^:]*):(?&lt;sname&gt;[^:]*):(82F4):(?&lt;ability&gt;(?:[^:]|: )*?):(?&lt;tid&gt;[^:]*):(?&lt;tname&gt;[^:]*):(?&lt;flags&gt;[^:]*):(?&lt;damage&gt;[^:]*)(?::[^:]*){14}:(?&lt;targetCurrentHp&gt;[^:]*):(?&lt;targetMaxHp&gt;[^:]*):(?&lt;targetCurrentMp&gt;[^:]*):(?&lt;targetMaxMp&gt;[^:]*)(?::[^:]*){2}:(?&lt;targetX&gt;[^:]*):(?&lt;targetY&gt;[^:]*):(?&lt;targetZ&gt;[^:]*):(?&lt;targetHeading&gt;[^:]*):(?&lt;currentHp&gt;[^:]*):(?&lt;maxHp&gt;[^:]*):(?&lt;currentMp&gt;[^:]*):(?&lt;maxMp&gt;[^:]*)(?::[^:]*){2}:(?&lt;x&gt;[^:]*):(?&lt;y&gt;[^:]*):(?&lt;z&gt;[^:]*):(?&lt;heading&gt;[^:]*):(?&lt;sequence&gt;[^:]*):(?&lt;targetIndex&gt;[^:]*):(?&lt;targetCount&gt;[^:]*)(?:$|:)" PeriodRefire="Deny" RefirePeriodExpression="1000">
                                 <Actions>
@@ -15151,7 +15152,6 @@
                                   </Action>
                                 </Actions>
                                 <Condition Enabled="false" Grouping="Or" />
-                                <Conditions />
                               </Trigger>
                             </Triggers>
                           </Folder>
