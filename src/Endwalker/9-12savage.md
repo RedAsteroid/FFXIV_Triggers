@@ -2,22 +2,30 @@
 
 P9S-P12S Splatoon 预设 个人改版
 
+### 相关链接
+
+- [此文档归属的仓库](https://github.com/RedAsteroid/FFXIV_Triggers): https://github.com/RedAsteroid/FFXIV_Triggers
+
+- [此文档页面](https://github.com/RedAsteroid/FFXIV_Triggers/blob/main/src/Endwalker/9-12savage.md): https://github.com/RedAsteroid/FFXIV_Triggers/blob/main/src/Endwalker/9-12savage.md
+
+**答应我，别闲鱼买挂了好吗**
+
 ### 所有预设内容基于莫灵喵触发器中的预设进行更改，免费分享请勿倒卖或购买
 
 - **一次性导入请看文档底部**
 - 当前施工进度 P9S-P12S(本体) ，制作进度 = 我的开荒进度
-- **预设与莫灵喵触发器提供的内容冲突，导入预设前请删除重复的预设，P12S门神脚本可更换为本仓库提供的修改版本~ ❥(^_-)**
+- **预设与莫灵喵触发器提供的内容冲突，导入预设前请删除重复的预设，零式脚本可用本仓库的修改版，没提及的脚本均为触发器补充**
 
-### 触发器补充了部分预设难画的机制，请搭配使用，使用指南请浏览本仓库主页 [**README**](https://github.com/RedAsteroid/FFXIV_Triggers)
+### 触发器包含部分预设没有的绘制，请搭配使用，使用指南请浏览本仓库主页 [**README**](https://github.com/RedAsteroid/FFXIV_Triggers)
+
+为保证安全，触发器初次导入**绝大部分**副本机制均为默语模式，其他人不可见。如有需要，请手动开启触发器内相关机制的小队模式输出
 
 ***
 
-- 标有"@"为触发器有更好的绘制或备用绘制，仅作为可选内容供您选择
+- 标有"@"为触发器有更好的绘制或作为备用绘制，为可选内容供您选择使用
 
 - 个人建议搭配阿洛宝宝椅使用，详见 [**此处**](https://www.bilibili.com/video/BV1tH4y1o7Yx) 获取宝宝椅相关资讯
 - 如果您是初次游玩零式万魔殿天狱篇，请务必先浏览攻略，并熟悉使用职业的输出/减伤，**使用科技并不意味着可以不看攻略就进本**
-- 2024.07.02 零式解限，超越之力提升 10%，这套绘制的时效性已经走到了尽头
-- 还没做完
 
 ***
 
@@ -47,7 +55,7 @@ P9S-P12S Splatoon 预设 个人改版
 
 - [**P12S Pangenesis 泛生论**](https://github.com/RedAsteroid/FFXIV_Triggers/blob/main/src/Endwalker/P12S%20Pangenesis%20%E6%B3%9B%E7%94%9F%E8%AE%BA.cs)
    - 进本请打开脚本设置初始化**小队列表**并选择**打法(2+1 Game8, 2+0 美服, 2+0 菓子)**，菓子踩塔安排有别于2+0，请正确选择您需要的打法。
-   - 2024.07.04 修复了泛生论 2+1、2+0 打法初始塔指路错误，**请卸载此脚本重新安装！否则会发生错误指路，导致炸塔！**
+   - 2024.07.04 修复了泛生论 2+1、2+0 打法初始塔指路错误，**请卸载此脚本重新安装！否则会发生错误指路导致炸塔！**
 
 # 预设 Presets
 
