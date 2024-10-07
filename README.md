@@ -11,7 +11,9 @@
 1. [普通副本](https://github.com/RedAsteroid/FFXIV_Triggers/blob/main/demo/img1.md)
 2. [亚历山大绝境战(暂缺)](https://github.com/RedAsteroid/FFXIV_Triggers/blob/main/demo/img2.md)
 
-### 零式万魔殿天狱篇施工中，预设参考请访问 [**此处**](https://github.com/RedAsteroid/FFXIV_Triggers/blob/main/src/Endwalker/9-12savage.md)
+### 零式万魔殿天狱篇，预设参考请访问 [**此处**](https://github.com/RedAsteroid/FFXIV_Triggers/blob/main/src/Endwalker/9-12savage.md)
+
+7.0 绘制效果变动还未调整，部分脚本无法导入，等待以后解决。
 
 ## 请注意：
 
@@ -26,7 +28,7 @@
 
 **Dalamud 插件**
 - [**SplatoonX**](https://github.com/gamous/DalamudPluginsCN-Dev)：Gamous 第三方插件仓库，添加对应仓库地址安装。
-- CN 6.57 API9
+- CN 7.0 API10
 
 ## 使用方法：
 **1. Triggernometry 导入：**
