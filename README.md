@@ -62,7 +62,9 @@ https://raw.githubusercontent.com/RedAsteroid/FFXIV_Triggers/main/Test/Testtrigg
 * 究极神兵绝境战 \(测试\)
 
 ## 其他
-- 预览图里的卫月样式：[**Catppuccin Macchiato v1**](https://github.com/RedAsteroid/FFXIV_Triggers/blob/main/img/dalamud_theme.md)
+- 卫月样式：
+  - [**Catppuccin Macchiato v1**](https://github.com/RedAsteroid/FFXIV_Triggers/blob/main/img/dalamud_theme.md)
+  - [**Catppuccin Mocha (OωO Mix) 推荐 ★**](https://github.com/RedAsteroid/FFXIV_Triggers/blob/main/img/dalamud_theme_Mocha.md)
 - 触发器目前使用 [阿洛(MnFen)](https://github.com/MnFeN) 预览版更改，详见[此处](https://www.bilibili.com/video/BV1tH4y1o7Yx)，如有兼容问题请提Issues。
 - 如果您只是想使用 **`亚历山大绝境战 (TEA)`** 触发器绘制，请导入下方地址。
 ```
