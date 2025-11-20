@@ -1,0 +1,400 @@
+<?xml version="1.0"?>
+<TriggernometryExport PluginVersion="1.2.0.760">
+  <ExportedFolder Id="997c872f-9096-4f71-822a-1843ea0d44fa" Name="LB伤害报告 v1.72 - By RedAsteroid" Enabled="true">
+    <Folders>
+      <Folder Id="c33657a7-1c2e-4e84-8374-695c02671d38" Name="插件需求" Enabled="true">
+        <Folders />
+        <Triggers>
+          <Trigger Enabled="true" Id="2bf43bbc-6b80-4294-8be8-9763aaf14aec" Name="1. 需要阿洛的TRN触发器，详见宝宝椅：bilibili.com/video/BV1tH4y1o7Yx">
+            <Actions />
+          </Trigger>
+          <Trigger Enabled="true" Id="c03e51fb-a91f-429f-8c23-8373c25ac1ed" Name="2. 鲶鱼精邮差(PostNamazu): https://github.com/Natsukage/PostNamazu/releases">
+            <Actions />
+          </Trigger>
+        </Triggers>
+      </Folder>
+      <Folder Id="8a4eae53-5bed-4bac-b6ab-99c54f750fff" Name="Github 仓库" Enabled="true">
+        <Folders />
+        <Triggers>
+          <Trigger Enabled="true" Id="3fa7b5ca-1d8d-4287-bb44-54f1cab80330" Name="https://github.com/RedAsteroid/FFXIV_Triggers">
+            <Actions>
+              <Action OrderNumber="1" ActionType="LaunchProcess" LaunchProcessPathExpression="https://github.com/RedAsteroid/FFXIV_Triggers" />
+            </Actions>
+          </Trigger>
+          <Trigger Enabled="true" Id="6a76af42-3f39-44d4-83eb-ccecfbc36d48" Name="右键执行 - 访问仓库">
+            <Actions>
+              <Action OrderNumber="1" ActionType="LaunchProcess" LaunchProcessPathExpression="https://github.com/RedAsteroid/FFXIV_Triggers" />
+            </Actions>
+          </Trigger>
+        </Triggers>
+      </Folder>
+      <Folder Id="25c12cb9-57ee-47e9-9929-352e075f29ea" Name="更新内容" Enabled="true">
+        <Folders />
+        <Triggers>
+          <Trigger Enabled="true" Id="0653ac9c-86b5-4ecd-9a6c-0861c232bbdb" Name="v1.6: 添加支持7.0蝰蛇剑士、绘灵法师三段极限技，以及LB打空的检测">
+            <Actions />
+          </Trigger>
+          <Trigger Enabled="true" Id="0f5f2c34-bd2e-477b-8ac5-06ab001340e5" Name="v1.61: 更改触发条件解决一些问题">
+            <Actions />
+          </Trigger>
+          <Trigger Enabled="true" Id="59354bab-2cd1-43ac-8fe5-0873332898a0" Name="v1.65: 修改内容用于上传仓库">
+            <Actions />
+          </Trigger>
+          <Trigger Enabled="true" Id="7fc6e56e-a13b-457c-9aaf-4fbc7aec570a" Name="v1.7: 取消异步导致的各种残留问题">
+            <Actions />
+          </Trigger>
+          <Trigger Enabled="true" Id="171749ee-c8fd-4779-819e-738922e8e2c7" Name="v1.72: 占位，推进版本号用于上传仓库">
+            <Actions />
+          </Trigger>
+          <Trigger Enabled="true" Id="e615d268-e9dc-41ca-880b-9292c15eee30" Name="v1.71: 修复未命中时缺少的发送频道条件">
+            <Actions />
+          </Trigger>
+        </Triggers>
+      </Folder>
+    </Folders>
+    <Triggers>
+      <Trigger Enabled="true" Id="e0ff4694-7ee5-4bbd-bb21-18c4066ea191" Name="1. 获取" RegularExpression="^.{14} (?:\w+) (?&lt;type&gt;(15|16)):(?&lt;sid&gt;[^:]*):(?&lt;sname&gt;[^:]*):(?&lt;id&gt;(C8|CB|108E|C9|CC|108F|CA|1092|1093|1EB5|611A|CD|1096|1EB6|1094|1095|42D2|8832|8833)):(?&lt;ability&gt;(?:[^:]|: )*?):(?&lt;tid&gt;[^:]*):(?&lt;tname&gt;[^:]*):(?&lt;flags&gt;[^:]*):(?&lt;damage&gt;[^:]*)(?::[^:]*){14}:(?&lt;targetCurrentHp&gt;[^:]*):(?&lt;targetMaxHp&gt;[^:]*):(?&lt;targetCurrentMp&gt;[^:]*):(?&lt;targetMaxMp&gt;[^:]*)(?::[^:]*){2}:(?&lt;targetX&gt;[^:]*):(?&lt;targetY&gt;[^:]*):(?&lt;targetZ&gt;[^:]*):(?&lt;targetHeading&gt;[^:]*):(?&lt;currentHp&gt;[^:]*):(?&lt;maxHp&gt;[^:]*):(?&lt;currentMp&gt;[^:]*):(?&lt;maxMp&gt;[^:]*)(?::[^:]*){2}:(?&lt;x&gt;[^:]*):(?&lt;y&gt;[^:]*):(?&lt;z&gt;[^:]*):(?&lt;heading&gt;[^:]*):(?&lt;sequence&gt;[^:]*):(?&lt;targetIndex&gt;[^:]*):(?&lt;targetCount&gt;[^:]*)(?:$|:)" Sequential="True">
+        <Actions>
+          <Action OrderNumber="1" ActionType="Placeholder" Asynchronous="False" Description="这是一个非常早期写的触发器，写得很烂有大量冗杂与无用动作，请慎重参考或者不要参考…… 有些现在已经看不懂了" DescriptionOverride="True" />
+          <Action OrderNumber="2" ActionType="Placeholder" Asynchronous="False" Description="一段LB：勇猛烈斩(近战)、苍穹破碎(法系)、冲天怒射(远敏)" DescriptionOverride="True" />
+          <Action OrderNumber="3" ActionType="Placeholder" Asynchronous="False" Description="二段LB：刀光剑舞(近战)、星体风暴(法系)、亡命暴徒(远敏)" DescriptionOverride="True" />
+          <Action OrderNumber="4" ActionType="Placeholder" Asynchronous="False" Description="三段LB：最终天堂(僧)、苍穹龙炎(龙)……" DescriptionOverride="True" />
+          <Action OrderNumber="5" ActionType="Placeholder" Asynchronous="False" Description="①. 记录命中目标、造成伤害量、造成伤害量占目标总血量的比例" DescriptionOverride="True" />
+          <Action OrderNumber="6" ActionType="ListVariable" Asynchronous="False" ListVariableOp="Push" ListVariableName="LB伤害结算记录_Clone" ListVariableExpression="${tid}" />
+          <Action OrderNumber="7" ActionType="Placeholder" Asynchronous="False" Description="1=名称、2=造成伤害量、3=造成伤害量占目标总血量的比例、4=lb名称(简单)、5=玩家名称、6=斩杀 以及打空的情况" DescriptionOverride="True" />
+          <Action OrderNumber="8" ActionType="ListVariable" Asynchronous="False" ListVariableOp="Insert" ListVariableName="LB伤害结算记录_${tid}_Clone" ListVariableExpression="${tname}" ListVariableIndex="1">
+            <Condition Enabled="true" Grouping="Or">
+              <ConditionSingle Enabled="true" ExpressionL="${tid}" ExpressionTypeL="String" ExpressionR="E0000000" ExpressionTypeR="String" ConditionType="StringNotEqualCase" />
+            </Condition>
+          </Action>
+          <Action OrderNumber="9" ActionType="ListVariable" Asynchronous="False" ListVariableOp="Insert" ListVariableName="LB伤害结算记录_${tid}_Clone" ListVariableExpression="未知" ListVariableIndex="1">
+            <Condition Enabled="true" Grouping="Or">
+              <ConditionSingle Enabled="true" ExpressionL="${tid}" ExpressionTypeL="String" ExpressionR="E0000000" ExpressionTypeR="String" ConditionType="StringEqualCase" />
+            </Condition>
+          </Action>
+          <Action OrderNumber="10" ActionType="ListVariable" Asynchronous="False" ListVariableOp="Insert" ListVariableExpressionType="Numeric" ListVariableName="LB伤害结算记录_${tid}_Clone" ListVariableExpression="parsedmg(${damage})" ListVariableIndex="2">
+            <Condition Enabled="true" Grouping="Or">
+              <ConditionSingle Enabled="true" ExpressionL="${tid}" ExpressionTypeL="String" ExpressionR="E0000000" ExpressionTypeR="String" ConditionType="StringNotEqualCase" />
+            </Condition>
+          </Action>
+          <Action OrderNumber="11" ActionType="ListVariable" Asynchronous="False" ListVariableOp="Insert" ListVariableName="LB伤害结算记录_${tid}_Clone" ListVariableExpression="未知" ListVariableIndex="2">
+            <Condition Enabled="true" Grouping="Or">
+              <ConditionSingle Enabled="true" ExpressionL="${tid}" ExpressionTypeL="String" ExpressionR="E0000000" ExpressionTypeR="String" ConditionType="StringEqualCase" />
+            </Condition>
+          </Action>
+          <Action OrderNumber="12" ActionType="ListVariable" Asynchronous="False" ListVariableOp="Insert" ListVariableName="LB伤害结算记录_${tid}_Clone" ListVariableExpression="${numeric:(round((parsedmg(${damage})/${targetMaxHp}),4))*100}%" ListVariableIndex="3">
+            <Condition Enabled="true" Grouping="Or">
+              <ConditionSingle Enabled="true" ExpressionL="${tid}" ExpressionTypeL="String" ExpressionR="E0000000" ExpressionTypeR="String" ConditionType="StringNotEqualCase" />
+            </Condition>
+          </Action>
+          <Action OrderNumber="13" ActionType="ListVariable" Asynchronous="False" ListVariableOp="Insert" ListVariableName="LB伤害结算记录_${tid}_Clone" ListVariableExpression="未知" ListVariableIndex="3">
+            <Condition Enabled="true" Grouping="Or">
+              <ConditionSingle Enabled="true" ExpressionL="${tid}" ExpressionTypeL="String" ExpressionR="E0000000" ExpressionTypeR="String" ConditionType="StringEqualCase" />
+            </Condition>
+          </Action>
+          <Action OrderNumber="14" ActionType="ListVariable" Asynchronous="False" ListVariableOp="Insert" ListVariableName="LB伤害结算记录_${tid}_Clone" ListVariableExpression="${id}" ListVariableIndex="4" />
+          <Action OrderNumber="15" ActionType="ListVariable" Asynchronous="False" ListVariableOp="Insert" ListVariableName="LB伤害结算记录_${tid}_Clone" ListVariableExpression="${sname}" ListVariableIndex="5" />
+          <Action OrderNumber="16" ActionType="ListVariable" Asynchronous="False" ListVariableOp="Insert" ListVariableName="LB伤害结算记录_${tid}_Clone" ListVariableExpression="&lt;斩杀&gt;" ListVariableIndex="6">
+            <Condition Enabled="true" Grouping="Or">
+              <ConditionSingle Enabled="true" ExpressionL="parsedmg(${damage})" ExpressionTypeL="Numeric" ExpressionR="${targetCurrentHp}" ExpressionTypeR="Numeric" ConditionType="NumericGreater" />
+            </Condition>
+          </Action>
+          <Action OrderNumber="17" ActionType="Placeholder" Asynchronous="False" Description="斩杀计数" DescriptionOverride="True" />
+          <Action OrderNumber="18" ActionType="Variable" Asynchronous="False" VariableOp="SetNumeric" VariableName="LB伤害结算记录_斩杀计数_Clone" VariableExpression="${var:LB伤害结算记录_斩杀计数_Clone}+1">
+            <Condition Enabled="true" Grouping="Or">
+              <ConditionSingle Enabled="true" ExpressionL="parsedmg(${damage})" ExpressionTypeL="Numeric" ExpressionR="${targetCurrentHp}" ExpressionTypeR="Numeric" ConditionType="NumericGreater" />
+            </Condition>
+          </Action>
+          <Action OrderNumber="19" ActionType="Placeholder" Asynchronous="False" Description="②. 输出内容" DescriptionOverride="True" />
+          <Action OrderNumber="20" ActionType="Placeholder" Asynchronous="False" Description="A. 拆分与合并多目标信息 (有斩杀/无斩杀)" DescriptionOverride="True" />
+          <Action OrderNumber="21" ActionType="Variable" ExecutionDelayExpression="200" Asynchronous="False" VariableOp="SetString" VariableName="LB伤害结算记录_拆分_${tid}_Clone" VariableExpression="[${lvar:LB伤害结算记录_${tid}_Clone[1]}:${lvar:LB伤害结算记录_${tid}_Clone[2]}(${lvar:LB伤害结算记录_${tid}_Clone[3]})${lvar:LB伤害结算记录_${tid}_Clone[6]}]" />
+          <Action OrderNumber="22" ActionType="Variable" Asynchronous="False" VariableOp="SetString" VariableName="LB伤害结算记录_拆分2_${tid}_Clone" VariableExpression="[${lvar:LB伤害结算记录_${tid}_Clone[1]}:${lvar:LB伤害结算记录_${tid}_Clone[2]}(${lvar:LB伤害结算记录_${tid}_Clone[3]})]" />
+          <Action OrderNumber="23" ActionType="ListVariable" Asynchronous="False" ListVariableOp="Push" ListVariableName="LB伤害结算记录_多目标合并_Clone" ListVariableExpression="${var:LB伤害结算记录_拆分_${tid}_Clone}" VariableOp="SetString" />
+          <Action OrderNumber="24" ActionType="ListVariable" Asynchronous="False" ListVariableOp="Push" ListVariableName="LB伤害结算记录_多目标合并2_Clone" ListVariableExpression="${var:LB伤害结算记录_拆分2_${tid}_Clone}" VariableOp="SetString" />
+          <Action OrderNumber="25" ActionType="ListVariable" Asynchronous="False" ListVariableOp="Join" ListVariableName="LB伤害结算记录_多目标合并_Clone" ListVariableExpression="、" ListVariableTarget="LB伤害结算记录_多目标合并_Clone" />
+          <Action OrderNumber="26" ActionType="ListVariable" Asynchronous="False" ListVariableOp="Join" ListVariableName="LB伤害结算记录_多目标合并2_Clone" ListVariableExpression="、" ListVariableTarget="LB伤害结算记录_多目标合并2_Clone" />
+          <Action OrderNumber="27" ActionType="Placeholder" Asynchronous="False" Description="B. 转换技能名称+玩家名称" DescriptionOverride="True" />
+          <Action OrderNumber="28" ActionType="Variable" Asynchronous="False" RefireRequeue="False" VariableOp="SetString" VariableName="LB伤害结算记录_拆分_玩家_Clone" VariableExpression="${lvar:LB伤害结算记录_${tid}_Clone[5]}" />
+          <Action OrderNumber="29" ActionType="Variable" Asynchronous="False" RefireRequeue="False" VariableOp="SetString" VariableName="LB伤害结算记录_拆分_技能名称_Clone" VariableExpression="勇猛烈斩">
+            <Condition Enabled="true" Grouping="Or">
+              <ConditionSingle Enabled="true" ExpressionL="${id}" ExpressionTypeL="String" ExpressionR="C8" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+            </Condition>
+          </Action>
+          <Action OrderNumber="30" ActionType="Variable" Asynchronous="False" RefireRequeue="False" VariableOp="SetString" VariableName="LB伤害结算记录_拆分_技能名称_Clone" VariableExpression="苍穹破碎">
+            <Condition Enabled="true" Grouping="Or">
+              <ConditionSingle Enabled="true" ExpressionL="${id}" ExpressionTypeL="String" ExpressionR="CB" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+            </Condition>
+          </Action>
+          <Action OrderNumber="31" ActionType="Variable" Asynchronous="False" RefireRequeue="False" VariableOp="SetString" VariableName="LB伤害结算记录_拆分_技能名称_Clone" VariableExpression="冲天怒射">
+            <Condition Enabled="true" Grouping="Or">
+              <ConditionSingle Enabled="true" ExpressionL="${id}" ExpressionTypeL="String" ExpressionR="108E" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+            </Condition>
+          </Action>
+          <Action OrderNumber="32" ActionType="Variable" Asynchronous="False" RefireRequeue="False" VariableOp="SetString" VariableName="LB伤害结算记录_拆分_技能名称_Clone" VariableExpression="刀光剑舞">
+            <Condition Enabled="true" Grouping="Or">
+              <ConditionSingle Enabled="true" ExpressionL="${id}" ExpressionTypeL="String" ExpressionR="C9" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+            </Condition>
+          </Action>
+          <Action OrderNumber="33" ActionType="Variable" Asynchronous="False" RefireRequeue="False" VariableOp="SetString" VariableName="LB伤害结算记录_拆分_技能名称_Clone" VariableExpression="星体风暴">
+            <Condition Enabled="true" Grouping="Or">
+              <ConditionSingle Enabled="true" ExpressionL="${id}" ExpressionTypeL="String" ExpressionR="CC" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+            </Condition>
+          </Action>
+          <Action OrderNumber="34" ActionType="Variable" Asynchronous="False" RefireRequeue="False" VariableOp="SetString" VariableName="LB伤害结算记录_拆分_技能名称_Clone" VariableExpression="亡命暴徒">
+            <Condition Enabled="true" Grouping="Or">
+              <ConditionSingle Enabled="true" ExpressionL="${id}" ExpressionTypeL="String" ExpressionR="108F" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+            </Condition>
+          </Action>
+          <Action OrderNumber="35" ActionType="Variable" Asynchronous="False" RefireRequeue="False" VariableOp="SetString" VariableName="LB伤害结算记录_拆分_技能名称_Clone" VariableExpression="最终天堂">
+            <Condition Enabled="true" Grouping="Or">
+              <ConditionSingle Enabled="true" ExpressionL="${id}" ExpressionTypeL="String" ExpressionR="CA" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+            </Condition>
+          </Action>
+          <Action OrderNumber="36" ActionType="Variable" Asynchronous="False" RefireRequeue="False" VariableOp="SetString" VariableName="LB伤害结算记录_拆分_技能名称_Clone" VariableExpression="苍穹龙炎">
+            <Condition Enabled="true" Grouping="Or">
+              <ConditionSingle Enabled="true" ExpressionL="${id}" ExpressionTypeL="String" ExpressionR="1092" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+            </Condition>
+          </Action>
+          <Action OrderNumber="37" ActionType="Variable" Asynchronous="False" RefireRequeue="False" VariableOp="SetString" VariableName="LB伤害结算记录_拆分_技能名称_Clone" VariableExpression="月遁血祭">
+            <Condition Enabled="true" Grouping="Or">
+              <ConditionSingle Enabled="true" ExpressionL="${id}" ExpressionTypeL="String" ExpressionR="1093" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+            </Condition>
+          </Action>
+          <Action OrderNumber="38" ActionType="Variable" Asynchronous="False" RefireRequeue="False" VariableOp="SetString" VariableName="LB伤害结算记录_拆分_技能名称_Clone" VariableExpression="生者必灭">
+            <Condition Enabled="true" Grouping="Or">
+              <ConditionSingle Enabled="true" ExpressionL="${id}" ExpressionTypeL="String" ExpressionR="1EB5" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+            </Condition>
+          </Action>
+          <Action OrderNumber="39" ActionType="Variable" Asynchronous="False" RefireRequeue="False" VariableOp="SetString" VariableName="LB伤害结算记录_拆分_技能名称_Clone" VariableExpression="终结时刻">
+            <Condition Enabled="true" Grouping="Or">
+              <ConditionSingle Enabled="true" ExpressionL="${id}" ExpressionTypeL="String" ExpressionR="611A" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+            </Condition>
+          </Action>
+          <Action OrderNumber="40" ActionType="Variable" Asynchronous="False" RefireRequeue="False" VariableOp="SetString" VariableName="LB伤害结算记录_拆分_技能名称_Clone" VariableExpression="陨石流星">
+            <Condition Enabled="true" Grouping="Or">
+              <ConditionSingle Enabled="true" ExpressionL="${id}" ExpressionTypeL="String" ExpressionR="CD" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+            </Condition>
+          </Action>
+          <Action OrderNumber="41" ActionType="Variable" Asynchronous="False" RefireRequeue="False" VariableOp="SetString" VariableName="LB伤害结算记录_拆分_技能名称_Clone" VariableExpression="万亿核爆">
+            <Condition Enabled="true" Grouping="Or">
+              <ConditionSingle Enabled="true" ExpressionL="${id}" ExpressionTypeL="String" ExpressionR="1096" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+            </Condition>
+          </Action>
+          <Action OrderNumber="42" ActionType="Variable" Asynchronous="False" RefireRequeue="False" VariableOp="SetString" VariableName="LB伤害结算记录_拆分_技能名称_Clone" VariableExpression="赤红灾变">
+            <Condition Enabled="true" Grouping="Or">
+              <ConditionSingle Enabled="true" ExpressionL="${id}" ExpressionTypeL="String" ExpressionR="1EB6" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+            </Condition>
+          </Action>
+          <Action OrderNumber="43" ActionType="Variable" Asynchronous="False" RefireRequeue="False" VariableOp="SetString" VariableName="LB伤害结算记录_拆分_技能名称_Clone" VariableExpression="射手天箭">
+            <Condition Enabled="true" Grouping="Or">
+              <ConditionSingle Enabled="true" ExpressionL="${id}" ExpressionTypeL="String" ExpressionR="1094" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+            </Condition>
+          </Action>
+          <Action OrderNumber="44" ActionType="Variable" Asynchronous="False" RefireRequeue="False" VariableOp="SetString" VariableName="LB伤害结算记录_拆分_技能名称_Clone" VariableExpression="卫星光束">
+            <Condition Enabled="true" Grouping="Or">
+              <ConditionSingle Enabled="true" ExpressionL="${id}" ExpressionTypeL="String" ExpressionR="1095" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+            </Condition>
+          </Action>
+          <Action OrderNumber="45" ActionType="Variable" Asynchronous="False" RefireRequeue="False" VariableOp="SetString" VariableName="LB伤害结算记录_拆分_技能名称_Clone" VariableExpression="红舞华莲">
+            <Condition Enabled="true" Grouping="Or">
+              <ConditionSingle Enabled="true" ExpressionL="${id}" ExpressionTypeL="String" ExpressionR="42D2" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+            </Condition>
+          </Action>
+          <Action OrderNumber="46" ActionType="Variable" Asynchronous="False" RefireRequeue="False" VariableOp="SetString" VariableName="LB伤害结算记录_拆分_技能名称_Clone" VariableExpression="吞世巨蛇">
+            <Condition Enabled="true" Grouping="Or">
+              <ConditionSingle Enabled="true" ExpressionL="${id}" ExpressionTypeL="String" ExpressionR="8832" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+            </Condition>
+          </Action>
+          <Action OrderNumber="47" ActionType="Variable" Asynchronous="False" RefireRequeue="False" VariableOp="SetString" VariableName="LB伤害结算记录_拆分_技能名称_Clone" VariableExpression="赋彩幻想">
+            <Condition Enabled="true" Grouping="Or">
+              <ConditionSingle Enabled="true" ExpressionL="${id}" ExpressionTypeL="String" ExpressionR="8833" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+            </Condition>
+          </Action>
+          <Action OrderNumber="48" ActionType="Placeholder" Asynchronous="False" Description="单目标" DescriptionOverride="True" />
+          <Action OrderNumber="49" ActionType="LogMessage" ExecutionDelayExpression="200" Asynchronous="False" RefireRequeue="False" LogMessageText="LB_Damage_Clone:1" LogProcess="True">
+            <Condition Enabled="true" Grouping="And">
+              <ConditionSingle Enabled="true" ExpressionL="${lvar:LB伤害结算记录_Clone.size}" ExpressionTypeL="String" ExpressionR="1" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+              <ConditionSingle Enabled="true" ExpressionL="${tid}" ExpressionTypeL="String" ExpressionR="E0000000" ExpressionTypeR="String" ConditionType="StringNotEqualCase" />
+            </Condition>
+          </Action>
+          <Action OrderNumber="50" ActionType="Placeholder" Asynchronous="False" Description="多目标" DescriptionOverride="True" />
+          <Action OrderNumber="51" ActionType="LogMessage" Asynchronous="False" RefireRequeue="False" LogMessageText="LB_Damage_Clone:2" LogProcess="True">
+            <Condition Enabled="true" Grouping="And">
+              <ConditionSingle Enabled="true" ExpressionL="${lvar:LB伤害结算记录_Clone.size}" ExpressionTypeL="String" ExpressionR="1" ExpressionTypeR="String" ConditionType="NumericGreater" />
+            </Condition>
+          </Action>
+          <Action OrderNumber="52" ActionType="Placeholder" Asynchronous="False" Description="打空了¿¿¿" DescriptionOverride="True" />
+          <Action OrderNumber="53" ActionType="LogMessage" Asynchronous="False" RefireRequeue="False" LogMessageText="LB_Damage_Clone:3" LogProcess="True">
+            <Condition Enabled="true" Grouping="And">
+              <ConditionSingle Enabled="true" ExpressionL="${type}" ExpressionTypeL="String" ExpressionR="15" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+              <ConditionSingle Enabled="true" ExpressionL="${tid}" ExpressionTypeL="String" ExpressionR="E0000000" ExpressionTypeR="String" ConditionType="StringEqualCase" />
+            </Condition>
+          </Action>
+          <Action OrderNumber="54" ActionType="Placeholder" Asynchronous="False" Description="销毁 (记录信息3秒后销毁)" DescriptionOverride="True" />
+          <Action OrderNumber="55" ActionType="ListVariable" ExecutionDelayExpression="3000" Asynchronous="False" RefireRequeue="False" ListVariableName="LB伤害结算记录_Clone" />
+          <Action OrderNumber="56" ActionType="Variable" Asynchronous="False" RefireRequeue="False" VariableOp="UnsetRegex" VariableName="LB伤害结算记录.*Clone" />
+          <Action OrderNumber="57" ActionType="ListVariable" Asynchronous="False" RefireRequeue="False" ListVariableOp="UnsetRegex" ListVariableName="LB伤害结算记录.*?Clone" />
+        </Actions>
+        <Condition Enabled="true" Grouping="Or">
+          <ConditionSingle Enabled="true" ExpressionL="${_ffxiventity[${sid}].inparty}" ExpressionTypeL="String" ExpressionR="1" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+          <ConditionSingle Enabled="true" ExpressionL="${sid}" ExpressionTypeL="String" ExpressionR="${_me.id}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+        </Condition>
+      </Trigger>
+      <Trigger Enabled="true" Id="3020c9e4-923d-4f8b-98c3-5670d7784882" Name="2. 发送 [双击此触发修改频道]" RegularExpression="^LB_Damage_Clone:(?&lt;v&gt;.+?)$" PeriodRefire="Deny" RefirePeriodExpression="1000" Sequential="True">
+        <Actions>
+          <Action OrderNumber="1" ActionType="Variable" Asynchronous="False" Description="【重置聊天频道】" DescriptionOverride="True" VariableOp="UnsetRegex" VariableName="lb结算频道_.*_Clone" VariableExpression="1" />
+          <Action OrderNumber="2" ActionType="Variable" Asynchronous="False" Description="【重置输出斩杀】" DescriptionOverride="True" VariableName="LB_斩杀_Clone" VariableExpression="1" />
+          <Action OrderNumber="3" ActionType="Placeholder" Asynchronous="False" Description="【设置：发送频道】 &gt;&gt; 勾选你想要发的频道 &lt;&lt;" DescriptionOverride="True" />
+          <Action OrderNumber="4" ActionType="Variable" Asynchronous="False" Description=" 默语频道 /e" DescriptionOverride="True" VariableOp="SetString" VariableName="lb结算频道_e_Clone" VariableExpression="1" />
+          <Action OrderNumber="5" Enabled="False" ActionType="Variable" Asynchronous="False" Description=" 小队频道 /p" DescriptionOverride="True" VariableOp="SetString" VariableName="lb结算频道_p_Clone" VariableExpression="1" />
+          <Action OrderNumber="6" ActionType="Placeholder" Asynchronous="False" Description="【设置：输出斩杀信息】 &gt;&gt; 勾选启用 &lt;&lt;" DescriptionOverride="True" />
+          <Action OrderNumber="7" ActionType="Variable" Asynchronous="False" Description=" 输出斩杀信息: &lt;斩杀&gt;" DescriptionOverride="True" VariableOp="SetString" VariableName="LB_斩杀_Clone" VariableExpression="1" />
+          <Action OrderNumber="8" ActionType="Placeholder" Asynchronous="False" Description="单目标" DescriptionOverride="True" />
+          <Action OrderNumber="9" ActionType="NamedCallback" Asynchronous="False" RefireRequeue="False" NamedCallbackName="command" NamedCallbackParam="/e 玩家:[${var:LB伤害结算记录_拆分_玩家_Clone}]使用LB:[${var:LB伤害结算记录_拆分_技能名称_Clone}]命中了目标:[${lvar:LB伤害结算记录_${lvar:LB伤害结算记录_Clone[1]}_Clone[1]}],造成伤害: ${lvar:LB伤害结算记录_${lvar:LB伤害结算记录_Clone[1]}_Clone[2]}点(${lvar:LB伤害结算记录_${lvar:LB伤害结算记录_Clone[1]}_Clone[3]}) &lt;se.2&gt;">
+            <Condition Enabled="true" Grouping="Or">
+              <ConditionGroup Enabled="true" Grouping="And">
+                <ConditionSingle Enabled="true" ExpressionL="${var:lb结算频道_e_Clone}" ExpressionTypeL="String" ExpressionR="1" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                <ConditionSingle Enabled="true" ExpressionL="${v}" ExpressionTypeL="String" ExpressionR="1" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                <ConditionGroup Enabled="true" Grouping="Or">
+                  <ConditionSingle Enabled="true" ExpressionL="${var:LB伤害结算记录_斩杀计数_Clone}" ExpressionTypeL="Numeric" ExpressionR="0" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+                  <ConditionSingle Enabled="true" ExpressionL="${evar:LB伤害结算记录_斩杀计数_Clone}" ExpressionTypeL="Numeric" ExpressionR="0" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+                </ConditionGroup>
+              </ConditionGroup>
+              <ConditionGroup Enabled="true" Grouping="And">
+                <ConditionGroup Enabled="true" Grouping="Or">
+                  <ConditionSingle Enabled="true" ExpressionL="${var:LB伤害结算记录_斩杀计数_Clone}" ExpressionTypeL="Numeric" ExpressionR="0" ExpressionTypeR="Numeric" ConditionType="NumericGreater" />
+                  <ConditionSingle Enabled="true" ExpressionL="${evar:LB伤害结算记录_斩杀计数_Clone}" ExpressionTypeL="Numeric" ExpressionR="0" ExpressionTypeR="Numeric" ConditionType="NumericGreater" />
+                </ConditionGroup>
+                <ConditionSingle Enabled="true" ExpressionL="${v}" ExpressionTypeL="String" ExpressionR="1" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                <ConditionSingle Enabled="true" ExpressionL="${var:lb结算频道_e_Clone}" ExpressionTypeL="String" ExpressionR="1" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                <ConditionSingle Enabled="true" ExpressionL="${evar:LB_斩杀_Clone}" ExpressionTypeL="String" ExpressionR="0" ExpressionTypeR="String" ConditionType="NumericEqual" />
+              </ConditionGroup>
+            </Condition>
+          </Action>
+          <Action OrderNumber="10" ActionType="NamedCallback" Asynchronous="False" RefireRequeue="False" NamedCallbackName="command" NamedCallbackParam="/p 玩家:[${var:LB伤害结算记录_拆分_玩家_Clone}]使用LB:[${var:LB伤害结算记录_拆分_技能名称_Clone}]命中了目标:[${lvar:LB伤害结算记录_${lvar:LB伤害结算记录_Clone[1]}_Clone[1]}],造成伤害: ${lvar:LB伤害结算记录_${lvar:LB伤害结算记录_Clone[1]}_Clone[2]}点(${lvar:LB伤害结算记录_${lvar:LB伤害结算记录_Clone[1]}_Clone[3]}) &lt;se.1&gt;">
+            <Condition Enabled="true" Grouping="Or">
+              <ConditionGroup Enabled="true" Grouping="And">
+                <ConditionGroup Enabled="true" Grouping="Or">
+                  <ConditionSingle Enabled="true" ExpressionL="${var:LB伤害结算记录_斩杀计数_Clone}" ExpressionTypeL="Numeric" ExpressionR="0" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+                  <ConditionSingle Enabled="true" ExpressionL="${evar:LB伤害结算记录_斩杀计数_Clone}" ExpressionTypeL="Numeric" ExpressionR="0" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+                </ConditionGroup>
+                <ConditionSingle Enabled="true" ExpressionL="${v}" ExpressionTypeL="String" ExpressionR="1" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                <ConditionSingle Enabled="true" ExpressionL="${var:lb结算频道_p_Clone}" ExpressionTypeL="String" ExpressionR="1" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+              </ConditionGroup>
+              <ConditionGroup Enabled="true" Grouping="And">
+                <ConditionSingle Enabled="true" ExpressionL="${var:lb结算频道_p_Clone}" ExpressionTypeL="String" ExpressionR="1" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                <ConditionSingle Enabled="true" ExpressionL="${var:LB_斩杀_Clone}" ExpressionTypeL="String" ExpressionR="1" ExpressionTypeR="String" ConditionType="NumericNotEqual" />
+                <ConditionSingle Enabled="true" ExpressionL="${v}" ExpressionTypeL="String" ExpressionR="1" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                <ConditionGroup Enabled="true" Grouping="Or">
+                  <ConditionSingle Enabled="true" ExpressionL="${var:LB伤害结算记录_斩杀计数_Clone}" ExpressionTypeL="Numeric" ExpressionR="0" ExpressionTypeR="Numeric" ConditionType="NumericGreater" />
+                  <ConditionSingle Enabled="true" ExpressionL="${evar:LB伤害结算记录_斩杀计数_Clone}" ExpressionTypeL="Numeric" ExpressionR="1" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+                </ConditionGroup>
+              </ConditionGroup>
+            </Condition>
+          </Action>
+          <Action OrderNumber="11" ActionType="NamedCallback" Asynchronous="False" RefireRequeue="False" NamedCallbackName="command" NamedCallbackParam="/e 玩家:[${var:LB伤害结算记录_拆分_玩家_Clone}]使用LB:[${var:LB伤害结算记录_拆分_技能名称_Clone}]斩杀了目标:[${lvar:LB伤害结算记录_${lvar:LB伤害结算记录_Clone[1]}_Clone[1]}],造成伤害: ${lvar:LB伤害结算记录_${lvar:LB伤害结算记录_Clone[1]}_Clone[2]}点(${lvar:LB伤害结算记录_${lvar:LB伤害结算记录_Clone[1]}_Clone[3]})${lvar:LB伤害结算记录_${lvar:LB伤害结算记录_Clone[1]}_Clone[6]} &lt;se.3&gt;">
+            <Condition Enabled="true" Grouping="And">
+              <ConditionSingle Enabled="true" ExpressionL="${v}" ExpressionTypeL="String" ExpressionR="1" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+              <ConditionSingle Enabled="true" ExpressionL="${var:lb结算频道_e_Clone}" ExpressionTypeL="String" ExpressionR="1" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+              <ConditionSingle Enabled="true" ExpressionL="${var:LB伤害结算记录_斩杀计数_Clone}" ExpressionTypeL="Numeric" ExpressionR="0" ExpressionTypeR="Numeric" ConditionType="NumericGreater" />
+              <ConditionSingle Enabled="true" ExpressionL="${var:LB_斩杀_Clone}" ExpressionTypeL="String" ExpressionR="1" ExpressionTypeR="String" ConditionType="NumericEqual" />
+            </Condition>
+          </Action>
+          <Action OrderNumber="12" ActionType="NamedCallback" Asynchronous="False" RefireRequeue="False" NamedCallbackName="command" NamedCallbackParam="/p 玩家:[${var:LB伤害结算记录_拆分_玩家_Clone}]使用LB:[${var:LB伤害结算记录_拆分_技能名称_Clone}]斩杀了目标:[${lvar:LB伤害结算记录_${lvar:LB伤害结算记录_Clone[1]}_Clone[1]}],造成伤害: ${lvar:LB伤害结算记录_${lvar:LB伤害结算记录_Clone[1]}_Clone[2]}点(${lvar:LB伤害结算记录_${lvar:LB伤害结算记录_Clone[1]}_Clone[3]})${lvar:LB伤害结算记录_${lvar:LB伤害结算记录_Clone[1]}_Clone[6]} &lt;se.3&gt;">
+            <Condition Enabled="true" Grouping="And">
+              <ConditionSingle Enabled="true" ExpressionL="${v}" ExpressionTypeL="String" ExpressionR="1" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+              <ConditionSingle Enabled="true" ExpressionL="${var:lb结算频道_p_Clone}" ExpressionTypeL="String" ExpressionR="1" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+              <ConditionSingle Enabled="true" ExpressionL="${var:LB伤害结算记录_斩杀计数_Clone}" ExpressionTypeL="Numeric" ExpressionR="0" ExpressionTypeR="Numeric" ConditionType="NumericGreater" />
+              <ConditionSingle Enabled="true" ExpressionL="${var:LB_斩杀_Clone}" ExpressionTypeL="String" ExpressionR="1" ExpressionTypeR="String" ConditionType="NumericEqual" />
+            </Condition>
+          </Action>
+          <Action OrderNumber="13" ActionType="Placeholder" Asynchronous="False" Description="多目标" DescriptionOverride="True" />
+          <Action OrderNumber="14" ActionType="NamedCallback" Asynchronous="False" RefireRequeue="False" NamedCallbackName="command" NamedCallbackParam="/e 玩家:[${var:LB伤害结算记录_拆分_玩家_Clone}]使用LB:[${var:LB伤害结算记录_拆分_技能名称_Clone}]命中了${lvar:LB伤害结算记录_Clone.size}个目标, 造成伤害分别为:${var:LB伤害结算记录_多目标合并2_Clone}。 &lt;se.2&gt;">
+            <Condition Enabled="true" Grouping="Or">
+              <ConditionGroup Enabled="true" Grouping="And">
+                <ConditionGroup Enabled="true" Grouping="Or">
+                  <ConditionSingle Enabled="true" ExpressionL="${var:LB伤害结算记录_斩杀计数_Clone}" ExpressionTypeL="Numeric" ExpressionR="0" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+                  <ConditionSingle Enabled="true" ExpressionL="${evar:LB伤害结算记录_斩杀计数_Clone}" ExpressionTypeL="Numeric" ExpressionR="0" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+                </ConditionGroup>
+                <ConditionSingle Enabled="true" ExpressionL="${v}" ExpressionTypeL="String" ExpressionR="2" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                <ConditionSingle Enabled="true" ExpressionL="${var:lb结算频道_e_Clone}" ExpressionTypeL="String" ExpressionR="1" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+              </ConditionGroup>
+              <ConditionGroup Enabled="true" Grouping="And">
+                <ConditionSingle Enabled="true" ExpressionL="${var:lb结算频道_e_Clone}" ExpressionTypeL="String" ExpressionR="1" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                <ConditionSingle Enabled="true" ExpressionL="${evar:LB_斩杀_Clone}" ExpressionTypeL="String" ExpressionR="0" ExpressionTypeR="String" ConditionType="NumericEqual" />
+                <ConditionSingle Enabled="true" ExpressionL="${v}" ExpressionTypeL="String" ExpressionR="2" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                <ConditionGroup Enabled="true" Grouping="Or">
+                  <ConditionSingle Enabled="true" ExpressionL="${var:LB伤害结算记录_斩杀计数_Clone}" ExpressionTypeL="Numeric" ExpressionR="0" ExpressionTypeR="Numeric" ConditionType="NumericGreater" />
+                  <ConditionSingle Enabled="true" ExpressionL="${evar:LB伤害结算记录_斩杀计数_Clone}" ExpressionTypeL="Numeric" ExpressionR="1" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+                </ConditionGroup>
+              </ConditionGroup>
+            </Condition>
+          </Action>
+          <Action OrderNumber="15" ActionType="NamedCallback" Asynchronous="False" RefireRequeue="False" NamedCallbackName="command" NamedCallbackParam="/p 玩家:[${var:LB伤害结算记录_拆分_玩家_Clone}]使用LB:[${var:LB伤害结算记录_拆分_技能名称_Clone}]命中了${lvar:LB伤害结算记录_Clone.size}个目标, 造成伤害分别为:${var:LB伤害结算记录_多目标合并2_Clone}。 &lt;se.1&gt;">
+            <Condition Enabled="true" Grouping="Or">
+              <ConditionGroup Enabled="true" Grouping="And">
+                <ConditionGroup Enabled="true" Grouping="Or">
+                  <ConditionSingle Enabled="true" ExpressionL="${var:LB伤害结算记录_斩杀计数_Clone}" ExpressionTypeL="Numeric" ExpressionR="0" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+                  <ConditionSingle Enabled="true" ExpressionL="${evar:LB伤害结算记录_斩杀计数_Clone}" ExpressionTypeL="Numeric" ExpressionR="0" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+                </ConditionGroup>
+                <ConditionSingle Enabled="true" ExpressionL="${v}" ExpressionTypeL="String" ExpressionR="2" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                <ConditionSingle Enabled="true" ExpressionL="${var:lb结算频道_p_Clone}" ExpressionTypeL="String" ExpressionR="1" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+              </ConditionGroup>
+              <ConditionGroup Enabled="true" Grouping="And">
+                <ConditionSingle Enabled="true" ExpressionL="${var:lb结算频道_p_Clone}" ExpressionTypeL="String" ExpressionR="1" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                <ConditionSingle Enabled="true" ExpressionL="${var:LB_斩杀_Clone}" ExpressionTypeL="String" ExpressionR="1" ExpressionTypeR="String" ConditionType="NumericNotEqual" />
+                <ConditionSingle Enabled="true" ExpressionL="${v}" ExpressionTypeL="String" ExpressionR="2" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                <ConditionGroup Enabled="true" Grouping="Or">
+                  <ConditionSingle Enabled="true" ExpressionL="${var:LB伤害结算记录_斩杀计数_Clone}" ExpressionTypeL="Numeric" ExpressionR="0" ExpressionTypeR="Numeric" ConditionType="NumericGreater" />
+                  <ConditionSingle Enabled="true" ExpressionL="${evar:LB伤害结算记录_斩杀计数_Clone}" ExpressionTypeL="Numeric" ExpressionR="1" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+                </ConditionGroup>
+              </ConditionGroup>
+            </Condition>
+          </Action>
+          <Action OrderNumber="16" ActionType="NamedCallback" Asynchronous="False" RefireRequeue="False" NamedCallbackName="command" NamedCallbackParam="/e 玩家:[${var:LB伤害结算记录_拆分_玩家_Clone}]使用LB:[${var:LB伤害结算记录_拆分_技能名称_Clone}]命中了${lvar:LB伤害结算记录_Clone.size}个目标,其中斩杀了${var:LB伤害结算记录_斩杀计数_Clone}/${lvar:LB伤害结算记录_Clone.size}个目标, 造成伤害分别为:${var:LB伤害结算记录_多目标合并_Clone}。 &lt;se.3&gt;">
+            <Condition Enabled="true" Grouping="And">
+              <ConditionSingle Enabled="true" ExpressionL="${v}" ExpressionTypeL="String" ExpressionR="2" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+              <ConditionSingle Enabled="true" ExpressionL="${var:lb结算频道_e_Clone}" ExpressionTypeL="String" ExpressionR="1" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+              <ConditionSingle Enabled="true" ExpressionL="${var:LB_斩杀_Clone}" ExpressionTypeL="String" ExpressionR="1" ExpressionTypeR="String" ConditionType="NumericEqual" />
+              <ConditionSingle Enabled="true" ExpressionL="${var:LB伤害结算记录_斩杀计数_Clone}" ExpressionTypeL="Numeric" ExpressionR="0" ExpressionTypeR="Numeric" ConditionType="NumericGreater" />
+            </Condition>
+          </Action>
+          <Action OrderNumber="17" ActionType="NamedCallback" Asynchronous="False" RefireRequeue="False" NamedCallbackName="command" NamedCallbackParam="/p 玩家:[${var:LB伤害结算记录_拆分_玩家_Clone}]使用LB:[${var:LB伤害结算记录_拆分_技能名称_Clone}]命中了${lvar:LB伤害结算记录_Clone.size}个目标,其中斩杀了${var:LB伤害结算记录_斩杀计数_Clone}/${lvar:LB伤害结算记录_Clone.size}个目标, 造成伤害分别为:${var:LB伤害结算记录_多目标合并_Clone}。 &lt;se.3&gt;">
+            <Condition Enabled="true" Grouping="And">
+              <ConditionSingle Enabled="true" ExpressionL="${v}" ExpressionTypeL="String" ExpressionR="2" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+              <ConditionSingle Enabled="true" ExpressionL="${var:lb结算频道_p_Clone}" ExpressionTypeL="String" ExpressionR="1" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+              <ConditionSingle Enabled="true" ExpressionL="${var:LB伤害结算记录_斩杀计数_Clone}" ExpressionTypeL="Numeric" ExpressionR="0" ExpressionTypeR="Numeric" ConditionType="NumericGreater" />
+              <ConditionSingle Enabled="true" ExpressionL="${var:LB_斩杀_Clone}" ExpressionTypeL="String" ExpressionR="1" ExpressionTypeR="String" ConditionType="NumericEqual" />
+            </Condition>
+          </Action>
+          <Action OrderNumber="18" ActionType="Placeholder" Asynchronous="False" Description="没有命中任何目标?" DescriptionOverride="True" />
+          <Action OrderNumber="19" ActionType="NamedCallback" Asynchronous="False" RefireRequeue="False" NamedCallbackName="command" NamedCallbackParam="/e 玩家:[${var:LB伤害结算记录_拆分_玩家_Clone}]使用LB:[${var:LB伤害结算记录_拆分_技能名称_Clone}] 但是没有命中任何目标！ &lt;se.10&gt;">
+            <Condition Enabled="true" Grouping="And">
+              <ConditionSingle Enabled="true" ExpressionL="${v}" ExpressionTypeL="String" ExpressionR="3" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+              <ConditionSingle Enabled="true" ExpressionL="${var:lb结算频道_e_Clone}" ExpressionTypeL="String" ExpressionR="1" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+            </Condition>
+          </Action>
+          <Action OrderNumber="20" ActionType="NamedCallback" Asynchronous="False" RefireRequeue="False" NamedCallbackName="command" NamedCallbackParam="/p 玩家:[${var:LB伤害结算记录_拆分_玩家_Clone}]使用LB:[${var:LB伤害结算记录_拆分_技能名称_Clone}] 但是没有命中任何目标！ &lt;se.10&gt;">
+            <Condition Enabled="true" Grouping="And">
+              <ConditionSingle Enabled="true" ExpressionL="${v}" ExpressionTypeL="String" ExpressionR="3" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+              <ConditionSingle Enabled="true" ExpressionL="${var:lb结算频道_p_Clone}" ExpressionTypeL="String" ExpressionR="1" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+            </Condition>
+          </Action>
+        </Actions>
+      </Trigger>
+      <Trigger Enabled="true" Id="9b1b1d60-d78a-40ad-8245-236d191df9e4" Name="【如果您使用的触发器插件不是阿洛的预览版Triggernometry，请禁用此触发器，执意使用将发生异常播报】">
+        <Actions />
+      </Trigger>
+      <Trigger Enabled="true" Id="fa53deed-5a5d-4c84-a28b-9862d351819e" Name="功能：当小队成员使用了极限技(lb)时，在聊天频道发送打了多少。默认发默语频道，需要发小队请自行修改。">
+        <Actions />
+      </Trigger>
+      <Trigger Enabled="true" Id="b330cde9-5026-431b-a948-59c28b5e6dc3" Name="Debug: 手动重置">
+        <Actions>
+          <Action OrderNumber="1" ActionType="ListVariable" RefireRequeue="False" ListVariableName="LB伤害结算记录_Clone" />
+          <Action OrderNumber="2" ActionType="Variable" RefireRequeue="False" VariableOp="UnsetRegex" VariableName="LB伤害结算记录.*Clone" />
+          <Action OrderNumber="3" ActionType="ListVariable" RefireRequeue="False" ListVariableOp="UnsetRegex" ListVariableName="LB伤害结算记录.*?Clone" />
+        </Actions>
+      </Trigger>
+    </Triggers>
+  </ExportedFolder>
+</TriggernometryExport>
